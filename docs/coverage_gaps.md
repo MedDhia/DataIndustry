@@ -141,8 +141,38 @@ Ownership varies systematically by region. Venture capital backs 66 firms in
 North America and 26 in Western Europe, against roughly 20 across MENA, Africa,
 South Asia, Southeast Asia, East Asia and mainland China combined. Outside the core, the
 register is dominated by owner-managed independents and by nonprofits and
-academic centres. Those account for 52 of the 467 operating firms (11.1%) but for 46.9% of
-every firm whose record-level data a researcher can reach at all.
+academic centres. Those account for 57 of the 513 operating firms (11.1%) but for a little under
+half of every firm whose record-level data a researcher can reach at all.
+
+### Which owners publish, precisely
+
+Earlier revisions of this document said openness is a function of who owns the
+collector. That is right but too loose, and the addition of state space agencies
+this revision makes the precise version available. Share of firms whose
+record-level data is open or reachable by a researcher, by ownership type:
+
+| Ownership | Firms | Open or researcher-accessible |
+|---|---|---|
+| Academic | 10 | 90.0% |
+| Nonprofit | 49 | 89.8% |
+| Industry cooperative | 4 | 25.0% |
+| Venture-backed | 163 | 19.6% |
+| Subsidiary | 43 | 14.0% |
+| Publicly listed | 40 | 12.5% |
+| **State-linked** | **18** | **11.1%** |
+| Private equity | 34 | 8.8% |
+| Owner-managed independent | 152 | 7.9% |
+
+The split is not public against private. It is **grant-funded against
+revenue-funded**. Academic and nonprofit collectors publish at nine in ten. Every
+other category, state ownership included, sits between 8% and 25%.
+
+State-linked collectors are the least open category bar one. Eleven of the
+eighteen release nothing at all. This covers VCIOM and FOM in Russia, CTR and
+CSM in China, Ijtimoiy Fikr in Uzbekistan and ISPA in Iran, but also the African
+and Middle Eastern space agencies added this revision: NASRDA, the Egyptian Space
+Agency, the Kenya Space Agency and ESSTI are all coded `none`. Public ownership
+of a collector predicts nothing about public access to what it collects.
 
 That last point explains an otherwise odd result. The access ratio is slightly
 *higher* in Russia and Central Asia (0.27) and Sub-Saharan Africa (0.26) than in
@@ -825,3 +855,56 @@ methods exist, that they are a real and growing share of how populations get
 measured, and that `human_subjects` and `consent_model` return empty for them in
 the same way they return empty for the synthetic research firms in section 13.
 Two different frontiers, arriving at the same blank.
+
+## 16. Africa and MENA now have more earth observation bodies than North America
+
+Adding the state space agencies and the Israeli and Gulf operators puts 23 earth
+observation organisations in MENA and Sub-Saharan Africa against 21 in North
+America. On a headcount the periphery has caught up. On structure it has not.
+
+| Ownership | MENA and Africa | North America and Western Europe |
+|---|---|---|
+| State-linked | 7 | 0 |
+| Venture-backed | 8 | 18 |
+| Owner-managed independent | 6 | 0 |
+| Publicly listed | 1 | 5 |
+| Private equity | 0 | 3 |
+| Nonprofit | 1 | 0 |
+| Subsidiary | 0 | 2 |
+
+Not one North American or Western European earth observation organisation in this
+register is state-linked. Seven of twenty-three in MENA and Africa are: SANSA,
+NASRDA, the Egyptian Space Agency, the Kenya Space Agency, ESSTI, MBRSC and
+TÜBİTAK UZAY. Six more are owner-managed independents, mostly small drone survey
+firms, a category with no Northern equivalent in this segment at all.
+
+Three consequences follow, and they run against the headcount.
+
+**Access is worse, not better.** Four of the seven state agencies release nothing
+outside government. The Northern venture-backed operators at least sell. What is
+openly available across Africa comes from one nonprofit, Digital Earth Africa,
+which makes Landsat and Sentinel archives analysis-ready for 54 countries and is
+the single largest open earth observation resource on the continent, built on
+satellites nobody in Africa owns.
+
+**The satellites are mostly not African.** Nigeria's NigeriaSat series and
+Ethiopia's ETRSS were built abroad; Digital Earth Africa processes American and
+European public imagery. South Africa has a real space manufacturing base, and
+CubeSpace, NewSpace Systems, Simera Sense and Dragonfly Aerospace between them
+supplied over 280 products to a single SpaceX rideshare in July 2026. They are
+excluded from this register on the same rule that excludes analytics vendors:
+they do not collect. The continent builds cameras and payloads and processes
+other people's imagery, with few commercial operators of its own in between.
+
+**The market is tiny.** African satellite earth observation is valued at roughly
+77 million dollars in 2025, projected to reach 112 million by 2030. That is the
+whole continental market across 54 countries, against the tens of billions moving
+through the consumer data brokerage and AI training segments. Twenty-three
+organisations is not a sign of depth; it is a sign of how little revenue each
+needs to exist.
+
+What this does not support is a story about African earth observation catching
+up. It supports a narrower and more useful one: the collection layer over Africa
+and MENA is now substantially locally operated, disproportionately by states,
+mostly on foreign hardware, and less accessible to outside researchers than the
+Northern commercial layer it sits alongside.

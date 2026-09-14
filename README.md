@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 557 organisations that collect data as their business, 501 of them
+A register of 569 organisations that collect data as their business, 513 of them
 still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
@@ -12,11 +12,11 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 557 | The register. One row per organisation, 25 variables. 501 operating, 56 exited. |
-| `data/coverage_spatial.csv` | 557 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 569 | The register. One row per organisation, 25 variables. 513 operating, 56 exited. |
+| `data/coverage_spatial.csv` | 569 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 2,385 | Hand-coded country footprints for 201 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 26,651 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 26,994 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 23 | Industry segment taxonomy. |
 | `data/domains.csv` | 27 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -51,14 +51,17 @@ Both startups and established firms are included by design, and so are firms tha
 no longer exist. 56 organisations in the register have exited: 46 absorbed into
 an acquirer, 10 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
-uses the 501 operating firms only**; `scripts/05_history.R` analyses the rest.
+uses the 513 operating firms only**; `scripts/05_history.R` analyses the rest.
 
-116 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
+128 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
 bloc or mainland China, the areas where enumeration effort has been concentrated.
 
 Pure analytics vendors, consultancies and platforms that only process data
-others collected are out of scope. Government statistical offices are out of
-scope as producers, though firms that resell their output are in.
+others collected are out of scope, and so are hardware suppliers that build
+sensors or satellite payloads without operating them. Government statistical
+offices are out of scope as producers, though firms that resell their output are
+in. State agencies that operate collection systems, such as national space
+agencies, are in and are coded `state_linked`.
 
 ## Headline findings
 
@@ -96,6 +99,14 @@ scope as producers, though firms that resell their output are in.
   reaches all 194 with three firms, because listening for radio emitters from
   orbit needs no participant at all. The frontier splits between methods that
   need someone on the ground and methods that do not.
+- **Africa and MENA now hold more earth observation organisations than North
+  America**, 23 against 21, but seven are state agencies and North America has
+  none. Four of the seven release nothing outside government, so the locally
+  operated layer is less accessible than the Northern commercial one it sits
+  beside. The continental market is worth about $77m.
+- **Openness tracks grant funding, not public ownership.** Academic and nonprofit
+  collectors publish at 90%. State-linked collectors publish at **11.1%**, below
+  venture-backed firms at 19.6% and second-lowest of any ownership type.
 - **None of the token-incentivised sensor networks reaches Africa.** Contributor
   sensing there is supplied by a Ugandan university lab publishing openly, a
   South African civic-data nonprofit, a Kenyan soil-sensor firm and two Northern

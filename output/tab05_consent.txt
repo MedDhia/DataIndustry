@@ -5,7 +5,7 @@ Consent basis by human subject contact
 --------------------------------------------
 contractual_third_party   0       56     0  
 explicit_consent         243      14     0  
-not_applicable            0       3      72 
+not_applicable            0       3      84 
 platform_terms            26      26     0  
 public_record             1       25     35 
 --------------------------------------------

@@ -6,12 +6,12 @@ Evidence level of coded records by segment
 ai_training_data     7  19 18
 audience_measurement 3  5  10
 b2b_firmographic     1  12 6 
-climate_risk         5  7  10
+climate_risk         6  7  10
 collection_software  3  6  8 
 consumer_broker      3  5  7 
 crowd_micro          0  2  5 
 distributed_sensing  4  4  0 
-earth_observation    10 22 14
+earth_observation    13 29 15
 expert_network       0  2  3 
 field_agency         6  19 91
 financial_altdata    0  5  7 

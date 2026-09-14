@@ -235,3 +235,34 @@ firms. Gulf activity in this space is concentrated in drone survey services
 data products. The MENA figure in section 15 should be read with that in mind:
 it is thin because the firms appear not to exist, not only because they are hard
 to find, though this register cannot fully separate the two.
+
+## Retrieved for the MENA and Africa earth observation round
+
+- Space in Africa, South African companies supply 280+ products on Transporter-17 — https://spaceinafrica.com/2026/07/16/south-african-space-companies-supply-over-280-products-in-spacex-transporter-17-launch/
+- Dragonfly Aerospace — https://dragonflyaerospace.com/dragonfly-aerospace-keeping-the-south-african-space-dream-alive/
+- Mordor Intelligence, Africa satellite-based earth observation market — https://www.mordorintelligence.com/industry-reports/africa-satellite-based-earth-observation-market
+- Digital Earth Africa — https://digitalearthafrica.org/en_za/
+- Tech In Africa, African countries with satellites 2026 — https://www.techinafrica.com/african-countries-with-satellites-full-list-uses-2026/
+- Defence Blog, Israeli firm unveils satellite that spots 25-centimetre details (EROS NOVA) — https://defence-blog.com/israeli-firm-unveils-satellite-that-spots-25-centimeter-details/
+- Wikipedia, EROS satellite series — https://en.wikipedia.org/wiki/EROS_(satellite)
+- TRT World, Fergani sends another homegrown satellite into space — https://www.trtworld.com/article/412caf6edd6a
+- Google Cloud, Taranis drone imaging and AI — https://cloud.google.com/customers/taranis
+- AgFunderNews, Agritask Series A for farm data in frontier markets — https://agfundernews.com/brief-agritask-closes-8-5m-series-a-to-advance-farm-data-in-frontier-markets
+- Calcalist, Israeli agritech startups leading crop innovation — https://www.calcalistech.com/ctechnews/article/r1e6jlnji
+
+Two scope decisions in this round, both recorded because they change what the
+counts mean. South African satellite component makers (CubeSpace, NewSpace
+Systems, Simera Sense) and the satellite and payload builder Dragonfly Aerospace
+are excluded under the same rule that excludes analytics vendors: they supply the
+means of collection without collecting. Their exclusion is why the register shows
+a thin African commercial earth observation layer alongside a real African space
+manufacturing base, and readers counting African space capability should add them
+back. Turkish firms building position navigation and timing constellations, among
+them Fergani Space, are excluded on the same logic, since a timing signal is
+infrastructure rather than data about the world.
+
+Conversely, national space agencies that operate imaging satellites are included
+and coded `state_linked`, because they do collect. That decision is what produces
+the finding in section 16, and a reader who thinks public bodies do not belong in
+a register of the data industry should subtract the seven and read the section
+accordingly.
