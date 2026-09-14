@@ -3,9 +3,9 @@ Consent basis by human subject contact
 ============================================
                         direct indirect none
 --------------------------------------------
-contractual_third_party   0       46     0  
-explicit_consent         185      7      0  
-not_applicable            0       3      37 
-platform_terms            22      17     0  
-public_record             0       25     28 
+contractual_third_party   0       50     0  
+explicit_consent         221      8      0  
+not_applicable            0       3      41 
+platform_terms            24      19     0  
+public_record             1       25     32 
 --------------------------------------------

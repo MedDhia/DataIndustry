@@ -47,6 +47,7 @@ FOCUS = {
  "arab_barometer":"MENA","lapop":"LAC","gamaan":"MENA","ipm_belarus":"RUS",
  "laterite":"SSA","sagaci_research":"SSA","latinobarometro":"LAC",
  "central_asia_barometer":"RUS","serasa_experian":"LAC","uk_biobank":"WEU",
+ "iranpoll":"MENA","zogby_research":"MENA",
 }
 
 # Hand-coded rows. Order follows REGIONS.
@@ -120,6 +121,9 @@ MANUAL = {
  "awrad":[0,0,0,0,0,3,0,0,0,0,0,0],"nama_strategic":[0,0,0,0,0,3,0,0,0,0,0,0],
  "positium":[1,1,2,2,1,1,1,1,1,1,0,1],"teralytics":[1,1,3,1,0,1,0,1,1,1,0,1],
  "orange_flux_vision":[0,0,3,1,0,2,2,0,0,0,0,0],
+ "reach_initiative":[0,1,0,1,1,3,3,2,1,0,0,0],"acaps":[0,2,0,2,2,3,3,3,2,0,0,1],
+ "viamo":[0,1,0,0,0,1,3,3,2,0,0,0],"space42":[3,3,3,3,3,3,3,3,3,3,3,3],
+ "gro_intelligence":[3,2,2,1,1,2,2,2,2,1,1,1],
  "measurable_ai":[0,1,0,0,0,2,0,2,3,2,1,0],
 }
 

@@ -61,3 +61,24 @@ captured here; national market research association member lists, which are the
 best route to the small field agencies that are hardest to enumerate; and the
 Afrobarometer, Arab Barometer, LAPOP and Latinobarómetro country partner lists,
 which name local fieldwork contractors that appear nowhere else.
+
+## Retrieved for the MENA and Africa expansion
+
+- TechBehemoths, market research agencies in Saudi Arabia — https://techbehemoths.com/companies/market-research/saudi-arabia
+- Infomine Research, market research companies covering the UAE — https://infomineresearch.com/a-list-of-some-of-the-best-market-research-companies-covering-the-uae/
+- TechCabal Insights, Africa's AI Builders: 207 startups — https://insights.techcabal.com/africas-ai-builders-207-startups-and-one-continents-bet/
+- Geoawesome, Top 11 geospatial start-ups in Africa — https://geoawesome.com/top-11-geospatial-start-ups-in-africa/
+- StartupList Africa, data annotation startups — https://www.startuplist.africa/industries/data-annotation
+- Space in Africa, Rwanda geospatial hub — https://spaceinafrica.com/2025/12/19/rwanda-deploys-ai-powered-geospatial-hub-to-transform-agricultural-monitoring/
+- AfriKSurvey — https://afriksurvey.com/
+- Agence Ecofin, Ipsos African bureau — https://www.agenceecofin.com/marketing/2302-36125-l-institut-ipsos-ouvre-un-bureau-africain-et-lance-l-etude-des-marches-d-afrique
+- Citi Newsroom, credit scoring in Africa and Ghana's experience — https://citinewsroom.com/2025/05/credit-scoring-in-africa-evolution-applications-and-ghanas-experience/
+- AFIS, alternative data and African financial inclusion — https://www.afis.africa/en/alternative-data-a-saving-grace-for-african-financial-inclusion-but-a-perfect-storm-without-controls/
+
+Gulf coverage remains the weakest part of the MENA enumeration. Directory
+listings for Saudi Arabia and the UAE return large numbers of small agencies that
+could not be verified beyond the directory entry itself, so they were left out
+rather than added at low confidence. The Gulf firms in the register are those
+attestable from more than one source. Anyone extending this should expect the
+Gulf to be under-enumerated in a way that is not symmetric with the Maghreb and
+the Levant, where independent firms publish and are citable.

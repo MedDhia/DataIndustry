@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 370 organisations that collect data as their business, coded for
+A register of 424 organisations that collect data as their business, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
 
@@ -11,11 +11,11 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 370 | The register. One row per organisation, 24 variables. |
-| `data/coverage_spatial.csv` | 370 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 424 | The register. One row per organisation, 24 variables. |
+| `data/coverage_spatial.csv` | 424 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 766 | Hand-coded country footprints for 62 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 21,249 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 1,122 | Hand-coded country footprints for 93 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 21,961 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -45,8 +45,10 @@ Keeping both in one frame is the point. The industry's apparent global reach
 comes almost entirely from the observational side, and that only becomes visible
 when the two are measured on the same grid.
 
-Both startups and established firms are included by design: 171 established,
-167 scaleups, 32 startups, founded between 1841 and 2024.
+Both startups and established firms are included by design: 188 established,
+192 scaleups, 44 startups, founded between 1841 and 2024. 92 firms are
+headquartered in MENA or Sub-Saharan Africa, which is where enumeration effort
+has been concentrated.
 
 Pure analytics vendors, consultancies and platforms that only process data
 others collected are out of scope. Government statistical offices are out of
@@ -54,8 +56,8 @@ scope as producers, though firms that resell their output are in.
 
 ## Headline findings
 
-- Only **4.2%** of the 312 region-by-domain cells have no provider at all, but
-  **20.5%** have no provider whose record-level data a researcher can obtain.
+- Only **3.8%** of the 312 region-by-domain cells have no provider at all, but
+  **19.9%** have no provider whose record-level data a researcher can obtain.
   The binding constraint is access, not existence.
 - Nominal presence varies 3.5 to 1 between the best and worst served region.
   Direct contact with human subjects varies **7.6 to 1**. Global coverage is
@@ -63,19 +65,24 @@ scope as producers, though firms that resell their output are in.
 - Remote sensing is the only collection method with uniform world coverage.
   Online panels are five times denser in North America than in Sub-Saharan
   Africa; face-to-face interviewing runs the other way.
-- **62.7%** of firms are headquartered in North America or Western Europe, rising
-  to **87.7%** of venture and private-equity backed firms. Of 34 firms founded
-  since 2019, 29 are in those two regions.
+- **55.9%** of firms are headquartered in North America or Western Europe, rising
+  to **80.7%** of venture and private-equity backed firms. Of 46 firms founded
+  since 2019, 29 are in those two regions and 9 are in Sub-Saharan Africa, where
+  new entry is in African-language AI training data, geospatial and alternative
+  credit rather than in survey research.
 - Identity, biometric and credit data is collected in all twelve regions and
   released to outside researchers in none. At country level, identity data is
   obtainable in 165 countries and accessible in zero.
 - Every one of 194 countries has at least one collector, and the minimum is 28.
-  Turkmenistan, the least served, has 28 organisations collecting data about it
+  Turkmenistan, the least served, has 29 organisations collecting data about it
   and **not one that speaks to a Turkmen**. The floor beneath every country is
   satellites and web crawlers.
-- The number of distinct collection methods available falls from 14.1 in
-  high-income countries to 8.2 in low-income ones. Transaction data exists in
-  27 countries of 194; credit data in 99.
+- The number of distinct collection methods available falls from 14.0 in
+  high-income countries to 8.8 in low-income ones. Transaction data exists in
+  28 countries of 194; credit data in 103.
+- Identity and biometric data is obtainable in 165 countries and accessible to
+  an outside researcher in 5, all of them through one Rwandan nonprofit's open
+  speech corpora.
 
 `docs/coverage_gaps.md` has the full argument.
 
@@ -99,34 +106,37 @@ derived matrices and is sourced by the analysis scripts.
 Read these before using the data for anything load-bearing.
 
 1. **Coding confidence is uneven and recorded.** The `evidence_level` variable is
-   A for 21 records, B for 140 and C for 209. Level C is analyst judgement:
+   A for 29 records, B for 153 and C for 242. Level C is analyst judgement:
    reliable for segment, region and modality, not reliable for founding dates or
    counts. Filter on it.
-2. **Region coverage is partly rule-derived.** 108 of 370 spatial rows are
-   hand-coded; the remaining 262 come from the documented segment templates in
+2. **Region coverage is partly rule-derived.** 113 of 424 spatial rows are
+   hand-coded; the remaining 311 come from the documented segment templates in
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
 3. **Country coverage is mostly model output, and this is the big one.** Of
-   21,249 company-country rows, 852 are observed (`manual` or `hq_exact`) and
-   20,397 are allocated by the model in `scripts/00_build_country_coverage.py`.
+   21,961 company-country rows, 1,229 are observed (`manual` or `hq_exact`) and
+   20,732 are allocated by the model in `scripts/00_build_country_coverage.py`.
    Country aggregates are usable; an individual firm's country row is not
-   citable. Every country regression is reported twice, once on the full file and
-   once on observed rows only (`output/tab19_sensitivity.txt`). Population,
-   income, connectivity and restrictive research regime survive that test.
-   Conflict exposure does not. The region layer remains the more grounded one.
-4. **Grounding is uneven by design.** Hand-coding is concentrated where the
-   register is most used: MENA and Sub-Saharan Africa are about 10% observed,
-   against 4% for the file overall and 0.2% for Western Europe. Country claims
-   about those two regions rest on real footprints; claims about Western Europe,
-   Oceania and East Asia are almost entirely model. The same asymmetry means the
-   observed-only sensitivity column is a strong check for MENA and Africa and a
-   weak one elsewhere.
+   citable. **Only population and connectivity survive the observed-only
+   sensitivity check** (`output/tab19_sensitivity.txt`); report nothing else from
+   the country regressions. The region layer remains the more grounded one.
+4. **The sensitivity check itself has degraded, and this matters.** Hand-coding
+   is concentrated in MENA (15.4% observed) and Sub-Saharan Africa (14.2%)
+   against 0.2% for Western Europe, so the observed subsample is now mostly poor
+   countries by construction. The income coefficient reverses sign between the
+   full and observed-only columns, and a restrictive-research-regime result that
+   survived the check one revision ago collapsed to zero when 54 firms were
+   added. Section 8 of `coverage_gaps.md` carries the retraction. Fixing this
+   needs hand-coded footprints in Western Europe, Oceania, East Asia and Latin
+   America, not more in MENA and Africa.
 5. **The register is not a census.** Private firms in this industry do not have
    to announce themselves, and the smallest national field agencies are the
    hardest to enumerate. Coverage of MENA, Sub-Saharan Africa and the post-Soviet
-   space reflects deliberate effort, but Central Asia, Francophone West Africa,
-   Central America and the Pacific are certainly under-enumerated. Under-counting
+   space reflects deliberate effort, but Central Asia, Central America and the
+   Pacific are certainly under-enumerated, as are the Gulf states, where most
+   collection runs through a small number of licensed intermediaries that do not
+   advertise. Under-counting
    small local firms biases the findings toward *understating* how much
    collection happens outside the core, which cuts against this document's own
    argument and should be held in mind.
@@ -154,12 +164,12 @@ tables, every coverage score against its range, and the two files against each
 other; it exits non-zero and names the offending records if anything fails, so it
 works as a pre-commit hook.
 
-The highest-value additions, in order: **more hand-coded country footprints**,
-which is the single change that would most improve the country layer, since it
-replaces model rows with observations; national field agencies in Central Asia,
-Francophone Africa and the Pacific, where enumeration is thinnest; a time
-dimension so entry, exit and acquisition can be tracked; and verified revenue for
-the subset where filings exist.
+The highest-value additions, in order: **hand-coded country footprints outside
+MENA and Africa**, which is now the binding constraint on the whole country layer
+because the observed sample is too regionally skewed to validate anything;
+national field agencies in Central Asia, Central America and the Pacific, where
+enumeration is thinnest; a time dimension so entry, exit and acquisition can be
+tracked; and verified revenue for the subset where filings exist.
 
 To replace model rows with observations for a firm, add its countries to
 `data/coverage_country_manual.csv` and rerun the build. Mark the rows

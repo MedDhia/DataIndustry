@@ -4,7 +4,7 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (370 rows, 24 variables)
+## `data/companies.csv` (424 rows, 24 variables)
 
 | Variable | Type | Description |
 |---|---|---|
@@ -54,10 +54,10 @@ dataset and should be reported in anything built on it.
 - `C` — analyst judgement from domain knowledge. Directionally reliable for
   segment, region and modality; not reliable for dates or counts.
 
-Current distribution: A 21, B 140, C 209. Treat every `C` figure as an ordinal
+Current distribution: A 29, B 153, C 242. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (370 rows, 14 variables)
+## `data/coverage_spatial.csv` (424 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -72,8 +72,8 @@ Coverage is ordinal:
 
 `coverage_basis` records how the row was produced:
 
-- `manual` (108 rows) — hand-coded from specific knowledge of the firm.
-- `segment_template` (262 rows) — derived by the documented rule in
+- `manual` (113 rows) — hand-coded from specific knowledge of the firm.
+- `segment_template` (311 rows) — derived by the documented rule in
   `scripts/00_build_coverage.py` from segment, `spatial_scope` and focus region.
   For the single-country and single-region field agencies that make up most of
   these rows the rule is near-exact. For globally scoped firms it is an
@@ -131,7 +131,7 @@ specific coding should change it and rerun.
 Note that region code `NOAM` is used for North America rather than `NAM`,
 because `NAM` is the ISO3 code for Namibia.
 
-## `data/coverage_country_manual.csv` (766 rows, 62 organisations)
+## `data/coverage_country_manual.csv` (1,122 rows, 93 organisations)
 
 Hand-coded country footprints: `company_id`, `iso3`, `coverage`, `scope`.
 Sources are published country lists (the barometer networks), regional hub
@@ -139,9 +139,9 @@ partner lists, and known office and delivery-centre networks.
 
 `scope` governs how the row interacts with the model:
 
-- `exhaustive` (462 rows) — the list is complete. The firm's country coverage
+- `exhaustive` (798 rows) — the list is complete. The firm's country coverage
   comes entirely from here and the model adds nothing.
-- `partial` (304 rows) — these countries are observed. The model fills the rest
+- `partial` (324 rows) — these countries are observed. The model fills the rest
   of the firm's stated country budget around them, and hand-coded rows spend
   that budget first.
 
@@ -149,10 +149,11 @@ partner lists, and known office and delivery-centre networks.
 not force a claim about its Latin American ones. Without it, partial knowledge
 would shrink a footprint rather than improve it.
 
-Coverage is weighted toward MENA and Sub-Saharan Africa by design: those two
-regions are about 10% observed against 4% for the file overall and 0.2% for
-Western Europe. Section 12 of `coverage_gaps.md` gives the full breakdown and
-what it means for the sensitivity check.
+Coverage is weighted toward MENA and Sub-Saharan Africa by design: 15.4% and
+14.2% of their country rows are observed, against 5.6% for the file overall and
+0.2% for Western Europe. That skew has now degraded the observed-only sensitivity
+check to the point where it no longer validates the model. Section 12 of
+`coverage_gaps.md` gives the breakdown and the consequence.
 
 ### Observations override the feasibility gate
 
@@ -162,7 +163,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (21,249 rows, 9 variables)
+## `data/coverage_country.csv` (21,961 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -180,24 +181,28 @@ anti-join: a pair not present here is a pair with no coverage.
 
 | Basis | Rows | Status |
 |---|---|---|
-| `manual` | 766 | Observation. Hand-coded footprint. |
-| `hq_exact` | 86 | Observation. Single-country firm resolved to its headquarters country. |
-| `allocated` | 20,397 | Model output. |
+| `manual` | 1,122 | Observation. Hand-coded footprint. |
+| `hq_exact` | 107 | Observation. Single-country firm resolved to its headquarters country. |
+| `allocated` | 20,732 | Model output. |
 
-**96% of rows are model output**, and 90% in MENA and Sub-Saharan Africa. An `allocated` row says where a firm of that
+**94% of rows are model output**, and 85% in MENA and Sub-Saharan Africa. An `allocated` row says where a firm of that
 type, regional footprint and stated country count most likely operates. It is
 not a claim that the firm operates there. Aggregate country counts are usable;
 an individual firm's row is not citable.
 
 `scripts/04_country_gaps.R` reports every country-level regression twice, once
-on the full file and once on the 852 observed rows only (`tab19_sensitivity`).
+on the full file and once on the 1,229 observed rows only (`tab19_sensitivity`).
 A result that appears only in the full column is a property of the allocation
-rule. On the current data, population, income, internet penetration and
-restrictive research regime survive that test; conflict exposure does not.
+rule. On the current data **only population and internet penetration survive**,
+keeping their sign in both columns. Income reverses sign; restrictive research
+regime and conflict exposure go to zero.
 
-Because hand-coding is concentrated in MENA and Africa, the observed-only column
-is a strong check for those regions and a weak one elsewhere. It is a sensitivity
-test, not an out-of-sample validation.
+The income reversal is a diagnostic, not a finding: because hand-coding is
+concentrated in MENA and Africa, the observed subsample is mostly poor countries,
+so a regression on it recovers the shape of the coding effort. The observed-only
+column can no longer be treated as a validation of the model, only as a signal
+that a result is unstable. Report nothing from the country regressions that does
+not hold in both columns with the same sign.
 
 ### The allocation model
 

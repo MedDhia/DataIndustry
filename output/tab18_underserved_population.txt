@@ -3,24 +3,24 @@ Twenty worst served large countries per 10 million population
 =====================================================================================================================
               country_name           region_code income_group population_band n_providers n_primary providers_per_10m
 ---------------------------------------------------------------------------------------------------------------------
-128 Democratic Republic of the Congo     SSA         LIC            XL            50         19            2.5       
-131             Ethiopia                 SSA         LIC            XL            50         21            2.5       
-89               Egypt                  MENA         LMIC           XL            66         30            3.3       
-180              China                   CHN         UMIC           XL            68         12            3.4       
-78               Russia                  RUS         UMIC           XL            73         12            3.6       
-167           Philippines                SEA         LMIC           XL            81         31            4.0       
-121             Nigeria                  SSA         LMIC           XL            101        37            5.0       
-166             Vietnam                  SEA         LMIC           XL            104        33            5.2       
-156            Bangladesh                SAS         LMIC           XL            126        44            6.3       
-173              Japan                   EAS         HIC            XL            131        34            6.6       
-31               Brazil                  LAC         UMIC           XL            137        42            6.8       
-3                Mexico                  LAC         UMIC           XL            139        45            7.0       
-162            Indonesia                 SEA         UMIC           XL            141        48            7.0       
-155             Pakistan                 SAS         LMIC           XL            152        56            7.6       
-154              India                   SAS         LMIC           XL            173        71            8.7       
-104               Iran                  MENA         LMIC            L            64         17            9.1       
-1            United States              NOAM         HIC            XL            236        92           11.8       
-83             Tajikistan                RUS         LMIC            M            33          3           13.2       
-140             Tanzania                 SSA         LMIC            L            96         32           13.7       
-81             Uzbekistan                RUS         LMIC            M            35          4           14.0       
+128 Democratic Republic of the Congo     SSA         LIC            XL            60         25            3.0       
+131             Ethiopia                 SSA         LIC            XL            62         28            3.1       
+180              China                   CHN         UMIC           XL            69         12            3.5       
+78               Russia                  RUS         UMIC           XL            75         12            3.8       
+89               Egypt                  MENA         LMIC           XL            80         37            4.0       
+167           Philippines                SEA         LMIC           XL            82         31            4.1       
+166             Vietnam                  SEA         LMIC           XL            105        33            5.2       
+121             Nigeria                  SSA         LMIC           XL            118        47            5.9       
+156            Bangladesh                SAS         LMIC           XL            130        46            6.5       
+173              Japan                   EAS         HIC            XL            132        34            6.6       
+31               Brazil                  LAC         UMIC           XL            140        42            7.0       
+3                Mexico                  LAC         UMIC           XL            142        45            7.1       
+162            Indonesia                 SEA         UMIC           XL            145        49            7.2       
+155             Pakistan                 SAS         LMIC           XL            156        57            7.8       
+154              India                   SAS         LMIC           XL            177        72            8.8       
+104               Iran                  MENA         LMIC            L            66         18            9.4       
+1            United States              NOAM         HIC            XL            239        92           11.9       
+83             Tajikistan                RUS         LMIC            M            34          3           13.6       
+81             Uzbekistan                RUS         LMIC            M            36          4           14.4       
+105             Turkiye                 MENA         UMIC            L            103        33           14.7       
 ---------------------------------------------------------------------------------------------------------------------
