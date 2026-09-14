@@ -6,25 +6,25 @@ The grid is 12 regions by 26 substantive domains, so 312 cells.
 
 ## 1. The industry is nominally almost universal
 
-Only 12 of 312 region-domain cells (3.8%) have no provider at all. Read on its
+Only 7 of 312 region-domain cells (2.2%) have no provider at all. Read on its
 own this says the map is filled in. It is not the useful reading.
 
 Provider counts by region:
 
 | Region | Any presence | Substantial | HQ'd there | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| NOAM | 254 | 239 | 163 | 91 | 48 |
-| WEU | 234 | 204 | 74 | 77 | 41 |
-| SAS | 228 | 180 | 16 | 75 | 33 |
-| MENA | 238 | 160 | 49 | 71 | 34 |
-| SEA | 222 | 154 | 11 | 58 | 29 |
-| LAC | 218 | 151 | 14 | 53 | 29 |
-| EEU | 216 | 142 | 16 | 48 | 33 |
-| SSA | 222 | 141 | 43 | 65 | 39 |
-| EAS | 208 | 139 | 14 | 40 | 27 |
-| OCE | 201 | 132 | 4 | 28 | 26 |
-| RUS | 150 | 89 | 17 | 23 | 22 |
-| CHN | 161 | 78 | 23 | 13 | 15 |
+| NOAM | 261 | 246 | 171 | 96 | 49 |
+| WEU | 241 | 210 | 74 | 81 | 41 |
+| SAS | 235 | 183 | 16 | 76 | 34 |
+| MENA | 249 | 167 | 54 | 75 | 34 |
+| SSA | 242 | 157 | 56 | 71 | 43 |
+| SEA | 229 | 156 | 11 | 58 | 29 |
+| LAC | 224 | 153 | 14 | 53 | 29 |
+| EEU | 223 | 144 | 16 | 48 | 33 |
+| EAS | 214 | 141 | 14 | 40 | 27 |
+| OCE | 207 | 134 | 4 | 28 | 26 |
+| RUS | 152 | 89 | 17 | 23 | 22 |
+| CHN | 167 | 80 | 23 | 13 | 15 |
 
 The spread between the best and worst served region is 3.5 to 1 on presence but
 7.6 to 1 on direct human contact. Nominal coverage is far more even than real
@@ -33,7 +33,7 @@ never touch a person.
 
 ## 2. Three different gaps, with different causes
 
-**Existence gaps** are rare and concentrated. The twelve empty cells are almost
+**Existence gaps** are rare and concentrated. The seven empty cells are almost
 all in mainland China and the Russia bloc, plus financial transaction data, which
 is absent from six of twelve regions. Consumer transaction panels exist only where
 card networks, receipt apps and data aggregators are dense and legally permitted:
@@ -98,30 +98,48 @@ a public professional profile, which is not the labour force.
 
 ## 4. Where the firms are
 
-55.9% of the register is headquartered in North America or Western Europe.
-Among venture and private-equity backed firms that rises to 80.7%. Of the 46
-firms founded in 2019 or later, 23 are North American and 6 Western European,
-leaving 17 for the rest of the world: nine in Sub-Saharan Africa, five in MENA,
-two in Latin America, one in South Asia. None are in the Russia bloc, mainland
-China, East Asia, Southeast Asia or Oceania.
+52.1% of the register is headquartered in North America or Western Europe, down
+from 62.7% before MENA, African, Russian and Chinese enumeration was deepened.
+Among venture and private-equity backed firms it is still 73.6%.
 
-The African entry is concentrated and recent, and it is not in survey research.
-It is in AI training data for African languages (Lelapa AI, Masakhane, Digital
-Umuganda, Awarri, DataLens Africa), in geospatial and environmental data (Amini,
-Charis UAS), and in alternative credit scoring (Indicina). The new African firms
-are building the observational layer their countries previously only received
-from abroad.
+Of the 62 firms founded in 2019 or later, 31 are North American, 13 Sub-Saharan
+African, 8 MENA, 6 Western European and 4 elsewhere. A third of new entry in this
+industry is now Middle Eastern or African, which was not visible in earlier
+revisions of this register and is not an artifact of looking harder: these are
+firms with funding rounds, products and named customers.
 
-New entry by segment since 2019: AI training data (9), survey insights (6),
-climate risk (4), field agencies (4), earth observation (3), web data (3),
-location and mobility (2). The growth is in repackaging and in remote sensing,
-not in getting closer to populations that are currently poorly measured.
+What they are building differs sharply by region.
+
+| Segment of firms founded 2019 or later | MENA and Africa | North America and Western Europe |
+|---|---|---|
+| AI training data | 7 | 11 |
+| Survey and insights | 0 | 12 |
+| Field data collection | 5 | 2 |
+| Earth observation | 4 | 2 |
+| Climate risk | 0 | 4 |
+| Web data | 2 | 1 |
+
+Not one of the 21 MENA and African startups is in survey and insights, and 12 of
+the 37 North American and Western European ones are. The new Northern firms are
+overwhelmingly tools for asking questions differently: AI-moderated interviewing
+(Listen Labs, Strella, Outset, Conveo, Perspective AI, TheySaid, Versive) and
+population simulation (Aaru, Simile). The new Southern firms are building
+collection capacity that did not exist: African-language speech corpora (Intron
+Health, African Languages Lab, Lelapa AI, Digital Umuganda, Awarri), Arabic
+dialect corpora (CNTXT AI, Arabic.AI), field sensing (Aflabox, Tolbi, Amini,
+Charis UAS) and clinical record estates (Helium Health).
+
+Of the 44 AI training data firms in the register, 13 are headquartered in MENA or
+Sub-Saharan Africa against 21 in North America. This is the one segment where the
+periphery has meaningful ownership rather than supplying labour to firms
+headquartered elsewhere, and the reason is linguistic: nobody in San Francisco
+can assemble a Hausa or Tunisian Arabic corpus.
 
 Ownership varies systematically by region. Venture capital backs 66 firms in
 North America and 26 in Western Europe, against roughly 20 across MENA, Africa,
 South Asia, Southeast Asia, East Asia and mainland China combined. Outside the core, the
 register is dominated by owner-managed independents and by nonprofits and
-academic centres. Those account for 48 of the 424 firms (11.3%) but for 45.7% of
+academic centres. Those account for 52 of the 470 firms (11.1%) but for 46.9% of
 every firm whose record-level data a researcher can reach at all.
 
 That last point explains an otherwise odd result. The access ratio is slightly
@@ -233,22 +251,22 @@ allocation model.
 
 | Predictor | Full file | Observed rows, like-for-like | Observed rows, all firms |
 |---|---|---|---|
-| Population over 100m (vs under 1m) | +1.63 | +2.64 | +2.93 |
-| Internet over 70% (vs under 30%) | +0.60 | +0.58 | +0.39 |
-| Restrictive research regime | −0.27 | −0.23 | +0.04, n.s. |
-| Conflict-affected | +0.06, n.s. | +0.09, n.s. | −0.01, n.s. |
+| Population over 100m (vs under 1m) | +1.65 | +2.61 | +2.86 |
+| Internet over 70% (vs under 30%) | +0.58 | +0.53 | +0.41 |
+| Restrictive research regime | −0.26 | −0.21 | +0.03, n.s. |
+| Conflict-affected | +0.06, n.s. | +0.08, n.s. | −0.03, n.s. |
 | High income (vs low) | +0.16, n.s. | −0.46 | −0.001, n.s. |
 
 Population, connectivity and restrictive research regime hold their sign and
 significance between the first two columns. Conflict is a consistent null.
 Income reverses and remains unreportable.
 
-The rank correlation between the full and like-for-like observed counts is 0.775.
+The rank correlation between the full and like-for-like observed counts is 0.797.
 
 ### The third column, and a fault in this test
 
 Read the last two columns against each other. They disagree completely on the
-restrictive-regime coefficient, −0.23 against +0.04. The difference is not in
+restrictive-regime coefficient, −0.21 against +0.03. The difference is not in
 the data, it is in what is being counted.
 
 Columns 1 and 2 both count **primary collectors** — firms that make direct
@@ -285,10 +303,11 @@ visible because each step was a reasonable reading of what the data then showed.
 | Western Europe and Latin America added | −0.30 | reinstated |
 | Russia and China added, old test | +0.04 | apparently overturned |
 | Russia and China added, corrected test | −0.23 | holds |
+| Startup round added | −0.21 | holds |
 
 The first three rows all used the mismatched comparison. On the corrected test
-the result holds, and the full-file estimate has sat between −0.19 and −0.29
-throughout, never moving much. It was the test that was unstable, not the
+the result holds across two further rounds, and the full-file estimate has sat
+between −0.19 and −0.29 throughout, never moving much. It was the test that was unstable, not the
 finding.
 
 ### What the finding is still worth
@@ -316,7 +335,7 @@ social surveys and aerial and marine surveying. These are not proxies for regime
 type, they are rules about who may collect.
 
 Conflict exposure does not predict provider counts in any column and has not
-across four revisions. That null is the most stable result in this document.
+across five revisions. That null is the most stable result in this document.
 
 ## 9. Data types are missing from most of the world
 
@@ -457,22 +476,22 @@ rows that are observations rather than model output:
 
 | Region | Observed rows | Total rows | Share |
 |---|---|---|---|
-| Mainland China | 61 | 159 | 38.4% |
-| Russia and Central Asia | 200 | 523 | 38.2% |
-| MENA | 366 | 2,338 | 15.7% |
-| Sub-Saharan Africa | 612 | 4,236 | 14.4% |
-| North America | 58 | 403 | 14.4% |
-| Western Europe | 360 | 3,283 | 11.0% |
-| Latin America | 252 | 3,625 | 7.0% |
-| South Asia | 37 | 1,075 | 3.4% |
-| Southeast Asia | 41 | 1,268 | 3.2% |
-| Eastern Europe | 52 | 2,445 | 2.1% |
-| East Asia | 10 | 803 | 1.2% |
-| Oceania | 11 | 1,497 | 0.7% |
-| **All** | **2,060** | **21,655** | **9.5%** |
+| Russia and Central Asia | 200 | 525 | 38.1% |
+| Mainland China | 61 | 165 | 37.0% |
+| MENA | 437 | 2,426 | 18.0% |
+| Sub-Saharan Africa | 778 | 4,440 | 17.5% |
+| North America | 58 | 409 | 14.2% |
+| Western Europe | 360 | 3,328 | 10.8% |
+| Latin America | 257 | 3,656 | 7.0% |
+| South Asia | 45 | 1,090 | 4.1% |
+| Southeast Asia | 47 | 1,283 | 3.7% |
+| Eastern Europe | 52 | 2,462 | 2.1% |
+| East Asia | 10 | 810 | 1.2% |
+| Oceania | 11 | 1,508 | 0.7% |
+| **All** | **2,316** | **22,102** | **10.5%** |
 
-Mainland China and the Russia bloc are now the best-grounded regions in the file
-at roughly 38% observed, which is what they should be: they are the regions this
+The Russia bloc and mainland China are the best-grounded regions in the file at
+roughly 37 to 38% observed, which is what they should be: they are the regions this
 register makes its strongest claims about. Seven regions sit between 7% and 16%.
 Three remain thin: Eastern Europe (2.1%), East Asia (1.2%) and Oceania (0.7%),
 with South and Southeast Asia just above them at 3.4% and 3.2%.
@@ -484,7 +503,7 @@ both of which cost a retraction to learn.
 round put almost all hand-coding into MENA and Africa, and a regression on the
 observed rows then recovered the shape of the coding effort rather than the
 industry. Balancing across regions fixed that. The rank correlation between
-modelled and observed primary-collector counts is now 0.775.
+modelled and observed primary-collector counts is now 0.797.
 
 **Hand-coding is not neutral across firm types, and that biases the check
 itself.** A satellite operator's country coverage is knowable from orbital
@@ -499,3 +518,45 @@ Where grounding still fails: Eastern Europe, East Asia, Oceania, and South and
 Southeast Asia. Of these, Eastern Europe matters most, because it contains
 Ukraine, Belarus's neighbours and the Western Balkans, where the register makes
 claims about wartime and post-authoritarian data collection on 2.1% observation.
+
+## 13. Survey firms that interview nobody
+
+Three firms in the register sit in a solicited segment while having no contact
+with a human subject at all. One is Statista, which models and resells rather
+than collects. The other two are new, and they are not an oddity.
+
+Aaru, founded March 2024, generates populations of agents and predicts how
+demographic or geographic groups will respond. It raised a Series A in December
+2025 at a one billion dollar headline valuation, counts Accenture, EY and
+Interpublic among its partners, and reported calling a New York Democratic
+primary to within 371 votes. Simile raised a hundred million dollar Series A led
+by Index Ventures on the same premise.
+
+Both are classified here as `survey_insights` with `human_subjects = none` and
+`consent_model = not_applicable`, because every variable the register measures
+about how data reaches a firm returns empty for them. There is no sampling frame,
+no field period, no response rate, no consent, and no respondent.
+
+This matters for the register in a specific way. Every gap measured in this
+document rests on distinguishing firms that reach a population from firms that
+model one. The provider counts in section 1, the primary-collection column, the
+modality tables in section 10, and the sensitivity test in section 8 all depend
+on that line holding. Synthetic research is the first segment that makes the line
+contested rather than obvious, because its output is shaped exactly like survey
+output and is sold into the same procurement.
+
+The substantive risk is worth naming plainly, since it runs in the direction
+opposite to most technology optimism. Simulated respondents are trained on the
+data that already exists. Where collection is dense, simulation has something to
+learn from. Where it is thin, which is most of section 12's bottom half, it has
+the register's own gaps as its training distribution. A synthetic panel for
+Turkmenistan can only reproduce what is already known about Turkmenistan, which
+this register puts at zero organisations making direct contact with anyone there.
+If simulation substitutes for collection at the margin, it will do so most easily
+in exactly the places where the underlying evidence is weakest, and it will
+return confident answers there.
+
+The register takes no position on whether these methods work. It records that
+they exist, that they are capitalised at a scale comparable to the largest
+traditional panel businesses, and that they are counted separately from anyone
+who speaks to a person.

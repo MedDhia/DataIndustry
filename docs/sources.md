@@ -109,3 +109,30 @@ sources and domain knowledge. Both are likely under-enumerated in the same
 direction: firms serving domestic state clients publish less about themselves
 than firms serving commercial ones, so the register probably over-represents the
 commercially visible end of both markets.
+
+## Retrieved for the startup expansion
+
+- Arab News, MENA startup funding H1 2026 — https://www.arabnews.com/node/2651443/business-economy
+- entARABI, startup investments July 2026 — https://entarabi.com/en/2026/08/startup-investments-reach-3-3-billion-in-july-2026-as-uae-leads-ai-funding-and-saudi-arabia-diversifies-deal-activity/
+- CNTXT AI — https://www.cntxt.tech/
+- Tech In Africa, Egypt tops Africa H1 2026 startup funding — https://www.techinafrica.com/egypt-tops-africas-h1-2026-startup-funding-but-nigeria-reclaims-the-equity-crown/
+- Startup Map Africa, top agritech startups 2026 — https://startupmapafrica.com/blog/top-agritech-startups-africa-2026
+- TechCabal, African Languages Lab launches Mansa — https://techcabal.com/2026/09/08/mansa-ai-african-languages/
+- TechCabal, Google speech dataset for African languages — https://techcabal.com/2026/02/02/google-joins-push-to-localise-ai-for-african-languages-with-speech-database/
+- IT News Africa, Intron launches voice AI for Africa with 24 languages — https://www.itnewsafrica.com/2026/03/intron-launches-voice-ai-for-africa-with-24-languages/
+- Startup List Africa, Intron Health profile — https://www.startuplist.africa/startups/intron-health
+- Lacuna Fund, language datasets — https://lacunafund.org/datasets/language/index.html
+- TechCrunch, Aaru Series A at a $1bn headline valuation — https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation
+- Research Live, Accenture invests in synthetic audience startup Aaru — https://www.research-live.com/article/news/accenture-invests-in-synthetic-audience-startup-aaru/id/5136643
+- FishDog, synthetic research platforms 2026 market map — https://fish.dog/news/synthetic-research-platforms-the-2026-market-map
+- Tracxn, drone services startups in Africa — https://tracxn.com/d/explore/drone-services-startups-in-africa
+
+Two enumeration cautions for this round. African Languages Lab does not publicly
+state a headquarters; it is coded to the founding research base with
+`evidence_level` B and the note records the uncertainty. Several small Arabic
+annotation vendors surfaced by directory searches (Alaraby AI, Dialect Data and
+others) were left out because their headquarters could not be established from
+more than one source, which continues the Gulf under-enumeration recorded above.
+Startup enumeration also has a survivorship problem this register cannot fix:
+firms that raised and announced are far easier to find than firms that did not,
+so the startup layer over-represents the venture-funded end of new entry.

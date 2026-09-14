@@ -47,7 +47,7 @@ FOCUS = {
  "arab_barometer":"MENA","lapop":"LAC","gamaan":"MENA","ipm_belarus":"RUS",
  "laterite":"SSA","sagaci_research":"SSA","latinobarometro":"LAC",
  "central_asia_barometer":"RUS","serasa_experian":"LAC","uk_biobank":"WEU",
- "iranpoll":"MENA","zogby_research":"MENA",
+ "iranpoll":"MENA","zogby_research":"MENA","african_languages_lab":"SSA",
 }
 
 # Hand-coded rows. Order follows REGIONS.

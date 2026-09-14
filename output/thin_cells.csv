@@ -6,7 +6,6 @@
 "LAC","financial_transactions",0,0
 "OCE","financial_transactions",0,0
 "RUS","device_telemetry",0,0
-"SSA","device_telemetry",0,0
 "CHN","financial_transactions",1,0
 "EAS","financial_transactions",1,0
 "MENA","financial_transactions",1,0
@@ -19,6 +18,7 @@
 "RUS","legal_regulatory",1,1
 "SAS","financial_transactions",1,0
 "SEA","financial_transactions",1,0
+"SSA","device_telemetry",1,0
 "SSA","financial_transactions",1,0
 "SSA","legal_regulatory",1,1
 "WEU","financial_transactions",1,0

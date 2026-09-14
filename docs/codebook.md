@@ -4,7 +4,7 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (444 rows, 24 variables)
+## `data/companies.csv` (470 rows, 24 variables)
 
 | Variable | Type | Description |
 |---|---|---|
@@ -26,7 +26,7 @@ primary key across every file.
 | `countries_claimed` | integer | Countries the firm claims to reach. A marketing figure, recorded as stated, not verified. |
 | `domains_primary` | list | Substantive domains that are core to the business, from `domains.csv`. |
 | `domains_secondary` | list | Domains covered but not central. |
-| `human_subjects` | factor | `direct` (the firm interacts with people), `indirect` (data about people obtained from a third party or a device), `none`. |
+| `human_subjects` | factor | `direct` (the firm interacts with people), `indirect` (data about people obtained from a third party or a device), `none`. A solicited-segment firm coded `none` is either a desk-research reseller or a synthetic research firm that simulates respondents rather than recruiting them; see section 13 of `coverage_gaps.md`. |
 | `consent_model` | factor | `explicit_consent`, `platform_terms`, `contractual_third_party`, `public_record`, `not_applicable`. |
 | `access_model` | factor | `project_commission`, `subscription`, `api_license`, `marketplace`, `panel_rental`, `open_free`. |
 | `microdata_access` | factor | Who can obtain record-level data: `open`, `researcher_restricted`, `commercial_only`, `none`. |
@@ -54,10 +54,10 @@ dataset and should be reported in anything built on it.
 - `C` — analyst judgement from domain knowledge. Directionally reliable for
   segment, region and modality; not reliable for dates or counts.
 
-Current distribution: A 32, B 161, C 251. Treat every `C` figure as an ordinal
+Current distribution: A 38, B 172, C 260. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (444 rows, 14 variables)
+## `data/coverage_spatial.csv` (470 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -131,7 +131,7 @@ specific coding should change it and rerun.
 Note that region code `NOAM` is used for North America rather than `NAM`,
 because `NAM` is the ISO3 code for Namibia.
 
-## `data/coverage_country_manual.csv` (1,937 rows, 162 organisations)
+## `data/coverage_country_manual.csv` (2,193 rows, 182 organisations)
 
 Hand-coded country footprints: `company_id`, `iso3`, `coverage`, `scope`.
 Sources are published country lists (the barometer networks), regional hub
@@ -139,7 +139,7 @@ partner lists, and known office and delivery-centre networks.
 
 `scope` governs how the row interacts with the model:
 
-- `exhaustive` (942 rows) — the list is complete. The firm's country coverage
+- `exhaustive` (1,198 rows) — the list is complete. The firm's country coverage
   comes entirely from here and the model adds nothing.
 - `partial` (995 rows) — these countries are observed. The model fills the rest
   of the firm's stated country budget around them, and hand-coded rows spend
@@ -149,10 +149,10 @@ partner lists, and known office and delivery-centre networks.
 not force a claim about its Latin American ones. Without it, partial knowledge
 would shrink a footprint rather than improve it.
 
-Grounding is uneven and the unevenness matters. Mainland China (38.4%) and the
-Russia bloc (38.2%) are best grounded, followed by MENA (15.7%), Sub-Saharan
-Africa (14.4%), North America (14.4%), Western Europe (11.0%) and Latin America
-(7.0%), against 9.5% for the file overall. Eastern Europe (2.1%), East Asia
+Grounding is uneven and the unevenness matters. The Russia bloc (38.1%) and
+mainland China (37.0%) are best grounded, followed by MENA (18.0%), Sub-Saharan
+Africa (17.5%), North America (14.2%), Western Europe (10.8%) and Latin America
+(7.0%), against 10.5% for the file overall. Eastern Europe (2.1%), East Asia
 (1.2%) and Oceania (0.7%) remain thin. Section 12 of `coverage_gaps.md` gives the
 breakdown and what four rounds of hand-coding taught about building one.
 
@@ -164,7 +164,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (21,655 rows, 9 variables)
+## `data/coverage_country.csv` (22,102 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -182,18 +182,18 @@ anti-join: a pair not present here is a pair with no coverage.
 
 | Basis | Rows | Status |
 |---|---|---|
-| `manual` | 1,937 | Observation. Hand-coded footprint. |
+| `manual` | 2,193 | Observation. Hand-coded footprint. |
 | `hq_exact` | 123 | Observation. Single-country firm resolved to its headquarters country. |
-| `allocated` | 19,595 | Model output. |
+| `allocated` | 19,786 | Model output. |
 
-**90% of rows are model output**, falling to about 62% for mainland China and the
-Russia bloc, which are the best-grounded regions in the file. An `allocated` row says where a firm of that
+**90% of rows are model output**, falling to about 62% for the Russia bloc and
+mainland China, which are the best-grounded regions in the file. An `allocated` row says where a firm of that
 type, regional footprint and stated country count most likely operates. It is
 not a claim that the firm operates there. Aggregate country counts are usable;
 an individual firm's row is not citable.
 
 `scripts/04_country_gaps.R` reports every country-level regression twice, once
-on the full file and once on the 2,060 observed rows only (`tab19_sensitivity`).
+on the full file and once on the 2,316 observed rows only (`tab19_sensitivity`).
 A result that appears only in the full column is a property of the allocation
 rule.
 
@@ -210,7 +210,7 @@ restrictive-regime result, described in section 8 of `coverage_gaps.md`.
 On the corrected test, **population, connectivity and restrictive research regime
 survive**, conflict exposure is a consistent null, and income reverses sign and
 remains unreportable. The rank correlation between full and observed
-primary-collector counts is 0.775.
+primary-collector counts is 0.797.
 
 ### The allocation model
 

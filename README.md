@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 444 organisations that collect data as their business, coded for
+A register of 470 organisations that collect data as their business, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
 
@@ -11,11 +11,11 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 444 | The register. One row per organisation, 24 variables. |
-| `data/coverage_spatial.csv` | 444 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 470 | The register. One row per organisation, 24 variables. |
+| `data/coverage_spatial.csv` | 470 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 1,937 | Hand-coded country footprints for 162 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 21,655 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 2,193 | Hand-coded country footprints for 182 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 22,102 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -46,9 +46,9 @@ comes almost entirely from the observational side, and that only becomes visible
 when the two are measured on the same grid.
 
 Both startups and established firms are included by design: 200 established,
-200 scaleups, 44 startups, founded between 1841 and 2024. 92 firms are
+211 scaleups, 59 startups, founded between 1841 and 2026. 110 firms are
 headquartered in MENA or Sub-Saharan Africa and 20 in the Russia bloc or mainland
-China, the two areas where enumeration effort has been concentrated.
+China, the areas where enumeration effort has been concentrated.
 
 Pure analytics vendors, consultancies and platforms that only process data
 others collected are out of scope. Government statistical offices are out of
@@ -75,11 +75,17 @@ scope as producers, though firms that resell their output are in.
   localisation from 1 March 2026. Ipsos sold 80% of Ipsos Comcon that February
   and Nielsen moved to divest. Mediascope, which measures Russian media, is 80%
   owned by the state pollster VCIOM.
-- **55.9%** of firms are headquartered in North America or Western Europe, rising
-  to **80.7%** of venture and private-equity backed firms. Of 46 firms founded
-  since 2019, 29 are in those two regions and 9 are in Sub-Saharan Africa, where
-  new entry is in African-language AI training data, geospatial and alternative
-  credit rather than in survey research.
+- **52.1%** of firms are headquartered in North America or Western Europe, down
+  from 62.7% as enumeration deepened. Of 62 firms founded since 2019, 31 are
+  North American but **21 are MENA or African** — a third of new entry.
+- What the new firms build splits by region. Not one of the 21 MENA and African
+  startups is in survey and insights; 12 of the 37 Northern ones are. The North
+  is building new ways to ask questions (AI-moderated interviewing, population
+  simulation); the South is building collection capacity that did not exist
+  (African-language and Arabic-dialect corpora, field sensing, clinical records).
+- Three firms sit in a solicited segment while contacting nobody. Two are new:
+  **Aaru** and **Simile** simulate respondents rather than recruiting them, and
+  are capitalised at a scale comparable to the largest panel businesses.
 - Identity, biometric and credit data is collected in all twelve regions and
   released to outside researchers in none. At country level, identity data is
   obtainable in 165 countries and accessible in zero.
@@ -124,8 +130,8 @@ Read these before using the data for anything load-bearing.
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
-3. **Country coverage is mostly model output.** Of 21,655 company-country rows,
-   2,060 are observed (`manual` or `hq_exact`) and 19,595 are allocated by the
+3. **Country coverage is mostly model output.** Of 22,102 company-country rows,
+   2,316 are observed (`manual` or `hq_exact`) and 19,786 are allocated by the
    model in `scripts/00_build_country_coverage.py`. Country aggregates are
    usable; an individual firm's country row is not citable. Report nothing from
    the country regressions that does not hold in the first two columns of
@@ -139,9 +145,9 @@ Read these before using the data for anything load-bearing.
    observed count reads that compositional shift as a change in the world. It
    produced one false retraction. The test now compares primary collectors
    against primary collectors; the third column is kept as a warning.
-5. **Grounding is uneven across regions.** Mainland China (38.4%) and the Russia
-   bloc (38.2%) are best grounded, then MENA, Sub-Saharan Africa, North America,
-   Western Europe and Latin America between 7% and 16%. Eastern Europe (2.1%),
+5. **Grounding is uneven across regions.** The Russia bloc (38.1%) and mainland
+   China (37.0%) are best grounded, then MENA (18.0%), Sub-Saharan Africa
+   (17.5%), North America, Western Europe and Latin America between 7% and 15%. Eastern Europe (2.1%),
    East Asia (1.2%) and Oceania (0.7%) remain thin; Eastern Europe matters most,
    because the register makes claims about wartime Ukraine and the Western
    Balkans on 2.1% observation.
