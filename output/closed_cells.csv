@@ -1,10 +1,10 @@
 "region","domain","n_providers"
 "MENA","prices_retail",15
-"NAM","identity_biometric",14
+"NOAM","identity_biometric",14
 "SEA","identity_biometric",13
 "SAS","identity_biometric",12
 "WEU","identity_biometric",11
-"NAM","credit_risk",10
+"NOAM","credit_risk",10
 "LAC","identity_biometric",10
 "CHN","consumer_behavior",9
 "WEU","credit_risk",9
@@ -13,7 +13,7 @@
 "CHN","prices_retail",8
 "EEU","identity_biometric",8
 "EAS","identity_biometric",8
-"NAM","financial_transactions",7
+"NOAM","financial_transactions",7
 "LAC","credit_risk",7
 "MENA","identity_biometric",7
 "CHN","identity_biometric",7
@@ -47,6 +47,6 @@
 "RUS","mobility_location",1
 "RUS","identity_biometric",1
 "RUS","education",1
-"NAM","migration_displacement",1
+"NOAM","migration_displacement",1
 "SEA","migration_displacement",1
 "OCE","migration_displacement",1

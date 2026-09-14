@@ -13,7 +13,7 @@ Provider counts by region:
 
 | Region | Any presence | Substantial | HQ'd there | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| NAM | 251 | 236 | 160 | 91 | 48 |
+| NOAM | 251 | 236 | 160 | 91 | 48 |
 | WEU | 231 | 201 | 72 | 77 | 41 |
 | SAS | 222 | 175 | 16 | 73 | 30 |
 | SEA | 216 | 150 | 11 | 57 | 27 |
@@ -52,11 +52,11 @@ The most closed cells are ones where collection is heaviest:
 | Region | Domain | Providers | Research-accessible |
 |---|---|---|---|
 | MENA | Prices and retail | 15 | 0 |
-| NAM | Identity and biometrics | 14 | 0 |
+| NOAM | Identity and biometrics | 14 | 0 |
 | SEA | Identity and biometrics | 13 | 0 |
 | SAS | Identity and biometrics | 12 | 0 |
 | WEU | Identity and biometrics | 11 | 0 |
-| NAM | Credit and financial identity | 10 | 0 |
+| NOAM | Credit and financial identity | 10 | 0 |
 | CHN | Consumer behaviour | 9 | 0 |
 
 Biometric and identity data is the extreme case: collected in all twelve regions,
@@ -64,7 +64,7 @@ released to outside researchers in none. Credit data behaves the same way.
 
 **Modality gaps** are invisible in provider counts. Providers by collection method:
 
-| Method | NAM | WEU | SSA | MENA | RUS | CHN |
+| Method | NOAM | WEU | SSA | MENA | RUS | CHN |
 |---|---|---|---|---|---|---|
 | Remote sensing | 26 | 26 | 26 | 26 | 26 | 26 |
 | Web scraping | 34 | 32 | 8 | 20 | 8 | 5 |
@@ -172,3 +172,191 @@ the ninetieth market is not the first. The ordinal scores in
 `coverage_spatial.csv` exist to separate these, and the honest use of
 `countries_claimed` is as a measure of infrastructure reach read alongside
 `human_subjects` and `modality_primary`, never as a coverage measure on its own.
+
+---
+
+# Country level, by data type and by method
+
+The region tables above are built from hand-coded and rule-derived regional
+scores. This section disaggregates them to 194 countries. Before reading it:
+**98% of the 21,344 company-country rows are model output**, allocated by the
+rules in `scripts/00_build_country_coverage.py`. Only 435 rows are observed.
+Every claim below that survives the observed-only sensitivity check is marked;
+every claim that does not is labelled as a property of the model.
+
+## 7. The floor is made of firms that never touch anyone
+
+Every one of the 194 countries has at least one provider, and the *minimum* is
+28. Turkmenistan, the least served country on earth by this register, still has
+28 organisations collecting data about it.
+
+Not one of them speaks to a Turkmen. All 28 are satellite operators, web
+crawlers, trade and vessel trackers, and open-source monitors. Turkmenistan is
+the only country in the register with zero primary collectors, but the pattern
+generalises: the floor beneath every country is remote sensing and web
+scraping, and it is the same floor everywhere.
+
+| | Providers | Primary collectors | Research-accessible |
+|---|---|---|---|
+| United States | 235 | 91 | 49 |
+| United Kingdom | 198 | 76 | 40 |
+| France | 196 | 74 | 37 |
+| India | 174 | 72 | 29 |
+| Median country | 65 | — | — |
+| Guinea-Bissau | 34 | 8 | 5 |
+| Tajikistan | 33 | 3 | 10 |
+| Kyrgyzstan | 31 | 3 | 8 |
+| Turkmenistan | 28 | 0 | 7 |
+
+The bottom of the distribution is Central Asia and the small states of the Sahel,
+Central Africa and the Pacific. The gap between the United States and
+Turkmenistan is 8 to 1 on providers and unbounded on primary collection.
+
+## 8. What predicts whether anyone collects data about a country
+
+Regressing country provider counts on country characteristics (full table in
+`output/tab17_country_model.txt`, R² = 0.75):
+
+| Predictor | Effect on log providers |
+|---|---|
+| High income (vs low) | +0.77 |
+| Population over 100m (vs under 1m) | +0.83 |
+| Internet over 70% (vs under 30%) | +0.27 |
+| Conflict-affected | +0.04, not significant |
+| Restrictive research regime | −0.19 |
+
+Population and connectivity are the strongest predictors and **both survive the
+observed-only check** with larger coefficients: on hand-coded rows alone, XL
+population carries +2.96 and high internet +1.08. Size and connectivity really
+do determine who gets measured.
+
+The conflict and restrictive-regime coefficients **do not survive**. On observed
+rows only they fall to 0.005 and −0.09, neither significant. The
+restrictive-regime result in the full model is partly circular: the regional
+scores that feed the allocation already encode thin coverage for Russia and
+China, and those countries are coded restrictive. Do not cite it.
+
+## 9. Data types are missing from most of the world
+
+Country availability of each data type, out of 194:
+
+| Data type | Countries with any | Missing | Accessible to researchers | Collected but closed |
+|---|---|---|---|---|
+| Financial transactions | 27 | 167 | 0 | 27 |
+| Device telemetry | 92 | 102 | 46 | 46 |
+| Credit and financial identity | 99 | 95 | 0 | 99 |
+| Mobility and location | 121 | 73 | 64 | 57 |
+| Migration and displacement | 153 | 41 | 90 | 63 |
+| Labour and employment | 158 | 36 | 96 | 62 |
+| Identity and biometrics | 165 | 29 | **0** | 165 |
+| Education | 175 | 19 | 68 | 107 |
+| Consumer behaviour | 177 | 17 | 97 | 80 |
+| Prices and retail | 189 | 5 | 53 | 136 |
+| Public opinion | 194 | 0 | 185 | 9 |
+| Earth observation | 194 | 0 | 194 | 0 |
+| Environment and climate | 194 | 0 | 194 | 0 |
+| Conflict and security | 194 | 0 | 194 | 0 |
+| Housing and property | 194 | 0 | 99 | 95 |
+
+Two distinct shapes appear, and they need different remedies.
+
+Financial transactions, credit and device telemetry are **absent** from most of
+the world. Transaction data exists in 27 countries and credit data in 99, because
+they are by-products of card networks, credit bureaux and smartphone penetration
+that most countries do not have. No amount of market access opens these up; the
+underlying infrastructure is not there to observe.
+
+Identity and biometrics, prices, education, consumer behaviour and housing are
+**present and closed**. Retail price data reaches 189 countries and is reachable
+by an outside researcher in 53. Education data reaches 175 and is reachable in
+68. Identity and biometric data is the pure case: obtainable in 165 countries,
+accessible in none of them. Here the data exists and the barrier is commercial
+and legal, which is a tractable problem in a way the first shape is not.
+
+The data types that stay open are the ones nonprofits, academics and satellite
+operators hold: earth observation, environment and climate, conflict and security
+(194 of 194 each), public opinion (185 of 194), social media discourse (184 of
+184). Openness in this industry is a function of who owns the collector, not of
+what is collected.
+
+## 10. Poor countries are reachable by fewer methods
+
+The number of distinct collection methods available in a country falls sharply
+with income:
+
+| Income group | Mean distinct methods available |
+|---|---|
+| High income | 14.1 |
+| Upper middle income | 13.0 |
+| Lower middle income | 11.3 |
+| Low income | 8.2 |
+
+Conflict-affected countries average 10.3 distinct methods against 12.6 elsewhere
+(p < 0.001). That difference holds where the earlier regional claim about
+conflict coverage did not: conflict does not reliably reduce the *number* of
+collectors, but it does narrow the *repertoire*.
+
+Share of provider-country pairs using each method, in the least served quartile
+of countries against the rest:
+
+| Method | Bottom quartile | Rest |
+|---|---|---|
+| Remote sensing | 26.3% | 13.9% |
+| API and partner feeds | 17.3% | 15.2% |
+| Web scraping | 16.0% | 17.3% |
+| Face-to-face | 9.4% | 9.6% |
+| Telephone | 6.8% | 6.3% |
+| Administrative records | 6.0% | 7.0% |
+| Online panel | 5.4% | 10.2% |
+| Sensor hardware | 5.2% | 4.6% |
+| Transaction | 3.0% | 3.2% |
+| Device telemetry | 1.6% | 3.4% |
+| Crowd task | 1.2% | 3.4% |
+| Expert elicitation | 0.9% | 3.3% |
+| Clinical records | 0% | 0.7% |
+
+In the least served quartile, more than a quarter of all coverage is a satellite
+looking down. Face-to-face and telephone hold roughly their share, so in-person
+capacity has not collapsed, but it is a constant share of a much smaller
+absolute base. What disappears is everything else: online panels at half their
+share elsewhere, crowd tasking and expert elicitation at a third, device
+telemetry at half, clinical records at zero.
+
+This is the modality gap at country resolution, and it has a methodological
+consequence for anyone doing comparative work. In a low-income country the
+available evidence is an overhead image, a household interview, or a phone call.
+There is no passive trace layer to triangulate against, so a single badly drawn
+sample has nothing to correct it. In a high-income country the same question can
+be approached five ways. Treating a variable as equivalently measured across both
+assumes away the largest source of error in the data.
+
+Nonprofit and academic organisations supply 16.2% of providers in
+conflict-affected countries against 10.9% elsewhere (p < 0.001). Where the
+commercial case is weakest, the collection that happens is funded rather than
+sold, which is also why it is more likely to be published.
+
+## 11. What this changes about the regional picture
+
+The country layer sharpens three of the earlier findings and qualifies one.
+
+Sharpened: the access gap is worse than the regional tables showed, because
+closure concentrates in exactly the domains that are present nearly everywhere.
+Retail prices reach 189 countries and are reachable in 53; identity and
+biometrics reach 165 and are reachable in none.
+
+Sharpened: the modality gap is a country-level phenomenon, not a regional one.
+MENA as a region looks moderately served; Turkmenistan, Yemen and Libya do not,
+and they are averaged in with the Gulf and Morocco.
+
+Sharpened: the industry's floor is uniform and thin. Every country is covered,
+because satellites and crawlers cover everything. Nothing about that floor tells
+you what people in a country think, earn, or do.
+
+Qualified: the earlier regional claim that conflict-affected settings are
+particularly poorly covered is **not established at country level**. Once
+allocation is stripped out, conflict exposure has no measurable relationship
+with provider counts either way. What the register supports is narrower and
+firmer, and both parts clear the significance threshold: conflict-affected
+countries are reachable by fewer distinct methods (10.3 against 12.6), and the
+organisations that cover them are disproportionately nonprofit or academic
+(16.2% against 10.9%).

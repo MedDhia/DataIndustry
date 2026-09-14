@@ -13,6 +13,9 @@ actually gathering the data, and what is nobody gathering?
 |---|---|---|
 | `data/companies.csv` | 370 | The register. One row per organisation, 24 variables. |
 | `data/coverage_spatial.csv` | 370 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
+| `data/coverage_country_manual.csv` | 349 | Hand-coded country footprints for 40 organisations. |
+| `data/coverage_country.csv` | 21,344 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -64,17 +67,27 @@ scope as producers, though firms that resell their output are in.
   to **87.7%** of venture and private-equity backed firms. Of 34 firms founded
   since 2019, 29 are in those two regions.
 - Identity, biometric and credit data is collected in all twelve regions and
-  released to outside researchers in none.
+  released to outside researchers in none. At country level, identity data is
+  obtainable in 165 countries and accessible in zero.
+- Every one of 194 countries has at least one collector, and the minimum is 28.
+  Turkmenistan, the least served, has 28 organisations collecting data about it
+  and **not one that speaks to a Turkmen**. The floor beneath every country is
+  satellites and web crawlers.
+- The number of distinct collection methods available falls from 14.1 in
+  high-income countries to 8.2 in low-income ones. Transaction data exists in
+  27 countries of 194; credit data in 99.
 
 `docs/coverage_gaps.md` has the full argument.
 
 ## Reproducing the analysis
 
 ```sh
-python3 scripts/00_validate.py         # check the register against every controlled vocabulary
-python3 scripts/00_build_coverage.py   # rebuild the coverage matrix from rules + overrides
-Rscript  scripts/02_descriptives.R     # descriptive tables -> output/
-Rscript  scripts/03_coverage_gaps.R    # gap analysis -> output/
+python3 scripts/00_build_coverage.py          # region coverage matrix
+python3 scripts/00_build_country_coverage.py  # country coverage, typed by method and domain
+python3 scripts/00_validate.py                # check every file against every vocabulary
+Rscript  scripts/02_descriptives.R            # descriptive tables -> output/
+Rscript  scripts/03_coverage_gaps.R           # region gap analysis -> output/
+Rscript  scripts/04_country_gaps.R            # country gap analysis -> output/
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
@@ -89,12 +102,21 @@ Read these before using the data for anything load-bearing.
    A for 21 records, B for 140 and C for 209. Level C is analyst judgement:
    reliable for segment, region and modality, not reliable for founding dates or
    counts. Filter on it.
-2. **Coverage scores are partly rule-derived.** 108 of 370 spatial rows are
+2. **Region coverage is partly rule-derived.** 108 of 370 spatial rows are
    hand-coded; the remaining 262 come from the documented segment templates in
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
-3. **The register is not a census.** Private firms in this industry do not have
+3. **Country coverage is mostly model output, and this is the big one.** Of
+   21,344 company-country rows, 435 are observed (`manual` or `hq_exact`) and
+   20,909 are allocated by the model in `scripts/00_build_country_coverage.py`.
+   Country aggregates are usable; an individual firm's country row is not
+   citable. Every country regression is reported twice, once on the full file and
+   once on observed rows only (`output/tab19_sensitivity.txt`). Population and
+   connectivity survive that test. Conflict exposure and restrictive research
+   regime do not, and the restrictive-regime coefficient is partly circular.
+   The region layer remains the empirically grounded one.
+4. **The register is not a census.** Private firms in this industry do not have
    to announce themselves, and the smallest national field agencies are the
    hardest to enumerate. Coverage of MENA, Sub-Saharan Africa and the post-Soviet
    space reflects deliberate effort, but Central Asia, Francophone West Africa,
@@ -102,16 +124,16 @@ Read these before using the data for anything load-bearing.
    small local firms biases the findings toward *understating* how much
    collection happens outside the core, which cuts against this document's own
    argument and should be held in mind.
-4. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
+5. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
    perhaps a fifth of the register, and a column that is mostly missing invites
    misuse. What could be verified is in the `notes` field with its source in
    `docs/sources.md`.
-5. **The snapshot is September 2026.** This industry consolidates fast. Recent
+6. **The snapshot is September 2026.** This industry consolidates fast. Recent
    changes already reflected: Publicis acquiring LiveRamp, Experian acquiring
    AtData, Maxar becoming Vantor, Adobe acquiring Semrush, Meta's stake in
    Scale AI and the subsequent shift of frontier-lab demand to Surge, Mercor and
    Handshake.
-6. **Region is a coarse unit.** MENA as one cell hides the difference between
+7. **Region is a coarse unit.** MENA as one cell hides the difference between
    Tunisia, where several independent firms compete, and the Gulf, where almost
    all collection runs through a small number of licensed intermediaries. Country
    level coding is the obvious extension.
@@ -126,7 +148,14 @@ tables, every coverage score against its range, and the two files against each
 other; it exits non-zero and names the offending records if anything fails, so it
 works as a pre-commit hook.
 
-The highest-value additions, in order: country-level rather than region-level
-coverage; national field agencies in Central Asia, Francophone Africa and the
-Pacific; a time dimension so entry, exit and acquisition can be tracked; and
-verified revenue for the subset where filings exist.
+The highest-value additions, in order: **more hand-coded country footprints**,
+which is the single change that would most improve the country layer, since it
+replaces model rows with observations; national field agencies in Central Asia,
+Francophone Africa and the Pacific, where enumeration is thinnest; a time
+dimension so entry, exit and acquisition can be tracked; and verified revenue for
+the subset where filings exist.
+
+To replace model rows with observations for a firm, add its countries to
+`data/coverage_country_manual.csv` and rerun the build. Manual rows override the
+model entirely for that firm, and the `basis` counts printed by the build script
+tell you how much of the file is still modelled.

@@ -1,0 +1,52 @@
+
+Sensitivity: modelled country coverage versus hand-coded footprints only
+====================================================================================
+                                              Dependent variable:                   
+                            --------------------------------------------------------
+                            primary collectors (full) providers (observed rows only)
+                               Poisson: full file         Poisson: observed only    
+                                       (1)                         (2)              
+------------------------------------------------------------------------------------
+Income: LMIC                          -0.08                       -0.21             
+                                     (0.11)                       (0.29)            
+                                                                                    
+Income: UMIC                          -0.16                       -0.34             
+                                     (0.12)                       (0.31)            
+                                                                                    
+Income: HIC                          0.44***                     -0.70**            
+                                     (0.12)                       (0.34)            
+                                                                                    
+Population: S                        0.37***                     1.60***            
+                                     (0.06)                       (0.28)            
+                                                                                    
+Population: M                        0.80***                     2.16***            
+                                     (0.05)                       (0.26)            
+                                                                                    
+Population: L                        1.33***                     2.28***            
+                                     (0.06)                       (0.31)            
+                                                                                    
+Population: XL                       1.46***                     2.96***            
+                                     (0.06)                       (0.28)            
+                                                                                    
+Internet: medium                     0.67***                     1.04***            
+                                     (0.10)                       (0.29)            
+                                                                                    
+Internet: high                       0.63***                     1.08***            
+                                     (0.11)                       (0.32)            
+                                                                                    
+Conflict-affected                     0.10*                       0.005             
+                                     (0.05)                       (0.13)            
+                                                                                    
+Restrictive research regime         -0.30***                      -0.09             
+                                     (0.04)                       (0.11)            
+                                                                                    
+Constant                             1.72***                     -1.65***           
+                                     (0.08)                       (0.31)            
+                                                                                    
+------------------------------------------------------------------------------------
+Observations                           194                         194              
+Log Likelihood                       -739.38                     -336.44            
+Akaike Inf. Crit.                   1,502.76                      696.88            
+====================================================================================
+Note:                                                    *p<0.1; **p<0.05; ***p<0.01
+                                 Column 2 uses only manual and hqrows, 435 of 16254.

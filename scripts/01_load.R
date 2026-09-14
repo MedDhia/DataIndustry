@@ -54,3 +54,35 @@ domain_long <- data.frame(
 message(sprintf("loaded %d companies | %d regions | %d domains | %d segments",
                 nrow(companies), length(REGION_CODES), length(DOMAIN_CODES),
                 nrow(segments)))
+
+## ---- country layer ---------------------------------------------------------
+countries <- read_di("countries.csv")
+ccov      <- read_di("coverage_country.csv")
+
+countries$income_group    <- factor(countries$income_group, c("LIC","LMIC","UMIC","HIC"))
+countries$population_band <- factor(countries$population_band, c("XS","S","M","L","XL"))
+countries$internet_band   <- factor(countries$internet_band, c("low","medium","high"))
+
+## Provider counts per country, on the same coverage>=2 threshold used for regions.
+ccov_sub <- ccov[ccov$coverage >= 2, ]
+cmp <- companies[, c("company_id","human_subjects","microdata_access","maturity_class",
+                     "segment_primary","ownership_type")]
+ccov_j <- merge(ccov_sub, cmp, by = "company_id")
+
+tally <- function(sub) {
+  t <- table(factor(sub$iso3, levels = countries$iso3))
+  as.integer(t)
+}
+countries$n_providers    <- tally(ccov_j)
+countries$n_primary      <- tally(ccov_j[ccov_j$human_subjects == "direct", ])
+countries$n_accessible   <- tally(ccov_j[ccov_j$microdata_access %in%
+                                           c("open","researcher_restricted"), ])
+countries$n_any          <- tally(merge(ccov, cmp, by = "company_id"))
+
+## Observed-only counts. `manual` and `hq_exact` rows are hand-coded footprints;
+## `allocated` rows are model output. Anything that holds only in the full file
+## and not here is a property of the allocation rule, not of the industry.
+countries$n_observed <- tally(ccov_j[ccov_j$basis %in% c("manual","hq_exact"), ])
+
+message(sprintf("loaded %d countries | %d company-country rows",
+                nrow(countries), nrow(ccov)))

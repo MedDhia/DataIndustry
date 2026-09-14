@@ -1,0 +1,195 @@
+iso3,country_name,region_code,subregion,income_group,population_band,internet_band,conflict_affected,restrictive_research_regime
+USA,United States,NOAM,Northern America,HIC,XL,high,0,0
+CAN,Canada,NOAM,Northern America,HIC,M,high,0,0
+MEX,Mexico,LAC,Central America,UMIC,XL,high,1,0
+GTM,Guatemala,LAC,Central America,UMIC,M,medium,0,0
+BLZ,Belize,LAC,Central America,UMIC,XS,medium,0,0
+SLV,El Salvador,LAC,Central America,LMIC,S,medium,0,1
+HND,Honduras,LAC,Central America,LMIC,M,medium,0,0
+NIC,Nicaragua,LAC,Central America,LMIC,S,medium,0,1
+CRI,Costa Rica,LAC,Central America,UMIC,S,high,0,0
+PAN,Panama,LAC,Central America,HIC,S,high,0,0
+CUB,Cuba,LAC,Caribbean,UMIC,M,medium,0,1
+DOM,Dominican Republic,LAC,Caribbean,UMIC,M,high,0,0
+HTI,Haiti,LAC,Caribbean,LIC,M,low,1,0
+JAM,Jamaica,LAC,Caribbean,UMIC,S,high,0,0
+TTO,Trinidad and Tobago,LAC,Caribbean,HIC,S,high,0,0
+BHS,Bahamas,LAC,Caribbean,HIC,XS,high,0,0
+BRB,Barbados,LAC,Caribbean,HIC,XS,high,0,0
+LCA,Saint Lucia,LAC,Caribbean,UMIC,XS,high,0,0
+GRD,Grenada,LAC,Caribbean,UMIC,XS,high,0,0
+VCT,Saint Vincent and the Grenadines,LAC,Caribbean,UMIC,XS,high,0,0
+ATG,Antigua and Barbuda,LAC,Caribbean,HIC,XS,high,0,0
+DMA,Dominica,LAC,Caribbean,UMIC,XS,high,0,0
+KNA,Saint Kitts and Nevis,LAC,Caribbean,HIC,XS,high,0,0
+GUY,Guyana,LAC,South America,HIC,XS,medium,0,0
+SUR,Suriname,LAC,South America,UMIC,XS,medium,0,0
+VEN,Venezuela,LAC,South America,UMIC,M,medium,0,1
+COL,Colombia,LAC,South America,UMIC,L,high,1,0
+ECU,Ecuador,LAC,South America,UMIC,M,high,1,0
+PER,Peru,LAC,South America,UMIC,M,high,0,0
+BOL,Bolivia,LAC,South America,LMIC,M,medium,0,0
+BRA,Brazil,LAC,South America,UMIC,XL,high,0,0
+PRY,Paraguay,LAC,South America,UMIC,S,high,0,0
+URY,Uruguay,LAC,South America,HIC,XS,high,0,0
+ARG,Argentina,LAC,South America,UMIC,M,high,0,0
+CHL,Chile,LAC,South America,HIC,M,high,0,0
+GBR,United Kingdom,WEU,Northern Europe,HIC,L,high,0,0
+IRL,Ireland,WEU,Northern Europe,HIC,S,high,0,0
+FRA,France,WEU,Western Europe,HIC,L,high,0,0
+DEU,Germany,WEU,Western Europe,HIC,L,high,0,0
+NLD,Netherlands,WEU,Western Europe,HIC,M,high,0,0
+BEL,Belgium,WEU,Western Europe,HIC,M,high,0,0
+LUX,Luxembourg,WEU,Western Europe,HIC,XS,high,0,0
+CHE,Switzerland,WEU,Western Europe,HIC,S,high,0,0
+AUT,Austria,WEU,Western Europe,HIC,S,high,0,0
+ITA,Italy,WEU,Southern Europe,HIC,L,high,0,0
+ESP,Spain,WEU,Southern Europe,HIC,M,high,0,0
+PRT,Portugal,WEU,Southern Europe,HIC,M,high,0,0
+GRC,Greece,WEU,Southern Europe,HIC,M,high,0,0
+MLT,Malta,WEU,Southern Europe,HIC,XS,high,0,0
+CYP,Cyprus,WEU,Southern Europe,HIC,XS,high,0,0
+DNK,Denmark,WEU,Northern Europe,HIC,S,high,0,0
+SWE,Sweden,WEU,Northern Europe,HIC,M,high,0,0
+NOR,Norway,WEU,Northern Europe,HIC,S,high,0,0
+FIN,Finland,WEU,Northern Europe,HIC,S,high,0,0
+ISL,Iceland,WEU,Northern Europe,HIC,XS,high,0,0
+POL,Poland,EEU,Central Europe,HIC,M,high,0,0
+CZE,Czechia,EEU,Central Europe,HIC,M,high,0,0
+SVK,Slovakia,EEU,Central Europe,HIC,S,high,0,0
+HUN,Hungary,EEU,Central Europe,HIC,S,high,0,0
+ROU,Romania,EEU,Southeast Europe,HIC,M,high,0,0
+BGR,Bulgaria,EEU,Southeast Europe,UMIC,S,high,0,0
+SVN,Slovenia,EEU,Southeast Europe,HIC,XS,high,0,0
+HRV,Croatia,EEU,Southeast Europe,HIC,S,high,0,0
+SRB,Serbia,EEU,Western Balkans,UMIC,S,high,0,0
+BIH,Bosnia and Herzegovina,EEU,Western Balkans,UMIC,S,high,0,0
+MNE,Montenegro,EEU,Western Balkans,UMIC,XS,high,0,0
+MKD,North Macedonia,EEU,Western Balkans,UMIC,S,high,0,0
+ALB,Albania,EEU,Western Balkans,UMIC,S,high,0,0
+XKX,Kosovo,EEU,Western Balkans,UMIC,XS,high,0,0
+EST,Estonia,EEU,Baltic,HIC,XS,high,0,0
+LVA,Latvia,EEU,Baltic,HIC,XS,high,0,0
+LTU,Lithuania,EEU,Baltic,HIC,S,high,0,0
+UKR,Ukraine,EEU,Eastern Europe,LMIC,M,high,1,0
+MDA,Moldova,EEU,Eastern Europe,UMIC,XS,high,0,0
+GEO,Georgia,EEU,South Caucasus,UMIC,S,high,0,0
+ARM,Armenia,EEU,South Caucasus,UMIC,S,high,0,0
+AZE,Azerbaijan,EEU,South Caucasus,UMIC,M,high,0,1
+RUS,Russia,RUS,Russia and Belarus,UMIC,XL,high,1,1
+BLR,Belarus,RUS,Russia and Belarus,UMIC,S,high,0,1
+KAZ,Kazakhstan,RUS,Central Asia,UMIC,M,high,0,1
+UZB,Uzbekistan,RUS,Central Asia,LMIC,M,medium,0,1
+KGZ,Kyrgyzstan,RUS,Central Asia,LMIC,S,medium,0,0
+TJK,Tajikistan,RUS,Central Asia,LMIC,M,medium,0,1
+TKM,Turkmenistan,RUS,Central Asia,UMIC,S,low,0,1
+MAR,Morocco,MENA,North Africa,LMIC,M,high,0,0
+DZA,Algeria,MENA,North Africa,UMIC,M,high,0,1
+TUN,Tunisia,MENA,North Africa,LMIC,M,high,0,0
+LBY,Libya,MENA,North Africa,UMIC,S,medium,1,1
+EGY,Egypt,MENA,North Africa,LMIC,XL,medium,0,1
+SDN,Sudan,MENA,North Africa,LIC,M,low,1,1
+JOR,Jordan,MENA,Levant,UMIC,M,high,0,0
+LBN,Lebanon,MENA,Levant,LMIC,S,high,1,0
+SYR,Syria,MENA,Levant,LIC,M,medium,1,1
+IRQ,Iraq,MENA,Levant,UMIC,M,medium,1,0
+ISR,Israel,MENA,Levant,HIC,S,high,1,0
+PSE,Palestine,MENA,Levant,LMIC,S,medium,1,0
+SAU,Saudi Arabia,MENA,Gulf,HIC,M,high,0,1
+ARE,United Arab Emirates,MENA,Gulf,HIC,M,high,0,1
+QAT,Qatar,MENA,Gulf,HIC,XS,high,0,1
+BHR,Bahrain,MENA,Gulf,HIC,XS,high,0,1
+KWT,Kuwait,MENA,Gulf,HIC,S,high,0,1
+OMN,Oman,MENA,Gulf,HIC,S,high,0,1
+YEM,Yemen,MENA,Gulf,LIC,M,low,1,1
+IRN,Iran,MENA,Iran and Turkiye,LMIC,L,high,0,1
+TUR,Turkiye,MENA,Iran and Turkiye,UMIC,L,high,0,0
+MRT,Mauritania,SSA,Sahel,LMIC,S,medium,0,0
+MLI,Mali,SSA,Sahel,LIC,M,low,1,1
+BFA,Burkina Faso,SSA,Sahel,LIC,M,low,1,1
+NER,Niger,SSA,Sahel,LIC,M,low,1,1
+TCD,Chad,SSA,Sahel,LIC,M,low,1,1
+SEN,Senegal,SSA,West Africa,LMIC,M,medium,0,0
+GMB,Gambia,SSA,West Africa,LIC,XS,medium,0,0
+GNB,Guinea-Bissau,SSA,West Africa,LIC,XS,low,0,0
+GIN,Guinea,SSA,West Africa,LMIC,M,low,0,1
+SLE,Sierra Leone,SSA,West Africa,LIC,S,low,0,0
+LBR,Liberia,SSA,West Africa,LIC,S,low,0,0
+CIV,Ivory Coast,SSA,West Africa,LMIC,M,medium,0,0
+GHA,Ghana,SSA,West Africa,LMIC,M,medium,0,0
+TGO,Togo,SSA,West Africa,LIC,S,low,0,0
+BEN,Benin,SSA,West Africa,LMIC,M,medium,0,0
+NGA,Nigeria,SSA,West Africa,LMIC,XL,medium,1,0
+CPV,Cabo Verde,SSA,West Africa,LMIC,XS,high,0,0
+CMR,Cameroon,SSA,Central Africa,LMIC,M,medium,1,1
+CAF,Central African Republic,SSA,Central Africa,LIC,S,low,1,1
+GNQ,Equatorial Guinea,SSA,Central Africa,UMIC,XS,medium,0,1
+GAB,Gabon,SSA,Central Africa,UMIC,XS,medium,0,0
+COG,Republic of the Congo,SSA,Central Africa,LMIC,S,low,0,1
+COD,Democratic Republic of the Congo,SSA,Central Africa,LIC,XL,low,1,0
+AGO,Angola,SSA,Central Africa,LMIC,M,medium,0,0
+STP,Sao Tome and Principe,SSA,Central Africa,LMIC,XS,medium,0,0
+ETH,Ethiopia,SSA,East Africa,LIC,XL,low,1,1
+ERI,Eritrea,SSA,East Africa,LIC,S,low,0,1
+DJI,Djibouti,SSA,East Africa,LMIC,XS,medium,0,1
+SOM,Somalia,SSA,East Africa,LIC,M,low,1,0
+SSD,South Sudan,SSA,East Africa,LIC,M,low,1,1
+KEN,Kenya,SSA,East Africa,LMIC,M,medium,0,0
+UGA,Uganda,SSA,East Africa,LIC,M,low,0,1
+RWA,Rwanda,SSA,East Africa,LIC,M,medium,0,1
+BDI,Burundi,SSA,East Africa,LIC,M,low,0,1
+TZA,Tanzania,SSA,East Africa,LMIC,L,medium,0,1
+MWI,Malawi,SSA,East Africa,LIC,M,low,0,0
+MDG,Madagascar,SSA,East Africa,LIC,M,low,0,0
+MUS,Mauritius,SSA,East Africa,HIC,S,high,0,0
+SYC,Seychelles,SSA,East Africa,HIC,XS,high,0,0
+COM,Comoros,SSA,East Africa,LMIC,XS,medium,0,0
+ZMB,Zambia,SSA,Southern Africa,LMIC,M,medium,0,0
+ZWE,Zimbabwe,SSA,Southern Africa,LMIC,M,medium,0,1
+MOZ,Mozambique,SSA,Southern Africa,LIC,M,low,1,0
+NAM,Namibia,SSA,Southern Africa,UMIC,S,medium,0,0
+BWA,Botswana,SSA,Southern Africa,UMIC,S,medium,0,0
+ZAF,South Africa,SSA,Southern Africa,UMIC,L,high,0,0
+LSO,Lesotho,SSA,Southern Africa,LMIC,S,medium,0,0
+SWZ,Eswatini,SSA,Southern Africa,LMIC,S,medium,0,0
+IND,India,SAS,South Asia,LMIC,XL,medium,1,1
+PAK,Pakistan,SAS,South Asia,LMIC,XL,medium,1,1
+BGD,Bangladesh,SAS,South Asia,LMIC,XL,medium,0,1
+LKA,Sri Lanka,SAS,South Asia,LMIC,M,medium,0,0
+NPL,Nepal,SAS,South Asia,LMIC,M,medium,0,0
+BTN,Bhutan,SAS,South Asia,LMIC,XS,medium,0,0
+MDV,Maldives,SAS,South Asia,UMIC,XS,high,0,0
+AFG,Afghanistan,SAS,South Asia,LIC,M,low,1,1
+IDN,Indonesia,SEA,Southeast Asia,UMIC,XL,high,0,0
+MYS,Malaysia,SEA,Southeast Asia,UMIC,M,high,0,0
+SGP,Singapore,SEA,Southeast Asia,HIC,S,high,0,0
+THA,Thailand,SEA,Southeast Asia,UMIC,L,high,0,1
+VNM,Vietnam,SEA,Southeast Asia,LMIC,XL,high,0,1
+PHL,Philippines,SEA,Southeast Asia,LMIC,XL,high,1,0
+MMR,Myanmar,SEA,Southeast Asia,LMIC,M,medium,1,1
+KHM,Cambodia,SEA,Southeast Asia,LMIC,M,medium,0,1
+LAO,Laos,SEA,Southeast Asia,LMIC,S,medium,0,1
+BRN,Brunei,SEA,Southeast Asia,HIC,XS,high,0,1
+TLS,Timor-Leste,SEA,Southeast Asia,LMIC,S,low,0,0
+JPN,Japan,EAS,East Asia,HIC,XL,high,0,0
+KOR,South Korea,EAS,East Asia,HIC,L,high,0,0
+PRK,North Korea,EAS,East Asia,LIC,M,low,1,1
+TWN,Taiwan,EAS,East Asia,HIC,M,high,0,0
+HKG,Hong Kong,EAS,East Asia,HIC,S,high,0,1
+MAC,Macau,EAS,East Asia,HIC,XS,high,0,1
+MNG,Mongolia,EAS,East Asia,LMIC,S,high,0,0
+CHN,China,CHN,Mainland China,UMIC,XL,high,0,1
+AUS,Australia,OCE,Australia and New Zealand,HIC,M,high,0,0
+NZL,New Zealand,OCE,Australia and New Zealand,HIC,S,high,0,0
+PNG,Papua New Guinea,OCE,Melanesia,LMIC,M,low,1,0
+FJI,Fiji,OCE,Melanesia,UMIC,XS,medium,0,0
+SLB,Solomon Islands,OCE,Melanesia,LMIC,XS,low,0,0
+VUT,Vanuatu,OCE,Melanesia,LMIC,XS,low,0,0
+WSM,Samoa,OCE,Polynesia,LMIC,XS,medium,0,0
+TON,Tonga,OCE,Polynesia,UMIC,XS,medium,0,0
+TUV,Tuvalu,OCE,Polynesia,UMIC,XS,medium,0,0
+KIR,Kiribati,OCE,Micronesia,LMIC,XS,low,0,0
+NRU,Nauru,OCE,Micronesia,HIC,XS,medium,0,0
+PLW,Palau,OCE,Micronesia,HIC,XS,high,0,0
+FSM,Micronesia,OCE,Micronesia,LMIC,XS,medium,0,0
+MHL,Marshall Islands,OCE,Micronesia,UMIC,XS,medium,0,0

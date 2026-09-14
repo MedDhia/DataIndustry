@@ -14,7 +14,7 @@ deliberately conservative and should be overridden wherever direct evidence exis
 """
 import csv, os
 
-REGIONS = ["NAM","LAC","WEU","EEU","RUS","MENA","SSA","SAS","SEA","EAS","CHN","OCE"]
+REGIONS = ["NOAM","LAC","WEU","EEU","RUS","MENA","SSA","SAS","SEA","EAS","CHN","OCE"]
 
 # Reach of a globally scoped firm in each segment.
 TEMPLATES = {

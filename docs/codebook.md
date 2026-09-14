@@ -101,3 +101,113 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 - `data/domains.csv` — twenty-six substantive domains.
 - `data/modalities.csv` — fifteen collection methods, each tagged by whether it
   brings the firm into contact with a data subject.
+
+---
+
+# Country layer
+
+The region layer above remains the empirically grounded one. The country layer
+disaggregates it, and most of it is model output. Read this section before using
+any country-level figure.
+
+## `data/countries.csv` (194 rows, 9 variables)
+
+| Variable | Type | Description |
+|---|---|---|
+| `iso3` | ISO 3166-1 alpha-3 | Primary key. |
+| `country_name` | string | Common English name. |
+| `region_code` | factor | One of the twelve codes in `regions.csv`. |
+| `subregion` | string | Finer grouping within the region. |
+| `income_group` | factor | `LIC`, `LMIC`, `UMIC`, `HIC`, following the World Bank classification. |
+| `population_band` | factor | `XS` under 1m, `S` 1-10m, `M` 10-50m, `L` 50-100m, `XL` over 100m. |
+| `internet_band` | factor | `low` under 30%, `medium` 30-70%, `high` over 70% of population online. |
+| `conflict_affected` | binary | Sustained armed conflict or acute state fragility as of 2026. |
+| `restrictive_research_regime` | binary | Independent collection is legally gated: survey or research licensing, foreign agent and NGO law, or hostile treatment of foreign data firms. |
+
+The last two are coded judgements against the stated criteria, not indices
+imported from elsewhere. They are blunt, and a user who disagrees with a
+specific coding should change it and rerun.
+
+Note that region code `NOAM` is used for North America rather than `NAM`,
+because `NAM` is the ISO3 code for Namibia.
+
+## `data/coverage_country_manual.csv` (349 rows)
+
+Hand-coded country footprints for 40 organisations: `company_id`, `iso3`,
+`coverage`. Sources are published country lists (the barometer networks) or
+known operating footprints. A firm present in this file has its country
+coverage taken entirely from here, with no model allocation on top.
+
+## `data/coverage_country.csv` (21,344 rows, 9 variables)
+
+One row per company-country pair with non-zero coverage. Absence is the
+anti-join: a pair not present here is a pair with no coverage.
+
+| Variable | Type | Description |
+|---|---|---|
+| `company_id`, `iso3`, `region_code` | key | |
+| `coverage` | 1-3 | Same ordinal scale as the region layer. |
+| `basis` | factor | `manual`, `hq_exact`, `allocated`. |
+| `n_methods`, `n_domains` | integer | Counts of the two list columns. |
+| `methods` | list | Collection methods the firm can actually deploy in this country. |
+| `domains` | list | Substantive data types obtainable from this firm in this country. |
+
+### What `basis` means, and why it matters
+
+| Basis | Rows | Status |
+|---|---|---|
+| `manual` | 349 | Observation. Hand-coded footprint. |
+| `hq_exact` | 86 | Observation. Single-country firm resolved to its headquarters country. |
+| `allocated` | 20,909 | Model output. |
+
+**98% of rows are model output.** An `allocated` row says where a firm of that
+type, regional footprint and stated country count most likely operates. It is
+not a claim that the firm operates there. Aggregate country counts are usable;
+an individual firm's row is not citable.
+
+`scripts/04_country_gaps.R` reports every country-level regression twice, once
+on the full file and once on the 435 observed rows only (`tab19_sensitivity`).
+A result that appears only in the full column is a property of the allocation
+rule. On the current data, population and internet penetration survive that
+test; conflict exposure and restrictive research regime do not.
+
+### The allocation model
+
+Documented in full in the docstring of `scripts/00_build_country_coverage.py`.
+In outline: a firm's `countries_claimed` is treated as a budget, split across
+regions by the square of the regional coverage score times the number of
+countries in the region, then spent from the top of a within-region priority
+ordering, with coverage decaying one step below the median-ranked country.
+
+Three priority orderings are used, because different parts of the industry enter
+countries for different reasons:
+
+- `market` — income, population, connectivity. Firms selling data about a
+  country's consumers or firms.
+- `labour` — population, connectivity, low income. Annotation and micro-task
+  firms, whose country coverage describes where their *workers* are, not who
+  they collect data about.
+- `need` — low income, conflict exposure, population. Firms whose clients are
+  donors and agencies.
+
+Each ordering is a falsifiable claim about market entry. Change the weights,
+rerun, and the gap tables move.
+
+### Method and domain gating
+
+A method is dropped in a country that cannot support it, and a data type is
+dropped where the infrastructure it derives from does not exist. These gates are
+the substantive content of the "by method and by type" coding:
+
+| Gate | Applies to |
+|---|---|
+| Requires internet `medium` or `high` | `online_panel`, `device_passive`, `mobile_app`, `crowd_task`, `expert_elicit`; domains `device_telemetry`, `mobility_location` |
+| Requires income `UMIC` or `HIC` | `clinical_records`; domains `financial_transactions`, `credit_risk` |
+| Requires both | `transaction`; `health_clinical` and `prices_retail` where the firm's primary method is record- or transaction-based |
+| Ungated | `face_to_face`, `telephone`, `web_scrape`, `api_partner`, `admin_records`, `remote_sensing`, `sensor_hardware`, `telecom_network` |
+
+A firm left with no usable method, or no obtainable data type, generates no row
+for that country.
+
+Method repertoires come from the firm's `modality_primary` plus the methods its
+segment can deploy, listed in `SEGMENT_METHODS` in the build script.

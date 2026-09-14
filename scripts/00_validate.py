@@ -83,12 +83,55 @@ def main():
         if r["coverage_basis"] not in {"manual", "segment_template"}:
             err["coverage_basis"].append((r["company_id"], r["coverage_basis"]))
 
+    # Country layer.
+    ctys = list(csv.DictReader(open("data/countries.csv")))
+    iso = {r["iso3"] for r in ctys}
+    if len(iso) != len(ctys):
+        err["duplicate iso3"].append("see countries.csv")
+    for r in ctys:
+        if r["region_code"] not in regs:
+            err["country region_code"].append((r["iso3"], r["region_code"]))
+        for field, allowed in (("income_group", {"HIC", "UMIC", "LMIC", "LIC"}),
+                               ("population_band", {"XS", "S", "M", "L", "XL"}),
+                               ("internet_band", {"high", "medium", "low"}),
+                               ("conflict_affected", {"0", "1"}),
+                               ("restrictive_research_regime", {"0", "1"})):
+            if r[field] not in allowed:
+                err[f"country {field}"].append((r["iso3"], r[field]))
+
+    for r in csv.DictReader(open("data/coverage_country_manual.csv")):
+        if r["company_id"] not in comp_ids:
+            err["manual company_id"].append(r["company_id"])
+        if r["iso3"] not in iso:
+            err["manual iso3"].append(r["iso3"])
+
+    cc = list(csv.DictReader(open("data/coverage_country.csv")))
+    for r in cc:
+        if r["company_id"] not in comp_ids:
+            err["country coverage company_id"].append(r["company_id"])
+        if r["iso3"] not in iso:
+            err["country coverage iso3"].append(r["iso3"])
+        if r["coverage"] not in {"1", "2", "3"}:
+            err["country coverage score"].append((r["company_id"], r["iso3"], r["coverage"]))
+        if r["basis"] not in {"manual", "hq_exact", "allocated"}:
+            err["country coverage basis"].append((r["company_id"], r["basis"]))
+        for d in r["domains"].split("|"):
+            if d not in doms:
+                err["country coverage domain"].append((r["company_id"], d))
+        for m in r["methods"].split("|"):
+            if m not in mods:
+                err["country coverage method"].append((r["company_id"], m))
+    if {r["company_id"] for r in cc} != comp_ids:
+        err["firms absent from country coverage"].append(
+            sorted(comp_ids - {r["company_id"] for r in cc}))
+
     if err:
         for k, v in err.items():
             print(f"{k}: {len(v)} -> {v[:10]}", file=sys.stderr)
         print(f"\nFAILED with {sum(len(v) for v in err.values())} errors", file=sys.stderr)
         return 1
-    print(f"OK: {len(companies)} companies, {len(cov)} coverage rows, no errors")
+    print(f"OK: {len(companies)} companies, {len(cov)} region rows, "
+          f"{len(ctys)} countries, {len(cc)} company-country rows, no errors")
     return 0
 
 if __name__ == "__main__":
