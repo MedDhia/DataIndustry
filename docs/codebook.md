@@ -4,7 +4,7 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (424 rows, 24 variables)
+## `data/companies.csv` (444 rows, 24 variables)
 
 | Variable | Type | Description |
 |---|---|---|
@@ -54,10 +54,10 @@ dataset and should be reported in anything built on it.
 - `C` — analyst judgement from domain knowledge. Directionally reliable for
   segment, region and modality; not reliable for dates or counts.
 
-Current distribution: A 29, B 153, C 242. Treat every `C` figure as an ordinal
+Current distribution: A 32, B 161, C 251. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (424 rows, 14 variables)
+## `data/coverage_spatial.csv` (444 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -131,7 +131,7 @@ specific coding should change it and rerun.
 Note that region code `NOAM` is used for North America rather than `NAM`,
 because `NAM` is the ISO3 code for Namibia.
 
-## `data/coverage_country_manual.csv` (1,709 rows, 120 organisations)
+## `data/coverage_country_manual.csv` (1,937 rows, 162 organisations)
 
 Hand-coded country footprints: `company_id`, `iso3`, `coverage`, `scope`.
 Sources are published country lists (the barometer networks), regional hub
@@ -139,9 +139,9 @@ partner lists, and known office and delivery-centre networks.
 
 `scope` governs how the row interacts with the model:
 
-- `exhaustive` (920 rows) — the list is complete. The firm's country coverage
+- `exhaustive` (942 rows) — the list is complete. The firm's country coverage
   comes entirely from here and the model adds nothing.
-- `partial` (789 rows) — these countries are observed. The model fills the rest
+- `partial` (995 rows) — these countries are observed. The model fills the rest
   of the firm's stated country budget around them, and hand-coded rows spend
   that budget first.
 
@@ -149,13 +149,12 @@ partner lists, and known office and delivery-centre networks.
 not force a claim about its Latin American ones. Without it, partial knowledge
 would shrink a footprint rather than improve it.
 
-Grounding is uneven and the unevenness matters. Five regions are between 7% and
-16% observed (MENA 15.6%, North America 14.4%, Sub-Saharan Africa 14.3%, Western
-Europe 10.9%, Latin America 6.9%) against 8.4% for the file overall. The other
-seven are between 0.7% and 3.5%. Balancing the observed sample across those five
-is what restored the observed-only sensitivity check, which had stopped
-discriminating when hand-coding sat almost entirely in MENA and Africa. Section
-12 of `coverage_gaps.md` gives the breakdown and the argument.
+Grounding is uneven and the unevenness matters. Mainland China (38.4%) and the
+Russia bloc (38.2%) are best grounded, followed by MENA (15.7%), Sub-Saharan
+Africa (14.4%), North America (14.4%), Western Europe (11.0%) and Latin America
+(7.0%), against 9.5% for the file overall. Eastern Europe (2.1%), East Asia
+(1.2%) and Oceania (0.7%) remain thin. Section 12 of `coverage_gaps.md` gives the
+breakdown and what four rounds of hand-coding taught about building one.
 
 ### Observations override the feasibility gate
 
@@ -165,7 +164,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (21,728 rows, 9 variables)
+## `data/coverage_country.csv` (21,655 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -183,28 +182,35 @@ anti-join: a pair not present here is a pair with no coverage.
 
 | Basis | Rows | Status |
 |---|---|---|
-| `manual` | 1,709 | Observation. Hand-coded footprint. |
-| `hq_exact` | 107 | Observation. Single-country firm resolved to its headquarters country. |
-| `allocated` | 19,912 | Model output. |
+| `manual` | 1,937 | Observation. Hand-coded footprint. |
+| `hq_exact` | 123 | Observation. Single-country firm resolved to its headquarters country. |
+| `allocated` | 19,595 | Model output. |
 
-**92% of rows are model output**, and 84% to 89% across the five best-grounded
-regions. An `allocated` row says where a firm of that
+**90% of rows are model output**, falling to about 62% for mainland China and the
+Russia bloc, which are the best-grounded regions in the file. An `allocated` row says where a firm of that
 type, regional footprint and stated country count most likely operates. It is
 not a claim that the firm operates there. Aggregate country counts are usable;
 an individual firm's row is not citable.
 
 `scripts/04_country_gaps.R` reports every country-level regression twice, once
-on the full file and once on the 1,816 observed rows only (`tab19_sensitivity`).
+on the full file and once on the 2,060 observed rows only (`tab19_sensitivity`).
 A result that appears only in the full column is a property of the allocation
-rule. On the current data **population, connectivity and restrictive research
-regime all survive**, keeping sign and significance in both columns, and conflict
-exposure is a consistent null. Income still reverses sign between columns and
-remains unreportable.
+rule.
 
-The rule stands regardless: report nothing from the country regressions that does
-not hold in both columns with the same sign. That rule has already forced one
-retraction and one reinstatement of the restrictive-regime result as the observed
-sample changed shape, which is what it is for.
+**The comparison must hold the outcome variable constant.** Column 1 of
+`tab19_sensitivity` counts primary collectors over the whole file and column 2
+counts them over observed rows only, differing in basis and nothing else. Column
+3 counts all providers on observed rows and is shown only as a warning: it is not
+like-for-like, because hand-coded footprints are far easier to establish for
+satellite and open-source firms than for survey firms, so every round of
+hand-coding shifts the all-firm observed sample toward firms that never contact a
+person. Comparing columns 1 and 3 produced a false collapse of the
+restrictive-regime result, described in section 8 of `coverage_gaps.md`.
+
+On the corrected test, **population, connectivity and restrictive research regime
+survive**, conflict exposure is a consistent null, and income reverses sign and
+remains unreportable. The rank correlation between full and observed
+primary-collector counts is 0.775.
 
 ### The allocation model
 

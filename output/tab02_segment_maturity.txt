@@ -4,26 +4,26 @@ Primary segment by maturity class
                      established scaleup startup Total
 ------------------------------------------------------
 ai_training_data          6        19      11     36  
-audience_measurement     11         3       0     14  
-b2b_firmographic          5        12       0     17  
+audience_measurement     14         4       0     18  
+b2b_firmographic          5        14       0     19  
 climate_risk              2        10       5     17  
 collection_software       9         8       0     17  
 consumer_broker          14         1       0     15  
 crowd_micro               2         5       0      7  
 earth_observation         4        17       5     26  
 expert_network            3         2       0      5  
-field_agency             65        37       7     109 
-financial_altdata         2         7       1     10  
+field_agency             69        37       7     113 
+financial_altdata         3         8       1     12  
 health_rwd                5         9       1     15  
 identity_biometric        4         2       2      8  
 iot_telemetry             4         4       1      9  
-location_mobility         2         5       3     10  
-panel_sample             12        11       1     24  
+location_mobility         3         7       3     13  
+panel_sample             12        13       1     26  
 retail_pricing            8         5       0     13  
 social_osint              9         9       0     18  
-survey_insights          18        11       4     33  
+survey_insights          21        11       4     36  
 telecom_data              1         3       0      4  
 trade_logistics           1         4       0      5  
 web_data                  1         8       3     12  
-Total                    188       192     44     424 
+Total                    200       200     44     444 
 ------------------------------------------------------

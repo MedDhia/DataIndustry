@@ -82,7 +82,16 @@ countries$n_any          <- tally(merge(ccov, cmp, by = "company_id"))
 ## Observed-only counts. `manual` and `hq_exact` rows are hand-coded footprints;
 ## `allocated` rows are model output. Anything that holds only in the full file
 ## and not here is a property of the allocation rule, not of the industry.
-countries$n_observed <- tally(ccov_j[ccov_j$basis %in% c("manual","hq_exact"), ])
+obs_rows <- ccov_j[ccov_j$basis %in% c("manual", "hq_exact"), ]
+countries$n_observed <- tally(obs_rows)
+
+## Like-for-like sensitivity outcome. n_primary counts direct-contact firms over
+## the whole file; this counts direct-contact firms over observed rows only, so
+## the two differ in basis and nothing else. Comparing n_primary against the
+## all-firm n_observed instead confounds the basis restriction with a change of
+## outcome, which matters because hand-coded footprints for satellite and
+## open-source firms are far easier to establish than survey footprints.
+countries$n_observed_primary <- tally(obs_rows[obs_rows$human_subjects == "direct", ])
 
 message(sprintf("loaded %d countries | %d company-country rows",
                 nrow(countries), nrow(ccov)))

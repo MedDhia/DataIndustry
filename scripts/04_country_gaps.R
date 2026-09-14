@@ -114,21 +114,31 @@ for (ty in c("text","latex")) {
 ## 97 percent of company-country rows are allocated by the model in
 ## 00_build_country_coverage.py. Any claim that does not also appear in the
 ## observed-only column is a property of that model.
-m5 <- glm(n_observed ~ income_group + population_band + internet_band +
+## Column 2 is the like-for-like test: same outcome definition as column 1,
+## restricted to observed rows. Column 3 keeps the all-firm count for comparison
+## and is NOT like-for-like, because hand-coded footprints are much easier to
+## establish for satellite and open-source firms than for survey firms, so it
+## mixes the basis restriction with a shift in the composition of collectors.
+m5 <- glm(n_observed_primary ~ income_group + population_band + internet_band +
+            conflict + restrictive, family = poisson, data = countries)
+m6 <- glm(n_observed ~ income_group + population_band + internet_band +
             conflict + restrictive, family = poisson, data = countries)
 for (ty in c("text","latex")) {
   ext <- if (ty == "text") "txt" else "tex"
-  stargazer(m3, m5, type = ty,
-            title = "Sensitivity: modelled country coverage versus hand-coded footprints only",
+  stargazer(m3, m5, m6, type = ty,
+            title = "Sensitivity: modelled coverage versus hand-coded footprints only",
             covariate.labels = lbl,
-            dep.var.labels = c("primary collectors (full)", "providers (observed rows only)"),
-            column.labels = c("Poisson: full file","Poisson: observed only"),
+            dep.var.labels = c("primary collectors", "all providers"),
+            column.labels = c("full file","observed only","observed, all firms"),
             omit.stat = c("ser","f"), digits = 2,
-            notes = "Column 2 uses only manual and hq_exact rows, 435 of 16254.",
+            notes = paste("Columns 1 and 2 share an outcome and differ only in basis.",
+                          "Column 3 changes the outcome and is not like-for-like."),
             out = file.path("output", paste0("tab19_sensitivity.", ext)))
 }
-cat("\ncorrelation between modelled and observed country provider counts: ",
+cat("\ncorrelation, modelled vs observed provider counts: ",
     round(cor(countries$n_providers, countries$n_observed, method = "spearman"), 3), "\n", sep = "")
+cat("correlation, primary collectors, full vs observed: ",
+    round(cor(countries$n_primary, countries$n_observed_primary, method = "spearman"), 3), "\n", sep = "")
 
 ## ---- 5. Underserved relative to population ---------------------------------
 pop_mid <- c(XS = 0.5, S = 5, M = 25, L = 70, XL = 200)   # midpoint of each band, millions
@@ -166,4 +176,6 @@ cat("\nmean primary collectors by research regime:\n")
 print(round(tapply(countries$n_primary, countries$restrictive, mean), 1))
 cat("mean OBSERVED providers by research regime:\n")
 print(round(tapply(countries$n_observed, countries$restrictive, mean), 1))
+cat("mean OBSERVED PRIMARY collectors by research regime (like-for-like):\n")
+print(round(tapply(countries$n_observed_primary, countries$restrictive, mean), 1))
 message("country gap analysis written to output/")

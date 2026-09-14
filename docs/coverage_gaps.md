@@ -19,12 +19,12 @@ Provider counts by region:
 | MENA | 238 | 160 | 49 | 71 | 34 |
 | SEA | 222 | 154 | 11 | 58 | 29 |
 | LAC | 218 | 151 | 14 | 53 | 29 |
-| EEU | 215 | 141 | 15 | 47 | 32 |
+| EEU | 216 | 142 | 16 | 48 | 33 |
 | SSA | 222 | 141 | 43 | 65 | 39 |
 | EAS | 208 | 139 | 14 | 40 | 27 |
 | OCE | 201 | 132 | 4 | 28 | 26 |
-| RUS | 140 | 79 | 7 | 16 | 22 |
-| CHN | 152 | 69 | 14 | 12 | 15 |
+| RUS | 150 | 89 | 17 | 23 | 22 |
+| CHN | 161 | 78 | 23 | 13 | 15 |
 
 The spread between the best and worst served region is 3.5 to 1 on presence but
 7.6 to 1 on direct human contact. Nominal coverage is far more even than real
@@ -136,8 +136,11 @@ open. Thin and open beats dense and closed for a researcher, but it is still thi
 
 Reading the three gap types together, the register has five clear blind spots.
 
-1. **Closed regimes.** Mainland China (69 substantial providers, 12 with direct
-   human contact) and the Russia bloc (79 and 16). What exists is either state
+1. **Closed regimes.** Mainland China (78 substantial providers, 13 with direct
+   human contact) and the Russia bloc (89 and 23). Adding twenty domestic firms
+   raised the provider count in both and barely moved primary collection, which
+   is the shape of the problem: these markets have plenty of collectors and very
+   few that talk to anyone. What exists is either state
    linked (VCIOM, FOM, CTR, CSM, Chang Guang) or legally exposed (Levada as a
    designated foreign agent). Independent commercial collection has largely
    withdrawn.
@@ -195,8 +198,8 @@ every claim that does not is labelled as a property of the model.
 ## 7. The floor is made of firms that never touch anyone
 
 Every one of the 194 countries has at least one provider, and the *minimum* is
-29. Turkmenistan, the least served country on earth by this register, still has
-29 organisations collecting data about it.
+24. Turkmenistan, still the only country in the register with no primary
+collector at all, has 30 organisations collecting data about it.
 
 Not one of them speaks to a Turkmen. All 28 are satellite operators, web
 crawlers, trade and vessel trackers, and open-source monitors. Turkmenistan is
@@ -210,73 +213,110 @@ scraping, and it is the same floor everywhere.
 | United Kingdom | 205 | 79 | 41 |
 | France | 200 | 75 | 38 |
 | Median country | 70 | — | — |
-| Guinea-Bissau | 35 | 8 | 5 |
-| Comoros | 34 | 7 | 5 |
-| Tajikistan | 34 | 3 | 10 |
-| Kyrgyzstan | 32 | 3 | 8 |
-| Turkmenistan | 29 | **0** | 7 |
+| Turkmenistan | 30 | **0** | 6 |
+| Kyrgyzstan | 39 | 7 | 9 |
+| Eritrea | 24 | 8 | 4 |
+| Guinea-Bissau | 24 | 8 | 4 |
 
-The bottom of the distribution is Central Asia and the small states of the Sahel,
-Central Africa and the Pacific. The gap between the United States and
-Turkmenistan is 8 to 1 on providers and unbounded on primary collection.
+The bottom of the distribution is the small states of the Sahel, the Horn, the
+Pacific and Central Asia. The gap between the United States and Turkmenistan is
+8 to 1 on providers and unbounded on primary collection: 92 organisations in the
+United States conduct some form of direct contact with a person, and zero do in
+Turkmenistan.
 
 ## 8. What predicts whether anyone collects data about a country
 
-Regressing country provider counts on country characteristics (full table in
-`output/tab17_country_model.txt`, R² = 0.74). The third column repeats the
-estimate on hand-coded rows only, which is the test of whether a result is a
-property of the industry or of the allocation model.
+Regressing country provider counts on country characteristics
+(`output/tab17_country_model.txt`, R² = 0.74), then repeating the estimate on
+hand-coded rows only to test whether a result belongs to the industry or to the
+allocation model.
 
-| Predictor | Effect on log providers | Full file | Observed rows only |
+| Predictor | Full file | Observed rows, like-for-like | Observed rows, all firms |
 |---|---|---|---|
-| Population over 100m (vs under 1m) | +0.88 | +1.61 | +2.76 |
-| Internet over 70% (vs under 30%) | +0.27 | +0.60 | +0.55 |
-| Restrictive research regime | −0.19 | −0.29 | −0.30 |
-| Conflict-affected | +0.05, n.s. | +0.07, n.s. | +0.08, n.s. |
-| High income (vs low) | +0.65 | +0.15, n.s. | −0.28 |
+| Population over 100m (vs under 1m) | +1.63 | +2.64 | +2.93 |
+| Internet over 70% (vs under 30%) | +0.60 | +0.58 | +0.39 |
+| Restrictive research regime | −0.27 | −0.23 | +0.04, n.s. |
+| Conflict-affected | +0.06, n.s. | +0.09, n.s. | −0.01, n.s. |
+| High income (vs low) | +0.16, n.s. | −0.46 | −0.001, n.s. |
 
-(Columns two and three are Poisson estimates on primary collectors and on
-observed providers respectively, so they are compared with each other, not with
-the first column.)
+Population, connectivity and restrictive research regime hold their sign and
+significance between the first two columns. Conflict is a consistent null.
+Income reverses and remains unreportable.
 
-**Three results now hold in both columns.** Population and connectivity keep
-their sign and significance. Restrictive research regime does too, at −0.29 and
-−0.30, which is as close as these two columns come to agreeing about anything.
-Conflict exposure is a consistent null. Only income still misbehaves, reversing
-from +0.65 to −0.28, and it remains unreportable.
+The rank correlation between the full and like-for-like observed counts is 0.775.
 
-The rank correlation between modelled and observed country provider counts is
-now 0.535, against 0.094 one revision ago. The observed sample has become
-balanced enough for the check to discriminate.
+### The third column, and a fault in this test
 
-### Reinstating the restrictive-regime result
+Read the last two columns against each other. They disagree completely on the
+restrictive-regime coefficient, −0.23 against +0.04. The difference is not in
+the data, it is in what is being counted.
 
-The previous revision of this document retracted this finding. That retraction
-was correct on the evidence then available: with hand-coding concentrated almost
-entirely in MENA and Africa, the coefficient on hand-coded rows was 0.001. With
-Western European and Latin American footprints added, it is −0.30 and highly
-significant, matching the full-file estimate almost exactly. The finding is
-reinstated.
+Columns 1 and 2 both count **primary collectors** — firms that make direct
+contact with a person — and differ only in whether the row was hand-coded or
+allocated. Column 3 counts **all providers** on observed rows. Until this
+revision, the sensitivity check in this repository compared columns 1 and 3,
+which mixes the basis restriction together with a change of outcome. That is not
+a sensitivity test, and it produced a false alarm.
 
-Two things make this convergence worth something rather than nothing. The
-allocation model does not use `restrictive_research_regime` as an input at all —
-`priority_score` reads income, population, connectivity and conflict, and nothing
-else — so the two columns are not mechanically linked through the country
-allocation. And the biases that remain in each column push in different
-directions: the full column inherits thin Russia and China scores from the
-hand-coded region matrix, while the observed column is selected on wherever the
-coding effort went. Two differently biased estimates landing on the same number
-is weak evidence, but it is evidence.
+The mechanism is specific and worth stating, because it will affect anyone who
+builds a register this way. Hand-coded footprints are far easier to establish for
+satellite operators, web crawlers and open-source monitors than for survey firms:
+a satellite constellation's country coverage is a matter of orbital mechanics,
+while a survey firm's is a matter of contracts nobody publishes. So any burst of
+hand-coding shifts the observed sample toward firms that never touch anyone.
+Hand-coding Russia and China added 228 rows, most of them exactly those firms,
+and the all-firm observed count in restrictive-regime countries duly rose. The
+coefficient went to zero not because collection there is unrestricted but
+because the observed sample had been reloaded with satellites.
 
-What it is not is clean identification. A wealthy country that gates independent
-research gets measured less than its size and connectivity predict; whether that
-is the gating doing the work, or something else those countries share, this
-register cannot say.
+Column 2 fixes this by holding the outcome constant. `n_observed_primary` counts
+direct-contact firms on observed rows, so it differs from column 1 in basis and
+nothing else.
 
-Conflict exposure does not predict provider counts in either column and never
-has, across three revisions and two large changes to the sample. That null is
-the most stable result here. What conflict does predict is method narrowness,
-in section 10.
+### History of the restrictive-regime result
+
+This finding has now been reported, retracted, reinstated, and apparently
+overturned again before the test was corrected. The sequence is worth keeping
+visible because each step was a reasonable reading of what the data then showed.
+
+| Revision | Observed-only estimate | Reported as |
+|---|---|---|
+| MENA and Africa footprints added | 0.001 | retracted |
+| Western Europe and Latin America added | −0.30 | reinstated |
+| Russia and China added, old test | +0.04 | apparently overturned |
+| Russia and China added, corrected test | −0.23 | holds |
+
+The first three rows all used the mismatched comparison. On the corrected test
+the result holds, and the full-file estimate has sat between −0.19 and −0.29
+throughout, never moving much. It was the test that was unstable, not the
+finding.
+
+### What the finding is still worth
+
+Less than the arithmetic suggests. The like-for-like test rules out one specific
+artifact: that the coefficient is manufactured by the country allocation rule.
+It cannot rule out the deeper problem, which is that both columns encode the
+same analyst judgement. The region-level scores that drive the full column were
+hand-coded by me on the view that solicited collection is thin in Russia and
+China, and the country footprints that drive the observed column were hand-coded
+by me on the same view. A test cannot launder a prior by applying it twice.
+
+What the register can support: a country that legally gates independent research
+has fewer organisations making direct contact with its population than its size
+and connectivity predict, and this is not an artifact of how coverage was
+allocated across countries. What it cannot support: that the gating causes this,
+or an effect size anyone should quote.
+
+The regulatory facts behind the coding are at least concrete. Russia capped
+foreign ownership of market research firms at 20% with a domestic data
+localisation requirement, effective 1 March 2026; Ipsos sold 80% of Ipsos Comcon
+in February 2026 and Nielsen moved to divest its Russian division. China's
+foreign investment negative list continues to restrict social science research,
+social surveys and aerial and marine surveying. These are not proxies for regime
+type, they are rules about who may collect.
+
+Conflict exposure does not predict provider counts in any column and has not
+across four revisions. That null is the most stable result in this document.
 
 ## 9. Data types are missing from most of the world
 
@@ -404,10 +444,11 @@ countries are reachable by fewer distinct methods (10.6 against 12.6), and the
 organisations that cover them are disproportionately nonprofit or academic
 (16.7% against 10.9%).
 
-Reinstated: restrictive research regimes do depress collection net of income,
-population and connectivity. This claim was made, retracted when the observed
-sample was too skewed to test it, and now holds at −0.29 and −0.30 across both
-columns. Section 8 gives the history and the remaining limits.
+Holds, with the test corrected: countries that legally gate independent research
+have fewer organisations making direct contact with their populations than their
+size and connectivity predict (−0.27 full, −0.23 like-for-like). Section 8 gives
+the reporting history, the fault in the earlier test, and why the finding is
+worth less than the arithmetic suggests.
 
 ## 12. How much of this is observed
 
@@ -416,43 +457,45 @@ rows that are observations rather than model output:
 
 | Region | Observed rows | Total rows | Share |
 |---|---|---|---|
-| MENA | 366 | 2,353 | 15.6% |
+| Mainland China | 61 | 159 | 38.4% |
+| Russia and Central Asia | 200 | 523 | 38.2% |
+| MENA | 366 | 2,338 | 15.7% |
+| Sub-Saharan Africa | 612 | 4,236 | 14.4% |
 | North America | 58 | 403 | 14.4% |
-| Sub-Saharan Africa | 612 | 4,267 | 14.3% |
-| Western Europe | 360 | 3,298 | 10.9% |
-| Latin America | 252 | 3,645 | 6.9% |
-| Russia and Central Asia | 17 | 483 | 3.5% |
-| South Asia | 37 | 1,080 | 3.4% |
-| Mainland China | 5 | 148 | 3.4% |
-| Southeast Asia | 41 | 1,272 | 3.2% |
-| Eastern Europe | 49 | 2,463 | 2.0% |
-| East Asia | 8 | 803 | 1.0% |
-| Oceania | 11 | 1,513 | 0.7% |
-| **All** | **1,816** | **21,728** | **8.4%** |
+| Western Europe | 360 | 3,283 | 11.0% |
+| Latin America | 252 | 3,625 | 7.0% |
+| South Asia | 37 | 1,075 | 3.4% |
+| Southeast Asia | 41 | 1,268 | 3.2% |
+| Eastern Europe | 52 | 2,445 | 2.1% |
+| East Asia | 10 | 803 | 1.2% |
+| Oceania | 11 | 1,497 | 0.7% |
+| **All** | **2,060** | **21,655** | **9.5%** |
 
-Five regions now sit in a usable band between 7% and 16% observed: MENA, North
-America, Sub-Saharan Africa, Western Europe and Latin America. Together they
-carry 1,648 of the 1,816 observed rows. The remaining seven regions are between
-0.7% and 3.5%, and country-level claims about them rest almost entirely on the
-allocation model.
+Mainland China and the Russia bloc are now the best-grounded regions in the file
+at roughly 38% observed, which is what they should be: they are the regions this
+register makes its strongest claims about. Seven regions sit between 7% and 16%.
+Three remain thin: Eastern Europe (2.1%), East Asia (1.2%) and Oceania (0.7%),
+with South and Southeast Asia just above them at 3.4% and 3.2%.
 
-The previous revision reported that the observed-only sensitivity check had
-stopped working, because hand-coding was concentrated so heavily in MENA and
-Africa that a regression on observed rows recovered the shape of the coding
-effort rather than the industry. Adding Western European and Latin American
-footprints fixed that. The rank correlation between modelled and observed
-provider counts went from 0.094 to 0.535, and three of five predictors now agree
-across the two columns where previously only two did.
+Four rounds of hand-coding have taught two things about this kind of register,
+both of which cost a retraction to learn.
 
-The lesson generalises past this dataset. A hand-coded sample built by following
-your own substantive interest will validate nothing, because its selection is
-correlated with everything you want to test. Balance in the observed sample is
-not a nicety; it is what makes the sample capable of contradicting the model.
+**A sample built by following your own interest validates nothing.** The first
+round put almost all hand-coding into MENA and Africa, and a regression on the
+observed rows then recovered the shape of the coding effort rather than the
+industry. Balancing across regions fixed that. The rank correlation between
+modelled and observed primary-collector counts is now 0.775.
 
-Where the grounding still fails: Eastern Europe (2.0%), Southeast Asia (3.2%),
-South Asia (3.4%), mainland China (3.4%), the Russia bloc (3.5%), East Asia
-(1.0%) and Oceania (0.7%). Two of those, the Russia bloc and mainland China,
-carry a specific risk: they are the regions this register claims are least
-covered, and they are among the regions where the claim rests least on
-observation. That is the next thing to fix, and it is harder than the last two
-rounds, because the firms operating there publish less about where they operate.
+**Hand-coding is not neutral across firm types, and that biases the check
+itself.** A satellite operator's country coverage is knowable from orbital
+mechanics; a survey firm's is a matter of unpublished contracts. So every round
+of hand-coding pulls the observed sample toward firms that never contact a
+person. A sensitivity test whose outcome variable is not held constant will read
+that compositional shift as a change in the world. This is what produced the
+false collapse of the restrictive-regime result described in section 8, and it
+is why the test now compares primary collectors against primary collectors.
+
+Where grounding still fails: Eastern Europe, East Asia, Oceania, and South and
+Southeast Asia. Of these, Eastern Europe matters most, because it contains
+Ukraine, Belarus's neighbours and the Western Balkans, where the register makes
+claims about wartime and post-authoritarian data collection on 2.1% observation.

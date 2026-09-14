@@ -82,3 +82,30 @@ rather than added at low confidence. The Gulf firms in the register are those
 attestable from more than one source. Anyone extending this should expect the
 Gulf to be under-enumerated in a way that is not symmetric with the Maghreb and
 the Levant, where independent firms publish and are citable.
+
+## Retrieved for the Russia bloc and China expansion
+
+- The Bell, market research and Russia's spy obsession — https://en.thebell.io/market-research-is-the-latest-victim-of-russias-spy-obsession/
+- Alphabet, foreign companies banned from researching the Russian market — https://alphabet.pro/en/news/foreign-companies-banned-from-researching-the-russian-market
+- MrWeb Daily Research News, Russian legal change forces Ipsos divestment — https://www.mrweb.com/drno/news39492.htm
+- Research Live, Ipsos sells majority stake in Russian business — https://www.research-live.com/article/news/ipsos-sells-majority-of-stake-in-russian-business/id/5147316
+- NV Business, Nielsen to sell Russian division — https://english.nv.ua/business/nielsen-to-sell-russian-division-citing-regulatory-and-legal-pressures-50607242.html
+- VCIOM corporate profile — https://wciom.com/about
+- China Briefing, China's foreign investment action plan 2026 — https://www.china-briefing.com/news/china-foreign-investment-action-plan-2026/
+- MS Advisory, China negative list for foreign investment 2026 update — https://msadvisory.com/china-negative-list-explainer-foreign-investment/
+- IBISWorld, market research in China industry analysis 2026 — https://www.ibisworld.com/china/industry/market-research/992/
+- QuestMobile Research Institute — https://www.questmobile.com.cn/en/research-info/
+
+Two regulatory facts from these sources drive the `restrictive_research_regime`
+coding for Russia and China, and are rules about who may collect rather than
+proxies for regime type. Russia capped foreign and dual-citizen ownership of
+market research firms at 20% equity for firms above roughly $10m revenue, with a
+domestic data localisation requirement, effective 1 March 2026. China's foreign
+investment negative list continues to restrict social science research, social
+surveys, humanities research, and geodetic, aerial and marine surveying.
+
+Chinese and Russian firms in the register are enumerated from a mix of these
+sources and domain knowledge. Both are likely under-enumerated in the same
+direction: firms serving domestic state clients publish less about themselves
+than firms serving commercial ones, so the register probably over-represents the
+commercially visible end of both markets.

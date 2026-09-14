@@ -3,19 +3,19 @@ Method mix in the least served quartile versus the rest
 =================================================
                  bottom_quartile_share rest_share
 -------------------------------------------------
-admin_records            6.300           6.800   
-api_partner               18             15.400  
+admin_records            6.200           6.800   
+api_partner             17.900           15.300  
 clinical_records           0             0.700   
-crowd_task               1.500           3.400   
+crowd_task               1.500           3.300   
 device_passive           1.700           3.200   
 expert_elicit            1.200           3.300   
-face_to_face             8.200           10.200  
-mobile_app               0.700           1.800   
-online_panel             6.100           10.100  
-remote_sensing          26.300             14    
-sensor_hardware          4.700           4.300   
+face_to_face             8.900           10.100  
+mobile_app               0.800           1.800   
+online_panel               6             10.200  
+remote_sensing          25.500           13.900  
+sensor_hardware          4.500           4.300   
 telecom_network          0.300           0.200   
-telephone                5.700             7     
-transaction              3.300             3     
+telephone                6.400             7     
+transaction                3               3     
 web_scrape                16             16.700  
 -------------------------------------------------

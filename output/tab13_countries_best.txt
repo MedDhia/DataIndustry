@@ -3,11 +3,11 @@ Fifteen best served countries by number of providers
 ====================================================================================================
      country_name  region_code income_group population_band n_any n_providers n_primary n_accessible
 ----------------------------------------------------------------------------------------------------
+162   Indonesia        SEA         UMIC           XL         200      144        48          27     
 52      Sweden         WEU         HIC             M         171      145        43          30     
-162   Indonesia        SEA         UMIC           XL         200      145        49          27     
-31      Brazil         LAC         UMIC           XL         194      146        46          28     
+31      Brazil         LAC         UMIC           XL         193      146        46          28     
 3       Mexico         LAC         UMIC           XL         204      148        49          30     
-155    Pakistan        SAS         LMIC           XL         177      149        53          22     
+155    Pakistan        SAS         LMIC           XL         175      149        53          22     
 47     Portugal        WEU         HIC             M         184      152        47          29     
 41     Belgium         WEU         HIC             M         191      163        51          33     
 46      Spain          WEU         HIC             M         196      165        54          34     

@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 424 organisations that collect data as their business, coded for
+A register of 444 organisations that collect data as their business, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
 
@@ -11,11 +11,11 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 424 | The register. One row per organisation, 24 variables. |
-| `data/coverage_spatial.csv` | 424 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 444 | The register. One row per organisation, 24 variables. |
+| `data/coverage_spatial.csv` | 444 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 1,709 | Hand-coded country footprints for 120 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 21,728 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 1,937 | Hand-coded country footprints for 162 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 21,655 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -45,10 +45,10 @@ Keeping both in one frame is the point. The industry's apparent global reach
 comes almost entirely from the observational side, and that only becomes visible
 when the two are measured on the same grid.
 
-Both startups and established firms are included by design: 188 established,
-192 scaleups, 44 startups, founded between 1841 and 2024. 92 firms are
-headquartered in MENA or Sub-Saharan Africa, which is where enumeration effort
-has been concentrated.
+Both startups and established firms are included by design: 200 established,
+200 scaleups, 44 startups, founded between 1841 and 2024. 92 firms are
+headquartered in MENA or Sub-Saharan Africa and 20 in the Russia bloc or mainland
+China, the two areas where enumeration effort has been concentrated.
 
 Pure analytics vendors, consultancies and platforms that only process data
 others collected are out of scope. Government statistical offices are out of
@@ -65,11 +65,16 @@ scope as producers, though firms that resell their output are in.
 - Remote sensing is the only collection method with uniform world coverage.
   Online panels are five times denser in North America than in Sub-Saharan
   Africa; face-to-face interviewing runs the other way.
-- Balancing the hand-coded sample across five regions restored the observed-only
-  sensitivity check: the rank correlation between modelled and observed country
-  provider counts rose from 0.094 to **0.535**, and a restrictive-research-regime
-  result that had to be retracted one revision ago now holds at −0.29 and −0.30
-  across both columns.
+- Countries that legally gate independent research have fewer organisations
+  making direct contact with their populations than their size and connectivity
+  predict (−0.27 on the full file, −0.23 on hand-coded rows). This result was
+  reported, retracted, reinstated and apparently overturned across four
+  revisions before a fault in the sensitivity test was found and fixed; section 8
+  of `coverage_gaps.md` keeps the whole sequence visible.
+- Russia capped foreign ownership of market research firms at 20% with data
+  localisation from 1 March 2026. Ipsos sold 80% of Ipsos Comcon that February
+  and Nielsen moved to divest. Mediascope, which measures Russian media, is 80%
+  owned by the state pollster VCIOM.
 - **55.9%** of firms are headquartered in North America or Western Europe, rising
   to **80.7%** of venture and private-equity backed firms. Of 46 firms founded
   since 2019, 29 are in those two regions and 9 are in Sub-Saharan Africa, where
@@ -119,20 +124,28 @@ Read these before using the data for anything load-bearing.
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
-3. **Country coverage is mostly model output.** Of 21,728 company-country rows,
-   1,816 are observed (`manual` or `hq_exact`) and 19,912 are allocated by the
+3. **Country coverage is mostly model output.** Of 21,655 company-country rows,
+   2,060 are observed (`manual` or `hq_exact`) and 19,595 are allocated by the
    model in `scripts/00_build_country_coverage.py`. Country aggregates are
    usable; an individual firm's country row is not citable. Report nothing from
-   the country regressions that does not hold in both columns of
-   `output/tab19_sensitivity.txt`: at present that means population,
-   connectivity and restrictive research regime, and not income.
-4. **Grounding is uneven across regions.** Five regions are between 7% and 16%
-   observed (MENA, North America, Sub-Saharan Africa, Western Europe, Latin
-   America); the other seven are between 0.7% and 3.5%. The Russia bloc (3.5%)
-   and mainland China (3.4%) carry a specific risk, because they are the regions
-   this register claims are least covered and among those where the claim rests
-   least on observation.
-5. **The register is not a census.** Private firms in this industry do not have
+   the country regressions that does not hold in the first two columns of
+   `output/tab19_sensitivity.txt`: population, connectivity and restrictive
+   research regime, and not income.
+4. **The sensitivity test must hold the outcome constant, and for three
+   revisions it did not.** Hand-coded footprints are far easier to establish for
+   satellite and open-source firms than for survey firms, so every round of
+   hand-coding shifts the observed sample toward firms that never contact a
+   person. Comparing a full-file count of primary collectors against an all-firm
+   observed count reads that compositional shift as a change in the world. It
+   produced one false retraction. The test now compares primary collectors
+   against primary collectors; the third column is kept as a warning.
+5. **Grounding is uneven across regions.** Mainland China (38.4%) and the Russia
+   bloc (38.2%) are best grounded, then MENA, Sub-Saharan Africa, North America,
+   Western Europe and Latin America between 7% and 16%. Eastern Europe (2.1%),
+   East Asia (1.2%) and Oceania (0.7%) remain thin; Eastern Europe matters most,
+   because the register makes claims about wartime Ukraine and the Western
+   Balkans on 2.1% observation.
+6. **The register is not a census.** Private firms in this industry do not have
    to announce themselves, and the smallest national field agencies are the
    hardest to enumerate. Coverage of MENA, Sub-Saharan Africa and the post-Soviet
    space reflects deliberate effort, but Central Asia, Central America and the
@@ -142,11 +155,11 @@ Read these before using the data for anything load-bearing.
    small local firms biases the findings toward *understating* how much
    collection happens outside the core, which cuts against this document's own
    argument and should be held in mind.
-6. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
+7. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
    perhaps a fifth of the register, and a column that is mostly missing invites
    misuse. What could be verified is in the `notes` field with its source in
    `docs/sources.md`.
-7. **The snapshot is September 2026.** This industry consolidates fast. Recent
+8. **The snapshot is September 2026.** This industry consolidates fast. Recent
    changes already reflected: Publicis acquiring LiveRamp, Experian acquiring
    AtData, Maxar becoming Vantor, Adobe acquiring Semrush, Meta's stake in
    Scale AI and the subsequent shift of frontier-lab demand to Surge, Mercor and
@@ -166,13 +179,14 @@ tables, every coverage score against its range, and the two files against each
 other; it exits non-zero and names the offending records if anything fails, so it
 works as a pre-commit hook.
 
-The highest-value additions, in order: **hand-coded footprints for the Russia
-bloc, mainland China, East Asia, Eastern Europe and Oceania**, the five regions
-still under 3.5% observed, and the first two especially, since the register's
-strongest claims are about them; national field agencies in Central Asia, Central
-America and the Pacific, where enumeration is thinnest; a time dimension so
-entry, exit and acquisition can be tracked; and verified revenue for the subset
-where filings exist.
+The highest-value additions, in order: **hand-coded footprints for Eastern
+Europe, East Asia, Southeast Asia and Oceania**, the regions still under 3.5%
+observed, with Eastern Europe first because of Ukraine and the Western Balkans;
+**more hand-coded footprints for survey and field firms specifically**, since the
+observed sample is structurally biased toward satellite and open-source firms
+whose coverage is easy to establish; national field agencies in Central Asia,
+Central America and the Pacific; a time dimension so entry, exit and acquisition
+can be tracked; and verified revenue for the subset where filings exist.
 
 To replace model rows with observations for a firm, add its countries to
 `data/coverage_country_manual.csv` and rerun the build. Mark the rows
