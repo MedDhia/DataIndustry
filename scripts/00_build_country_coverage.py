@@ -8,7 +8,10 @@ methods usable in that country, and the substantive domains obtainable there.
 Rows are produced by three bases, recorded in `basis`:
 
   manual     from data/coverage_country_manual.csv, hand-coded from published
-             country lists or known operating footprints (40 firms)
+             country lists or known operating footprints. Each firm there is
+             marked `exhaustive` (the list is complete, the model adds nothing)
+             or `partial` (these countries are observed, the model fills the
+             rest of the firm's stated country budget around them)
   hq_exact   single-country firms, resolved to their headquarters country
   allocated  distributed from the region-level score in coverage_spatial.csv
              across countries, by the documented priority rules below
@@ -129,9 +132,11 @@ def main():
     companies = list(csv.DictReader(open("data/companies.csv")))
     countries = list(csv.DictReader(open("data/countries.csv")))
     spatial   = {r["company_id"]: r for r in csv.DictReader(open("data/coverage_spatial.csv"))}
-    manual    = collections.defaultdict(dict)
+    manual = collections.defaultdict(dict)
+    man_scope = {}
     for r in csv.DictReader(open("data/coverage_country_manual.csv")):
         manual[r["company_id"]][r["iso3"]] = int(r["coverage"])
+        man_scope[r["company_id"]] = r["scope"]
 
     by_region = collections.defaultdict(list)
     for c in countries:
@@ -148,9 +153,12 @@ def main():
         domains_all = sorted(set(split_list(co["domains_primary"]) +
                                  split_list(co["domains_secondary"])))
 
+        assigned = {}
         if cid in manual:
             assigned = {i: (s, "manual") for i, s in manual[cid].items()}
-        elif co["spatial_scope"] == "single_country":
+        if cid in manual and man_scope[cid] == "exhaustive":
+            pass
+        elif cid not in manual and co["spatial_scope"] == "single_country":
             assigned = {co["hq_country"]: (3, "hq_exact")}
         else:
             mode = priority_mode(co)
@@ -162,20 +170,29 @@ def main():
             wsum = sum(wt.values()) or 1
             budget = min(int(co["countries_claimed"]), len(countries)) \
                      if co["countries_claimed"] != "NA" else 20
-            assigned = {}
-            for r, s in live.items():
+            budget = max(0, budget - len(assigned))   # hand-coded rows spend the budget first
+            for r, s in (live.items() if budget else []):
                 pool = sorted(by_region[r], key=lambda c: -priority_score(c, mode))
                 n = max(1, min(len(pool), round(budget * wt[r] / wsum)))
                 for k, c in enumerate(pool[:n]):
                     score = s if k / n < 0.5 else max(s - 1, 1)
-                    assigned[c["iso3"]] = (score, "allocated")
+                    assigned.setdefault(c["iso3"], (score, "allocated"))
 
         for iso, (score, basis) in sorted(assigned.items()):
             c = cty[iso]
             m = [x for x in methods_all if method_feasible(x, c)]
             d = [x for x in domains_all if domain_feasible(x, c, co["modality_primary"])]
-            if not m or not d:
-                continue      # a firm with no usable method or no obtainable data is not present
+            if basis == "allocated":
+                if not m or not d:
+                    continue  # a firm with no usable method or no obtainable data is not present
+            else:
+                # A hand-coded footprint is an observation that the firm operates
+                # there, so it overrides the feasibility model rather than being
+                # deleted by it. Impact-sourcing delivery centres are the clear
+                # case: they supply their own connectivity regardless of the
+                # national figure. Fall back to the firm's own primary method.
+                m = m or [co["modality_primary"]]
+                d = d or split_list(co["domains_primary"])[:1]
             out.append(dict(company_id=cid, iso3=iso, region_code=c["region_code"],
                             coverage=score, basis=basis,
                             n_methods=len(m), n_domains=len(d),

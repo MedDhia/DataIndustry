@@ -217,24 +217,32 @@ Turkmenistan is 8 to 1 on providers and unbounded on primary collection.
 Regressing country provider counts on country characteristics (full table in
 `output/tab17_country_model.txt`, R² = 0.75):
 
-| Predictor | Effect on log providers |
-|---|---|
-| High income (vs low) | +0.77 |
-| Population over 100m (vs under 1m) | +0.83 |
-| Internet over 70% (vs under 30%) | +0.27 |
-| Conflict-affected | +0.04, not significant |
-| Restrictive research regime | −0.19 |
+| Predictor | Effect on log providers | Survives observed-only check |
+|---|---|---|
+| Population over 100m (vs under 1m) | +0.86 | yes, +2.57 |
+| High income (vs low) | +0.69 | yes |
+| Internet over 70% (vs under 30%) | +0.27 | yes, +0.47 |
+| Restrictive research regime | −0.20 | yes, −0.16 |
+| Conflict-affected | +0.03, not significant | no, −0.09, not significant |
 
-Population and connectivity are the strongest predictors and **both survive the
-observed-only check** with larger coefficients: on hand-coded rows alone, XL
-population carries +2.96 and high internet +1.08. Size and connectivity really
-do determine who gets measured.
+Population and connectivity are the strongest predictors and both survive the
+observed-only check with larger coefficients. Size and connectivity really do
+determine who gets measured, and the model understates it.
 
-The conflict and restrictive-regime coefficients **do not survive**. On observed
-rows only they fall to 0.005 and −0.09, neither significant. The
-restrictive-regime result in the full model is partly circular: the regional
-scores that feed the allocation already encode thin coverage for Russia and
-China, and those countries are coded restrictive. Do not cite it.
+The restrictive-regime result also survives, at −0.16 (p < 0.05) on hand-coded
+rows. Note what it is conditional on: unconditionally, restrictive-regime
+countries average *more* observed providers than open ones (5.9 against 3.8),
+because the Gulf states are rich and populous. Conditional on income, population
+and connectivity, they attract fewer. A wealthy country that gates independent
+research gets measured less than its size and income would predict. Treat this
+as suggestive rather than settled: the hand-coded sample is deliberately weighted
+toward MENA and Africa, which is also where most of the restrictive-regime
+coding sits.
+
+Conflict exposure does not predict provider counts in either column. The earlier
+regional-level intuition that conflict settings are under-covered is not
+supported at country level once allocation is stripped out. What conflict does
+predict is method narrowness, in section 10.
 
 ## 9. Data types are missing from most of the world
 
@@ -360,3 +368,41 @@ firmer, and both parts clear the significance threshold: conflict-affected
 countries are reachable by fewer distinct methods (10.3 against 12.6), and the
 organisations that cover them are disproportionately nonprofit or academic
 (16.2% against 10.9%).
+
+Added: legal restriction on independent research does depress collection, net of
+how rich and populous a country is, and this now survives on hand-coded rows
+alone. It is the one regime-type finding in the register that is not an artifact
+of the allocation model.
+
+## 12. How much of this is observed
+
+Hand-coding is concentrated where it was most needed. Share of company-country
+rows that are observations rather than model output:
+
+| Region | Observed rows | Total rows | Share |
+|---|---|---|---|
+| Sub-Saharan Africa | 401 | 4,003 | 10.0% |
+| MENA | 215 | 2,184 | 9.8% |
+| North America | 30 | 397 | 7.6% |
+| Russia and Central Asia | 17 | 475 | 3.6% |
+| Mainland China | 5 | 148 | 3.4% |
+| Southeast Asia | 36 | 1,273 | 2.8% |
+| South Asia | 29 | 1,078 | 2.7% |
+| Latin America | 76 | 3,616 | 2.1% |
+| East Asia | 7 | 811 | 0.9% |
+| Eastern Europe | 21 | 2,494 | 0.8% |
+| Oceania | 6 | 1,523 | 0.4% |
+| Western Europe | 8 | 3,246 | 0.2% |
+| **All** | **852** | **21,249** | **4.0%** |
+
+MENA and Sub-Saharan Africa are roughly five times better grounded than the
+overall file and fifty times better grounded than Western Europe. Country-level
+claims about those two regions rest on a usable proportion of observation.
+Claims about Western Europe, Oceania and East Asia are almost entirely model.
+
+This asymmetry cuts both ways, and it is worth being explicit about the second
+edge. Because the observed sample is deliberately weighted toward MENA and
+Africa, the observed-only sensitivity column is no longer a clean global
+validation of the model. It is a well-grounded check for those two regions and a
+thin one everywhere else. A result that survives it has survived a test run
+mostly on African and Middle Eastern countries.

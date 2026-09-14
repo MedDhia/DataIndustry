@@ -131,14 +131,38 @@ specific coding should change it and rerun.
 Note that region code `NOAM` is used for North America rather than `NAM`,
 because `NAM` is the ISO3 code for Namibia.
 
-## `data/coverage_country_manual.csv` (349 rows)
+## `data/coverage_country_manual.csv` (766 rows, 62 organisations)
 
-Hand-coded country footprints for 40 organisations: `company_id`, `iso3`,
-`coverage`. Sources are published country lists (the barometer networks) or
-known operating footprints. A firm present in this file has its country
-coverage taken entirely from here, with no model allocation on top.
+Hand-coded country footprints: `company_id`, `iso3`, `coverage`, `scope`.
+Sources are published country lists (the barometer networks), regional hub
+partner lists, and known office and delivery-centre networks.
 
-## `data/coverage_country.csv` (21,344 rows, 9 variables)
+`scope` governs how the row interacts with the model:
+
+- `exhaustive` (462 rows) — the list is complete. The firm's country coverage
+  comes entirely from here and the model adds nothing.
+- `partial` (304 rows) — these countries are observed. The model fills the rest
+  of the firm's stated country budget around them, and hand-coded rows spend
+  that budget first.
+
+`partial` exists so that knowing a global firm's MENA and Africa offices does
+not force a claim about its Latin American ones. Without it, partial knowledge
+would shrink a footprint rather than improve it.
+
+Coverage is weighted toward MENA and Sub-Saharan Africa by design: those two
+regions are about 10% observed against 4% for the file overall and 0.2% for
+Western Europe. Section 12 of `coverage_gaps.md` gives the full breakdown and
+what it means for the sensitivity check.
+
+### Observations override the feasibility gate
+
+A hand-coded row survives even when the method and domain gates below would
+empty it, falling back to the firm's own primary method. The gate is a model of
+where a method can work; a hand-coded footprint is a record that the firm is
+there. Impact-sourcing delivery centres are the clear case: Sama's operation in
+Uganda supplies its own connectivity regardless of the national figure.
+
+## `data/coverage_country.csv` (21,249 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -156,20 +180,24 @@ anti-join: a pair not present here is a pair with no coverage.
 
 | Basis | Rows | Status |
 |---|---|---|
-| `manual` | 349 | Observation. Hand-coded footprint. |
+| `manual` | 766 | Observation. Hand-coded footprint. |
 | `hq_exact` | 86 | Observation. Single-country firm resolved to its headquarters country. |
-| `allocated` | 20,909 | Model output. |
+| `allocated` | 20,397 | Model output. |
 
-**98% of rows are model output.** An `allocated` row says where a firm of that
+**96% of rows are model output**, and 90% in MENA and Sub-Saharan Africa. An `allocated` row says where a firm of that
 type, regional footprint and stated country count most likely operates. It is
 not a claim that the firm operates there. Aggregate country counts are usable;
 an individual firm's row is not citable.
 
 `scripts/04_country_gaps.R` reports every country-level regression twice, once
-on the full file and once on the 435 observed rows only (`tab19_sensitivity`).
+on the full file and once on the 852 observed rows only (`tab19_sensitivity`).
 A result that appears only in the full column is a property of the allocation
-rule. On the current data, population and internet penetration survive that
-test; conflict exposure and restrictive research regime do not.
+rule. On the current data, population, income, internet penetration and
+restrictive research regime survive that test; conflict exposure does not.
+
+Because hand-coding is concentrated in MENA and Africa, the observed-only column
+is a strong check for those regions and a weak one elsewhere. It is a sensitivity
+test, not an out-of-sample validation.
 
 ### The allocation model
 
@@ -206,8 +234,9 @@ the substantive content of the "by method and by type" coding:
 | Requires both | `transaction`; `health_clinical` and `prices_retail` where the firm's primary method is record- or transaction-based |
 | Ungated | `face_to_face`, `telephone`, `web_scrape`, `api_partner`, `admin_records`, `remote_sensing`, `sensor_hardware`, `telecom_network` |
 
-A firm left with no usable method, or no obtainable data type, generates no row
-for that country.
+An `allocated` row with no usable method, or no obtainable data type, is not
+written. A `manual` or `hq_exact` row is always written, because the observation
+overrides the gate.
 
 Method repertoires come from the firm's `modality_primary` plus the methods its
 segment can deploy, listed in `SEGMENT_METHODS` in the build script.

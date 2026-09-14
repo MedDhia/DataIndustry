@@ -14,8 +14,8 @@ actually gathering the data, and what is nobody gathering?
 | `data/companies.csv` | 370 | The register. One row per organisation, 24 variables. |
 | `data/coverage_spatial.csv` | 370 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 349 | Hand-coded country footprints for 40 organisations. |
-| `data/coverage_country.csv` | 21,344 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 766 | Hand-coded country footprints for 62 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 21,249 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -108,15 +108,21 @@ Read these before using the data for anything load-bearing.
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
 3. **Country coverage is mostly model output, and this is the big one.** Of
-   21,344 company-country rows, 435 are observed (`manual` or `hq_exact`) and
-   20,909 are allocated by the model in `scripts/00_build_country_coverage.py`.
+   21,249 company-country rows, 852 are observed (`manual` or `hq_exact`) and
+   20,397 are allocated by the model in `scripts/00_build_country_coverage.py`.
    Country aggregates are usable; an individual firm's country row is not
    citable. Every country regression is reported twice, once on the full file and
-   once on observed rows only (`output/tab19_sensitivity.txt`). Population and
-   connectivity survive that test. Conflict exposure and restrictive research
-   regime do not, and the restrictive-regime coefficient is partly circular.
-   The region layer remains the empirically grounded one.
-4. **The register is not a census.** Private firms in this industry do not have
+   once on observed rows only (`output/tab19_sensitivity.txt`). Population,
+   income, connectivity and restrictive research regime survive that test.
+   Conflict exposure does not. The region layer remains the more grounded one.
+4. **Grounding is uneven by design.** Hand-coding is concentrated where the
+   register is most used: MENA and Sub-Saharan Africa are about 10% observed,
+   against 4% for the file overall and 0.2% for Western Europe. Country claims
+   about those two regions rest on real footprints; claims about Western Europe,
+   Oceania and East Asia are almost entirely model. The same asymmetry means the
+   observed-only sensitivity column is a strong check for MENA and Africa and a
+   weak one elsewhere.
+5. **The register is not a census.** Private firms in this industry do not have
    to announce themselves, and the smallest national field agencies are the
    hardest to enumerate. Coverage of MENA, Sub-Saharan Africa and the post-Soviet
    space reflects deliberate effort, but Central Asia, Francophone West Africa,
@@ -124,11 +130,11 @@ Read these before using the data for anything load-bearing.
    small local firms biases the findings toward *understating* how much
    collection happens outside the core, which cuts against this document's own
    argument and should be held in mind.
-5. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
+6. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
    perhaps a fifth of the register, and a column that is mostly missing invites
    misuse. What could be verified is in the `notes` field with its source in
    `docs/sources.md`.
-6. **The snapshot is September 2026.** This industry consolidates fast. Recent
+7. **The snapshot is September 2026.** This industry consolidates fast. Recent
    changes already reflected: Publicis acquiring LiveRamp, Experian acquiring
    AtData, Maxar becoming Vantor, Adobe acquiring Semrush, Meta's stake in
    Scale AI and the subsequent shift of frontier-lab demand to Surge, Mercor and
@@ -156,6 +162,7 @@ dimension so entry, exit and acquisition can be tracked; and verified revenue fo
 the subset where filings exist.
 
 To replace model rows with observations for a firm, add its countries to
-`data/coverage_country_manual.csv` and rerun the build. Manual rows override the
-model entirely for that firm, and the `basis` counts printed by the build script
-tell you how much of the file is still modelled.
+`data/coverage_country_manual.csv` and rerun the build. Mark the rows
+`exhaustive` if you know the firm's complete footprint, or `partial` if you know
+only part of it and want the model to fill the rest. The `basis` counts printed
+by the build script tell you how much of the file is still modelled.
