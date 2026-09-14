@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (518 rows, 25 variables)
+## `data/companies.csv` (522 rows, 25 variables)
 
-The register includes 467 operating organisations and 51 that no longer operate.
+The register includes 467 operating organisations and 55 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -66,7 +66,7 @@ dataset and should be reported in anything built on it.
 Current distribution over operating firms: A 38, B 169, C 260. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (518 rows, 14 variables)
+## `data/coverage_spatial.csv` (522 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -140,7 +140,7 @@ specific coding should change it and rerun.
 Note that region code `NOAM` is used for North America rather than `NAM`,
 because `NAM` is the ISO3 code for Namibia.
 
-## `data/coverage_country_manual.csv` (2,253 rows, 188 organisations)
+## `data/coverage_country_manual.csv` (2,278 rows, 192 organisations)
 
 Hand-coded country footprints: `company_id`, `iso3`, `coverage`, `scope`.
 Sources are published country lists (the barometer networks), regional hub
@@ -148,7 +148,7 @@ partner lists, and known office and delivery-centre networks.
 
 `scope` governs how the row interacts with the model:
 
-- `exhaustive` (1,247 rows) — the list is complete. The firm's country coverage
+- `exhaustive` (1,272 rows) — the list is complete. The firm's country coverage
   comes entirely from here and the model adds nothing.
 - `partial` (1,006 rows) — these countries are observed. The model fills the rest
   of the firm's stated country budget around them, and hand-coded rows spend
@@ -173,7 +173,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (24,125 rows, 9 variables)
+## `data/coverage_country.csv` (24,150 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -191,7 +191,7 @@ anti-join: a pair not present here is a pair with no coverage.
 
 | Basis | Rows | Status |
 |---|---|---|
-| `manual` | 2,253 | Observation. Hand-coded footprint. |
+| `manual` | 2,278 | Observation. Hand-coded footprint. |
 | `hq_exact` | 133 | Observation. Single-country firm resolved to its headquarters country. |
 | `allocated` | 21,739 | Model output. |
 

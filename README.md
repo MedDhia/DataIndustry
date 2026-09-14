@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 518 organisations that collect data as their business, 467 of them
+A register of 522 organisations that collect data as their business, 467 of them
 still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
@@ -12,11 +12,11 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 518 | The register. One row per organisation, 25 variables. 467 operating, 51 exited. |
-| `data/coverage_spatial.csv` | 518 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 522 | The register. One row per organisation, 25 variables. 467 operating, 55 exited. |
+| `data/coverage_spatial.csv` | 522 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 2,253 | Hand-coded country footprints for 188 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 24,125 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 2,278 | Hand-coded country footprints for 192 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 24,150 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -48,7 +48,7 @@ comes almost entirely from the observational side, and that only becomes visible
 when the two are measured on the same grid.
 
 Both startups and established firms are included by design, and so are firms that
-no longer exist. 51 organisations in the register have exited: 41 absorbed into
+no longer exist. 55 organisations in the register have exited: 45 absorbed into
 an acquirer, 10 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
 uses the 467 operating firms only**; `scripts/05_history.R` analyses the rest.
@@ -93,10 +93,16 @@ scope as producers, though firms that resell their output are in.
   **Aaru** and **Simile** simulate respondents rather than recruiting them, and
   are capitalised at a scale comparable to the largest panel businesses.
 - Consolidation is wildly uneven. **35%** of mobile location firms ever recorded
-  here have exited, and **32%** of consumer data brokers, against **2.5%** of
+  here have exited, and **32%** of consumer data brokers, against **4.9%** of
   in-country field agencies. The venture-funded, technologically novel end of the
   industry is the fragile end; the part that persists is an enumerator network
   and a long relationship with a statistical office.
+- **Every MENA and African field agency that has exited was bought, not closed.**
+  Markinor, Steadman, AMRB, RMS Nigeria, Repucom Africa, Compuscan and Omedia
+  were all absorbed by Ipsos, Kantar, Nielsen or Experian, four of them between
+  2007 and 2010. Much of what the register records as global-firm coverage of
+  Africa and the Gulf was bought, not built. The two Southern firms that did
+  close were venture-funded technology startups, not agencies.
 - **Not one exited firm had record-level data a researcher could obtain.** The
   access gap is a ratchet: collection accumulates and the routes to it close on
   acquisition or failure without ever opening. 23andMe's 15 million genomes went
@@ -168,12 +174,13 @@ Read these before using the data for anything load-bearing.
    East Asia (1.2%) and Oceania (0.7%) remain thin; Eastern Europe matters most,
    because the register makes claims about wartime Ukraine and the Western
    Balkans on 2.1% observation.
-6. **Exits are enumerated worse than survivors.** A firm that closes stops
-   publishing, so the 51 exits here are the visible ones: large, Northern,
-   venture-funded or listed. The true exit rate among small national field
-   agencies is certainly higher than the 2.5% recorded and cannot be established
-   from public sources. Read the segment exit table as a lower bound with a known
-   Northern bias, not as a hazard rate.
+6. **Exits are enumerated worse than survivors, and acquisitions better than
+   closures.** An acquirer issues a press release; a firm that winds up quietly
+   does not. Every MENA and African exit in this register was established from an
+   acquisition announcement, and a direct search for African research agency
+   closures returns directories of operating firms and nothing else. The 4.9%
+   field agency exit rate is a floor carrying two biases, Northern and
+   acquisition-shaped. It is not a hazard rate.
 7. **The register is not a census.** Private firms in this industry do not have
    to announce themselves, and the smallest national field agencies are the
    hardest to enumerate. Coverage of MENA, Sub-Saharan Africa and the post-Soviet

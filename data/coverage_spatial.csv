@@ -517,3 +517,7 @@ infutor,segment_template,3,0,0,0,0,0,0,0,0,0,0,0
 compuscan,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 amrb,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
 comres,segment_template,0,0,3,0,0,0,0,0,0,0,0,0
+markinor,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+rms_nigeria,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+omedia,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+repucom_africa,segment_template,0,0,0,0,0,0,3,0,0,0,0,0

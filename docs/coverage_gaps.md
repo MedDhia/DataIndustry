@@ -565,7 +565,7 @@ who speaks to a person.
 
 ## 14. What the register can only see because it includes the dead
 
-51 of the 518 organisations here no longer operate: 41 absorbed into an acquirer,
+55 of the 522 organisations here no longer operate: 45 absorbed into an acquirer,
 10 wound down or insolvent. Every coverage and gap table above excludes them and
 describes the 467 operating firms. This section is about what they show.
 
@@ -580,18 +580,19 @@ recorded in that segment:
 | Consumer data brokerage | 15 | 7 | 31.8% |
 | Health real-world data | 17 | 5 | 22.7% |
 | Retail scanning and pricing | 12 | 3 | 20.0% |
+| Media and audience measurement | 18 | 4 | 18.2% |
 | Vehicle and IoT telemetry | 10 | 2 | 16.7% |
-| Media and audience measurement | 18 | 3 | 14.3% |
 | Financial alternative data | 12 | 2 | 14.3% |
 | Full-service survey and insights | 42 | 6 | 12.5% |
 | Earth observation | 30 | 4 | 11.8% |
+| Panel and sample supply | 26 | 3 | 10.3% |
 | AI training data | 44 | 4 | 8.3% |
-| **In-country field agencies** | **116** | **3** | **2.5%** |
+| **In-country field agencies** | **116** | **6** | **4.9%** |
 | Data collection instrumentation | 17 | 0 | 0% |
 
 The observational segments consolidate and fail. The solicited ones, and
 especially the small national field agencies, persist. One in three location data
-firms in this register is gone; one in forty field agencies is. Wejo and Otonomo
+firms in this register is gone; one in twenty field agencies is. Wejo and Otonomo
 were together valued at over two billion dollars in 2021 and produced fifteen
 million dollars of combined revenue in 2022 against operating expenses above two
 hundred and fifty million. Meanwhile the Palestinian Center for Policy and Survey
@@ -604,10 +605,10 @@ network and a thirty-year relationship with a national statistical office.
 
 ### Exits are overwhelmingly Northern
 
-86.3% of exited firms were headquartered in North America or Western Europe,
-against 52.2% of operating ones. Of 51 exits, 34 were North American, 10 Western
-European, 4 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
-16 years for firms that were absorbed and 10 years for firms that failed.
+80% of exited firms were headquartered in North America or Western Europe,
+against 52.2% of operating ones. Of 55 exits, 34 were North American, 10 Western
+European, 8 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
+19 years for firms that were absorbed and 10 years for firms that failed.
 
 ### What survivorship would have hidden
 
@@ -616,8 +617,8 @@ Composition of the register with and without the firms that left:
 | | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
 | Operating only | 467 | 52.2% | 36.8% | 57.6% | 21.0% |
-| Including exits | 518 | 55.6% | 34.2% | 55.8% | 18.9% |
-| Exited firms only | 51 | 86.3% | 9.8% | 39.2% | **0%** |
+| Including exits | 522 | 55.4% | 34.1% | 55.9% | 18.8% |
+| Exited firms only | 55 | 80.0% | 9.1% | 41.8% | **0%** |
 
 The last cell is the one that matters. **Not one exited firm in this register had
 record-level data a researcher could obtain.** When a data company dies, its
@@ -632,28 +633,70 @@ them. The consent that governed collection was not the consent that governed the
 sale. uBiome's microbiome samples went the same way in 2019, and Cambridge
 Analytica's files were moved to Emerdata as insolvency proceedings began.
 
-### Consolidation has a geography
+### Every MENA and African field agency in this register was bought, not closed
 
-Four African and Middle Eastern exits in this register are not failures but
-absorptions into Northern groups: Steadman Group, the largest African research
-house of its era, taken by Synovate in 2008 and thereby into Ipsos in 2011;
-Compuscan, the Southern and East African credit bureau, taken by Experian in
-2018; AMRB in the Gulf, taken into Kantar. The coverage those firms built did not
-vanish, it changed owner. Much of what section 1 records as Ipsos and Kantar
-presence in Africa and the Gulf is the residue of acquisitions made between 2008
-and 2018.
+Ten organisations headquartered in MENA or Sub-Saharan Africa have exited. Eight
+were absorbed by a larger group and two wound down, and the split is not random.
 
-That is worth holding alongside section 4's finding that a third of new entry is
-now Middle Eastern or African. The previous generation of MENA and African data
-firms was largely bought. Whether this generation is bought too is the question
-the register will answer if it is maintained, and it is the reason the
-`ceased_year` field exists.
+| Firm | Country | Founded | Exit | Acquirer |
+|---|---|---|---|---|
+| Markinor | South Africa | 1975 | 2007 | Ipsos |
+| Steadman Group | Kenya | 1998 | 2008 | Synovate, thence Ipsos |
+| AMRB | United Arab Emirates | 1985 | 2008 | Kantar |
+| Research and Marketing Services | Nigeria | 1980 | 2010 | Kantar |
+| Repucom Africa | South Africa | 2004 | 2017 | Nielsen |
+| Compuscan | South Africa | 1994 | 2018 | Experian |
+| Omedia | Senegal | 1998 | 2023 | Ipsos |
+| Gro Intelligence | Kenya | 2014 | 2024 | wound down |
+| 54gene | Nigeria | 2019 | 2024 | wound down |
 
-### What this section cannot tell you
+**Every field agency and bureau on that list was acquired. Neither firm that
+closed was one.** Gro Intelligence and 54gene were venture-funded technology
+companies founded in 2014 and 2019; they failed the way Northern startups fail.
+The agencies with enumerator networks and thirty-year client relationships did
+not fail. They were bought.
 
-Exits are far harder to enumerate than survivors: a firm that closes stops
-publishing, and small firms that close quietly leave almost no trace. The 51
-here are the visible ones, which means large, Northern, venture-funded or
-publicly listed. The true exit rate for small national field agencies is not 2.5%
-and cannot be established from public sources. Read the segment table as a lower
-bound with a known Northern bias, not as a hazard rate.
+The acquisitions cluster in two waves. Four fall between 2007 and 2010, when
+Ipsos, Synovate, Kantar and TNS were assembling African and Gulf networks by
+purchase: Markinor gave Ipsos South Africa, Steadman gave Synovate Kenya Uganda
+Tanzania Zambia Ghana and Mozambique, RMS gave TNS Nigeria Senegal Cameroon Ivory
+Coast and Ghana, AMRB gave Kantar the Gulf and North Africa. Three fall between
+2017 and 2023. Ipsos ends up holding three of the seven directly or through
+Synovate.
+
+This is the mechanism behind a figure in section 1. MENA and Sub-Saharan Africa
+show 54 headquartered firms each, and the large global firms show deep coverage
+of both. Much of that coverage is not something Ipsos or Kantar built. It is
+something they bought between 2007 and 2010 from firms founded in 1975, 1980,
+1985 and 1998, which no longer appear in any current register of the industry.
+
+Read against section 4, which found that a third of new entry is now Middle
+Eastern or African, the question becomes concrete rather than rhetorical. The
+last generation of MENA and African data firms was acquired within twenty to
+thirty years of founding, at a median age of 19 years for absorbed firms across
+the whole register. The current generation is mostly under five years old. The
+`ceased_year` field exists so that whoever maintains this register can answer
+whether the pattern repeats rather than guess.
+
+### What this section cannot tell you, and a bias it introduces
+
+Exits are far harder to enumerate than survivors, and the difficulty is not
+uniform across kinds of exit. **Acquisitions are announced and closures are not.**
+An acquirer issues a press release, the trade press writes it up, and the deal
+stays findable fifteen years later; that is how every row in the table above was
+established. A Nairobi or Tunis agency that wound up quietly in 2014 generates no
+announcement from anyone, because nobody has an interest in publicising it.
+
+So the finding that every MENA and African field agency in this register was
+bought rather than closed is partly real and partly an artifact of who publishes.
+The real part is that the named acquisitions did happen and reshaped who owns
+African and Gulf coverage. The artifact is the denominator: closures are missing
+from the record, not from the world, and searching directly for African research
+agency liquidations returns directories of operating firms and nothing else.
+
+The 4.9% field agency exit rate is therefore a floor, and the composition of
+exits is biased toward absorption in a way that flatters the sector's stability.
+Read the segment table as a lower bound with two known biases, Northern and
+acquisition-shaped, rather than as a hazard rate. The only systematic record that
+would fix this is national market research association membership lists over
+time, which are not public for most of the countries that matter here.

@@ -160,3 +160,29 @@ as the visible tail of a larger population, skewed Northern and skewed large.
 Anyone extending this layer will get the most value from national market research
 association membership lists over time, which are the only systematic record of
 small-agency entry and exit that exists.
+
+## Retrieved for the MENA and Africa exit layer
+
+- Mergr, Ipsos acquires Markinor — https://mergr.com/transaction/ipsos-acquires-markinor-pty
+- Research Live, TNS acquires majority stake in Nigeria's Research and Marketing Services — https://www.research-live.com/article/news/tns-acquires-majority-stake-in-nigerias-research-and-marketing-services/id/4004298
+- Research Live, Ipsos acquires West African market research business (Omedia) — https://www.research-live.com/article/news/ipsos-acquires-west-african-market-research-business/id/5115013
+- Euronext, Ipsos acquires Omedia from Médiamétrie — https://live.euronext.com/en/products/equities/company-news/2023-07-20-ipsos-acquires-omedia-mediametrie
+- Nielsen, expansion in Africa with the acquisition of Repucom Africa from TransAfrica Media — https://www.nielsen.com/news-center/2017/nielsen-expands-global-sports-business-by-acquiring-repucom-africa-from-transafrica-media/
+- Research Live, Nielsen acquires Repucom Africa — https://www.research-live.com/article/news/nielsen-acquires-repucom-africa/id/5031542
+- Clutch, Kantar AMRB company information — https://clutch.co/profile/kantar-amrb
+
+A note on why this layer is shaped the way it is. Every MENA and African exit
+above was established from an acquisition announcement, because acquirers
+publicise deals and the trade press indexes them for years. Closures generate no
+announcement from anyone. A direct search for African market research agency
+liquidations, closures and ceased operations returns directories of currently
+operating firms and no closure records at all. The resulting picture, in which
+every MENA and African field agency exit is an absorption, is therefore partly a
+real pattern and partly a property of the public record. The named acquisitions
+are real; the absence of closures is not evidence that closures did not happen.
+
+One MENA case is recorded in the notes rather than as an exit because the firm
+continues to operate: Egypt ordered the closure of Ipsos's Cairo office in June
+2017, nominally over health and safety filings, in a period of pressure on
+polling. It is an instance of the `restrictive_research_regime` mechanism acting
+on a specific office rather than on an ownership structure.
