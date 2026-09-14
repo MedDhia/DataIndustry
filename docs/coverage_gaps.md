@@ -1,6 +1,8 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the 370-firm register.
+All figures come from `scripts/03_coverage_gaps.R` over the **467 operating
+firms** in the register. A further 51 organisations that no longer operate are
+recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
 The grid is 12 regions by 26 substantive domains, so 312 cells.
 
@@ -13,18 +15,18 @@ Provider counts by region:
 
 | Region | Any presence | Substantial | HQ'd there | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| NOAM | 261 | 246 | 171 | 96 | 49 |
-| WEU | 241 | 210 | 74 | 81 | 41 |
-| SAS | 235 | 183 | 16 | 76 | 34 |
-| MENA | 249 | 167 | 54 | 75 | 34 |
-| SSA | 242 | 157 | 56 | 71 | 43 |
-| SEA | 229 | 156 | 11 | 58 | 29 |
-| LAC | 224 | 153 | 14 | 53 | 29 |
-| EEU | 223 | 144 | 16 | 48 | 33 |
-| EAS | 214 | 141 | 14 | 40 | 27 |
-| OCE | 207 | 134 | 4 | 28 | 26 |
-| RUS | 152 | 89 | 17 | 23 | 22 |
-| CHN | 167 | 80 | 23 | 13 | 15 |
+| NOAM | 259 | 244 | 171 | 96 | 49 |
+| WEU | 239 | 208 | 73 | 81 | 41 |
+| SAS | 233 | 182 | 16 | 76 | 34 |
+| MENA | 248 | 166 | 54 | 75 | 34 |
+| SSA | 240 | 155 | 54 | 70 | 43 |
+| SEA | 227 | 155 | 11 | 58 | 29 |
+| LAC | 222 | 152 | 14 | 53 | 29 |
+| EEU | 221 | 144 | 16 | 48 | 33 |
+| EAS | 212 | 141 | 14 | 40 | 27 |
+| OCE | 205 | 134 | 4 | 28 | 26 |
+| RUS | 151 | 89 | 17 | 23 | 22 |
+| CHN | 165 | 80 | 23 | 13 | 15 |
 
 The spread between the best and worst served region is 3.5 to 1 on presence but
 7.6 to 1 on direct human contact. Nominal coverage is far more even than real
@@ -98,9 +100,9 @@ a public professional profile, which is not the labour force.
 
 ## 4. Where the firms are
 
-52.1% of the register is headquartered in North America or Western Europe, down
-from 62.7% before MENA, African, Russian and Chinese enumeration was deepened.
-Among venture and private-equity backed firms it is still 73.6%.
+52.2% of operating firms are headquartered in North America or Western Europe,
+down from 62.7% before MENA, African, Russian and Chinese enumeration was
+deepened. Among venture and private-equity backed firms it is still around 73%.
 
 Of the 62 firms founded in 2019 or later, 31 are North American, 13 Sub-Saharan
 African, 8 MENA, 6 Western European and 4 elsewhere. A third of new entry in this
@@ -139,7 +141,7 @@ Ownership varies systematically by region. Venture capital backs 66 firms in
 North America and 26 in Western Europe, against roughly 20 across MENA, Africa,
 South Asia, Southeast Asia, East Asia and mainland China combined. Outside the core, the
 register is dominated by owner-managed independents and by nonprofits and
-academic centres. Those account for 52 of the 470 firms (11.1%) but for 46.9% of
+academic centres. Those account for 52 of the 467 operating firms (11.1%) but for 46.9% of
 every firm whose record-level data a researcher can reach at all.
 
 That last point explains an otherwise odd result. The access ratio is slightly
@@ -560,3 +562,98 @@ The register takes no position on whether these methods work. It records that
 they exist, that they are capitalised at a scale comparable to the largest
 traditional panel businesses, and that they are counted separately from anyone
 who speaks to a person.
+
+## 14. What the register can only see because it includes the dead
+
+51 of the 518 organisations here no longer operate: 41 absorbed into an acquirer,
+10 wound down or insolvent. Every coverage and gap table above excludes them and
+describes the 467 operating firms. This section is about what they show.
+
+### Consolidation is not evenly distributed
+
+Exit rate by segment, counting absorbed and failed firms against all firms ever
+recorded in that segment:
+
+| Segment | Operating | Exited | Exit rate |
+|---|---|---|---|
+| Mobile location and mobility | 13 | 7 | 35.0% |
+| Consumer data brokerage | 15 | 7 | 31.8% |
+| Health real-world data | 17 | 5 | 22.7% |
+| Retail scanning and pricing | 12 | 3 | 20.0% |
+| Vehicle and IoT telemetry | 10 | 2 | 16.7% |
+| Media and audience measurement | 18 | 3 | 14.3% |
+| Financial alternative data | 12 | 2 | 14.3% |
+| Full-service survey and insights | 42 | 6 | 12.5% |
+| Earth observation | 30 | 4 | 11.8% |
+| AI training data | 44 | 4 | 8.3% |
+| **In-country field agencies** | **116** | **3** | **2.5%** |
+| Data collection instrumentation | 17 | 0 | 0% |
+
+The observational segments consolidate and fail. The solicited ones, and
+especially the small national field agencies, persist. One in three location data
+firms in this register is gone; one in forty field agencies is. Wejo and Otonomo
+were together valued at over two billion dollars in 2021 and produced fifteen
+million dollars of combined revenue in 2022 against operating expenses above two
+hundred and fifty million. Meanwhile the Palestinian Center for Policy and Survey
+Research has been running quarterly since 1993.
+
+This inverts the usual story about incumbency and disruption in data. The
+capital-intensive, venture-funded, technologically novel end of the industry is
+the fragile end. The part that persists is a few people with an enumerator
+network and a thirty-year relationship with a national statistical office.
+
+### Exits are overwhelmingly Northern
+
+86.3% of exited firms were headquartered in North America or Western Europe,
+against 52.2% of operating ones. Of 51 exits, 34 were North American, 10 Western
+European, 4 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
+16 years for firms that were absorbed and 10 years for firms that failed.
+
+### What survivorship would have hidden
+
+Composition of the register with and without the firms that left:
+
+| | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
+|---|---|---|---|---|---|
+| Operating only | 467 | 52.2% | 36.8% | 57.6% | 21.0% |
+| Including exits | 518 | 55.6% | 34.2% | 55.8% | 18.9% |
+| Exited firms only | 51 | 86.3% | 9.8% | 39.2% | **0%** |
+
+The last cell is the one that matters. **Not one exited firm in this register had
+record-level data a researcher could obtain.** When a data company dies, its
+holdings either transfer to an acquirer under commercial terms or disappear. The
+access gap documented in section 2 is therefore not a stable feature of the
+industry but a ratchet: collection accumulates, and the routes to it close on
+acquisition or failure without ever opening.
+
+23andMe is the clean case. Fifteen million genomes, collected under individual
+consent, went onto a bankruptcy auction block in 2025 before a nonprofit acquired
+them. The consent that governed collection was not the consent that governed the
+sale. uBiome's microbiome samples went the same way in 2019, and Cambridge
+Analytica's files were moved to Emerdata as insolvency proceedings began.
+
+### Consolidation has a geography
+
+Four African and Middle Eastern exits in this register are not failures but
+absorptions into Northern groups: Steadman Group, the largest African research
+house of its era, taken by Synovate in 2008 and thereby into Ipsos in 2011;
+Compuscan, the Southern and East African credit bureau, taken by Experian in
+2018; AMRB in the Gulf, taken into Kantar. The coverage those firms built did not
+vanish, it changed owner. Much of what section 1 records as Ipsos and Kantar
+presence in Africa and the Gulf is the residue of acquisitions made between 2008
+and 2018.
+
+That is worth holding alongside section 4's finding that a third of new entry is
+now Middle Eastern or African. The previous generation of MENA and African data
+firms was largely bought. Whether this generation is bought too is the question
+the register will answer if it is maintained, and it is the reason the
+`ceased_year` field exists.
+
+### What this section cannot tell you
+
+Exits are far harder to enumerate than survivors: a firm that closes stops
+publishing, and small firms that close quietly leave almost no trace. The 51
+here are the visible ones, which means large, Northern, venture-funded or
+publicly listed. The true exit rate for small national field agencies is not 2.5%
+and cannot be established from public sources. Read the segment table as a lower
+bound with a known Northern bias, not as a hazard rate.

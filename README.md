@@ -1,6 +1,7 @@
 # The Global Data Collection Industry
 
-A register of 470 organisations that collect data as their business, coded for
+A register of 518 organisations that collect data as their business, 467 of them
+still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
 
@@ -11,17 +12,18 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 470 | The register. One row per organisation, 24 variables. |
-| `data/coverage_spatial.csv` | 470 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 518 | The register. One row per organisation, 25 variables. 467 operating, 51 exited. |
+| `data/coverage_spatial.csv` | 518 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 2,193 | Hand-coded country footprints for 182 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 22,102 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 2,253 | Hand-coded country footprints for 188 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 24,125 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
 | `data/modalities.csv` | 15 | Collection method taxonomy. |
 | `docs/codebook.md` | | Every variable, every coding rule. |
 | `docs/coverage_gaps.md` | | The findings. |
+| `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
 ## Scope
@@ -45,10 +47,14 @@ Keeping both in one frame is the point. The industry's apparent global reach
 comes almost entirely from the observational side, and that only becomes visible
 when the two are measured on the same grid.
 
-Both startups and established firms are included by design: 200 established,
-211 scaleups, 59 startups, founded between 1841 and 2026. 110 firms are
-headquartered in MENA or Sub-Saharan Africa and 20 in the Russia bloc or mainland
-China, the areas where enumeration effort has been concentrated.
+Both startups and established firms are included by design, and so are firms that
+no longer exist. 51 organisations in the register have exited: 41 absorbed into
+an acquirer, 10 wound down or insolvent. Without them this would be a survivor
+sample of an industry that has consolidated hard. **Every coverage and gap table
+uses the 467 operating firms only**; `scripts/05_history.R` analyses the rest.
+
+110 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
+bloc or mainland China, the areas where enumeration effort has been concentrated.
 
 Pure analytics vendors, consultancies and platforms that only process data
 others collected are out of scope. Government statistical offices are out of
@@ -86,6 +92,16 @@ scope as producers, though firms that resell their output are in.
 - Three firms sit in a solicited segment while contacting nobody. Two are new:
   **Aaru** and **Simile** simulate respondents rather than recruiting them, and
   are capitalised at a scale comparable to the largest panel businesses.
+- Consolidation is wildly uneven. **35%** of mobile location firms ever recorded
+  here have exited, and **32%** of consumer data brokers, against **2.5%** of
+  in-country field agencies. The venture-funded, technologically novel end of the
+  industry is the fragile end; the part that persists is an enumerator network
+  and a long relationship with a statistical office.
+- **Not one exited firm had record-level data a researcher could obtain.** The
+  access gap is a ratchet: collection accumulates and the routes to it close on
+  acquisition or failure without ever opening. 23andMe's 15 million genomes went
+  to a bankruptcy auction in 2025 under consent that governed collection, not
+  sale.
 - Identity, biometric and credit data is collected in all twelve regions and
   released to outside researchers in none. At country level, identity data is
   obtainable in 165 countries and accessible in zero.
@@ -111,6 +127,7 @@ python3 scripts/00_validate.py                # check every file against every v
 Rscript  scripts/02_descriptives.R            # descriptive tables -> output/
 Rscript  scripts/03_coverage_gaps.R           # region gap analysis -> output/
 Rscript  scripts/04_country_gaps.R            # country gap analysis -> output/
+Rscript  scripts/05_history.R                 # exits and survivorship -> output/
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
@@ -151,7 +168,13 @@ Read these before using the data for anything load-bearing.
    East Asia (1.2%) and Oceania (0.7%) remain thin; Eastern Europe matters most,
    because the register makes claims about wartime Ukraine and the Western
    Balkans on 2.1% observation.
-6. **The register is not a census.** Private firms in this industry do not have
+6. **Exits are enumerated worse than survivors.** A firm that closes stops
+   publishing, so the 51 exits here are the visible ones: large, Northern,
+   venture-funded or listed. The true exit rate among small national field
+   agencies is certainly higher than the 2.5% recorded and cannot be established
+   from public sources. Read the segment exit table as a lower bound with a known
+   Northern bias, not as a hazard rate.
+7. **The register is not a census.** Private firms in this industry do not have
    to announce themselves, and the smallest national field agencies are the
    hardest to enumerate. Coverage of MENA, Sub-Saharan Africa and the post-Soviet
    space reflects deliberate effort, but Central Asia, Central America and the
@@ -161,11 +184,11 @@ Read these before using the data for anything load-bearing.
    small local firms biases the findings toward *understating* how much
    collection happens outside the core, which cuts against this document's own
    argument and should be held in mind.
-7. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
+8. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
    perhaps a fifth of the register, and a column that is mostly missing invites
    misuse. What could be verified is in the `notes` field with its source in
    `docs/sources.md`.
-8. **The snapshot is September 2026.** This industry consolidates fast. Recent
+9. **The snapshot is September 2026.** This industry consolidates fast. Recent
    changes already reflected: Publicis acquiring LiveRamp, Experian acquiring
    AtData, Maxar becoming Vantor, Adobe acquiring Semrush, Meta's stake in
    Scale AI and the subsequent shift of frontier-lab demand to Surge, Mercor and

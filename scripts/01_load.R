@@ -4,7 +4,13 @@
 read_di <- function(f) utils::read.csv(file.path("data", f), stringsAsFactors = FALSE,
                                        na.strings = c("NA", ""), encoding = "UTF-8")
 
-companies <- read_di("companies.csv")
+## The register includes firms that no longer operate, so that consolidation and
+## failure are visible rather than silently dropped. Every coverage and gap table
+## in this repository describes the CURRENT industry and therefore uses operating
+## firms only. `companies_all` retains the full set for the historical section.
+companies_all <- read_di("companies.csv")
+companies_all$operating <- companies_all$status %in% c("active", "acquired_active")
+companies <- companies_all[companies_all$operating, ]
 regions   <- read_di("regions.csv")
 segments  <- read_di("segments.csv")
 domains   <- read_di("domains.csv")
@@ -35,7 +41,8 @@ for (i in seq_len(nrow(companies))) {
   domain_mat[i, setdiff(s, p)] <- 1L
 }
 
-stopifnot(identical(sort(rownames(spatial_mat)), sort(companies$company_id)))
+stopifnot(all(companies$company_id %in% rownames(spatial_mat)))
+spatial_mat_all <- spatial_mat
 spatial_mat <- spatial_mat[companies$company_id, , drop = FALSE]
 
 ## Long-format versions for export and for anyone who prefers tidy data.
@@ -51,13 +58,15 @@ domain_long <- data.frame(
   weight = as.vector(domain_mat),
   stringsAsFactors = FALSE)
 
-message(sprintf("loaded %d companies | %d regions | %d domains | %d segments",
-                nrow(companies), length(REGION_CODES), length(DOMAIN_CODES),
-                nrow(segments)))
+message(sprintf("loaded %d companies (%d operating, %d exited) | %d regions | %d domains",
+                nrow(companies_all), nrow(companies),
+                nrow(companies_all) - nrow(companies),
+                length(REGION_CODES), length(DOMAIN_CODES)))
 
 ## ---- country layer ---------------------------------------------------------
 countries <- read_di("countries.csv")
-ccov      <- read_di("coverage_country.csv")
+ccov_all  <- read_di("coverage_country.csv")
+ccov      <- ccov_all[ccov_all$company_id %in% companies$company_id, ]
 
 countries$income_group    <- factor(countries$income_group, c("LIC","LMIC","UMIC","HIC"))
 countries$population_band <- factor(countries$population_band, c("XS","S","M","L","XL"))
@@ -95,3 +104,11 @@ countries$n_observed_primary <- tally(obs_rows[obs_rows$human_subjects == "direc
 
 message(sprintf("loaded %d countries | %d company-country rows",
                 nrow(countries), nrow(ccov)))
+
+## ---- historical layer ------------------------------------------------------
+## Exited firms, for the consolidation analysis in 05_history.R. Not included in
+## any current-coverage table.
+exited <- companies_all[!companies_all$operating, ]
+exited$ceased_year_n <- suppressWarnings(as.numeric(exited$ceased_year))
+exited$founded_year_n <- suppressWarnings(as.numeric(exited$founded_year))
+exited$lifespan <- exited$ceased_year_n - exited$founded_year_n

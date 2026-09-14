@@ -14,7 +14,6 @@
 "euromonitor","NOAM",3
 "mintel","NOAM",2
 "statista","NOAM",3
-"gfk_legacy","NOAM",2
 "m3_global_research","NOAM",3
 "escalent","NOAM",2
 "material_plus","NOAM",2
@@ -406,7 +405,6 @@
 "africa_polling_institute","NOAM",0
 "global_infoanalytics","NOAM",0
 "amini","NOAM",0
-"gro_intelligence","NOAM",3
 "research_solutions_africa","NOAM",0
 "msurvey","NOAM",0
 "echo_mobile","NOAM",0
@@ -455,7 +453,6 @@
 "hello_tractor","NOAM",0
 "mpharma","NOAM",0
 "ehealth_africa","NOAM",0
-"fiftyfour_gene","NOAM",0
 "lacuna_fund","NOAM",2
 "makerere_ai","NOAM",0
 "cntxt_ai","NOAM",0
@@ -484,7 +481,6 @@
 "euromonitor","LAC",3
 "mintel","LAC",1
 "statista","LAC",2
-"gfk_legacy","LAC",1
 "m3_global_research","LAC",2
 "escalent","LAC",1
 "material_plus","LAC",1
@@ -876,7 +872,6 @@
 "africa_polling_institute","LAC",0
 "global_infoanalytics","LAC",0
 "amini","LAC",0
-"gro_intelligence","LAC",2
 "research_solutions_africa","LAC",0
 "msurvey","LAC",0
 "echo_mobile","LAC",0
@@ -925,7 +920,6 @@
 "hello_tractor","LAC",0
 "mpharma","LAC",0
 "ehealth_africa","LAC",0
-"fiftyfour_gene","LAC",0
 "lacuna_fund","LAC",0
 "makerere_ai","LAC",0
 "cntxt_ai","LAC",0
@@ -954,7 +948,6 @@
 "euromonitor","WEU",3
 "mintel","WEU",2
 "statista","WEU",3
-"gfk_legacy","WEU",2
 "m3_global_research","WEU",3
 "escalent","WEU",2
 "material_plus","WEU",2
@@ -1346,7 +1339,6 @@
 "africa_polling_institute","WEU",0
 "global_infoanalytics","WEU",0
 "amini","WEU",0
-"gro_intelligence","WEU",2
 "research_solutions_africa","WEU",0
 "msurvey","WEU",0
 "echo_mobile","WEU",0
@@ -1395,7 +1387,6 @@
 "hello_tractor","WEU",0
 "mpharma","WEU",0
 "ehealth_africa","WEU",0
-"fiftyfour_gene","WEU",0
 "lacuna_fund","WEU",1
 "makerere_ai","WEU",0
 "cntxt_ai","WEU",0
@@ -1424,7 +1415,6 @@
 "euromonitor","EEU",3
 "mintel","EEU",1
 "statista","EEU",2
-"gfk_legacy","EEU",1
 "m3_global_research","EEU",2
 "escalent","EEU",1
 "material_plus","EEU",1
@@ -1816,7 +1806,6 @@
 "africa_polling_institute","EEU",0
 "global_infoanalytics","EEU",0
 "amini","EEU",0
-"gro_intelligence","EEU",1
 "research_solutions_africa","EEU",0
 "msurvey","EEU",0
 "echo_mobile","EEU",0
@@ -1865,7 +1854,6 @@
 "hello_tractor","EEU",0
 "mpharma","EEU",0
 "ehealth_africa","EEU",0
-"fiftyfour_gene","EEU",0
 "lacuna_fund","EEU",1
 "makerere_ai","EEU",0
 "cntxt_ai","EEU",0
@@ -1894,7 +1882,6 @@
 "euromonitor","RUS",2
 "mintel","RUS",0
 "statista","RUS",1
-"gfk_legacy","RUS",0
 "m3_global_research","RUS",0
 "escalent","RUS",0
 "material_plus","RUS",0
@@ -2286,7 +2273,6 @@
 "africa_polling_institute","RUS",0
 "global_infoanalytics","RUS",0
 "amini","RUS",0
-"gro_intelligence","RUS",1
 "research_solutions_africa","RUS",0
 "msurvey","RUS",0
 "echo_mobile","RUS",0
@@ -2335,7 +2321,6 @@
 "hello_tractor","RUS",0
 "mpharma","RUS",0
 "ehealth_africa","RUS",0
-"fiftyfour_gene","RUS",0
 "lacuna_fund","RUS",0
 "makerere_ai","RUS",0
 "cntxt_ai","RUS",0
@@ -2364,7 +2349,6 @@
 "euromonitor","MENA",3
 "mintel","MENA",0
 "statista","MENA",2
-"gfk_legacy","MENA",0
 "m3_global_research","MENA",1
 "escalent","MENA",1
 "material_plus","MENA",1
@@ -2756,7 +2740,6 @@
 "africa_polling_institute","MENA",0
 "global_infoanalytics","MENA",0
 "amini","MENA",0
-"gro_intelligence","MENA",2
 "research_solutions_africa","MENA",0
 "msurvey","MENA",0
 "echo_mobile","MENA",0
@@ -2805,7 +2788,6 @@
 "hello_tractor","MENA",0
 "mpharma","MENA",0
 "ehealth_africa","MENA",0
-"fiftyfour_gene","MENA",0
 "lacuna_fund","MENA",0
 "makerere_ai","MENA",0
 "cntxt_ai","MENA",3
@@ -2834,7 +2816,6 @@
 "euromonitor","SSA",2
 "mintel","SSA",0
 "statista","SSA",2
-"gfk_legacy","SSA",0
 "m3_global_research","SSA",1
 "escalent","SSA",1
 "material_plus","SSA",1
@@ -3226,7 +3207,6 @@
 "africa_polling_institute","SSA",3
 "global_infoanalytics","SSA",3
 "amini","SSA",3
-"gro_intelligence","SSA",2
 "research_solutions_africa","SSA",3
 "msurvey","SSA",3
 "echo_mobile","SSA",3
@@ -3275,7 +3255,6 @@
 "hello_tractor","SSA",3
 "mpharma","SSA",3
 "ehealth_africa","SSA",3
-"fiftyfour_gene","SSA",3
 "lacuna_fund","SSA",0
 "makerere_ai","SSA",3
 "cntxt_ai","SSA",0
@@ -3304,7 +3283,6 @@
 "euromonitor","SAS",3
 "mintel","SAS",1
 "statista","SAS",2
-"gfk_legacy","SAS",1
 "m3_global_research","SAS",2
 "escalent","SAS",1
 "material_plus","SAS",1
@@ -3696,7 +3674,6 @@
 "africa_polling_institute","SAS",0
 "global_infoanalytics","SAS",0
 "amini","SAS",0
-"gro_intelligence","SAS",2
 "research_solutions_africa","SAS",0
 "msurvey","SAS",0
 "echo_mobile","SAS",0
@@ -3745,7 +3722,6 @@
 "hello_tractor","SAS",0
 "mpharma","SAS",0
 "ehealth_africa","SAS",0
-"fiftyfour_gene","SAS",0
 "lacuna_fund","SAS",2
 "makerere_ai","SAS",0
 "cntxt_ai","SAS",0
@@ -3774,7 +3750,6 @@
 "euromonitor","SEA",3
 "mintel","SEA",1
 "statista","SEA",2
-"gfk_legacy","SEA",1
 "m3_global_research","SEA",2
 "escalent","SEA",1
 "material_plus","SEA",1
@@ -4166,7 +4141,6 @@
 "africa_polling_institute","SEA",0
 "global_infoanalytics","SEA",0
 "amini","SEA",0
-"gro_intelligence","SEA",2
 "research_solutions_africa","SEA",0
 "msurvey","SEA",0
 "echo_mobile","SEA",0
@@ -4215,7 +4189,6 @@
 "hello_tractor","SEA",0
 "mpharma","SEA",0
 "ehealth_africa","SEA",0
-"fiftyfour_gene","SEA",0
 "lacuna_fund","SEA",1
 "makerere_ai","SEA",0
 "cntxt_ai","SEA",0
@@ -4244,7 +4217,6 @@
 "euromonitor","EAS",3
 "mintel","EAS",1
 "statista","EAS",2
-"gfk_legacy","EAS",1
 "m3_global_research","EAS",2
 "escalent","EAS",1
 "material_plus","EAS",1
@@ -4636,7 +4608,6 @@
 "africa_polling_institute","EAS",0
 "global_infoanalytics","EAS",0
 "amini","EAS",0
-"gro_intelligence","EAS",1
 "research_solutions_africa","EAS",0
 "msurvey","EAS",0
 "echo_mobile","EAS",0
@@ -4685,7 +4656,6 @@
 "hello_tractor","EAS",0
 "mpharma","EAS",0
 "ehealth_africa","EAS",0
-"fiftyfour_gene","EAS",0
 "lacuna_fund","EAS",0
 "makerere_ai","EAS",0
 "cntxt_ai","EAS",0
@@ -4714,7 +4684,6 @@
 "euromonitor","CHN",3
 "mintel","CHN",1
 "statista","CHN",2
-"gfk_legacy","CHN",1
 "m3_global_research","CHN",1
 "escalent","CHN",1
 "material_plus","CHN",1
@@ -5106,7 +5075,6 @@
 "africa_polling_institute","CHN",0
 "global_infoanalytics","CHN",0
 "amini","CHN",0
-"gro_intelligence","CHN",1
 "research_solutions_africa","CHN",0
 "msurvey","CHN",0
 "echo_mobile","CHN",0
@@ -5155,7 +5123,6 @@
 "hello_tractor","CHN",0
 "mpharma","CHN",0
 "ehealth_africa","CHN",0
-"fiftyfour_gene","CHN",0
 "lacuna_fund","CHN",0
 "makerere_ai","CHN",0
 "cntxt_ai","CHN",0
@@ -5184,7 +5151,6 @@
 "euromonitor","OCE",3
 "mintel","OCE",1
 "statista","OCE",2
-"gfk_legacy","OCE",1
 "m3_global_research","OCE",2
 "escalent","OCE",1
 "material_plus","OCE",1
@@ -5576,7 +5542,6 @@
 "africa_polling_institute","OCE",0
 "global_infoanalytics","OCE",0
 "amini","OCE",0
-"gro_intelligence","OCE",1
 "research_solutions_africa","OCE",0
 "msurvey","OCE",0
 "echo_mobile","OCE",0
@@ -5625,7 +5590,6 @@
 "hello_tractor","OCE",0
 "mpharma","OCE",0
 "ehealth_africa","OCE",0
-"fiftyfour_gene","OCE",0
 "lacuna_fund","OCE",0
 "makerere_ai","OCE",0
 "cntxt_ai","OCE",0

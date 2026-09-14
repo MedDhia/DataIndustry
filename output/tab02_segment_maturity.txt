@@ -6,7 +6,7 @@ Primary segment by maturity class
 ai_training_data          6        22      16     44  
 audience_measurement     14         4       0     18  
 b2b_firmographic          5        14       0     19  
-climate_risk              2        11       5     18  
+climate_risk              2        10       5     17  
 collection_software       9         8       0     17  
 consumer_broker          14         1       0     15  
 crowd_micro               2         5       0      7  
@@ -14,16 +14,16 @@ earth_observation         4        19       7     30
 expert_network            3         2       0      5  
 field_agency             69        39       8     116 
 financial_altdata         3         8       1     12  
-health_rwd                5        11       2     18  
+health_rwd                5        11       1     17  
 identity_biometric        4         2       2      8  
 iot_telemetry             4         5       1     10  
 location_mobility         3         7       3     13  
 panel_sample             12        13       1     26  
-retail_pricing            8         5       0     13  
+retail_pricing            7         5       0     12  
 social_osint              9         9       0     18  
 survey_insights          21        11      10     42  
 telecom_data              1         3       0      4  
 trade_logistics           1         4       0      5  
 web_data                  1         8       3     12  
-Total                    200       211     59     470 
+Total                    199       210     58     467 
 ------------------------------------------------------

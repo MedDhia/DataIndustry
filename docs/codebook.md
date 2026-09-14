@@ -4,7 +4,15 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (470 rows, 24 variables)
+## `data/companies.csv` (518 rows, 25 variables)
+
+The register includes 467 operating organisations and 51 that no longer operate.
+**Every coverage and gap table in this repository uses operating firms only.**
+`scripts/01_load.R` applies that filter and exposes the full set as
+`companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
+the exited firms would make this a survivor sample of an industry that has
+consolidated hard, and section 14 of `coverage_gaps.md` quantifies what that
+would hide.
 
 | Variable | Type | Description |
 |---|---|---|
@@ -16,7 +24,8 @@ primary key across every file.
 | `founded_year` | integer | Year the collecting operation began, not the year of a later holding company. |
 | `maturity_class` | factor | `established`, `scaleup`, `startup`. See below. |
 | `ownership_type` | factor | `public_listed`, `private_pe`, `private_vc`, `private_independent`, `subsidiary`, `nonprofit`, `academic`, `state_linked`, `cooperative_jic`. |
-| `status` | factor | `active`, `acquired_active`, `wound_down`, `insolvent`. |
+| `status` | factor | `active` (independent and operating), `acquired_active` (operating under a new parent, brand retained), `absorbed` (acquired and no longer operating as a distinct entity), `wound_down` (ceased trading), `insolvent` (failed through bankruptcy or administration). The last three are exits and are excluded from coverage tables. |
+| `ceased_year` | integer | Year the firm stopped operating as a distinct entity. Required for `absorbed`, `wound_down` and `insolvent`; must be `NA` for operating firms. The validator enforces both directions. |
 | `segment_primary` | factor | Principal segment, from `segments.csv`. |
 | `segment_secondary` | factor | Secondary segment or `NA`. |
 | `modality_primary` | factor | Principal collection method, from `modalities.csv`. |
@@ -54,10 +63,10 @@ dataset and should be reported in anything built on it.
 - `C` — analyst judgement from domain knowledge. Directionally reliable for
   segment, region and modality; not reliable for dates or counts.
 
-Current distribution: A 38, B 172, C 260. Treat every `C` figure as an ordinal
+Current distribution over operating firms: A 38, B 169, C 260. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (470 rows, 14 variables)
+## `data/coverage_spatial.csv` (518 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -131,7 +140,7 @@ specific coding should change it and rerun.
 Note that region code `NOAM` is used for North America rather than `NAM`,
 because `NAM` is the ISO3 code for Namibia.
 
-## `data/coverage_country_manual.csv` (2,193 rows, 182 organisations)
+## `data/coverage_country_manual.csv` (2,253 rows, 188 organisations)
 
 Hand-coded country footprints: `company_id`, `iso3`, `coverage`, `scope`.
 Sources are published country lists (the barometer networks), regional hub
@@ -139,9 +148,9 @@ partner lists, and known office and delivery-centre networks.
 
 `scope` governs how the row interacts with the model:
 
-- `exhaustive` (1,198 rows) — the list is complete. The firm's country coverage
+- `exhaustive` (1,247 rows) — the list is complete. The firm's country coverage
   comes entirely from here and the model adds nothing.
-- `partial` (995 rows) — these countries are observed. The model fills the rest
+- `partial` (1,006 rows) — these countries are observed. The model fills the rest
   of the firm's stated country budget around them, and hand-coded rows spend
   that budget first.
 
@@ -164,7 +173,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (22,102 rows, 9 variables)
+## `data/coverage_country.csv` (24,125 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -182,9 +191,12 @@ anti-join: a pair not present here is a pair with no coverage.
 
 | Basis | Rows | Status |
 |---|---|---|
-| `manual` | 2,193 | Observation. Hand-coded footprint. |
-| `hq_exact` | 123 | Observation. Single-country firm resolved to its headquarters country. |
-| `allocated` | 19,786 | Model output. |
+| `manual` | 2,253 | Observation. Hand-coded footprint. |
+| `hq_exact` | 133 | Observation. Single-country firm resolved to its headquarters country. |
+| `allocated` | 21,739 | Model output. |
+
+Rows are written for exited firms too, recording the footprint they had, and are
+filtered out of the current-coverage tables by `01_load.R`.
 
 **90% of rows are model output**, falling to about 62% for the Russia bloc and
 mainland China, which are the best-grounded regions in the file. An `allocated` row says where a firm of that

@@ -14,7 +14,6 @@
 "euromonitor","consumer_behavior",2
 "mintel","consumer_behavior",2
 "statista","consumer_behavior",2
-"gfk_legacy","consumer_behavior",1
 "m3_global_research","consumer_behavior",2
 "escalent","consumer_behavior",2
 "material_plus","consumer_behavior",2
@@ -406,7 +405,6 @@
 "africa_polling_institute","consumer_behavior",0
 "global_infoanalytics","consumer_behavior",0
 "amini","consumer_behavior",0
-"gro_intelligence","consumer_behavior",0
 "research_solutions_africa","consumer_behavior",2
 "msurvey","consumer_behavior",2
 "echo_mobile","consumer_behavior",0
@@ -455,7 +453,6 @@
 "hello_tractor","consumer_behavior",0
 "mpharma","consumer_behavior",0
 "ehealth_africa","consumer_behavior",0
-"fiftyfour_gene","consumer_behavior",0
 "lacuna_fund","consumer_behavior",0
 "makerere_ai","consumer_behavior",0
 "cntxt_ai","consumer_behavior",0
@@ -484,7 +481,6 @@
 "euromonitor","public_opinion",0
 "mintel","public_opinion",0
 "statista","public_opinion",0
-"gfk_legacy","public_opinion",0
 "m3_global_research","public_opinion",0
 "escalent","public_opinion",0
 "material_plus","public_opinion",0
@@ -876,7 +872,6 @@
 "africa_polling_institute","public_opinion",2
 "global_infoanalytics","public_opinion",2
 "amini","public_opinion",0
-"gro_intelligence","public_opinion",0
 "research_solutions_africa","public_opinion",0
 "msurvey","public_opinion",2
 "echo_mobile","public_opinion",0
@@ -925,7 +920,6 @@
 "hello_tractor","public_opinion",0
 "mpharma","public_opinion",0
 "ehealth_africa","public_opinion",0
-"fiftyfour_gene","public_opinion",0
 "lacuna_fund","public_opinion",0
 "makerere_ai","public_opinion",0
 "cntxt_ai","public_opinion",0
@@ -954,7 +948,6 @@
 "euromonitor","health_clinical",0
 "mintel","health_clinical",0
 "statista","health_clinical",0
-"gfk_legacy","health_clinical",0
 "m3_global_research","health_clinical",2
 "escalent","health_clinical",0
 "material_plus","health_clinical",0
@@ -1346,7 +1339,6 @@
 "africa_polling_institute","health_clinical",0
 "global_infoanalytics","health_clinical",0
 "amini","health_clinical",0
-"gro_intelligence","health_clinical",0
 "research_solutions_africa","health_clinical",2
 "msurvey","health_clinical",0
 "echo_mobile","health_clinical",2
@@ -1395,7 +1387,6 @@
 "hello_tractor","health_clinical",0
 "mpharma","health_clinical",2
 "ehealth_africa","health_clinical",2
-"fiftyfour_gene","health_clinical",2
 "lacuna_fund","health_clinical",1
 "makerere_ai","health_clinical",2
 "cntxt_ai","health_clinical",0
@@ -1424,7 +1415,6 @@
 "euromonitor","financial_transactions",0
 "mintel","financial_transactions",0
 "statista","financial_transactions",0
-"gfk_legacy","financial_transactions",0
 "m3_global_research","financial_transactions",0
 "escalent","financial_transactions",0
 "material_plus","financial_transactions",0
@@ -1816,7 +1806,6 @@
 "africa_polling_institute","financial_transactions",0
 "global_infoanalytics","financial_transactions",0
 "amini","financial_transactions",0
-"gro_intelligence","financial_transactions",0
 "research_solutions_africa","financial_transactions",0
 "msurvey","financial_transactions",0
 "echo_mobile","financial_transactions",0
@@ -1865,7 +1854,6 @@
 "hello_tractor","financial_transactions",0
 "mpharma","financial_transactions",0
 "ehealth_africa","financial_transactions",0
-"fiftyfour_gene","financial_transactions",0
 "lacuna_fund","financial_transactions",0
 "makerere_ai","financial_transactions",0
 "cntxt_ai","financial_transactions",0
@@ -1894,7 +1882,6 @@
 "euromonitor","credit_risk",0
 "mintel","credit_risk",0
 "statista","credit_risk",0
-"gfk_legacy","credit_risk",0
 "m3_global_research","credit_risk",0
 "escalent","credit_risk",0
 "material_plus","credit_risk",0
@@ -2286,7 +2273,6 @@
 "africa_polling_institute","credit_risk",0
 "global_infoanalytics","credit_risk",0
 "amini","credit_risk",0
-"gro_intelligence","credit_risk",0
 "research_solutions_africa","credit_risk",0
 "msurvey","credit_risk",0
 "echo_mobile","credit_risk",0
@@ -2335,7 +2321,6 @@
 "hello_tractor","credit_risk",0
 "mpharma","credit_risk",0
 "ehealth_africa","credit_risk",0
-"fiftyfour_gene","credit_risk",0
 "lacuna_fund","credit_risk",0
 "makerere_ai","credit_risk",0
 "cntxt_ai","credit_risk",0
@@ -2364,7 +2349,6 @@
 "euromonitor","labor_employment",0
 "mintel","labor_employment",0
 "statista","labor_employment",1
-"gfk_legacy","labor_employment",0
 "m3_global_research","labor_employment",0
 "escalent","labor_employment",0
 "material_plus","labor_employment",0
@@ -2756,7 +2740,6 @@
 "africa_polling_institute","labor_employment",0
 "global_infoanalytics","labor_employment",0
 "amini","labor_employment",0
-"gro_intelligence","labor_employment",0
 "research_solutions_africa","labor_employment",0
 "msurvey","labor_employment",0
 "echo_mobile","labor_employment",0
@@ -2805,7 +2788,6 @@
 "hello_tractor","labor_employment",0
 "mpharma","labor_employment",0
 "ehealth_africa","labor_employment",0
-"fiftyfour_gene","labor_employment",0
 "lacuna_fund","labor_employment",0
 "makerere_ai","labor_employment",0
 "cntxt_ai","labor_employment",0
@@ -2834,7 +2816,6 @@
 "euromonitor","earth_observation",0
 "mintel","earth_observation",0
 "statista","earth_observation",0
-"gfk_legacy","earth_observation",0
 "m3_global_research","earth_observation",0
 "escalent","earth_observation",0
 "material_plus","earth_observation",0
@@ -3226,7 +3207,6 @@
 "africa_polling_institute","earth_observation",0
 "global_infoanalytics","earth_observation",0
 "amini","earth_observation",1
-"gro_intelligence","earth_observation",0
 "research_solutions_africa","earth_observation",0
 "msurvey","earth_observation",0
 "echo_mobile","earth_observation",0
@@ -3275,7 +3255,6 @@
 "hello_tractor","earth_observation",0
 "mpharma","earth_observation",0
 "ehealth_africa","earth_observation",0
-"fiftyfour_gene","earth_observation",0
 "lacuna_fund","earth_observation",0
 "makerere_ai","earth_observation",0
 "cntxt_ai","earth_observation",0
@@ -3304,7 +3283,6 @@
 "euromonitor","mobility_location",0
 "mintel","mobility_location",0
 "statista","mobility_location",0
-"gfk_legacy","mobility_location",0
 "m3_global_research","mobility_location",0
 "escalent","mobility_location",0
 "material_plus","mobility_location",0
@@ -3696,7 +3674,6 @@
 "africa_polling_institute","mobility_location",0
 "global_infoanalytics","mobility_location",0
 "amini","mobility_location",0
-"gro_intelligence","mobility_location",0
 "research_solutions_africa","mobility_location",0
 "msurvey","mobility_location",0
 "echo_mobile","mobility_location",0
@@ -3745,7 +3722,6 @@
 "hello_tractor","mobility_location",0
 "mpharma","mobility_location",0
 "ehealth_africa","mobility_location",0
-"fiftyfour_gene","mobility_location",0
 "lacuna_fund","mobility_location",0
 "makerere_ai","mobility_location",0
 "cntxt_ai","mobility_location",0
@@ -3774,7 +3750,6 @@
 "euromonitor","web_content",0
 "mintel","web_content",0
 "statista","web_content",0
-"gfk_legacy","web_content",0
 "m3_global_research","web_content",0
 "escalent","web_content",0
 "material_plus","web_content",0
@@ -4166,7 +4141,6 @@
 "africa_polling_institute","web_content",0
 "global_infoanalytics","web_content",0
 "amini","web_content",0
-"gro_intelligence","web_content",0
 "research_solutions_africa","web_content",0
 "msurvey","web_content",0
 "echo_mobile","web_content",0
@@ -4215,7 +4189,6 @@
 "hello_tractor","web_content",0
 "mpharma","web_content",0
 "ehealth_africa","web_content",0
-"fiftyfour_gene","web_content",0
 "lacuna_fund","web_content",0
 "makerere_ai","web_content",0
 "cntxt_ai","web_content",0
@@ -4244,7 +4217,6 @@
 "euromonitor","social_discourse",0
 "mintel","social_discourse",0
 "statista","social_discourse",0
-"gfk_legacy","social_discourse",0
 "m3_global_research","social_discourse",0
 "escalent","social_discourse",0
 "material_plus","social_discourse",0
@@ -4636,7 +4608,6 @@
 "africa_polling_institute","social_discourse",0
 "global_infoanalytics","social_discourse",0
 "amini","social_discourse",0
-"gro_intelligence","social_discourse",0
 "research_solutions_africa","social_discourse",0
 "msurvey","social_discourse",0
 "echo_mobile","social_discourse",0
@@ -4685,7 +4656,6 @@
 "hello_tractor","social_discourse",0
 "mpharma","social_discourse",0
 "ehealth_africa","social_discourse",0
-"fiftyfour_gene","social_discourse",0
 "lacuna_fund","social_discourse",0
 "makerere_ai","social_discourse",0
 "cntxt_ai","social_discourse",1
@@ -4714,7 +4684,6 @@
 "euromonitor","media_audience",0
 "mintel","media_audience",0
 "statista","media_audience",0
-"gfk_legacy","media_audience",2
 "m3_global_research","media_audience",0
 "escalent","media_audience",0
 "material_plus","media_audience",1
@@ -5106,7 +5075,6 @@
 "africa_polling_institute","media_audience",0
 "global_infoanalytics","media_audience",0
 "amini","media_audience",0
-"gro_intelligence","media_audience",0
 "research_solutions_africa","media_audience",0
 "msurvey","media_audience",0
 "echo_mobile","media_audience",0
@@ -5155,7 +5123,6 @@
 "hello_tractor","media_audience",0
 "mpharma","media_audience",0
 "ehealth_africa","media_audience",0
-"fiftyfour_gene","media_audience",0
 "lacuna_fund","media_audience",0
 "makerere_ai","media_audience",0
 "cntxt_ai","media_audience",0
@@ -5184,7 +5151,6 @@
 "euromonitor","agriculture",1
 "mintel","agriculture",0
 "statista","agriculture",0
-"gfk_legacy","agriculture",0
 "m3_global_research","agriculture",0
 "escalent","agriculture",0
 "material_plus","agriculture",0
@@ -5576,7 +5542,6 @@
 "africa_polling_institute","agriculture",0
 "global_infoanalytics","agriculture",0
 "amini","agriculture",2
-"gro_intelligence","agriculture",2
 "research_solutions_africa","agriculture",1
 "msurvey","agriculture",0
 "echo_mobile","agriculture",2
@@ -5625,7 +5590,6 @@
 "hello_tractor","agriculture",2
 "mpharma","agriculture",0
 "ehealth_africa","agriculture",0
-"fiftyfour_gene","agriculture",0
 "lacuna_fund","agriculture",2
 "makerere_ai","agriculture",1
 "cntxt_ai","agriculture",0
@@ -5654,7 +5618,6 @@
 "euromonitor","energy_extractives",1
 "mintel","energy_extractives",0
 "statista","energy_extractives",0
-"gfk_legacy","energy_extractives",0
 "m3_global_research","energy_extractives",0
 "escalent","energy_extractives",2
 "material_plus","energy_extractives",0
@@ -6046,7 +6009,6 @@
 "africa_polling_institute","energy_extractives",0
 "global_infoanalytics","energy_extractives",0
 "amini","energy_extractives",0
-"gro_intelligence","energy_extractives",0
 "research_solutions_africa","energy_extractives",0
 "msurvey","energy_extractives",0
 "echo_mobile","energy_extractives",0
@@ -6095,7 +6057,6 @@
 "hello_tractor","energy_extractives",0
 "mpharma","energy_extractives",0
 "ehealth_africa","energy_extractives",0
-"fiftyfour_gene","energy_extractives",0
 "lacuna_fund","energy_extractives",0
 "makerere_ai","energy_extractives",0
 "cntxt_ai","energy_extractives",0
@@ -6124,7 +6085,6 @@
 "euromonitor","environment_climate",0
 "mintel","environment_climate",0
 "statista","environment_climate",0
-"gfk_legacy","environment_climate",0
 "m3_global_research","environment_climate",0
 "escalent","environment_climate",0
 "material_plus","environment_climate",0
@@ -6516,7 +6476,6 @@
 "africa_polling_institute","environment_climate",0
 "global_infoanalytics","environment_climate",0
 "amini","environment_climate",2
-"gro_intelligence","environment_climate",2
 "research_solutions_africa","environment_climate",0
 "msurvey","environment_climate",0
 "echo_mobile","environment_climate",0
@@ -6565,7 +6524,6 @@
 "hello_tractor","environment_climate",0
 "mpharma","environment_climate",0
 "ehealth_africa","environment_climate",0
-"fiftyfour_gene","environment_climate",0
 "lacuna_fund","environment_climate",0
 "makerere_ai","environment_climate",0
 "cntxt_ai","environment_climate",0
@@ -6594,7 +6552,6 @@
 "euromonitor","conflict_security",0
 "mintel","conflict_security",0
 "statista","conflict_security",0
-"gfk_legacy","conflict_security",0
 "m3_global_research","conflict_security",0
 "escalent","conflict_security",0
 "material_plus","conflict_security",0
@@ -6986,7 +6943,6 @@
 "africa_polling_institute","conflict_security",0
 "global_infoanalytics","conflict_security",0
 "amini","conflict_security",0
-"gro_intelligence","conflict_security",0
 "research_solutions_africa","conflict_security",0
 "msurvey","conflict_security",0
 "echo_mobile","conflict_security",0
@@ -7035,7 +6991,6 @@
 "hello_tractor","conflict_security",0
 "mpharma","conflict_security",0
 "ehealth_africa","conflict_security",0
-"fiftyfour_gene","conflict_security",0
 "lacuna_fund","conflict_security",0
 "makerere_ai","conflict_security",0
 "cntxt_ai","conflict_security",0
@@ -7064,7 +7019,6 @@
 "euromonitor","firmographic",0
 "mintel","firmographic",0
 "statista","firmographic",0
-"gfk_legacy","firmographic",0
 "m3_global_research","firmographic",0
 "escalent","firmographic",0
 "material_plus","firmographic",0
@@ -7456,7 +7410,6 @@
 "africa_polling_institute","firmographic",0
 "global_infoanalytics","firmographic",0
 "amini","firmographic",0
-"gro_intelligence","firmographic",0
 "research_solutions_africa","firmographic",0
 "msurvey","firmographic",0
 "echo_mobile","firmographic",0
@@ -7505,7 +7458,6 @@
 "hello_tractor","firmographic",0
 "mpharma","firmographic",0
 "ehealth_africa","firmographic",0
-"fiftyfour_gene","firmographic",0
 "lacuna_fund","firmographic",0
 "makerere_ai","firmographic",0
 "cntxt_ai","firmographic",0
@@ -7534,7 +7486,6 @@
 "euromonitor","prices_retail",2
 "mintel","prices_retail",2
 "statista","prices_retail",2
-"gfk_legacy","prices_retail",2
 "m3_global_research","prices_retail",0
 "escalent","prices_retail",0
 "material_plus","prices_retail",0
@@ -7926,7 +7877,6 @@
 "africa_polling_institute","prices_retail",0
 "global_infoanalytics","prices_retail",0
 "amini","prices_retail",0
-"gro_intelligence","prices_retail",0
 "research_solutions_africa","prices_retail",0
 "msurvey","prices_retail",0
 "echo_mobile","prices_retail",0
@@ -7975,7 +7925,6 @@
 "hello_tractor","prices_retail",0
 "mpharma","prices_retail",2
 "ehealth_africa","prices_retail",0
-"fiftyfour_gene","prices_retail",0
 "lacuna_fund","prices_retail",0
 "makerere_ai","prices_retail",0
 "cntxt_ai","prices_retail",0
@@ -8004,7 +7953,6 @@
 "euromonitor","identity_biometric",0
 "mintel","identity_biometric",0
 "statista","identity_biometric",0
-"gfk_legacy","identity_biometric",0
 "m3_global_research","identity_biometric",0
 "escalent","identity_biometric",0
 "material_plus","identity_biometric",0
@@ -8396,7 +8344,6 @@
 "africa_polling_institute","identity_biometric",0
 "global_infoanalytics","identity_biometric",0
 "amini","identity_biometric",0
-"gro_intelligence","identity_biometric",0
 "research_solutions_africa","identity_biometric",0
 "msurvey","identity_biometric",0
 "echo_mobile","identity_biometric",0
@@ -8445,7 +8392,6 @@
 "hello_tractor","identity_biometric",0
 "mpharma","identity_biometric",0
 "ehealth_africa","identity_biometric",0
-"fiftyfour_gene","identity_biometric",1
 "lacuna_fund","identity_biometric",0
 "makerere_ai","identity_biometric",0
 "cntxt_ai","identity_biometric",2
@@ -8474,7 +8420,6 @@
 "euromonitor","device_telemetry",0
 "mintel","device_telemetry",0
 "statista","device_telemetry",0
-"gfk_legacy","device_telemetry",0
 "m3_global_research","device_telemetry",0
 "escalent","device_telemetry",1
 "material_plus","device_telemetry",0
@@ -8866,7 +8811,6 @@
 "africa_polling_institute","device_telemetry",0
 "global_infoanalytics","device_telemetry",0
 "amini","device_telemetry",0
-"gro_intelligence","device_telemetry",0
 "research_solutions_africa","device_telemetry",0
 "msurvey","device_telemetry",0
 "echo_mobile","device_telemetry",0
@@ -8915,7 +8859,6 @@
 "hello_tractor","device_telemetry",2
 "mpharma","device_telemetry",0
 "ehealth_africa","device_telemetry",0
-"fiftyfour_gene","device_telemetry",0
 "lacuna_fund","device_telemetry",0
 "makerere_ai","device_telemetry",0
 "cntxt_ai","device_telemetry",0
@@ -8944,7 +8887,6 @@
 "euromonitor","education",0
 "mintel","education",0
 "statista","education",0
-"gfk_legacy","education",0
 "m3_global_research","education",0
 "escalent","education",0
 "material_plus","education",0
@@ -9336,7 +9278,6 @@
 "africa_polling_institute","education",0
 "global_infoanalytics","education",0
 "amini","education",0
-"gro_intelligence","education",0
 "research_solutions_africa","education",0
 "msurvey","education",0
 "echo_mobile","education",1
@@ -9385,7 +9326,6 @@
 "hello_tractor","education",0
 "mpharma","education",0
 "ehealth_africa","education",0
-"fiftyfour_gene","education",0
 "lacuna_fund","education",1
 "makerere_ai","education",1
 "cntxt_ai","education",0
@@ -9414,7 +9354,6 @@
 "euromonitor","migration_displacement",0
 "mintel","migration_displacement",0
 "statista","migration_displacement",0
-"gfk_legacy","migration_displacement",0
 "m3_global_research","migration_displacement",0
 "escalent","migration_displacement",0
 "material_plus","migration_displacement",0
@@ -9806,7 +9745,6 @@
 "africa_polling_institute","migration_displacement",0
 "global_infoanalytics","migration_displacement",0
 "amini","migration_displacement",0
-"gro_intelligence","migration_displacement",0
 "research_solutions_africa","migration_displacement",0
 "msurvey","migration_displacement",0
 "echo_mobile","migration_displacement",0
@@ -9855,7 +9793,6 @@
 "hello_tractor","migration_displacement",0
 "mpharma","migration_displacement",0
 "ehealth_africa","migration_displacement",1
-"fiftyfour_gene","migration_displacement",0
 "lacuna_fund","migration_displacement",0
 "makerere_ai","migration_displacement",0
 "cntxt_ai","migration_displacement",0
@@ -9884,7 +9821,6 @@
 "euromonitor","supply_chain",0
 "mintel","supply_chain",0
 "statista","supply_chain",0
-"gfk_legacy","supply_chain",0
 "m3_global_research","supply_chain",0
 "escalent","supply_chain",0
 "material_plus","supply_chain",0
@@ -10276,7 +10212,6 @@
 "africa_polling_institute","supply_chain",0
 "global_infoanalytics","supply_chain",0
 "amini","supply_chain",0
-"gro_intelligence","supply_chain",1
 "research_solutions_africa","supply_chain",0
 "msurvey","supply_chain",0
 "echo_mobile","supply_chain",0
@@ -10325,7 +10260,6 @@
 "hello_tractor","supply_chain",0
 "mpharma","supply_chain",0
 "ehealth_africa","supply_chain",0
-"fiftyfour_gene","supply_chain",0
 "lacuna_fund","supply_chain",0
 "makerere_ai","supply_chain",0
 "cntxt_ai","supply_chain",0
@@ -10354,7 +10288,6 @@
 "euromonitor","ai_labels",0
 "mintel","ai_labels",0
 "statista","ai_labels",0
-"gfk_legacy","ai_labels",0
 "m3_global_research","ai_labels",0
 "escalent","ai_labels",0
 "material_plus","ai_labels",0
@@ -10746,7 +10679,6 @@
 "africa_polling_institute","ai_labels",0
 "global_infoanalytics","ai_labels",0
 "amini","ai_labels",0
-"gro_intelligence","ai_labels",0
 "research_solutions_africa","ai_labels",0
 "msurvey","ai_labels",0
 "echo_mobile","ai_labels",0
@@ -10795,7 +10727,6 @@
 "hello_tractor","ai_labels",0
 "mpharma","ai_labels",0
 "ehealth_africa","ai_labels",0
-"fiftyfour_gene","ai_labels",0
 "lacuna_fund","ai_labels",2
 "makerere_ai","ai_labels",2
 "cntxt_ai","ai_labels",2
@@ -10824,7 +10755,6 @@
 "euromonitor","legal_regulatory",0
 "mintel","legal_regulatory",0
 "statista","legal_regulatory",0
-"gfk_legacy","legal_regulatory",0
 "m3_global_research","legal_regulatory",0
 "escalent","legal_regulatory",0
 "material_plus","legal_regulatory",0
@@ -11216,7 +11146,6 @@
 "africa_polling_institute","legal_regulatory",0
 "global_infoanalytics","legal_regulatory",0
 "amini","legal_regulatory",0
-"gro_intelligence","legal_regulatory",0
 "research_solutions_africa","legal_regulatory",0
 "msurvey","legal_regulatory",0
 "echo_mobile","legal_regulatory",0
@@ -11265,7 +11194,6 @@
 "hello_tractor","legal_regulatory",0
 "mpharma","legal_regulatory",0
 "ehealth_africa","legal_regulatory",0
-"fiftyfour_gene","legal_regulatory",0
 "lacuna_fund","legal_regulatory",0
 "makerere_ai","legal_regulatory",0
 "cntxt_ai","legal_regulatory",0
@@ -11294,7 +11222,6 @@
 "euromonitor","housing_property",0
 "mintel","housing_property",0
 "statista","housing_property",0
-"gfk_legacy","housing_property",0
 "m3_global_research","housing_property",0
 "escalent","housing_property",0
 "material_plus","housing_property",0
@@ -11686,7 +11613,6 @@
 "africa_polling_institute","housing_property",0
 "global_infoanalytics","housing_property",0
 "amini","housing_property",0
-"gro_intelligence","housing_property",0
 "research_solutions_africa","housing_property",0
 "msurvey","housing_property",0
 "echo_mobile","housing_property",0
@@ -11735,7 +11661,6 @@
 "hello_tractor","housing_property",0
 "mpharma","housing_property",0
 "ehealth_africa","housing_property",0
-"fiftyfour_gene","housing_property",0
 "lacuna_fund","housing_property",0
 "makerere_ai","housing_property",0
 "cntxt_ai","housing_property",0
@@ -11764,7 +11689,6 @@
 "euromonitor","infrastructure",0
 "mintel","infrastructure",0
 "statista","infrastructure",0
-"gfk_legacy","infrastructure",0
 "m3_global_research","infrastructure",0
 "escalent","infrastructure",0
 "material_plus","infrastructure",0
@@ -12156,7 +12080,6 @@
 "africa_polling_institute","infrastructure",0
 "global_infoanalytics","infrastructure",0
 "amini","infrastructure",0
-"gro_intelligence","infrastructure",0
 "research_solutions_africa","infrastructure",0
 "msurvey","infrastructure",0
 "echo_mobile","infrastructure",0
@@ -12205,7 +12128,6 @@
 "hello_tractor","infrastructure",0
 "mpharma","infrastructure",0
 "ehealth_africa","infrastructure",2
-"fiftyfour_gene","infrastructure",0
 "lacuna_fund","infrastructure",0
 "makerere_ai","infrastructure",0
 "cntxt_ai","infrastructure",0

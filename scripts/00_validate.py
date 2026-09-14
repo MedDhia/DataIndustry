@@ -10,7 +10,7 @@ VOCAB = {
  "maturity_class": {"established", "scaleup", "startup"},
  "ownership_type": {"public_listed", "private_pe", "private_vc", "private_independent",
                     "subsidiary", "nonprofit", "academic", "state_linked", "cooperative_jic"},
- "status": {"active", "acquired_active", "wound_down", "insolvent"},
+ "status": {"active", "acquired_active", "absorbed", "wound_down", "insolvent"},
  "spatial_scope": {"global", "multi_region", "single_region", "single_country"},
  "human_subjects": {"direct", "indirect", "none"},
  "consent_model": {"explicit_consent", "platform_terms", "contractual_third_party",
@@ -43,7 +43,7 @@ def main():
 
     for r in companies:
         cid = r["company_id"]
-        if len(r) != 24 or None in r.values():
+        if len(r) != 25 or None in r.values():
             err["wrong field count"].append(cid)
             continue
         if r["segment_primary"] not in segs:
@@ -65,6 +65,15 @@ def main():
                 err[field].append((cid, r[field]))
         if r["founded_year"] != "NA" and not 1800 <= int(r["founded_year"]) <= 2026:
             err["founded_year"].append((cid, r["founded_year"]))
+        if r["ceased_year"] != "NA":
+            if not 1800 <= int(r["ceased_year"]) <= 2026:
+                err["ceased_year"].append((cid, r["ceased_year"]))
+            elif r["status"] in ("active", "acquired_active"):
+                err["ceased_year set on operating firm"].append(cid)
+            elif r["founded_year"] != "NA" and int(r["ceased_year"]) < int(r["founded_year"]):
+                err["ceased before founded"].append(cid)
+        elif r["status"] in ("absorbed", "wound_down", "insolvent"):
+            err["exit status without ceased_year"].append(cid)
         if r["countries_claimed"] != "NA" and not 1 <= int(r["countries_claimed"]) <= 250:
             err["countries_claimed"].append((cid, r["countries_claimed"]))
 

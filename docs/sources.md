@@ -136,3 +136,27 @@ more than one source, which continues the Gulf under-enumeration recorded above.
 Startup enumeration also has a survivorship problem this register cannot fix:
 firms that raised and announced are far easier to find than firms that did not,
 so the startup layer over-represents the venture-funded end of new entry.
+
+## Retrieved for the historical layer
+
+- Wikipedia, Cambridge Analytica — https://en.wikipedia.org/wiki/Cambridge_Analytica
+- Fast Company, the afterlife of Cambridge Analytica and its data — https://www.fastcompany.com/90381366/the-mysterious-afterlife-of-cambridge-analytica-and-its-trove-of-data
+- Research Live, the making of Synovate — https://www.research-live.com/article/features/the-making-of-synovate/id/4005704
+- Research Live, Synovate expands across Africa with Steadman buy — https://www.research-live.com/article/news/synovate-expands-across-africa-with-steadman-buy/id/3004847
+- Ipsos, completion of the acquisition of Synovate — https://www.ipsos.com/en-us/ipsos-announces-successful-completion-acquisition-synovate-creating-third-largest-global-market
+- MrWeb, TNS Millward Brown and other Kantar brands to go — https://www.mrweb.com/drno/news27724.htm
+- FTC, order prohibits X-Mode Social and Outlogic from selling sensitive location data — https://www.ftc.gov/news-events/news/press-releases/2024/01/ftc-order-prohibits-data-broker-x-mode-social-outlogic-selling-sensitive-location-data
+- FTC, final order with X-Mode and successor Outlogic — https://www.ftc.gov/news-events/news/press-releases/2024/04/ftc-finalizes-order-x-mode-successor-outlogic-prohibiting-it-sharing-or-selling-sensitive-location
+- Global Fleet, car data industry exits: Wejo and Otonomo — https://www.globalfleet.com/en/smart-mobility/global/features/car-data-industry-still-hasnt-struck-oil-two-prominent-market-exits-show
+- FranaWiki, Acxiom Corporation history — https://honors.uca.edu/wiki/index.php?title=Acxiom_Corporation
+- Wikipedia, Harte Hanks — https://en.wikipedia.org/wiki/Harte_Hanks
+
+Enumerating exits is structurally harder than enumerating survivors, and the bias
+runs one way. A firm that closes stops publishing, is delisted from directories,
+and leaves a web presence that decays. Large, listed, venture-funded and Northern
+firms leave a trade-press and regulatory trail; a Nairobi or Tunis field agency
+that closed in 2014 leaves almost none. The 51 exits recorded here should be read
+as the visible tail of a larger population, skewed Northern and skewed large.
+Anyone extending this layer will get the most value from national market research
+association membership lists over time, which are the only systematic record of
+small-agency entry and exit that exists.

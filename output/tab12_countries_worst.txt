@@ -8,17 +8,17 @@ Twenty-five least served countries by number of providers
 190             Kiribati                 OCE         LMIC           XS         54       25          3          6      
 74              Moldova                  EEU         UMIC           XS         51       29          3          9      
 84            Turkmenistan               RUS         UMIC            S         32       30          0          6      
-133             Djibouti                 SSA         LMIC           XS         57       34          7          5      
-145             Comoros                  SSA         LMIC           XS         55       34          7          5      
+133             Djibouti                 SSA         LMIC           XS         56       34          7          5      
+145             Comoros                  SSA         LMIC           XS         54       34          7          5      
 13               Haiti                   LAC         LIC             M         50       36         11          13     
-18            Saint Lucia                LAC         UMIC           XS         83       37          4          8      
+18            Saint Lucia                LAC         UMIC           XS         82       37          4          8      
 19              Grenada                  LAC         UMIC           XS         81       37          4          8      
 20  Saint Vincent and the Grenadines     LAC         UMIC           XS         79       37          4          8      
 22              Dominica                 LAC         UMIC           XS         76       37          4          8      
 24               Guyana                  LAC         HIC            XS         71       37          4          8      
-127      Republic of the Congo           SSA         LMIC            S         60       37         10          7      
+127      Republic of the Congo           SSA         LMIC            S         59       37         10          7      
 5                Belize                  LAC         UMIC           XS         73       38          5          9      
-11                Cuba                   LAC         UMIC            M         86       38          4          8      
+11                Cuba                   LAC         UMIC            M         85       38          4          8      
 25              Suriname                 LAC         UMIC           XS         61       38          5          9      
 185         Solomon Islands              OCE         LMIC           XS         84       38          3          9      
 186             Vanuatu                  OCE         LMIC           XS         65       38          3          9      
@@ -26,6 +26,6 @@ Twenty-five least served countries by number of providers
 69               Kosovo                  EEU         UMIC           XS         63       39          3          9      
 82             Kyrgyzstan                RUS         LMIC            S         56       39          7          9      
 124     Central African Republic         SSA         LIC             S         39       39          8          9      
-130      Sao Tome and Principe           SSA         LMIC           XS         68       40         12          7      
+130      Sao Tome and Principe           SSA         LMIC           XS         67       40         12          7      
 172           Timor-Leste                SEA         LMIC            S         54       40          5          8      
 ----------------------------------------------------------------------------------------------------------------------

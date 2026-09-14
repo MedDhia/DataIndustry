@@ -1,0 +1,20 @@
+
+Exit mode by primary segment
+==================================================
+                     absorbed insolvent wound_down
+--------------------------------------------------
+ai_training_data        4         0         0     
+audience_measurement    3         0         0     
+b2b_firmographic        1         0         0     
+climate_risk            0         0         1     
+consumer_broker         5         1         1     
+earth_observation       3         1         0     
+field_agency            3         0         0     
+financial_altdata       2         0         0     
+health_rwd              3         1         1     
+iot_telemetry           1         1         0     
+location_mobility       5         0         2     
+panel_sample            3         0         0     
+retail_pricing          3         0         0     
+survey_insights         5         1         0     
+--------------------------------------------------
