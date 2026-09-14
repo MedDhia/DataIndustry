@@ -22,7 +22,7 @@ actually gathering the data, and what is nobody gathering?
 | `data/regions.csv` | 12 | Region definitions. |
 | `data/modalities.csv` | 19 | Collection method taxonomy. |
 | `docs/codebook.md` | | Every variable, every coding rule. |
-| `data/ownership.csv` | 199 | Founders, owners, investors and funders for 113 organisations. Partial and purposive; read the codebook before computing anything from it. |
+| `data/ownership.csv` | 212 | Founders, owners, investors and funders for 113 organisations. Partial and purposive; read the codebook before computing anything from it. |
 | `docs/coverage_gaps.md` | | The findings. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `docs/sources.md` | | Sources consulted during construction. |
@@ -109,8 +109,8 @@ agencies, are in and are coded `state_linked`.
   collectors publish at 90%. State-linked collectors publish at **11.1%**, below
   venture-backed firms at 19.6% and second-lowest of any ownership type.
 - **Locally founded, externally funded.** MENA and African data organisations
-  are founded by nationals of the country at 86%, almost the same rate as
-  Northern ones at 90%. But **62 of 66 established funding relationships (93.9%)
+  are founded by nationals of the country at 88%, almost the same rate as
+  Northern ones at 89%. But **62 of 66 established funding relationships (93.9%)
   have a funder in North America or Western Europe**, and only two of the four
   exceptions are independently non-Northern: the Qatar National Research Fund and
   the South African Institute of International Affairs. The expertise and the

@@ -912,7 +912,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 199 rows covering 113 of the 569 organisations. Coverage is partial
+and funders: 212 rows covering 113 of the 569 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on
@@ -946,8 +946,8 @@ Setting the founder and funder rows side by side produces the sharper result.
 
 | | MENA and Africa | North America and Western Europe |
 |---|---|---|
-| Founder rows established | 65 | 20 |
-| Founded by a national of the country | 86% | 90% |
+| Founder rows with nationality established | 74 | 18 |
+| Founded by a national of the country | 88% | 89% |
 
 MENA and African data organisations are overwhelmingly founded by people from
 the countries they operate in, at very nearly the same rate as Northern ones.
@@ -970,6 +970,34 @@ funding base almost entirely external.** That is a different and more precise
 claim than a story about Northern control of African research, and it has
 different implications: the expertise, the staff and the decisions are largely
 domestic, and the budget line is not.
+
+### How the founder rows were verified
+
+Every founder attribution originally coded at evidence level C has been checked
+against sources, and the file now contains no level-C founder rows. Of seventeen
+checked, sixteen were confirmed and one was wrong.
+
+The error is worth naming because of how it happened. Near East Consulting was
+attributed to Jamil Rabah. Searching found no support for that and surfaced a
+different organisation entirely: Near East Consulting Group, a Lebanese
+recruiting and management consultancy founded by Roger Y. Dib, unrelated to the
+Palestinian polling firm in this register. The attribution was a name collision
+between two similarly named organisations in the same region. The row has been
+removed rather than corrected, because the correct founder was not established,
+and `companies.csv` now carries a note distinguishing the two organisations.
+
+Verification also added fourteen co-founders that single-name attributions had
+hidden: Stears has four founders rather than one, Indicina four, Charis UAS
+three, and Masakhane, Mawdoo3, Mozn, Awarri, eHealth Africa and the Makerere AI
+Lab two each. It corrected two founding years, eHealth Africa from 2009 to 2010
+and the Makerere lab from 2009 to 2011. And it established that six founders'
+nationalities cannot be determined from public sources, so those rows now carry
+`NA` rather than an inferred country.
+
+The domestic-founder figures above are computed only over the 94 rows where
+nationality is established. Founder rows are now 35 at level A and 65 at level B;
+the level B rows are attributions from domain knowledge that have not been
+individually checked, and the same exercise should be run on them.
 
 ### The funders
 

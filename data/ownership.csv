@@ -108,8 +108,8 @@ cambridge_analytica,Emerdata,acquirer,GBR,corporate,A,Took on the group's assets
 aerobotics,Naspers Foundry,investor,ZAF,corporate,A,Backed the 17 million dollar Series B
 busara_center,Johannes Haushofer,founder,USA,individual,B,Co-founder
 geopoll,Mobile Accord,controlling_owner,USA,corporate,B,Parent company
-twaweza,Rakesh Rajani,founder,TZA,individual,C,Founding head of the initiative
-sagaci_research,Julien Garcier,founder,MUS,individual,C,Founder and managing director
+twaweza,Rakesh Rajani,founder,TZA,individual,A,Tanzanian civil society leader who established Twaweza in 2009
+sagaci_research,Julien Garcier,founder,NA,individual,A,Co-founder and managing director; launched the firm in 2012 after BCG. Nationality not established
 konda,Tarhan Erdem,founder,TUR,individual,B,Founder; a former Turkish politician and statistician
 lapop,United States Agency for International Development,funder,USA,bilateral_donor,B,Principal funder of the AmericasBarometer for most of its history
 odk,Bill and Melinda Gates Foundation,funder,USA,foundation,B,Funded the original Open Data Kit development at the University of Washington
@@ -159,10 +159,9 @@ arab_advisors,Jawad Abbassi,founder,JOR,individual,B,Founder and general manager
 asdaa_bcw,Sunil John,founder,ARE,individual,B,Founder; originated the Arab Youth Survey
 taranis,Ofir Schlam,founder,ISR,individual,B,Co-founder and chief executive
 asterra,Lauren Guy,founder,ISR,individual,B,Founder; the firm began as Utilis
-mawdoo3,Mohammad Jaber,founder,JOR,individual,C,Co-founder and chief executive
-scpr_syria,Rabie Nasser,founder,SYR,individual,C,Co-founder and researcher
-near_east_consulting,Jamil Rabah,founder,PSE,individual,C,Founder and director
-mozn,Mohammed Alhussein,founder,SAU,individual,C,Co-founder and chief executive
+mawdoo3,Mohammad Jaber,founder,JOR,individual,A,Co-founded Mawdoo3 in 2010 with Rami Qawasmi
+scpr_syria,Rabie Nasser,founder,SYR,individual,A,Economist and co-founder of the centre
+mozn,Mohammed Alhussein,founder,SAU,individual,A,Founder and chief executive; the firm was established in 2017
 cdd_ghana,E Gyimah-Boadi,founder,GHA,individual,B,Founding executive director; also co-founded Afrobarometer
 ijr_south_africa,Charles Villa-Vicencio,founder,ZAF,individual,B,Founding executive director
 noipolls,Ngozi Okonjo-Iweala,founder,NGA,individual,B,Founder; later director-general of the World Trade Organization
@@ -187,14 +186,28 @@ global_infoanalytics,Mussa Dankwah,founder,GHA,individual,B,Founder and lead pol
 somali_public_agenda,Mahad Wasuge,founder,SOM,individual,B,Founder and executive director
 research_world_intl,Patrick Wakida,founder,UGA,individual,B,Founder and chief executive
 msurvey,Kenfield Griffith,founder,USA,individual,B,Co-founder and chief executive
-laterite,Sachin Gathani,founder,NLD,individual,C,Co-founder
-laterite,Dimitri Stoelinga,founder,NLD,individual,C,Co-founder
-charis_uas,Eric Rutayisire,founder,RWA,individual,C,Founder and chief executive
-mpoi_zimbabwe,Masipula Sithole,founder,ZWE,individual,C,Founding director; died in 2003
-masakhane,Jade Abbott,founder,ZAF,individual,C,Co-founder of the research collective
-makerere_ai,Ernest Mwebaze,founder,UGA,individual,C,Founding researcher of the laboratory
-stears,Preston Ideh,founder,NGA,individual,C,Co-founder and chief executive
-indicina,Yvonne Johnson,founder,NGA,individual,C,Co-founder
-awarri,Silas Adekunle,founder,NGA,individual,C,Co-founder
-ehealth_africa,Evelyn Castle,founder,USA,individual,C,Co-founder
-digital_umuganda,Audace Niyonkuru,founder,RWA,individual,C,Co-founder and chief executive
+laterite,Sachin Gathani,founder,NA,individual,A,Co-founder; launched Laterite in February 2011. Nationality not established
+laterite,Dimitri Stoelinga,founder,NA,individual,A,Co-founder; launched Laterite in February 2011. Nationality not established
+charis_uas,Eric Rutayisire,founder,RWA,individual,A,Founder and chief executive; Rwanda's first licensed unmanned aircraft operator
+mpoi_zimbabwe,Masipula Sithole,founder,ZWE,individual,A,Founding director from the institute's inception in 1999; University of Zimbabwe professor; died in 2003
+masakhane,Jade Abbott,founder,ZAF,individual,A,Co-created Masakhane with Laura Martinus after the 2018 Deep Learning Indaba
+makerere_ai,Ernest Mwebaze,founder,UGA,individual,A,Co-founded the laboratory which was established in 2011
+stears,Preston Ideh,founder,NGA,individual,A,Co-founded Stears in 2017 with three others met at LSE and Imperial College
+indicina,Yvonne Johnson,founder,NGA,individual,A,Founded Indicina in 2018; previously led strategy at First Bank
+awarri,Silas Adekunle,founder,NGA,individual,A,Co-founded Awarri in 2019 with Eniola Edun
+ehealth_africa,Evelyn Castle,founder,USA,individual,A,Co-founded eHealth Africa in 2010 with Adam Thompson
+digital_umuganda,Audace Niyonkuru,founder,RWA,individual,A,Co-founder and chief executive
+ehealth_africa,Adam Thompson,founder,NA,individual,A,Co-founded eHealth Africa in 2010 with Evelyn Castle
+mawdoo3,Rami Qawasmi,founder,JOR,individual,A,Co-founder and chief executive
+mozn,Khalid Al-Ghonaim,founder,SAU,individual,A,Co-founder; Abdullah Alsaeed and Malik Alyousef joined later as co-founders
+masakhane,Laura Martinus,founder,ZAF,individual,A,Co-created Masakhane with Jade Abbott
+makerere_ai,John Quinn,founder,NA,individual,A,Co-founded the laboratory. Nationality not established
+stears,Abdul Abdulrahim,founder,NGA,individual,A,Co-founder
+stears,Foluso Ogunlana,founder,NGA,individual,A,Co-founder
+stears,Michael Famoroti,founder,NGA,individual,A,Co-founder
+indicina,Yemi Ajao,founder,NGA,individual,A,Co-founder
+indicina,Jacob Ayokunle,founder,NGA,individual,A,Co-founder
+indicina,Carlos del Carpio,founder,NA,individual,A,Co-founder. Nationality not established
+awarri,Eniola Edun,founder,NGA,individual,A,Co-founded Awarri in 2019 with Silas Adekunle
+charis_uas,Teddy Segore,founder,RWA,individual,A,Co-founder and chief technical officer
+charis_uas,Ingabire Muziga Mamy,founder,RWA,individual,A,Co-founder and managing director

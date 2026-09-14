@@ -6,7 +6,7 @@ Stakeholder category by relationship type
 bilateral_donor     0             0            0      21      0    
 corporate           2             6            0      4       4    
 foundation          0             0            0      26      0    
-individual          0             0           86      0       1    
+individual          0             0           99      0       1    
 media_group         0             0            0      1       0    
 multilateral        0             0            0      10      0    
 pe                  0             9            0      0       0    

@@ -308,3 +308,34 @@ as attributions to check rather than as verified record, and the evidence level 
 each row says which. Funder rows for the organisations above are level A: every
 one is published by the recipient organisation itself, which is why the funding
 side of this file is far better evidenced than the founder side.
+
+## Founder verification pass
+
+All seventeen founder attributions originally coded at evidence level C were
+checked against sources. Sixteen were confirmed and upgraded to level A; one was
+removed. Sources used:
+
+- Wikipedia, Stears — https://en.wikipedia.org/wiki/Stears_(company)
+- AU-Startups, founder of the month Yvonne Johnson (Indicina) — https://au-startups.com/2022/06/30/au-startups-founder-of-the-month-yvonne-johnson/
+- Rest of World, AI startup Awarri behind Nigeria's government-backed LLM — https://restofworld.org/2024/nigeria-awarri-ai-startup-llm/
+- Forbes, interview with the entrepreneurs of Laterite — https://www.forbes.com/sites/avrildavid/2011/07/11/building-on-rwandas-economic-breakthrough-an-interview-with-the-entrepreneurs-of-laterite/
+- How we made it in Africa, the journey so far: Eric Rutayisire, Charis UAS — https://www.howwemadeitinafrica.com/the-journey-so-far-eric-rutayisire-ceo-charis-uas/63170/
+- NVIDIA, African startup uses Common Voice for conversational AI (Digital Umuganda) — https://blogs.nvidia.com/blog/2021/07/09/common-voice-conversational-ai/
+- Wikipedia, Rakesh Rajani — https://en.wikipedia.org/wiki/Rakesh_Rajani
+- Africa CEO Forum, Julien Garcier (Sagaci Research) — https://www.theafricaceoforum.com/forum-2026/en/intervenant/julien-garcier/
+- eHealth Africa, the founders' story — https://ehealthafrica.squarespace.com/blog/2018/11/21/ehealth-africa-the-founders-story
+- USIP, in memoriam Masipula Sithole — https://www.usip.org/press/2003/04/memoriam-masipula-sithole
+- Wikipedia, Mawdoo3 — https://en.wikipedia.org/wiki/Mawdoo3
+- Wikipedia, Syrian Center for Policy Research — https://en.wikipedia.org/wiki/Syrian_Center_for_Policy_Research
+- Mozn, about us — https://www.mozn.sa/about-us
+- VentureBeat, the Masakhane project — https://venturebeat.com/business/the-masakhane-project-wants-machine-translation-and-ai-to-transform-africa
+- Makerere CoCIS, AI and Data Science Centre — https://cocis.mak.ac.ug/makerere-launches-ai-and-data-science-centre-to-drive-africas-technological-development/
+
+The one removal: Near East Consulting was attributed to Jamil Rabah. No source
+supports it, and searching surfaced Near East Consulting Group, an unrelated
+Lebanese recruiting and management consultancy founded by Roger Y. Dib. The
+attribution was a collision between two similarly named organisations in the same
+region rather than a misremembered individual, which is the failure mode to
+expect when coding small firms from memory. The row was removed rather than
+corrected because the actual founder was not established, and `companies.csv`
+now notes the distinction between the two organisations.

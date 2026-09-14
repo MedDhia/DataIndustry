@@ -100,7 +100,7 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 
 `scripts/03_coverage_gaps.R` writes long-format versions to `output/`.
 
-## `data/ownership.csv` (199 rows, 113 organisations)
+## `data/ownership.csv` (212 rows, 113 organisations)
 
 Founders, owners, investors, acquirers and funders. One row per organisation-
 stakeholder pair.
@@ -128,6 +128,21 @@ The bias runs opposite to most business datasets. Grant-funded organisations
 publish their funders because donors require acknowledgement; privately held
 firms publish nothing absent a transaction. Findings about funding are therefore
 much better supported than anything this file says about private ownership.
+
+### Verification status of founder rows
+
+Founder rows carry 35 at level A and 65 at level B; there are no level-C founder
+rows. Level A means the attribution was checked against a source during a
+verification pass. Level B means it comes from domain knowledge and has not been
+individually checked. One attribution found during verification was wrong, and
+the failure mode is worth knowing: it was a name collision between two similarly
+named organisations in the same region, not a misremembered person. Level B
+founder rows should be treated as claims to check, and checking them is the
+cheapest available improvement to this file.
+
+Six founders carry `NA` for `stakeholder_country` because nationality could not
+be established. Any statistic using `domestic` must be computed over the rows
+where it is known, as `06_ownership.R` does.
 
 **Absence of a row means not established, never that an organisation has no owner
 or funder.** Do not compute shares over the register from this file. Shares
