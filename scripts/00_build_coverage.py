@@ -135,6 +135,11 @@ MANUAL = {
  "icf_international":[3,3,1,0,0,2,3,3,2,0,0,1],
  "ssrs":[3,0,0,0,0,0,0,0,0,0,0,0],
  "leger":[3,0,0,0,0,0,0,0,0,0,0,0],
+ # European field agencies and national institutes. Same reason as above: the
+ # field_agency template is all zeros, so each needs its footprint stated.
+ "natcen":[0,0,3,0,0,0,0,0,0,0,0,0],"infas":[0,0,3,0,0,0,0,0,0,0,0,0],
+ "bmg_research":[0,0,3,0,0,0,0,0,0,0,0,0],"link_institut":[0,0,3,0,0,0,0,0,0,0,0,0],
+ "credoc":[0,0,3,0,0,0,0,0,0,0,0,0],
 }
 
 def scope_adjust(vec, scope, hq_idx):

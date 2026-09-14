@@ -1,7 +1,7 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **581 operating
-firms** in the register. A further 63 organisations that no longer operate are
+All figures come from `scripts/03_coverage_gaps.R` over the **657 operating
+firms** in the register. A further 68 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
 The grid is 12 regions by 27 substantive domains, so 324 cells.
@@ -15,21 +15,21 @@ Provider counts by region:
 
 | Region | Any presence | Substantial | HQ'd there | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| NOAM | 358 | 343 | 255 | 129 | 76 |
-| WEU | 302 | 264 | 80 | 84 | 50 |
-| MENA | 306 | 207 | 64 | 76 | 40 |
-| SSA | 301 | 199 | 64 | 74 | 53 |
-| SAS | 288 | 224 | 16 | 80 | 40 |
-| SEA | 282 | 196 | 11 | 62 | 35 |
-| LAC | 277 | 192 | 14 | 57 | 35 |
-| EEU | 270 | 181 | 16 | 49 | 38 |
-| OCE | 264 | 180 | 6 | 29 | 33 |
-| EAS | 263 | 179 | 15 | 41 | 32 |
-| CHN | 206 | 107 | 23 | 13 | 19 |
-| RUS | 187 | 120 | 17 | 23 | 26 |
+| NOAM | 390 | 375 | 255 | 144 | 79 |
+| WEU | 378 | 340 | 156 | 141 | 63 |
+| MENA | 333 | 221 | 64 | 76 | 40 |
+| SSA | 326 | 212 | 64 | 74 | 53 |
+| SAS | 315 | 238 | 16 | 80 | 40 |
+| SEA | 309 | 210 | 11 | 62 | 35 |
+| LAC | 304 | 206 | 14 | 57 | 35 |
+| EEU | 297 | 195 | 16 | 49 | 38 |
+| OCE | 291 | 194 | 6 | 29 | 33 |
+| EAS | 290 | 193 | 15 | 41 | 32 |
+| CHN | 231 | 117 | 23 | 13 | 19 |
+| RUS | 201 | 133 | 17 | 23 | 26 |
 
 The spread between the best and worst served region is 1.9 to 1 on presence but
-9.9 to 1 on direct human contact. Nominal coverage is far more even than real
+11.1 to 1 on direct human contact. Nominal coverage is far more even than real
 collection, because the firms that make coverage look global are the ones that
 never touch a person.
 
@@ -43,7 +43,8 @@ North America above all, then Western Europe and parts of East Asia. Everywhere
 else, spending is inferred rather than observed.
 
 **Access gaps** are the binding constraint. 61 of 324 cells (18.8%) have at least
-one provider but none whose record-level data a researcher can obtain. The
+one provider but none whose record-level data a researcher can obtain, and the
+share has not moved as the register has grown. The
 access ratio sits near 0.20 in every region, so roughly four fifths of the
 industry's coverage is commercially closed regardless of where you look. The gap
 is not that nobody collects. It is that collection and disclosure have come
@@ -53,14 +54,14 @@ The most closed cells are ones where collection is heaviest:
 
 | Region | Domain | Providers | Research-accessible |
 |---|---|---|---|
+| NOAM | Identity and biometrics | 19 | 0 |
+| MENA | Prices and retail | 18 | 0 |
 | CHN | Consumer behaviour | 17 | 0 |
-| MENA | Prices and retail | 17 | 0 |
-| NOAM | Identity and biometrics | 17 | 0 |
+| NOAM | Credit and financial identity | 13 | 0 |
 | SEA | Identity and biometrics | 13 | 0 |
+| WEU | Identity and biometrics | 13 | 0 |
 | SAS | Identity and biometrics | 12 | 0 |
-| NOAM | Credit and financial identity | 11 | 0 |
-| SSA | Prices and retail | 11 | 0 |
-| WEU | Identity and biometrics | 11 | 0 |
+| WEU | Credit and financial identity | 12 | 0 |
 
 Biometric and identity data is the extreme case: collected in all twelve regions,
 released to outside researchers in none. Credit data behaves the same way.
@@ -69,11 +70,11 @@ released to outside researchers in none. Credit data behaves the same way.
 
 | Method | NOAM | WEU | SSA | MENA | RUS | CHN |
 |---|---|---|---|---|---|---|
-| Remote sensing | 41 | 41 | 53 | 47 | 41 | 41 |
-| Web scraping | 40 | 38 | 10 | 26 | 10 | 5 |
-| Online panel | 51 | 37 | 7 | 13 | 9 | 4 |
-| Face-to-face | 13 | 7 | 38 | 30 | 10 | 2 |
-| Telecom network | 0 | 3 | 2 | 1 | 0 | 0 |
+| Remote sensing | 49 | 49 | 61 | 55 | 49 | 49 |
+| Web scraping | 42 | 40 | 11 | 28 | 11 | 5 |
+| Online panel | 60 | 61 | 8 | 14 | 10 | 4 |
+| Face-to-face | 14 | 15 | 38 | 30 | 10 | 2 |
+| Telecom network | 1 | 4 | 2 | 1 | 0 | 0 |
 
 Remote sensing is the only method that is close to uniform, because satellites
 do not need permission from the ground; it reads higher in Sub-Saharan Africa and
@@ -85,18 +86,18 @@ has a population coverage problem no provider count will show.
 
 ## 3. The substantive skew
 
-Domains ranked by number of providers: public opinion (176) and consumer
-behaviour (167) are served by roughly a third of the register each. At the bottom
-sit biodiversity (5), legal and regulatory records (10), financial transactions
-(13), migration and displacement (18) and energy and extractives (18).
+Domains ranked by number of providers: public opinion (225) and consumer
+behaviour (187) are served by roughly a third of the register each. At the bottom
+sit biodiversity (5), legal and regulatory records (11), financial transactions
+(15), energy and extractives (18) and migration and displacement (21).
 
-Migration and displacement has eighteen providers worldwide and fewer than three in
+Migration and displacement has twenty-one providers worldwide and fewer than three in
 five regions, including North America and Oceania. For a domain that drives a
 large share of contemporary policy argument, the primary collection base is very
 thin, and most of it is nonprofit or academic rather than commercial.
 
-Education has thirty-five providers and none at all in mainland China. Labour and
-employment has thirty-seven, but most are scraped professional-profile datasets
+Education has forty-one providers and none at all in mainland China. Labour and
+employment has forty-four, but most are scraped professional-profile datasets
 (Coresignal, People Data Labs, ZoomInfo) whose population is people who maintain
 a public professional profile, which is not the labour force.
 
@@ -140,17 +141,23 @@ headquartered elsewhere, and the reason is linguistic: nobody in San Francisco
 can assemble a Hausa or Tunisian Arabic corpus.
 
 Ownership varies systematically by region. Venture capital backs 108 firms in
-North America and 30 in Western Europe, against 46 across MENA, Africa, South
+North America and 45 in Western Europe, against 46 across MENA, Africa, South
 Asia, Southeast Asia, East Asia and mainland China combined. Outside the core, the
 register is dominated by owner-managed independents and by nonprofits and academic
 centres: 35 of the 246 operating firms headquartered outside North America and
 Western Europe, and they supply a disproportionate share of every firm whose
 record-level data a researcher can reach at all.
 
-The North American extension round widened this gap rather than closing it. It
-added 75 organisations, most of them venture-backed or private-equity-held US
-firms, so the concentration of investor capital in the core is now measured on a
-fuller sample and is larger than the earlier revision reported.
+Two extension rounds widened this gap rather than closing it. North America added
+75 organisations and Western Europe 81, so the concentration of investor capital
+in the core is now measured on a fuller sample and is larger than earlier
+revisions reported. The European round is the more interesting of the two,
+because what it added was mostly not venture capital: national opinion institutes
+that are owner-managed or foundation-held, and academic infrastructure such as
+GESIS, the German Socio-Economic Panel, Understanding Society, the UK Data
+Service, Lifelines and FinnGen. Western Europe's headquartered count nearly
+doubled, from 80 to 156, and its direct human contact count rose from 84 to 141,
+which is within three of North America.
 
 ### Which owners publish, precisely
 
@@ -603,9 +610,9 @@ who speaks to a person.
 
 ## 14. What the register can only see because it includes the dead
 
-63 of the 644 organisations here no longer operate: 53 absorbed into an acquirer,
-10 wound down or insolvent. Every coverage and gap table above excludes them and
-describes the 581 operating firms. This section is about what they show.
+68 of the 725 organisations here no longer operate: 57 absorbed into an acquirer,
+11 wound down or insolvent. Every coverage and gap table above excludes them and
+describes the 657 operating firms. This section is about what they show.
 
 ### Consolidation is not evenly distributed
 
@@ -614,19 +621,19 @@ recorded in that segment:
 
 | Segment | Operating | Exited | Exit rate |
 |---|---|---|---|
-| Mobile location and mobility | 14 | 7 | 33.3% |
+| Mobile location and mobility | 15 | 7 | 31.8% |
 | Consumer data brokerage | 16 | 7 | 30.4% |
-| Financial alternative data | 13 | 3 | 18.8% |
 | Retail scanning and pricing | 14 | 3 | 17.6% |
-| Health real-world data | 24 | 5 | 17.2% |
-| Media and audience measurement | 21 | 4 | 16.0% |
+| Financial alternative data | 15 | 3 | 16.7% |
+| Health real-world data | 30 | 6 | 16.7% |
 | Vehicle and IoT telemetry | 16 | 3 | 15.8% |
-| Panel and sample supply | 28 | 4 | 12.5% |
-| Full-service survey and insights | 60 | 6 | 9.1% |
+| Media and audience measurement | 23 | 4 | 14.8% |
+| Panel and sample supply | 31 | 5 | 13.9% |
 | AI training data | 45 | 4 | 8.2% |
-| Earth observation | 61 | 5 | 7.6% |
-| **In-country field agencies** | **123** | **6** | **4.7%** |
-| Data collection instrumentation | 18 | 0 | 0% |
+| Earth observation | 69 | 6 | 8.0% |
+| Full-service survey and insights | 100 | 6 | 5.7% |
+| **In-country field agencies** | **127** | **6** | **4.5%** |
+| Data collection instrumentation | 21 | 1 | 4.5% |
 
 The observational segments consolidate and fail. The solicited ones, and
 especially the small national field agencies, persist. One in three location data
@@ -643,8 +650,8 @@ network and a thirty-year relationship with a national statistical office.
 
 ### Exits are overwhelmingly Northern
 
-82.5% of exited firms were headquartered in North America or Western Europe,
-against 57.7% of operating ones. Of 63 exits, 41 were North American, 11 Western
+83.8% of exited firms were headquartered in North America or Western Europe,
+against 62.6% of operating ones. Of 68 exits, 41 were North American, 16 Western
 European, 8 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
 13 years for firms that were absorbed and 10 years for firms that failed.
 
@@ -654,16 +661,16 @@ Composition of the register with and without the firms that left:
 
 | | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| Operating only | 581 | 57.7% | 39.2% | 52.0% | 22.4% |
-| Including exits | 644 | 60.1% | 36.2% | 50.9% | 20.3% |
-| Exited firms only | 63 | 82.5% | 7.9% | 41.3% | **1.6%** |
+| Operating only | 657 | 62.6% | 37.1% | 54.6% | 21.8% |
+| Including exits | 725 | 64.6% | 34.3% | 53.4% | 19.9% |
+| Exited firms only | 68 | 83.8% | 7.4% | 41.2% | **1.5%** |
 
 The last cell is the one that matters, and the North American extension round
 changed it. Earlier revisions of this document said that **not one** exited firm
 in this register had record-level data a researcher could obtain. That is no
 longer true: adding Knowledge Networks, which built the first probability-based
 US internet panel in 1998 and was sold to GfK in 2011, puts one
-researcher-accessible collector among 63 exits. One in 63 is 1.6%, against 22.4%
+researcher-accessible collector among 68 exits. One in 68 is 1.5%, against 21.8%
 among operating firms, so the pattern holds and the categorical form of it does
 not. It is stated here as a rate.
 
@@ -931,7 +938,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 258 rows covering 111 of the 644 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 725 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on

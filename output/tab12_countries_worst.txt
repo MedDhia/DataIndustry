@@ -3,29 +3,29 @@ Twenty-five least served countries by number of providers
 ======================================================================================================================
               country_name           region_code income_group population_band n_any n_providers n_primary n_accessible
 ----------------------------------------------------------------------------------------------------------------------
-113          Guinea-Bissau               SSA         LIC            XS         39       37          8          7      
-132             Eritrea                  SSA         LIC             S         39       37          8          7      
-190             Kiribati                 OCE         LMIC           XS         72       37          3          8      
-74              Moldova                  EEU         UMIC           XS         65       41          3          11     
-84            Turkmenistan               RUS         UMIC            S         44       42          0          8      
-13               Haiti                   LAC         LIC             M         64       48         11          15     
-133             Djibouti                 SSA         LMIC           XS         74       48          8          9      
-145             Comoros                  SSA         LMIC           XS         72       48          8          9      
-18            Saint Lucia                LAC         UMIC           XS         100      49          4          10     
-19              Grenada                  LAC         UMIC           XS         99       49          4          10     
-20  Saint Vincent and the Grenadines     LAC         UMIC           XS         95       49          4          10     
-22              Dominica                 LAC         UMIC           XS         92       49          4          10     
-24               Guyana                  LAC         HIC            XS         87       49          4          10     
-5                Belize                  LAC         UMIC           XS         89       50          5          11     
-11                Cuba                   LAC         UMIC            M         103      50          4          10     
-25              Suriname                 LAC         UMIC           XS         77       50          5          11     
-185         Solomon Islands              OCE         LMIC           XS         106      50          3          11     
-186             Vanuatu                  OCE         LMIC           XS         83       50          3          11     
-66             Montenegro                EEU         UMIC           XS         94       51          3          11     
-69               Kosovo                  EEU         UMIC           XS         77       51          3          11     
-82             Kyrgyzstan                RUS         LMIC            S         70       51          7          11     
-127      Republic of the Congo           SSA         LMIC            S         78       52         11          12     
-172           Timor-Leste                SEA         LMIC            S         68       52          5          10     
-175           North Korea                EAS         LIC             M         78       52          3          12     
-194         Marshall Islands             OCE         UMIC           XS         117      52          4          9      
+113          Guinea-Bissau               SSA         LIC            XS         45       43          8          7      
+132             Eritrea                  SSA         LIC             S         45       43          8          7      
+190             Kiribati                 OCE         LMIC           XS         78       43          3          8      
+74              Moldova                  EEU         UMIC           XS         71       47          3          11     
+84            Turkmenistan               RUS         UMIC            S         50       48          0          8      
+13               Haiti                   LAC         LIC             M         70       54         11          15     
+133             Djibouti                 SSA         LMIC           XS         81       54          8          9      
+145             Comoros                  SSA         LMIC           XS         79       54          8          9      
+18            Saint Lucia                LAC         UMIC           XS         107      55          4          10     
+19              Grenada                  LAC         UMIC           XS         106      55          4          10     
+20  Saint Vincent and the Grenadines     LAC         UMIC           XS         101      55          4          10     
+22              Dominica                 LAC         UMIC           XS         98       55          4          10     
+24               Guyana                  LAC         HIC            XS         93       55          4          10     
+5                Belize                  LAC         UMIC           XS         95       56          5          11     
+11                Cuba                   LAC         UMIC            M         110      56          4          10     
+25              Suriname                 LAC         UMIC           XS         83       56          5          11     
+185         Solomon Islands              OCE         LMIC           XS         112      56          3          11     
+186             Vanuatu                  OCE         LMIC           XS         89       56          3          11     
+66             Montenegro                EEU         UMIC           XS         100      57          3          11     
+69               Kosovo                  EEU         UMIC           XS         83       57          3          11     
+82             Kyrgyzstan                RUS         LMIC            S         76       57          7          11     
+127      Republic of the Congo           SSA         LMIC            S         85       58         11          12     
+172           Timor-Leste                SEA         LMIC            S         74       58          5          10     
+175           North Korea                EAS         LIC             M         84       58          3          12     
+194         Marshall Islands             OCE         UMIC           XS         124      58          4          9      
 ----------------------------------------------------------------------------------------------------------------------

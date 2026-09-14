@@ -6,14 +6,14 @@ Country availability of each data type out of 194
 financial_transactions         82                112                 0                  82       
 device_telemetry               98                96                  46                 52       
 credit_risk                   103                91                  0                 103       
-mobility_location             125                69                  64                 61       
 legal_regulatory              161                33                 158                 3        
+mobility_location             162                32                  64                 98       
 identity_biometric            168                26                  31                137       
 firmographic                  169                25                 158                 11       
 labor_employment              170                24                 117                 53       
 web_content                   170                24                 158                 12       
 education                     175                19                  96                 79       
-migration_displacement        180                14                 104                 76       
+migration_displacement        180                14                 105                 75       
 consumer_behavior             182                12                 103                 79       
 media_audience                182                12                 160                 22       
 ai_labels                     185                 9                 184                 1        

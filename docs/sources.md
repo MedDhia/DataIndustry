@@ -610,3 +610,89 @@ established from working knowledge of the sector and the company's own public
 description, but founding years and coverage claims were not individually verified
 against filings. Rows at level C are ones where the founding year is a best estimate;
 they are Deveron, riskthinking.AI, Browse AI, Exa, Observa, Fulcrum and Rep Data.
+
+## Western European extension round
+
+Western Europe held 91 organisations, 42 of them British, which made the region look
+like the United Kingdom with a fringe. Germany had five organisations for the largest
+economy in Europe, Italy and Spain one each, Portugal and Denmark none. This round added
+81, bringing Western Europe to 172 and the register to 725.
+
+**Germany went from 5 to 19.** The opinion institutes were simply missing: forsa,
+Infratest dimap, Allensbach, Civey, INSA-CONSULERE and infas, which between them produce
+most published German political polling and the federal mobility and labour studies.
+Allensbach, founded in 1947 by Elisabeth Noelle-Neumann and Erich Peter Neumann, is the
+oldest institute in the register after Gallup. Two pieces of academic infrastructure were
+also absent and matter more for research use than any commercial firm: GESIS, which runs
+ALLBUS and the German arm of the European Social Survey and releases microdata free, and
+the German Socio-Economic Panel at DIW Berlin, running annually since 1984. Added
+alongside them: OroraTech, LiveEO and constellr in earth observation, LimeSurvey, AGF
+Videoforschung, and respondi as an exit.
+
+**France went from 11 to 22:** Ifop, founded by Jean Stoetzel in 1938 on the Gallup
+model, plus OpinionWay, BVA Xsight, Elabe, Odoxa, CSA Research and CREDOC; ScrapingBee,
+Shippeo and Owkin; and Preligens as an exit.
+
+**Southern Europe was close to empty.** Italy had one organisation and now has seven,
+including Doxa, founded in 1946 and the oldest Italian institute; Spain one and now
+seven; Portugal and Greece gained Marktest, Intercampus, Metron Analysis, Kapa Research
+and MarineTraffic, whose crowdsourced AIS receiver network is one of the better examples
+of contributor-operated collection in the register.
+
+**The United Kingdom's gaps were institutional rather than commercial.** NatCen Social
+Research, which runs British Social Attitudes and most of the UK government social survey
+estate; Understanding Society, the 40,000-household longitudinal study at Essex; and the
+UK Data Service, which curates and releases the national social science microdata estate.
+All three deposit or release microdata to researchers, so their absence had been
+depressing the measured research-accessible count in Western Europe. Added with them:
+Opinium, Survation, Deltapoll, Focaldata, JL Partners, More in Common, BMG Research,
+Signal AI, Rezatec, Open Cosmos, iProov, TrueLayer, Yapily, Our Future Health, Lifebit,
+and Sensyne Health and Onfido as exits.
+
+**Health real-world data went from one Western European organisation to eight.** UK
+Biobank had been alone in a region that holds some of the most consequential population
+health collections in existence: deCODE genetics, which genotyped a large share of the
+Icelandic population and has been owned by Amgen since 2012; FinnGen, linking 500,000
+Finnish biobank samples to national health registers; Lifelines in the northern
+Netherlands; and Our Future Health, recruiting up to five million UK adults.
+
+Nordic, Low Country, Austrian, Swiss and Irish national institutes were added where each
+country had none: Epinion, Voxmeter, Novus, Taloustutkimus, Kieskompas, I&O Research,
+Motivaction, Nfield by NIPO, iVOX, SORA, gfs.bern, Sotomo, LINK and Red C. Kieskompas is
+worth naming separately: its voting advice applications generate large issue-position
+datasets at each European election, a collection method with no other representative in
+the register.
+
+Five exits were added: respondi, acquired by Bilendi in November 2021 for up to 20.5
+million euros; Confirmit, merged with FocusVision in March 2021 to form Forsta with the
+Confirmit brand retired; Preligens, acquired by Safran in September 2024 for an
+enterprise value of 220 million euros and renamed Safran.AI; Onfido, whose acquisition by
+Entrust completed on 9 April 2024; and Sensyne Health, which took NHS trust patient
+records in exchange for equity and delisted from AIM in 2022 after a formal sale process,
+leaving the trusts with a fraction of their stake.
+
+Sources retrieved for this round:
+
+- Safran, creation of Safran.AI with the acquisition of Preligens — https://www.safran-group.com/group/history-and-heritage/timeline/2024-creation-safranai-acquisition-preligens
+- Entrust, completion of the Onfido acquisition — https://www.entrust.com/company/newsroom/entrust-completes-acquisition-of-onfido-creating-a-new-era-of-identity-centric-security
+- Research Live, Bilendi acquires respondi — https://www.research-live.com/article/news/bilendi-acquires-respondi/id/5092472
+- MrWeb Daily Research News, Confirmit and FocusVision become Forsta — https://www.mrweb.com/drno/news31372.htm
+- Healthcare IT News, Sensyne Health unlikely to be able to continue to trade — https://www.healthcareitnews.com/news/emea/sensyne-health-unlikely-be-able-continue-trade-without-financing
+- The Register, NHS hospitals and Sensyne — https://www.theregister.com/2022/08/17/nhs_hospitals_ai_losses/
+
+**What the round changed in the findings.** Western Europe's headquartered count nearly
+doubled, from 80 to 156, and its direct human contact count rose from 84 to 141, within
+three of North America. That closes a gap this document had reported as real, and the
+explanation is measurement rather than industry change: European national institutes are
+small, owner-managed and rarely written about in English trade press, so a register built
+from that press undercounts them. The same mechanism should be assumed to be operating in
+every region the register has not yet been extended in.
+
+The exit sample grew from 63 to 68 and the Western European share of exits rose from 11
+to 16, which strengthens rather than weakens section 14's core reading: exits remain
+overwhelmingly concentrated in the core, 83.8% against 62.6% of operating firms.
+
+Five field agencies needed hand-coded footprints because the `field_agency` template is
+all zeros by design: NatCen, infas, BMG Research, LINK and CREDOC. Rows in this round
+carry evidence level B where the organisation's role is established from its own public
+description and the trade record, and level C where the founding year is a best estimate.

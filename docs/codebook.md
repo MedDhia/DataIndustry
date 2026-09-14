@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (644 rows, 25 variables)
+## `data/companies.csv` (725 rows, 25 variables)
 
-The register includes 581 operating organisations and 63 that no longer operate.
+The register includes 657 operating organisations and 68 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -66,7 +66,7 @@ dataset and should be reported in anything built on it.
 Current distribution over operating firms: A 59, B 192, C 262. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (644 rows, 14 variables)
+## `data/coverage_spatial.csv` (725 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -256,7 +256,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (30,159 rows, 9 variables)
+## `data/coverage_country.csv` (32,391 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
