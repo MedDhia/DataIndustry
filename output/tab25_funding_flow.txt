@@ -3,7 +3,7 @@ Funding flows: recipient region by funder region
 ==========================
      NOAM WEU MENA SSA OCE
 --------------------------
-NOAM  15   7   1    0   0 
+NOAM  16   7   1    0   0 
 MENA  1    1   0    0   0 
 SSA   22  16   0    2   1 
 --------------------------

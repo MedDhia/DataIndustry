@@ -912,7 +912,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 212 rows covering 113 of the 569 organisations. Coverage is partial
+and funders: 235 rows covering 111 of the 569 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on
@@ -935,8 +935,8 @@ government behind Digital Earth Africa. Of those, only the Qatari fund and the
 South African institute are independently non-Northern in origin as well as
 registration.
 
-The quantitative version survives and is the one to use: **62 of 66 established
-funding relationships, 93.9%, have a funder headquartered in North America or
+The quantitative version survives and is the one to use: **63 of 67 established
+funding relationships, 94.0%, have a funder headquartered in North America or
 Western Europe.** Two of the four exceptions are Northern money routed through a
 Southern office or a fellow OECD state.
 
@@ -946,23 +946,34 @@ Setting the founder and funder rows side by side produces the sharper result.
 
 | | MENA and Africa | North America and Western Europe |
 |---|---|---|
-| Founder rows with nationality established | 74 | 18 |
-| Founded by a national of the country | 88% | 89% |
+| Founder rows with nationality established | 89 | 22 |
+| Founded by a national of the country | 83% | 86% |
 
 MENA and African data organisations are overwhelmingly founded by people from
-the countries they operate in, at very nearly the same rate as Northern ones.
+the countries they operate in, at close to the same rate as Northern ones.
 Baseera by Magued Osman in Cairo, AWRAD by Nader Said in Ramallah, IIACSS by
 Munqith Al-Dagher in Baghdad, Sigma Conseil by Hassen Zargouni in Tunis, One to
 One by Youssef Meddeb, the Yemen Polling Center by Hafez Albukari, NOIPolls by
 Ngozi Okonjo-Iweala, Infotrak by Angela Ambitho, Ask Afrika by Andrea Rademeyer,
 Aerobotics by James Paterson and Benji Meltzer, UjuziKilimo by Brian Bosire,
-mPharma by Gregory Rockson, Helium Health by Adegoke Olubusi and Tito Ovia.
+mPharma by Gregory Rockson, Helium Health by Adegoke Olubusi, Tito Ovia and
+Dimeji Sofowora.
 
-The nine exceptions are almost all the same case: an organisation founded in the
-United States to operate in Africa. Apollo Agriculture, Busara, eHealth Africa,
-Hello Tractor and mSurvey are American-founded Kenyan and Nigerian operations;
-Afrobarometer was co-founded by an American and a South African alongside
-Ghana's E. Gyimah-Boadi.
+The fifteen exceptions concentrate in a small number of organisations rather
+than being spread across the register. Apollo Agriculture, Busara, eHealth
+Africa, Hello Tractor and mSurvey are American-founded Kenyan and Nigerian
+operations, and mPharma has two American co-founders beside its Ghanaian chief
+executive. Afrobarometer was co-founded by an American and a South African
+alongside Ghana's E. Gyimah-Boadi. Two exceptions are regional rather than
+Northern: Pula's Dutch co-founder Rose Goslinga built her career in Kenyan
+agricultural insurance, and Tarjama's Nour Al Hassan is a Jordanian running a
+firm registered in the Emirates.
+
+The share fell from 88% to 83% when verification added co-founders, and it fell
+for a specific reason: single-name attributions had recorded the local chief
+executive and dropped the American technical co-founders standing behind them.
+The corrected figure is the one to use, and the direction of the error is worth
+keeping in mind for any dataset built from press coverage of African startups.
 
 So the dependency this section documents is not about who runs these
 organisations. It is about who pays for them. **Institutions locally founded,
@@ -973,11 +984,12 @@ domestic, and the budget line is not.
 
 ### How the founder rows were verified
 
-Every founder attribution originally coded at evidence level C has been checked
-against sources, and the file now contains no level-C founder rows. Of seventeen
-checked, sixteen were confirmed and one was wrong.
+Founder attributions have been checked in two passes, first the seventeen coded
+at evidence level C and then the sixty-five coded at level B. The file now holds
+118 founder rows at level A and one at level B.
 
-The error is worth naming because of how it happened. Near East Consulting was
+**The level C pass.** Sixteen of seventeen were confirmed and one was wrong. The
+error is worth naming because of how it happened. Near East Consulting was
 attributed to Jamil Rabah. Searching found no support for that and surfaced a
 different organisation entirely: Near East Consulting Group, a Lebanese
 recruiting and management consultancy founded by Roger Y. Dib, unrelated to the
@@ -986,30 +998,71 @@ between two similarly named organisations in the same region. The row has been
 removed rather than corrected, because the correct founder was not established,
 and `companies.csv` now carries a note distinguishing the two organisations.
 
-Verification also added fourteen co-founders that single-name attributions had
-hidden: Stears has four founders rather than one, Indicina four, Charis UAS
-three, and Masakhane, Mawdoo3, Mozn, Awarri, eHealth Africa and the Makerere AI
-Lab two each. It corrected two founding years, eHealth Africa from 2009 to 2010
-and the Makerere lab from 2009 to 2011. And it established that six founders'
+That pass added fourteen co-founders that single-name attributions had hidden:
+Stears has four founders rather than one, Indicina four, Charis UAS three, and
+Masakhane, Mawdoo3, Mozn, Awarri, eHealth Africa and the Makerere AI Lab two
+each. It corrected two founding years, eHealth Africa from 2009 to 2010 and the
+Makerere lab from 2009 to 2011. And it established that six founders'
 nationalities cannot be determined from public sources, so those rows now carry
 `NA` rather than an inferred country.
 
-The domestic-founder figures above are computed only over the 94 rows where
-nationality is established. Founder rows are now 35 at level A and 65 at level B;
-the level B rows are attributions from domain knowledge that have not been
-individually checked, and the same exercise should be run on them.
+**The level B pass.** Sixty-four of sixty-five attributions were confirmed. One
+failed: Bell Ihua was recorded as founder of the Africa Polling Institute, and
+neither the institute's own staff page nor any press coverage supports it. He is
+its executive director, and that is all that is established; the row has been
+removed and the company note records the distinction. One attribution remains at
+level B, Mustafa Damar among MetroPOLL's founding shareholders, which rests on a
+single Turkish source.
+
+The pass surfaced a second, larger problem: **eleven founding years in
+`companies.csv` were wrong**, in a file where the founder attributions around
+them were mostly right.
+
+| Organisation | Was | Is | Effect |
+|---|---|---|---|
+| ACLED | 2014 | 2005 | scaleup to established |
+| One to One for Research and Polling | 2004 | 2014 | established to scaleup |
+| MetroPOLL | 2007 | 2004 | scaleup to established |
+| Somali Public Agenda | 2017 | 2018 | startup to scaleup |
+| Plus 94 Research | 1995 | 1998 | none |
+| Sigma Conseil | 1996 | 1998 | none |
+| Statistics Lebanon | 1996 | 1994 | none |
+| Information International | 1992 | 1995 | none |
+| Baseera | 2011 | 2012 | none |
+| Busara | 2012 | 2013 | none |
+| Global InfoAnalytics | 2020 | 2019 | none |
+
+Four of the eleven moved an organisation between maturity classes, so any
+analysis cutting the register by `maturity_class` before this revision was
+using four misclassified rows. The direction is not systematic; errors run both
+ways. Two further organisations, Research World International and
+Geocartography, have founders confirmed but founding years that no public source
+establishes, and their `notes` now say so rather than carrying an unsupported
+number.
+
+Verification also added twenty co-founders and four ownership relationships that
+the original coding had missed: Busara has four founders rather than one,
+MetroPOLL at least two, Taranis four, mPharma three, CDD-Ghana three, Apollo
+Agriculture three, Helium Health three, and 60 Decibels, Mercor, Scale AI, Plus
+94, mSurvey and Information International two each. The Arab Advisors Group sold
+a 55% stake to the Arab Jordan Investment Bank in 2005, which makes it one of the
+few MENA research firms in this register with a documented institutional owner.
+
+The domestic-founder figures above are computed only over the 113 rows where
+nationality is established.
 
 ### The funders
 
-66 funding relationships across 12 organisations, from 50 distinct funders. The
+67 funding relationships across 13 organisations, from 52 distinct funders. The
 set is more diffuse than expected, but a recognisable core recurs: the Ford
-Foundation in four of the twelve, Sweden's Sida, USAID and the Hewlett Foundation
-in three each, and the European Union, Germany's BMZ, Google.org, Canada's IDRC,
-the UK's FCDO and the World Bank in two each.
+Foundation in four of the thirteen, Sweden's Sida, USAID and the Hewlett
+Foundation in three each, and the European Union, Germany's BMZ, Google.org,
+Canada's IDRC, the UK's FCDO and the World Bank in two each.
 
-By category, 26 relationships come from private foundations, 21 from bilateral
-aid agencies, 10 from multilaterals, 4 from corporates and 3 from state research
-bodies. Forty-one of the 66 fund Sub-Saharan African organisations.
+By category, 27 relationships come from private foundations, 21 from bilateral
+aid agencies, 10 from multilaterals, 4 from corporates, 3 from state research
+bodies, one from a university and one from a media group. Forty-one of the 67
+fund Sub-Saharan African organisations.
 
 Afrobarometer publishes sixteen funders and CDD-Ghana, one of its regional hubs,
 publishes ten more. Arab Barometer has raised over five million dollars from MEPI,

@@ -2,212 +2,235 @@
 "aaru","Cameron Fink","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","survey_insights","NOAM",TRUE
 "aaru","Accenture","investor","IRL","corporate","A","Strategic investor and customer","NOAM","USA","private_vc","commercial_only","survey_insights","WEU",FALSE
 "aaru","Redpoint Ventures","investor","USA","vc","A","Led the Series A at a one billion dollar headline valuation in December 2025","NOAM","USA","private_vc","commercial_only","survey_insights","NOAM",TRUE
-"acled","European Research Council","funder","BEL","multilateral","A",NA,"NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
+"acled","Clionadh Raleigh","founder","GBR","individual","A","Founder and president; started the project in 2005","NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
 "acled","Complex Risk Analytics Fund","funder","CHE","multilateral","A","Pooled fund contributed to by the US UK Germany the Netherlands and the European Commission","NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
-"acled","US Department of State Bureau of Conflict and Stabilization Operations","funder","USA","bilateral_donor","A",NA,"NOAM","USA","nonprofit","open","social_osint","NOAM",TRUE
 "acled","Dutch Ministry of Foreign Affairs","funder","NLD","bilateral_donor","A",NA,"NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
+"acled","European Research Council","funder","BEL","multilateral","A",NA,"NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
 "acled","German Federal Foreign Office","funder","DEU","bilateral_donor","A",NA,"NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
-"acled","Clionadh Raleigh","founder","GBR","individual","B","Founder and president","NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
 "acled","International Organization for Migration","funder","CHE","multilateral","A",NA,"NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
-"acled","World Bank","funder","USA","multilateral","A",NA,"NOAM","USA","nonprofit","open","social_osint","NOAM",TRUE
-"acled","US Department of Defense","funder","USA","state","A","Through the CCAPS programme at the University of Texas","NOAM","USA","nonprofit","open","social_osint","NOAM",TRUE
 "acled","Tableau Foundation","funder","USA","foundation","A",NA,"NOAM","USA","nonprofit","open","social_osint","NOAM",TRUE
+"acled","US Department of Defense","funder","USA","state","A","Through the CCAPS programme at the University of Texas","NOAM","USA","nonprofit","open","social_osint","NOAM",TRUE
+"acled","US Department of State Bureau of Conflict and Stabilization Operations","funder","USA","bilateral_donor","A",NA,"NOAM","USA","nonprofit","open","social_osint","NOAM",TRUE
+"acled","World Bank","funder","USA","multilateral","A",NA,"NOAM","USA","nonprofit","open","social_osint","NOAM",TRUE
 "acxiom","Omnicom","controlling_owner","USA","corporate","B","Held via Interpublic which Omnicom acquired","NOAM","USA","subsidiary","commercial_only","consumer_broker","NOAM",TRUE
-"aerobotics","James Paterson","founder","ZAF","individual","B","Co-founder and chief executive","SSA","ZAF","private_vc","commercial_only","earth_observation","SSA",TRUE
+"aerobotics","Benji Meltzer","founder","ZAF","individual","A","Co-founder and chief technology officer","SSA","ZAF","private_vc","commercial_only","earth_observation","SSA",TRUE
+"aerobotics","James Paterson","founder","ZAF","individual","A","Co-founder and chief executive","SSA","ZAF","private_vc","commercial_only","earth_observation","SSA",TRUE
 "aerobotics","Naspers Foundry","investor","ZAF","corporate","A","Backed the 17 million dollar Series B","SSA","ZAF","private_vc","commercial_only","earth_observation","SSA",TRUE
-"aerobotics","Benji Meltzer","founder","ZAF","individual","B","Co-founder","SSA","ZAF","private_vc","commercial_only","earth_observation","SSA",TRUE
-"africa_polling_institute","Bell Ihua","founder","NGA","individual","B","Founder and executive director","SSA","NGA","nonprofit","researcher_restricted","field_agency","SSA",TRUE
-"african_languages_lab","Sheriff Issaka","founder","USA","individual","B","Founded the lab in 2020","NOAM","USA","private_vc","researcher_restricted","ai_training_data","NOAM",TRUE
-"afrobarometer","Michael Bratton","founder","USA","individual","B","Co-founder of the Afrobarometer network","SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","E Gyimah-Boadi","founder","GHA","individual","B","Co-founder and long-serving executive director","SSA","GHA","nonprofit","open","survey_insights","SSA",TRUE
-"afrobarometer","Robert Mattes","founder","ZAF","individual","B","Co-founder of the network","SSA","GHA","nonprofit","open","survey_insights","SSA",FALSE
-"afrobarometer","Swedish International Development Cooperation Agency","funder","SWE","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
-"afrobarometer","Norwegian Agency for Development Cooperation","funder","NOR","bilateral_donor","A","Channelled via the World Bank Think Africa project","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
-"afrobarometer","Mo Ibrahim Foundation","funder","GBR","foundation","A","Sudanese-British founder; the only major Afrobarometer funder with African origins","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
-"afrobarometer","Open Society Foundations Africa","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","Luminate","funder","GBR","foundation","A","Omidyar Network spin-out","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
-"afrobarometer","Ford Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","William and Flora Hewlett Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","Mastercard Foundation","funder","CAN","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"african_languages_lab","Sheriff Issaka","founder","USA","individual","A","Founded the lab in 2020","NOAM","USA","private_vc","researcher_restricted","ai_training_data","NOAM",TRUE
+"afrobarometer","E Gyimah-Boadi","founder","GHA","individual","A","Co-founder and long-serving executive director","SSA","GHA","nonprofit","open","survey_insights","SSA",TRUE
+"afrobarometer","Michael Bratton","founder","USA","individual","A","Co-founder of the network launched in 1999","SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","Robert Mattes","founder","ZAF","individual","A","Co-founder of the network","SSA","GHA","nonprofit","open","survey_insights","SSA",FALSE
 "afrobarometer","David and Lucile Packard Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","Obama Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "afrobarometer","European Commission","funder","BEL","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
-"afrobarometer","World Bank Group","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","International Development Research Centre","funder","CAN","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","Ford Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "afrobarometer","German Federal Ministry for Economic Cooperation and Development","funder","DEU","bilateral_donor","A","Delivered through GIZ","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
+"afrobarometer","International Development Research Centre","funder","CAN","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","Luminate","funder","GBR","foundation","A","Omidyar Network spin-out","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
+"afrobarometer","Mastercard Foundation","funder","CAN","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","Mo Ibrahim Foundation","funder","GBR","foundation","A","Sudanese-British founder; the only major Afrobarometer funder with African origins","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
+"afrobarometer","Norwegian Agency for Development Cooperation","funder","NOR","bilateral_donor","A","Channelled via the World Bank Think Africa project","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
+"afrobarometer","Obama Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","Open Society Foundations Africa","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","Swedish International Development Cooperation Agency","funder","SWE","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
 "afrobarometer","United States Agency for International Development","funder","USA","bilateral_donor","A","Former Africa Bureau officials publicly urged USAID to save Afrobarometer funding","SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","William and Flora Hewlett Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","World Bank Group","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "airqo","Makerere University","controlling_owner","UGA","university","A",NA,"SSA","UGA","academic","open","climate_risk","SSA",TRUE
 "airqo","Google.org","funder","USA","corporate","A","1.3 million dollar AI Impact Challenge grant in 2019 followed by a 3 million dollar grant to expand to ten cities in five countries","SSA","UGA","academic","open","climate_risk","NOAM",FALSE
-"amini","Kate Kallot","founder","KEN","individual","B","Founder and chief executive","SSA","KEN","private_vc","researcher_restricted","earth_observation","SSA",TRUE
-"apollo_agriculture","Benjamin Njenga","founder","KEN","individual","B","Co-founder","SSA","KEN","private_vc","none","climate_risk","SSA",TRUE
-"apollo_agriculture","Eli Pollak","founder","USA","individual","B","Co-founder and chief executive","SSA","KEN","private_vc","none","climate_risk","NOAM",FALSE
-"arab_advisors","Jawad Abbassi","founder","JOR","individual","B","Founder and general manager","MENA","JOR","private_independent","commercial_only","survey_insights","MENA",TRUE
-"arab_barometer","Amaney Jamal","founder","USA","individual","B","Co-director; Princeton","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
-"arab_barometer","Mark Tessler","founder","USA","individual","B","Co-director; University of Michigan","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
+"amini","Kate Kallot","founder","KEN","individual","A","Founder and chief executive","SSA","KEN","private_vc","researcher_restricted","earth_observation","SSA",TRUE
+"apollo_agriculture","Benjamin Njenga","founder","KEN","individual","A","Co-founder and chief customer officer","SSA","KEN","private_vc","none","climate_risk","SSA",TRUE
+"apollo_agriculture","Earl St Sauver","founder","USA","individual","A","Co-founder and chief technology officer","SSA","KEN","private_vc","none","climate_risk","NOAM",FALSE
+"apollo_agriculture","Eli Pollak","founder","USA","individual","A","Co-founder and chief executive","SSA","KEN","private_vc","none","climate_risk","NOAM",FALSE
+"arab_advisors","Arab Jordan Investment Bank","controlling_owner","JOR","corporate","A","Bought a 55 percent stake in 2005","MENA","JOR","private_independent","commercial_only","survey_insights","MENA",TRUE
+"arab_advisors","Jawad Abbassi","founder","JOR","individual","A","Founder and general manager; sold a majority stake in 2005","MENA","JOR","private_independent","commercial_only","survey_insights","MENA",TRUE
 "arab_barometer","Princeton University","controlling_owner","USA","university","A",NA,"NOAM","USA","academic","open","survey_insights","NOAM",TRUE
 "arab_barometer","University of Michigan","controlling_owner","USA","university","A",NA,"NOAM","USA","academic","open","survey_insights","NOAM",TRUE
+"arab_barometer","Amaney Jamal","founder","USA","individual","A","Co-founder and co-director; Princeton","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
+"arab_barometer","Mark Tessler","founder","USA","individual","A","Co-founder and co-director; University of Michigan","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
+"arab_barometer","BBC","funder","GBR","media_group","A","200 thousand dollar research grant","NOAM","USA","academic","open","survey_insights","WEU",FALSE
+"arab_barometer","Carnegie Corporation of New York","funder","USA","foundation","A","Including a 700 thousand dollar grant to expand work with researchers in the region","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
+"arab_barometer","Henry Luce Foundation","funder","USA","foundation","A",NA,"NOAM","USA","academic","open","survey_insights","NOAM",TRUE
+"arab_barometer","International Development Research Centre","funder","CAN","bilateral_donor","A","Funded the third wave alongside USIP","NOAM","USA","academic","open","survey_insights","NOAM",FALSE
 "arab_barometer","Middle East Partnership Initiative","funder","USA","bilateral_donor","A","US State Department programme; Arab Barometer has also received a 2 million dollar State Department grant","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
 "arab_barometer","National Science Foundation","funder","USA","state","A","Including the Time-Sharing Experiments for the Social Sciences programme","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
 "arab_barometer","Qatar National Research Fund","funder","QAT","foundation","A","Part of Qatar Foundation; one of very few non-Northern funders anywhere in this file","NOAM","USA","academic","open","survey_insights","MENA",FALSE
 "arab_barometer","United States Institute of Peace","funder","USA","state","A",NA,"NOAM","USA","academic","open","survey_insights","NOAM",TRUE
-"arab_barometer","International Development Research Centre","funder","CAN","bilateral_donor","A","Funded the third wave alongside USIP","NOAM","USA","academic","open","survey_insights","NOAM",FALSE
-"arab_barometer","Carnegie Corporation of New York","funder","USA","foundation","A","Including a 700 thousand dollar grant to expand work with researchers in the region","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
-"arab_barometer","Henry Luce Foundation","funder","USA","foundation","A",NA,"NOAM","USA","academic","open","survey_insights","NOAM",TRUE
-"arab_barometer","BBC","funder","GBR","media_group","A","200 thousand dollar research grant","NOAM","USA","academic","open","survey_insights","WEU",FALSE
 "arabic_ai","Nour Al Hassan","founder","JOR","individual","A",NA,"MENA","JOR","private_vc","commercial_only","ai_training_data","MENA",TRUE
-"asdaa_bcw","Sunil John","founder","ARE","individual","B","Founder; originated the Arab Youth Survey","MENA","ARE","subsidiary","none","survey_insights","MENA",TRUE
-"ask_afrika","Andrea Rademeyer","founder","ZAF","individual","B","Founder and chief executive","SSA","ZAF","private_independent","none","field_agency","SSA",TRUE
-"asterra","Lauren Guy","founder","ISR","individual","B","Founder; the firm began as Utilis","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
+"asdaa_bcw","Sunil John","founder","ARE","individual","A","Founder in 2000; originated the Arab Youth Survey in 2008","MENA","ARE","subsidiary","none","survey_insights","MENA",TRUE
+"ask_afrika","Andrea Rademeyer","founder","ZAF","individual","A","Founder and executive chair","SSA","ZAF","private_independent","none","field_agency","SSA",TRUE
+"asterra","Lauren Guy","founder","ISR","individual","A","Co-founder and chief technology officer; the firm began as Utilis","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
 "awarri","Eniola Edun","founder","NGA","individual","A","Co-founded Awarri in 2019 with Silas Adekunle","SSA","NGA","private_vc","commercial_only","ai_training_data","SSA",TRUE
 "awarri","Silas Adekunle","founder","NGA","individual","A","Co-founded Awarri in 2019 with Eniola Edun","SSA","NGA","private_vc","commercial_only","ai_training_data","SSA",TRUE
-"awrad","Nader Said","founder","PSE","individual","B","Founder and president","MENA","PSE","private_independent","none","field_agency","MENA",TRUE
-"baseera_egypt","Magued Osman","founder","EGY","individual","B","Founding chairman and a former Egyptian minister","MENA","EGY","nonprofit","researcher_restricted","field_agency","MENA",TRUE
-"busara_center","Johannes Haushofer","founder","USA","individual","B","Co-founder","SSA","KEN","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
+"awrad","Nader Said","founder","PSE","individual","A","Founder and president","MENA","PSE","private_independent","none","field_agency","MENA",TRUE
+"baseera_egypt","Magued Osman","founder","EGY","individual","A","Founding chairman and a former Egyptian minister","MENA","EGY","nonprofit","researcher_restricted","field_agency","MENA",TRUE
+"busara_center","Chaning Jang","founder","USA","individual","A","Co-founder and former chief executive","SSA","KEN","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
+"busara_center","James Vancel","founder","USA","individual","A","Co-founder","SSA","KEN","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
+"busara_center","Jeremy Shapiro","founder","USA","individual","A","Co-founder; also co-founded GiveDirectly","SSA","KEN","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
+"busara_center","Johannes Haushofer","founder","USA","individual","A","Co-founder and scientific director; work began in 2011 and the centre was registered in 2013","SSA","KEN","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
 "cambridge_analytica","Emerdata","acquirer","GBR","corporate","A","Took on the group's assets as insolvency proceedings began","WEU","GBR","private_independent","none","consumer_broker","WEU",TRUE
 "cambridge_analytica","SCL Group","controlling_owner","GBR","corporate","A","Parent company","WEU","GBR","private_independent","none","consumer_broker","WEU",TRUE
 "cambridge_analytica","Robert Mercer","investor","USA","individual","B","Principal financial backer","WEU","GBR","private_independent","none","consumer_broker","NOAM",FALSE
-"cdd_ghana","William and Flora Hewlett Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
-"cdd_ghana","United Nations Development Programme","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
-"cdd_ghana","United States Agency for International Development","funder","USA","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
-"cdd_ghana","Swedish International Development Cooperation Agency","funder","SWE","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","field_agency","WEU",FALSE
-"cdd_ghana","Ford Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
-"cdd_ghana","World Bank","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
-"cdd_ghana","E Gyimah-Boadi","founder","GHA","individual","B","Founding executive director; also co-founded Afrobarometer","SSA","GHA","nonprofit","open","field_agency","SSA",TRUE
-"cdd_ghana","UK Foreign Commonwealth and Development Office","funder","GBR","bilateral_donor","A","Formerly the Department for International Development","SSA","GHA","nonprofit","open","field_agency","WEU",FALSE
-"cdd_ghana","Open Society Initiative for West Africa","funder","SEN","foundation","A","Dakar-registered West African arm of the Open Society Foundations","SSA","GHA","nonprofit","open","field_agency","SSA",FALSE
+"cdd_ghana","Baffour Agyeman-Duah","founder","GHA","individual","A","Co-founder; elections and conflict management specialist","SSA","GHA","nonprofit","open","field_agency","SSA",TRUE
+"cdd_ghana","E Gyimah-Boadi","founder","GHA","individual","A","Founding executive director; also co-founded Afrobarometer","SSA","GHA","nonprofit","open","field_agency","SSA",TRUE
+"cdd_ghana","William Yeboah","founder","GHA","individual","A","Co-founder; chartered accountant","SSA","GHA","nonprofit","open","field_agency","SSA",TRUE
 "cdd_ghana","Deutsche Gesellschaft fur Internationale Zusammenarbeit","funder","DEU","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","field_agency","WEU",FALSE
 "cdd_ghana","European Union","funder","BEL","multilateral","A",NA,"SSA","GHA","nonprofit","open","field_agency","WEU",FALSE
+"cdd_ghana","Ford Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
+"cdd_ghana","Open Society Initiative for West Africa","funder","SEN","foundation","A","Dakar-registered West African arm of the Open Society Foundations","SSA","GHA","nonprofit","open","field_agency","SSA",FALSE
+"cdd_ghana","Swedish International Development Cooperation Agency","funder","SWE","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","field_agency","WEU",FALSE
+"cdd_ghana","UK Foreign Commonwealth and Development Office","funder","GBR","bilateral_donor","A","Formerly the Department for International Development","SSA","GHA","nonprofit","open","field_agency","WEU",FALSE
+"cdd_ghana","United Nations Development Programme","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
+"cdd_ghana","United States Agency for International Development","funder","USA","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
+"cdd_ghana","William and Flora Hewlett Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
+"cdd_ghana","World Bank","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","field_agency","NOAM",FALSE
 "changguang","Jilin Provincial Government","controlling_owner","CHN","state","B","Provincial state backing for the Jilin-1 constellation","CHN","CHN","state_linked","commercial_only","earth_observation","CHN",TRUE
-"charis_uas","Ingabire Muziga Mamy","founder","RWA","individual","A","Co-founder and managing director","SSA","RWA","private_vc","commercial_only","earth_observation","SSA",TRUE
 "charis_uas","Eric Rutayisire","founder","RWA","individual","A","Founder and chief executive; Rwanda's first licensed unmanned aircraft operator","SSA","RWA","private_vc","commercial_only","earth_observation","SSA",TRUE
+"charis_uas","Ingabire Muziga Mamy","founder","RWA","individual","A","Co-founder and managing director","SSA","RWA","private_vc","commercial_only","earth_observation","SSA",TRUE
 "charis_uas","Teddy Segore","founder","RWA","individual","A","Co-founder and chief technical officer","SSA","RWA","private_vc","commercial_only","earth_observation","SSA",TRUE
-"clearview_ai","Hoan Ton-That","founder","AUS","individual","B","Co-founder","NOAM","USA","private_vc","none","identity_biometric","OCE",FALSE
-"cntxt_ai","BlueFive Capital","investor","ARE","vc","A","Co-led the 60 million dollar round","MENA","ARE","private_vc","commercial_only","ai_training_data","MENA",TRUE
+"clearview_ai","Hoan Ton-That","founder","AUS","individual","A","Co-founder","NOAM","USA","private_vc","none","identity_biometric","OCE",FALSE
 "cntxt_ai","AI71","investor","ARE","corporate","A","Co-led the 60 million dollar round; an Abu Dhabi applied AI company","MENA","ARE","private_vc","commercial_only","ai_training_data","MENA",TRUE
-"code_for_africa","Justin Arenstein","founder","ZAF","individual","B","Founder and chief executive","SSA","ZAF","nonprofit","open","distributed_sensing","SSA",TRUE
+"cntxt_ai","BlueFive Capital","investor","ARE","vc","A","Co-led the 60 million dollar round","MENA","ARE","private_vc","commercial_only","ai_training_data","MENA",TRUE
+"code_for_africa","Justin Arenstein","founder","ZAF","individual","A","Founder and chief executive","SSA","ZAF","nonprofit","open","distributed_sensing","SSA",TRUE
 "ctr_china","China Central Television","controlling_owner","CHN","state","B","Joint venture with Kantar","CHN","CHN","state_linked","commercial_only","audience_measurement","CHN",TRUE
-"digital_earth_africa","Leona M and Harry B Helmsley Charitable Trust","funder","USA","foundation","A",NA,"SSA","ZAF","nonprofit","open","earth_observation","NOAM",FALSE
-"digital_earth_africa","Australian Government","funder","AUS","bilateral_donor","A","Programme established through Geoscience Australia","SSA","ZAF","nonprofit","open","earth_observation","OCE",FALSE
 "digital_earth_africa","Amazon Web Services","funder","USA","corporate","A","In-kind hosting","SSA","ZAF","nonprofit","open","earth_observation","NOAM",FALSE
+"digital_earth_africa","Australian Government","funder","AUS","bilateral_donor","A","Programme established through Geoscience Australia","SSA","ZAF","nonprofit","open","earth_observation","OCE",FALSE
 "digital_earth_africa","Esri","funder","USA","corporate","A","In-kind software","SSA","ZAF","nonprofit","open","earth_observation","NOAM",FALSE
+"digital_earth_africa","Leona M and Harry B Helmsley Charitable Trust","funder","USA","foundation","A",NA,"SSA","ZAF","nonprofit","open","earth_observation","NOAM",FALSE
 "digital_umuganda","Audace Niyonkuru","founder","RWA","individual","A","Co-founder and chief executive","SSA","RWA","nonprofit","open","ai_training_data","SSA",TRUE
 "egsa","Government of Egypt","controlling_owner","EGY","state","A",NA,"MENA","EGY","state_linked","none","earth_observation","MENA",TRUE
-"ehealth_africa","Evelyn Castle","founder","USA","individual","A","Co-founded eHealth Africa in 2010 with Adam Thompson","SSA","NGA","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
 "ehealth_africa","Adam Thompson","founder",NA,"individual","A","Co-founded eHealth Africa in 2010 with Evelyn Castle","SSA","NGA","nonprofit","researcher_restricted","field_agency",NA,NA
+"ehealth_africa","Evelyn Castle","founder","USA","individual","A","Co-founded eHealth Africa in 2010 with Adam Thompson","SSA","NGA","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
 "epsilon","Publicis Groupe","controlling_owner","FRA","corporate","A",NA,"NOAM","USA","subsidiary","commercial_only","consumer_broker","WEU",FALSE
 "essti","Government of Ethiopia","controlling_owner","ETH","state","A",NA,"SSA","ETH","state_linked","none","earth_observation","SSA",TRUE
-"fiftyfour_gene","Abasi Ene-Obong","founder","NGA","individual","B","Founder of the genomics venture that collapsed in 2024","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
-"gallup","George Gallup","founder","USA","individual","B","Founder of the American Institute of Public Opinion in 1935","NOAM","USA","private_independent","researcher_restricted","survey_insights","NOAM",TRUE
-"geocartography","Avi Degani","founder","ISR","individual","B","Founder and president","MENA","ISR","private_independent","none","field_agency","MENA",TRUE
+"fiftyfour_gene","Abasi Ene-Obong","founder","NGA","individual","A","Founder of the genomics venture that collapsed in 2024","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
+"gallup","George Gallup","founder","USA","individual","A","Founder of the American Institute of Public Opinion in Princeton in 1935","NOAM","USA","private_independent","researcher_restricted","survey_insights","NOAM",TRUE
+"geocartography","Avi Degani","founder","ISR","individual","A","Founder and president; the founding year is not established from public sources","MENA","ISR","private_independent","none","field_agency","MENA",TRUE
 "geopoll","Mobile Accord","controlling_owner","USA","corporate","B","Parent company","NOAM","USA","private_independent","none","field_agency","NOAM",TRUE
-"global_infoanalytics","Mussa Dankwah","founder","GHA","individual","B","Founder and lead pollster","SSA","GHA","private_independent","none","field_agency","SSA",TRUE
-"helium_health","Tito Ovia","founder","NGA","individual","B","Co-founder","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
-"helium_health","Adegoke Olubusi","founder","NGA","individual","B","Co-founder and chief executive","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
-"hello_tractor","Jehiel Oliver","founder","USA","individual","B","Founder and chief executive","SSA","NGA","private_vc","commercial_only","iot_telemetry","NOAM",FALSE
-"hivemapper","Ariel Seidman","founder","USA","individual","B","Co-founder","NOAM","USA","private_vc","commercial_only","distributed_sensing","NOAM",TRUE
+"global_infoanalytics","Mussa Dankwah","founder","GHA","individual","A","Founder and lead pollster; the firm was registered in March 2019","SSA","GHA","private_independent","none","field_agency","SSA",TRUE
+"helium_health","Adegoke Olubusi","founder","NGA","individual","A","Co-founder and chief executive","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
+"helium_health","Dimeji Sofowora","founder","NGA","individual","A","Co-founder and chief financial officer","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
+"helium_health","Tito Ovia","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
+"hello_tractor","Jehiel Oliver","founder","USA","individual","A","Founder and chief executive; started the venture in Nigeria in 2014","SSA","NGA","private_vc","commercial_only","iot_telemetry","NOAM",FALSE
+"hivemapper","Ariel Seidman","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","distributed_sensing","NOAM",TRUE
 "idsc_egypt","Egyptian Cabinet","controlling_owner","EGY","state","B",NA,"MENA","EGY","state_linked","none","field_agency","MENA",TRUE
-"iiacss","Munqith Al-Dagher","founder","IRQ","individual","B","Founder and chief executive","MENA","IRQ","private_independent","none","field_agency","MENA",TRUE
-"ijr_south_africa","Charles Villa-Vicencio","founder","ZAF","individual","B","Founding executive director","SSA","ZAF","nonprofit","open","field_agency","SSA",TRUE
+"iiacss","Munqith Al-Dagher","founder","IRQ","individual","A","Founder and chief executive","MENA","IRQ","private_independent","none","field_agency","MENA",TRUE
+"ijr_south_africa","Charles Villa-Vicencio","founder","ZAF","individual","A","Founding executive director; the institute launched in Cape Town in May 2000","SSA","ZAF","nonprofit","open","field_agency","SSA",TRUE
 "ijtimoiy_fikr","Government of Uzbekistan","controlling_owner","UZB","state","C","State-affiliated public opinion centre","RUS","UZB","state_linked","none","field_agency","RUS",TRUE
-"indicina","Yvonne Johnson","founder","NGA","individual","A","Founded Indicina in 2018; previously led strategy at First Bank","SSA","NGA","private_vc","commercial_only","consumer_broker","SSA",TRUE
 "indicina","Carlos del Carpio","founder",NA,"individual","A","Co-founder. Nationality not established","SSA","NGA","private_vc","commercial_only","consumer_broker",NA,NA
-"indicina","Yemi Ajao","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","consumer_broker","SSA",TRUE
 "indicina","Jacob Ayokunle","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","consumer_broker","SSA",TRUE
-"information_international","Jawad Adra","founder","LBN","individual","B","Founder and managing partner","MENA","LBN","private_independent","none","field_agency","MENA",TRUE
-"infotrak","Angela Ambitho","founder","KEN","individual","B","Founder and chief executive","SSA","KEN","private_independent","none","field_agency","SSA",TRUE
+"indicina","Yemi Ajao","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","consumer_broker","SSA",TRUE
+"indicina","Yvonne Johnson","founder","NGA","individual","A","Founded Indicina in 2018; previously led strategy at First Bank","SSA","NGA","private_vc","commercial_only","consumer_broker","SSA",TRUE
+"information_international","Jawad Adra","founder","LBN","individual","A","Founder and managing partner; established the firm in Beirut in 1995","MENA","LBN","private_independent","none","field_agency","MENA",TRUE
+"information_international","Zeina Akar Adra","founder","LBN","individual","A","Partner and executive director listed on the firm founders page","MENA","LBN","private_independent","none","field_agency","MENA",TRUE
+"infotrak","Angela Ambitho","founder","KEN","individual","A","Founder and chief executive","SSA","KEN","private_independent","none","field_agency","SSA",TRUE
 "intron_health","Tobi Olatunji","founder","NGA","individual","A","Physician turned founder","SSA","NGA","private_vc","researcher_restricted","ai_training_data","SSA",TRUE
 "intron_health","Microtraction","investor","NGA","vc","A","Led a 1.6 million dollar round","SSA","NGA","private_vc","researcher_restricted","ai_training_data","SSA",TRUE
-"ipsos","Didier Truchot","founder","FRA","individual","B","Founder and long-serving chairman","WEU","FRA","public_listed","commercial_only","survey_insights","WEU",TRUE
-"ipsos_comcon","Ipsos","controlling_owner","FRA","corporate","A","Retains a 20 percent minority stake under the foreign ownership cap","RUS","RUS","private_independent","commercial_only","survey_insights","WEU",FALSE
+"ipsos","Didier Truchot","founder","FRA","individual","A","Founder in 1975 and long-serving chairman","WEU","FRA","public_listed","commercial_only","survey_insights","WEU",TRUE
 "ipsos_comcon","Direct Investments JSC","controlling_owner","RUS","pe","A","Owned by the Russian investor Andrei Malyshev; acquired 80 percent from Ipsos in February 2026","RUS","RUS","private_independent","commercial_only","survey_insights","RUS",TRUE
+"ipsos_comcon","Ipsos","controlling_owner","FRA","corporate","A","Retains a 20 percent minority stake under the foreign ownership cap","RUS","RUS","private_independent","commercial_only","survey_insights","WEU",FALSE
 "ispa_iran","Jahad Daneshgahi","controlling_owner","IRN","state","B","University Jihad organisation","MENA","IRN","state_linked","none","field_agency","MENA",TRUE
-"jmcc","Ghassan Khatib","founder","PSE","individual","B","Co-founder and former Palestinian Authority minister","MENA","PSE","nonprofit","researcher_restricted","field_agency","MENA",TRUE
+"jmcc","Ghassan Khatib","founder","PSE","individual","A","Co-founder and former Palestinian Authority minister","MENA","PSE","nonprofit","researcher_restricted","field_agency","MENA",TRUE
 "kantar","Bain Capital","controlling_owner","USA","pe","A","Acquired a majority stake from WPP in 2019","WEU","GBR","private_pe","commercial_only","survey_insights","NOAM",FALSE
 "kenya_space_agency","Government of Kenya","controlling_owner","KEN","state","A",NA,"SSA","KEN","state_linked","none","earth_observation","SSA",TRUE
 "kobotoolbox","Harvard Humanitarian Initiative","founder","USA","university","A","Origin institution of the platform","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
-"konda","Tarhan Erdem","founder","TUR","individual","B","Founder; a former Turkish politician and statistician","MENA","TUR","private_independent","researcher_restricted","field_agency","MENA",TRUE
+"konda","Tarhan Erdem","founder","TUR","individual","A","Founder in 1986; a former Turkish minister of industry; died in 2022","MENA","TUR","private_independent","researcher_restricted","field_agency","MENA",TRUE
 "lacuna_fund","Canadas International Development Research Centre","funder","CAN","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",FALSE
 "lacuna_fund","German Federal Ministry for Economic Cooperation and Development","funder","DEU","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","WEU",FALSE
 "lacuna_fund","Google.org","funder","USA","corporate","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",TRUE
 "lacuna_fund","Rockefeller Foundation","funder","USA","foundation","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",TRUE
-"lapop","Mitchell Seligson","founder","USA","individual","B","Founder of the AmericasBarometer","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
 "lapop","Vanderbilt University","controlling_owner","USA","university","A",NA,"NOAM","USA","academic","open","survey_insights","NOAM",TRUE
+"lapop","Mitchell Seligson","founder","USA","individual","A","Founder of the AmericasBarometer","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
 "lapop","United States Agency for International Development","funder","USA","bilateral_donor","B","Principal funder of the AmericasBarometer for most of its history","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
 "laterite","Dimitri Stoelinga","founder",NA,"individual","A","Co-founder; launched Laterite in February 2011. Nationality not established","WEU","NLD","private_independent","none","field_agency",NA,NA
 "laterite","Sachin Gathani","founder",NA,"individual","A","Co-founder; launched Laterite in February 2011. Nationality not established","WEU","NLD","private_independent","none","field_agency",NA,NA
-"latinobarometro","Marta Lagos","founder","CHL","individual","B","Founding director","LAC","CHL","nonprofit","open","survey_insights","LAC",TRUE
-"lelapa_ai","Pelonomi Moiloa","founder","ZAF","individual","B","Co-founder and chief executive","SSA","ZAF","private_vc","commercial_only","ai_training_data","SSA",TRUE
-"levada_center","Yuri Levada","founder","RUS","individual","B","Founder; the centre carries his name after the 2003 split from VCIOM","RUS","RUS","nonprofit","researcher_restricted","field_agency","RUS",TRUE
+"latinobarometro","Marta Lagos","founder","CHL","individual","A","Founding director","LAC","CHL","nonprofit","open","survey_insights","LAC",TRUE
+"lelapa_ai","Pelonomi Moiloa","founder","ZAF","individual","A","Co-founder and chief executive","SSA","ZAF","private_vc","commercial_only","ai_training_data","SSA",TRUE
+"levada_center","Yuri Levada","founder","RUS","individual","A","Founder; the centre carries his name after the 2003 split from VCIOM","RUS","RUS","nonprofit","researcher_restricted","field_agency","RUS",TRUE
 "liveramp","Publicis Groupe","acquirer","FRA","corporate","A","Agreed acquisition announced in May 2026","NOAM","USA","subsidiary","commercial_only","consumer_broker","WEU",FALSE
 "makerere_ai","Ernest Mwebaze","founder","UGA","individual","A","Co-founded the laboratory which was established in 2011","SSA","UGA","academic","open","ai_training_data","SSA",TRUE
 "makerere_ai","John Quinn","founder",NA,"individual","A","Co-founded the laboratory. Nationality not established","SSA","UGA","academic","open","ai_training_data",NA,NA
+"masakhane","Jade Abbott","founder","ZAF","individual","A","Co-created Masakhane with Laura Martinus after the 2018 Deep Learning Indaba","SSA","ZAF","nonprofit","open","ai_training_data","SSA",TRUE
 "masakhane","Laura Martinus","founder","ZAF","individual","A","Co-created Masakhane with Jade Abbott","SSA","ZAF","nonprofit","open","ai_training_data","SSA",TRUE
 "masakhane","Lacuna Fund","funder","USA","foundation","B","Grant support for African language dataset creation","SSA","ZAF","nonprofit","open","ai_training_data","NOAM",FALSE
-"masakhane","Jade Abbott","founder","ZAF","individual","A","Co-created Masakhane with Laura Martinus after the 2018 Deep Learning Indaba","SSA","ZAF","nonprofit","open","ai_training_data","SSA",TRUE
 "mawdoo3","Mohammad Jaber","founder","JOR","individual","A","Co-founded Mawdoo3 in 2010 with Rami Qawasmi","MENA","JOR","private_vc","commercial_only","ai_training_data","MENA",TRUE
 "mawdoo3","Rami Qawasmi","founder","JOR","individual","A","Co-founder and chief executive","MENA","JOR","private_vc","commercial_only","ai_training_data","MENA",TRUE
 "mbrsc","Government of Dubai","controlling_owner","ARE","state","A",NA,"MENA","ARE","state_linked","researcher_restricted","earth_observation","MENA",TRUE
 "mediascope","VCIOM","controlling_owner","RUS","state","A","Holds 80 percent of the shares","RUS","RUS","state_linked","commercial_only","audience_measurement","RUS",TRUE
-"mercor","Brendan Foody","founder","USA","individual","B","Co-founder and chief executive","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
-"metropoll","Ozer Sencar","founder","TUR","individual","B","Founder and chairman","MENA","TUR","private_independent","none","field_agency","MENA",TRUE
+"mercor","Adarsh Hiremath","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
+"mercor","Brendan Foody","founder","USA","individual","A","Co-founder and chief executive","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
+"mercor","Surya Midha","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
+"metropoll","Mustafa Damar","founder","TUR","individual","B","Named among the founding shareholders in 2004","MENA","TUR","private_independent","none","field_agency","MENA",TRUE
+"metropoll","Ozer Sencar","founder","TUR","individual","A","Founder and chairman; the firm was registered in Ankara in 2004","MENA","TUR","private_independent","none","field_agency","MENA",TRUE
 "mozn","Khalid Al-Ghonaim","founder","SAU","individual","A","Co-founder; Abdullah Alsaeed and Malik Alyousef joined later as co-founders","MENA","SAU","private_vc","commercial_only","b2b_firmographic","MENA",TRUE
 "mozn","Mohammed Alhussein","founder","SAU","individual","A","Founder and chief executive; the firm was established in 2017","MENA","SAU","private_vc","commercial_only","b2b_firmographic","MENA",TRUE
-"mpharma","Gregory Rockson","founder","GHA","individual","B","Co-founder and chief executive","SSA","GHA","private_vc","none","health_rwd","SSA",TRUE
+"mpharma","Daniel Shoukimas","founder","USA","individual","A","Co-founder and chief product officer","SSA","GHA","private_vc","none","health_rwd","NOAM",FALSE
+"mpharma","Gregory Rockson","founder","GHA","individual","A","Co-founder and chief executive","SSA","GHA","private_vc","none","health_rwd","SSA",TRUE
+"mpharma","James Finucane","founder","USA","individual","A","Co-founder and chief technology officer","SSA","GHA","private_vc","none","health_rwd","NOAM",FALSE
 "mpoi_zimbabwe","Masipula Sithole","founder","ZWE","individual","A","Founding director from the institute's inception in 1999; University of Zimbabwe professor; died in 2003","SSA","ZWE","nonprofit","open","field_agency","SSA",TRUE
-"msurvey","Kenfield Griffith","founder","USA","individual","B","Co-founder and chief executive","SSA","KEN","private_vc","commercial_only","panel_sample","NOAM",FALSE
+"msurvey","Kenfield Griffith","founder","USA","individual","A","Co-founder and chief executive","SSA","KEN","private_vc","commercial_only","panel_sample","NOAM",FALSE
+"msurvey","Louis Majanja","founder","KEN","individual","A","Co-founder and chief technology officer","SSA","KEN","private_vc","commercial_only","panel_sample","SSA",TRUE
 "nasrda","Government of Nigeria","controlling_owner","NGA","state","A",NA,"SSA","NGA","state_linked","none","earth_observation","SSA",TRUE
 "nielsen","Brookfield","controlling_owner","CAN","pe","A","Joint take-private in 2022","NOAM","USA","private_pe","commercial_only","audience_measurement","NOAM",FALSE
 "nielsen","Elliott Management","controlling_owner","USA","pe","A","Joint take-private in 2022","NOAM","USA","private_pe","commercial_only","audience_measurement","NOAM",TRUE
 "niq","Advent International","controlling_owner","USA","pe","B","Backed NIQ from the GfK merger through its 2025 listing","NOAM","USA","public_listed","commercial_only","retail_pricing","NOAM",TRUE
-"noipolls","Ngozi Okonjo-Iweala","founder","NGA","individual","B","Founder; later director-general of the World Trade Organization","SSA","NGA","private_independent","none","field_agency","SSA",TRUE
+"noipolls","Ngozi Okonjo-Iweala","founder","NGA","individual","A","Founder in November 2006; later director-general of the World Trade Organization","SSA","NGA","private_independent","none","field_agency","SSA",TRUE
 "odk","Bill and Melinda Gates Foundation","funder","USA","foundation","B","Funded the original Open Data Kit development at the University of Washington","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
-"one_to_one_tunisia","Youssef Meddeb","founder","TUN","individual","B","Founder and chief executive","MENA","TUN","private_independent","none","field_agency","MENA",TRUE
-"pcpsr","Khalil Shikaki","founder","PSE","individual","B","Founding director","MENA","PSE","nonprofit","researcher_restricted","field_agency","MENA",TRUE
+"one_to_one_tunisia","Youssef Meddeb","founder","TUN","individual","A","Founder and chief executive","MENA","TUN","private_independent","none","field_agency","MENA",TRUE
+"pcpsr","Khalil Shikaki","founder","PSE","individual","A","Founding director; founded the Nablus predecessor in 1993 and PCPSR in 2000","MENA","PSE","nonprofit","researcher_restricted","field_agency","MENA",TRUE
 "pcpsr","European Union","funder","BEL","multilateral","A","Named as one of the two principal funders","MENA","PSE","nonprofit","researcher_restricted","field_agency","WEU",FALSE
 "pcpsr","Ford Foundation","funder","USA","foundation","A","Named as one of the two principal funders","MENA","PSE","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
-"plus94_research","Sifiso Falala","founder","ZAF","individual","B","Founder and chief executive","SSA","ZAF","private_independent","none","field_agency","SSA",TRUE
+"plus94_research","Sifiso Falala","founder","ZAF","individual","A","Co-founder and chief executive","SSA","ZAF","private_independent","none","field_agency","SSA",TRUE
+"plus94_research","Tirhani Mabunda","founder","ZAF","individual","A","Co-founder and partner","SSA","ZAF","private_independent","none","field_agency","SSA",TRUE
 "presight_ai","G42","controlling_owner","ARE","corporate","B","Abu Dhabi AI group","MENA","ARE","public_listed","commercial_only","social_osint","MENA",TRUE
-"pula","Rose Goslinga","founder","NLD","individual","B","Co-founder","SSA","KEN","private_vc","none","field_agency","WEU",FALSE
-"pula","Thomas Njeru","founder","KEN","individual","B","Co-founder","SSA","KEN","private_vc","none","field_agency","SSA",TRUE
-"qualtrics","Silver Lake","controlling_owner","USA","pe","A","Took Qualtrics private in 2023","NOAM","USA","private_pe","commercial_only","collection_software","NOAM",TRUE
+"pula","Rose Goslinga","founder","NLD","individual","A","Co-founder","SSA","KEN","private_vc","none","field_agency","WEU",FALSE
+"pula","Thomas Njeru","founder","KEN","individual","A","Co-founder","SSA","KEN","private_vc","none","field_agency","SSA",TRUE
 "qualtrics","CPP Investments","controlling_owner","CAN","pe","A","Canadian pension fund co-investor","NOAM","USA","private_pe","commercial_only","collection_software","NOAM",FALSE
-"research_world_intl","Patrick Wakida","founder","UGA","individual","B","Founder and chief executive","SSA","UGA","private_independent","none","field_agency","SSA",TRUE
+"qualtrics","Silver Lake","controlling_owner","USA","pe","A","Took Qualtrics private in 2023","NOAM","USA","private_pe","commercial_only","collection_software","NOAM",TRUE
+"research_world_intl","Patrick Wakida","founder","UGA","individual","A","Founder and chief executive; the founding year is not established from public sources","SSA","UGA","private_independent","none","field_agency","SSA",TRUE
 "sagaci_research","Julien Garcier","founder",NA,"individual","A","Co-founder and managing director; launched the firm in 2012 after BCG. Nationality not established","SSA","MUS","private_independent","commercial_only","field_agency",NA,NA
-"sama","Leila Janah","founder","USA","individual","B","Founded as Samasource; died in 2020","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
+"sama","Leila Janah","founder","USA","individual","A","Founded as Samasource; died in 2020","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
 "sansa","Government of South Africa","controlling_owner","ZAF","state","A",NA,"SSA","ZAF","state_linked","researcher_restricted","earth_observation","SSA",TRUE
 "sberindex","Sberbank","controlling_owner","RUS","state","B","Majority state-owned bank","RUS","RUS","state_linked","none","financial_altdata","RUS",TRUE
+"scale_ai","Alexandr Wang","founder","USA","individual","A","Co-founder and chief executive","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
+"scale_ai","Lucy Guo","founder","USA","individual","A","Co-founder; left the company in 2018","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
 "scale_ai","Meta","investor","USA","corporate","A","Took a 49 percent stake in 2025","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
-"scale_ai","Alexandr Wang","founder","USA","individual","B","Co-founder","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
 "scpr_syria","Rabie Nasser","founder","SYR","individual","A","Economist and co-founder of the centre","MENA","SYR","nonprofit","researcher_restricted","field_agency","MENA",TRUE
-"sigma_conseil","Hassen Zargouni","founder","TUN","individual","B","Founder and managing director","MENA","TUN","private_independent","none","field_agency","MENA",TRUE
+"sigma_conseil","Hassen Zargouni","founder","TUN","individual","A","Founder and managing director","MENA","TUN","private_independent","none","field_agency","MENA",TRUE
 "simile","Index Ventures","investor","GBR","vc","B","Led a 100 million dollar Series A","NOAM","USA","private_vc","commercial_only","survey_insights","WEU",FALSE
-"sixty_decibels","Sasha Dichter","founder","USA","individual","B","Co-founder; previously at Acumen","NOAM","USA","private_independent","none","field_agency","NOAM",TRUE
-"somali_public_agenda","Mahad Wasuge","founder","SOM","individual","B","Founder and executive director","SSA","SOM","nonprofit","researcher_restricted","field_agency","SSA",TRUE
+"sixty_decibels","Sasha Dichter","founder","USA","individual","A","Co-founder and chief executive; previously chief innovation officer at Acumen","NOAM","USA","private_independent","none","field_agency","NOAM",TRUE
+"sixty_decibels","Tom Adams","founder","GBR","individual","A","Co-founder and chief strategy officer; previously chief impact officer at Acumen","NOAM","USA","private_independent","none","field_agency","WEU",FALSE
+"sixty_decibels","Acumen","funder","USA","foundation","A","Incubated the Lean Data practice and spun the company out in 2019","NOAM","USA","private_independent","none","field_agency","NOAM",TRUE
+"sixty_decibels","Ceniarth","investor","USA","pe","A","Led the 1.7 million dollar spinout round in 2019","NOAM","USA","private_independent","none","field_agency","NOAM",TRUE
+"sixty_decibels","FPE Capital","investor","GBR","pe","A","Led the 8.8 million dollar Series A","NOAM","USA","private_independent","none","field_agency","WEU",FALSE
+"somali_public_agenda","Mahad Wasuge","founder","SOM","individual","A","Founder and executive director; started the organisation in January 2018","SSA","SOM","nonprofit","researcher_restricted","field_agency","SSA",TRUE
 "space42","International Holding Company","controlling_owner","ARE","sovereign_wealth","B","Abu Dhabi holding group; Space42 was formed from Bayanat and Yahsat","MENA","ARE","public_listed","commercial_only","earth_observation","MENA",TRUE
-"statistics_lebanon","Rabih Haber","founder","LBN","individual","B","Founder and managing director","MENA","LBN","private_independent","none","field_agency","MENA",TRUE
+"statistics_lebanon","Rabih Haber","founder","LBN","individual","A","Founder and managing director since 1994","MENA","LBN","private_independent","none","field_agency","MENA",TRUE
 "stears","Abdul Abdulrahim","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE
 "stears","Foluso Ogunlana","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE
-"stears","Preston Ideh","founder","NGA","individual","A","Co-founded Stears in 2017 with three others met at LSE and Imperial College","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE
 "stears","Michael Famoroti","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE
-"surge_ai","Edwin Chen","founder","USA","individual","B","Founder; the company remained bootstrapped for years","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
+"stears","Preston Ideh","founder","NGA","individual","A","Co-founded Stears in 2017 with three others met at LSE and Imperial College","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE
+"surge_ai","Edwin Chen","founder","USA","individual","A","Founder; the company remained bootstrapped for years","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
 "surveymonkey","Symphony Technology Group","controlling_owner","USA","pe","A","Took the company private in 2023","NOAM","USA","private_pe","commercial_only","collection_software","NOAM",TRUE
-"taranis","Ofir Schlam","founder","ISR","individual","B","Co-founder and chief executive","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
+"taranis","Assaf Horowitz","founder","ISR","individual","A","Co-founder","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
+"taranis","Ayal Karmi","founder","ISR","individual","A","Co-founder","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
+"taranis","Eli Bukchin","founder","ISR","individual","A","Co-founder","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
+"taranis","Ofir Schlam","founder","ISR","individual","A","Co-founder and chief executive","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
 "tarjama","Nour Al Hassan","founder","JOR","individual","A","Also founder of the Arabic.AI venture","MENA","ARE","private_independent","commercial_only","ai_training_data","MENA",FALSE
 "tubitak_uzay","Government of Turkiye","controlling_owner","TUR","state","A",NA,"MENA","TUR","state_linked","none","earth_observation","MENA",TRUE
-"twaweza","William and Flora Hewlett Foundation","funder","USA","foundation","A","Part of the five-donor core consortium","SSA","TZA","nonprofit","open","field_agency","NOAM",FALSE
-"twaweza","UK Foreign Commonwealth and Development Office","funder","GBR","bilateral_donor","A","Part of the five-donor core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
-"twaweza","Wellspring Philanthropic Fund","funder","USA","foundation","A",NA,"SSA","TZA","nonprofit","open","field_agency","NOAM",FALSE
-"twaweza","Hivos","funder","NLD","foundation","A","Dutch development organisation in the core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
 "twaweza","Rakesh Rajani","founder","TZA","individual","A","Tanzanian civil society leader who established Twaweza in 2009","SSA","TZA","nonprofit","open","field_agency","SSA",TRUE
-"twaweza","Swedish International Development Cooperation Agency","funder","SWE","bilateral_donor","A","Part of the five-donor core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
-"twaweza","SNV","funder","NLD","foundation","A","Dutch development organisation in the core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
-"twaweza","South African Institute of International Affairs","funder","ZAF","university","A","Johannesburg research institute based at the University of the Witwatersrand","SSA","TZA","nonprofit","open","field_agency","SSA",FALSE
+"twaweza","Embassy of Switzerland","funder","CHE","bilateral_donor","A",NA,"SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
 "twaweza","Ford Foundation","funder","USA","foundation","A",NA,"SSA","TZA","nonprofit","open","field_agency","NOAM",FALSE
 "twaweza","Hempel Foundation","funder","DNK","foundation","A",NA,"SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
-"twaweza","Embassy of Switzerland","funder","CHE","bilateral_donor","A",NA,"SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
-"ujuzikilimo","Brian Bosire","founder","KEN","individual","B","Founder and chief executive","SSA","KEN","private_vc","none","distributed_sensing","SSA",TRUE
+"twaweza","Hivos","funder","NLD","foundation","A","Dutch development organisation in the core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
+"twaweza","SNV","funder","NLD","foundation","A","Dutch development organisation in the core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
+"twaweza","South African Institute of International Affairs","funder","ZAF","university","A","Johannesburg research institute based at the University of the Witwatersrand","SSA","TZA","nonprofit","open","field_agency","SSA",FALSE
+"twaweza","Swedish International Development Cooperation Agency","funder","SWE","bilateral_donor","A","Part of the five-donor core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
+"twaweza","UK Foreign Commonwealth and Development Office","funder","GBR","bilateral_donor","A","Part of the five-donor core consortium","SSA","TZA","nonprofit","open","field_agency","WEU",FALSE
+"twaweza","Wellspring Philanthropic Fund","funder","USA","foundation","A",NA,"SSA","TZA","nonprofit","open","field_agency","NOAM",FALSE
+"twaweza","William and Flora Hewlett Foundation","funder","USA","foundation","A","Part of the five-donor core consortium","SSA","TZA","nonprofit","open","field_agency","NOAM",FALSE
+"ujuzikilimo","Brian Bosire","founder","KEN","individual","A","Founder and chief executive","SSA","KEN","private_vc","none","distributed_sensing","SSA",TRUE
 "vantor","Advent International","controlling_owner","USA","pe","A","Took Maxar private in 2023","NOAM","USA","private_pe","commercial_only","earth_observation","NOAM",TRUE
 "vciom","Government of Russia","controlling_owner","RUS","state","B","State-owned","RUS","RUS","state_linked","none","field_agency","RUS",TRUE
-"yemen_polling_center","Hafez Albukari","founder","YEM","individual","B","Founder and president","MENA","YEM","nonprofit","researcher_restricted","field_agency","MENA",TRUE
-"yougov","Nadhim Zahawi","founder","GBR","individual","B","Co-founder who later became a British cabinet minister","WEU","GBR","public_listed","researcher_restricted","survey_insights","WEU",TRUE
-"yougov","Stephan Shakespeare","founder","GBR","individual","B","Co-founder","WEU","GBR","public_listed","researcher_restricted","survey_insights","WEU",TRUE
+"yemen_polling_center","Hafez Albukari","founder","YEM","individual","A","Founder and president; started the centre in 2004","MENA","YEM","nonprofit","researcher_restricted","field_agency","MENA",TRUE
+"yougov","Nadhim Zahawi","founder","GBR","individual","A","Co-founder who later became a British cabinet minister","WEU","GBR","public_listed","researcher_restricted","survey_insights","WEU",TRUE
+"yougov","Stephan Shakespeare","founder","GBR","individual","A","Co-founder in May 2000","WEU","GBR","public_listed","researcher_restricted","survey_insights","WEU",TRUE

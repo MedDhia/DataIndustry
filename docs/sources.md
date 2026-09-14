@@ -339,3 +339,70 @@ region rather than a misremembered individual, which is the failure mode to
 expect when coding small firms from memory. The row was removed rather than
 corrected because the actual founder was not established, and `companies.csv`
 now notes the distinction between the two organisations.
+
+## Level B founder verification pass
+
+All sixty-five founder attributions coded at evidence level B were checked. Sixty-four
+were confirmed and upgraded to level A; one was removed. The pass also corrected eleven
+founding years in `companies.csv` and added twenty co-founders and four ownership
+relationships. Sources retrieved:
+
+- Gallup, George H. Gallup founder biography — https://www.gallup.com/corporate/178136/george-gallup.aspx
+- Britannica, American Institute of Public Opinion — https://www.britannica.com/topic/American-Institute-of-Public-Opinion
+- On Think Tanks, Busara Center for Behavioral Economics — https://onthinktanks.org/think-tank/busara-center-for-behavioral-economics-inc/
+- Busara Center, five years of behavioral science — https://medium.com/busara-center-blog/5-years-of-behavioral-science-169bb38d7e47
+- Wikipedia, KONDA Research and Consultancy — https://en.wikipedia.org/wiki/KONDA_Research_and_Consultancy
+- KONDA, about us — https://konda.com.tr/about-us?l=en
+- Wikipedia, Tarhan Erdem — https://en.wikipedia.org/wiki/Tarhan_Erdem
+- Kimbulmus, MetroPOLL founding shareholders — https://kimbulmus.com.tr/metropoll-arastirma-sirketi-kimin-hangi-ulkenin-markasi/
+- Pathfinders Consulting, Hafez Albukari and Yemen beginnings — https://pathfindersconsultancy.com/2017/07/16/our-team/
+- Wikipedia, Jerusalem Media and Communication Centre — https://en.wikipedia.org/wiki/Jerusalem_Media_%26_Communication_Centre
+- Jerusalem Story, Jerusalem Media and Communications Centre — https://www.jerusalemstory.com/en/organization/jerusalem-media-and-communications-centre-jmcc
+- Information International, founders — https://information-international.com/page/37/founders
+- Statistics Lebanon, about us — https://www.statisticslebanonltd.com/node/164
+- GSMA, Jawad Jalal Abbassi — https://www.gsma.com/aboutus/gsma_people/jawad-jalal-abbassi/
+- Geocartography Knowledge Group, about — https://www.geokg.com/en/about/
+- ASTERRA, leadership team — https://asterra.io/about/leadership/
+- NoCamels, Israeli agritech Taranis raises 30 million — https://nocamels.com/2020/07/israel-agritech-taranis-series-c-round/
+- CDD-Ghana, the CDD story — https://cddgh.org/the-cdd-story/
+- Wikipedia, Emmanuel Gyimah-Boadi — https://en.wikipedia.org/wiki/Emmanuel_Gyimah-Boadi
+- Institute for Justice and Reconciliation, our story — https://www.ijr.org.za/our-story/
+- Wikipedia, Charles Villa-Vicencio — https://en.wikipedia.org/wiki/Charles_Villa-Vicencio
+- NOIPolls, founder page — https://www.noi-polls.com/founder
+- Africa Polling Institute, executive director profile — https://africapolling.org/team-member/executive-director/
+- Infotrak, Angela Ambitho profile — https://www.newsline.co.ke/angela-ambitho-from-rising-to-leadership-at-26-to-building-infotrak/
+- Bizcommunity, Ask Afrika founder Andrea Rademeyer — https://www.bizcommunity.com/article/ask-afrika-founder-andrea-rademeyer-chairs-esomar-congress-a-first-for-africa-702962a
+- Plus 94, about us — https://plus94.co.za/about-us/
+- Health Cap, meet the founders of Helium Health — https://healthcap.co/meet-the-founders-adegoke-olubusi-tito-ovia-and-dimeji-sofowora-helium-health/
+- TechCrunch, mPharma raises 35 million — https://techcrunch.com/2022/01/05/mpharma-raises-35million-in-round-participated-by-tinder-co-founders-jam-fund-bharti-executive/
+- Apollo Agriculture, about us — https://www.apolloagriculture.com/about
+- Echoing Green, Jehiel Oliver fellow profile — https://fellows.echoinggreen.org/fellow/jehiel-oliver/
+- Women's World Banking, Rose Goslinga and Thomas Njeru — https://www.womensworldbanking.org/insights/making-finance-work-for-women-for-45-years-rose-goslinga-and-thomas-njeru/
+- Wikipedia, Code for Africa — https://en.wikipedia.org/wiki/Code_for_Africa
+- Acumen, launch of 60 Decibels — https://acumen.org/news/acumen-launches-60-decibels-to-make-lean-data-an-impact-measurement-standard-for-impact-investing/
+- 60 Decibels, Series A financing — https://60decibels.com/insights/60db-raises-series-a-financing/
+- Wikipedia, Aerobotics — https://en.wikipedia.org/wiki/Aerobotics
+- CTA, Brian Bosire profile — https://www.cta.int/en/profile/bosire-brian-sid0a27e9521-2fc7-4a99-bc50-3dbee2ce4d19
+- Global InfoAnalytics, Mussa Dankwah — https://www.globalinfoanalytics.com/mussa-dankwah
+- UNSOM, Mahad Abdullahi Wasuge profile — https://unsom.unmissions.org/en/mahad-abdullahi-wasuge%C2%A0researcher%E2%80%99s-quest-change-somalia%E2%80%99s-governance-landscape
+- Public Policy Institute Uganda, Patrick Wakida profile — https://ppiug.org/profile/1
+- Face2Face Africa, mSurvey transforms market research — https://face2faceafrica.com/article/msurvey-kenya
+
+The one removal: Bell Ihua was recorded as founder of the Africa Polling Institute.
+The institute's own staff page calls him executive director and names him founder of a
+different organisation, SMYLE Africa Group; no press coverage attributes API's founding
+to him or to anyone else. The row was removed and the company note records that the
+founder is not established. This is a different failure from the level C removal: not a
+name collision but a role inflation, where leading an organisation was coded as having
+founded it. Both are worth checking for in any register built this way.
+
+The eleven founding-year corrections matter more than the single bad attribution. ACLED
+was recorded as 2014 when Clionadh Raleigh started the project in 2005; One to One as
+2004 when it was founded in 2014; MetroPOLL as 2007 when it was registered in Ankara in
+2004; Somali Public Agenda as 2017 when Mahad Wasuge started it in January 2018. Those
+four changed `maturity_class`. Plus 94 (1995 to 1998), Sigma Conseil (1996 to 1998),
+Statistics Lebanon (1996 to 1994), Information International (1992 to 1995), Baseera
+(2011 to 2012), Busara (2012 to 2013) and Global InfoAnalytics (2020 to 2019) moved by
+one to three years without changing class. Research World International and
+Geocartography have confirmed founders but founding years that no public source
+establishes, and their notes now say so.
