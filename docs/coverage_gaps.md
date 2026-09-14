@@ -1,7 +1,7 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **657 operating
-firms** in the register. A further 68 organisations that no longer operate are
+All figures come from `scripts/03_coverage_gaps.R` over the **718 operating
+firms** in the register. A further 70 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
 The grid is 12 regions by 27 substantive domains, so 324 cells.
@@ -15,21 +15,28 @@ Provider counts by region:
 
 | Region | Any presence | Substantial | HQ'd there | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| NOAM | 390 | 375 | 255 | 144 | 79 |
-| WEU | 378 | 340 | 156 | 141 | 63 |
-| MENA | 333 | 221 | 64 | 76 | 40 |
-| SSA | 326 | 212 | 64 | 74 | 53 |
-| SAS | 315 | 238 | 16 | 80 | 40 |
-| SEA | 309 | 210 | 11 | 62 | 35 |
-| LAC | 304 | 206 | 14 | 57 | 35 |
-| EEU | 297 | 195 | 16 | 49 | 38 |
-| OCE | 291 | 194 | 6 | 29 | 33 |
-| EAS | 290 | 193 | 15 | 41 | 32 |
-| CHN | 231 | 117 | 23 | 13 | 19 |
-| RUS | 201 | 133 | 17 | 23 | 26 |
+| NOAM | 408 | 393 | 255 | 152 | 84 |
+| WEU | 395 | 349 | 156 | 142 | 66 |
+| SSA | 385 | 271 | 123 | 118 | 93 |
+| MENA | 344 | 227 | 66 | 78 | 43 |
+| SAS | 328 | 244 | 16 | 80 | 42 |
+| SEA | 322 | 214 | 11 | 62 | 36 |
+| LAC | 315 | 210 | 14 | 57 | 36 |
+| EEU | 309 | 199 | 16 | 49 | 39 |
+| OCE | 303 | 198 | 6 | 29 | 34 |
+| EAS | 301 | 197 | 15 | 41 | 33 |
+| CHN | 235 | 120 | 23 | 13 | 19 |
+| RUS | 207 | 136 | 17 | 23 | 26 |
 
-The spread between the best and worst served region is 1.9 to 1 on presence but
-11.1 to 1 on direct human contact. Nominal coverage is far more even than real
+The spread between the best and worst served region is 1.7 to 1 on presence but
+11.7 to 1 on direct human contact.
+
+**Sub-Saharan Africa now has the most research-accessible providers of any
+region except North America, and the highest access ratio of any region at all.**
+That is new in this revision and it is an artefact of who does the collecting
+rather than of how much gets collected: adding the Afrobarometer national partner
+network put 34 in-country field agencies into the register, each of which releases
+its national microdata openly. Section 15 draws out what follows from it. Nominal coverage is far more even than real
 collection, because the firms that make coverage look global are the ones that
 never touch a person.
 
@@ -54,14 +61,14 @@ The most closed cells are ones where collection is heaviest:
 
 | Region | Domain | Providers | Research-accessible |
 |---|---|---|---|
-| NOAM | Identity and biometrics | 19 | 0 |
+| NOAM | Identity and biometrics | 22 | 0 |
 | MENA | Prices and retail | 18 | 0 |
 | CHN | Consumer behaviour | 17 | 0 |
-| NOAM | Credit and financial identity | 13 | 0 |
+| NOAM | Credit and financial identity | 16 | 0 |
+| NOAM | Financial transactions | 13 | 0 |
+| SSA | Prices and retail | 13 | 0 |
 | SEA | Identity and biometrics | 13 | 0 |
 | WEU | Identity and biometrics | 13 | 0 |
-| SAS | Identity and biometrics | 12 | 0 |
-| WEU | Credit and financial identity | 12 | 0 |
 
 Biometric and identity data is the extreme case: collected in all twelve regions,
 released to outside researchers in none. Credit data behaves the same way.
@@ -70,34 +77,35 @@ released to outside researchers in none. Credit data behaves the same way.
 
 | Method | NOAM | WEU | SSA | MENA | RUS | CHN |
 |---|---|---|---|---|---|---|
-| Remote sensing | 49 | 49 | 61 | 55 | 49 | 49 |
-| Web scraping | 42 | 40 | 11 | 28 | 11 | 5 |
+| Remote sensing | 50 | 50 | 62 | 56 | 50 | 50 |
+| Web scraping | 44 | 42 | 13 | 28 | 11 | 5 |
 | Online panel | 60 | 61 | 8 | 14 | 10 | 4 |
-| Face-to-face | 14 | 15 | 38 | 30 | 10 | 2 |
+| Face-to-face | 14 | 15 | 70 | 32 | 10 | 2 |
 | Telecom network | 1 | 4 | 2 | 1 | 0 | 0 |
 
 Remote sensing is the only method that is close to uniform, because satellites
 do not need permission from the ground; it reads higher in Sub-Saharan Africa and
 MENA only because several operators in the register were coded there specifically. Every other method is uneven, and the
-unevenness runs in opposite directions: online and web methods concentrate in
-rich connected markets, while in-person interviewing survives mainly in
-Sub-Saharan Africa, MENA and Latin America. A region served only by online panels
+unevenness runs in opposite directions, and sharply: online and web methods
+concentrate in rich connected markets, while face-to-face interviewing is now
+recorded five times more often in Sub-Saharan Africa than in North America or
+Western Europe. A region served only by online panels
 has a population coverage problem no provider count will show.
 
 ## 3. The substantive skew
 
-Domains ranked by number of providers: public opinion (225) and consumer
-behaviour (187) are served by roughly a third of the register each. At the bottom
-sit biodiversity (5), legal and regulatory records (11), financial transactions
-(15), energy and extractives (18) and migration and displacement (21).
+Domains ranked by number of providers: public opinion (261) and consumer
+behaviour (187). At the bottom sit biodiversity (5), legal and regulatory records
+(11), financial transactions (18), energy and extractives (19) and migration and
+displacement (21).
 
 Migration and displacement has twenty-one providers worldwide and fewer than three in
 five regions, including North America and Oceania. For a domain that drives a
 large share of contemporary policy argument, the primary collection base is very
 thin, and most of it is nonprofit or academic rather than commercial.
 
-Education has forty-one providers and none at all in mainland China. Labour and
-employment has forty-four, but most are scraped professional-profile datasets
+Education has forty-two providers and none at all in mainland China. Labour and
+employment has seventy-eight, but most are scraped professional-profile datasets
 (Coresignal, People Data Labs, ZoomInfo) whose population is people who maintain
 a public professional profile, which is not the labour force.
 
@@ -141,23 +149,30 @@ headquartered elsewhere, and the reason is linguistic: nobody in San Francisco
 can assemble a Hausa or Tunisian Arabic corpus.
 
 Ownership varies systematically by region. Venture capital backs 108 firms in
-North America and 45 in Western Europe, against 46 across MENA, Africa, South
+North America and 45 in Western Europe, against 59 across MENA, Africa, South
 Asia, Southeast Asia, East Asia and mainland China combined. Outside the core, the
 register is dominated by owner-managed independents and by nonprofits and academic
-centres: 35 of the 246 operating firms headquartered outside North America and
+centres: 55 of the 307 operating firms headquartered outside North America and
 Western Europe, and they supply a disproportionate share of every firm whose
 record-level data a researcher can reach at all.
 
-Two extension rounds widened this gap rather than closing it. North America added
-75 organisations and Western Europe 81, so the concentration of investor capital
-in the core is now measured on a fuller sample and is larger than earlier
-revisions reported. The European round is the more interesting of the two,
-because what it added was mostly not venture capital: national opinion institutes
-that are owner-managed or foundation-held, and academic infrastructure such as
-GESIS, the German Socio-Economic Panel, Understanding Society, the UK Data
-Service, Lifelines and FinnGen. Western Europe's headquartered count nearly
-doubled, from 80 to 156, and its direct human contact count rose from 84 to 141,
-which is within three of North America.
+Three extension rounds have run since, and they did not all push in the same
+direction. North America added 75 organisations, mostly venture-backed or
+private-equity-held, which widened the gap. Western Europe added 81 of which most
+were not venture capital at all: owner-managed national opinion institutes and
+academic infrastructure such as GESIS, the German Socio-Economic Panel,
+Understanding Society, the UK Data Service, Lifelines and FinnGen. Its
+headquartered count nearly doubled, from 80 to 156, and its direct human contact
+count rose from 84 to 141, within three of North America.
+
+The African round cut the other way again. It added 63 organisations, of which
+the great majority are nonprofits, university centres and owner-managed
+consultancies rather than venture-backed firms, and it raised Sub-Saharan
+Africa's research-accessible count from 53 to 93 and its access ratio to 0.34,
+the highest of any region. What the earlier revisions were measuring was not a
+thinner African collection base but a register assembled from English-language
+trade coverage, which sees venture-backed firms and does not see national
+research institutes.
 
 ### Which owners publish, precisely
 
@@ -610,9 +625,9 @@ who speaks to a person.
 
 ## 14. What the register can only see because it includes the dead
 
-68 of the 725 organisations here no longer operate: 57 absorbed into an acquirer,
-11 wound down or insolvent. Every coverage and gap table above excludes them and
-describes the 657 operating firms. This section is about what they show.
+70 of the 788 organisations here no longer operate: 58 absorbed into an acquirer,
+12 wound down or insolvent. Every coverage and gap table above excludes them and
+describes the 718 operating firms. This section is about what they show.
 
 ### Consolidation is not evenly distributed
 
@@ -621,19 +636,19 @@ recorded in that segment:
 
 | Segment | Operating | Exited | Exit rate |
 |---|---|---|---|
-| Mobile location and mobility | 15 | 7 | 31.8% |
-| Consumer data brokerage | 16 | 7 | 30.4% |
-| Retail scanning and pricing | 14 | 3 | 17.6% |
-| Financial alternative data | 15 | 3 | 16.7% |
-| Health real-world data | 30 | 6 | 16.7% |
-| Vehicle and IoT telemetry | 16 | 3 | 15.8% |
-| Media and audience measurement | 23 | 4 | 14.8% |
+| Mobile location and mobility | 15 | 8 | 34.8% |
+| Consumer data brokerage | 18 | 7 | 28.0% |
+| Retail scanning and pricing | 15 | 3 | 16.7% |
+| Health real-world data | 32 | 6 | 15.8% |
+| Vehicle and IoT telemetry | 17 | 3 | 15.0% |
+| Media and audience measurement | 24 | 4 | 14.3% |
+| Financial alternative data | 18 | 3 | 14.3% |
 | Panel and sample supply | 31 | 5 | 13.9% |
-| AI training data | 45 | 4 | 8.2% |
-| Earth observation | 69 | 6 | 8.0% |
+| Earth observation | 70 | 6 | 7.9% |
+| AI training data | 49 | 4 | 7.5% |
 | Full-service survey and insights | 100 | 6 | 5.7% |
-| **In-country field agencies** | **127** | **6** | **4.5%** |
-| Data collection instrumentation | 21 | 1 | 4.5% |
+| Data collection instrumentation | 22 | 1 | 4.3% |
+| **In-country field agencies** | **163** | **6** | **3.6%** |
 
 The observational segments consolidate and fail. The solicited ones, and
 especially the small national field agencies, persist. One in three location data
@@ -650,10 +665,10 @@ network and a thirty-year relationship with a national statistical office.
 
 ### Exits are overwhelmingly Northern
 
-83.8% of exited firms were headquartered in North America or Western Europe,
-against 62.6% of operating ones. Of 68 exits, 41 were North American, 16 Western
-European, 8 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
-13 years for firms that were absorbed and 10 years for firms that failed.
+81.4% of exited firms were headquartered in North America or Western Europe,
+against 57.2% of operating ones. Of 70 exits, 41 were North American, 16 Western
+European, 10 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
+13 years for firms that were absorbed and about 10 for firms that failed.
 
 ### What survivorship would have hidden
 
@@ -661,16 +676,16 @@ Composition of the register with and without the firms that left:
 
 | | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| Operating only | 657 | 62.6% | 37.1% | 54.6% | 21.8% |
-| Including exits | 725 | 64.6% | 34.3% | 53.4% | 19.9% |
-| Exited firms only | 68 | 83.8% | 7.4% | 41.2% | **1.5%** |
+| Operating only | 718 | 57.2% | 35.8% | 56.4% | 25.8% |
+| Including exits | 788 | 59.4% | 33.4% | 55.2% | 23.6% |
+| Exited firms only | 70 | 81.4% | 8.6% | 42.9% | **1.4%** |
 
 The last cell is the one that matters, and the North American extension round
 changed it. Earlier revisions of this document said that **not one** exited firm
 in this register had record-level data a researcher could obtain. That is no
 longer true: adding Knowledge Networks, which built the first probability-based
 US internet panel in 1998 and was sold to GfK in 2011, puts one
-researcher-accessible collector among 68 exits. One in 68 is 1.5%, against 21.8%
+researcher-accessible collector among 70 exits. One in 70 is 1.4%, against 25.8%
 among operating firms, so the pattern holds and the categorical form of it does
 not. It is stated here as a rate.
 
@@ -768,12 +783,12 @@ Put on the same grid as the established methods, they do not behave as one thing
 
 | Method | Firms | Countries reached |
 |---|---|---|
-| Radio frequency geolocation | 3 | 194 |
-| Remote sensing | 79 | 194 |
-| Face-to-face interviewing | 220 | 193 |
-| Online panel | 231 | 162 |
-| Contributor-operated sensors | 13 | 75 |
-| Environmental sampling | 4 | 64 |
+| Radio frequency geolocation | 4 | 194 |
+| Remote sensing | 110 | 194 |
+| Face-to-face interviewing | 339 | 193 |
+| Online panel | 339 | 162 |
+| Contributor-operated sensors | 21 | 162 |
+| Environmental sampling | 5 | 64 |
 | Passive acoustics | 1 | 7 |
 
 Contributor sensing by region, as a share of the countries in each:
@@ -783,11 +798,11 @@ Contributor sensing by region, as a share of the countries in each:
 | North America | 2 | 100% |
 | Western Europe | 20 | 100% |
 | Mainland China | 1 | 100% |
-| Oceania | 14 | 50% |
-| Sub-Saharan Africa | 48 | 38% |
-| South Asia | 8 | 38% |
-| MENA | 21 | 33% |
-| Russia and Central Asia | 7 | 29% |
+| MENA | 21 | 90% |
+| South Asia | 8 | 88% |
+| Russia and Central Asia | 7 | 86% |
+| Oceania | 14 | 71% |
+| Sub-Saharan Africa | 48 | 56% |
 | East Asia | 7 | 29% |
 | Latin America | 33 | 21% |
 | Eastern Europe | 22 | 18% |
@@ -796,23 +811,39 @@ Contributor sensing by region, as a share of the countries in each:
 The split is not between old methods and new ones. It is between methods that
 need a participant and methods that do not.
 
-Radio frequency geolocation reaches every country on earth with three firms,
+Radio frequency geolocation reaches every country on earth with four firms,
 because a satellite listening for radio emitters needs no permission, no
 infrastructure and no person. Hivemapper needs someone to buy a dashcam, drive,
 and care about a token; WeatherXM needs someone to buy a weather station and keep
-it calibrated. Those requirements sort by disposable income and connectivity, so
-thirteen firms reach 75 countries and the map they produce is closer to the
-rich-world map than to the world.
+it calibrated. Those requirements sort by disposable income and connectivity.
 
-The comparison that matters is contributor sensing against face-to-face
-interviewing. Face-to-face is the oldest method in the register and the one
-section 10 found concentrated in poor countries; it reaches 193 of 194 countries
-with 220 firms. Contributor-operated sensing, the newest, reaches 75 with 13.
-**The newest participatory method remains substantially less geographically even
-than the oldest one**, at 100% of North America and Western Europe against 38% of
-Sub-Saharan Africa and 33% of MENA. Token incentives were supposed to make sensing
-cheap enough to be universal. They have made it cheap enough to be universal in
-places where sensing was already cheap.
+### This finding was overstated and is now weaker
+
+An earlier revision of this section reported contributor-operated sensing
+reaching 75 countries with thirteen firms, against 193 countries for face-to-face
+interviewing, and concluded that the newest participatory method was
+substantially less geographically even than the oldest one, at 38% of
+Sub-Saharan Africa against 100% of the core.
+
+Extending the register changed that. Contributor sensing now reaches 162
+countries with 21 firms, and Sub-Saharan Africa sits at 56%. Most of the
+difference is one organisation: Ookla's Speedtest, which crowdsources network
+measurements from user devices in essentially every country with mobile
+internet, and which the register had simply been missing. PurpleAir and Safecast
+add further reach on the same principle.
+
+**The gradient survives but the gap is much smaller than reported.** Contributor
+sensing reaches 162 countries against face-to-face's 193, and it is at 100% of
+North America and Western Europe against 56% of Sub-Saharan Africa. The ordering
+across the poorer regions no longer supports the original story either: Africa is
+now better covered on this method than East Asia, Latin America, Eastern Europe
+or Southeast Asia, which reflects donor-funded environmental sensing in Africa
+more than any market logic.
+
+The lesson is about the register rather than about the industry. A finding built
+on a method with only thirteen recorded firms was resting on a sample small
+enough that one omission could carry it. Anything in this document computed over
+fewer than about twenty firms should be read the same way.
 
 ### Who actually supplies contributor sensing in Africa
 
@@ -938,7 +969,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 258 rows covering 111 of the 725 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 788 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on

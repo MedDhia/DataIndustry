@@ -3,22 +3,22 @@ Country availability of each collection method out of 194
 ==============================================================
                      countries_with_any provider_country_pairs
 --------------------------------------------------------------
-admin_records               194                 3,295         
-api_partner                 194                 8,895         
-remote_sensing              194                 9,668         
-sensor_hardware             194                 2,862         
+admin_records               194                 3,332         
+api_partner                 194                 8,942         
+remote_sensing              194                 9,693         
+sensor_hardware             194                 2,914         
 signals_rf                  194                  776          
-web_scrape                  194                 7,180         
-face_to_face                193                 4,240         
-telephone                   193                 2,954         
-crowd_task                  180                 1,321         
-crowd_sensor                162                  505          
-device_passive              162                 1,487         
-online_panel                162                 4,212         
-expert_elicit               157                 1,259         
-mobile_app                  150                  695          
-transaction                 113                 1,123         
-clinical_records             83                  317          
+web_scrape                  194                 7,220         
+face_to_face                193                 4,302         
+telephone                   193                 3,000         
+crowd_task                  180                 1,338         
+crowd_sensor                162                  511          
+device_passive              162                 1,527         
+online_panel                162                 4,249         
+expert_elicit               157                 1,275         
+mobile_app                  150                  723          
+transaction                 113                 1,137         
+clinical_records             83                  320          
 environmental_sample         64                   68          
 telecom_network              64                  101          
 acoustic                     7                    7           

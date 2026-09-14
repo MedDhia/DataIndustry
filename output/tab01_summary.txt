@@ -3,10 +3,10 @@ Company register: numeric summary
 ======================================================
 Statistic              N   Mean   St. Dev.  Min   Max 
 ------------------------------------------------------
-founded_year          655 2,004.5   18.5   1,841 2,024
-countries_claimed     655  50.3     69.6     1    250 
-firm_age              655  21.5     18.5     2    185 
-n_regions_covered     657   5.6     4.9      1    12  
-n_regions_substantial 657   4.0     4.2      1    12  
-n_domains             657   2.2     0.8      1     4  
+founded_year          682 2,004.8   18.3   1,841 2,024
+countries_claimed     716  46.3     67.9     1    250 
+firm_age              682  21.2     18.3     2    185 
+n_regions_covered     718   5.4     4.9      1    12  
+n_regions_substantial 718   3.8     4.1      1    12  
+n_domains             718   2.1     0.8      1     4  
 ------------------------------------------------------

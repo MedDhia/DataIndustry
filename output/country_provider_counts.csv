@@ -1,17 +1,17 @@
 "iso3","country_name","region_code","income_group","population_band","n_any","n_providers","n_primary","n_accessible"
-"GNB","Guinea-Bissau","SSA","LIC","XS",45,43,8,7
 "ERI","Eritrea","SSA","LIC","S",45,43,8,7
 "KIR","Kiribati","OCE","LMIC","XS",78,43,3,8
+"GNB","Guinea-Bissau","SSA","LIC","XS",46,44,9,8
 "MDA","Moldova","EEU","UMIC","XS",71,47,3,11
 "TKM","Turkmenistan","RUS","UMIC","S",50,48,0,8
 "HTI","Haiti","LAC","LIC","M",70,54,11,15
 "DJI","Djibouti","SSA","LMIC","XS",81,54,8,9
-"COM","Comoros","SSA","LMIC","XS",79,54,8,9
 "LCA","Saint Lucia","LAC","UMIC","XS",107,55,4,10
 "GRD","Grenada","LAC","UMIC","XS",106,55,4,10
 "VCT","Saint Vincent and the Grenadines","LAC","UMIC","XS",101,55,4,10
 "DMA","Dominica","LAC","UMIC","XS",98,55,4,10
 "GUY","Guyana","LAC","HIC","XS",93,55,4,10
+"COM","Comoros","SSA","LMIC","XS",80,55,9,10
 "BLZ","Belize","LAC","UMIC","XS",95,56,5,11
 "CUB","Cuba","LAC","UMIC","M",110,56,4,10
 "SUR","Suriname","LAC","UMIC","XS",83,56,5,11
@@ -20,43 +20,43 @@
 "MNE","Montenegro","EEU","UMIC","XS",100,57,3,11
 "XKX","Kosovo","EEU","UMIC","XS",83,57,3,11
 "KGZ","Kyrgyzstan","RUS","LMIC","S",76,57,7,11
-"COG","Republic of the Congo","SSA","LMIC","S",85,58,11,12
 "TLS","Timor-Leste","SEA","LMIC","S",74,58,5,10
 "PRK","North Korea","EAS","LIC","M",84,58,3,12
 "MHL","Marshall Islands","OCE","UMIC","XS",124,58,4,9
 "TJK","Tajikistan","RUS","LMIC","M",81,59,7,13
 "CAF","Central African Republic","SSA","LIC","S",59,59,8,13
+"COG","Republic of the Congo","SSA","LMIC","S",86,59,12,13
 "BRN","Brunei","SEA","HIC","XS",107,59,5,9
 "MAC","Macau","EAS","HIC","XS",118,59,7,10
 "MNG","Mongolia","EAS","LMIC","S",108,60,5,12
 "ALB","Albania","EEU","UMIC","S",117,61,5,13
 "STP","Sao Tome and Principe","SSA","LMIC","XS",94,61,13,11
-"BDI","Burundi","SSA","LIC","M",80,61,11,14
 "VEN","Venezuela","LAC","UMIC","M",103,62,11,13
 "PRY","Paraguay","LAC","UMIC","S",120,62,10,13
 "YEM","Yemen","MENA","LIC","M",76,62,17,16
+"BDI","Burundi","SSA","LIC","M",81,62,12,15
 "LAO","Laos","SEA","LMIC","S",89,62,9,10
 "WSM","Samoa","OCE","LMIC","XS",127,62,7,12
 "FSM","Micronesia","OCE","LMIC","XS",119,62,7,12
 "NIC","Nicaragua","LAC","LMIC","S",83,63,10,16
 "ARM","Armenia","EEU","UMIC","S",115,63,6,14
 "UZB","Uzbekistan","RUS","LMIC","M",88,63,9,15
-"GMB","Gambia","SSA","LIC","XS",83,63,13,16
-"LBR","Liberia","SSA","LIC","S",65,63,16,16
 "SLV","El Salvador","LAC","LMIC","S",86,64,11,16
 "GEO","Georgia","EEU","UMIC","S",118,64,7,14
+"GMB","Gambia","SSA","LIC","XS",84,64,14,17
+"LBR","Liberia","SSA","LIC","S",66,64,17,17
 "KHM","Cambodia","SEA","LMIC","M",106,64,11,12
 "PNG","Papua New Guinea","OCE","LMIC","M",128,64,9,13
-"SLE","Sierra Leone","SSA","LIC","S",65,65,16,18
-"MDG","Madagascar","SSA","LIC","M",82,65,13,19
 "MKD","North Macedonia","EEU","UMIC","S",124,66,10,14
-"TGO","Togo","SSA","LIC","S",69,67,19,17
+"SLE","Sierra Leone","SSA","LIC","S",66,66,17,19
+"MDG","Madagascar","SSA","LIC","M",83,66,14,20
 "SSD","South Sudan","SSA","LIC","M",86,67,15,15
-"SWZ","Eswatini","SSA","LMIC","S",106,67,18,14
 "BIH","Bosnia and Herzegovina","EEU","UMIC","S",126,68,11,14
-"TCD","Chad","SSA","LIC","M",87,68,15,19
+"TGO","Togo","SSA","LIC","S",70,68,20,18
 "SOM","Somalia","SSA","LIC","M",87,68,17,17
+"SWZ","Eswatini","SSA","LMIC","S",107,68,19,15
 "MMR","Myanmar","SEA","LMIC","M",117,68,12,15
+"TCD","Chad","SSA","LIC","M",88,69,16,20
 "AFG","Afghanistan","SAS","LIC","M",91,69,14,16
 "BOL","Bolivia","LAC","LMIC","M",90,70,17,17
 "BTN","Bhutan","SAS","LMIC","XS",120,70,17,11
@@ -64,26 +64,26 @@
 "HND","Honduras","LAC","LMIC","M",110,71,18,16
 "SRB","Serbia","EEU","UMIC","S",129,71,13,14
 "SYR","Syria","MENA","LIC","M",91,72,16,16
-"GIN","Guinea","SSA","LMIC","M",108,72,23,18
 "LBY","Libya","MENA","UMIC","S",112,73,16,15
-"SDN","Sudan","MENA","LIC","M",89,75,16,20
+"GIN","Guinea","SSA","LMIC","M",109,73,24,19
+"SDN","Sudan","MENA","LIC","M",90,76,17,21
 "PSE","Palestine","MENA","LMIC","S",109,76,21,17
 "BLR","Belarus","RUS","UMIC","S",97,77,4,18
 "BGR","Bulgaria","EEU","UMIC","S",140,80,18,14
 "JAM","Jamaica","LAC","UMIC","S",127,81,12,15
-"NER","Niger","SSA","LIC","M",107,81,26,27
 "LKA","Sri Lanka","SAS","LMIC","M",149,81,27,11
-"MWI","Malawi","SSA","LIC","M",101,82,25,27
-"MOZ","Mozambique","SSA","LIC","M",91,82,27,26
+"NER","Niger","SSA","LIC","M",108,82,27,28
+"MWI","Malawi","SSA","LIC","M",102,83,26,28
+"MOZ","Mozambique","SSA","LIC","M",92,83,28,27
 "NPL","Nepal","SAS","LMIC","M",141,83,29,14
 "IRQ","Iraq","MENA","UMIC","M",125,84,27,16
-"BFA","Burkina Faso","SSA","LIC","M",110,84,28,29
-"MLI","Mali","SSA","LIC","M",110,85,29,29
-"LSO","Lesotho","SSA","LMIC","S",108,85,19,20
+"BFA","Burkina Faso","SSA","LIC","M",111,85,29,30
+"MLI","Mali","SSA","LIC","M",111,86,30,30
 "COD","Democratic Republic of the Congo","SSA","LIC","XL",123,86,30,27
-"UKR","Ukraine","EEU","LMIC","M",120,87,27,17
+"LSO","Lesotho","SSA","LMIC","S",109,86,20,21
+"UKR","Ukraine","EEU","LMIC","M",122,87,27,17
 "IRN","Iran","MENA","LMIC","L",135,87,18,17
-"MRT","Mauritania","SSA","LMIC","S",111,87,20,17
+"MRT","Mauritania","SSA","LMIC","S",113,88,21,18
 "LBN","Lebanon","MENA","LMIC","S",127,89,32,20
 "HKG","Hong Kong","EAS","HIC","S",134,91,14,15
 "CRI","Costa Rica","LAC","UMIC","S",139,92,20,18
@@ -91,50 +91,49 @@
 "TUV","Tuvalu","OCE","UMIC","XS",137,93,8,15
 "TUN","Tunisia","MENA","LMIC","M",148,94,33,22
 "BHR","Bahrain","MENA","HIC","XS",128,94,22,15
-"ETH","Ethiopia","SSA","LIC","XL",124,95,35,31
-"RWA","Rwanda","SSA","LIC","M",134,95,35,27
+"RWA","Rwanda","SSA","LIC","M",135,96,35,28
+"ETH","Ethiopia","SSA","LIC","XL",126,97,36,32
 "KAZ","Kazakhstan","RUS","UMIC","M",131,99,9,19
-"MAR","Morocco","MENA","LMIC","M",159,100,37,22
-"GAB","Gabon","SSA","UMIC","XS",128,100,21,19
+"MAR","Morocco","MENA","LMIC","M",160,101,38,23
+"GAB","Gabon","SSA","UMIC","XS",129,101,22,20
 "LVA","Latvia","EEU","HIC","XS",125,102,6,19
-"AGO","Angola","SSA","LMIC","M",131,102,27,24
-"UGA","Uganda","SSA","LIC","M",122,103,39,29
-"ZWE","Zimbabwe","SSA","LMIC","M",128,104,31,27
+"AGO","Angola","SSA","LMIC","M",133,103,28,25
+"UGA","Uganda","SSA","LIC","M",123,104,40,30
+"ZWE","Zimbabwe","SSA","LMIC","M",129,104,31,27
 "PHL","Philippines","SEA","LMIC","XL",152,106,32,17
 "URY","Uruguay","LAC","HIC","XS",132,107,16,20
-"CPV","Cabo Verde","SSA","LMIC","XS",147,107,21,21
+"CPV","Cabo Verde","SSA","LMIC","XS",149,108,22,22
 "EST","Estonia","EEU","HIC","XS",129,109,8,20
 "EGY","Egypt","MENA","LMIC","XL",157,109,42,22
-"AZE","Azerbaijan","EEU","UMIC","M",155,110,29,19
+"AZE","Azerbaijan","EEU","UMIC","M",156,110,29,19
 "KNA","Saint Kitts and Nevis","LAC","HIC","XS",144,111,12,19
 "SVN","Slovenia","EEU","HIC","XS",136,113,8,20
 "ARG","Argentina","LAC","UMIC","M",156,118,31,24
 "QAT","Qatar","MENA","HIC","XS",136,118,23,21
-"ZMB","Zambia","SSA","LMIC","M",141,118,40,31
 "MYS","Malaysia","SEA","UMIC","M",161,118,18,20
 "ATG","Antigua and Barbuda","LAC","HIC","XS",154,119,12,20
 "ISL","Iceland","WEU","HIC","XS",133,119,15,26
-"CHN","China","CHN","UMIC","XL",225,119,13,21
+"ZMB","Zambia","SSA","LMIC","M",143,119,41,32
 "TON","Tonga","OCE","UMIC","XS",142,121,9,21
 "LTU","Lithuania","EEU","HIC","S",152,122,10,21
-"RUS","Russia","RUS","UMIC","XL",189,122,16,24
+"CHN","China","CHN","UMIC","XL",229,122,13,21
 "BRB","Barbados","LAC","HIC","XS",167,124,15,21
 "HRV","Croatia","EEU","HIC","S",163,125,11,22
-"SYC","Seychelles","SSA","HIC","XS",200,125,20,26
-"NAM","Namibia","SSA","UMIC","S",179,125,23,28
-"BEN","Benin","SSA","LMIC","M",167,126,33,30
+"RUS","Russia","RUS","UMIC","XL",195,125,16,24
 "MDV","Maldives","SAS","UMIC","XS",154,126,27,20
 "TWN","Taiwan","EAS","HIC","M",153,126,19,21
-"BWA","Botswana","SSA","UMIC","S",174,127,24,29
+"BEN","Benin","SSA","LMIC","M",169,127,33,31
+"NAM","Namibia","SSA","UMIC","S",182,127,25,29
 "FJI","Fiji","OCE","UMIC","XS",151,127,10,22
 "ECU","Ecuador","LAC","UMIC","M",169,128,31,24
 "DZA","Algeria","MENA","UMIC","M",155,128,26,21
-"MUS","Mauritius","SSA","HIC","S",226,129,22,26
-"VNM","Vietnam","SEA","LMIC","XL",167,129,33,21
+"BWA","Botswana","SSA","UMIC","S",177,128,25,30
+"SYC","Seychelles","SSA","HIC","XS",213,129,24,26
+"VNM","Vietnam","SEA","LMIC","XL",169,129,33,21
 "BHS","Bahamas","LAC","HIC","XS",173,131,17,22
 "CYP","Cyprus","WEU","HIC","XS",145,131,15,28
-"CMR","Cameroon","SSA","LMIC","M",170,131,39,35
 "PER","Peru","LAC","UMIC","M",162,132,33,28
+"CMR","Cameroon","SSA","LMIC","M",172,132,40,36
 "MLT","Malta","WEU","HIC","XS",151,134,18,28
 "TUR","Turkiye","MENA","UMIC","L",168,135,32,22
 "LUX","Luxembourg","WEU","HIC","XS",156,136,20,28
@@ -145,51 +144,52 @@
 "ISR","Israel","MENA","HIC","S",188,141,22,23
 "THA","Thailand","SEA","UMIC","L",193,142,26,25
 "SVK","Slovakia","EEU","HIC","S",186,143,17,26
-"KEN","Kenya","SSA","LMIC","M",171,144,54,34
+"KEN","Kenya","SSA","LMIC","M",175,147,55,35
+"MUS","Mauritius","SSA","HIC","S",245,148,33,31
 "KWT","Kuwait","MENA","HIC","S",191,149,31,26
-"CIV","Ivory Coast","SSA","LMIC","M",201,150,44,38
+"CIV","Ivory Coast","SSA","LMIC","M",205,152,45,40
 "TTO","Trinidad and Tobago","LAC","HIC","S",205,153,25,26
-"SEN","Senegal","SSA","LMIC","M",206,153,45,41
 "PLW","Palau","OCE","HIC","XS",184,153,15,26
 "AUT","Austria","WEU","HIC","S",182,154,32,33
 "NOR","Norway","WEU","HIC","S",177,154,31,32
 "DOM","Dominican Republic","LAC","UMIC","M",214,155,34,28
 "DNK","Denmark","WEU","HIC","S",181,155,32,32
 "FIN","Finland","WEU","HIC","S",175,155,33,33
-"GHA","Ghana","SSA","LMIC","M",202,155,50,38
+"SEN","Senegal","SSA","LMIC","M",210,155,46,43
 "KOR","South Korea","EAS","HIC","L",187,155,30,24
+"GHA","Ghana","SSA","LMIC","M",205,156,50,39
 "SGP","Singapore","SEA","HIC","S",208,157,31,24
-"BGD","Bangladesh","SAS","LMIC","XL",191,159,46,26
+"BGD","Bangladesh","SAS","LMIC","XL",192,159,46,26
 "CHE","Switzerland","WEU","HIC","S",191,160,33,32
 "PAN","Panama","LAC","HIC","S",220,162,31,27
 "ROU","Romania","EEU","HIC","M",218,162,29,28
 "IRL","Ireland","WEU","HIC","S",206,168,36,32
-"TZA","Tanzania","SSA","LMIC","L",236,168,51,44
-"ARE","United Arab Emirates","MENA","HIC","M",233,169,37,26
-"CZE","Czechia","EEU","HIC","M",234,170,36,32
+"ARE","United Arab Emirates","MENA","HIC","M",234,169,37,26
+"CZE","Czechia","EEU","HIC","M",235,170,36,32
 "NZL","New Zealand","OCE","HIC","S",224,170,22,27
-"ZAF","South Africa","SSA","UMIC","L",270,171,52,41
-"SAU","Saudi Arabia","MENA","HIC","M",262,172,36,28
-"CHL","Chile","LAC","HIC","M",242,173,35,30
+"CHL","Chile","LAC","HIC","M",243,173,35,30
+"TZA","Tanzania","SSA","LMIC","L",243,173,55,47
 "COL","Colombia","LAC","UMIC","L",230,176,47,34
-"NGA","Nigeria","SSA","LMIC","XL",255,177,57,45
+"SAU","Saudi Arabia","MENA","HIC","M",271,176,36,29
 "CAN","Canada","NOAM","HIC","M",208,182,41,36
-"JPN","Japan","EAS","HIC","XL",271,184,36,31
-"POL","Poland","EEU","HIC","M",272,185,41,38
+"NGA","Nigeria","SSA","LMIC","XL",264,183,59,47
 "SWE","Sweden","WEU","HIC","M",218,186,45,37
+"ZAF","South Africa","SSA","UMIC","L",288,186,62,44
+"JPN","Japan","EAS","HIC","XL",282,188,36,32
 "GRC","Greece","WEU","HIC","M",225,189,42,36
-"PAK","Pakistan","SAS","LMIC","XL",230,192,58,29
-"AUS","Australia","OCE","HIC","M",285,196,31,33
-"IDN","Indonesia","SEA","UMIC","XL",286,200,54,35
-"BRA","Brazil","LAC","UMIC","XL",269,201,51,36
-"MEX","Mexico","LAC","UMIC","XL",290,203,54,37
+"POL","Poland","EEU","HIC","M",282,189,41,39
+"PAK","Pakistan","SAS","LMIC","XL",231,193,58,30
+"AUS","Australia","OCE","HIC","M",297,200,31,34
+"BRA","Brazil","LAC","UMIC","XL",271,202,51,37
 "PRT","Portugal","WEU","HIC","M",241,203,53,36
+"IDN","Indonesia","SEA","UMIC","XL",297,204,54,36
+"MEX","Mexico","LAC","UMIC","XL",301,207,54,38
 "ESP","Spain","WEU","HIC","M",254,216,60,41
 "BEL","Belgium","WEU","HIC","M",254,219,57,41
-"IND","India","SAS","LMIC","XL",306,235,78,38
+"IND","India","SAS","LMIC","XL",319,241,78,40
 "NLD","Netherlands","WEU","HIC","M",272,244,72,46
 "ITA","Italy","WEU","HIC","L",286,256,77,46
 "DEU","Germany","WEU","HIC","L",302,267,88,50
-"FRA","France","WEU","HIC","L",316,281,93,50
-"GBR","United Kingdom","WEU","HIC","L",333,300,107,56
-"USA","United States","NOAM","HIC","XL",379,367,139,76
+"FRA","France","WEU","HIC","L",319,281,93,50
+"GBR","United Kingdom","WEU","HIC","L",350,309,108,59
+"USA","United States","NOAM","HIC","XL",397,385,147,81

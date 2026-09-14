@@ -696,3 +696,73 @@ Five field agencies needed hand-coded footprints because the `field_agency` temp
 all zeros by design: NatCen, infas, BMG Research, LINK and CREDOC. Rows in this round
 carry evidence level B where the organisation's role is established from its own public
 description and the trade record, and level C where the founding year is a best estimate.
+
+## African extension round
+
+Africa held 89 organisations, 52 of them in Kenya, Nigeria and South Africa, and 26
+African countries had none. This round added 63, bringing Africa to 152 across 45
+countries.
+
+**The Afrobarometer national partner network supplied 34 of them.** Afrobarometer runs
+its surveys through an in-country partner organisation in each state, and publishes the
+list. Those partners are real field agencies with their own staff, sampling frames and
+client work, and their absence was the single largest hole in the register: the network
+covers Angola, Botswana, Burkina Faso, Burundi, Cabo Verde, Cameroon, Chad,
+Congo-Brazzaville, the Comoros, Côte d'Ivoire, Eswatini, Ethiopia, Gabon, Guinea,
+Guinea-Bissau, Lesotho, Liberia, Madagascar, Malawi, Mali, Mauritania, Mauritius,
+Morocco, Mozambique, Namibia, Niger, Senegal, Sierra Leone, Sudan, Tanzania, the Gambia,
+Togo, Uganda and Zambia, in most of which the register previously had nothing at all.
+Rows are evidence level A because the attribution comes from Afrobarometer's own network
+page, and `founded_year` is `NA` for most of them because founding dates are not
+published; the note on each row says so rather than carrying a guess.
+
+- Afrobarometer, network partners — https://www.afrobarometer.org/about/our-network/network-partners/
+
+The remaining 29 are African collectors outside the survey network, chosen to stop the
+continent reading as though it only does fieldwork: Smile ID, Prembly and Youverify in
+identity verification; Okra, Mono and Stitch in open finance; Metropol and CRC Credit
+Bureau in credit files; Farmerline, Esoko, SunCulture and ThriveAgric in agriculture;
+Zindi, Data Science Nigeria, iCog Labs and Lesan AI in AI training data; Kartoza,
+GeoTerraImage, Spatial Collective and Ramani Huria in geospatial and community mapping;
+Africa Check and Dubawa in verification; Ilara Health, Jacaranda Health and Reelforge;
+and Kobo360 and Lori Systems in freight.
+
+Two exits were added: WhereIsMyTransport, which mapped formal and informal transit in 50
+cities and filed for liquidation in September 2023 with about 225,000 dollars left
+against 27 million raised; and Appruve, the Ghanaian verification platform founded by
+Paul Damalie in 2018 whose parent was acquired by Smile Identity in April 2023.
+
+- TechCabal, WhereIsMyTransport is shutting down — https://techcabal.com/2023/10/26/whereismytransport-shutting-down/
+- Launch Base Africa, how 21m of debt sank WhereIsMyTransport — https://launchbaseafrica.com/2024/07/01/how-21m-of-debt-sank-the-fresh-funding-quest-for-failed-sa-startup-whereismytransport/
+- TechCabal, Smile Identity acquires Appruve's parent company — https://techcabal.com/2023/04/26/smile-identity-acquires-appruves-parent-company-to-expand-its-reach-in-africa/
+- TechCrunch, Smile Identity expands African footprint with Appruve — https://techcrunch.com/2023/04/26/smile-identity-expands-african-footprint-with-acquisition-of-appruve-to-strengthen-id-verification-services
+
+**Negative result: Algeria still has no organisation in the register.** It is the only
+large North African state with none, and no Algerian polling or market research firm
+could be established from public sources with enough confidence to code a row. That is
+recorded as a gap in the register rather than filled with a guess.
+
+**What the round changed in the findings.** Two things, one expected and one not.
+
+Expected: Sub-Saharan Africa's headquartered count rose from 64 to 123 and its
+research-accessible count from 53 to 93, giving it an access ratio of 0.34, the highest
+of any region in the register. That follows directly from what was added. Afrobarometer
+partners release their national microdata openly, so adding 34 of them raises the
+accessible count without raising the commercial count. The finding is real but it should
+be read as a statement about one donor-funded network, not about African data markets.
+
+Unexpected: section 15's contributor-sensing finding was overstated and has been revised
+down. That section had reported contributor-operated sensor networks reaching 75
+countries with thirteen firms against 193 for face-to-face interviewing, and concluded
+the newest participatory method was far less geographically even than the oldest.
+Contributor sensing now reaches 162 countries with 21 firms and Sub-Saharan Africa sits
+at 56% rather than 38%. Most of that is one missing organisation, Ookla, whose Speedtest
+crowdsources network measurements in essentially every connected country. The gradient
+survives and the gap is much smaller than reported. The general lesson is recorded in
+that section: a finding resting on thirteen firms was resting on a sample small enough
+for one omission to carry it, and anything in the document computed over fewer than
+about twenty firms should be treated the same way.
+
+Section 14's exit table also shifted: the field agency exit rate falls from 4.5% to 3.6%
+as the denominator grows from 127 to 163, which sharpens rather than weakens the
+contrast with mobile location data at 34.8%.

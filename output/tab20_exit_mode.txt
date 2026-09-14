@@ -15,9 +15,9 @@ expert_network          2         0         0
 field_agency            6         0         0     
 financial_altdata       3         0         0     
 health_rwd              3         1         2     
-identity_biometric      1         0         0     
+identity_biometric      2         0         0     
 iot_telemetry           2         1         0     
-location_mobility       5         0         2     
+location_mobility       5         1         2     
 panel_sample            5         0         0     
 retail_pricing          3         0         0     
 survey_insights         5         1         0     
