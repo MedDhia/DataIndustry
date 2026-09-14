@@ -100,7 +100,7 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 
 `scripts/03_coverage_gaps.R` writes long-format versions to `output/`.
 
-## `data/ownership.csv` (115 rows, 66 organisations)
+## `data/ownership.csv` (199 rows, 113 organisations)
 
 Founders, owners, investors, acquirers and funders. One row per organisation-
 stakeholder pair.
@@ -119,10 +119,15 @@ stakeholder pair.
 else in the repository.** A row exists only where the relationship could be
 established from a source. Effort went to the organisations whose data is openly
 accessible, because section 4 of `coverage_gaps.md` found that openness tracks
-grant funding, and to MENA and African firms. Two thirds of the register has no
-stakeholder row, and the missing two thirds is not a random sample: owner-managed
+grant funding, and to MENA and African firms. Four fifths of the register has no
+stakeholder row, and the missing four fifths is not a random sample: owner-managed
 independents, the largest ownership category in the register, disclose almost
 nothing publicly.
+
+The bias runs opposite to most business datasets. Grant-funded organisations
+publish their funders because donors require acknowledgement; privately held
+firms publish nothing absent a transaction. Findings about funding are therefore
+much better supported than anything this file says about private ownership.
 
 **Absence of a row means not established, never that an organisation has no owner
 or funder.** Do not compute shares over the register from this file. Shares

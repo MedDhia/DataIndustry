@@ -22,7 +22,7 @@ actually gathering the data, and what is nobody gathering?
 | `data/regions.csv` | 12 | Region definitions. |
 | `data/modalities.csv` | 19 | Collection method taxonomy. |
 | `docs/codebook.md` | | Every variable, every coding rule. |
-| `data/ownership.csv` | 115 | Founders, owners, investors and funders for 66 organisations. Partial and purposive; read the codebook before computing anything from it. |
+| `data/ownership.csv` | 199 | Founders, owners, investors and funders for 113 organisations. Partial and purposive; read the codebook before computing anything from it. |
 | `docs/coverage_gaps.md` | | The findings. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `docs/sources.md` | | Sources consulted during construction. |
@@ -108,15 +108,19 @@ agencies, are in and are coded `state_linked`.
 - **Openness tracks grant funding, not public ownership.** Academic and nonprofit
   collectors publish at 90%. State-linked collectors publish at **11.1%**, below
   venture-backed firms at 19.6% and second-lowest of any ownership type.
-- **The open layer has no non-Northern funder.** Of 36 established funding
-  relationships, 35 have a funder in North America or Western Europe; the
-  exception is the Australian government. All 21 relationships funding
-  Sub-Saharan African organisations are funded from outside the continent.
-  Afrobarometer's sixteen published funders include none headquartered in Africa.
-  The openly accessible layer over Africa exists because Northern foundations and
-  aid ministries pay for it, which makes it contingent on decisions taken
-  elsewhere. Coverage of this layer is partial, so treat it as a categorical
-  observation about the rows established, not a population share.
+- **Locally founded, externally funded.** MENA and African data organisations
+  are founded by nationals of the country at 86%, almost the same rate as
+  Northern ones at 90%. But **62 of 66 established funding relationships (93.9%)
+  have a funder in North America or Western Europe**, and only two of the four
+  exceptions are independently non-Northern: the Qatar National Research Fund and
+  the South African Institute of International Affairs. The expertise and the
+  decisions are largely domestic; the budget line is not.
+- **The open layer is the part of this industry that can disappear rather than
+  change hands.** A commercial firm that loses its market gets bought and its data
+  continues under a new owner; every MENA and African field agency that exited was
+  acquired. A grant-funded collector that loses its funder has no acquirer,
+  because there was never a revenue stream to buy. Former USAID Africa Bureau
+  officials have publicly urged the agency to save Afrobarometer's funding.
 - **None of the token-incentivised sensor networks reaches Africa.** Contributor
   sensing there is supplied by a Ugandan university lab publishing openly, a
   South African civic-data nonprofit, a Kenyan soil-sensor firm and two Northern

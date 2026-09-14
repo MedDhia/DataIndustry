@@ -289,3 +289,22 @@ funding findings in section 17 are much better supported than anything the file
 says about private ownership. Owner-managed independents, the largest ownership
 category in the register at 152 operating firms, are almost entirely absent from
 it.
+
+## Retrieved for the MENA and Africa founder and funder round
+
+- Arab Barometer, Amaney Jamal profile listing grant sources — https://www.arabbarometer.org/experts/amaney-jamal-phd/
+- Wikipedia, Arab Barometer — https://en.wikipedia.org/wiki/Arab_Barometer
+- CDD-Ghana, FAQs listing collaborating funders — https://cddgh.org/faq/
+- PCPSR, about us — https://pcpsr.org/en/about-psr-page
+- Wikipedia, Palestinian Center for Policy and Survey Research — https://en.wikipedia.org/wiki/Palestinian_Center_for_Policy_and_Survey_Research
+- Twaweza, team and partners — https://twaweza.org/about-us/team-and-partners/
+- Twaweza, our governance — https://twaweza.org/programme/our-governance/
+- Hewlett Foundation, pledge to strengthen African think tanks — https://hewlett.org/newsroom/hewlett-and-partners-pledge-30-million-to-strengthen-african-think-tanks/
+
+Founder rows for MENA and African firms are coded at evidence level B or C from
+domain knowledge rather than from a single citable source per person, because
+small research agencies rarely publish a founding history. They should be treated
+as attributions to check rather than as verified record, and the evidence level on
+each row says which. Funder rows for the organisations above are level A: every
+one is published by the recipient organisation itself, which is why the funding
+side of this file is far better evidenced than the founder side.

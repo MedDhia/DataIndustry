@@ -911,90 +911,123 @@ Northern commercial layer it sits alongside.
 
 ## 17. Who owns and funds the collectors
 
-This revision adds a stakeholder layer: `data/ownership.csv`, 115 rows naming
-founders, controlling owners, investors, acquirers and funders for 66 of the 569
-organisations. Coverage is deliberately partial and purposive. Rows exist where
-the relationship could be established from a source, and effort was concentrated
-on two groups: the organisations whose data is openly accessible, because
-section 4 found that openness tracks grant funding, and MENA and African firms.
-**Absence of a stakeholder row means not established, never that an organisation
-has no owner or funder.** Nothing below is a population statistic.
+`data/ownership.csv` records founders, controlling owners, investors, acquirers
+and funders: 199 rows covering 113 of the 569 organisations. Coverage is partial
+and purposive. Rows exist where the relationship could be established from a
+source, and effort was concentrated on organisations whose data is openly
+accessible, because section 4 found that openness tracks grant funding, and on
+MENA and African firms. **Absence of a stakeholder row means not established,
+never that an organisation has no owner or funder.** Nothing below is a
+population statistic.
 
-### The open layer has no non-Northern funder
+### Correction to the previous revision
 
-Of 36 funding relationships established, for 8 organisations, **35 have a funder
-headquartered in North America or Western Europe**. The single exception is the
-Australian Government, through Geoscience Australia, behind Digital Earth Africa.
+The previous version of this section stated that the open layer had no
+non-Northern funder, on 36 established funding relationships. Extending the file
+to 66 relationships across 12 organisations found four, so the categorical claim
+was wrong and is withdrawn.
 
-Sub-Saharan African organisations account for 21 of the 36 funding relationships,
-and every one of those 21 is funded from outside the continent.
+The four are the Qatar National Research Fund, which has funded Arab Barometer;
+the South African Institute of International Affairs, which has funded Twaweza;
+the Open Society Initiative for West Africa, the Dakar-registered West African arm
+of the Open Society Foundations, which funds CDD-Ghana; and the Australian
+government behind Digital Earth Africa. Of those, only the Qatari fund and the
+South African institute are independently non-Northern in origin as well as
+registration.
 
-Afrobarometer alone illustrates the shape. Its published funders are Sweden's
-Sida, Norway's Norad, the Mo Ibrahim Foundation, Open Society Foundations Africa,
-Luminate, the Ford Foundation, the Hewlett Foundation, the Mastercard Foundation,
-the Packard Foundation, the Obama Foundation, the European Commission, the World
-Bank, Canada's IDRC, the Netherlands embassy in Uganda, Germany's BMZ through GIZ,
-and USAID. Sixteen funders, none headquartered in Africa. The closest is the Mo
-Ibrahim Foundation, founded by a Sudanese-British telecoms entrepreneur and
-registered in London.
+The quantitative version survives and is the one to use: **62 of 66 established
+funding relationships, 93.9%, have a funder headquartered in North America or
+Western Europe.** Two of the four exceptions are Northern money routed through a
+Southern office or a fellow OECD state.
 
-ACLED is funded by the US State Department, the Dutch and German foreign
-ministries, the Tableau Foundation, IOM, the World Bank, the US Department of
-Defense and the European Research Council. AirQo, built at Makerere University in
-Kampala, runs on two Google.org grants. Digital Earth Africa runs on the Helmsley
-Charitable Trust and the Australian government with Amazon and Esri hosting.
+### Locally founded, externally funded
+
+Setting the founder and funder rows side by side produces the sharper result.
+
+| | MENA and Africa | North America and Western Europe |
+|---|---|---|
+| Founder rows established | 65 | 20 |
+| Founded by a national of the country | 86% | 90% |
+
+MENA and African data organisations are overwhelmingly founded by people from
+the countries they operate in, at very nearly the same rate as Northern ones.
+Baseera by Magued Osman in Cairo, AWRAD by Nader Said in Ramallah, IIACSS by
+Munqith Al-Dagher in Baghdad, Sigma Conseil by Hassen Zargouni in Tunis, One to
+One by Youssef Meddeb, the Yemen Polling Center by Hafez Albukari, NOIPolls by
+Ngozi Okonjo-Iweala, Infotrak by Angela Ambitho, Ask Afrika by Andrea Rademeyer,
+Aerobotics by James Paterson and Benji Meltzer, UjuziKilimo by Brian Bosire,
+mPharma by Gregory Rockson, Helium Health by Adegoke Olubusi and Tito Ovia.
+
+The nine exceptions are almost all the same case: an organisation founded in the
+United States to operate in Africa. Apollo Agriculture, Busara, eHealth Africa,
+Hello Tractor and mSurvey are American-founded Kenyan and Nigerian operations;
+Afrobarometer was co-founded by an American and a South African alongside
+Ghana's E. Gyimah-Boadi.
+
+So the dependency this section documents is not about who runs these
+organisations. It is about who pays for them. **Institutions locally founded,
+funding base almost entirely external.** That is a different and more precise
+claim than a story about Northern control of African research, and it has
+different implications: the expertise, the staff and the decisions are largely
+domestic, and the budget line is not.
+
+### The funders
+
+66 funding relationships across 12 organisations, from 50 distinct funders. The
+set is more diffuse than expected, but a recognisable core recurs: the Ford
+Foundation in four of the twelve, Sweden's Sida, USAID and the Hewlett Foundation
+in three each, and the European Union, Germany's BMZ, Google.org, Canada's IDRC,
+the UK's FCDO and the World Bank in two each.
+
+By category, 26 relationships come from private foundations, 21 from bilateral
+aid agencies, 10 from multilaterals, 4 from corporates and 3 from state research
+bodies. Forty-one of the 66 fund Sub-Saharan African organisations.
+
+Afrobarometer publishes sixteen funders and CDD-Ghana, one of its regional hubs,
+publishes ten more. Arab Barometer has raised over five million dollars from MEPI,
+the National Science Foundation, the Qatar National Research Fund, USIP, IDRC,
+Carnegie Corporation, the Luce Foundation and the BBC. ACLED runs on the US State
+Department, the Dutch and German foreign ministries, IOM, the World Bank, the US
+Department of Defense and the European Research Council. PCPSR is funded mostly by
+the European Union and the Ford Foundation. Twaweza names a five-donor core
+consortium of Sida, FCDO, Hewlett, SNV and Hivos.
 
 ### What that implies for the access finding
 
 Section 4 established that academic and nonprofit collectors publish at 90% while
-every revenue-funded category sits between 8% and 25%, and section 15 found that
-what reaches Africa is grant-funded and therefore published. Both are still true.
-This section adds the condition attached to them.
+every revenue-funded category sits between 8% and 25%. Section 15 found that what
+reaches Africa is grant-funded and therefore published. Both hold. This section
+adds the condition.
 
-The openly accessible layer of the global data industry, and almost the entirety
-of the openly accessible layer over Africa, exists because Northern foundations
-and Northern aid ministries pay for it. That is not a hidden arrangement; every
-organisation above publishes its funders. But it means the open layer is
-contingent on decisions taken in Washington, London, Stockholm, Berlin, Ottawa
-and Palo Alto, by bodies with no accountability to the populations being
-measured and no obligation to continue.
+The openly accessible layer over Africa and MENA exists because Northern
+foundations and aid ministries pay for it, and it is contingent on decisions
+taken in capitals with no accountability to the populations being measured. The
+register already contains one instance of that contingency arriving: former USAID
+Africa Bureau officials publicly urging the agency to save Afrobarometer's
+funding, which nobody does about a secure income.
 
-The register already contains one instance of that contingency arriving. Former
-USAID Africa Bureau officials publicly urged the agency to save Afrobarometer's
-funding, which is not something anyone does about a funding stream that is
-secure. The comparison worth holding is with section 14: when a commercial data
-firm loses its market it is bought, and its data continues under a new owner.
-When a grant-funded collector loses its funder there is no acquirer, because
-there was never a revenue stream to buy.
-
-### Founders
-
-33 founder relationships across 29 organisations. Where the founder's nationality
-could be established, most organisations were founded domestically: 7 of 10
-Sub-Saharan African organisations, 3 of 4 MENA ones, 12 of 14 North American.
-
-The exceptions are informative rather than numerous. African Languages Lab's
-founder works from the United States; Sama was founded in the United States to
-employ East African workers; GAMAAN polls Iran from the Netherlands. Each is a
-case of a collector positioned outside the population it measures, which is a
-different arrangement from a domestic firm and is visible in the data only
-because founders are now recorded.
+Set against section 14, the asymmetry is stark. A commercial data firm that loses
+its market is bought, and its holdings continue under a new owner; that is what
+happened to every MENA and African field agency that exited. A grant-funded
+collector that loses its funder has no acquirer, because there was never a
+revenue stream to buy. The open layer is the part of this industry that can
+disappear rather than change hands.
 
 ### State control
 
-15 collectors have an established state controlling owner. Seven are the African
-and Middle Eastern space agencies added last revision, and the rest are the
-Russian, Chinese, Iranian, Egyptian and Uzbek bodies already in the register.
-Their access profile is the one section 4 reports: mostly closed. State control
-and open access are close to unrelated in this data.
+15 collectors have an established state controlling owner: the African and Middle
+Eastern space agencies, and the Russian, Chinese, Iranian, Egyptian and Uzbek
+bodies. Their access profile is the one section 4 reports, mostly closed. State
+control and open access are close to unrelated in this data.
 
 ### What is missing
 
-Two thirds of the register has no stakeholder row at all, and the gap is not
-random. Privately held firms disclose least, and owner-managed independents, the
-largest single ownership category at 152 operating firms, disclose almost
-nothing. National field agencies in MENA and Africa, the organisations this
-register has worked hardest to enumerate, are also the ones whose ownership is
-least documented anywhere public. Anyone extending this layer should expect to
-need company registries rather than the web, and in several of the relevant
-jurisdictions those registries are not open.
+Four fifths of the register has no stakeholder row, and the gap is not random.
+The bias here runs opposite to most business datasets. Grant-funded organisations
+publish their funders, often on a dedicated page, because donors require
+acknowledgement. Privately held firms publish nothing about ownership unless a
+transaction is announced. This file therefore documents the open layer well and
+the commercial layer poorly, and owner-managed independents, the largest ownership
+category in the register at 152 operating firms, are almost entirely absent from
+it. Extending this layer means company registry work in jurisdictions where
+registries are often not open.
