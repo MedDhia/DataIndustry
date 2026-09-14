@@ -22,11 +22,12 @@ health_clinical               192                 2                 190         
 public_opinion                193                 1                 180                 13       
 prices_retail                 193                 1                  52                141       
 earth_observation             194                 0                 194                 0        
-agriculture                   194                 0                 188                 6        
+agriculture                   194                 0                 194                 0        
 energy_extractives            194                 0                 194                 0        
 environment_climate           194                 0                 194                 0        
 conflict_security             194                 0                 194                 0        
-supply_chain                  194                 0                 171                 23       
+supply_chain                  194                 0                 194                 0        
 housing_property              194                 0                  99                 95       
-infrastructure                194                 0                 179                 15       
+infrastructure                194                 0                 194                 0        
+biodiversity                  194                 0                  64                130       
 -------------------------------------------------------------------------------------------------

@@ -21,3 +21,4 @@ b2b_firmographic,B2B firmographic and contact data,observational,Firms assemblin
 climate_risk,Climate and environmental risk data,observational,Firms modelling hazard exposure emissions and nature outcomes from mixed sources
 identity_biometric,Biometric and identity data,observational,Firms collecting or scraping facial iris voice and document-linked identity data
 trade_logistics,Trade and logistics intelligence,observational,Firms tracking vessels cargo customs records and physical goods flows
+distributed_sensing,Distributed contributor-owned sensing,observational,Networks whose sensors are bought and run by dispersed contributors paid per reading rather than by the firm

@@ -75,19 +75,23 @@ SEGMENT_METHODS = {
  "b2b_firmographic": ["web_scrape", "admin_records"],
  "climate_risk": ["remote_sensing", "api_partner"],
  "identity_biometric": ["sensor_hardware", "web_scrape"],
+ "distributed_sensing": ["crowd_sensor", "sensor_hardware"],
 }
 
 # A method is dropped in a country that cannot support it.
 def method_feasible(method, c):
     net, inc = c["internet_band"], c["income_group"]
-    if method in ("online_panel", "device_passive", "mobile_app", "crowd_task", "expert_elicit"):
-        return net in ("high", "medium")
+    if method in ("online_panel", "device_passive", "mobile_app", "crowd_task",
+                  "expert_elicit", "crowd_sensor"):
+        return net in ("high", "medium")   # contributors need connectivity to upload
     if method == "clinical_records":
         return inc in ("HIC", "UMIC")
     if method == "transaction":
         return inc in ("HIC", "UMIC") and net in ("high", "medium")
-    return True   # face_to_face, telephone, web_scrape, api_partner,
-                  # admin_records, remote_sensing, sensor_hardware, telecom_network
+    return True   # face_to_face, telephone, web_scrape, api_partner, admin_records,
+                  # remote_sensing, sensor_hardware, telecom_network, and the three
+                  # methods that need no local infrastructure at all:
+                  # environmental_sample, acoustic, signals_rf
 
 # A domain is dropped where the infrastructure it is derived from does not exist.
 def domain_feasible(domain, c, modality_primary):

@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 522 organisations that collect data as their business, 467 of them
+A register of 548 organisations that collect data as their business, 492 of them
 still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
@@ -12,15 +12,15 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 522 | The register. One row per organisation, 25 variables. 467 operating, 55 exited. |
-| `data/coverage_spatial.csv` | 522 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 548 | The register. One row per organisation, 25 variables. 492 operating, 56 exited. |
+| `data/coverage_spatial.csv` | 548 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,278 | Hand-coded country footprints for 192 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 24,150 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
-| `data/segments.csv` | 22 | Industry segment taxonomy. |
-| `data/domains.csv` | 26 | Substantive domain taxonomy. |
+| `data/coverage_country.csv` | 26,544 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/segments.csv` | 23 | Industry segment taxonomy. |
+| `data/domains.csv` | 27 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
-| `data/modalities.csv` | 15 | Collection method taxonomy. |
+| `data/modalities.csv` | 19 | Collection method taxonomy. |
 | `docs/codebook.md` | | Every variable, every coding rule. |
 | `docs/coverage_gaps.md` | | The findings. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
@@ -48,10 +48,10 @@ comes almost entirely from the observational side, and that only becomes visible
 when the two are measured on the same grid.
 
 Both startups and established firms are included by design, and so are firms that
-no longer exist. 55 organisations in the register have exited: 45 absorbed into
+no longer exist. 56 organisations in the register have exited: 46 absorbed into
 an acquirer, 10 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
-uses the 467 operating firms only**; `scripts/05_history.R` analyses the rest.
+uses the 492 operating firms only**; `scripts/05_history.R` analyses the rest.
 
 110 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
 bloc or mainland China, the areas where enumeration effort has been concentrated.
@@ -89,6 +89,17 @@ scope as producers, though firms that resell their output are in.
   is building new ways to ask questions (AI-moderated interviewing, population
   simulation); the South is building collection capacity that did not exist
   (African-language and Arabic-dialect corpora, field sensing, clinical records).
+- **The newest participatory method is less geographically even than the oldest
+  one.** Contributor-owned sensor networks paid per reading reach 61 countries,
+  100% of North America and Western Europe but 19% of Africa and MENA.
+  Face-to-face interviewing reaches 193 of 194. Radio frequency geolocation
+  reaches all 194 with three firms, because listening for radio emitters from
+  orbit needs no participant at all. The frontier splits between methods that
+  need someone on the ground and methods that do not.
+- Wastewater epidemiology, acoustic monitoring and RF geolocation measure
+  populations with **no consent mechanism and no identifiable data subject**.
+  Seven firms return empty on every consent variable the register records, the
+  same blank the synthetic research firms produce from the opposite direction.
 - Three firms sit in a solicited segment while contacting nobody. Two are new:
   **Aaru** and **Simile** simulate respondents rather than recruiting them, and
   are capitalised at a scale comparable to the largest panel businesses.

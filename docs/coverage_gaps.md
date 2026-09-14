@@ -700,3 +700,88 @@ Read the segment table as a lower bound with two known biases, Northern and
 acquisition-shaped, rather than as a hazard rate. The only systematic record that
 would fix this is national market research association membership lists over
 time, which are not public for most of the countries that matter here.
+
+## 15. The frontier splits in two
+
+This revision added the collection methods that did not fit the original
+taxonomy: contributor-owned sensor networks paid per reading, environmental
+sampling of wastewater and DNA, passive acoustic monitoring, and radio frequency
+geolocation from orbit. Four new modality codes, one new segment, one new domain.
+
+Put on the same grid as the established methods, they do not behave as one thing.
+
+| Method | Firms | Countries reached |
+|---|---|---|
+| Radio frequency geolocation | 3 | 194 |
+| Remote sensing | 71 | 194 |
+| Face-to-face interviewing | 220 | 193 |
+| Online panel | 231 | 162 |
+| Environmental sampling | 4 | 64 |
+| Contributor-owned sensors | 9 | 61 |
+
+Contributor sensing by region, as a share of the countries in each:
+
+| Region | Countries | With a contributor sensor network |
+|---|---|---|
+| North America | 2 | 100% |
+| Western Europe | 20 | 100% |
+| Mainland China | 1 | 100% |
+| Oceania | 14 | 50% |
+| Russia and Central Asia | 7 | 29% |
+| East Asia | 7 | 29% |
+| South Asia | 8 | 25% |
+| MENA | 21 | 19% |
+| Sub-Saharan Africa | 48 | 19% |
+| Latin America | 33 | 18% |
+| Eastern Europe | 22 | 18% |
+| Southeast Asia | 11 | 18% |
+
+The split is not between old methods and new ones. It is between methods that
+need a participant and methods that do not.
+
+Radio frequency geolocation reaches every country on earth with three firms,
+because a satellite listening for radio emitters needs no permission, no
+infrastructure and no person. Hivemapper needs someone to buy a dashcam, drive,
+and care about a token; WeatherXM needs someone to buy a weather station and keep
+it calibrated. Those requirements sort by disposable income and connectivity, so
+nine firms reach 61 countries and the map they produce is the rich-world map
+again.
+
+The comparison that matters is the last row against the third. Face-to-face
+interviewing, the oldest method in the register and the one section 10 found
+concentrated in poor countries, reaches 193 of 194 countries. Contributor-owned
+sensing, the newest, reaches 61. **The newest participatory method is
+substantially less geographically even than the oldest one.** Token incentives
+were supposed to make sensing cheap enough to be universal. On this evidence they
+have made it cheap enough to be universal in places where sensing was already
+cheap.
+
+### Collection with no data subject
+
+The frontier segments also break the register's consent variables. Of the twelve
+firms using contributor sensing, environmental sampling, acoustics or RF, seven
+are coded `human_subjects = none` and `consent_model = not_applicable`, and the
+coding is not a shrug.
+
+Wastewater epidemiology measures a population's infections, drug use and diet
+from sewage. Four firms do it, reaching 64 countries, and combined testing
+captures around 41% of the United States population. Nobody consents, because
+nobody is identifiable: the unit of observation is a sewershed. The same is true
+of a forest microphone that records a chainsaw, and of a satellite that
+geolocates a ship's transmitter.
+
+This is a category the privacy frameworks in section 9 mostly do not reach, and
+it is growing. Identity and biometric data is collected everywhere and released
+nowhere, which is an access problem with a known shape. Population-level
+environmental measurement has no access problem of that kind, because there is no
+individual record to withhold, and no consent problem of that kind either. What
+it has instead is that a community can be measured continuously without any
+member of it being asked, told, or able to object. Biobot's loss of the US
+national contract to Verily in 2023, and Massachusetts ending its Biobot contract
+in 2026, were procurement decisions; no sewershed was consulted in either.
+
+The register takes no position on whether that is a problem. It records that the
+methods exist, that they are a real and growing share of how populations get
+measured, and that `human_subjects` and `consent_model` return empty for them in
+the same way they return empty for the synthetic research firms in section 13.
+Two different frontiers, arriving at the same blank.

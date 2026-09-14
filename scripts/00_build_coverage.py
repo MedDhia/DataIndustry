@@ -30,6 +30,7 @@ TEMPLATES = {
  "location_mobility": [3,1,2,1,0,1,0,1,1,1,0,1],
  "telecom_data":      [1,1,2,1,0,1,1,1,1,1,0,1],
  "earth_observation": [3,3,3,3,3,3,3,3,3,3,3,3],
+ "distributed_sensing":[3,1,3,1,0,1,1,1,1,1,0,2],
  "iot_telemetry":     [3,1,3,1,0,1,0,1,1,1,0,2],
  "financial_altdata": [3,1,2,0,0,0,0,1,1,1,1,1],
  "trade_logistics":   [3,3,3,3,3,3,3,3,3,3,3,3],

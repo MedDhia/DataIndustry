@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (522 rows, 25 variables)
+## `data/companies.csv` (548 rows, 25 variables)
 
-The register includes 467 operating organisations and 55 that no longer operate.
+The register includes 492 operating organisations and 56 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -63,10 +63,10 @@ dataset and should be reported in anything built on it.
 - `C` — analyst judgement from domain knowledge. Directionally reliable for
   segment, region and modality; not reliable for dates or counts.
 
-Current distribution over operating firms: A 38, B 169, C 260. Treat every `C` figure as an ordinal
+Current distribution over operating firms: A 50, B 182, C 260. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (522 rows, 14 variables)
+## `data/coverage_spatial.csv` (548 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -105,10 +105,10 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 - `data/regions.csv` — twelve regions. Mainland China and the Russia/Belarus/
   Central Asia bloc are separated from their neighbours because exclusion from
   them is one of the strongest patterns in the industry.
-- `data/segments.csv` — twenty-two segments, each tagged `solicited` (data is
+- `data/segments.csv` — twenty-three segments, each tagged `solicited` (data is
   produced by asking someone) or `observational` (data is captured from traces).
-- `data/domains.csv` — twenty-six substantive domains.
-- `data/modalities.csv` — fifteen collection methods, each tagged by whether it
+- `data/domains.csv` — twenty-seven substantive domains.
+- `data/modalities.csv` — nineteen collection methods, each tagged by whether it
   brings the firm into contact with a data subject.
 
 ---
@@ -173,7 +173,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (24,150 rows, 9 variables)
+## `data/coverage_country.csv` (26,544 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -192,8 +192,8 @@ anti-join: a pair not present here is a pair with no coverage.
 | Basis | Rows | Status |
 |---|---|---|
 | `manual` | 2,278 | Observation. Hand-coded footprint. |
-| `hq_exact` | 133 | Observation. Single-country firm resolved to its headquarters country. |
-| `allocated` | 21,739 | Model output. |
+| `hq_exact` | 135 | Observation. Single-country firm resolved to its headquarters country. |
+| `allocated` | 24,131 | Model output. |
 
 Rows are written for exited firms too, recording the footprint they had, and are
 filtered out of the current-coverage tables by `01_load.R`.
@@ -254,10 +254,16 @@ the substantive content of the "by method and by type" coding:
 
 | Gate | Applies to |
 |---|---|
-| Requires internet `medium` or `high` | `online_panel`, `device_passive`, `mobile_app`, `crowd_task`, `expert_elicit`; domains `device_telemetry`, `mobility_location` |
+| Requires internet `medium` or `high` | `online_panel`, `device_passive`, `mobile_app`, `crowd_task`, `expert_elicit`, `crowd_sensor`; domains `device_telemetry`, `mobility_location` |
 | Requires income `UMIC` or `HIC` | `clinical_records`; domains `financial_transactions`, `credit_risk` |
 | Requires both | `transaction`; `health_clinical` and `prices_retail` where the firm's primary method is record- or transaction-based |
-| Ungated | `face_to_face`, `telephone`, `web_scrape`, `api_partner`, `admin_records`, `remote_sensing`, `sensor_hardware`, `telecom_network` |
+| Ungated | `face_to_face`, `telephone`, `web_scrape`, `api_partner`, `admin_records`, `remote_sensing`, `sensor_hardware`, `telecom_network`, `environmental_sample`, `acoustic`, `signals_rf` |
+
+`crowd_sensor` is gated because a contributor-owned sensor network needs someone
+on the ground who can buy the hardware and upload from it. The three ungated new
+methods need nobody on the ground at all, which is why they reach every country
+and `crowd_sensor` reaches 61. Section 15 of `coverage_gaps.md` treats that split
+as the main finding about the collection frontier.
 
 An `allocated` row with no usable method, or no obtainable data type, is not
 written. A `manual` or `hq_exact` row is always written, because the observation

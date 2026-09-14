@@ -186,3 +186,28 @@ continues to operate: Egypt ordered the closure of Ipsos's Cairo office in June
 2017, nominally over health and safety filings, in a period of pressure on
 polling. It is an instance of the `restrictive_research_regime` mechanism acting
 on a specific office rather than on an ownership structure.
+
+## Retrieved for the collection-frontier expansion
+
+- QuickNode, top DePIN projects 2026 — https://www.quicknode.com/builders-guide/best/top-10-decentralized-physical-infrastructure-networks
+- Orochi Network, top DePIN projects and trends 2026 — https://orochi.network/blog/top-10-de-pin-projects-and-emerging-trends-in-2026
+- Biobot Analytics, CDC selects Biobot to expand national wastewater testing — https://biobot.io/press-release/u-s-centers-for-disease-control-and-prevention-selects-biobot-analytics-to-expand-national-wastewater-monitoring/
+- CDC, about the national wastewater monitoring program — https://www.cdc.gov/wastewater/about/index.html
+- WastewaterSCAN, about — https://www.wastewaterscan.org/about
+- Verily, wastewater epidemiology — https://verily.com/solutions/public-health/wastewater
+- Boston Globe, Massachusetts to end its Biobot wastewater contract — https://www.bostonglobe.com/2026/07/04/metro/wastewater-monitoring-biobot-massachusetts/
+- SpaceNews, NRO agreements with six commercial providers of space-based RF data — https://spacenews.com/nro-signs-agreements-with-six-commercial-providers-of-space-based-rf-data/
+- Hubble Network, how HawkEye 360 finds RF signals from space — https://hubble.com/community/guides/how-hawkeye-360-finds-rf-signals-from-space/
+- NatureMetrics, bioacoustics — https://naturemetrics.com/bioacoustics
+- NatureMetrics, ecoacoustics and eDNA in Manombo reserve, Madagascar — https://www.naturemetrics.com/news/ecoacoustics-edna-bring-new-biodiversity-monitoring-to-manombo-reserve-madagascar
+- Rainforest Connection — https://rfcx.org/
+- Fugro, combining bioacoustics and eDNA in marine survey — https://www.fugro.com/news/long-reads/2026/holistic-biodiversity-monitoring-combining-bioacoustics-and-edna-to-deepen-our-understanding-of-marine-life
+- Clarity Movement Co — https://www.clarity.io/
+- Aclima, science — https://aclima.earth/science
+
+Token-incentivised sensing is reported almost entirely by crypto trade press,
+which has an interest in the sector it covers. Contributor counts, road-coverage
+percentages and node totals in those sources are self-reported by the networks
+and were not independently verifiable; they are recorded in `notes` with the
+attribution rather than as coded variables. The coded fields for these firms
+(segment, modality, region coverage) do not depend on those figures.

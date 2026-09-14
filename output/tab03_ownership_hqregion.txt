@@ -3,13 +3,13 @@ Ownership type by headquarters region
 =====================================================================
                     NOAM LAC WEU EEU RUS MENA SSA SAS SEA EAS CHN OCE
 ---------------------------------------------------------------------
-academic             4    0   0   0   0   1    2   1   0   0   0   0 
+academic             5    0   0   0   0   1    2   1   0   0   0   0 
 cooperative_jic      1    0   1   0   0   0    0   1   0   0   0   1 
-nonprofit            11   1   6   4   2   5   13   0   2   0   0   0 
+nonprofit            12   1   6   4   2   5   13   0   2   1   0   0 
 private_independent  22  11  14  10   9   27  22   9   7   4  11   2 
-private_pe           23   0   6   1   0   1    0   1   0   0   0   0 
-private_vc           73   0  26   1   0   12  16   3   2   3   4   0 
-public_listed        16   0   8   0   1   4    0   1   0   3   4   1 
+private_pe           23   0   7   1   0   1    0   1   0   0   0   1 
+private_vc           85   0  30   1   0   12  16   3   2   3   4   1 
+public_listed        16   0  10   0   1   4    0   1   0   3   4   1 
 state_linked         0    0   0   0   5   2    0   0   0   0   4   0 
-subsidiary           21   2  12   0   0   2    1   0   0   4   0   0 
+subsidiary           22   2  12   0   0   2    1   0   0   4   0   0 
 ---------------------------------------------------------------------

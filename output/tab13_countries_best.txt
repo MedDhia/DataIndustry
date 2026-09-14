@@ -3,19 +3,19 @@ Fifteen best served countries by number of providers
 ====================================================================================================
      country_name  region_code income_group population_band n_any n_providers n_primary n_accessible
 ----------------------------------------------------------------------------------------------------
-52      Sweden         WEU         HIC             M         170      145        43          30     
-162   Indonesia        SEA         UMIC           XL         206      147        50          28     
-31      Brazil         LAC         UMIC           XL         198      148        47          29     
-3       Mexico         LAC         UMIC           XL         209      150        50          31     
-155    Pakistan        SAS         LMIC           XL         176      150        55          23     
-47     Portugal        WEU         HIC             M         185      153        47          29     
-41     Belgium         WEU         HIC             M         194      163        51          33     
-46      Spain          WEU         HIC             M         197      165        54          34     
-154     India          SAS         LMIC           XL         225      180        74          31     
-40   Netherlands       WEU         HIC             M         205      181        63          35     
-45      Italy          WEU         HIC             L         211      187        67          36     
-39     Germany         WEU         HIC             L         220      194        72          37     
-38      France         WEU         HIC             L         228      204        79          38     
-36  United Kingdom     WEU         HIC             L         235      209        83          41     
-1   United States     NOAM         HIC            XL         255      243        96          48     
+31      Brazil         LAC         UMIC           XL         217      160        47          33     
+162   Indonesia        SEA         UMIC           XL         226      160        50          32     
+52      Sweden         WEU         HIC             M         188      161        43          35     
+155    Pakistan        SAS         LMIC           XL         193      161        55          27     
+3       Mexico         LAC         UMIC           XL         229      163        50          35     
+47     Portugal        WEU         HIC             M         203      170        48          34     
+41     Belgium         WEU         HIC             M         213      182        52          39     
+46      Spain          WEU         HIC             M         215      182        55          39     
+154     India          SAS         LMIC           XL         245      193        74          35     
+40   Netherlands       WEU         HIC             M         224      200        64          41     
+45      Italy          WEU         HIC             L         230      206        68          42     
+39     Germany         WEU         HIC             L         240      213        73          43     
+38      France         WEU         HIC             L         248      224        80          44     
+36  United Kingdom     WEU         HIC             L         256      230        84          47     
+1   United States     NOAM         HIC            XL         280      268        97          58     
 ----------------------------------------------------------------------------------------------------
