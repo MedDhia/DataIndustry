@@ -266,3 +266,26 @@ and coded `state_linked`, because they do collect. That decision is what produce
 the finding in section 16, and a reader who thinks public bodies do not belong in
 a register of the data industry should subtract the seven and read the section
 accordingly.
+
+## Retrieved for the ownership and funding layer
+
+- Afrobarometer, our funding partners — https://www.afrobarometer.org/support/our-funding-partners/
+- Afrobarometer, USAID must save Afrobarometer say former Africa Bureau officials — https://www.afrobarometer.org/articles/usaid-must-save-afrobarometer-say-former-africa-bureau-officials/
+- ACLED, press office FAQs listing funders — https://acleddata.com/press-office-faqs
+- ACLED, grant from CRAF'd — https://acleddata.com/press/press-release-new-grant-crafd-maintain-global-conflict-monitoring-and-amplify-local-data
+- Digital Earth Africa, Helmsley Charitable Trust funding — https://digitalearthafrica.org/en_za/digital-earth-africa-secures-additional-funding-from-the-leona-m-and-harry-b-helmsley-charitable-trust-to-deepen-real-world-impact/
+- Digital Earth Africa, about — https://digitalearthafrica.org/en_za/about-digital-earth-africa/
+- Makerere University, AirQo wins $1.3m Google AI Impact grant — https://news.mak.ac.ug/2019/05/maks-airqo-project-is-a-us1-3m-google-ai-impact-grantee/
+- 256 Business News, $3m Google grant expands AirQo to five countries — https://www.256businessnews.com/usd-3-million-google-grant-takes-makereres-airqo-air-quality-monitors-to-5-african-countries/
+- Ipsos, sale of 80% of Ipsos Comcon — https://finance.yahoo.com/news/press-release-sale-80-ipsos-174700045.html
+
+The asymmetry in this layer is worth stating because it shapes what can be
+concluded. Grant-funded organisations publish their funders, often on a dedicated
+page, because donors require acknowledgement. Privately held commercial firms
+publish nothing about ownership unless a transaction is announced. The ownership
+file therefore documents the open layer well and the commercial layer poorly,
+which is the opposite of the bias in most business datasets and the reason the
+funding findings in section 17 are much better supported than anything the file
+says about private ownership. Owner-managed independents, the largest ownership
+category in the register at 152 operating firms, are almost entirely absent from
+it.

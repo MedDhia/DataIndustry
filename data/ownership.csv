@@ -1,0 +1,116 @@
+company_id,stakeholder_name,stakeholder_type,stakeholder_country,stakeholder_category,evidence_level,notes
+afrobarometer,Michael Bratton,founder,USA,individual,B,Co-founder of the Afrobarometer network
+afrobarometer,E Gyimah-Boadi,founder,GHA,individual,B,Co-founder and long-serving executive director
+afrobarometer,Robert Mattes,founder,ZAF,individual,B,Co-founder of the network
+afrobarometer,Swedish International Development Cooperation Agency,funder,SWE,bilateral_donor,A,NA
+afrobarometer,Norwegian Agency for Development Cooperation,funder,NOR,bilateral_donor,A,Channelled via the World Bank Think Africa project
+afrobarometer,Mo Ibrahim Foundation,funder,GBR,foundation,A,Sudanese-British founder; the only major Afrobarometer funder with African origins
+afrobarometer,Open Society Foundations Africa,funder,USA,foundation,A,NA
+afrobarometer,Luminate,funder,GBR,foundation,A,Omidyar Network spin-out
+afrobarometer,Ford Foundation,funder,USA,foundation,A,NA
+afrobarometer,William and Flora Hewlett Foundation,funder,USA,foundation,A,NA
+afrobarometer,Mastercard Foundation,funder,CAN,foundation,A,NA
+afrobarometer,David and Lucile Packard Foundation,funder,USA,foundation,A,NA
+afrobarometer,Obama Foundation,funder,USA,foundation,A,NA
+afrobarometer,European Commission,funder,BEL,multilateral,A,NA
+afrobarometer,World Bank Group,funder,USA,multilateral,A,NA
+afrobarometer,International Development Research Centre,funder,CAN,bilateral_donor,A,NA
+afrobarometer,German Federal Ministry for Economic Cooperation and Development,funder,DEU,bilateral_donor,A,Delivered through GIZ
+afrobarometer,United States Agency for International Development,funder,USA,bilateral_donor,A,Former Africa Bureau officials publicly urged USAID to save Afrobarometer funding
+arab_barometer,Amaney Jamal,founder,USA,individual,B,Co-director; Princeton
+arab_barometer,Mark Tessler,founder,USA,individual,B,Co-director; University of Michigan
+arab_barometer,Princeton University,controlling_owner,USA,university,A,NA
+arab_barometer,University of Michigan,controlling_owner,USA,university,A,NA
+acled,Clionadh Raleigh,founder,GBR,individual,B,Founder and president
+acled,US Department of State Bureau of Conflict and Stabilization Operations,funder,USA,bilateral_donor,A,NA
+acled,Dutch Ministry of Foreign Affairs,funder,NLD,bilateral_donor,A,NA
+acled,German Federal Foreign Office,funder,DEU,bilateral_donor,A,NA
+acled,Tableau Foundation,funder,USA,foundation,A,NA
+acled,International Organization for Migration,funder,CHE,multilateral,A,NA
+acled,World Bank,funder,USA,multilateral,A,NA
+acled,US Department of Defense,funder,USA,state,A,Through the CCAPS programme at the University of Texas
+acled,European Research Council,funder,BEL,multilateral,A,NA
+acled,Complex Risk Analytics Fund,funder,CHE,multilateral,A,Pooled fund contributed to by the US UK Germany the Netherlands and the European Commission
+digital_earth_africa,Leona M and Harry B Helmsley Charitable Trust,funder,USA,foundation,A,NA
+digital_earth_africa,Australian Government,funder,AUS,bilateral_donor,A,Programme established through Geoscience Australia
+digital_earth_africa,Amazon Web Services,funder,USA,corporate,A,In-kind hosting
+digital_earth_africa,Esri,funder,USA,corporate,A,In-kind software
+airqo,Google.org,funder,USA,corporate,A,1.3 million dollar AI Impact Challenge grant in 2019 followed by a 3 million dollar grant to expand to ten cities in five countries
+airqo,Makerere University,controlling_owner,UGA,university,A,NA
+lapop,Mitchell Seligson,founder,USA,individual,B,Founder of the AmericasBarometer
+lapop,Vanderbilt University,controlling_owner,USA,university,A,NA
+latinobarometro,Marta Lagos,founder,CHL,individual,B,Founding director
+lacuna_fund,Google.org,funder,USA,corporate,B,NA
+lacuna_fund,Rockefeller Foundation,funder,USA,foundation,B,NA
+lacuna_fund,Canadas International Development Research Centre,funder,CAN,bilateral_donor,B,NA
+lacuna_fund,German Federal Ministry for Economic Cooperation and Development,funder,DEU,bilateral_donor,B,NA
+kobotoolbox,Harvard Humanitarian Initiative,founder,USA,university,A,Origin institution of the platform
+pcpsr,Khalil Shikaki,founder,PSE,individual,B,Founding director
+levada_center,Yuri Levada,founder,RUS,individual,B,Founder; the centre carries his name after the 2003 split from VCIOM
+vciom,Government of Russia,controlling_owner,RUS,state,B,State-owned
+mediascope,VCIOM,controlling_owner,RUS,state,A,Holds 80 percent of the shares
+ipsos_comcon,Direct Investments JSC,controlling_owner,RUS,pe,A,Owned by the Russian investor Andrei Malyshev; acquired 80 percent from Ipsos in February 2026
+ipsos_comcon,Ipsos,controlling_owner,FRA,corporate,A,Retains a 20 percent minority stake under the foreign ownership cap
+intron_health,Tobi Olatunji,founder,NGA,individual,A,Physician turned founder
+intron_health,Microtraction,investor,NGA,vc,A,Led a 1.6 million dollar round
+african_languages_lab,Sheriff Issaka,founder,USA,individual,B,Founded the lab in 2020
+amini,Kate Kallot,founder,KEN,individual,B,Founder and chief executive
+fiftyfour_gene,Abasi Ene-Obong,founder,NGA,individual,B,Founder of the genomics venture that collapsed in 2024
+sama,Leila Janah,founder,USA,individual,B,Founded as Samasource; died in 2020
+lelapa_ai,Pelonomi Moiloa,founder,ZAF,individual,B,Co-founder and chief executive
+tarjama,Nour Al Hassan,founder,JOR,individual,A,Also founder of the Arabic.AI venture
+arabic_ai,Nour Al Hassan,founder,JOR,individual,A,NA
+cntxt_ai,AI71,investor,ARE,corporate,A,Co-led the 60 million dollar round; an Abu Dhabi applied AI company
+cntxt_ai,BlueFive Capital,investor,ARE,vc,A,Co-led the 60 million dollar round
+space42,International Holding Company,controlling_owner,ARE,sovereign_wealth,B,Abu Dhabi holding group; Space42 was formed from Bayanat and Yahsat
+presight_ai,G42,controlling_owner,ARE,corporate,B,Abu Dhabi AI group
+mbrsc,Government of Dubai,controlling_owner,ARE,state,A,NA
+egsa,Government of Egypt,controlling_owner,EGY,state,A,NA
+nasrda,Government of Nigeria,controlling_owner,NGA,state,A,NA
+sansa,Government of South Africa,controlling_owner,ZAF,state,A,NA
+kenya_space_agency,Government of Kenya,controlling_owner,KEN,state,A,NA
+essti,Government of Ethiopia,controlling_owner,ETH,state,A,NA
+tubitak_uzay,Government of Turkiye,controlling_owner,TUR,state,A,NA
+ispa_iran,Jahad Daneshgahi,controlling_owner,IRN,state,B,University Jihad organisation
+ctr_china,China Central Television,controlling_owner,CHN,state,B,Joint venture with Kantar
+idsc_egypt,Egyptian Cabinet,controlling_owner,EGY,state,B,NA
+ijtimoiy_fikr,Government of Uzbekistan,controlling_owner,UZB,state,C,State-affiliated public opinion centre
+sberindex,Sberbank,controlling_owner,RUS,state,B,Majority state-owned bank
+changguang,Jilin Provincial Government,controlling_owner,CHN,state,B,Provincial state backing for the Jilin-1 constellation
+kantar,Bain Capital,controlling_owner,USA,pe,A,Acquired a majority stake from WPP in 2019
+vantor,Advent International,controlling_owner,USA,pe,A,Took Maxar private in 2023
+nielsen,Elliott Management,controlling_owner,USA,pe,A,Joint take-private in 2022
+nielsen,Brookfield,controlling_owner,CAN,pe,A,Joint take-private in 2022
+qualtrics,Silver Lake,controlling_owner,USA,pe,A,Took Qualtrics private in 2023
+qualtrics,CPP Investments,controlling_owner,CAN,pe,A,Canadian pension fund co-investor
+surveymonkey,Symphony Technology Group,controlling_owner,USA,pe,A,Took the company private in 2023
+niq,Advent International,controlling_owner,USA,pe,B,Backed NIQ from the GfK merger through its 2025 listing
+liveramp,Publicis Groupe,acquirer,FRA,corporate,A,Agreed acquisition announced in May 2026
+acxiom,Omnicom,controlling_owner,USA,corporate,B,Held via Interpublic which Omnicom acquired
+epsilon,Publicis Groupe,controlling_owner,FRA,corporate,A,NA
+ipsos,Didier Truchot,founder,FRA,individual,B,Founder and long-serving chairman
+yougov,Stephan Shakespeare,founder,GBR,individual,B,Co-founder
+yougov,Nadhim Zahawi,founder,GBR,individual,B,Co-founder who later became a British cabinet minister
+gallup,George Gallup,founder,USA,individual,B,Founder of the American Institute of Public Opinion in 1935
+scale_ai,Alexandr Wang,founder,USA,individual,B,Co-founder
+scale_ai,Meta,investor,USA,corporate,A,Took a 49 percent stake in 2025
+surge_ai,Edwin Chen,founder,USA,individual,B,Founder; the company remained bootstrapped for years
+mercor,Brendan Foody,founder,USA,individual,B,Co-founder and chief executive
+hivemapper,Ariel Seidman,founder,USA,individual,B,Co-founder
+aaru,Cameron Fink,founder,USA,individual,A,Co-founder
+aaru,Redpoint Ventures,investor,USA,vc,A,Led the Series A at a one billion dollar headline valuation in December 2025
+aaru,Accenture,investor,IRL,corporate,A,Strategic investor and customer
+simile,Index Ventures,investor,GBR,vc,B,Led a 100 million dollar Series A
+clearview_ai,Hoan Ton-That,founder,AUS,individual,B,Co-founder
+cambridge_analytica,Robert Mercer,investor,USA,individual,B,Principal financial backer
+cambridge_analytica,SCL Group,controlling_owner,GBR,corporate,A,Parent company
+cambridge_analytica,Emerdata,acquirer,GBR,corporate,A,Took on the group's assets as insolvency proceedings began
+aerobotics,Naspers Foundry,investor,ZAF,corporate,A,Backed the 17 million dollar Series B
+busara_center,Johannes Haushofer,founder,USA,individual,B,Co-founder
+geopoll,Mobile Accord,controlling_owner,USA,corporate,B,Parent company
+twaweza,Rakesh Rajani,founder,TZA,individual,C,Founding head of the initiative
+sagaci_research,Julien Garcier,founder,MUS,individual,C,Founder and managing director
+konda,Tarhan Erdem,founder,TUR,individual,B,Founder; a former Turkish politician and statistician
+lapop,United States Agency for International Development,funder,USA,bilateral_donor,B,Principal funder of the AmericasBarometer for most of its history
+odk,Bill and Melinda Gates Foundation,funder,USA,foundation,B,Funded the original Open Data Kit development at the University of Washington
+masakhane,Lacuna Fund,funder,USA,foundation,B,Grant support for African language dataset creation

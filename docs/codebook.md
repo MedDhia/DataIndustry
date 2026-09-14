@@ -100,6 +100,40 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 
 `scripts/03_coverage_gaps.R` writes long-format versions to `output/`.
 
+## `data/ownership.csv` (115 rows, 66 organisations)
+
+Founders, owners, investors, acquirers and funders. One row per organisation-
+stakeholder pair.
+
+| Variable | Type | Description |
+|---|---|---|
+| `company_id` | key | Foreign key to `companies.csv`. |
+| `stakeholder_name` | string | Person or organisation. |
+| `stakeholder_type` | factor | `founder`, `controlling_owner`, `investor`, `funder`, `acquirer`. |
+| `stakeholder_country` | ISO3 | Where the stakeholder is based, not necessarily their nationality. |
+| `stakeholder_category` | factor | `individual`, `vc`, `pe`, `sovereign_wealth`, `corporate`, `foundation`, `bilateral_donor`, `multilateral`, `university`, `state`, `media_group`. |
+| `evidence_level` | factor | `A`, `B`, `C`, as in `companies.csv`. |
+| `notes` | string | Short free text, no commas. |
+
+**Coverage is partial and purposive, and this matters more here than anywhere
+else in the repository.** A row exists only where the relationship could be
+established from a source. Effort went to the organisations whose data is openly
+accessible, because section 4 of `coverage_gaps.md` found that openness tracks
+grant funding, and to MENA and African firms. Two thirds of the register has no
+stakeholder row, and the missing two thirds is not a random sample: owner-managed
+independents, the largest ownership category in the register, disclose almost
+nothing publicly.
+
+**Absence of a row means not established, never that an organisation has no owner
+or funder.** Do not compute shares over the register from this file. Shares
+computed over the rows that exist, as `scripts/06_ownership.R` does, describe the
+established relationships and nothing wider; the script prints the denominators
+alongside every figure for that reason.
+
+`scripts/01_load.R` joins the organisation's region and access regime onto each
+row and derives `stakeholder_region` and `domestic`, a flag for whether the
+stakeholder sits in the same country as the organisation it backs.
+
 ## Lookup tables
 
 - `data/regions.csv` — twelve regions. Mainland China and the Russia/Belarus/

@@ -22,6 +22,7 @@ actually gathering the data, and what is nobody gathering?
 | `data/regions.csv` | 12 | Region definitions. |
 | `data/modalities.csv` | 19 | Collection method taxonomy. |
 | `docs/codebook.md` | | Every variable, every coding rule. |
+| `data/ownership.csv` | 115 | Founders, owners, investors and funders for 66 organisations. Partial and purposive; read the codebook before computing anything from it. |
 | `docs/coverage_gaps.md` | | The findings. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `docs/sources.md` | | Sources consulted during construction. |
@@ -107,6 +108,15 @@ agencies, are in and are coded `state_linked`.
 - **Openness tracks grant funding, not public ownership.** Academic and nonprofit
   collectors publish at 90%. State-linked collectors publish at **11.1%**, below
   venture-backed firms at 19.6% and second-lowest of any ownership type.
+- **The open layer has no non-Northern funder.** Of 36 established funding
+  relationships, 35 have a funder in North America or Western Europe; the
+  exception is the Australian government. All 21 relationships funding
+  Sub-Saharan African organisations are funded from outside the continent.
+  Afrobarometer's sixteen published funders include none headquartered in Africa.
+  The openly accessible layer over Africa exists because Northern foundations and
+  aid ministries pay for it, which makes it contingent on decisions taken
+  elsewhere. Coverage of this layer is partial, so treat it as a categorical
+  observation about the rows established, not a population share.
 - **None of the token-incentivised sensor networks reaches Africa.** Contributor
   sensing there is supplied by a Ugandan university lab publishing openly, a
   South African civic-data nonprofit, a Kenyan soil-sensor firm and two Northern
@@ -161,6 +171,7 @@ Rscript  scripts/02_descriptives.R            # descriptive tables -> output/
 Rscript  scripts/03_coverage_gaps.R           # region gap analysis -> output/
 Rscript  scripts/04_country_gaps.R            # country gap analysis -> output/
 Rscript  scripts/05_history.R                 # exits and survivorship -> output/
+Rscript  scripts/06_ownership.R               # founders, owners and funders -> output/
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
@@ -218,11 +229,16 @@ Read these before using the data for anything load-bearing.
    small local firms biases the findings toward *understating* how much
    collection happens outside the core, which cuts against this document's own
    argument and should be held in mind.
-8. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
+8. **The ownership layer covers a third of the register and is purposively
+   selected.** `data/ownership.csv` records relationships that could be
+   established from sources, concentrated on openly accessible collectors and on
+   MENA and African firms. Absence of a row means not established. Do not compute
+   register-wide shares from it.
+9. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
    perhaps a fifth of the register, and a column that is mostly missing invites
    misuse. What could be verified is in the `notes` field with its source in
    `docs/sources.md`.
-9. **The snapshot is September 2026.** This industry consolidates fast. Recent
+10. **The snapshot is September 2026.** This industry consolidates fast. Recent
    changes already reflected: Publicis acquiring LiveRamp, Experian acquiring
    AtData, Maxar becoming Vantor, Adobe acquiring Semrush, Meta's stake in
    Scale AI and the subsequent shift of frontier-lab demand to Surge, Mercor and

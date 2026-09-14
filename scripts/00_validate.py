@@ -134,13 +134,31 @@ def main():
         err["firms absent from country coverage"].append(
             sorted(comp_ids - {r["company_id"] for r in cc}))
 
+    # Ownership and funding layer.
+    own = list(csv.DictReader(open("data/ownership.csv")))
+    OWN_TYPE = {"founder", "controlling_owner", "investor", "funder", "acquirer"}
+    OWN_CAT = {"individual", "vc", "pe", "sovereign_wealth", "corporate", "foundation",
+               "bilateral_donor", "multilateral", "university", "state", "media_group"}
+    for r in own:
+        if r["company_id"] not in comp_ids:
+            err["ownership company_id"].append(r["company_id"])
+        if r["stakeholder_type"] not in OWN_TYPE:
+            err["stakeholder_type"].append((r["company_id"], r["stakeholder_type"]))
+        if r["stakeholder_category"] not in OWN_CAT:
+            err["stakeholder_category"].append((r["company_id"], r["stakeholder_category"]))
+        if r["stakeholder_country"] not in iso | {"NA"}:
+            err["stakeholder_country"].append((r["company_id"], r["stakeholder_country"]))
+        if r["evidence_level"] not in {"A", "B", "C"}:
+            err["ownership evidence_level"].append((r["company_id"], r["evidence_level"]))
+
     if err:
         for k, v in err.items():
             print(f"{k}: {len(v)} -> {v[:10]}", file=sys.stderr)
         print(f"\nFAILED with {sum(len(v) for v in err.values())} errors", file=sys.stderr)
         return 1
     print(f"OK: {len(companies)} companies, {len(cov)} region rows, "
-          f"{len(ctys)} countries, {len(cc)} company-country rows, no errors")
+          f"{len(ctys)} countries, {len(cc)} company-country rows, "
+          f"{len(own)} ownership rows, no errors")
     return 0
 
 if __name__ == "__main__":

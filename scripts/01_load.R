@@ -112,3 +112,14 @@ exited <- companies_all[!companies_all$operating, ]
 exited$ceased_year_n <- suppressWarnings(as.numeric(exited$ceased_year))
 exited$founded_year_n <- suppressWarnings(as.numeric(exited$founded_year))
 exited$lifespan <- exited$ceased_year_n - exited$founded_year_n
+
+## ---- ownership and funding layer -------------------------------------------
+ownership <- read_di("ownership.csv")
+ownership <- merge(ownership,
+                   companies_all[, c("company_id", "hq_region", "hq_country",
+                                     "ownership_type", "microdata_access", "segment_primary")],
+                   by = "company_id", all.x = TRUE)
+## Is the stakeholder in the same region as the organisation it backs?
+ownership$stakeholder_region <- countries$region_code[
+  match(ownership$stakeholder_country, countries$iso3)]
+ownership$domestic <- ownership$stakeholder_country == ownership$hq_country
