@@ -4,11 +4,11 @@ Country availability of each collection method out of 194
                      countries_with_any provider_country_pairs
 --------------------------------------------------------------
 admin_records               194                 2,842         
-api_partner                 194                 7,162         
-remote_sensing              194                 7,399         
-sensor_hardware             194                 2,277         
+api_partner                 194                 7,258         
+remote_sensing              194                 7,488         
+sensor_hardware             194                 2,349         
 signals_rf                  194                  582          
-web_scrape                  194                 6,273         
+web_scrape                  194                 6,291         
 face_to_face                193                 3,786         
 telephone                   193                 2,665         
 crowd_task                  180                 1,292         
@@ -17,9 +17,9 @@ online_panel                162                 3,603
 expert_elicit               157                 1,231         
 mobile_app                  145                  611          
 transaction                 113                 1,086         
+crowd_sensor                 75                  281          
 clinical_records             72                  219          
 environmental_sample         64                   67          
-crowd_sensor                 61                  233          
 telecom_network              44                   62          
 acoustic                     7                    7           
 --------------------------------------------------------------

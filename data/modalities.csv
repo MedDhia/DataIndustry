@@ -14,7 +14,7 @@ clinical_records,Clinical and claims records,none,Electronic health records clai
 remote_sensing,Remote sensing,none,Satellite aerial drone or stratospheric imaging and sounding
 sensor_hardware,Deployed sensor hardware,none,Owned or installed physical sensors including ocean air and shelf sensors
 telecom_network,Telecom network signalling,indirect,Mobile network operator call detail and signalling records
-crowd_sensor,Contributor-owned sensor network,indirect,Hardware bought and operated by distributed contributors who are paid per reading rather than employed
+crowd_sensor,Contributor-operated sensor network,indirect,Hardware held and operated by dispersed contributors rather than by the firm covering paid-per-reading volunteer-hosted and farmer-purchased devices alike
 environmental_sample,Environmental sampling,none,Physical or biological material taken from the environment including wastewater sludge water and soil
 acoustic,Passive acoustic monitoring,none,Fixed or drifting microphones recording soundscapes for species activity and illegal-activity detection
 signals_rf,Radio frequency geolocation,none,Detection and geolocation of radio emitters rather than imaging of surfaces

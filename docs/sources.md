@@ -211,3 +211,27 @@ percentages and node totals in those sources are self-reported by the networks
 and were not independently verifiable; they are recorded in `notes` with the
 attribution rather than as coded variables. The coded fields for these firms
 (segment, modality, region coverage) do not depend on those figures.
+
+## Retrieved for the MENA and Africa frontier-method round
+
+- AirQo, about — https://airqo.net/about-us
+- AirQo sensor kit, HardwareX — https://www.sciencedirect.com/science/article/pii/S2468067223000895
+- Clean Air Fund, AI-powered air quality monitoring in Africa — https://www.cleanairfund.org/news-item/ai-powered-tools-air-quality-monitoring-africa/
+- TechCabal, Aerobotics raises $17m Series B — https://techcabal.com/2021/01/22/aerobotics-south-africa-agritech-satellite-drones-17m-series-b-naspers/
+- GSMA, UjuziKilimo IoT soil health solution — https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/blog/boosting-soil-health-in-kenya-ujuzikilimos-iot-solution/
+- Kenya Times, UjuziKilimo smartphone-based soil testing — https://thekenyatimes.com/sci-tech/technology/kenya-launches-worlds-first-smartphone-soil-testing-device/
+- Startup Map Africa, top agritech startups in Africa 2026 (RoboCare) — https://startupmapafrica.com/blog/top-agritech-startups-africa-2026
+- African Parks, EarthRanger — https://www.africanparks.org/future-conservation-earthranger-and-african-parks
+- Euronews, how eDNA is changing wildlife monitoring in Africa — https://www.euronews.com/2026/05/25/from-fur-to-data-how-edna-is-revolutionising-wildlife-monitoring-in-africa
+- Falcon Eye Drones — https://www.feds.group/about
+- Falcon 3D — https://www.falcon3dme.com/
+
+A negative result worth recording. A direct search for MENA-headquartered
+environmental monitoring startups covering air quality, water quality and
+remote sensing across Egypt, Morocco, Jordan and Saudi Arabia returned
+international vendors serving the region and essentially no locally founded
+firms. Gulf activity in this space is concentrated in drone survey services
+(Falcon Eye Drones, Falcon 3D) rather than in sensing networks or environmental
+data products. The MENA figure in section 15 should be read with that in mind:
+it is thin because the firms appear not to exist, not only because they are hard
+to find, though this register cannot fully separate the two.

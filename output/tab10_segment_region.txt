@@ -6,12 +6,12 @@ Providers by primary segment and region
 ai_training_data      25   6  16  12   1   9   13  26  12   4   4   2 
 audience_measurement  6    2   5   0   1   1    0   2   1   2   5   3 
 b2b_firmographic      14   4  14  11   2   5    3  11   5  11   5  13 
-climate_risk          20  16  18  16  16   16  17  16  16  16  16  17 
+climate_risk          20  16  18  16  16   16  18  16  16  16  16  17 
 collection_software   12  13  12  12   6   13  14  14  14   9   2  12 
 consumer_broker       9    5   6   1   0   0    4   3   1   0   0   6 
 crowd_micro           6    3   4   3   0   1    1   5   3   0   0   0 
-distributed_sensing   5    0   5   0   0   0    0   0   0   0   0   4 
-earth_observation     35  35  35  35  35   35  41  35  35  35  35  35 
+distributed_sensing   6    0   6   0   0   0    2   0   0   0   0   4 
+earth_observation     36  36  36  36  36   39  43  36  36  36  36  36 
 expert_network        5    0   5   0   0   0    0   5   0   5   0   0 
 field_agency          2   15   1   7  11   35  33  13  10   3   1   1 
 financial_altdata     8    2   3   2   3   3    2   3   3   3   1   2 

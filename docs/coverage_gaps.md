@@ -713,11 +713,12 @@ Put on the same grid as the established methods, they do not behave as one thing
 | Method | Firms | Countries reached |
 |---|---|---|
 | Radio frequency geolocation | 3 | 194 |
-| Remote sensing | 71 | 194 |
+| Remote sensing | 79 | 194 |
 | Face-to-face interviewing | 220 | 193 |
 | Online panel | 231 | 162 |
+| Contributor-operated sensors | 13 | 75 |
 | Environmental sampling | 4 | 64 |
-| Contributor-owned sensors | 9 | 61 |
+| Passive acoustics | 1 | 7 |
 
 Contributor sensing by region, as a share of the countries in each:
 
@@ -727,12 +728,12 @@ Contributor sensing by region, as a share of the countries in each:
 | Western Europe | 20 | 100% |
 | Mainland China | 1 | 100% |
 | Oceania | 14 | 50% |
+| Sub-Saharan Africa | 48 | 38% |
+| South Asia | 8 | 38% |
+| MENA | 21 | 33% |
 | Russia and Central Asia | 7 | 29% |
 | East Asia | 7 | 29% |
-| South Asia | 8 | 25% |
-| MENA | 21 | 19% |
-| Sub-Saharan Africa | 48 | 19% |
-| Latin America | 33 | 18% |
+| Latin America | 33 | 21% |
 | Eastern Europe | 22 | 18% |
 | Southeast Asia | 11 | 18% |
 
@@ -744,17 +745,56 @@ because a satellite listening for radio emitters needs no permission, no
 infrastructure and no person. Hivemapper needs someone to buy a dashcam, drive,
 and care about a token; WeatherXM needs someone to buy a weather station and keep
 it calibrated. Those requirements sort by disposable income and connectivity, so
-nine firms reach 61 countries and the map they produce is the rich-world map
-again.
+thirteen firms reach 75 countries and the map they produce is closer to the
+rich-world map than to the world.
 
-The comparison that matters is the last row against the third. Face-to-face
-interviewing, the oldest method in the register and the one section 10 found
-concentrated in poor countries, reaches 193 of 194 countries. Contributor-owned
-sensing, the newest, reaches 61. **The newest participatory method is
-substantially less geographically even than the oldest one.** Token incentives
-were supposed to make sensing cheap enough to be universal. On this evidence they
-have made it cheap enough to be universal in places where sensing was already
-cheap.
+The comparison that matters is contributor sensing against face-to-face
+interviewing. Face-to-face is the oldest method in the register and the one
+section 10 found concentrated in poor countries; it reaches 193 of 194 countries
+with 220 firms. Contributor-operated sensing, the newest, reaches 75 with 13.
+**The newest participatory method remains substantially less geographically even
+than the oldest one**, at 100% of North America and Western Europe against 38% of
+Sub-Saharan Africa and 33% of MENA. Token incentives were supposed to make sensing
+cheap enough to be universal. They have made it cheap enough to be universal in
+places where sensing was already cheap.
+
+### Who actually supplies contributor sensing in Africa
+
+An earlier revision of this section put African contributor sensing at 19% of
+countries, on a sample of firms that were all North American or European. Adding
+the African and MENA operators doubled it, which is the right correction to make
+and changes what the number means.
+
+The five firms supplying contributor-operated sensing in Sub-Saharan Africa:
+
+| Firm | Headquarters | Ownership | Microdata access |
+|---|---|---|---|
+| AirQo | Uganda | Academic, Makerere University | Open |
+| Code for Africa | South Africa | Nonprofit | Open |
+| Clarity Movement | United States | Venture-backed | Researcher-restricted |
+| UjuziKilimo | Kenya | Venture-backed | None |
+| EarthRanger | United States | Nonprofit | Researcher-restricted |
+
+**Not one of the token-incentivised networks appears.** Hivemapper, WeatherXM,
+DIMO and Nova Labs, which between them define the model and carry its valuations,
+reach North America, Western Europe and almost nowhere else. What reaches Africa
+instead is a university lab building 150-dollar sensors and publishing the
+readings openly, a civic-data nonprofit running a citizen air and water network,
+and two Northern organisations selling or licensing access.
+
+That is the same pattern section 4 found in ownership and section 2 found in
+access, arriving through a third door. Where the commercial case is thin, what
+gets built is grant-funded, and what is grant-funded is published. Three of the
+five African suppliers release their data openly or to researchers; none of the
+four token networks does. The distributed-sensing frontier in Africa is not a
+crypto story. It is a university and civic-tech story that happens to use the same
+hardware.
+
+MENA is thinner still. The 33% comes almost entirely from the same Northern and
+pan-African operators plus RoboCare in Tunisia; a direct search for
+MENA-headquartered environmental sensing startups returns international vendors
+serving the region and essentially no local firms. That absence is recorded here
+rather than filled in.
 
 ### Collection with no data subject
 

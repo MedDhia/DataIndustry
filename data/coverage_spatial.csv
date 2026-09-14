@@ -547,3 +547,12 @@ astrocast,segment_template,3,1,3,1,0,1,0,1,1,1,0,2
 nearmap,segment_template,2,2,2,2,2,2,2,2,2,2,2,2
 vexcel_imaging,segment_template,2,2,2,2,2,2,2,2,2,2,2,2
 mapillary,segment_template,3,1,3,1,0,1,1,1,1,1,0,2
+airqo,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+code_for_africa,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+aerobotics,segment_template,2,2,2,2,2,2,2,2,2,2,2,2
+ujuzikilimo,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+robocare,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
+astral_aerial,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+earthranger,segment_template,2,0,2,0,0,0,0,0,0,0,0,1
+falcon_eye_drones,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
+falcon_3d,segment_template,0,0,0,0,0,3,0,0,0,0,0,0

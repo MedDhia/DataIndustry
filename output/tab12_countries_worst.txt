@@ -16,16 +16,16 @@ Twenty-five least served countries by number of providers
 20  Saint Vincent and the Grenadines     LAC         UMIC           XS         87       45          4          10     
 22              Dominica                 LAC         UMIC           XS         84       45          4          10     
 24               Guyana                  LAC         HIC            XS         79       45          4          10     
-127      Republic of the Congo           SSA         LMIC            S         67       45         10          9      
 5                Belize                  LAC         UMIC           XS         81       46          5          11     
 11                Cuba                   LAC         UMIC            M         93       46          4          10     
 25              Suriname                 LAC         UMIC           XS         69       46          5          11     
+127      Republic of the Congo           SSA         LMIC            S         68       46         10          10     
 185         Solomon Islands              OCE         LMIC           XS         96       46          3          11     
 186             Vanuatu                  OCE         LMIC           XS         75       46          3          11     
 66             Montenegro                EEU         UMIC           XS         86       47          3          11     
 69               Kosovo                  EEU         UMIC           XS         71       47          3          11     
 82             Kyrgyzstan                RUS         LMIC            S         64       47          7          11     
-124     Central African Republic         SSA         LIC             S         47       47          8          11     
+124     Central African Republic         SSA         LIC             S         48       48          8          12     
 130      Sao Tome and Principe           SSA         LMIC           XS         75       48         12          9      
 172           Timor-Leste                SEA         LMIC            S         62       48          5          10     
 ----------------------------------------------------------------------------------------------------------------------
