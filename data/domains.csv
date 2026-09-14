@@ -1,0 +1,27 @@
+domain_code,domain_name,definition
+consumer_behavior,Consumer behaviour and brand,Purchasing preference brand perception and advertising response
+public_opinion,Public opinion and politics,Political attitudes voting governance evaluations and social values
+health_clinical,Health and clinical,Diagnoses treatment outcomes claims and molecular data
+financial_transactions,Financial transactions,Card bank receipt and point-of-sale spending records
+credit_risk,Credit and financial identity,Credit files scores fraud signals and financial identity
+labor_employment,Labour and employment,Jobs wages skills hiring and workforce composition
+earth_observation,Earth observation,Optical radar hyperspectral and thermal imaging of the Earth surface
+mobility_location,Mobility and location,Human and vehicle movement visitation and origin-destination flows
+web_content,Web and app content,Pages listings reviews prices and application metadata
+social_discourse,Social media discourse,Posts networks and narratives on social platforms
+media_audience,Media audience,Exposure reach and attention across media channels
+agriculture,Agriculture and food,Crop condition yield land use and food systems
+energy_extractives,Energy and extractives,Oil gas mining power generation and storage
+environment_climate,Environment and climate,Weather hazard emissions biodiversity and carbon
+conflict_security,Conflict and security,Political violence protest sanctions and security incidents
+firmographic,Firms and organisations,Company registries ownership funding and personnel
+prices_retail,Prices and retail conditions,Assortment price promotion and shelf availability
+identity_biometric,Identity and biometrics,Faces voices documents and person identifiers
+device_telemetry,Device and vehicle telemetry,Sensor readings from phones wearables vehicles and machines
+education,Education,Enrolment learning outcomes and institutions
+migration_displacement,Migration and displacement,Cross-border movement refugees and internal displacement
+supply_chain,Trade and supply chain,Shipping customs bills of lading and logistics
+ai_labels,AI labels and human feedback,Annotations preferences demonstrations and evaluations produced for model training
+legal_regulatory,Legal and regulatory records,Courts filings procurement legislation and regulatory actions
+housing_property,Housing and property,Property transactions valuations listings and the built environment
+infrastructure,Infrastructure and built assets,Ports roads power plants industrial sites and other fixed assets

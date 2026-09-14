@@ -1,0 +1,23 @@
+segment_code,segment_name,segment_family,definition
+survey_insights,Full-service survey and insights,solicited,Firms that design and run their own attitudinal and behavioural surveys and sell analysis
+field_agency,In-country field data collection agency,solicited,Firms whose core business is executing fieldwork in one country or region often as subcontractors
+panel_sample,Panel and sample supply,solicited,Firms that recruit and rent access to respondent pools rather than sell analysis
+collection_software,Data collection instrumentation,solicited,Vendors of the software used to author administer and manage instruments
+crowd_micro,Crowdsourced micro-tasking,solicited,Platforms that distribute paid observation or reporting tasks to a dispersed workforce
+ai_training_data,AI training data and human feedback,solicited,Firms producing annotation preference and expert demonstration data for model training and evaluation
+expert_network,Expert networks,solicited,Firms that broker structured access to credentialed practitioners for elicitation
+web_data,Web data extraction infrastructure,observational,Proxy crawler and parsing infrastructure sold as a service or as finished web datasets
+consumer_broker,Consumer data brokerage and identity resolution,observational,Firms assembling and licensing person-level marketing credit and identity files
+location_mobility,Mobile location and mobility data,observational,Firms licensing device-level or aggregated movement data derived from apps and SDKs
+telecom_data,Telecom network data,observational,Mobile operators and intermediaries monetising network signalling and call detail records
+earth_observation,Earth observation and remote sensing,observational,Satellite aerial and in-situ platforms generating imagery and geophysical measurement
+iot_telemetry,Vehicle IoT and sensor telemetry,observational,Firms collecting telemetry from fleets vehicles and connected devices
+financial_altdata,Financial alternative data,observational,Firms packaging transaction receipt shipping and web signals for investors
+retail_pricing,Retail scanning pricing and product data,observational,Firms measuring assortment price promotion and shelf conditions
+health_rwd,Health real-world data,observational,Firms aggregating claims records molecular and patient-generated health data
+audience_measurement,Media and audience measurement,observational,Firms measuring exposure to television radio digital and outdoor media
+social_osint,Social listening and open-source intelligence,observational,Firms monitoring social platforms news and other open sources at scale
+b2b_firmographic,B2B firmographic and contact data,observational,Firms assembling company person and funding records for commercial and research use
+climate_risk,Climate and environmental risk data,observational,Firms modelling hazard exposure emissions and nature outcomes from mixed sources
+identity_biometric,Biometric and identity data,observational,Firms collecting or scraping facial iris voice and document-linked identity data
+trade_logistics,Trade and logistics intelligence,observational,Firms tracking vessels cargo customs records and physical goods flows

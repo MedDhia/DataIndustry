@@ -1,0 +1,13 @@
+region_code,region_name,definition,n_countries_approx
+NAM,North America,United States and Canada,2
+LAC,Latin America and the Caribbean,Mexico Central America South America and the Caribbean,33
+WEU,Western and Northern Europe,EU15 EFTA and the United Kingdom,21
+EEU,Eastern Europe and the Western Balkans,EU accession states Western Balkans Ukraine Moldova and the South Caucasus,20
+RUS,Russia Belarus and Central Asia,Russian Federation Belarus and the five Central Asian republics,7
+MENA,Middle East and North Africa,Arab League states plus Iran Israel and Turkiye,24
+SSA,Sub-Saharan Africa,All African states south of the Sahara,49
+SAS,South Asia,India Pakistan Bangladesh Sri Lanka Nepal Bhutan Maldives Afghanistan,8
+SEA,Southeast Asia,ASEAN states plus Timor-Leste,11
+EAS,East Asia excluding mainland China,Japan South Korea Taiwan Hong Kong Macau Mongolia North Korea,7
+CHN,Mainland China,People's Republic of China excluding Hong Kong Macau and Taiwan,1
+OCE,Oceania,Australia New Zealand and the Pacific Island states,14

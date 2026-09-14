@@ -1,0 +1,16 @@
+modality_code,modality_name,human_subject_contact,definition
+face_to_face,Face-to-face interviewing,direct,Enumerators interview respondents in person typically household or intercept
+telephone,Telephone interviewing,direct,CATI IVR or SMS contact with sampled phone numbers
+online_panel,Online panel survey,direct,Self-administered questionnaires served to recruited panellists
+mobile_app,Mobile application tasking,direct,Respondents complete tasks or report observations through a dedicated app
+crowd_task,Crowdsourced micro-task,direct,Distributed workers complete discrete paid tasks including annotation
+expert_elicit,Expert elicitation,direct,Structured consultation of credentialed experts or practitioners
+device_passive,Passive device telemetry,indirect,SDKs or operating system signals emitted by phones wearables or vehicles
+web_scrape,Web and app scraping,none,Automated retrieval of publicly reachable web and app content
+api_partner,Partner data feed,none,Contractual ingestion of data held by another organisation
+transaction,Transaction and payment feed,none,Card bank receipt or point-of-sale records obtained through partners
+admin_records,Administrative and public records,none,Registries filings court records and other official documents
+clinical_records,Clinical and claims records,none,Electronic health records claims laboratory and molecular data
+remote_sensing,Remote sensing,none,Satellite aerial drone or stratospheric imaging and sounding
+sensor_hardware,Deployed sensor hardware,none,Owned or installed physical sensors including ocean air and shelf sensors
+telecom_network,Telecom network signalling,indirect,Mobile network operator call detail and signalling records
