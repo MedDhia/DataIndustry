@@ -4,22 +4,22 @@ Method mix in the least served quartile versus the rest
                      bottom_quartile_share rest_share
 -----------------------------------------------------
 acoustic                       0               0     
-admin_records                6.800           6.400   
-api_partner                 20.200           16.900  
-clinical_records               0             0.600   
-crowd_sensor                   0             0.700   
-crowd_task                   1.300           3.200   
-device_passive               1.400           2.900   
+admin_records                6.500           6.500   
+api_partner                 20.400           16.900  
+clinical_records               0             0.700   
+crowd_sensor                   0             0.800   
+crowd_task                   1.300             3     
+device_passive               1.300           3.300   
 environmental_sample           0             0.200   
-expert_elicit                1.100           3.100   
-face_to_face                 6.400           8.900   
-mobile_app                   0.600           1.500   
-online_panel                 5.100           8.700   
-remote_sensing              27.600           16.500  
-sensor_hardware              5.100           5.500   
-signals_rf                   2.700           1.100   
-telecom_network              0.100           0.100   
-telephone                    4.500           6.300   
-transaction                  2.500           2.500   
-web_scrape                  14.400           14.900  
+expert_elicit                  1             2.900   
+face_to_face                 6.400           8.700   
+mobile_app                   0.600           1.600   
+online_panel                 4.700           8.800   
+remote_sensing              29.200           16.500  
+sensor_hardware                5             5.600   
+signals_rf                   2.600             1     
+telecom_network              0.200           0.200   
+telephone                    4.600           6.100   
+transaction                  2.400           2.300   
+web_scrape                  13.900           14.900  
 -----------------------------------------------------

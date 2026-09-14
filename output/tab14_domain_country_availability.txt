@@ -3,23 +3,23 @@ Country availability of each data type out of 194
 =================================================================================================
                        countries_with_any countries_missing countries_accessible closed_countries
 -------------------------------------------------------------------------------------------------
-financial_transactions         30                164                 0                  30       
+financial_transactions         82                112                 0                  82       
 device_telemetry               98                96                  46                 52       
 credit_risk                   103                91                  0                 103       
 mobility_location             125                69                  64                 61       
-migration_displacement        153                41                 104                 49       
-legal_regulatory              158                36                 158                 0        
+legal_regulatory              161                33                 158                 3        
 identity_biometric            168                26                  31                137       
 firmographic                  169                25                 158                 11       
-labor_employment              170                24                 115                 55       
+labor_employment              170                24                 117                 53       
 web_content                   170                24                 158                 12       
-education                     175                19                  88                 87       
+education                     175                19                  96                 79       
+migration_displacement        180                14                 104                 76       
 consumer_behavior             182                12                 103                 79       
 media_audience                182                12                 160                 22       
 ai_labels                     185                 9                 184                 1        
 social_discourse              186                 8                 186                 0        
-health_clinical               192                 2                 190                 2        
 public_opinion                193                 1                 180                 13       
+health_clinical               193                 1                 190                 3        
 prices_retail                 193                 1                  52                141       
 earth_observation             194                 0                 194                 0        
 agriculture                   194                 0                 194                 0        

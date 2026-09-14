@@ -126,6 +126,15 @@ MANUAL = {
  "viamo":[0,1,0,0,0,1,3,3,2,0,0,0],"space42":[3,3,3,3,3,3,3,3,3,3,3,3],
  "gro_intelligence":[3,2,2,1,1,2,2,2,2,1,1,1],
  "measurable_ai":[0,1,0,0,0,2,0,2,3,2,1,0],
+ # US federal-contract survey houses. The field_agency template is deliberately
+ # all zeros, so every field agency needs a hand-coded footprint.
+ "norc":[3,1,1,0,0,1,2,1,1,0,0,0],"westat":[3,0,1,0,0,0,1,0,0,0,0,0],
+ "rti_international":[3,2,1,0,0,1,3,2,2,1,0,1],
+ "mathematica":[3,1,1,0,0,0,1,1,1,0,0,0],
+ "abt_global":[3,2,1,0,0,1,3,2,2,0,0,1],
+ "icf_international":[3,3,1,0,0,2,3,3,2,0,0,1],
+ "ssrs":[3,0,0,0,0,0,0,0,0,0,0,0],
+ "leger":[3,0,0,0,0,0,0,0,0,0,0,0],
 }
 
 def scope_adjust(vec, scope, hq_idx):

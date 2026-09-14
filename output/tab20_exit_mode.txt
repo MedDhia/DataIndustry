@@ -5,17 +5,18 @@ Exit mode by primary segment
 --------------------------------------------------
 ai_training_data        4         0         0     
 audience_measurement    4         0         0     
-b2b_firmographic        1         0         0     
+b2b_firmographic        2         0         0     
 climate_risk            0         0         1     
 consumer_broker         5         1         1     
 distributed_sensing     1         0         0     
-earth_observation       3         1         0     
+earth_observation       4         1         0     
+expert_network          2         0         0     
 field_agency            6         0         0     
-financial_altdata       2         0         0     
+financial_altdata       3         0         0     
 health_rwd              3         1         1     
-iot_telemetry           1         1         0     
+iot_telemetry           2         1         0     
 location_mobility       5         0         2     
-panel_sample            3         0         0     
+panel_sample            4         0         0     
 retail_pricing          3         0         0     
 survey_insights         5         1         0     
 --------------------------------------------------

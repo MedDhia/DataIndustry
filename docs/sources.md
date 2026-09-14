@@ -541,3 +541,72 @@ not a founder. The remaining thirty-three single-founder organisations are recor
 because no source names anyone else, which is weaker evidence than those three.
 
 Twenty-nine founders have now been added across the three enumeration-framed rounds.
+
+## North American extension round
+
+The register was weighted toward MENA and Africa by successive rounds of additions, so
+this round added 75 North American organisations: 57 in the United States and 18 in
+Canada, of which 7 are exits. North America now holds 296 of 644 organisations and
+Canada 28, up from 10.
+
+Three gaps drove the selection rather than a general sweep.
+
+**The US federal-contract survey houses were missing entirely.** NORC, Westat, RTI
+International, Mathematica, Abt Global, ICF and SSRS run a large share of American and
+US-funded international primary collection, including the General Social Survey, the
+National Survey on Drug Use and Health and the USAID Demographic and Health Surveys.
+Their absence understated both North American field capacity and the amount of African
+and South Asian collection that is commissioned from Washington. The `field_agency`
+segment template is all zeros by design, so each carries a hand-coded regional footprint
+in `scripts/00_build_coverage.py`.
+
+**Academic and media polling organisations were under-represented** against their weight
+in American public opinion research: Quinnipiac, Marist, Monmouth, Siena, Emerson,
+SurveyUSA, PRRI, AP-NORC, Civiqs, Echelon Insights, Data for Progress and Cygnal. Most
+publish toplines openly, which moves the North American access ratio slightly.
+
+**Canada had ten organisations for a G7 country with its own polling industry.** Added:
+Leger, the Angus Reid Institute, Nanos, EKOS, Abacus Data and Environics on the survey
+side; SkyWatch, MDA Space, Ecopia AI, Deveron, Farmers Edge and Semios in earth
+observation and agricultural sensing; BlueDot, Local Logic, riskthinking.AI, Triton
+Digital, Descartes Datamyne and Browse AI elsewhere.
+
+Thin segments were filled where a real firm existed rather than to hit a count: trade
+and logistics (Altana, project44, FourKites, Descartes Datamyne), identity and
+biometrics (CLEAR, ID.me, Socure), distributed sensing (Ookla, PurpleAir), web data
+(Internet Archive, Exa), expert networks (Tegus, Coleman Research), and vehicle
+telemetry (Motive, Lytx, Zendrive).
+
+Seven exits were added, which matters more than the count suggests because section 14
+depends on the exit sample: Tegus, acquired by
+AlphaSense for 930 million dollars in 2024; Clearbit, acquired by HubSpot for 150
+million dollars in December 2023; Cybersyn, acquired by Snowflake in 2024; Coleman
+Research, folded into Third Bridge in 2021; Aurora Insight, whose radio frequency
+mapping assets went to HawkEye 360 in 2022; Zendrive, acquired by Credit Karma in 2022;
+and Knowledge Networks, sold to GfK in 2011 and now Ipsos KnowledgePanel.
+
+Sources retrieved for this round:
+
+- TechCrunch, HubSpot picks up Clearbit — https://techcrunch.com/2023/11/01/hubspot-picks-up-b2b-data-provider-clearbit-to-enhance-its-ai-platform/
+- HubSpot, completion of the Clearbit acquisition — https://ir.hubspot.com/news-releases/news-release-details/hubspot-completes-acquisition-b2b-intelligence-leader-clearbit
+- PR Newswire, AlphaSense completes acquisition of Tegus — https://www.prnewswire.com/news-releases/alphasense-completes-acquisition-of-tegus-302190934.html
+- AgFunder News, Gro Intelligence is closing down (checked against the existing row) — https://agfundernews.com/breaking-ag-insights-platform-gro-intelligence-is-closing-down
+- Semafor, Gro Intelligence shuts down — https://www.semafor.com/article/06/04/2024/kenyan-ai-data-gro-intelligence-startup-shuts-down
+- Farmers Edge, definitive agreement with Fairfax — https://farmersedge.ca/farmers-edge-enters-into-definitive-agreement-with-fairfax/
+- RealAgriculture, Farmers Edge receives approval to go private — https://www.realagriculture.com/2024/03/farmers-edge-receives-approval-to-go-private/
+- Wikipedia, Leger — https://en.wikipedia.org/wiki/L%C3%A9ger_(company)
+- Angus Reid Institute, our team — https://angusreid.org/our-team/
+
+**What the round changed in the findings.** Section 1's density table, section 2's cell
+counts and section 14's exit table were all recomputed. One categorical claim broke:
+section 14 previously said no exited firm in the register had researcher-accessible
+record-level data. Knowledge Networks does, so the claim is now stated as a rate, 1.6%
+of exits against 22.4% of operating firms. Gro Intelligence was already in the register
+under its Nairobi headquarters, and Unacast, iMerit and Safecast under Norway, India and
+Japan, so the duplicate check caught them and they were not added twice.
+
+Most rows in this round carry evidence level B: the firm, segment and modality are
+established from working knowledge of the sector and the company's own public
+description, but founding years and coverage claims were not individually verified
+against filings. Rows at level C are ones where the founding year is a best estimate;
+they are Deveron, riskthinking.AI, Browse AI, Exa, Observa, Fulcrum and Rep Data.
