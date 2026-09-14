@@ -7,46 +7,46 @@ Sensitivity: modelled country coverage versus hand-coded footprints only
                                Poisson: full file         Poisson: observed only    
                                        (1)                         (2)              
 ------------------------------------------------------------------------------------
-Income: LMIC                         -0.23**                     -0.50***           
+Income: LMIC                         -0.24**                     -0.60***           
                                      (0.10)                       (0.13)            
                                                                                     
-Income: UMIC                        -0.46***                     -1.00***           
+Income: UMIC                        -0.42***                     -0.73***           
+                                     (0.11)                       (0.15)            
+                                                                                    
+Income: HIC                           0.15                        -0.28*            
                                      (0.11)                       (0.16)            
                                                                                     
-Income: HIC                           0.13                       -1.25***           
-                                     (0.11)                       (0.17)            
+Population: S                        0.51***                     1.58***            
+                                     (0.06)                       (0.14)            
                                                                                     
-Population: S                        0.42***                     1.16***            
-                                     (0.06)                       (0.16)            
+Population: M                        1.06***                     2.38***            
+                                     (0.05)                       (0.13)            
                                                                                     
-Population: M                        0.96***                     1.93***            
-                                     (0.05)                       (0.15)            
+Population: L                        1.54***                     2.86***            
+                                     (0.06)                       (0.14)            
                                                                                     
-Population: L                        1.45***                     2.22***            
-                                     (0.06)                       (0.17)            
+Population: XL                       1.61***                     2.76***            
+                                     (0.07)                       (0.14)            
                                                                                     
-Population: XL                       1.53***                     2.27***            
-                                     (0.06)                       (0.16)            
-                                                                                    
-Internet: medium                     0.61***                     0.62***            
+Internet: medium                     0.63***                     0.70***            
                                      (0.09)                       (0.13)            
                                                                                     
-Internet: high                       0.61***                     0.46***            
+Internet: high                       0.60***                     0.55***            
                                      (0.10)                       (0.15)            
                                                                                     
-Conflict-affected                     0.07                         0.02             
-                                     (0.05)                       (0.08)            
+Conflict-affected                     0.07                         0.08             
+                                     (0.05)                       (0.07)            
                                                                                     
-Restrictive research regime         -0.27***                      0.001             
+Restrictive research regime         -0.29***                     -0.30***           
                                      (0.04)                       (0.06)            
                                                                                     
-Constant                             1.95***                     0.51***            
-                                     (0.08)                       (0.16)            
+Constant                             1.87***                       0.22             
+                                     (0.08)                       (0.15)            
                                                                                     
 ------------------------------------------------------------------------------------
 Observations                           194                         194              
-Log Likelihood                       -788.09                     -876.98            
-Akaike Inf. Crit.                   1,600.17                     1,777.95           
+Log Likelihood                       -792.22                     -882.77            
+Akaike Inf. Crit.                   1,608.43                     1,789.54           
 ====================================================================================
 Note:                                                    *p<0.1; **p<0.05; ***p<0.01
                                  Column 2 uses only manual and hqrows, 435 of 16254.

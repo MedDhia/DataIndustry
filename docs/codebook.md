@@ -131,7 +131,7 @@ specific coding should change it and rerun.
 Note that region code `NOAM` is used for North America rather than `NAM`,
 because `NAM` is the ISO3 code for Namibia.
 
-## `data/coverage_country_manual.csv` (1,122 rows, 93 organisations)
+## `data/coverage_country_manual.csv` (1,709 rows, 120 organisations)
 
 Hand-coded country footprints: `company_id`, `iso3`, `coverage`, `scope`.
 Sources are published country lists (the barometer networks), regional hub
@@ -139,9 +139,9 @@ partner lists, and known office and delivery-centre networks.
 
 `scope` governs how the row interacts with the model:
 
-- `exhaustive` (798 rows) — the list is complete. The firm's country coverage
+- `exhaustive` (920 rows) — the list is complete. The firm's country coverage
   comes entirely from here and the model adds nothing.
-- `partial` (324 rows) — these countries are observed. The model fills the rest
+- `partial` (789 rows) — these countries are observed. The model fills the rest
   of the firm's stated country budget around them, and hand-coded rows spend
   that budget first.
 
@@ -149,11 +149,13 @@ partner lists, and known office and delivery-centre networks.
 not force a claim about its Latin American ones. Without it, partial knowledge
 would shrink a footprint rather than improve it.
 
-Coverage is weighted toward MENA and Sub-Saharan Africa by design: 15.4% and
-14.2% of their country rows are observed, against 5.6% for the file overall and
-0.2% for Western Europe. That skew has now degraded the observed-only sensitivity
-check to the point where it no longer validates the model. Section 12 of
-`coverage_gaps.md` gives the breakdown and the consequence.
+Grounding is uneven and the unevenness matters. Five regions are between 7% and
+16% observed (MENA 15.6%, North America 14.4%, Sub-Saharan Africa 14.3%, Western
+Europe 10.9%, Latin America 6.9%) against 8.4% for the file overall. The other
+seven are between 0.7% and 3.5%. Balancing the observed sample across those five
+is what restored the observed-only sensitivity check, which had stopped
+discriminating when hand-coding sat almost entirely in MENA and Africa. Section
+12 of `coverage_gaps.md` gives the breakdown and the argument.
 
 ### Observations override the feasibility gate
 
@@ -163,7 +165,7 @@ where a method can work; a hand-coded footprint is a record that the firm is
 there. Impact-sourcing delivery centres are the clear case: Sama's operation in
 Uganda supplies its own connectivity regardless of the national figure.
 
-## `data/coverage_country.csv` (21,961 rows, 9 variables)
+## `data/coverage_country.csv` (21,728 rows, 9 variables)
 
 One row per company-country pair with non-zero coverage. Absence is the
 anti-join: a pair not present here is a pair with no coverage.
@@ -181,28 +183,28 @@ anti-join: a pair not present here is a pair with no coverage.
 
 | Basis | Rows | Status |
 |---|---|---|
-| `manual` | 1,122 | Observation. Hand-coded footprint. |
+| `manual` | 1,709 | Observation. Hand-coded footprint. |
 | `hq_exact` | 107 | Observation. Single-country firm resolved to its headquarters country. |
-| `allocated` | 20,732 | Model output. |
+| `allocated` | 19,912 | Model output. |
 
-**94% of rows are model output**, and 85% in MENA and Sub-Saharan Africa. An `allocated` row says where a firm of that
+**92% of rows are model output**, and 84% to 89% across the five best-grounded
+regions. An `allocated` row says where a firm of that
 type, regional footprint and stated country count most likely operates. It is
 not a claim that the firm operates there. Aggregate country counts are usable;
 an individual firm's row is not citable.
 
 `scripts/04_country_gaps.R` reports every country-level regression twice, once
-on the full file and once on the 1,229 observed rows only (`tab19_sensitivity`).
+on the full file and once on the 1,816 observed rows only (`tab19_sensitivity`).
 A result that appears only in the full column is a property of the allocation
-rule. On the current data **only population and internet penetration survive**,
-keeping their sign in both columns. Income reverses sign; restrictive research
-regime and conflict exposure go to zero.
+rule. On the current data **population, connectivity and restrictive research
+regime all survive**, keeping sign and significance in both columns, and conflict
+exposure is a consistent null. Income still reverses sign between columns and
+remains unreportable.
 
-The income reversal is a diagnostic, not a finding: because hand-coding is
-concentrated in MENA and Africa, the observed subsample is mostly poor countries,
-so a regression on it recovers the shape of the coding effort. The observed-only
-column can no longer be treated as a validation of the model, only as a signal
-that a result is unstable. Report nothing from the country regressions that does
-not hold in both columns with the same sign.
+The rule stands regardless: report nothing from the country regressions that does
+not hold in both columns with the same sign. That rule has already forced one
+retraction and one reinstatement of the restrictive-regime result as the observed
+sample changed shape, which is what it is for.
 
 ### The allocation model
 

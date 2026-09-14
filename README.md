@@ -14,8 +14,8 @@ actually gathering the data, and what is nobody gathering?
 | `data/companies.csv` | 424 | The register. One row per organisation, 24 variables. |
 | `data/coverage_spatial.csv` | 424 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
-| `data/coverage_country_manual.csv` | 1,122 | Hand-coded country footprints for 93 organisations, marked exhaustive or partial. |
-| `data/coverage_country.csv` | 21,961 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country_manual.csv` | 1,709 | Hand-coded country footprints for 120 organisations, marked exhaustive or partial. |
+| `data/coverage_country.csv` | 21,728 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 22 | Industry segment taxonomy. |
 | `data/domains.csv` | 26 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -65,6 +65,11 @@ scope as producers, though firms that resell their output are in.
 - Remote sensing is the only collection method with uniform world coverage.
   Online panels are five times denser in North America than in Sub-Saharan
   Africa; face-to-face interviewing runs the other way.
+- Balancing the hand-coded sample across five regions restored the observed-only
+  sensitivity check: the rank correlation between modelled and observed country
+  provider counts rose from 0.094 to **0.535**, and a restrictive-research-regime
+  result that had to be retracted one revision ago now holds at −0.29 and −0.30
+  across both columns.
 - **55.9%** of firms are headquartered in North America or Western Europe, rising
   to **80.7%** of venture and private-equity backed firms. Of 46 firms founded
   since 2019, 29 are in those two regions and 9 are in Sub-Saharan Africa, where
@@ -114,22 +119,19 @@ Read these before using the data for anything load-bearing.
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
-3. **Country coverage is mostly model output, and this is the big one.** Of
-   21,961 company-country rows, 1,229 are observed (`manual` or `hq_exact`) and
-   20,732 are allocated by the model in `scripts/00_build_country_coverage.py`.
-   Country aggregates are usable; an individual firm's country row is not
-   citable. **Only population and connectivity survive the observed-only
-   sensitivity check** (`output/tab19_sensitivity.txt`); report nothing else from
-   the country regressions. The region layer remains the more grounded one.
-4. **The sensitivity check itself has degraded, and this matters.** Hand-coding
-   is concentrated in MENA (15.4% observed) and Sub-Saharan Africa (14.2%)
-   against 0.2% for Western Europe, so the observed subsample is now mostly poor
-   countries by construction. The income coefficient reverses sign between the
-   full and observed-only columns, and a restrictive-research-regime result that
-   survived the check one revision ago collapsed to zero when 54 firms were
-   added. Section 8 of `coverage_gaps.md` carries the retraction. Fixing this
-   needs hand-coded footprints in Western Europe, Oceania, East Asia and Latin
-   America, not more in MENA and Africa.
+3. **Country coverage is mostly model output.** Of 21,728 company-country rows,
+   1,816 are observed (`manual` or `hq_exact`) and 19,912 are allocated by the
+   model in `scripts/00_build_country_coverage.py`. Country aggregates are
+   usable; an individual firm's country row is not citable. Report nothing from
+   the country regressions that does not hold in both columns of
+   `output/tab19_sensitivity.txt`: at present that means population,
+   connectivity and restrictive research regime, and not income.
+4. **Grounding is uneven across regions.** Five regions are between 7% and 16%
+   observed (MENA, North America, Sub-Saharan Africa, Western Europe, Latin
+   America); the other seven are between 0.7% and 3.5%. The Russia bloc (3.5%)
+   and mainland China (3.4%) carry a specific risk, because they are the regions
+   this register claims are least covered and among those where the claim rests
+   least on observation.
 5. **The register is not a census.** Private firms in this industry do not have
    to announce themselves, and the smallest national field agencies are the
    hardest to enumerate. Coverage of MENA, Sub-Saharan Africa and the post-Soviet
@@ -164,12 +166,13 @@ tables, every coverage score against its range, and the two files against each
 other; it exits non-zero and names the offending records if anything fails, so it
 works as a pre-commit hook.
 
-The highest-value additions, in order: **hand-coded country footprints outside
-MENA and Africa**, which is now the binding constraint on the whole country layer
-because the observed sample is too regionally skewed to validate anything;
-national field agencies in Central Asia, Central America and the Pacific, where
-enumeration is thinnest; a time dimension so entry, exit and acquisition can be
-tracked; and verified revenue for the subset where filings exist.
+The highest-value additions, in order: **hand-coded footprints for the Russia
+bloc, mainland China, East Asia, Eastern Europe and Oceania**, the five regions
+still under 3.5% observed, and the first two especially, since the register's
+strongest claims are about them; national field agencies in Central Asia, Central
+America and the Pacific, where enumeration is thinnest; a time dimension so
+entry, exit and acquisition can be tracked; and verified revenue for the subset
+where filings exist.
 
 To replace model rows with observations for a firm, add its countries to
 `data/coverage_country_manual.csv` and rerun the build. Mark the rows

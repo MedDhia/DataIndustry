@@ -207,10 +207,9 @@ scraping, and it is the same floor everywhere.
 | | Providers | Primary collectors | Research-accessible |
 |---|---|---|---|
 | United States | 239 | 92 | 48 |
-| United Kingdom | 202 | 77 | 40 |
-| France | 199 | 74 | 37 |
-| Germany | 187 | 65 | 36 |
-| Median country | 69 | — | — |
+| United Kingdom | 205 | 79 | 41 |
+| France | 200 | 75 | 38 |
+| Median country | 70 | — | — |
 | Guinea-Bissau | 35 | 8 | 5 |
 | Comoros | 34 | 7 | 5 |
 | Tajikistan | 34 | 3 | 10 |
@@ -224,42 +223,60 @@ Turkmenistan is 8 to 1 on providers and unbounded on primary collection.
 ## 8. What predicts whether anyone collects data about a country
 
 Regressing country provider counts on country characteristics (full table in
-`output/tab17_country_model.txt`, R² = 0.75):
+`output/tab17_country_model.txt`, R² = 0.74). The third column repeats the
+estimate on hand-coded rows only, which is the test of whether a result is a
+property of the industry or of the allocation model.
 
-| Predictor | Effect on log providers | Observed-only column |
-|---|---|---|
-| Population over 100m (vs under 1m) | +0.86 | +2.27, same sign, larger |
-| High income (vs low) | +0.69 | −1.25, sign reversed |
-| Internet over 70% (vs under 30%) | +0.27 | +0.46, same sign, larger |
-| Restrictive research regime | −0.20 | +0.001, null |
-| Conflict-affected | +0.03, not significant | +0.02, null |
+| Predictor | Effect on log providers | Full file | Observed rows only |
+|---|---|---|---|
+| Population over 100m (vs under 1m) | +0.88 | +1.61 | +2.76 |
+| Internet over 70% (vs under 30%) | +0.27 | +0.60 | +0.55 |
+| Restrictive research regime | −0.19 | −0.29 | −0.30 |
+| Conflict-affected | +0.05, n.s. | +0.07, n.s. | +0.08, n.s. |
+| High income (vs low) | +0.65 | +0.15, n.s. | −0.28 |
 
-**Population and connectivity are the only results that hold.** Both keep their
-sign and grow in the observed-only column. Size and connectivity determine who
-gets measured, and the allocation model understates how strongly.
+(Columns two and three are Poisson estimates on primary collectors and on
+observed providers respectively, so they are compared with each other, not with
+the first column.)
 
-Everything else in this table should be read as a property of the model or of
-the coding effort, not of the industry. The income coefficient is the proof:
-it reverses from +0.69 to −1.25 between columns. That reversal is not a finding
-about poor countries being well measured. It is a direct consequence of where
-the hand-coding went. MENA and Sub-Saharan Africa now have 15.4% and 14.2% of
-their country rows observed against 0.2% for Western Europe, so the observed
-subsample is mostly poor countries by construction, and a regression on it
-recovers the shape of the coding effort rather than the shape of the industry.
+**Three results now hold in both columns.** Population and connectivity keep
+their sign and significance. Restrictive research regime does too, at −0.29 and
+−0.30, which is as close as these two columns come to agreeing about anything.
+Conflict exposure is a consistent null. Only income still misbehaves, reversing
+from +0.65 to −0.28, and it remains unreportable.
 
-### Retraction
+The rank correlation between modelled and observed country provider counts is
+now 0.535, against 0.094 one revision ago. The observed sample has become
+balanced enough for the check to discriminate.
 
-An earlier version of this document reported that the restrictive-research-regime
-effect survived the observed-only check at −0.16 (p < 0.05), and treated that as
-the one regime-type finding not attributable to the model. **It does not survive
-the expanded register.** With 54 more MENA and African firms and 356 more
-hand-coded country rows, the same coefficient is 0.001 and indistinguishable
-from zero. The earlier result was an artifact of a smaller and differently
-selected observed sample. The register does not establish that restrictive
-research regimes attract fewer data collectors.
+### Reinstating the restrictive-regime result
 
-Conflict exposure does not predict provider counts in either column, and never
-did. What conflict does predict is method narrowness, in section 10.
+The previous revision of this document retracted this finding. That retraction
+was correct on the evidence then available: with hand-coding concentrated almost
+entirely in MENA and Africa, the coefficient on hand-coded rows was 0.001. With
+Western European and Latin American footprints added, it is −0.30 and highly
+significant, matching the full-file estimate almost exactly. The finding is
+reinstated.
+
+Two things make this convergence worth something rather than nothing. The
+allocation model does not use `restrictive_research_regime` as an input at all —
+`priority_score` reads income, population, connectivity and conflict, and nothing
+else — so the two columns are not mechanically linked through the country
+allocation. And the biases that remain in each column push in different
+directions: the full column inherits thin Russia and China scores from the
+hand-coded region matrix, while the observed column is selected on wherever the
+coding effort went. Two differently biased estimates landing on the same number
+is weak evidence, but it is evidence.
+
+What it is not is clean identification. A wealthy country that gates independent
+research gets measured less than its size and connectivity predict; whether that
+is the gating doing the work, or something else those countries share, this
+register cannot say.
+
+Conflict exposure does not predict provider counts in either column and never
+has, across three revisions and two large changes to the sample. That null is
+the most stable result here. What conflict does predict is method narrowness,
+in section 10.
 
 ## 9. Data types are missing from most of the world
 
@@ -267,21 +284,21 @@ Country availability of each data type, out of 194:
 
 | Data type | Countries with any | Missing | Accessible to researchers | Collected but closed |
 |---|---|---|---|---|
-| Financial transactions | 28 | 166 | 0 | 28 |
-| Device telemetry | 92 | 102 | 46 | 46 |
-| Credit and financial identity | 103 | 91 | 0 | 103 |
+| Financial transactions | 28 | 166 | **0** | 28 |
+| Device telemetry | 89 | 105 | 46 | 43 |
+| Credit and financial identity | 104 | 90 | **0** | 104 |
 | Mobility and location | 121 | 73 | 64 | 57 |
 | Migration and displacement | 154 | 40 | 106 | 48 |
-| Labour and employment | 165 | 29 | 102 | 63 |
-| Identity and biometrics | 165 | 29 | 5 | 160 |
-| Education | 175 | 19 | 71 | 104 |
+| Labour and employment | 166 | 28 | 112 | 54 |
+| Identity and biometrics | 166 | 28 | 5 | 161 |
+| Education | 175 | 19 | 82 | 93 |
 | Consumer behaviour | 182 | 12 | 103 | 79 |
 | AI labels and human feedback | 176 | 18 | 176 | 0 |
 
 Two distinct shapes appear, and they need different remedies.
 
 Financial transactions, credit and device telemetry are **absent** from most of
-the world. Transaction data exists in 28 countries and credit data in 103, because
+the world. Transaction data exists in 28 countries and credit data in 104, because
 they are by-products of card networks, credit bureaux and smartphone penetration
 that most countries do not have. No amount of market access opens these up; the
 underlying infrastructure is not there to observe.
@@ -289,7 +306,7 @@ underlying infrastructure is not there to observe.
 Identity and biometrics, prices, education, consumer behaviour and housing are
 **present and closed**. Retail price data reaches 189 countries and is reachable
 by an outside researcher in 53. Education data reaches 175 and is reachable in
-71. Identity and biometric data is the near-pure case: obtainable in 165
+82. Identity and biometric data is the near-pure case: obtainable in 166
 countries and accessible in 5, all of them through Digital Umuganda's open
 Kinyarwanda speech corpora rather than through any commercial holder. Here the data exists and the barrier is commercial
 and legal, which is a tractable problem in a way the first shape is not.
@@ -310,7 +327,7 @@ with income:
 | Income group | Mean distinct methods available |
 |---|---|
 | High income | 14.0 |
-| Upper middle income | 12.9 |
+| Upper middle income | 13.0 |
 | Lower middle income | 11.3 |
 | Low income | 8.8 |
 
@@ -324,19 +341,19 @@ of countries against the rest:
 
 | Method | Bottom quartile | Rest |
 |---|---|---|
-| Remote sensing | 26.4% | 14.0% |
+| Remote sensing | 26.3% | 14.0% |
 | API and partner feeds | 18.0% | 15.4% |
-| Web scraping | 15.9% | 16.8% |
-| Face-to-face | 8.5% | 10.0% |
-| Administrative records | 6.2% | 6.9% |
-| Online panel | 6.2% | 10.0% |
-| Telephone | 5.9% | 6.9% |
-| Sensor hardware | 4.8% | 4.4% |
-| Transaction | 3.1% | 3.0% |
-| Device telemetry | 1.6% | 3.2% |
-| Crowd task | 1.4% | 3.4% |
-| Expert elicitation | 1.0% | 3.3% |
-| Clinical records | 0% | 0.7% |
+| Web scraping | 16.0% | 16.7% |
+| Face-to-face | 8.2% | 10.2% |
+| Administrative records | 6.3% | 6.8% |
+| Online panel | 6.1% | 10.1% |
+| Telephone | 5.7% | 7.0% |
+| Sensor hardware | 4.7% | 4.3% |
+| Transaction | 3.3% | 3.0% |
+| Device telemetry | 1.7% | 3.2% |
+| Crowd task | 1.5% | 3.4% |
+| Expert elicitation | 1.2% | 3.3% |
+| Clinical records | 0.0% | 0.7% |
 
 In the least served quartile, more than a quarter of all coverage is a satellite
 looking down, against a seventh elsewhere. Face-to-face and telephone hold
@@ -344,8 +361,8 @@ slightly *below* their share elsewhere, which is worth stating plainly: adding
 fifty-four MENA and African firms did not show that in-person capacity is
 concentrated in poor countries. It showed that in-person capacity exists in poor
 countries at roughly the rate it exists anywhere, on a much smaller absolute
-base. What disappears at the bottom is everything else: online panels at 6.2%
-against 10.0%, crowd tasking and expert elicitation at under a third of their
+base. What disappears at the bottom is everything else: online panels at 6.1%
+against 10.1%, crowd tasking and expert elicitation at under a third of their
 share elsewhere, device telemetry at half, clinical records at zero.
 
 This is the modality gap at country resolution, and it has a methodological
@@ -387,10 +404,10 @@ countries are reachable by fewer distinct methods (10.6 against 12.6), and the
 organisations that cover them are disproportionately nonprofit or academic
 (16.7% against 10.9%).
 
-Withdrawn: an earlier version claimed that restrictive research regimes depress
-collection net of income, population and connectivity, on the strength of its
-surviving the observed-only check. It no longer survives. See the retraction in
-section 8.
+Reinstated: restrictive research regimes do depress collection net of income,
+population and connectivity. This claim was made, retracted when the observed
+sample was too skewed to test it, and now holds at −0.29 and −0.30 across both
+columns. Section 8 gives the history and the remaining limits.
 
 ## 12. How much of this is observed
 
@@ -399,38 +416,43 @@ rows that are observations rather than model output:
 
 | Region | Observed rows | Total rows | Share |
 |---|---|---|---|
-| MENA | 366 | 2,376 | 15.4% |
-| Sub-Saharan Africa | 611 | 4,303 | 14.2% |
-| North America | 30 | 402 | 7.5% |
-| Russia and Central Asia | 17 | 485 | 3.5% |
-| South Asia | 37 | 1,102 | 3.4% |
-| Mainland China | 5 | 150 | 3.3% |
-| Southeast Asia | 40 | 1,297 | 3.1% |
-| Latin America | 78 | 3,677 | 2.1% |
-| Eastern Europe | 23 | 2,524 | 0.9% |
-| East Asia | 7 | 820 | 0.9% |
-| Oceania | 7 | 1,542 | 0.5% |
-| Western Europe | 8 | 3,283 | 0.2% |
-| **All** | **1,229** | **21,961** | **5.6%** |
+| MENA | 366 | 2,353 | 15.6% |
+| North America | 58 | 403 | 14.4% |
+| Sub-Saharan Africa | 612 | 4,267 | 14.3% |
+| Western Europe | 360 | 3,298 | 10.9% |
+| Latin America | 252 | 3,645 | 6.9% |
+| Russia and Central Asia | 17 | 483 | 3.5% |
+| South Asia | 37 | 1,080 | 3.4% |
+| Mainland China | 5 | 148 | 3.4% |
+| Southeast Asia | 41 | 1,272 | 3.2% |
+| Eastern Europe | 49 | 2,463 | 2.0% |
+| East Asia | 8 | 803 | 1.0% |
+| Oceania | 11 | 1,513 | 0.7% |
+| **All** | **1,816** | **21,728** | **8.4%** |
 
-MENA and Sub-Saharan Africa are now roughly three times better grounded than the
-overall file and seventy times better grounded than Western Europe. Country-level
-claims about those two regions rest on a usable proportion of observation.
-Claims about Western Europe, Oceania and East Asia are almost entirely model.
+Five regions now sit in a usable band between 7% and 16% observed: MENA, North
+America, Sub-Saharan Africa, Western Europe and Latin America. Together they
+carry 1,648 of the 1,816 observed rows. The remaining seven regions are between
+0.7% and 3.5%, and country-level claims about them rest almost entirely on the
+allocation model.
 
-The second edge of this has now bitten hard enough to be worth stating as a
-result in its own right. **The observed-only sensitivity column has stopped
-working as a validation of the model.** It was designed to catch results that
-were properties of the allocation rule; it now mostly catches properties of where
-the coding effort went. The income coefficient reversing sign between the two
-columns (section 8) is the clean diagnostic, and the restrictive-regime
-coefficient collapsing from −0.16 to zero across one round of additions is the
-warning about how unstable anything estimated on the observed subsample is.
+The previous revision reported that the observed-only sensitivity check had
+stopped working, because hand-coding was concentrated so heavily in MENA and
+Africa that a regression on observed rows recovered the shape of the coding
+effort rather than the industry. Adding Western European and Latin American
+footprints fixed that. The rank correlation between modelled and observed
+provider counts went from 0.094 to 0.535, and three of five predictors now agree
+across the two columns where previously only two did.
 
-Two things follow. First, only results that hold in *both* columns with the same
-sign should be reported, which at present means population and connectivity and
-nothing else. Second, closing the grounding gap cannot be done by adding more
-firms in the regions that are already best grounded. Getting the observed sample
-back to something usable requires hand-coded footprints in Western Europe,
-Oceania, East Asia and Latin America, which is exactly where this register has
-invested least and where the model is currently doing nearly all the work.
+The lesson generalises past this dataset. A hand-coded sample built by following
+your own substantive interest will validate nothing, because its selection is
+correlated with everything you want to test. Balance in the observed sample is
+not a nicety; it is what makes the sample capable of contradicting the model.
+
+Where the grounding still fails: Eastern Europe (2.0%), Southeast Asia (3.2%),
+South Asia (3.4%), mainland China (3.4%), the Russia bloc (3.5%), East Asia
+(1.0%) and Oceania (0.7%). Two of those, the Russia bloc and mainland China,
+carry a specific risk: they are the regions this register claims are least
+covered, and they are among the regions where the claim rests least on
+observation. That is the next thing to fix, and it is harder than the last two
+rounds, because the firms operating there publish less about where they operate.
