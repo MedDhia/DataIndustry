@@ -22,7 +22,7 @@ actually gathering the data, and what is nobody gathering?
 | `data/regions.csv` | 12 | Region definitions. |
 | `data/modalities.csv` | 19 | Collection method taxonomy. |
 | `docs/codebook.md` | | Every variable, every coding rule. |
-| `data/ownership.csv` | 235 | Founders, owners, investors and funders for 111 organisations. Partial and purposive; read the codebook before computing anything from it. |
+| `data/ownership.csv` | 250 | Founders, owners, investors and funders for 111 organisations. Partial and purposive; read the codebook before computing anything from it. |
 | `docs/coverage_gaps.md` | | The findings. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `docs/sources.md` | | Sources consulted during construction. |
@@ -238,9 +238,12 @@ Read these before using the data for anything load-bearing.
    established from sources, concentrated on openly accessible collectors and on
    MENA and African firms. Absence of a row means not established. Do not compute
    register-wide shares from it. Every founder attribution in it has now been
-   checked against sources; that pass also corrected eleven founding years in
+   checked against sources, and those passes corrected twelve founding years in
    `companies.csv`, four of which changed an organisation's `maturity_class`, so
-   any copy of the register taken before it should be re-pulled.
+   any copy of the register taken before them should be re-pulled. Founder rows
+   are a lower bound on the number of founders per organisation, not an
+   enumeration: an audit of rows already marked verified found no wrong
+   attributions and six organisations missing a founder.
 9. **Revenue, headcount and valuation are excluded.** Reliable figures exist for
    perhaps a fifth of the register, and a column that is mostly missing invites
    misuse. What could be verified is in the `notes` field with its source in

@@ -1,5 +1,7 @@
 "company_id","stakeholder_name","stakeholder_type","stakeholder_country","stakeholder_category","evidence_level","notes","hq_region","hq_country","ownership_type","microdata_access","segment_primary","stakeholder_region","domestic"
 "aaru","Cameron Fink","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","survey_insights","NOAM",TRUE
+"aaru","John Kessler","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","survey_insights","NOAM",TRUE
+"aaru","Ned Koh","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","survey_insights","NOAM",TRUE
 "aaru","Accenture","investor","IRL","corporate","A","Strategic investor and customer","NOAM","USA","private_vc","commercial_only","survey_insights","WEU",FALSE
 "aaru","Redpoint Ventures","investor","USA","vc","A","Led the Series A at a one billion dollar headline valuation in December 2025","NOAM","USA","private_vc","commercial_only","survey_insights","NOAM",TRUE
 "acled","Clionadh Raleigh","founder","GBR","individual","A","Founder and president; started the project in 2005","NOAM","USA","nonprofit","open","social_osint","WEU",FALSE
@@ -58,7 +60,7 @@
 "arabic_ai","Nour Al Hassan","founder","JOR","individual","A",NA,"MENA","JOR","private_vc","commercial_only","ai_training_data","MENA",TRUE
 "asdaa_bcw","Sunil John","founder","ARE","individual","A","Founder in 2000; originated the Arab Youth Survey in 2008","MENA","ARE","subsidiary","none","survey_insights","MENA",TRUE
 "ask_afrika","Andrea Rademeyer","founder","ZAF","individual","A","Founder and executive chair","SSA","ZAF","private_independent","none","field_agency","SSA",TRUE
-"asterra","Lauren Guy","founder","ISR","individual","A","Co-founder and chief technology officer; the firm began as Utilis","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
+"asterra","Lauren Guy","founder","ISR","individual","A","Co-founder and chief technology officer; the firm began as Utilis and sources differ on whether chief executive Elly Perets is also a founder","MENA","ISR","private_vc","commercial_only","earth_observation","MENA",TRUE
 "awarri","Eniola Edun","founder","NGA","individual","A","Co-founded Awarri in 2019 with Silas Adekunle","SSA","NGA","private_vc","commercial_only","ai_training_data","SSA",TRUE
 "awarri","Silas Adekunle","founder","NGA","individual","A","Co-founded Awarri in 2019 with Eniola Edun","SSA","NGA","private_vc","commercial_only","ai_training_data","SSA",TRUE
 "awrad","Nader Said","founder","PSE","individual","A","Founder and president","MENA","PSE","private_independent","none","field_agency","MENA",TRUE
@@ -88,6 +90,7 @@
 "charis_uas","Ingabire Muziga Mamy","founder","RWA","individual","A","Co-founder and managing director","SSA","RWA","private_vc","commercial_only","earth_observation","SSA",TRUE
 "charis_uas","Teddy Segore","founder","RWA","individual","A","Co-founder and chief technical officer","SSA","RWA","private_vc","commercial_only","earth_observation","SSA",TRUE
 "clearview_ai","Hoan Ton-That","founder","AUS","individual","A","Co-founder","NOAM","USA","private_vc","none","identity_biometric","OCE",FALSE
+"clearview_ai","Richard Schwartz","founder","USA","individual","A","Co-founder; later co-chief executive","NOAM","USA","private_vc","none","identity_biometric","NOAM",TRUE
 "cntxt_ai","AI71","investor","ARE","corporate","A","Co-led the 60 million dollar round; an Abu Dhabi applied AI company","MENA","ARE","private_vc","commercial_only","ai_training_data","MENA",TRUE
 "cntxt_ai","BlueFive Capital","investor","ARE","vc","A","Co-led the 60 million dollar round","MENA","ARE","private_vc","commercial_only","ai_training_data","MENA",TRUE
 "code_for_africa","Justin Arenstein","founder","ZAF","individual","A","Founder and chief executive","SSA","ZAF","nonprofit","open","distributed_sensing","SSA",TRUE
@@ -103,6 +106,8 @@
 "epsilon","Publicis Groupe","controlling_owner","FRA","corporate","A",NA,"NOAM","USA","subsidiary","commercial_only","consumer_broker","WEU",FALSE
 "essti","Government of Ethiopia","controlling_owner","ETH","state","A",NA,"SSA","ETH","state_linked","none","earth_observation","SSA",TRUE
 "fiftyfour_gene","Abasi Ene-Obong","founder","NGA","individual","A","Founder of the genomics venture that collapsed in 2024","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
+"fiftyfour_gene","Gatumi Aliyu","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
+"fiftyfour_gene","Ogochukwu Francis Osifo","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
 "gallup","George Gallup","founder","USA","individual","A","Founder of the American Institute of Public Opinion in Princeton in 1935","NOAM","USA","private_independent","researcher_restricted","survey_insights","NOAM",TRUE
 "geocartography","Avi Degani","founder","ISR","individual","A","Founder and president; the founding year is not established from public sources","MENA","ISR","private_independent","none","field_agency","MENA",TRUE
 "geopoll","Mobile Accord","controlling_owner","USA","corporate","B","Parent company","NOAM","USA","private_independent","none","field_agency","NOAM",TRUE
@@ -112,6 +117,7 @@
 "helium_health","Tito Ovia","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","none","health_rwd","SSA",TRUE
 "hello_tractor","Jehiel Oliver","founder","USA","individual","A","Founder and chief executive; started the venture in Nigeria in 2014","SSA","NGA","private_vc","commercial_only","iot_telemetry","NOAM",FALSE
 "hivemapper","Ariel Seidman","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","distributed_sensing","NOAM",TRUE
+"hivemapper","Ben Wong","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","distributed_sensing","NOAM",TRUE
 "idsc_egypt","Egyptian Cabinet","controlling_owner","EGY","state","B",NA,"MENA","EGY","state_linked","none","field_agency","MENA",TRUE
 "iiacss","Munqith Al-Dagher","founder","IRQ","individual","A","Founder and chief executive","MENA","IRQ","private_independent","none","field_agency","MENA",TRUE
 "ijr_south_africa","Charles Villa-Vicencio","founder","ZAF","individual","A","Founding executive director; the institute launched in Cape Town in May 2000","SSA","ZAF","nonprofit","open","field_agency","SSA",TRUE
@@ -132,7 +138,9 @@
 "jmcc","Ghassan Khatib","founder","PSE","individual","A","Co-founder and former Palestinian Authority minister","MENA","PSE","nonprofit","researcher_restricted","field_agency","MENA",TRUE
 "kantar","Bain Capital","controlling_owner","USA","pe","A","Acquired a majority stake from WPP in 2019","WEU","GBR","private_pe","commercial_only","survey_insights","NOAM",FALSE
 "kenya_space_agency","Government of Kenya","controlling_owner","KEN","state","A",NA,"SSA","KEN","state_linked","none","earth_observation","SSA",TRUE
-"kobotoolbox","Harvard Humanitarian Initiative","founder","USA","university","A","Origin institution of the platform","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
+"kobotoolbox","Patrick Vinck","founder","USA","individual","A","Co-founder in 2005; research director of the Harvard Humanitarian Initiative","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
+"kobotoolbox","Phuong Pham","founder","USA","individual","A","Co-founder in 2005; faculty at the Harvard T H Chan School of Public Health","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
+"kobotoolbox","Harvard Humanitarian Initiative","funder","USA","university","A","Hosted the project until it became an independent nonprofit in 2019","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
 "konda","Tarhan Erdem","founder","TUR","individual","A","Founder in 1986; a former Turkish minister of industry; died in 2022","MENA","TUR","private_independent","researcher_restricted","field_agency","MENA",TRUE
 "lacuna_fund","Canadas International Development Research Centre","funder","CAN","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",FALSE
 "lacuna_fund","German Federal Ministry for Economic Cooperation and Development","funder","DEU","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","WEU",FALSE
@@ -144,7 +152,12 @@
 "laterite","Dimitri Stoelinga","founder",NA,"individual","A","Co-founder; launched Laterite in February 2011. Nationality not established","WEU","NLD","private_independent","none","field_agency",NA,NA
 "laterite","Sachin Gathani","founder",NA,"individual","A","Co-founder; launched Laterite in February 2011. Nationality not established","WEU","NLD","private_independent","none","field_agency",NA,NA
 "latinobarometro","Marta Lagos","founder","CHL","individual","A","Founding director","LAC","CHL","nonprofit","open","survey_insights","LAC",TRUE
+"lelapa_ai","Benjamin Rosman","founder","ZAF","individual","A","Founding member","SSA","ZAF","private_vc","commercial_only","ai_training_data","SSA",TRUE
+"lelapa_ai","George Konidaris","founder","USA","individual","A","Founding member; computer science faculty at Brown","SSA","ZAF","private_vc","commercial_only","ai_training_data","NOAM",FALSE
+"lelapa_ai","Jade Abbott","founder","ZAF","individual","A","Co-founder and chief operating officer; also co-founded Masakhane","SSA","ZAF","private_vc","commercial_only","ai_training_data","SSA",TRUE
 "lelapa_ai","Pelonomi Moiloa","founder","ZAF","individual","A","Co-founder and chief executive","SSA","ZAF","private_vc","commercial_only","ai_training_data","SSA",TRUE
+"lelapa_ai","Pravesh Ranchod","founder","ZAF","individual","A","Founding member","SSA","ZAF","private_vc","commercial_only","ai_training_data","SSA",TRUE
+"lelapa_ai","Vukosi Marivate","founder","ZAF","individual","A","Co-founder; data science chair at the University of Pretoria and co-founder of Masakhane","SSA","ZAF","private_vc","commercial_only","ai_training_data","SSA",TRUE
 "levada_center","Yuri Levada","founder","RUS","individual","A","Founder; the centre carries his name after the 2003 split from VCIOM","RUS","RUS","nonprofit","researcher_restricted","field_agency","RUS",TRUE
 "liveramp","Publicis Groupe","acquirer","FRA","corporate","A","Agreed acquisition announced in May 2026","NOAM","USA","subsidiary","commercial_only","consumer_broker","WEU",FALSE
 "makerere_ai","Ernest Mwebaze","founder","UGA","individual","A","Co-founded the laboratory which was established in 2011","SSA","UGA","academic","open","ai_training_data","SSA",TRUE
@@ -161,7 +174,9 @@
 "mercor","Surya Midha","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","ai_training_data","NOAM",TRUE
 "metropoll","Mustafa Damar","founder","TUR","individual","B","Named among the founding shareholders in 2004","MENA","TUR","private_independent","none","field_agency","MENA",TRUE
 "metropoll","Ozer Sencar","founder","TUR","individual","A","Founder and chairman; the firm was registered in Ankara in 2004","MENA","TUR","private_independent","none","field_agency","MENA",TRUE
+"mozn","Abdullah Alsaeed","founder","SAU","individual","A","Co-founder and chief strategy and financial officer","MENA","SAU","private_vc","commercial_only","b2b_firmographic","MENA",TRUE
 "mozn","Khalid Al-Ghonaim","founder","SAU","individual","A","Co-founder; Abdullah Alsaeed and Malik Alyousef joined later as co-founders","MENA","SAU","private_vc","commercial_only","b2b_firmographic","MENA",TRUE
+"mozn","Malik Alyousef","founder","SAU","individual","A","Co-founder and chief operating officer","MENA","SAU","private_vc","commercial_only","b2b_firmographic","MENA",TRUE
 "mozn","Mohammed Alhussein","founder","SAU","individual","A","Founder and chief executive; the firm was established in 2017","MENA","SAU","private_vc","commercial_only","b2b_firmographic","MENA",TRUE
 "mpharma","Daniel Shoukimas","founder","USA","individual","A","Co-founder and chief product officer","SSA","GHA","private_vc","none","health_rwd","NOAM",FALSE
 "mpharma","Gregory Rockson","founder","GHA","individual","A","Co-founder and chief executive","SSA","GHA","private_vc","none","health_rwd","SSA",TRUE

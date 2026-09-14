@@ -100,7 +100,7 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 
 `scripts/03_coverage_gaps.R` writes long-format versions to `output/`.
 
-## `data/ownership.csv` (235 rows, 111 organisations)
+## `data/ownership.csv` (250 rows, 111 organisations)
 
 Founders, owners, investors, acquirers and funders. One row per organisation-
 stakeholder pair.
@@ -131,19 +131,29 @@ much better supported than anything this file says about private ownership.
 
 ### Verification status of founder rows
 
-Every founder attribution has been checked against sources, in two passes: the
-seventeen coded at level C and then the sixty-five coded at level B. Founder rows
-now carry 118 at level A and one at level B, the exception being a MetroPOLL
-co-founder resting on a single Turkish source.
+Every founder attribution has been checked against sources, in three passes: the
+seventeen coded at level C, the sixty-five coded at level B, and an audit of the
+level A rows themselves. Founder rows now carry 132 at level A and one at level
+B, the exception being a MetroPOLL co-founder resting on a single Turkish source.
 
-Two attributions failed verification and were removed. Near East Consulting was
+**Founder rows are a lower bound, not an enumeration.** The level A audit
+re-checked eleven rows the earlier passes had marked verified. None was wrong;
+six organisations were missing a founder. Confirming the name already in a file
+is not the same as establishing that it is the only one, and the earlier passes
+did the first. Do not compute founder counts per organisation from this file
+without checking the organisations you care about.
+
+Three attributions failed verification and were changed. Near East Consulting was
 attributed to Jamil Rabah through a name collision with an unrelated Lebanese
 consultancy. Bell Ihua was recorded as founder of the Africa Polling Institute
 when he is its executive director; no source establishes who founded it. Both
-company rows carry notes saying so.
+company rows carry notes saying so. KoboToolbox was attributed to the Harvard
+Humanitarian Initiative as an institution; it was founded in 2005 by Phuong Pham
+and Patrick Vinck and hosted at HHI, which now appears as a funder rather than a
+founder.
 
-The level B pass also corrected eleven founding years in `companies.csv`, four of
-which moved an organisation between `maturity_class` values. Anyone using a
+The verification passes also corrected twelve founding years in `companies.csv`,
+four of which moved an organisation between `maturity_class` values. Anyone using a
 version of this register from before that pass should re-pull `companies.csv`
 rather than patch it. Two organisations, Research World International and
 Geocartography, have confirmed founders and founding years that no public source

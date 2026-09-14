@@ -912,7 +912,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 235 rows covering 111 of the 569 organisations. Coverage is partial
+and funders: 250 rows covering 111 of the 569 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on
@@ -935,8 +935,8 @@ government behind Digital Earth Africa. Of those, only the Qatari fund and the
 South African institute are independently non-Northern in origin as well as
 registration.
 
-The quantitative version survives and is the one to use: **63 of 67 established
-funding relationships, 94.0%, have a funder headquartered in North America or
+The quantitative version survives and is the one to use: **64 of 68 established
+funding relationships, 94.1%, have a funder headquartered in North America or
 Western Europe.** Two of the four exceptions are Northern money routed through a
 Southern office or a fellow OECD state.
 
@@ -946,8 +946,8 @@ Setting the founder and funder rows side by side produces the sharper result.
 
 | | MENA and Africa | North America and Western Europe |
 |---|---|---|
-| Founder rows with nationality established | 89 | 22 |
-| Founded by a national of the country | 83% | 86% |
+| Founder rows with nationality established | 98 | 27 |
+| Founded by a national of the country | 84% | 89% |
 
 MENA and African data organisations are overwhelmingly founded by people from
 the countries they operate in, at close to the same rate as Northern ones.
@@ -959,17 +959,18 @@ Aerobotics by James Paterson and Benji Meltzer, UjuziKilimo by Brian Bosire,
 mPharma by Gregory Rockson, Helium Health by Adegoke Olubusi, Tito Ovia and
 Dimeji Sofowora.
 
-The fifteen exceptions concentrate in a small number of organisations rather
+The sixteen exceptions concentrate in a small number of organisations rather
 than being spread across the register. Apollo Agriculture, Busara, eHealth
 Africa, Hello Tractor and mSurvey are American-founded Kenyan and Nigerian
 operations, and mPharma has two American co-founders beside its Ghanaian chief
 executive. Afrobarometer was co-founded by an American and a South African
-alongside Ghana's E. Gyimah-Boadi. Two exceptions are regional rather than
+alongside Ghana's E. Gyimah-Boadi, and Lelapa AI has an American among its six
+founding members. Two exceptions are regional rather than
 Northern: Pula's Dutch co-founder Rose Goslinga built her career in Kenyan
 agricultural insurance, and Tarjama's Nour Al Hassan is a Jordanian running a
 firm registered in the Emirates.
 
-The share fell from 88% to 83% when verification added co-founders, and it fell
+The share fell from 88% to 84% when verification added co-founders, and it fell
 for a specific reason: single-name attributions had recorded the local chief
 executive and dropped the American technical co-founders standing behind them.
 The corrected figure is the one to use, and the direction of the error is worth
@@ -984,9 +985,10 @@ domestic, and the budget line is not.
 
 ### How the founder rows were verified
 
-Founder attributions have been checked in two passes, first the seventeen coded
-at evidence level C and then the sixty-five coded at level B. The file now holds
-118 founder rows at level A and one at level B.
+Founder attributions have been checked in three passes: the seventeen coded at
+evidence level C, then the sixty-five coded at level B, then an audit of the
+level A rows themselves. The file now holds 132 founder rows at level A and one
+at level B.
 
 **The level C pass.** Sixteen of seventeen were confirmed and one was wrong. The
 error is worth naming because of how it happened. Near East Consulting was
@@ -1048,20 +1050,48 @@ Agriculture three, Helium Health three, and 60 Decibels, Mercor, Scale AI, Plus
 a 55% stake to the Arab Jordan Investment Bank in 2005, which makes it one of the
 few MENA research firms in this register with a documented institutional owner.
 
-The domestic-founder figures above are computed only over the 113 rows where
+**The level A audit.** Five founder rows carried level A from the original
+coding and had never been through a pass. Four were confirmed: Tobi Olatunji at
+Intron Health, Nour Al Hassan at Tarjama and its Arabic.AI venture, and Cameron
+Fink at Aaru. One was wrong in kind rather than in detail: KoboToolbox was
+attributed to the Harvard Humanitarian Initiative as an institution, when it was
+founded in 2005 by Phuong Pham and Patrick Vinck and hosted at HHI until it
+incorporated independently in 2019. That row is now two individual founders plus
+a funder row for HHI, and the founding year moves from 2010, which was the year
+UNDP adopted the tool, to 2005.
+
+Then a sample of eleven rows the earlier passes had marked verified was checked
+again independently, to test whether those passes were reliable. **No attribution
+in the sample was wrong. Six were incomplete.** Stears, Indicina, Masakhane,
+Awarri, Twaweza, Laterite and the Mass Public Opinion Institute came back exactly
+as coded. Mozn has four founders and the file held two; Lelapa AI has six and the
+file held one; Clearview AI, Hivemapper, Aaru and 54gene each had a co-founder
+missing.
+
+That is the finding worth carrying out of this exercise. **The failure mode in
+founder data is not misattribution, it is undercounting.** The earlier passes
+searched to confirm the name already in the file, which confirms a true fact and
+leaves a false impression of completeness. Searching to enumerate all founders
+instead finds the missing ones. Fifteen more founders were added on this pass,
+bringing the total to 133 rows over 111 organisations. Forty-two organisations
+still carry exactly one founder row, and nothing in the audit suggests all
+forty-two are genuinely single-founder.
+Treat founder counts in this file as a lower bound.
+
+The domestic-founder figures above are computed only over the 127 rows where
 nationality is established.
 
 ### The funders
 
-67 funding relationships across 13 organisations, from 52 distinct funders. The
+68 funding relationships across 14 organisations, from 53 distinct funders. The
 set is more diffuse than expected, but a recognisable core recurs: the Ford
-Foundation in four of the thirteen, Sweden's Sida, USAID and the Hewlett
+Foundation in four of the fourteen, Sweden's Sida, USAID and the Hewlett
 Foundation in three each, and the European Union, Germany's BMZ, Google.org,
 Canada's IDRC, the UK's FCDO and the World Bank in two each.
 
 By category, 27 relationships come from private foundations, 21 from bilateral
 aid agencies, 10 from multilaterals, 4 from corporates, 3 from state research
-bodies, one from a university and one from a media group. Forty-one of the 67
+bodies, 2 from universities and one from a media group. Forty-one of the 68
 fund Sub-Saharan African organisations.
 
 Afrobarometer publishes sixteen funders and CDD-Ghana, one of its regional hubs,

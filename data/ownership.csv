@@ -1,5 +1,7 @@
 company_id,stakeholder_name,stakeholder_type,stakeholder_country,stakeholder_category,evidence_level,notes
 aaru,Cameron Fink,founder,USA,individual,A,Co-founder
+aaru,John Kessler,founder,USA,individual,A,Co-founder
+aaru,Ned Koh,founder,USA,individual,A,Co-founder
 aaru,Accenture,investor,IRL,corporate,A,Strategic investor and customer
 aaru,Redpoint Ventures,investor,USA,vc,A,Led the Series A at a one billion dollar headline valuation in December 2025
 acled,Clionadh Raleigh,founder,GBR,individual,A,Founder and president; started the project in 2005
@@ -58,7 +60,7 @@ arab_barometer,United States Institute of Peace,funder,USA,state,A,NA
 arabic_ai,Nour Al Hassan,founder,JOR,individual,A,NA
 asdaa_bcw,Sunil John,founder,ARE,individual,A,Founder in 2000; originated the Arab Youth Survey in 2008
 ask_afrika,Andrea Rademeyer,founder,ZAF,individual,A,Founder and executive chair
-asterra,Lauren Guy,founder,ISR,individual,A,Co-founder and chief technology officer; the firm began as Utilis
+asterra,Lauren Guy,founder,ISR,individual,A,Co-founder and chief technology officer; the firm began as Utilis and sources differ on whether chief executive Elly Perets is also a founder
 awarri,Eniola Edun,founder,NGA,individual,A,Co-founded Awarri in 2019 with Silas Adekunle
 awarri,Silas Adekunle,founder,NGA,individual,A,Co-founded Awarri in 2019 with Eniola Edun
 awrad,Nader Said,founder,PSE,individual,A,Founder and president
@@ -88,6 +90,7 @@ charis_uas,Eric Rutayisire,founder,RWA,individual,A,Founder and chief executive;
 charis_uas,Ingabire Muziga Mamy,founder,RWA,individual,A,Co-founder and managing director
 charis_uas,Teddy Segore,founder,RWA,individual,A,Co-founder and chief technical officer
 clearview_ai,Hoan Ton-That,founder,AUS,individual,A,Co-founder
+clearview_ai,Richard Schwartz,founder,USA,individual,A,Co-founder; later co-chief executive
 cntxt_ai,AI71,investor,ARE,corporate,A,Co-led the 60 million dollar round; an Abu Dhabi applied AI company
 cntxt_ai,BlueFive Capital,investor,ARE,vc,A,Co-led the 60 million dollar round
 code_for_africa,Justin Arenstein,founder,ZAF,individual,A,Founder and chief executive
@@ -103,6 +106,8 @@ ehealth_africa,Evelyn Castle,founder,USA,individual,A,Co-founded eHealth Africa 
 epsilon,Publicis Groupe,controlling_owner,FRA,corporate,A,NA
 essti,Government of Ethiopia,controlling_owner,ETH,state,A,NA
 fiftyfour_gene,Abasi Ene-Obong,founder,NGA,individual,A,Founder of the genomics venture that collapsed in 2024
+fiftyfour_gene,Gatumi Aliyu,founder,NGA,individual,A,Co-founder
+fiftyfour_gene,Ogochukwu Francis Osifo,founder,NGA,individual,A,Co-founder
 gallup,George Gallup,founder,USA,individual,A,Founder of the American Institute of Public Opinion in Princeton in 1935
 geocartography,Avi Degani,founder,ISR,individual,A,Founder and president; the founding year is not established from public sources
 geopoll,Mobile Accord,controlling_owner,USA,corporate,B,Parent company
@@ -112,6 +117,7 @@ helium_health,Dimeji Sofowora,founder,NGA,individual,A,Co-founder and chief fina
 helium_health,Tito Ovia,founder,NGA,individual,A,Co-founder
 hello_tractor,Jehiel Oliver,founder,USA,individual,A,Founder and chief executive; started the venture in Nigeria in 2014
 hivemapper,Ariel Seidman,founder,USA,individual,A,Co-founder
+hivemapper,Ben Wong,founder,USA,individual,A,Co-founder
 idsc_egypt,Egyptian Cabinet,controlling_owner,EGY,state,B,NA
 iiacss,Munqith Al-Dagher,founder,IRQ,individual,A,Founder and chief executive
 ijr_south_africa,Charles Villa-Vicencio,founder,ZAF,individual,A,Founding executive director; the institute launched in Cape Town in May 2000
@@ -132,7 +138,9 @@ ispa_iran,Jahad Daneshgahi,controlling_owner,IRN,state,B,University Jihad organi
 jmcc,Ghassan Khatib,founder,PSE,individual,A,Co-founder and former Palestinian Authority minister
 kantar,Bain Capital,controlling_owner,USA,pe,A,Acquired a majority stake from WPP in 2019
 kenya_space_agency,Government of Kenya,controlling_owner,KEN,state,A,NA
-kobotoolbox,Harvard Humanitarian Initiative,founder,USA,university,A,Origin institution of the platform
+kobotoolbox,Patrick Vinck,founder,USA,individual,A,Co-founder in 2005; research director of the Harvard Humanitarian Initiative
+kobotoolbox,Phuong Pham,founder,USA,individual,A,Co-founder in 2005; faculty at the Harvard T H Chan School of Public Health
+kobotoolbox,Harvard Humanitarian Initiative,funder,USA,university,A,Hosted the project until it became an independent nonprofit in 2019
 konda,Tarhan Erdem,founder,TUR,individual,A,Founder in 1986; a former Turkish minister of industry; died in 2022
 lacuna_fund,Canadas International Development Research Centre,funder,CAN,bilateral_donor,B,NA
 lacuna_fund,German Federal Ministry for Economic Cooperation and Development,funder,DEU,bilateral_donor,B,NA
@@ -144,7 +152,12 @@ lapop,United States Agency for International Development,funder,USA,bilateral_do
 laterite,Dimitri Stoelinga,founder,NA,individual,A,Co-founder; launched Laterite in February 2011. Nationality not established
 laterite,Sachin Gathani,founder,NA,individual,A,Co-founder; launched Laterite in February 2011. Nationality not established
 latinobarometro,Marta Lagos,founder,CHL,individual,A,Founding director
+lelapa_ai,Benjamin Rosman,founder,ZAF,individual,A,Founding member
+lelapa_ai,George Konidaris,founder,USA,individual,A,Founding member; computer science faculty at Brown
+lelapa_ai,Jade Abbott,founder,ZAF,individual,A,Co-founder and chief operating officer; also co-founded Masakhane
 lelapa_ai,Pelonomi Moiloa,founder,ZAF,individual,A,Co-founder and chief executive
+lelapa_ai,Pravesh Ranchod,founder,ZAF,individual,A,Founding member
+lelapa_ai,Vukosi Marivate,founder,ZAF,individual,A,Co-founder; data science chair at the University of Pretoria and co-founder of Masakhane
 levada_center,Yuri Levada,founder,RUS,individual,A,Founder; the centre carries his name after the 2003 split from VCIOM
 liveramp,Publicis Groupe,acquirer,FRA,corporate,A,Agreed acquisition announced in May 2026
 makerere_ai,Ernest Mwebaze,founder,UGA,individual,A,Co-founded the laboratory which was established in 2011
@@ -161,7 +174,9 @@ mercor,Brendan Foody,founder,USA,individual,A,Co-founder and chief executive
 mercor,Surya Midha,founder,USA,individual,A,Co-founder
 metropoll,Mustafa Damar,founder,TUR,individual,B,Named among the founding shareholders in 2004
 metropoll,Ozer Sencar,founder,TUR,individual,A,Founder and chairman; the firm was registered in Ankara in 2004
+mozn,Abdullah Alsaeed,founder,SAU,individual,A,Co-founder and chief strategy and financial officer
 mozn,Khalid Al-Ghonaim,founder,SAU,individual,A,Co-founder; Abdullah Alsaeed and Malik Alyousef joined later as co-founders
+mozn,Malik Alyousef,founder,SAU,individual,A,Co-founder and chief operating officer
 mozn,Mohammed Alhussein,founder,SAU,individual,A,Founder and chief executive; the firm was established in 2017
 mpharma,Daniel Shoukimas,founder,USA,individual,A,Co-founder and chief product officer
 mpharma,Gregory Rockson,founder,GHA,individual,A,Co-founder and chief executive

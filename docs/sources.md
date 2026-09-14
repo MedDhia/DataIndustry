@@ -406,3 +406,64 @@ Statistics Lebanon (1996 to 1994), Information International (1992 to 1995), Bas
 one to three years without changing class. Research World International and
 Geocartography have confirmed founders but founding years that no public source
 establishes, and their notes now say so.
+
+## Level A founder audit
+
+Five founder rows carried evidence level A from the original coding and had never
+been through a verification pass. Four were confirmed. One, KoboToolbox, was
+attributed to an institution rather than to people. A further eleven rows that the
+level C and level B passes had marked verified were re-checked independently, to
+test whether those passes were reliable. Sources retrieved:
+
+- KoboToolbox, about the Kobo organization — https://www.kobotoolbox.org/about-us/the-organization/
+- Kobo, our history — https://www.kobo.ngo/our-history
+- Harvard Humanitarian Initiative, KoBoToolbox — https://hhi.harvard.edu/kobotoolbox
+- AfroTech, Intron Health raises 1.6 million — https://afrotech.com/intron-health-raises-1-6m
+- The CEO Magazine, Nour Al Hassan founder and chief executive of Tarjama — https://www.theceomagazine.com/executive-interviews/services-consulting/nour-al-hassan/
+- TechCrunch, AI synthetic research startup Aaru raised a Series A — https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation
+- Wikipedia, Stears — https://en.wikipedia.org/wiki/Stears_(company)
+- The Org, Yvonne Johnson managing director and co-founder of Indicina — https://theorg.com/org/indicina/org-chart/yvonne-johnson
+- Laterite, ten years on — https://www.laterite.com/blog/laterite-ten-years-on-what-makes-us-proud/
+- Afrobarometer, Mass Public Opinion Institute — https://www.afrobarometer.org/organisation/mass-public-opinion-institute/
+- USIP, in memoriam Masipula Sithole — https://www.usip.org/press/2003/04/memoriam-masipula-sithole
+- On Think Tanks, Twaweza — https://onthinktanks.org/think-tank/twaweza/
+- Mozn, about us — https://www.mozn.sa/about-us
+- Wamda, Saudi AI startup Mozn raises 10 million — https://www.wamda.com/2022/02/saudi-ai-startup-mozn-raises-10-million-series-funding
+- Brown CS, George Konidaris cofounds Lelapa AI — https://cs.brown.edu/news/2023/03/31/george-konidaris-cofounds-lelapa-develop-homegrown-african-ai/
+- Lelapa, the team — https://lelapa.ai/about/the-team/
+- Rest of World, Awarri behind Nigeria's government-backed LLM — https://restofworld.org/2024/nigeria-awarri-ai-startup-llm/
+- VentureBeat, the Masakhane project — https://venturebeat.com/business/the-masakhane-project-wants-machine-translation-and-ai-to-transform-africa
+- Wikipedia, Clearview AI — https://en.wikipedia.org/wiki/Clearview_AI
+- Crunchbase, Ariel Seidman co-founder of Hivemapper — https://www.crunchbase.com/person/ariel-seidman
+- Wikipedia, Abasi Ene-Obong — https://en.wikipedia.org/wiki/Abasi_Ene-Obong
+- Sama, our founding story — https://www.sama.com/our-story
+- ASTERRA, leadership team — https://asterra.io/about/leadership/
+- African Languages Lab — https://www.africanlanguageslab.com/
+
+The KoboToolbox correction is the substantive one. The platform was founded in 2005
+by Phuong Pham and Patrick Vinck, who are faculty at the Harvard T. H. Chan School of
+Public Health, and it was hosted at the Harvard Humanitarian Initiative until Kobo
+incorporated as an independent nonprofit in Cambridge in 2019. The register recorded
+HHI itself as the founder and 2010 as the founding year, which is the year UNDP became
+the first large international adopter. The row is now two individual founders, HHI
+appears as a funder with a note on the hosting relationship, and `founded_year` is 2005.
+
+**The audit result worth recording is that none of the eleven re-checked attributions
+was wrong and six organisations were missing founders.** Mozn has four founders and the
+file held two; Lelapa AI has six and the file held one; Clearview AI was missing Richard
+Schwartz, Hivemapper was missing Ben Wong, Aaru was missing Ned Koh and John Kessler, and
+54gene was missing Gatumi Aliyu and Ogochukwu Francis Osifo. Stears, Indicina, Masakhane,
+Awarri, Twaweza, Laterite and the Mass Public Opinion Institute were exactly as coded, and
+Sama and the African Languages Lab were confirmed as genuinely single-founder.
+
+The reason is procedural and applies to anyone running this kind of check. A search framed
+as "did X found Y" returns confirmation and stops. A search framed as "who founded Y"
+returns the full list. The first two passes used the first framing, which is why they
+produced no false positives and a systematic undercount. One case stays unresolved: some
+sources list ASTERRA's chief executive Elly Perets as a founder and others have him joining
+Utilis in 2015, two years after founding, so no row was added and the Lauren Guy note records
+the disagreement.
+
+Founder rows in this file should be read as a lower bound on the number of founders per
+organisation. Forty-two organisations still carry exactly one founder row, and the audit
+gives no reason to believe all forty-two are genuinely single-founder.
