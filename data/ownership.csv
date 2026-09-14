@@ -4,7 +4,7 @@ aaru,John Kessler,founder,USA,individual,A,Co-founder
 aaru,Ned Koh,founder,USA,individual,A,Co-founder
 aaru,Accenture,investor,IRL,corporate,A,Strategic investor and customer
 aaru,Redpoint Ventures,investor,USA,vc,A,Led the Series A at a one billion dollar headline valuation in December 2025
-acled,Clionadh Raleigh,founder,GBR,individual,A,Founder and president; started the project in 2005
+acled,Clionadh Raleigh,founder,GBR,individual,A,Founder and president; started the project in 2005 out of her doctoral work
 acled,Complex Risk Analytics Fund,funder,CHE,multilateral,A,Pooled fund contributed to by the US UK Germany the Netherlands and the European Commission
 acled,Dutch Ministry of Foreign Affairs,funder,NLD,bilateral_donor,A,NA
 acled,European Research Council,funder,BEL,multilateral,A,NA
@@ -63,8 +63,8 @@ ask_afrika,Andrea Rademeyer,founder,ZAF,individual,A,Founder and executive chair
 asterra,Lauren Guy,founder,ISR,individual,A,Co-founder and chief technology officer; the firm began as Utilis and sources differ on whether chief executive Elly Perets is also a founder
 awarri,Eniola Edun,founder,NGA,individual,A,Co-founded Awarri in 2019 with Silas Adekunle
 awarri,Silas Adekunle,founder,NGA,individual,A,Co-founded Awarri in 2019 with Eniola Edun
-awrad,Nader Said,founder,PSE,individual,A,Founder and president
-baseera_egypt,Magued Osman,founder,EGY,individual,A,Founding chairman and a former Egyptian minister
+awrad,Nader Said,founder,PSE,individual,A,Founder and president; also published as Nader Said Foqahaa
+baseera_egypt,Magued Osman,founder,EGY,individual,A,Founding chairman and a former Egyptian minister; Baseera describes a founding team of academics who are not named publicly
 busara_center,Chaning Jang,founder,USA,individual,A,Co-founder and former chief executive
 busara_center,James Vancel,founder,USA,individual,A,Co-founder
 busara_center,Jeremy Shapiro,founder,USA,individual,A,Co-founder; also co-founded GiveDirectly
@@ -99,7 +99,7 @@ digital_earth_africa,Amazon Web Services,funder,USA,corporate,A,In-kind hosting
 digital_earth_africa,Australian Government,funder,AUS,bilateral_donor,A,Programme established through Geoscience Australia
 digital_earth_africa,Esri,funder,USA,corporate,A,In-kind software
 digital_earth_africa,Leona M and Harry B Helmsley Charitable Trust,funder,USA,foundation,A,NA
-digital_umuganda,Audace Niyonkuru,founder,RWA,individual,A,Co-founder and chief executive
+digital_umuganda,Audace Niyonkuru,founder,RWA,individual,A,Founder and chief executive; sources call him co-founder but name no other founder
 egsa,Government of Egypt,controlling_owner,EGY,state,A,NA
 ehealth_africa,Adam Thompson,founder,NA,individual,A,Co-founded eHealth Africa in 2010 with Evelyn Castle
 ehealth_africa,Evelyn Castle,founder,USA,individual,A,Co-founded eHealth Africa in 2010 with Adam Thompson
@@ -109,6 +109,8 @@ fiftyfour_gene,Abasi Ene-Obong,founder,NGA,individual,A,Founder of the genomics 
 fiftyfour_gene,Gatumi Aliyu,founder,NGA,individual,A,Co-founder
 fiftyfour_gene,Ogochukwu Francis Osifo,founder,NGA,individual,A,Co-founder
 gallup,George Gallup,founder,USA,individual,A,Founder of the American Institute of Public Opinion in Princeton in 1935
+gallup,Harold R Anderson,founder,USA,individual,B,Chicago agent who partnered with Gallup to set up the American Institute of Public Opinion; named by company histories but not by Gallup itself
+geocartography,Rina Degani,controlling_owner,ISR,individual,A,Owner and chairman alongside Avi Degani
 geocartography,Avi Degani,founder,ISR,individual,A,Founder and president; the founding year is not established from public sources
 geopoll,Mobile Accord,controlling_owner,USA,corporate,B,Parent company
 global_infoanalytics,Mussa Dankwah,founder,GHA,individual,A,Founder and lead pollster; the firm was registered in March 2019
@@ -116,11 +118,13 @@ helium_health,Adegoke Olubusi,founder,NGA,individual,A,Co-founder and chief exec
 helium_health,Dimeji Sofowora,founder,NGA,individual,A,Co-founder and chief financial officer
 helium_health,Tito Ovia,founder,NGA,individual,A,Co-founder
 hello_tractor,Jehiel Oliver,founder,USA,individual,A,Founder and chief executive; started the venture in Nigeria in 2014
+hello_tractor,Van Jones,founder,USA,individual,A,Co-founder and head of strategy; joined in early 2014
 hivemapper,Ariel Seidman,founder,USA,individual,A,Co-founder
 hivemapper,Ben Wong,founder,USA,individual,A,Co-founder
 idsc_egypt,Egyptian Cabinet,controlling_owner,EGY,state,B,NA
 iiacss,Munqith Al-Dagher,founder,IRQ,individual,A,Founder and chief executive
 ijr_south_africa,Charles Villa-Vicencio,founder,ZAF,individual,A,Founding executive director; the institute launched in Cape Town in May 2000
+ijr_south_africa,Fanie du Toit,founder,ZAF,individual,A,Co-founder and later executive director
 ijtimoiy_fikr,Government of Uzbekistan,controlling_owner,UZB,state,C,State-affiliated public opinion centre
 indicina,Carlos del Carpio,founder,NA,individual,A,Co-founder. Nationality not established
 indicina,Jacob Ayokunle,founder,NGA,individual,A,Co-founder
@@ -129,13 +133,14 @@ indicina,Yvonne Johnson,founder,NGA,individual,A,Founded Indicina in 2018; previ
 information_international,Jawad Adra,founder,LBN,individual,A,Founder and managing partner; established the firm in Beirut in 1995
 information_international,Zeina Akar Adra,founder,LBN,individual,A,Partner and executive director listed on the firm founders page
 infotrak,Angela Ambitho,founder,KEN,individual,A,Founder and chief executive
+intron_health,Olakunle Asekun,founder,NGA,individual,A,Co-founder and chief financial officer
 intron_health,Tobi Olatunji,founder,NGA,individual,A,Physician turned founder
 intron_health,Microtraction,investor,NGA,vc,A,Led a 1.6 million dollar round
-ipsos,Didier Truchot,founder,FRA,individual,A,Founder in 1975 and long-serving chairman
+ipsos,Didier Truchot,founder,FRA,individual,A,Sole founder in 1975; Jean-Marc Lech joined as co-president in 1982 and was not a founder
 ipsos_comcon,Direct Investments JSC,controlling_owner,RUS,pe,A,Owned by the Russian investor Andrei Malyshev; acquired 80 percent from Ipsos in February 2026
 ipsos_comcon,Ipsos,controlling_owner,FRA,corporate,A,Retains a 20 percent minority stake under the foreign ownership cap
 ispa_iran,Jahad Daneshgahi,controlling_owner,IRN,state,B,University Jihad organisation
-jmcc,Ghassan Khatib,founder,PSE,individual,A,Co-founder and former Palestinian Authority minister
+jmcc,Ghassan Khatib,founder,PSE,individual,A,Co-founder; the centre was set up in 1988 by a group of Palestinian journalists and researchers who are not named publicly
 kantar,Bain Capital,controlling_owner,USA,pe,A,Acquired a majority stake from WPP in 2019
 kenya_space_agency,Government of Kenya,controlling_owner,KEN,state,A,NA
 kobotoolbox,Patrick Vinck,founder,USA,individual,A,Co-founder in 2005; research director of the Harvard Humanitarian Initiative
@@ -158,6 +163,7 @@ lelapa_ai,Jade Abbott,founder,ZAF,individual,A,Co-founder and chief operating of
 lelapa_ai,Pelonomi Moiloa,founder,ZAF,individual,A,Co-founder and chief executive
 lelapa_ai,Pravesh Ranchod,founder,ZAF,individual,A,Founding member
 lelapa_ai,Vukosi Marivate,founder,ZAF,individual,A,Co-founder; data science chair at the University of Pretoria and co-founder of Masakhane
+levada_center,Lev Gudkov,founder,RUS,individual,B,Left VCIOM with Levada in the 2003 collective resignation and became director in 2006; the centre records a founding team rather than named founders
 levada_center,Yuri Levada,founder,RUS,individual,A,Founder; the centre carries his name after the 2003 split from VCIOM
 liveramp,Publicis Groupe,acquirer,FRA,corporate,A,Agreed acquisition announced in May 2026
 makerere_ai,Ernest Mwebaze,founder,UGA,individual,A,Co-founded the laboratory which was established in 2011
@@ -190,7 +196,7 @@ nielsen,Elliott Management,controlling_owner,USA,pe,A,Joint take-private in 2022
 niq,Advent International,controlling_owner,USA,pe,B,Backed NIQ from the GfK merger through its 2025 listing
 noipolls,Ngozi Okonjo-Iweala,founder,NGA,individual,A,Founder in November 2006; later director-general of the World Trade Organization
 odk,Bill and Melinda Gates Foundation,funder,USA,foundation,B,Funded the original Open Data Kit development at the University of Washington
-one_to_one_tunisia,Youssef Meddeb,founder,TUN,individual,A,Founder and chief executive
+one_to_one_tunisia,Youssef Meddeb,founder,TUN,individual,A,Founder and chief executive; the firm describes him as co-founder but names no other founder
 pcpsr,Khalil Shikaki,founder,PSE,individual,A,Founding director; founded the Nablus predecessor in 1993 and PCPSR in 2000
 pcpsr,European Union,funder,BEL,multilateral,A,Named as one of the two principal funders
 pcpsr,Ford Foundation,funder,USA,foundation,A,Named as one of the two principal funders
@@ -201,7 +207,8 @@ pula,Rose Goslinga,founder,NLD,individual,A,Co-founder
 pula,Thomas Njeru,founder,KEN,individual,A,Co-founder
 qualtrics,CPP Investments,controlling_owner,CAN,pe,A,Canadian pension fund co-investor
 qualtrics,Silver Lake,controlling_owner,USA,pe,A,Took Qualtrics private in 2023
-research_world_intl,Patrick Wakida,founder,UGA,individual,A,Founder and chief executive; the founding year is not established from public sources
+research_world_intl,Patrick Wakida,founder,UGA,individual,A,"Founder and chief executive; the founding year is not established from public sources, with directories giving 2007"
+sagaci_research,Joao Terlica,founder,NA,individual,A,Co-founder; a former Boston Consulting Group colleague of Julien Garcier
 sagaci_research,Julien Garcier,founder,NA,individual,A,Co-founder and managing director; launched the firm in 2012 after BCG. Nationality not established
 sama,Leila Janah,founder,USA,individual,A,Founded as Samasource; died in 2020
 sansa,Government of South Africa,controlling_owner,ZAF,state,A,NA
@@ -209,7 +216,7 @@ sberindex,Sberbank,controlling_owner,RUS,state,B,Majority state-owned bank
 scale_ai,Alexandr Wang,founder,USA,individual,A,Co-founder and chief executive
 scale_ai,Lucy Guo,founder,USA,individual,A,Co-founder; left the company in 2018
 scale_ai,Meta,investor,USA,corporate,A,Took a 49 percent stake in 2025
-scpr_syria,Rabie Nasser,founder,SYR,individual,A,Economist and co-founder of the centre
+scpr_syria,Rabie Nasser,founder,SYR,individual,A,Co-founder and researcher in macroeconomic policy; no other founder is named publicly
 sigma_conseil,Hassen Zargouni,founder,TUN,individual,A,Founder and managing director
 simile,Index Ventures,investor,GBR,vc,B,Led a 100 million dollar Series A
 sixty_decibels,Sasha Dichter,founder,USA,individual,A,Co-founder and chief executive; previously chief innovation officer at Acumen
@@ -224,13 +231,14 @@ stears,Abdul Abdulrahim,founder,NGA,individual,A,Co-founder
 stears,Foluso Ogunlana,founder,NGA,individual,A,Co-founder
 stears,Michael Famoroti,founder,NGA,individual,A,Co-founder
 stears,Preston Ideh,founder,NGA,individual,A,Co-founded Stears in 2017 with three others met at LSE and Imperial College
-surge_ai,Edwin Chen,founder,USA,individual,A,Founder; the company remained bootstrapped for years
+surge_ai,Edwin Chen,founder,USA,individual,A,Sole founder; no co-founder and no outside investors
 surveymonkey,Symphony Technology Group,controlling_owner,USA,pe,A,Took the company private in 2023
 taranis,Assaf Horowitz,founder,ISR,individual,A,Co-founder
 taranis,Ayal Karmi,founder,ISR,individual,A,Co-founder
 taranis,Eli Bukchin,founder,ISR,individual,A,Co-founder
 taranis,Ofir Schlam,founder,ISR,individual,A,Co-founder and chief executive
 tarjama,Nour Al Hassan,founder,JOR,individual,A,Also founder of the Arabic.AI venture
+tarjama,Amethis,investor,FRA,pe,A,Took a minority stake in the language technology firm
 tubitak_uzay,Government of Turkiye,controlling_owner,TUR,state,A,NA
 twaweza,Rakesh Rajani,founder,TZA,individual,A,Tanzanian civil society leader who established Twaweza in 2009
 twaweza,Embassy of Switzerland,funder,CHE,bilateral_donor,A,NA
@@ -243,7 +251,7 @@ twaweza,Swedish International Development Cooperation Agency,funder,SWE,bilatera
 twaweza,UK Foreign Commonwealth and Development Office,funder,GBR,bilateral_donor,A,Part of the five-donor core consortium
 twaweza,Wellspring Philanthropic Fund,funder,USA,foundation,A,NA
 twaweza,William and Flora Hewlett Foundation,funder,USA,foundation,A,Part of the five-donor core consortium
-ujuzikilimo,Brian Bosire,founder,KEN,individual,A,Founder and chief executive
+ujuzikilimo,Brian Bosire,founder,KEN,individual,A,Founder and chief executive; sources call him co-founder but name no other founder
 vantor,Advent International,controlling_owner,USA,pe,A,Took Maxar private in 2023
 vciom,Government of Russia,controlling_owner,RUS,state,B,State-owned
 yemen_polling_center,Hafez Albukari,founder,YEM,individual,A,Founder and president; started the centre in 2004

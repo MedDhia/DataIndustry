@@ -912,7 +912,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 250 rows covering 111 of the 569 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 569 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on
@@ -946,8 +946,8 @@ Setting the founder and funder rows side by side produces the sharper result.
 
 | | MENA and Africa | North America and Western Europe |
 |---|---|---|
-| Founder rows with nationality established | 98 | 27 |
-| Founded by a national of the country | 84% | 89% |
+| Founder rows with nationality established | 101 | 28 |
+| Founded by a national of the country | 83% | 89% |
 
 MENA and African data organisations are overwhelmingly founded by people from
 the countries they operate in, at close to the same rate as Northern ones.
@@ -959,18 +959,18 @@ Aerobotics by James Paterson and Benji Meltzer, UjuziKilimo by Brian Bosire,
 mPharma by Gregory Rockson, Helium Health by Adegoke Olubusi, Tito Ovia and
 Dimeji Sofowora.
 
-The sixteen exceptions concentrate in a small number of organisations rather
+The seventeen exceptions concentrate in a small number of organisations rather
 than being spread across the register. Apollo Agriculture, Busara, eHealth
 Africa, Hello Tractor and mSurvey are American-founded Kenyan and Nigerian
 operations, and mPharma has two American co-founders beside its Ghanaian chief
 executive. Afrobarometer was co-founded by an American and a South African
-alongside Ghana's E. Gyimah-Boadi, and Lelapa AI has an American among its six
-founding members. Two exceptions are regional rather than
+alongside Ghana's E. Gyimah-Boadi, Lelapa AI has an American among its six
+founding members, and Hello Tractor has two American founders rather than one. Two exceptions are regional rather than
 Northern: Pula's Dutch co-founder Rose Goslinga built her career in Kenyan
 agricultural insurance, and Tarjama's Nour Al Hassan is a Jordanian running a
 firm registered in the Emirates.
 
-The share fell from 88% to 84% when verification added co-founders, and it fell
+The share fell from 88% to 83% as verification added co-founders, and it fell
 for a specific reason: single-name attributions had recorded the local chief
 executive and dropped the American technical co-founders standing behind them.
 The corrected figure is the one to use, and the direction of the error is worth
@@ -1072,13 +1072,36 @@ That is the finding worth carrying out of this exercise. **The failure mode in
 founder data is not misattribution, it is undercounting.** The earlier passes
 searched to confirm the name already in the file, which confirms a true fact and
 leaves a false impression of completeness. Searching to enumerate all founders
-instead finds the missing ones. Fifteen more founders were added on this pass,
-bringing the total to 133 rows over 111 organisations. Forty-two organisations
-still carry exactly one founder row, and nothing in the audit suggests all
-forty-two are genuinely single-founder.
+instead finds the missing ones.
+
+**The enumeration sweep.** Every organisation still carrying a single founder row
+was then searched again with the question reversed, asking who founded it rather
+than whether the recorded person did. Of 42 organisations, **36 came back genuinely
+single-founder and 6 were missing a founder**: Sagaci Research was co-founded with
+Joao Terlica, the Institute for Justice and Reconciliation with Fanie du Toit,
+Hello Tractor with Van Jones, Intron Health with Olakunle Asekun, Gallup's American
+Institute of Public Opinion with the Chicago agent Harold R. Anderson, and the
+Levada Center by the VCIOM staff who resigned collectively in 2003, of whom Lev
+Gudkov is the one consistently named.
+
+A seventh case is a different kind of gap. Geocartography is run by Avi Degani and
+Rina Degani, who owns and chairs it; no source calls her a founder, so she is
+recorded as a controlling owner rather than guessed into the founder column.
+
+Six organisations describe their own founder as a "co-founder" or refer to a
+founding group while naming nobody else: Baseera, the Jerusalem Media and
+Communication Centre, the Syrian Center for Policy Research, One to One,
+UjuziKilimo and Digital Umuganda. Those rows now say so in their notes. **The
+absent names are a documented gap rather than a claim that these organisations had
+one founder.** Three organisations are positively confirmed as single-founder by
+sources that address the question directly: Surge AI, where Edwin Chen had no
+co-founder and no investors, Sama, and Ipsos, where Jean-Marc Lech joined as
+co-president seven years after founding and was not a founder.
+
+The founder layer now holds 139 rows over 76 organisations, 136 at level A.
 Treat founder counts in this file as a lower bound.
 
-The domestic-founder figures above are computed only over the 127 rows where
+The domestic-founder figures above are computed only over the 132 rows where
 nationality is established.
 
 ### The funders

@@ -467,3 +467,77 @@ the disagreement.
 Founder rows in this file should be read as a lower bound on the number of founders per
 organisation. Forty-two organisations still carry exactly one founder row, and the audit
 gives no reason to believe all forty-two are genuinely single-founder.
+
+## Founder enumeration sweep
+
+Every organisation still carrying a single founder row after the level A audit was
+searched again with the question reversed: who founded this organisation, rather than
+did the recorded person found it. Forty-two organisations, six of them missing a
+founder. Sources retrieved:
+
+- PRIO, introducing ACLED — https://www.prio.org/publications/3236
+- Bizcommunity, Ask Afrika founder Andrea Rademeyer — https://www.bizcommunity.com/article/ask-afrika-founder-andrea-rademeyer-chairs-esomar-congress-a-first-for-africa-702962a
+- Devex, Arab World for Research and Development — https://www.devex.com/organizations/arab-world-for-research-and-development-awrad-50515
+- Baseera, about us — https://www.baseera.com.eg/AboutUs
+- Africa CEO Forum, Julien Garcier — https://www.theafricaceoforum.com/forum-2026/en/intervenant/julien-garcier/
+- Startup Grind Kigali, Audace Niyonkuru of Digital Umuganda — https://www.startupgrind.com/events/details/startup-grind-kigali-presents-startup-grind-kigali-is-hosting-audace-niyonkuru-ceo-and-founder-of-digital-umuganda/
+- Salon Syria, a profile of the Syrian Center for Policy Research with Rabie Nasser — https://salonsyria.com/a-profile-of-the-syria-policy-research-center-with-rabie-nasser/
+- Wikipedia, Code for Africa — https://en.wikipedia.org/wiki/Code_for_Africa
+- Wikipedia, Sunil John — https://en.wikipedia.org/wiki/Sunil_John
+- IIACSS Group, about us — https://iiacss.org/about-iiacss-group/
+- Geocartography, Rina Degani owner profile — https://il.linkedin.com/in/dr-rina-degani-015044219
+- Latinobarometro, about us — https://www.latinobarometro.org/about-us
+- Levada Center, about us — https://www.levada.ru/en/about-us/
+- Wikipedia, Levada Center — https://en.wikipedia.org/wiki/Levada_Center
+- PCPSR, Khalil Shikaki — https://www.pcpsr.org/en/node/192
+- KONDA, hakkımızda — https://konda.com.tr/hakkimizda
+- Afrobarometer, One to One for Research and Polling — https://www.afrobarometer.org/organisation/one-one-research-and-polling/
+- Jeune Afrique, Hassen Zargouni l'oracle du Bardo — https://www.jeuneafrique.com/41232/politique/sondages-en-tunisie-hassen-zargouni-l-oracle-du-bardo/
+- NOIPolls, ethos — https://www.noi-polls.com/ethos
+- Godsdirectcontact award, Fanie du Toit and the Institute for Justice and Reconciliation — http://award.godsdirectcontact.net/en/news/n.php?id=448
+- Chicago Booth, Van Jones co-founder and head of strategy at Hello Tractor — https://www.chicagobooth.edu/alumni/distinguished-alumni-award/honorees/van-jones
+- Disrupt Africa, Intron Health raises 1.6m pre-seed — https://disruptafrica.com/2024/07/29/nigerias-intron-health-raises-1-6m-pre-seed-funding-to-build-ai-for-global-health/
+- Wikipedia, Ipsos — https://en.wikipedia.org/wiki/Ipsos
+- Wikipedia, Surge AI — https://en.wikipedia.org/wiki/Surge_AI
+- Tarjama, our story — https://tarjama.com/our-story/
+- Amethis, investment into Tarjama — https://amethis.com/en/amethis-invests-into-tarjama-the-leading-language-technology-services-firm-in-the-mena-region/
+- UjuziKilimo, a short story on how UjuziKilimo came to be — https://ujuzikilimo.com/about
+- Vanderbilt, LAPOP mission and history — https://www.vanderbilt.edu/lapop/mission.php
+- Encyclopedia.com, the Gallup Organization — https://www.encyclopedia.com/books/politics-and-business-magazines/gallup-organization
+- JMCC, about JMCC — https://www.jmcc.org/en/Article/464/About-JMCC
+- GSMA, Jawad Jalal Abbassi — https://www.gsma.com/about-us/regions/middle-east-and-north-africa/gsma_people/jawad-jalal-abbassi/
+- Public Policy Institute Uganda, Patrick Wakida — https://ppiug.org/profile/1
+
+**Six organisations were missing a founder.** Sagaci Research was co-founded by Joao
+Terlica, a former Boston Consulting Group colleague of Julien Garcier. The Institute for
+Justice and Reconciliation was founded by Charles Villa-Vicencio with Fanie du Toit, who
+later became its executive director. Hello Tractor was founded by Jehiel Oliver with Van
+Jones, who joined in early 2014 and pitched the venture with him at Chicago Booth. Intron
+Health was launched by Tobi Olatunji with Olakunle Asekun. Gallup's American Institute of
+Public Opinion was set up with Harold R. Anderson, a Chicago agent who saw the commercial
+possibility in the method; company histories name him and Gallup's own founder page does
+not, so that row sits at evidence level B. The Levada Center was established in 2003 by the
+VCIOM staff who resigned collectively when the government moved to control the board, and
+Lev Gudkov is the one consistently named beside Yuri Levada, also at level B because the
+centre's own account describes a team rather than founders.
+
+A seventh case was resolved differently. Geocartography is headed by Avi Degani and by
+Rina Degani, who is its owner and chairman. No source calls her a founder, so she is
+recorded as a controlling owner. Guessing her into the founder column would have been the
+same error in the opposite direction from the ones this sweep was correcting.
+
+**Six organisations describe a founding group and name nobody but the one person already
+recorded.** Baseera says it was established by a team of academics and experts; JMCC by a
+group of Palestinian journalists and researchers in 1988; the Syrian Center for Policy
+Research, One to One, UjuziKilimo and Digital Umuganda each call the recorded person a
+co-founder without naming the other. Those six rows carry notes saying exactly that, so the
+gap is visible in the data rather than hidden behind a single name.
+
+Three organisations are positively confirmed as single-founder by sources that address the
+question rather than passing over it: Surge AI, where Edwin Chen had no co-founder and no
+outside investors; Sama, founded by Leila Janah alone; and Ipsos, where Jean-Marc Lech
+joined as co-president in 1982, seven years after Didier Truchot founded the firm, and was
+not a founder. The remaining thirty-three single-founder organisations are recorded that way
+because no source names anyone else, which is weaker evidence than those three.
+
+Twenty-nine founders have now been added across the three enumeration-framed rounds.

@@ -100,7 +100,7 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 
 `scripts/03_coverage_gaps.R` writes long-format versions to `output/`.
 
-## `data/ownership.csv` (250 rows, 111 organisations)
+## `data/ownership.csv` (258 rows, 111 organisations)
 
 Founders, owners, investors, acquirers and funders. One row per organisation-
 stakeholder pair.
@@ -136,12 +136,22 @@ seventeen coded at level C, the sixty-five coded at level B, and an audit of the
 level A rows themselves. Founder rows now carry 132 at level A and one at level
 B, the exception being a MetroPOLL co-founder resting on a single Turkish source.
 
-**Founder rows are a lower bound, not an enumeration.** The level A audit
-re-checked eleven rows the earlier passes had marked verified. None was wrong;
-six organisations were missing a founder. Confirming the name already in a file
-is not the same as establishing that it is the only one, and the earlier passes
-did the first. Do not compute founder counts per organisation from this file
-without checking the organisations you care about.
+Founder rows now carry 136 at level A and three at level B. Every organisation
+in the founder layer has been searched with the question framed as enumeration,
+asking who founded it rather than whether the recorded person did, so founder
+counts per organisation are usable rather than a lower bound. Two qualifications
+hold. Six organisations call their own founder a co-founder or refer to a founding
+group while naming nobody else, and their notes say so: Baseera, JMCC, the Syrian
+Center for Policy Research, One to One, UjuziKilimo and Digital Umuganda. And 36
+organisations are recorded with a single founder because the sources name one,
+which for most of them means no source addressed the question directly; only Surge
+AI, Sama and Ipsos are positively confirmed as single-founder.
+
+The enumeration framing is what makes the difference, and it is worth stating for
+anyone extending this file. A search asking whether X founded Y returns a
+confirmation and stops. A search asking who founded Y returns the list. The first
+two verification passes used the first framing and produced no false positives and
+a systematic undercount; twenty-nine founders were added once the framing changed.
 
 Three attributions failed verification and were changed. Near East Consulting was
 attributed to Jamil Rabah through a name collision with an unrelated Lebanese
