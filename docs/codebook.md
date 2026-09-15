@@ -4,7 +4,7 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (880 rows, 25 variables)
+## `data/companies.csv` (880 rows, 26 variables)
 
 The register includes 805 operating organisations and 75 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
@@ -23,7 +23,8 @@ would hide.
 | `hq_region` | factor | One of the twelve codes in `regions.csv`. |
 | `founded_year` | integer | Year the collecting operation began, not the year of a later holding company. |
 | `maturity_class` | factor | `established`, `scaleup`, `startup`. See below. |
-| `ownership_type` | factor | `public_listed`, `private_pe`, `private_vc`, `private_independent`, `subsidiary`, `nonprofit`, `academic`, `state_linked`, `cooperative_jic`. |
+| `ownership_type` | factor | `public_listed`, `private_pe`, `private_vc`, `private_independent`, `subsidiary`, `nonprofit`, `academic`, `state_linked`, `cooperative_jic`. Who holds the equity. |
+| `sector` | factor | `for_profit`, `nonprofit`, `academic`, `governmental`. What kind of organisation it is. See below. |
 | `status` | factor | `active` (independent and operating), `acquired_active` (operating under a new parent, brand retained), `absorbed` (acquired and no longer operating as a distinct entity), `wound_down` (ceased trading), `insolvent` (failed through bankruptcy or administration). The last three are exits and are excluded from coverage tables. |
 | `ceased_year` | integer | Year the firm stopped operating as a distinct entity. Required for `absorbed`, `wound_down` and `insolvent`; must be `NA` for operating firms. The validator enforces both directions. |
 | `segment_primary` | factor | Principal segment, from `segments.csv`. |
@@ -41,6 +42,41 @@ would hide.
 | `microdata_access` | factor | Who can obtain record-level data: `open`, `researcher_restricted`, `commercial_only`, `none`. |
 | `evidence_level` | factor | `A`, `B`, `C`. See below. |
 | `notes` | string | Short free text, no commas. |
+
+### `sector`
+
+Four values, one per organisation, derived by `scripts/00_code_sector.py`.
+
+- `for_profit` — trades commercially and distributes surplus to owners, whoever
+  those owners are. **A state-owned joint stock company selling research is
+  `for_profit` here**; `ownership_type` records that the state owns it.
+- `nonprofit` — legally constituted not-for-profit, independent of government.
+- `academic` — a university, a unit of one, or a research institute whose
+  primary output is scholarship.
+- `governmental` — an organ of the state, a body created by statute or decree
+  and controlled by government, or an intergovernmental organisation.
+
+**`sector` and `ownership_type` are not redundant and should both be used.**
+`ownership_type` says who holds the equity; `sector` says what kind of
+organisation it is. They come apart in fourteen cases, every one of them listed
+with its reason in `scripts/00_code_sector.py`: state-owned firms that trade
+commercially (VCIOM, Mediascope, SberIndex, CTR, CSM, Chang Guang, Twenty First
+Century Aerospace, Elm, M42), a state-tied Russian polling foundation that is
+constituted as a foundation rather than an organ of state (FOM), two state-linked
+academic bodies (ISPA Iran, CREAD Algeria), a credit bureau created by federal law
+(Al Etihad), and 23andMe, which operated as a listed for-profit for its entire
+collecting life and was only acquired by a nonprofit out of bankruptcy.
+
+Joint industry committees (BARB, OzTAM, BARC India, Numeris, AGF, Auditel,
+Marocmétrie) are coded `nonprofit`. They are owned by broadcasters and
+advertisers, sell nothing on the open market, and exist to produce a measurement
+currency their members trade on. That is a defensible call rather than an obvious
+one, and anyone who disagrees can move all seven with one line.
+
+The derivation is a rule plus an override list rather than hand-entered values,
+so it is auditable and reruns cleanly when the register grows. The validator
+enforces the vocabulary and two consistency rules: a nonprofit or academic owner
+cannot be `for_profit`, and listed, private equity or venture backed firms must be.
 
 ### `maturity_class`
 

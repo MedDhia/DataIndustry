@@ -12,7 +12,7 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 880 | The register. One row per organisation, 25 variables. 805 operating, 75 exited. |
+| `data/companies.csv` | 880 | The register. One row per organisation, 26 variables. 805 operating, 75 exited. 630 of the operating ones are for-profit. |
 | `data/coverage_spatial.csv` | 880 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
@@ -28,6 +28,7 @@ actually gathering the data, and what is nobody gathering?
 | `docs/grant_programmes.md` | | What the funding-instrument layer shows and what it leaves out. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `scripts/07_grants.R` | | Recurring grant instruments: descriptives only, the layer is too small for more. |
+| `scripts/08_sector.R` | | The for-profit cut. Run this before citing any regional figure. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
 ## Scope
@@ -171,6 +172,7 @@ agencies, are in and are coded `state_linked`.
 ## Reproducing the analysis
 
 ```sh
+python3 scripts/00_code_sector.py             # derive the sector variable
 python3 scripts/00_build_coverage.py          # region coverage matrix
 python3 scripts/00_build_country_coverage.py  # country coverage, typed by method and domain
 python3 scripts/00_validate.py                # check every file against every vocabulary
@@ -180,6 +182,7 @@ Rscript  scripts/04_country_gaps.R            # country gap analysis -> output/
 Rscript  scripts/05_history.R                 # exits and survivorship -> output/
 Rscript  scripts/06_ownership.R               # founders, owners and funders -> output/
 Rscript  scripts/07_grants.R                  # recurring grant instruments -> output/
+Rscript  scripts/08_sector.R                  # the for-profit cut -> output/
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are

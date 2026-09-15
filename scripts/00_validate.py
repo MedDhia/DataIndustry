@@ -8,6 +8,7 @@ import csv, collections, sys
 
 VOCAB = {
  "maturity_class": {"established", "scaleup", "startup"},
+ "sector": {"for_profit", "nonprofit", "academic", "governmental"},
  "ownership_type": {"public_listed", "private_pe", "private_vc", "private_independent",
                     "subsidiary", "nonprofit", "academic", "state_linked", "cooperative_jic"},
  "status": {"active", "acquired_active", "absorbed", "wound_down", "insolvent"},
@@ -43,9 +44,16 @@ def main():
 
     for r in companies:
         cid = r["company_id"]
-        if len(r) != 25 or None in r.values():
+        if len(r) != 26 or None in r.values():
             err["wrong field count"].append(cid)
             continue
+        # sector and ownership_type are separate variables but not free of each
+        # other: a nonprofit or academic owner cannot be a for-profit sector.
+        if r["ownership_type"] in ("nonprofit", "academic") and r["sector"] == "for_profit":
+            err["sector vs ownership_type"].append((cid, r["ownership_type"], r["sector"]))
+        if r["ownership_type"] in ("public_listed", "private_pe", "private_vc") \
+           and r["sector"] != "for_profit":
+            err["sector vs ownership_type"].append((cid, r["ownership_type"], r["sector"]))
         if r["segment_primary"] not in segs:
             err["segment_primary"].append((cid, r["segment_primary"]))
         if r["segment_secondary"] not in segs | {"NA"}:

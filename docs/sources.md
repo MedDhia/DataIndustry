@@ -1061,3 +1061,65 @@ Stale figures in the README caveats were also corrected in this pass. They still
 described a 424-organisation register with 22,102 country rows and an evidence
 distribution of 29 A, 153 B and 242 C. The current values are 880, 33,393, and 129 A, 401
 B, 350 C.
+
+## The sector variable
+
+`sector` was added because the register had grown to include organisations that are not
+firms, and several findings rested on a population that mixed them together. Four values,
+one per organisation: `for_profit`, `nonprofit`, `academic`, `governmental`. Definitions
+are in `docs/codebook.md`; the derivation is `scripts/00_code_sector.py`, a rule on
+`ownership_type` plus fourteen explicit overrides, each carrying its reason in the script.
+
+**`sector` does not replace `ownership_type` and neither can be derived from the other.**
+`ownership_type` says who holds the equity, `sector` says what kind of organisation it is,
+and the fourteen overrides are exactly the cases where those differ. The largest group is
+state-owned firms that trade commercially: VCIOM, Mediascope, SberIndex, CTR, CSM, Chang
+Guang, Twenty First Century Aerospace, Elm and M42 are all `state_linked` and all
+`for_profit`. A register that collapsed the two would either call VCIOM a government body,
+which misdescribes how it operates, or call it an ordinary private firm, which misdescribes
+who controls it.
+
+Two judgement calls are worth flagging because a reader might make them differently. Joint
+industry committees (BARB, OzTAM, BARC India, Numeris, AGF, Auditel, Marocmétrie) are coded
+`nonprofit`: broadcaster- and advertiser-owned bodies that sell nothing on the open market
+and exist to produce a currency their members trade on. And 23andMe is coded `for_profit`
+even though a nonprofit bought it out of bankruptcy, because it operated as a listed
+for-profit for its entire collecting life. Both are one-line changes for anyone who
+disagrees.
+
+**Three findings changed when the cut was run, and one of them is a correction to a
+finding from the previous round.**
+
+First, the composition result. 630 of 805 operating organisations are for-profit, 78.3%,
+but the share runs from 100% in mainland China and 87.5% in North America down to **51.5%
+in Sub-Saharan Africa**. Half the African layer is not a business, which follows directly
+from what three African rounds went looking for: Afrobarometer partners, surveillance
+sites, university institutes and statistical bodies. Anyone reading the register as a map
+of an industry should halve the African row in the section 1 density table.
+
+Second, and this is the correction. The previous round reported that MENA and
+Sub-Saharan Africa differ by about 2.5 to 1 in whether collectors release microdata, and
+attributed it to the organisational form of the survey infrastructure. Restricting to
+for-profit firms leaves the ratio intact, 25.6% against 6.2%, so the gap is not simply a
+matter of Africa having more nonprofits. **But 17 of the 22 African for-profit
+organisations that disclose are Afrobarometer national partners, private consultancies
+publishing because the network's contract requires it.** Remove that condition and
+commercial African disclosure is 5 organisations in 86, which is 5.8% and
+indistinguishable from MENA's 6.2%. The sharper and better-supported statement is that
+**commercial collectors in the two regions disclose at almost identical very low rates,
+and the regional difference is produced by a donor-funded network that writes publication
+into its contracts.** Section 1 now says that instead.
+
+Third, section 14. Every exit in the register but one is a for-profit: 74 of 75, the
+exception being INDEPTH. No academic or governmental organisation has closed and exactly
+one nonprofit has. Some of that is real and some is a limit of how this register finds
+exits, through acquisition notices and insolvency reporting, neither of which a nonprofit
+winding down quietly generates. Section 14 now states that its survivorship correction
+applies to the commercial layer only.
+
+A fourth result is new rather than a change. Running the disclosure cut across all twelve
+regions shows that **in six of them, not one for-profit organisation in the register makes
+record-level data available to a researcher**: South Asia, Southeast Asia, Latin America,
+Oceania, East Asia and the Russia bloc, 74 commercial collectors between them. Those are
+also the six regions the register has enumerated least, so the figure is a lower bound on
+openness and an upper bound on how much should be concluded from it.

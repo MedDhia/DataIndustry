@@ -50,58 +50,87 @@ is an artefact of who does the collecting rather than of how much gets collected
 adding the Afrobarometer national partner network put 34 in-country field agencies
 into the register, each of which releases its national microdata openly.
 
-### The MENA and Africa comparison is the sharpest result in this table
+### Most of this table is not commercial, and that changes how to read it
 
-Successive rounds have now enumerated both regions to a comparable depth, which
-makes them comparable. They look alike on capacity and nothing alike on
-disclosure.
+The register now carries a `sector` variable separating for-profit firms from
+nonprofits, universities and state bodies. **630 of the 805 operating
+organisations are for-profit, 78.3%, but the share varies enormously by region
+and it is lowest exactly where the register is best enumerated.**
+
+| Region | Operating | For-profit | Share | Nonprofit | Academic | Governmental |
+|---|---|---|---|---|---|---|
+| NOAM | 255 | 223 | 87.5% | 19 | 13 | 0 |
+| WEU | 156 | 137 | 87.8% | 13 | 6 | 0 |
+| SSA | 167 | 86 | 51.5% | 48 | 19 | 14 |
+| MENA | 109 | 81 | 74.3% | 10 | 6 | 12 |
+| CHN | 23 | 23 | 100% | 0 | 0 | 0 |
+
+**Half of the Sub-Saharan African layer is not a business.** For anyone reading
+this register as a map of an industry, the African row in the density table above
+is roughly half as large as it looks, and the reason is in what three African
+rounds went looking for: Afrobarometer national partners, health and demographic
+surveillance sites, university institutes and statistical bodies. Those are real
+collectors, and they are not firms.
+
+### The MENA and Africa comparison, both ways
+
+Successive rounds have enumerated both regions to a comparable depth. They look
+alike on capacity and nothing alike on disclosure, and the gap survives the
+for-profit cut.
 
 | | MENA | Sub-Saharan Africa |
 |---|---|---|
-| Operating organisations headquartered there | 109 | 167 |
-| Field agencies among them | 49 | 85 |
-| Organisations releasing microdata | 23 (21.1%) | 91 (54.5%) |
-| Releasing it openly rather than on application | 6 | 60 |
-| Field agencies releasing microdata | 13 of 49 | 61 of 85 |
+| Operating organisations | 109 | 167 |
+| Releasing microdata | 23 (21.1%) | 91 (54.5%) |
+| **For-profit organisations** | **81** | **86** |
+| **For-profit releasing microdata** | **5 (6.2%)** | **22 (25.6%)** |
 
-**Two regions with comparable collection capacity differ by a factor of two and a
-half in whether the data ever leaves the collector, and by a factor of ten in
-whether it is simply published.** The mechanism is visible in the register rather
-than inferred, and it has two parts.
+Restricting to commercial firms cuts both figures by more than half and leaves the
+ratio between them intact, slightly wider in fact, 4 to 1 rather than 2.6 to 1. So
+the difference is not only that Africa has more nonprofits.
 
-The first is the survey infrastructure. Afrobarometer operates through a national
-partner in each country and each partner's national dataset is published. The Arab
-world's equivalent is centralised: Arab Barometer works through a small number of
-regional hubs and the Arab Opinion Index runs from one institute in Doha. Both
-release data, but three organisations releasing is not thirty-four.
+**But the mechanism is the same one either way, and it is a contractual condition
+rather than a property of the firms.** Of the 22 African for-profit organisations
+releasing microdata, **17 are Afrobarometer national partners**: private
+consultancies that publish their national dataset because the network requires it
+as a condition of the contract. The other five are Amini, Intron Health, Zindi,
+Kartoza and Spatial Collective. Strip the Afrobarometer condition out and
+commercial African data disclosure is five organisations in 86, which is 5.8% and
+statistically indistinguishable from MENA's 6.2%.
 
-The second is the population cohort infrastructure, and it is the larger part.
-Sub-Saharan Africa has a dense network of health and demographic surveillance
-systems, sites that enumerate a bounded population continuously and have done for
-decades: Agincourt since 1992, AHRI since 2000, Navrongo and Rakai since 1988,
-the MRC Unit in The Gambia since 1947. Almost all of them release data to
-researchers. **North Africa and the Levant have no HDSS sites at all.** What MENA
-has instead is a small number of national biobank cohorts, PERSIAN and Golestan
-in Iran, Qatar Biobank, the Moroccan Genome Project, which are large but
-centralised and release on application rather than openly.
+**That is the finding, and it is sharper than the one the previous revision
+reported.** Commercial data collectors in MENA and in Sub-Saharan Africa disclose
+at almost identical, very low rates. The regional difference in openness is
+produced almost entirely by two things Africa has and MENA does not: a distributed
+donor-funded survey network that writes publication into its partner contracts,
+and a dense layer of nonprofit and academic population cohorts. Neither is a fact
+about African firms.
 
-### A warning about this comparison
-
-Africa has now had three extension rounds and MENA one. The ratio between the two
-columns has been stable across all of them, between 2.5 and 3 to 1, which is the
-main reason to believe it rather than to treat it as a construction artefact. But
-the African column is better enumerated than the MENA one and both are better
-enumerated than any other periphery region, and the gap did widen at the round
-that added seventeen African population cohorts against four MENA ones. That ratio
-reflects a real asymmetry, checked before it was written up: the HDSS model is a
-sub-Saharan African institution and the search for North African equivalents
-returned none. The four MENA cohorts were added specifically so the comparison
-would not rest on a layer built for one region only.
-
-The MENA figure also rests on coding 108 organisations, most of them privately
-held, and `microdata_access` for a private firm is the least verifiable field in
+The MENA figure rests on coding 109 organisations, most of them privately held,
+and `microdata_access` for a private firm is the least verifiable field in
 `companies.csv`. Treat the direction as well supported and the magnitude as
 approximate.
+
+### In six regions not one commercial collector discloses
+
+Running the same cut across every region gives `output/tab31_disclosure_forprofit.txt`:
+
+| Region | For-profit firms | Releasing microdata |
+|---|---|---|
+| SSA | 86 | 25.6% |
+| NOAM | 223 | 19.3% |
+| EEU | 12 | 16.7% |
+| WEU | 137 | 11.7% |
+| MENA | 81 | 6.2% |
+| CHN | 23 | 4.3% |
+| SAS, SEA, LAC, OCE, EAS, RUS | 74 combined | **0%** |
+
+**In six of twelve regions, not one for-profit organisation in this register makes
+record-level data available to an outside researcher.** Those six hold 74
+commercial collectors between them. The access gap documented in section 2 is at
+its most complete in exactly the places the register has enumerated least, so the
+figure should be read as a lower bound on openness and an upper bound on
+confidence.
 
 ## 2. Three different gaps, with different causes
 
@@ -769,6 +798,18 @@ changed it twice. Earlier revisions said that **not one** exited firm in this
 register had record-level data a researcher could obtain. There are now two, so
 the claim is stated as a rate: 2 of 75 exits, 2.7%, against 28.4% among operating
 firms.
+
+**Every exit in this register but one is a for-profit.** 74 of the 75 exited
+organisations are commercial; the exception is the INDEPTH Network. No academic
+or governmental organisation in the register has ever closed, and exactly one
+nonprofit has. Part of that is real, since a university institute does not get
+acquired and a statutory body does not run out of runway. Part of it is a coding
+limit worth naming: a nonprofit that quietly stops fieldwork leaves no
+announcement, and this register finds exits through acquisition notices and
+insolvency reporting. **Section 14 is therefore an analysis of the commercial
+layer, and the survivorship correction it supports applies to for-profit firms
+only.** Do not read the absence of academic exits as evidence that academic
+collection is durable.
 
 **A second cell in this table has moved for a reason worth naming.** The venture
 and private-equity share among exits was 8.6% when the exit sample was 70 firms
