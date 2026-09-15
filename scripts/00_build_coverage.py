@@ -48,7 +48,7 @@ FOCUS = {
  "arab_barometer":"MENA","lapop":"LAC","gamaan":"MENA","ipm_belarus":"RUS",
  "laterite":"SSA","sagaci_research":"SSA","latinobarometro":"LAC",
  "central_asia_barometer":"RUS","serasa_experian":"LAC","uk_biobank":"WEU",
- "iranpoll":"MENA","zogby_research":"MENA","african_languages_lab":"SSA",
+ "iranpoll":"MENA","zogby_research":"MENA","african_languages_lab":"SSA","wefarm":"SSA",
 }
 
 # Hand-coded rows. Order follows REGIONS.
@@ -155,6 +155,17 @@ MANUAL = {
  "apcc":[0,0,0,0,0,1,3,0,0,0,0,0],
  "aphrc":[0,0,0,0,0,1,3,0,0,0,0,0],
  "datafirst":[0,0,0,0,0,1,3,0,0,0,0,0],
+ # Multi-country African field agencies and institutes.
+ "iprocure":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "codesria":[0,0,0,0,0,1,3,0,0,0,0,0],
+ "aerc":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "pasgr":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "zeparu":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "bidpa":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "cires_ivoire":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "iese_mozambique":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "zipar":[0,0,0,0,0,0,3,0,0,0,0,0],
+ "nextier_spd":[0,0,0,0,0,0,3,0,0,0,0,0],
 }
 
 def scope_adjust(vec, scope, hq_idx):

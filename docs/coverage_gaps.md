@@ -1,7 +1,7 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **786 operating
-firms** in the register. A further 71 organisations that no longer operate are
+All figures come from `scripts/03_coverage_gaps.R` over the **805 operating
+firms** in the register. A further 75 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
 The grid is 12 regions by 27 substantive domains, so 324 cells.
@@ -15,23 +15,31 @@ Provider counts by region:
 
 | Region | Any presence | Substantial | HQ'd there | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| NOAM | 421 | 406 | 255 | 155 | 88 |
-| SSA | 416 | 298 | 149 | 142 | 115 |
-| WEU | 405 | 355 | 156 | 142 | 67 |
-| MENA | 390 | 268 | 108 | 106 | 55 |
-| SAS | 336 | 248 | 16 | 80 | 43 |
-| SEA | 329 | 215 | 11 | 62 | 36 |
-| LAC | 319 | 211 | 14 | 57 | 36 |
-| EEU | 317 | 200 | 16 | 49 | 39 |
-| OCE | 309 | 200 | 6 | 29 | 34 |
-| EAS | 306 | 198 | 15 | 41 | 33 |
+| SSA | 435 | 317 | 167 | 152 | 125 |
+| NOAM | 426 | 411 | 255 | 154 | 92 |
+| WEU | 411 | 359 | 156 | 142 | 71 |
+| MENA | 395 | 271 | 109 | 106 | 58 |
+| SAS | 340 | 251 | 16 | 80 | 46 |
+| SEA | 333 | 218 | 11 | 62 | 39 |
+| LAC | 323 | 214 | 14 | 57 | 39 |
+| EEU | 321 | 203 | 16 | 49 | 42 |
+| OCE | 313 | 203 | 6 | 29 | 37 |
+| EAS | 310 | 201 | 15 | 41 | 36 |
 | CHN | 236 | 120 | 23 | 13 | 19 |
-| RUS | 210 | 137 | 17 | 23 | 26 |
+| RUS | 214 | 137 | 17 | 23 | 26 |
 
 The spread between the best and worst served region is 1.8 to 1 on presence but
-11.9 to 1 on direct human contact. Sub-Saharan Africa is now second on every
-column except headquarters, which is a reversal of what earlier revisions of this
-document reported and is explained below.
+11.7 to 1 on direct human contact.
+
+**Sub-Saharan Africa is now first on presence and on research-accessible
+providers, and first on direct human contact.** That is a complete reversal of
+what the first revisions of this document reported, and the honest reading is
+that it says more about how the register was built than about the industry. Three
+successive African rounds have gone looking specifically for organisations the
+earlier construction missed, and no comparable effort has been made for Latin
+America, South Asia, Southeast Asia or Eastern Europe. **Read the African row as
+the closest thing here to a properly enumerated region, and every row below it as
+a lower bound.**
 
 Nominal coverage is far more even than real collection, because the firms that
 make coverage look global are the ones that never touch a person.
@@ -50,14 +58,14 @@ disclosure.
 
 | | MENA | Sub-Saharan Africa |
 |---|---|---|
-| Operating organisations headquartered there | 108 | 149 |
-| Field agencies among them | 49 | 80 |
-| Organisations releasing microdata | 22 (20.4%) | 82 (55.0%) |
-| Releasing it openly rather than on application | 5 | 56 |
-| Field agencies releasing microdata | 13 of 49 | 59 of 80 |
+| Operating organisations headquartered there | 109 | 167 |
+| Field agencies among them | 49 | 85 |
+| Organisations releasing microdata | 23 (21.1%) | 91 (54.5%) |
+| Releasing it openly rather than on application | 6 | 60 |
+| Field agencies releasing microdata | 13 of 49 | 61 of 85 |
 
-**Two regions with comparable collection capacity differ by a factor of nearly
-three in whether the data ever leaves the collector, and by a factor of eleven in
+**Two regions with comparable collection capacity differ by a factor of two and a
+half in whether the data ever leaves the collector, and by a factor of ten in
 whether it is simply published.** The mechanism is visible in the register rather
 than inferred, and it has two parts.
 
@@ -79,13 +87,16 @@ centralised and release on application rather than openly.
 
 ### A warning about this comparison
 
-The gap widened in this revision because this revision added seventeen African
-population cohorts and only four MENA ones. That ratio reflects a real asymmetry
-in the world, which was checked before the round was written up: the HDSS model
-is a sub-Saharan African institution and the search for North African equivalents
-returned none. But the four MENA cohorts were added specifically so the
-comparison would not rest on a layer built for one region and not the other, and a
-reader should know that the number moved partly because of what was looked for.
+Africa has now had three extension rounds and MENA one. The ratio between the two
+columns has been stable across all of them, between 2.5 and 3 to 1, which is the
+main reason to believe it rather than to treat it as a construction artefact. But
+the African column is better enumerated than the MENA one and both are better
+enumerated than any other periphery region, and the gap did widen at the round
+that added seventeen African population cohorts against four MENA ones. That ratio
+reflects a real asymmetry, checked before it was written up: the HDSS model is a
+sub-Saharan African institution and the search for North African equivalents
+returned none. The four MENA cohorts were added specifically so the comparison
+would not rest on a layer built for one region only.
 
 The MENA figure also rests on coding 108 organisations, most of them privately
 held, and `microdata_access` for a private firm is the least verifiable field in
@@ -101,10 +112,10 @@ where card networks, receipt apps and data aggregators are dense and legally
 permitted. That means North America above all, then Western Europe and parts of East Asia.
 Everywhere else, spending is inferred rather than observed.
 
-**Access gaps** are the binding constraint. 58 of 324 cells (17.9%) have at least
+**Access gaps** are the binding constraint. 55 of 324 cells (17.0%) have at least
 one provider but none whose record-level data a researcher can obtain, and the
 share has barely moved as the register has grown from under 500 organisations to
-over 850. The access ratio sits near 0.20 in every region except Sub-Saharan
+over 880. The access ratio sits near 0.20 in every region except Sub-Saharan
 Africa, where it is 0.39 for the reason given in section 1, so roughly four fifths
 of the industry's coverage is commercially closed almost everywhere you look. The
 gap is not that nobody collects. It is that collection and disclosure have come
@@ -168,14 +179,17 @@ a public professional profile, which is not the labour force.
 
 ## 4. Where the firms are
 
-52.3% of operating firms are headquartered in North America or Western Europe,
+51.1% of operating firms are headquartered in North America or Western Europe,
 down from 62.7% before MENA, African, Russian and Chinese enumeration was
-deepened, and still 72.7% among venture and private-equity backed firms. The
+deepened, and still 72.2% among venture and private-equity backed firms. The
 share has moved up and down as successive regions were extended; read it as
 roughly half rather than as a trend.
 
-Of the 90 firms founded in 2019 or later with a known founding year, 40 are North
-American, 20 Sub-Saharan African, 14 MENA, 12 Western European and 4 elsewhere. A
+Of the 89 operating firms founded in 2019 or later with a known founding year, 40
+are North American, 19 Sub-Saharan African, 14 MENA, 12 Western European and 4
+elsewhere. The African count fell by one between revisions because Okra, added as
+a 2019 startup, turned out to have shut down in May 2025 and moved to the exit
+file. A
 third of recent entry in this industry is Middle Eastern or African, which was not
 visible in earlier revisions of this register and is not an artifact of looking
 harder: these are firms with funding rounds, products and named customers.
@@ -213,7 +227,7 @@ Ownership varies systematically by region. Venture capital backs 108 firms in
 North America and 45 in Western Europe, against 66 across MENA, Africa, South
 Asia, Southeast Asia, East Asia and mainland China combined. Outside the core, the
 register is dominated by owner-managed independents and by nonprofits and academic
-centres: 82 of the 375 operating firms headquartered outside North America and
+centres: 91 of the 394 operating firms headquartered outside North America and
 Western Europe, and they supply a disproportionate share of every firm whose
 record-level data a researcher can reach at all.
 
@@ -695,9 +709,9 @@ who speaks to a person.
 
 ## 14. What the register can only see because it includes the dead
 
-71 of the 857 organisations here no longer operate: 58 absorbed into an acquirer,
-13 wound down or insolvent. Every coverage and gap table above excludes them and
-describes the 786 operating firms. This section is about what they show.
+75 of the 880 organisations here no longer operate: 58 absorbed into an acquirer,
+17 wound down or insolvent. Every coverage and gap table above excludes them and
+describes the 805 operating firms. This section is about what they show.
 
 ### Consolidation is not evenly distributed
 
@@ -735,10 +749,10 @@ network and a thirty-year relationship with a national statistical office.
 
 ### Exits are overwhelmingly Northern
 
-80.3% of exited firms were headquartered in North America or Western Europe,
-against 52.3% of operating ones. Of 71 exits, 41 were North American, 16 Western
-European, 11 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
-13 years for firms that were absorbed and about 10 for firms that failed.
+77.3% of exited firms were headquartered in North America or Western Europe,
+against 51.1% of operating ones. Of 75 exits, 41 were North American, 17 Western
+European, 14 Sub-Saharan African, 2 MENA and 1 South Asian. Median lifespan was
+13 years for firms that were absorbed and 9 for firms that failed.
 
 ### What survivorship would have hidden
 
@@ -746,15 +760,26 @@ Composition of the register with and without the firms that left:
 
 | | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| Operating only | 718 | 57.2% | 35.8% | 56.4% | 25.8% |
-| Including exits | 788 | 59.4% | 33.4% | 55.2% | 23.6% |
-| Exited firms only | 70 | 81.4% | 8.6% | 42.9% | **1.4%** |
+| Operating only | 805 | 51.1% | 33.0% | 58.0% | 28.4% |
+| Including exits | 880 | 53.3% | 31.4% | 56.8% | 26.2% |
+| Exited firms only | 75 | 77.3% | 13.3% | 44.0% | **2.7%** |
 
 The last cell is the one that matters, and successive extension rounds have
 changed it twice. Earlier revisions said that **not one** exited firm in this
 register had record-level data a researcher could obtain. There are now two, so
-the claim is stated as a rate: 2 of 71 exits, 2.8%, against 27.9% among operating
+the claim is stated as a rate: 2 of 75 exits, 2.7%, against 28.4% among operating
 firms.
+
+**A second cell in this table has moved for a reason worth naming.** The venture
+and private-equity share among exits was 8.6% when the exit sample was 70 firms
+and is 13.3% now that it is 75. The five exits added since were all venture-backed
+African startups: Okra, iProcure, Sendy, WeFarm and, earlier, WhereIsMyTransport.
+The gap against operating firms survives, 13.3% against 33.0%, but it was
+overstated, and the reason is that the register found Northern acquisitions before
+it found Southern failures. Acquisitions are announced by the acquirer and
+Southern failures are reported, if at all, in regional trade press. **Any
+survivorship correction built from English-language sources will understate
+failure in the periphery and should be assumed to be doing so here.**
 
 The two exceptions are instructive in opposite directions. Knowledge Networks
 built the first probability-based US internet panel in 1998 and was sold to GfK in
@@ -1053,7 +1078,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 258 rows covering 111 of the 857 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 880 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on

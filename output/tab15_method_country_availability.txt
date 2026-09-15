@@ -3,23 +3,23 @@ Country availability of each collection method out of 194
 ==============================================================
                      countries_with_any provider_country_pairs
 --------------------------------------------------------------
-admin_records               194                 3,368         
-api_partner                 194                 9,044         
-remote_sensing              194                 9,694         
-sensor_hardware             194                 2,984         
+admin_records               194                 3,438         
+api_partner                 194                 9,052         
+remote_sensing              194                 9,695         
+sensor_hardware             194                 2,985         
 signals_rf                  194                  776          
-web_scrape                  194                 7,315         
-face_to_face                193                 4,417         
-telephone                   193                 3,094         
+web_scrape                  194                 7,368         
+face_to_face                193                 4,597         
+telephone                   193                 3,237         
 crowd_task                  181                 1,370         
-crowd_sensor                162                  514          
+crowd_sensor                162                  515          
 device_passive              162                 1,549         
-online_panel                162                 4,334         
+online_panel                162                 4,496         
 expert_elicit               159                 1,307         
 mobile_app                  150                  728          
-transaction                 113                 1,137         
+transaction                 113                 1,148         
 clinical_records             83                  349          
-environmental_sample         64                   68          
-telecom_network              64                  101          
+telecom_network              70                  118          
+environmental_sample         64                   69          
 acoustic                     7                    7           
 --------------------------------------------------------------

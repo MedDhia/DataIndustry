@@ -989,3 +989,75 @@ organisation whose record-level data a researcher can still obtain, and the two 
 work in opposite ways: Knowledge Networks survived because an acquirer wanted the panel
 as a going concern, INDEPTH because its repository was already open and its member sites
 own their own data. Neither turned on the original consent.
+
+## Third African round: exits, statistical institutions, and a correction
+
+Africa had 188 organisations across 46 countries and a lopsided profile: 103 of them
+field agencies, 26 countries with exactly one, and only 11 exits in 188. This round
+added 23 and corrected one, taking Africa to 210.
+
+**A row added two rounds ago was already wrong when it was added.** Okra, the Nigerian
+open finance API, was recorded as active. It shut down in May 2025, returning about 5
+million dollars of unspent capital to investors, and its co-founder had left for a UK
+firm a month later. The row is now `wound_down` with `ceased_year` 2025. Nothing in the
+process caught this: the row was added from working knowledge of the sector without a
+status check, which is exactly the failure mode the founder verification passes were run
+to remove from the ownership layer and had not been run against `companies.csv`.
+
+**The African exit record was thinner than the African failure record.** Three more
+exits were added from the 2023 to 2025 shakeout: iProcure, placed under KPMG
+administration on 26 April 2024 after 17.2 million dollars raised; Sendy, in
+administration from 2023; and WeFarm, which closed after taking about 32 million
+dollars. Copia Global and Zumi were considered and excluded as commerce businesses whose
+data was a byproduct rather than the product.
+
+**Pan-African statistical institutions were a missing class.** AFRISTAT, created on 21
+September 1993 by the Franc Zone states and now covering 22 members from Bamako;
+STATAFRIC, the African Union Institute for Statistics created in January 2013 and
+headquartered in Tunis; and the African Development Bank statistics department, which
+runs the Africa Information Highway. These sit in `collection_software` alongside the UK
+Data Service and DataFirst: they harmonise and release rather than collect directly, and
+the codebook's treatment of that category already covers the distinction.
+
+Also added: SANBI, which nearly doubles the thinnest domain in the register from 5
+biodiversity providers to 6; Africa's Talking, Onafriq and Cellulant, which give Africa
+its first telecom and payments data rows; CODESRIA, AERC, PASGR and the Institute for
+Security Studies; Nextier SPD; and eight national policy institutes in countries that
+had exactly one organisation, which brings single-organisation countries down from 26 to
+20.
+
+Sources retrieved:
+
+- Nairametrics, inside the fall of Okra — https://nairametrics.com/2025/07/11/inside-the-fall-of-okra-how-africas-most-promising-open-banking-startup-shut-down-at-its-peak/
+- Technext, Okra blames its shutdown on market challenges — https://technext24.com/2025/07/04/okra-blames-shutdown-on-market-challenge/
+- TechCabal, Kenyan agritech startup iProcure enters administration — https://techcabal.com/2024/05/02/iprocure-under-administration/
+- TechCabal, Copia enters administration — https://techcabal.com/2024/05/24/copia-enters-into-administration-after-failing-to-secure-funding/
+- Launch Base Africa, Kenya hit by a new wave of startup shutdowns — https://launchbaseafrica.com/2024/06/07/kenya-hit-by-new-wave-of-high-profile-startup-shutdowns/
+- AFRISTAT, introduction — https://www.afristat.org/contenu/psta/en/introduction.htm
+- STATAFRIC, about the African Union Institute for Statistics — https://statafric.au.int/index.php/en/about
+- African Union, Pan-African Institute for Statistics — https://au.int/en/ea/statistics/statafric
+- SANBI, about us — https://www.sanbi.org/about/
+
+**What the round changed in the findings, and one thing it undermines.**
+
+Sub-Saharan Africa is now first in the section 1 density table on presence, on direct
+human contact and on research-accessible providers, ahead of North America on all three.
+Section 1 now says plainly what that means: three African rounds have run against one
+MENA round and none for Latin America, South Asia, Southeast Asia or Eastern Europe, so
+the African row is the closest thing in this register to a properly enumerated region and
+every row below it should be read as a lower bound. The MENA and Africa disclosure ratio
+held steady at about 2.5 to 1 across the round, which is the main reason to believe it.
+
+The finding this round weakens is in section 14. The venture and private-equity share
+among exited firms was reported at 8.6% against 33% for operating firms. It is now 13.3%,
+because the five exits added since were all venture-backed African startups. The gap
+survives but it was overstated, and the mechanism is worth stating because it will
+recur: acquisitions are announced by the acquirer and reach the English-language trade
+press, while failures in the periphery are reported in regional outlets or not at all.
+**Any survivorship correction built from English-language sources will understate failure
+outside the core.** Section 14 now says so.
+
+Stale figures in the README caveats were also corrected in this pass. They still
+described a 424-organisation register with 22,102 country rows and an evidence
+distribution of 29 A, 153 B and 242 C. The current values are 880, 33,393, and 129 A, 401
+B, 350 C.

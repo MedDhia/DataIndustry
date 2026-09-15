@@ -3,7 +3,7 @@ Survivorship: register composition with and without exited firms
 ============================================================================
                  n  pct_NOAM_WEU pct_vc_pe pct_direct_contact pct_accessible
 ----------------------------------------------------------------------------
-operating only  786    52.300     33.600         58.100           27.900    
-including exits 857    54.600     31.500         56.900           25.800    
-exited firms    71     80.300      8.500         43.700           2.800     
+operating only  805    51.100       33             58             28.400    
+including exits 880    53.300     31.400         56.800           26.200    
+exited firms    75     77.300     13.300           44             2.700     
 ----------------------------------------------------------------------------

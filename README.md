@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 857 organisations that collect data as their business, 786 of them
+A register of 880 organisations that collect data as their business, 805 of them
 still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
@@ -12,12 +12,12 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 857 | The register. One row per organisation, 25 variables. 786 operating, 71 exited. |
-| `data/coverage_spatial.csv` | 857 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 880 | The register. One row per organisation, 25 variables. 805 operating, 75 exited. |
+| `data/coverage_spatial.csv` | 880 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
 | `data/grant_programmes.csv` | 15 | Recurring open-call funding instruments a data collection venture could apply to. Purposive, not a census. |
-| `data/coverage_country.csv` | 33,065 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
+| `data/coverage_country.csv` | 33,393 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 23 | Industry segment taxonomy. |
 | `data/domains.csv` | 27 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
@@ -55,7 +55,7 @@ Both startups and established firms are included by design, and so are firms tha
 no longer exist. 56 organisations in the register have exited: 46 absorbed into
 an acquirer, 10 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
-uses the 786 operating firms only**; `scripts/05_history.R` analyses the rest.
+uses the 805 operating firms only**; `scripts/05_history.R` analyses the rest.
 
 128 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
 bloc or mainland China, the areas where enumeration effort has been concentrated.
@@ -191,16 +191,16 @@ derived matrices and is sourced by the analysis scripts.
 Read these before using the data for anything load-bearing.
 
 1. **Coding confidence is uneven and recorded.** The `evidence_level` variable is
-   A for 29 records, B for 153 and C for 242. Level C is analyst judgement:
+   A for 129 records, B for 401 and C for 350. Level C is analyst judgement:
    reliable for segment, region and modality, not reliable for founding dates or
    counts. Filter on it.
-2. **Region coverage is partly rule-derived.** 113 of 424 spatial rows are
-   hand-coded; the remaining 311 come from the documented segment templates in
+2. **Region coverage is partly rule-derived.** 149 of 880 spatial rows are
+   hand-coded; the remaining 731 come from the documented segment templates in
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
-3. **Country coverage is mostly model output.** Of 22,102 company-country rows,
-   2,316 are observed (`manual` or `hq_exact`) and 19,786 are allocated by the
+3. **Country coverage is mostly model output.** Of 33,393 company-country rows,
+   2,847 are observed (`manual` or `hq_exact`) and 30,546 are allocated by the
    model in `scripts/00_build_country_coverage.py`. Country aggregates are
    usable; an individual firm's country row is not citable. Report nothing from
    the country regressions that does not hold in the first two columns of
