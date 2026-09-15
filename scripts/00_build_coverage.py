@@ -149,6 +149,12 @@ MANUAL = {
  "mas_palestine":[0,0,0,0,0,3,0,0,0,0,0,0],
  "aarc_international":[0,0,0,0,0,3,1,0,0,0,0,0],
  "albayan_iraq":[0,0,0,0,0,3,0,0,0,0,0,0],
+ # African population cohort networks: multi-region field agencies, so the
+ # all-zero field_agency template would otherwise leave them with no coverage.
+ "indepth_network":[0,0,0,0,0,1,3,2,1,0,0,0],
+ "apcc":[0,0,0,0,0,1,3,0,0,0,0,0],
+ "aphrc":[0,0,0,0,0,1,3,0,0,0,0,0],
+ "datafirst":[0,0,0,0,0,1,3,0,0,0,0,0],
 }
 
 def scope_adjust(vec, scope, hq_idx):

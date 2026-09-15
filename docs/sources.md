@@ -903,3 +903,89 @@ headquartered in-country. InstaDeep, the Tunis-founded AI company acquired by Bi
 an organisation whose business is collecting data, and admitting it would widen the
 register's inclusion rule. National statistical offices remain excluded as a class, with
 the Egyptian cabinet's IDSC the one inherited exception.
+
+## Second African round: population cohorts and research infrastructure
+
+The first African round added survey agencies. This one adds the layer underneath them:
+health and demographic surveillance systems, national household panels, and the
+university institutes that release African microdata. Thirty-one organisations, taking
+Africa to 188 across 46 countries.
+
+**HDSS sites were the largest remaining hole in the register.** A health and demographic
+surveillance system enumerates a geographically bounded population continuously,
+recording births, deaths and migrations through repeated household visits, and several
+have been running for decades. By any measure of volume of primary collection about
+people, they are among the largest operations on the continent, and the register had
+none. Added: Agincourt (1992), AHRI in KwaZulu-Natal (2000, as the Africa Centre
+Demographic Information System), Navrongo and Rakai (both 1988), the MRC Unit The Gambia
+(1947), Manhiça (1996), Ifakara (1956), KEMRI-Wellcome at Kilifi (1989), Nouna (1992),
+Kersa (2007), Malawi-Liverpool-Wellcome (1995), CIDRZ (2001), APHRC's Nairobi Urban HDSS
+(operational since 2002), and SAPRIN, which standardises three South African sites
+covering over 250,000 people.
+
+**One exit and its successor.** The INDEPTH Network coordinated close to fifty sites and
+ran a shared open data repository. Its influence waned after governance disputes from
+2018 and its disappearance prompted the creation of the African Population Cohorts
+Consortium, launched in Cape Town in May 2024 with more than 40 cohorts from 16 countries
+and a secretariat funded by a £4m Wellcome investment and hosted by the Science for
+Africa Foundation. Both are in the register, INDEPTH as wound down in 2021 and APCC as
+active.
+
+**Research infrastructure that releases microdata:** the HSRC, which runs the South
+African Social Attitudes Survey; SALDRU at UCT, which runs the National Income Dynamics
+Study; DataFirst, the African microdata service; ISSER at the University of Ghana, which
+runs the Ghana Socioeconomic Panel Survey with Yale and Northwestern across four waves
+since 2009; EPRC in Kampala, ESRF in Dar es Salaam and CSEA in Abuja. Plus H3Africa,
+PesaCheck, Freshly Ground Insights and Columinate.
+
+Sources retrieved:
+
+- AHRI, health and demographic surveillance system — https://www.ahri.org/hdss/
+- SAPRIN, AHRI node — https://saprin.mrc.ac.za/ahri.html
+- APHRC, Nairobi Urban Health and Demographic Surveillance System — https://aphrc.org/project/nairobi-urban-health-and-demographic-surveillance-system-nuhdss/
+- Global Health Action, health and demographic surveillance systems in low and middle income countries — https://www.tandfonline.com/doi/full/10.1080/16549716.2021.1974676
+- Science for Africa Foundation, the birth of the African Population Cohorts Consortium — https://scienceforafrica.foundation/media-center/new-era-health-research-birth-african-population-cohorts-consortium
+- Oxford Centre for Tropical Medicine, Africa launches landmark consortium — https://www.tropicalmedicine.ox.ac.uk/news/africa-launches-landmark-consortium-to-transform-health-research-with-longitudinal-data
+- ISSER, Ghana Socioeconomic Panel Survey data portal — https://dataportal-isser.ug.edu.gh/
+- Yale Economic Growth Center, the ISSER-Northwestern-Yale Ghana Panel Survey — http://egcenter.economics.yale.edu/egc-isser-ghana-panel-survey
+- American Journal of Epidemiology, the PERSIAN Cohort study design — https://academic.oup.com/aje/article/187/4/647/4627678
+- BMC Public Health, the PERSIAN cohort biobank — https://link.springer.com/article/10.1186/s12889-025-25006-y
+- American Journal of Epidemiology, Qatar Biobank cohort study — https://academic.oup.com/aje/article-abstract/188/8/1420/5423748
+
+**Four MENA cohorts were added in the same round, deliberately.** Adding seventeen
+open-access African cohorts and nothing comparable in MENA would have widened the
+disclosure gap reported in section 1 through this document's own construction rather
+than through evidence. So the MENA equivalents were searched for and added: PERSIAN
+(Iran, 2014, four components across 22 regions, 200,000 participant target), the Golestan
+Cohort (Iran, 2004, 50,000 participants), Qatar Biobank (2012) and the Moroccan Genome
+Project.
+
+The search also produced a clean negative result worth recording: **the HDSS model is a
+sub-Saharan African institution and North Africa has no sites of that kind.** The
+literature listing HDSS sites names Pholela, Gwembe, Navrongo, Agincourt, Farafenni,
+Butajira, Niakhar, Matlab and Balabgarh, none of them in Egypt, Morocco, Tunisia, Algeria
+or Libya. What MENA has instead is a small number of centralised national biobanks that
+release on application. That is a difference in institutional form, and it is the second
+and larger part of the mechanism behind the MENA and Africa disclosure gap.
+
+**What the round changed in the findings.**
+
+Sub-Saharan Africa is now second to North America on every column of the section 1
+density table except headquarters, with 149 headquartered organisations, 142 doing direct
+human contact and 115 research-accessible, and an access ratio of 0.39. The MENA and
+Africa disclosure comparison sharpens to 20.4% against 55.0% of organisations releasing
+microdata, and 5 against 56 releasing openly rather than on application. Section 1 now
+carries an explicit warning that the gap widened partly because of what this round
+chose to look for.
+
+Migration and displacement rises from 18 providers to 31, entirely from the surveillance
+sites: an HDSS records in- and out-migration as routine, which makes African population
+cohorts the largest single source of primary migration data in the register. Face-to-face
+interviewing in Sub-Saharan Africa rises from 70 providers to 89, six times the North
+American figure.
+
+Section 14's exception count goes from one to two. INDEPTH is the second exited
+organisation whose record-level data a researcher can still obtain, and the two cases
+work in opposite ways: Knowledge Networks survived because an acquirer wanted the panel
+as a going concern, INDEPTH because its repository was already open and its member sites
+own their own data. Neither turned on the original consent.

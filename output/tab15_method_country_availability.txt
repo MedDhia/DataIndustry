@@ -3,22 +3,22 @@ Country availability of each collection method out of 194
 ==============================================================
                      countries_with_any provider_country_pairs
 --------------------------------------------------------------
-admin_records               194                 3,349         
-api_partner                 194                 9,039         
+admin_records               194                 3,368         
+api_partner                 194                 9,044         
 remote_sensing              194                 9,694         
 sensor_hardware             194                 2,984         
 signals_rf                  194                  776          
-web_scrape                  194                 7,310         
-face_to_face                193                 4,346         
-telephone                   193                 3,044         
-crowd_task                  180                 1,361         
+web_scrape                  194                 7,315         
+face_to_face                193                 4,417         
+telephone                   193                 3,094         
+crowd_task                  181                 1,370         
 crowd_sensor                162                  514          
 device_passive              162                 1,549         
-online_panel                162                 4,293         
-expert_elicit               157                 1,298         
+online_panel                162                 4,334         
+expert_elicit               159                 1,307         
 mobile_app                  150                  728          
 transaction                 113                 1,137         
-clinical_records             83                  330          
+clinical_records             83                  349          
 environmental_sample         64                   68          
 telecom_network              64                  101          
 acoustic                     7                    7           
