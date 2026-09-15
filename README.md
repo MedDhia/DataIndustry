@@ -45,9 +45,9 @@ settings.
 
 Deliberately covered together:
 
-- **Solicited collection** — survey firms, panels, field agencies, crowd tasking,
+- **Solicited collection** - survey firms, panels, field agencies, crowd tasking,
   AI training data, expert networks. Someone is asked something.
-- **Observational collection** — brokers, web scraping, location and telemetry,
+- **Observational collection** - brokers, web scraping, location and telemetry,
   earth observation, health records, trade and financial traces. Something is
   captured.
 
@@ -94,7 +94,7 @@ agencies, are in and are coded `state_linked`.
   owned by the state pollster VCIOM.
 - **52.1%** of firms are headquartered in North America or Western Europe, down
   from 62.7% as enumeration deepened. Of 62 firms founded since 2019, 31 are
-  North American but **21 are MENA or African** — a third of new entry.
+  North American but **21 are MENA or African** - a third of new entry.
 - What the new firms build splits by region. Not one of the 21 MENA and African
   startups is in survey and insights; 12 of the 37 Northern ones are. The North
   is building new ways to ask questions (AI-moderated interviewing, population

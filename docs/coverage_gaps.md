@@ -405,7 +405,7 @@ scraping, and it is the same floor everywhere.
 | United States | 239 | 92 | 48 |
 | United Kingdom | 205 | 79 | 41 |
 | France | 200 | 75 | 38 |
-| Median country | 70 | — | — |
+| Median country | 70 | - | - |
 | Turkmenistan | 30 | **0** | 6 |
 | Kyrgyzstan | 39 | 7 | 9 |
 | Eritrea | 24 | 8 | 4 |
@@ -444,8 +444,8 @@ Read the last two columns against each other. They disagree completely on the
 restrictive-regime coefficient, −0.21 against +0.03. The difference is not in
 the data, it is in what is being counted.
 
-Columns 1 and 2 both count **primary collectors** — firms that make direct
-contact with a person — and differ only in whether the row was hand-coded or
+Columns 1 and 2 both count **primary collectors** - firms that make direct
+contact with a person - and differ only in whether the row was hand-coded or
 allocated. Column 3 counts **all providers** on observed rows. Until this
 revision, the sensitivity check in this repository compared columns 1 and 3,
 which mixes the basis restriction together with a change of outcome. That is not

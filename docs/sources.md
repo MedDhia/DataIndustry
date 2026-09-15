@@ -11,47 +11,47 @@ reason the variable exists.
 ## Retrieved during construction
 
 Market structure and scale of the insights industry:
-- ESOMAR, Global Top Insights Companies — https://esomar.org/p/global-top-insights-companies
-- Research World, Inside the $153bn Insights Industry — https://researchworld.com/articles/inside-the-153bn-insights-industry
-- ESOMAR Directory, data collection specialists — https://directory.esomar.org/service/57-data-collection-management/
+- ESOMAR, Global Top Insights Companies - https://esomar.org/p/global-top-insights-companies
+- Research World, Inside the $153bn Insights Industry - https://researchworld.com/articles/inside-the-153bn-insights-industry
+- ESOMAR Directory, data collection specialists - https://directory.esomar.org/service/57-data-collection-management/
 
 AI training data and annotation:
-- Teahose, Scale AI Competitors 2026 — https://www.teahose.com/guides/scale-ai-competitors
-- Mercor, Best AI Model Training Platforms 2026 — https://www.mercor.com/resources/experts/ai-model-training-platforms/
-- HeroHunt, Top 10 Data Annotators for AI Labs 2026 — https://www.herohunt.ai/blog/top-10-data-annotators-for-ai-labs-2026-benchmark/
+- Teahose, Scale AI Competitors 2026 - https://www.teahose.com/guides/scale-ai-competitors
+- Mercor, Best AI Model Training Platforms 2026 - https://www.mercor.com/resources/experts/ai-model-training-platforms/
+- HeroHunt, Top 10 Data Annotators for AI Labs 2026 - https://www.herohunt.ai/blog/top-10-data-annotators-for-ai-labs-2026-benchmark/
 
 Data brokerage:
-- Grand View Research, Data Broker Market Report 2025-2033 — https://www.grandviewresearch.com/industry-analysis/data-broker-market-report
-- The Business Research Company, Data Broker Global Market Report 2026 — https://www.thebusinessresearchcompany.com/report/data-broker-global-market-report
+- Grand View Research, Data Broker Market Report 2025-2033 - https://www.grandviewresearch.com/industry-analysis/data-broker-market-report
+- The Business Research Company, Data Broker Global Market Report 2026 - https://www.thebusinessresearchcompany.com/report/data-broker-global-market-report
 
 Alternative data, earth observation and location:
-- Bright Data, Best Alternative Data Providers — https://brightdata.com/blog/web-data/best-alternative-data-providers
-- Datarade, Satellite Imagery Data Providers — https://datarade.ai/data-categories/satellite-imagery-data/providers
-- XR Tech Group, Top Satellite Imagery Companies — https://xrtechgroup.com/top-satellite-imagery-providers/
+- Bright Data, Best Alternative Data Providers - https://brightdata.com/blog/web-data/best-alternative-data-providers
+- Datarade, Satellite Imagery Data Providers - https://datarade.ai/data-categories/satellite-imagery-data/providers
+- XR Tech Group, Top Satellite Imagery Companies - https://xrtechgroup.com/top-satellite-imagery-providers/
 
 Panels and sample supply:
-- SG Analytics, Top Survey Panel Providers 2026 — https://www.sganalytics.com/blog/market-research-survey-panel-providers/
-- Toluna, Global Panel Engagement — https://tolunacorporate.com/toluna-start-platform/global-panel-engagement/
-- Greenbook, Proprietary Panels — https://www.greenbook.org/market-research-firms/proprietary-panels
+- SG Analytics, Top Survey Panel Providers 2026 - https://www.sganalytics.com/blog/market-research-survey-panel-providers/
+- Toluna, Global Panel Engagement - https://tolunacorporate.com/toluna-start-platform/global-panel-engagement/
+- Greenbook, Proprietary Panels - https://www.greenbook.org/market-research-firms/proprietary-panels
 
 Field data collection platforms:
-- SurveyCTO, Data Collection Apps — https://www.surveycto.com/data-collection-quality/data-collection-apps/
-- Data For Development, Mobile Data Collection Tools — https://datafordev.com/10-tools-to-build-and-deploy-mobile-data-collection-projects/
+- SurveyCTO, Data Collection Apps - https://www.surveycto.com/data-collection-quality/data-collection-apps/
+- Data For Development, Mobile Data Collection Tools - https://datafordev.com/10-tools-to-build-and-deploy-mobile-data-collection-projects/
 
 Health real-world data:
-- IntuitionLabs, Pharma Real-World Data Platforms 2026 Vendor Comparison — https://intuitionlabs.ai/articles/pharma-real-world-data-platforms-comparison
-- CB Insights, Real-World Data Providers — https://www.cbinsights.com/esp/healthcare-&-life-sciences/health-data-&-analytics/real-world-data
+- IntuitionLabs, Pharma Real-World Data Platforms 2026 Vendor Comparison - https://intuitionlabs.ai/articles/pharma-real-world-data-platforms-comparison
+- CB Insights, Real-World Data Providers - https://www.cbinsights.com/esp/healthcare-&-life-sciences/health-data-&-analytics/real-world-data
 
 Regional survey networks:
-- Afrobarometer, About — https://www.afrobarometer.org/about/
-- Afrobarometer Round 9 Survey Manual — https://www.afrobarometer.org/wp-content/uploads/2022/07/AB_R9.-Survey-Manual_eng_FINAL_20jul22.pdf
-- Arab Barometer, FAQ — https://www.arabbarometer.org/frequently-asked-questions/
-- Arab Barometer, Survey Data — https://www.arabbarometer.org/survey-data/
+- Afrobarometer, About - https://www.afrobarometer.org/about/
+- Afrobarometer Round 9 Survey Manual - https://www.afrobarometer.org/wp-content/uploads/2022/07/AB_R9.-Survey-Manual_eng_FINAL_20jul22.pdf
+- Arab Barometer, FAQ - https://www.arabbarometer.org/frequently-asked-questions/
+- Arab Barometer, Survey Data - https://www.arabbarometer.org/survey-data/
 
 Constraints on collection in closed and conflict settings:
-- Journal of Peace Research, Challenges of surveying in war zones: lessons from Ukraine — https://academic.oup.com/jpr/article/62/6/2128/8435444
-- Survey Practice, Conducting Survey Research in Conflict Zones — https://www.surveypractice.org/article/92925-processes-and-challenges-associated-with-conducting-survey-research-in-conflict-zones
-- SIPRI, Challenges of Data Collection in Conflict-affected Areas — https://www.sipri.org/publications/2022/sipri-insights-peace-and-security/challenges-data-collection-conflict-affected-areas-case-study-liptako-gourma-region
+- Journal of Peace Research, Challenges of surveying in war zones: lessons from Ukraine - https://academic.oup.com/jpr/article/62/6/2128/8435444
+- Survey Practice, Conducting Survey Research in Conflict Zones - https://www.surveypractice.org/article/92925-processes-and-challenges-associated-with-conducting-survey-research-in-conflict-zones
+- SIPRI, Challenges of Data Collection in Conflict-affected Areas - https://www.sipri.org/publications/2022/sipri-insights-peace-and-security/challenges-data-collection-conflict-affected-areas-case-study-liptako-gourma-region
 
 ## Standing sources worth checking before reuse
 
@@ -64,16 +64,16 @@ which name local fieldwork contractors that appear nowhere else.
 
 ## Retrieved for the MENA and Africa expansion
 
-- TechBehemoths, market research agencies in Saudi Arabia — https://techbehemoths.com/companies/market-research/saudi-arabia
-- Infomine Research, market research companies covering the UAE — https://infomineresearch.com/a-list-of-some-of-the-best-market-research-companies-covering-the-uae/
-- TechCabal Insights, Africa's AI Builders: 207 startups — https://insights.techcabal.com/africas-ai-builders-207-startups-and-one-continents-bet/
-- Geoawesome, Top 11 geospatial start-ups in Africa — https://geoawesome.com/top-11-geospatial-start-ups-in-africa/
-- StartupList Africa, data annotation startups — https://www.startuplist.africa/industries/data-annotation
-- Space in Africa, Rwanda geospatial hub — https://spaceinafrica.com/2025/12/19/rwanda-deploys-ai-powered-geospatial-hub-to-transform-agricultural-monitoring/
-- AfriKSurvey — https://afriksurvey.com/
-- Agence Ecofin, Ipsos African bureau — https://www.agenceecofin.com/marketing/2302-36125-l-institut-ipsos-ouvre-un-bureau-africain-et-lance-l-etude-des-marches-d-afrique
-- Citi Newsroom, credit scoring in Africa and Ghana's experience — https://citinewsroom.com/2025/05/credit-scoring-in-africa-evolution-applications-and-ghanas-experience/
-- AFIS, alternative data and African financial inclusion — https://www.afis.africa/en/alternative-data-a-saving-grace-for-african-financial-inclusion-but-a-perfect-storm-without-controls/
+- TechBehemoths, market research agencies in Saudi Arabia - https://techbehemoths.com/companies/market-research/saudi-arabia
+- Infomine Research, market research companies covering the UAE - https://infomineresearch.com/a-list-of-some-of-the-best-market-research-companies-covering-the-uae/
+- TechCabal Insights, Africa's AI Builders: 207 startups - https://insights.techcabal.com/africas-ai-builders-207-startups-and-one-continents-bet/
+- Geoawesome, Top 11 geospatial start-ups in Africa - https://geoawesome.com/top-11-geospatial-start-ups-in-africa/
+- StartupList Africa, data annotation startups - https://www.startuplist.africa/industries/data-annotation
+- Space in Africa, Rwanda geospatial hub - https://spaceinafrica.com/2025/12/19/rwanda-deploys-ai-powered-geospatial-hub-to-transform-agricultural-monitoring/
+- AfriKSurvey - https://afriksurvey.com/
+- Agence Ecofin, Ipsos African bureau - https://www.agenceecofin.com/marketing/2302-36125-l-institut-ipsos-ouvre-un-bureau-africain-et-lance-l-etude-des-marches-d-afrique
+- Citi Newsroom, credit scoring in Africa and Ghana's experience - https://citinewsroom.com/2025/05/credit-scoring-in-africa-evolution-applications-and-ghanas-experience/
+- AFIS, alternative data and African financial inclusion - https://www.afis.africa/en/alternative-data-a-saving-grace-for-african-financial-inclusion-but-a-perfect-storm-without-controls/
 
 Gulf coverage remains the weakest part of the MENA enumeration. Directory
 listings for Saudi Arabia and the UAE return large numbers of small agencies that
@@ -85,16 +85,16 @@ the Levant, where independent firms publish and are citable.
 
 ## Retrieved for the Russia bloc and China expansion
 
-- The Bell, market research and Russia's spy obsession — https://en.thebell.io/market-research-is-the-latest-victim-of-russias-spy-obsession/
-- Alphabet, foreign companies banned from researching the Russian market — https://alphabet.pro/en/news/foreign-companies-banned-from-researching-the-russian-market
-- MrWeb Daily Research News, Russian legal change forces Ipsos divestment — https://www.mrweb.com/drno/news39492.htm
-- Research Live, Ipsos sells majority stake in Russian business — https://www.research-live.com/article/news/ipsos-sells-majority-of-stake-in-russian-business/id/5147316
-- NV Business, Nielsen to sell Russian division — https://english.nv.ua/business/nielsen-to-sell-russian-division-citing-regulatory-and-legal-pressures-50607242.html
-- VCIOM corporate profile — https://wciom.com/about
-- China Briefing, China's foreign investment action plan 2026 — https://www.china-briefing.com/news/china-foreign-investment-action-plan-2026/
-- MS Advisory, China negative list for foreign investment 2026 update — https://msadvisory.com/china-negative-list-explainer-foreign-investment/
-- IBISWorld, market research in China industry analysis 2026 — https://www.ibisworld.com/china/industry/market-research/992/
-- QuestMobile Research Institute — https://www.questmobile.com.cn/en/research-info/
+- The Bell, market research and Russia's spy obsession - https://en.thebell.io/market-research-is-the-latest-victim-of-russias-spy-obsession/
+- Alphabet, foreign companies banned from researching the Russian market - https://alphabet.pro/en/news/foreign-companies-banned-from-researching-the-russian-market
+- MrWeb Daily Research News, Russian legal change forces Ipsos divestment - https://www.mrweb.com/drno/news39492.htm
+- Research Live, Ipsos sells majority stake in Russian business - https://www.research-live.com/article/news/ipsos-sells-majority-of-stake-in-russian-business/id/5147316
+- NV Business, Nielsen to sell Russian division - https://english.nv.ua/business/nielsen-to-sell-russian-division-citing-regulatory-and-legal-pressures-50607242.html
+- VCIOM corporate profile - https://wciom.com/about
+- China Briefing, China's foreign investment action plan 2026 - https://www.china-briefing.com/news/china-foreign-investment-action-plan-2026/
+- MS Advisory, China negative list for foreign investment 2026 update - https://msadvisory.com/china-negative-list-explainer-foreign-investment/
+- IBISWorld, market research in China industry analysis 2026 - https://www.ibisworld.com/china/industry/market-research/992/
+- QuestMobile Research Institute - https://www.questmobile.com.cn/en/research-info/
 
 Two regulatory facts from these sources drive the `restrictive_research_regime`
 coding for Russia and China, and are rules about who may collect rather than
@@ -112,20 +112,20 @@ commercially visible end of both markets.
 
 ## Retrieved for the startup expansion
 
-- Arab News, MENA startup funding H1 2026 — https://www.arabnews.com/node/2651443/business-economy
-- entARABI, startup investments July 2026 — https://entarabi.com/en/2026/08/startup-investments-reach-3-3-billion-in-july-2026-as-uae-leads-ai-funding-and-saudi-arabia-diversifies-deal-activity/
-- CNTXT AI — https://www.cntxt.tech/
-- Tech In Africa, Egypt tops Africa H1 2026 startup funding — https://www.techinafrica.com/egypt-tops-africas-h1-2026-startup-funding-but-nigeria-reclaims-the-equity-crown/
-- Startup Map Africa, top agritech startups 2026 — https://startupmapafrica.com/blog/top-agritech-startups-africa-2026
-- TechCabal, African Languages Lab launches Mansa — https://techcabal.com/2026/09/08/mansa-ai-african-languages/
-- TechCabal, Google speech dataset for African languages — https://techcabal.com/2026/02/02/google-joins-push-to-localise-ai-for-african-languages-with-speech-database/
-- IT News Africa, Intron launches voice AI for Africa with 24 languages — https://www.itnewsafrica.com/2026/03/intron-launches-voice-ai-for-africa-with-24-languages/
-- Startup List Africa, Intron Health profile — https://www.startuplist.africa/startups/intron-health
-- Lacuna Fund, language datasets — https://lacunafund.org/datasets/language/index.html
-- TechCrunch, Aaru Series A at a $1bn headline valuation — https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation
-- Research Live, Accenture invests in synthetic audience startup Aaru — https://www.research-live.com/article/news/accenture-invests-in-synthetic-audience-startup-aaru/id/5136643
-- FishDog, synthetic research platforms 2026 market map — https://fish.dog/news/synthetic-research-platforms-the-2026-market-map
-- Tracxn, drone services startups in Africa — https://tracxn.com/d/explore/drone-services-startups-in-africa
+- Arab News, MENA startup funding H1 2026 - https://www.arabnews.com/node/2651443/business-economy
+- entARABI, startup investments July 2026 - https://entarabi.com/en/2026/08/startup-investments-reach-3-3-billion-in-july-2026-as-uae-leads-ai-funding-and-saudi-arabia-diversifies-deal-activity/
+- CNTXT AI - https://www.cntxt.tech/
+- Tech In Africa, Egypt tops Africa H1 2026 startup funding - https://www.techinafrica.com/egypt-tops-africas-h1-2026-startup-funding-but-nigeria-reclaims-the-equity-crown/
+- Startup Map Africa, top agritech startups 2026 - https://startupmapafrica.com/blog/top-agritech-startups-africa-2026
+- TechCabal, African Languages Lab launches Mansa - https://techcabal.com/2026/09/08/mansa-ai-african-languages/
+- TechCabal, Google speech dataset for African languages - https://techcabal.com/2026/02/02/google-joins-push-to-localise-ai-for-african-languages-with-speech-database/
+- IT News Africa, Intron launches voice AI for Africa with 24 languages - https://www.itnewsafrica.com/2026/03/intron-launches-voice-ai-for-africa-with-24-languages/
+- Startup List Africa, Intron Health profile - https://www.startuplist.africa/startups/intron-health
+- Lacuna Fund, language datasets - https://lacunafund.org/datasets/language/index.html
+- TechCrunch, Aaru Series A at a $1bn headline valuation - https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation
+- Research Live, Accenture invests in synthetic audience startup Aaru - https://www.research-live.com/article/news/accenture-invests-in-synthetic-audience-startup-aaru/id/5136643
+- FishDog, synthetic research platforms 2026 market map - https://fish.dog/news/synthetic-research-platforms-the-2026-market-map
+- Tracxn, drone services startups in Africa - https://tracxn.com/d/explore/drone-services-startups-in-africa
 
 Two enumeration cautions for this round. African Languages Lab does not publicly
 state a headquarters; it is coded to the founding research base with
@@ -139,17 +139,17 @@ so the startup layer over-represents the venture-funded end of new entry.
 
 ## Retrieved for the historical layer
 
-- Wikipedia, Cambridge Analytica — https://en.wikipedia.org/wiki/Cambridge_Analytica
-- Fast Company, the afterlife of Cambridge Analytica and its data — https://www.fastcompany.com/90381366/the-mysterious-afterlife-of-cambridge-analytica-and-its-trove-of-data
-- Research Live, the making of Synovate — https://www.research-live.com/article/features/the-making-of-synovate/id/4005704
-- Research Live, Synovate expands across Africa with Steadman buy — https://www.research-live.com/article/news/synovate-expands-across-africa-with-steadman-buy/id/3004847
-- Ipsos, completion of the acquisition of Synovate — https://www.ipsos.com/en-us/ipsos-announces-successful-completion-acquisition-synovate-creating-third-largest-global-market
-- MrWeb, TNS Millward Brown and other Kantar brands to go — https://www.mrweb.com/drno/news27724.htm
-- FTC, order prohibits X-Mode Social and Outlogic from selling sensitive location data — https://www.ftc.gov/news-events/news/press-releases/2024/01/ftc-order-prohibits-data-broker-x-mode-social-outlogic-selling-sensitive-location-data
-- FTC, final order with X-Mode and successor Outlogic — https://www.ftc.gov/news-events/news/press-releases/2024/04/ftc-finalizes-order-x-mode-successor-outlogic-prohibiting-it-sharing-or-selling-sensitive-location
-- Global Fleet, car data industry exits: Wejo and Otonomo — https://www.globalfleet.com/en/smart-mobility/global/features/car-data-industry-still-hasnt-struck-oil-two-prominent-market-exits-show
-- FranaWiki, Acxiom Corporation history — https://honors.uca.edu/wiki/index.php?title=Acxiom_Corporation
-- Wikipedia, Harte Hanks — https://en.wikipedia.org/wiki/Harte_Hanks
+- Wikipedia, Cambridge Analytica - https://en.wikipedia.org/wiki/Cambridge_Analytica
+- Fast Company, the afterlife of Cambridge Analytica and its data - https://www.fastcompany.com/90381366/the-mysterious-afterlife-of-cambridge-analytica-and-its-trove-of-data
+- Research Live, the making of Synovate - https://www.research-live.com/article/features/the-making-of-synovate/id/4005704
+- Research Live, Synovate expands across Africa with Steadman buy - https://www.research-live.com/article/news/synovate-expands-across-africa-with-steadman-buy/id/3004847
+- Ipsos, completion of the acquisition of Synovate - https://www.ipsos.com/en-us/ipsos-announces-successful-completion-acquisition-synovate-creating-third-largest-global-market
+- MrWeb, TNS Millward Brown and other Kantar brands to go - https://www.mrweb.com/drno/news27724.htm
+- FTC, order prohibits X-Mode Social and Outlogic from selling sensitive location data - https://www.ftc.gov/news-events/news/press-releases/2024/01/ftc-order-prohibits-data-broker-x-mode-social-outlogic-selling-sensitive-location-data
+- FTC, final order with X-Mode and successor Outlogic - https://www.ftc.gov/news-events/news/press-releases/2024/04/ftc-finalizes-order-x-mode-successor-outlogic-prohibiting-it-sharing-or-selling-sensitive-location
+- Global Fleet, car data industry exits: Wejo and Otonomo - https://www.globalfleet.com/en/smart-mobility/global/features/car-data-industry-still-hasnt-struck-oil-two-prominent-market-exits-show
+- FranaWiki, Acxiom Corporation history - https://honors.uca.edu/wiki/index.php?title=Acxiom_Corporation
+- Wikipedia, Harte Hanks - https://en.wikipedia.org/wiki/Harte_Hanks
 
 Enumerating exits is structurally harder than enumerating survivors, and the bias
 runs one way. A firm that closes stops publishing, is delisted from directories,
@@ -163,13 +163,13 @@ small-agency entry and exit that exists.
 
 ## Retrieved for the MENA and Africa exit layer
 
-- Mergr, Ipsos acquires Markinor — https://mergr.com/transaction/ipsos-acquires-markinor-pty
-- Research Live, TNS acquires majority stake in Nigeria's Research and Marketing Services — https://www.research-live.com/article/news/tns-acquires-majority-stake-in-nigerias-research-and-marketing-services/id/4004298
-- Research Live, Ipsos acquires West African market research business (Omedia) — https://www.research-live.com/article/news/ipsos-acquires-west-african-market-research-business/id/5115013
-- Euronext, Ipsos acquires Omedia from Médiamétrie — https://live.euronext.com/en/products/equities/company-news/2023-07-20-ipsos-acquires-omedia-mediametrie
-- Nielsen, expansion in Africa with the acquisition of Repucom Africa from TransAfrica Media — https://www.nielsen.com/news-center/2017/nielsen-expands-global-sports-business-by-acquiring-repucom-africa-from-transafrica-media/
-- Research Live, Nielsen acquires Repucom Africa — https://www.research-live.com/article/news/nielsen-acquires-repucom-africa/id/5031542
-- Clutch, Kantar AMRB company information — https://clutch.co/profile/kantar-amrb
+- Mergr, Ipsos acquires Markinor - https://mergr.com/transaction/ipsos-acquires-markinor-pty
+- Research Live, TNS acquires majority stake in Nigeria's Research and Marketing Services - https://www.research-live.com/article/news/tns-acquires-majority-stake-in-nigerias-research-and-marketing-services/id/4004298
+- Research Live, Ipsos acquires West African market research business (Omedia) - https://www.research-live.com/article/news/ipsos-acquires-west-african-market-research-business/id/5115013
+- Euronext, Ipsos acquires Omedia from Médiamétrie - https://live.euronext.com/en/products/equities/company-news/2023-07-20-ipsos-acquires-omedia-mediametrie
+- Nielsen, expansion in Africa with the acquisition of Repucom Africa from TransAfrica Media - https://www.nielsen.com/news-center/2017/nielsen-expands-global-sports-business-by-acquiring-repucom-africa-from-transafrica-media/
+- Research Live, Nielsen acquires Repucom Africa - https://www.research-live.com/article/news/nielsen-acquires-repucom-africa/id/5031542
+- Clutch, Kantar AMRB company information - https://clutch.co/profile/kantar-amrb
 
 A note on why this layer is shaped the way it is. Every MENA and African exit
 above was established from an acquisition announcement, because acquirers
@@ -189,21 +189,21 @@ on a specific office rather than on an ownership structure.
 
 ## Retrieved for the collection-frontier expansion
 
-- QuickNode, top DePIN projects 2026 — https://www.quicknode.com/builders-guide/best/top-10-decentralized-physical-infrastructure-networks
-- Orochi Network, top DePIN projects and trends 2026 — https://orochi.network/blog/top-10-de-pin-projects-and-emerging-trends-in-2026
-- Biobot Analytics, CDC selects Biobot to expand national wastewater testing — https://biobot.io/press-release/u-s-centers-for-disease-control-and-prevention-selects-biobot-analytics-to-expand-national-wastewater-monitoring/
-- CDC, about the national wastewater monitoring program — https://www.cdc.gov/wastewater/about/index.html
-- WastewaterSCAN, about — https://www.wastewaterscan.org/about
-- Verily, wastewater epidemiology — https://verily.com/solutions/public-health/wastewater
-- Boston Globe, Massachusetts to end its Biobot wastewater contract — https://www.bostonglobe.com/2026/07/04/metro/wastewater-monitoring-biobot-massachusetts/
-- SpaceNews, NRO agreements with six commercial providers of space-based RF data — https://spacenews.com/nro-signs-agreements-with-six-commercial-providers-of-space-based-rf-data/
-- Hubble Network, how HawkEye 360 finds RF signals from space — https://hubble.com/community/guides/how-hawkeye-360-finds-rf-signals-from-space/
-- NatureMetrics, bioacoustics — https://naturemetrics.com/bioacoustics
-- NatureMetrics, ecoacoustics and eDNA in Manombo reserve, Madagascar — https://www.naturemetrics.com/news/ecoacoustics-edna-bring-new-biodiversity-monitoring-to-manombo-reserve-madagascar
-- Rainforest Connection — https://rfcx.org/
-- Fugro, combining bioacoustics and eDNA in marine survey — https://www.fugro.com/news/long-reads/2026/holistic-biodiversity-monitoring-combining-bioacoustics-and-edna-to-deepen-our-understanding-of-marine-life
-- Clarity Movement Co — https://www.clarity.io/
-- Aclima, science — https://aclima.earth/science
+- QuickNode, top DePIN projects 2026 - https://www.quicknode.com/builders-guide/best/top-10-decentralized-physical-infrastructure-networks
+- Orochi Network, top DePIN projects and trends 2026 - https://orochi.network/blog/top-10-de-pin-projects-and-emerging-trends-in-2026
+- Biobot Analytics, CDC selects Biobot to expand national wastewater testing - https://biobot.io/press-release/u-s-centers-for-disease-control-and-prevention-selects-biobot-analytics-to-expand-national-wastewater-monitoring/
+- CDC, about the national wastewater monitoring program - https://www.cdc.gov/wastewater/about/index.html
+- WastewaterSCAN, about - https://www.wastewaterscan.org/about
+- Verily, wastewater epidemiology - https://verily.com/solutions/public-health/wastewater
+- Boston Globe, Massachusetts to end its Biobot wastewater contract - https://www.bostonglobe.com/2026/07/04/metro/wastewater-monitoring-biobot-massachusetts/
+- SpaceNews, NRO agreements with six commercial providers of space-based RF data - https://spacenews.com/nro-signs-agreements-with-six-commercial-providers-of-space-based-rf-data/
+- Hubble Network, how HawkEye 360 finds RF signals from space - https://hubble.com/community/guides/how-hawkeye-360-finds-rf-signals-from-space/
+- NatureMetrics, bioacoustics - https://naturemetrics.com/bioacoustics
+- NatureMetrics, ecoacoustics and eDNA in Manombo reserve, Madagascar - https://www.naturemetrics.com/news/ecoacoustics-edna-bring-new-biodiversity-monitoring-to-manombo-reserve-madagascar
+- Rainforest Connection - https://rfcx.org/
+- Fugro, combining bioacoustics and eDNA in marine survey - https://www.fugro.com/news/long-reads/2026/holistic-biodiversity-monitoring-combining-bioacoustics-and-edna-to-deepen-our-understanding-of-marine-life
+- Clarity Movement Co - https://www.clarity.io/
+- Aclima, science - https://aclima.earth/science
 
 Token-incentivised sensing is reported almost entirely by crypto trade press,
 which has an interest in the sector it covers. Contributor counts, road-coverage
@@ -214,17 +214,17 @@ attribution rather than as coded variables. The coded fields for these firms
 
 ## Retrieved for the MENA and Africa frontier-method round
 
-- AirQo, about — https://airqo.net/about-us
-- AirQo sensor kit, HardwareX — https://www.sciencedirect.com/science/article/pii/S2468067223000895
-- Clean Air Fund, AI-powered air quality monitoring in Africa — https://www.cleanairfund.org/news-item/ai-powered-tools-air-quality-monitoring-africa/
-- TechCabal, Aerobotics raises $17m Series B — https://techcabal.com/2021/01/22/aerobotics-south-africa-agritech-satellite-drones-17m-series-b-naspers/
-- GSMA, UjuziKilimo IoT soil health solution — https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/blog/boosting-soil-health-in-kenya-ujuzikilimos-iot-solution/
-- Kenya Times, UjuziKilimo smartphone-based soil testing — https://thekenyatimes.com/sci-tech/technology/kenya-launches-worlds-first-smartphone-soil-testing-device/
-- Startup Map Africa, top agritech startups in Africa 2026 (RoboCare) — https://startupmapafrica.com/blog/top-agritech-startups-africa-2026
-- African Parks, EarthRanger — https://www.africanparks.org/future-conservation-earthranger-and-african-parks
-- Euronews, how eDNA is changing wildlife monitoring in Africa — https://www.euronews.com/2026/05/25/from-fur-to-data-how-edna-is-revolutionising-wildlife-monitoring-in-africa
-- Falcon Eye Drones — https://www.feds.group/about
-- Falcon 3D — https://www.falcon3dme.com/
+- AirQo, about - https://airqo.net/about-us
+- AirQo sensor kit, HardwareX - https://www.sciencedirect.com/science/article/pii/S2468067223000895
+- Clean Air Fund, AI-powered air quality monitoring in Africa - https://www.cleanairfund.org/news-item/ai-powered-tools-air-quality-monitoring-africa/
+- TechCabal, Aerobotics raises $17m Series B - https://techcabal.com/2021/01/22/aerobotics-south-africa-agritech-satellite-drones-17m-series-b-naspers/
+- GSMA, UjuziKilimo IoT soil health solution - https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/blog/boosting-soil-health-in-kenya-ujuzikilimos-iot-solution/
+- Kenya Times, UjuziKilimo smartphone-based soil testing - https://thekenyatimes.com/sci-tech/technology/kenya-launches-worlds-first-smartphone-soil-testing-device/
+- Startup Map Africa, top agritech startups in Africa 2026 (RoboCare) - https://startupmapafrica.com/blog/top-agritech-startups-africa-2026
+- African Parks, EarthRanger - https://www.africanparks.org/future-conservation-earthranger-and-african-parks
+- Euronews, how eDNA is changing wildlife monitoring in Africa - https://www.euronews.com/2026/05/25/from-fur-to-data-how-edna-is-revolutionising-wildlife-monitoring-in-africa
+- Falcon Eye Drones - https://www.feds.group/about
+- Falcon 3D - https://www.falcon3dme.com/
 
 A negative result worth recording. A direct search for MENA-headquartered
 environmental monitoring startups covering air quality, water quality and
@@ -238,17 +238,17 @@ to find, though this register cannot fully separate the two.
 
 ## Retrieved for the MENA and Africa earth observation round
 
-- Space in Africa, South African companies supply 280+ products on Transporter-17 — https://spaceinafrica.com/2026/07/16/south-african-space-companies-supply-over-280-products-in-spacex-transporter-17-launch/
-- Dragonfly Aerospace — https://dragonflyaerospace.com/dragonfly-aerospace-keeping-the-south-african-space-dream-alive/
-- Mordor Intelligence, Africa satellite-based earth observation market — https://www.mordorintelligence.com/industry-reports/africa-satellite-based-earth-observation-market
-- Digital Earth Africa — https://digitalearthafrica.org/en_za/
-- Tech In Africa, African countries with satellites 2026 — https://www.techinafrica.com/african-countries-with-satellites-full-list-uses-2026/
-- Defence Blog, Israeli firm unveils satellite that spots 25-centimetre details (EROS NOVA) — https://defence-blog.com/israeli-firm-unveils-satellite-that-spots-25-centimeter-details/
-- Wikipedia, EROS satellite series — https://en.wikipedia.org/wiki/EROS_(satellite)
-- TRT World, Fergani sends another homegrown satellite into space — https://www.trtworld.com/article/412caf6edd6a
-- Google Cloud, Taranis drone imaging and AI — https://cloud.google.com/customers/taranis
-- AgFunderNews, Agritask Series A for farm data in frontier markets — https://agfundernews.com/brief-agritask-closes-8-5m-series-a-to-advance-farm-data-in-frontier-markets
-- Calcalist, Israeli agritech startups leading crop innovation — https://www.calcalistech.com/ctechnews/article/r1e6jlnji
+- Space in Africa, South African companies supply 280+ products on Transporter-17 - https://spaceinafrica.com/2026/07/16/south-african-space-companies-supply-over-280-products-in-spacex-transporter-17-launch/
+- Dragonfly Aerospace - https://dragonflyaerospace.com/dragonfly-aerospace-keeping-the-south-african-space-dream-alive/
+- Mordor Intelligence, Africa satellite-based earth observation market - https://www.mordorintelligence.com/industry-reports/africa-satellite-based-earth-observation-market
+- Digital Earth Africa - https://digitalearthafrica.org/en_za/
+- Tech In Africa, African countries with satellites 2026 - https://www.techinafrica.com/african-countries-with-satellites-full-list-uses-2026/
+- Defence Blog, Israeli firm unveils satellite that spots 25-centimetre details (EROS NOVA) - https://defence-blog.com/israeli-firm-unveils-satellite-that-spots-25-centimeter-details/
+- Wikipedia, EROS satellite series - https://en.wikipedia.org/wiki/EROS_(satellite)
+- TRT World, Fergani sends another homegrown satellite into space - https://www.trtworld.com/article/412caf6edd6a
+- Google Cloud, Taranis drone imaging and AI - https://cloud.google.com/customers/taranis
+- AgFunderNews, Agritask Series A for farm data in frontier markets - https://agfundernews.com/brief-agritask-closes-8-5m-series-a-to-advance-farm-data-in-frontier-markets
+- Calcalist, Israeli agritech startups leading crop innovation - https://www.calcalistech.com/ctechnews/article/r1e6jlnji
 
 Two scope decisions in this round, both recorded because they change what the
 counts mean. South African satellite component makers (CubeSpace, NewSpace
@@ -269,15 +269,15 @@ accordingly.
 
 ## Retrieved for the ownership and funding layer
 
-- Afrobarometer, our funding partners — https://www.afrobarometer.org/support/our-funding-partners/
-- Afrobarometer, USAID must save Afrobarometer say former Africa Bureau officials — https://www.afrobarometer.org/articles/usaid-must-save-afrobarometer-say-former-africa-bureau-officials/
-- ACLED, press office FAQs listing funders — https://acleddata.com/press-office-faqs
-- ACLED, grant from CRAF'd — https://acleddata.com/press/press-release-new-grant-crafd-maintain-global-conflict-monitoring-and-amplify-local-data
-- Digital Earth Africa, Helmsley Charitable Trust funding — https://digitalearthafrica.org/en_za/digital-earth-africa-secures-additional-funding-from-the-leona-m-and-harry-b-helmsley-charitable-trust-to-deepen-real-world-impact/
-- Digital Earth Africa, about — https://digitalearthafrica.org/en_za/about-digital-earth-africa/
-- Makerere University, AirQo wins $1.3m Google AI Impact grant — https://news.mak.ac.ug/2019/05/maks-airqo-project-is-a-us1-3m-google-ai-impact-grantee/
-- 256 Business News, $3m Google grant expands AirQo to five countries — https://www.256businessnews.com/usd-3-million-google-grant-takes-makereres-airqo-air-quality-monitors-to-5-african-countries/
-- Ipsos, sale of 80% of Ipsos Comcon — https://finance.yahoo.com/news/press-release-sale-80-ipsos-174700045.html
+- Afrobarometer, our funding partners - https://www.afrobarometer.org/support/our-funding-partners/
+- Afrobarometer, USAID must save Afrobarometer say former Africa Bureau officials - https://www.afrobarometer.org/articles/usaid-must-save-afrobarometer-say-former-africa-bureau-officials/
+- ACLED, press office FAQs listing funders - https://acleddata.com/press-office-faqs
+- ACLED, grant from CRAF'd - https://acleddata.com/press/press-release-new-grant-crafd-maintain-global-conflict-monitoring-and-amplify-local-data
+- Digital Earth Africa, Helmsley Charitable Trust funding - https://digitalearthafrica.org/en_za/digital-earth-africa-secures-additional-funding-from-the-leona-m-and-harry-b-helmsley-charitable-trust-to-deepen-real-world-impact/
+- Digital Earth Africa, about - https://digitalearthafrica.org/en_za/about-digital-earth-africa/
+- Makerere University, AirQo wins $1.3m Google AI Impact grant - https://news.mak.ac.ug/2019/05/maks-airqo-project-is-a-us1-3m-google-ai-impact-grantee/
+- 256 Business News, $3m Google grant expands AirQo to five countries - https://www.256businessnews.com/usd-3-million-google-grant-takes-makereres-airqo-air-quality-monitors-to-5-african-countries/
+- Ipsos, sale of 80% of Ipsos Comcon - https://finance.yahoo.com/news/press-release-sale-80-ipsos-174700045.html
 
 The asymmetry in this layer is worth stating because it shapes what can be
 concluded. Grant-funded organisations publish their funders, often on a dedicated
@@ -292,14 +292,14 @@ it.
 
 ## Retrieved for the MENA and Africa founder and funder round
 
-- Arab Barometer, Amaney Jamal profile listing grant sources — https://www.arabbarometer.org/experts/amaney-jamal-phd/
-- Wikipedia, Arab Barometer — https://en.wikipedia.org/wiki/Arab_Barometer
-- CDD-Ghana, FAQs listing collaborating funders — https://cddgh.org/faq/
-- PCPSR, about us — https://pcpsr.org/en/about-psr-page
-- Wikipedia, Palestinian Center for Policy and Survey Research — https://en.wikipedia.org/wiki/Palestinian_Center_for_Policy_and_Survey_Research
-- Twaweza, team and partners — https://twaweza.org/about-us/team-and-partners/
-- Twaweza, our governance — https://twaweza.org/programme/our-governance/
-- Hewlett Foundation, pledge to strengthen African think tanks — https://hewlett.org/newsroom/hewlett-and-partners-pledge-30-million-to-strengthen-african-think-tanks/
+- Arab Barometer, Amaney Jamal profile listing grant sources - https://www.arabbarometer.org/experts/amaney-jamal-phd/
+- Wikipedia, Arab Barometer - https://en.wikipedia.org/wiki/Arab_Barometer
+- CDD-Ghana, FAQs listing collaborating funders - https://cddgh.org/faq/
+- PCPSR, about us - https://pcpsr.org/en/about-psr-page
+- Wikipedia, Palestinian Center for Policy and Survey Research - https://en.wikipedia.org/wiki/Palestinian_Center_for_Policy_and_Survey_Research
+- Twaweza, team and partners - https://twaweza.org/about-us/team-and-partners/
+- Twaweza, our governance - https://twaweza.org/programme/our-governance/
+- Hewlett Foundation, pledge to strengthen African think tanks - https://hewlett.org/newsroom/hewlett-and-partners-pledge-30-million-to-strengthen-african-think-tanks/
 
 Founder rows for MENA and African firms are coded at evidence level B or C from
 domain knowledge rather than from a single citable source per person, because
@@ -315,21 +315,21 @@ All seventeen founder attributions originally coded at evidence level C were
 checked against sources. Sixteen were confirmed and upgraded to level A; one was
 removed. Sources used:
 
-- Wikipedia, Stears — https://en.wikipedia.org/wiki/Stears_(company)
-- AU-Startups, founder of the month Yvonne Johnson (Indicina) — https://au-startups.com/2022/06/30/au-startups-founder-of-the-month-yvonne-johnson/
-- Rest of World, AI startup Awarri behind Nigeria's government-backed LLM — https://restofworld.org/2024/nigeria-awarri-ai-startup-llm/
-- Forbes, interview with the entrepreneurs of Laterite — https://www.forbes.com/sites/avrildavid/2011/07/11/building-on-rwandas-economic-breakthrough-an-interview-with-the-entrepreneurs-of-laterite/
-- How we made it in Africa, the journey so far: Eric Rutayisire, Charis UAS — https://www.howwemadeitinafrica.com/the-journey-so-far-eric-rutayisire-ceo-charis-uas/63170/
-- NVIDIA, African startup uses Common Voice for conversational AI (Digital Umuganda) — https://blogs.nvidia.com/blog/2021/07/09/common-voice-conversational-ai/
-- Wikipedia, Rakesh Rajani — https://en.wikipedia.org/wiki/Rakesh_Rajani
-- Africa CEO Forum, Julien Garcier (Sagaci Research) — https://www.theafricaceoforum.com/forum-2026/en/intervenant/julien-garcier/
-- eHealth Africa, the founders' story — https://ehealthafrica.squarespace.com/blog/2018/11/21/ehealth-africa-the-founders-story
-- USIP, in memoriam Masipula Sithole — https://www.usip.org/press/2003/04/memoriam-masipula-sithole
-- Wikipedia, Mawdoo3 — https://en.wikipedia.org/wiki/Mawdoo3
-- Wikipedia, Syrian Center for Policy Research — https://en.wikipedia.org/wiki/Syrian_Center_for_Policy_Research
-- Mozn, about us — https://www.mozn.sa/about-us
-- VentureBeat, the Masakhane project — https://venturebeat.com/business/the-masakhane-project-wants-machine-translation-and-ai-to-transform-africa
-- Makerere CoCIS, AI and Data Science Centre — https://cocis.mak.ac.ug/makerere-launches-ai-and-data-science-centre-to-drive-africas-technological-development/
+- Wikipedia, Stears - https://en.wikipedia.org/wiki/Stears_(company)
+- AU-Startups, founder of the month Yvonne Johnson (Indicina) - https://au-startups.com/2022/06/30/au-startups-founder-of-the-month-yvonne-johnson/
+- Rest of World, AI startup Awarri behind Nigeria's government-backed LLM - https://restofworld.org/2024/nigeria-awarri-ai-startup-llm/
+- Forbes, interview with the entrepreneurs of Laterite - https://www.forbes.com/sites/avrildavid/2011/07/11/building-on-rwandas-economic-breakthrough-an-interview-with-the-entrepreneurs-of-laterite/
+- How we made it in Africa, the journey so far: Eric Rutayisire, Charis UAS - https://www.howwemadeitinafrica.com/the-journey-so-far-eric-rutayisire-ceo-charis-uas/63170/
+- NVIDIA, African startup uses Common Voice for conversational AI (Digital Umuganda) - https://blogs.nvidia.com/blog/2021/07/09/common-voice-conversational-ai/
+- Wikipedia, Rakesh Rajani - https://en.wikipedia.org/wiki/Rakesh_Rajani
+- Africa CEO Forum, Julien Garcier (Sagaci Research) - https://www.theafricaceoforum.com/forum-2026/en/intervenant/julien-garcier/
+- eHealth Africa, the founders' story - https://ehealthafrica.squarespace.com/blog/2018/11/21/ehealth-africa-the-founders-story
+- USIP, in memoriam Masipula Sithole - https://www.usip.org/press/2003/04/memoriam-masipula-sithole
+- Wikipedia, Mawdoo3 - https://en.wikipedia.org/wiki/Mawdoo3
+- Wikipedia, Syrian Center for Policy Research - https://en.wikipedia.org/wiki/Syrian_Center_for_Policy_Research
+- Mozn, about us - https://www.mozn.sa/about-us
+- VentureBeat, the Masakhane project - https://venturebeat.com/business/the-masakhane-project-wants-machine-translation-and-ai-to-transform-africa
+- Makerere CoCIS, AI and Data Science Centre - https://cocis.mak.ac.ug/makerere-launches-ai-and-data-science-centre-to-drive-africas-technological-development/
 
 The one removal: Near East Consulting was attributed to Jamil Rabah. No source
 supports it, and searching surfaced Near East Consulting Group, an unrelated
@@ -347,46 +347,46 @@ were confirmed and upgraded to level A; one was removed. The pass also corrected
 founding years in `companies.csv` and added twenty co-founders and four ownership
 relationships. Sources retrieved:
 
-- Gallup, George H. Gallup founder biography — https://www.gallup.com/corporate/178136/george-gallup.aspx
-- Britannica, American Institute of Public Opinion — https://www.britannica.com/topic/American-Institute-of-Public-Opinion
-- On Think Tanks, Busara Center for Behavioral Economics — https://onthinktanks.org/think-tank/busara-center-for-behavioral-economics-inc/
-- Busara Center, five years of behavioral science — https://medium.com/busara-center-blog/5-years-of-behavioral-science-169bb38d7e47
-- Wikipedia, KONDA Research and Consultancy — https://en.wikipedia.org/wiki/KONDA_Research_and_Consultancy
-- KONDA, about us — https://konda.com.tr/about-us?l=en
-- Wikipedia, Tarhan Erdem — https://en.wikipedia.org/wiki/Tarhan_Erdem
-- Kimbulmus, MetroPOLL founding shareholders — https://kimbulmus.com.tr/metropoll-arastirma-sirketi-kimin-hangi-ulkenin-markasi/
-- Pathfinders Consulting, Hafez Albukari and Yemen beginnings — https://pathfindersconsultancy.com/2017/07/16/our-team/
-- Wikipedia, Jerusalem Media and Communication Centre — https://en.wikipedia.org/wiki/Jerusalem_Media_%26_Communication_Centre
-- Jerusalem Story, Jerusalem Media and Communications Centre — https://www.jerusalemstory.com/en/organization/jerusalem-media-and-communications-centre-jmcc
-- Information International, founders — https://information-international.com/page/37/founders
-- Statistics Lebanon, about us — https://www.statisticslebanonltd.com/node/164
-- GSMA, Jawad Jalal Abbassi — https://www.gsma.com/aboutus/gsma_people/jawad-jalal-abbassi/
-- Geocartography Knowledge Group, about — https://www.geokg.com/en/about/
-- ASTERRA, leadership team — https://asterra.io/about/leadership/
-- NoCamels, Israeli agritech Taranis raises 30 million — https://nocamels.com/2020/07/israel-agritech-taranis-series-c-round/
-- CDD-Ghana, the CDD story — https://cddgh.org/the-cdd-story/
-- Wikipedia, Emmanuel Gyimah-Boadi — https://en.wikipedia.org/wiki/Emmanuel_Gyimah-Boadi
-- Institute for Justice and Reconciliation, our story — https://www.ijr.org.za/our-story/
-- Wikipedia, Charles Villa-Vicencio — https://en.wikipedia.org/wiki/Charles_Villa-Vicencio
-- NOIPolls, founder page — https://www.noi-polls.com/founder
-- Africa Polling Institute, executive director profile — https://africapolling.org/team-member/executive-director/
-- Infotrak, Angela Ambitho profile — https://www.newsline.co.ke/angela-ambitho-from-rising-to-leadership-at-26-to-building-infotrak/
-- Bizcommunity, Ask Afrika founder Andrea Rademeyer — https://www.bizcommunity.com/article/ask-afrika-founder-andrea-rademeyer-chairs-esomar-congress-a-first-for-africa-702962a
-- Plus 94, about us — https://plus94.co.za/about-us/
-- Health Cap, meet the founders of Helium Health — https://healthcap.co/meet-the-founders-adegoke-olubusi-tito-ovia-and-dimeji-sofowora-helium-health/
-- TechCrunch, mPharma raises 35 million — https://techcrunch.com/2022/01/05/mpharma-raises-35million-in-round-participated-by-tinder-co-founders-jam-fund-bharti-executive/
-- Apollo Agriculture, about us — https://www.apolloagriculture.com/about
-- Echoing Green, Jehiel Oliver fellow profile — https://fellows.echoinggreen.org/fellow/jehiel-oliver/
-- Women's World Banking, Rose Goslinga and Thomas Njeru — https://www.womensworldbanking.org/insights/making-finance-work-for-women-for-45-years-rose-goslinga-and-thomas-njeru/
-- Wikipedia, Code for Africa — https://en.wikipedia.org/wiki/Code_for_Africa
-- Acumen, launch of 60 Decibels — https://acumen.org/news/acumen-launches-60-decibels-to-make-lean-data-an-impact-measurement-standard-for-impact-investing/
-- 60 Decibels, Series A financing — https://60decibels.com/insights/60db-raises-series-a-financing/
-- Wikipedia, Aerobotics — https://en.wikipedia.org/wiki/Aerobotics
-- CTA, Brian Bosire profile — https://www.cta.int/en/profile/bosire-brian-sid0a27e9521-2fc7-4a99-bc50-3dbee2ce4d19
-- Global InfoAnalytics, Mussa Dankwah — https://www.globalinfoanalytics.com/mussa-dankwah
-- UNSOM, Mahad Abdullahi Wasuge profile — https://unsom.unmissions.org/en/mahad-abdullahi-wasuge%C2%A0researcher%E2%80%99s-quest-change-somalia%E2%80%99s-governance-landscape
-- Public Policy Institute Uganda, Patrick Wakida profile — https://ppiug.org/profile/1
-- Face2Face Africa, mSurvey transforms market research — https://face2faceafrica.com/article/msurvey-kenya
+- Gallup, George H. Gallup founder biography - https://www.gallup.com/corporate/178136/george-gallup.aspx
+- Britannica, American Institute of Public Opinion - https://www.britannica.com/topic/American-Institute-of-Public-Opinion
+- On Think Tanks, Busara Center for Behavioral Economics - https://onthinktanks.org/think-tank/busara-center-for-behavioral-economics-inc/
+- Busara Center, five years of behavioral science - https://medium.com/busara-center-blog/5-years-of-behavioral-science-169bb38d7e47
+- Wikipedia, KONDA Research and Consultancy - https://en.wikipedia.org/wiki/KONDA_Research_and_Consultancy
+- KONDA, about us - https://konda.com.tr/about-us?l=en
+- Wikipedia, Tarhan Erdem - https://en.wikipedia.org/wiki/Tarhan_Erdem
+- Kimbulmus, MetroPOLL founding shareholders - https://kimbulmus.com.tr/metropoll-arastirma-sirketi-kimin-hangi-ulkenin-markasi/
+- Pathfinders Consulting, Hafez Albukari and Yemen beginnings - https://pathfindersconsultancy.com/2017/07/16/our-team/
+- Wikipedia, Jerusalem Media and Communication Centre - https://en.wikipedia.org/wiki/Jerusalem_Media_%26_Communication_Centre
+- Jerusalem Story, Jerusalem Media and Communications Centre - https://www.jerusalemstory.com/en/organization/jerusalem-media-and-communications-centre-jmcc
+- Information International, founders - https://information-international.com/page/37/founders
+- Statistics Lebanon, about us - https://www.statisticslebanonltd.com/node/164
+- GSMA, Jawad Jalal Abbassi - https://www.gsma.com/aboutus/gsma_people/jawad-jalal-abbassi/
+- Geocartography Knowledge Group, about - https://www.geokg.com/en/about/
+- ASTERRA, leadership team - https://asterra.io/about/leadership/
+- NoCamels, Israeli agritech Taranis raises 30 million - https://nocamels.com/2020/07/israel-agritech-taranis-series-c-round/
+- CDD-Ghana, the CDD story - https://cddgh.org/the-cdd-story/
+- Wikipedia, Emmanuel Gyimah-Boadi - https://en.wikipedia.org/wiki/Emmanuel_Gyimah-Boadi
+- Institute for Justice and Reconciliation, our story - https://www.ijr.org.za/our-story/
+- Wikipedia, Charles Villa-Vicencio - https://en.wikipedia.org/wiki/Charles_Villa-Vicencio
+- NOIPolls, founder page - https://www.noi-polls.com/founder
+- Africa Polling Institute, executive director profile - https://africapolling.org/team-member/executive-director/
+- Infotrak, Angela Ambitho profile - https://www.newsline.co.ke/angela-ambitho-from-rising-to-leadership-at-26-to-building-infotrak/
+- Bizcommunity, Ask Afrika founder Andrea Rademeyer - https://www.bizcommunity.com/article/ask-afrika-founder-andrea-rademeyer-chairs-esomar-congress-a-first-for-africa-702962a
+- Plus 94, about us - https://plus94.co.za/about-us/
+- Health Cap, meet the founders of Helium Health - https://healthcap.co/meet-the-founders-adegoke-olubusi-tito-ovia-and-dimeji-sofowora-helium-health/
+- TechCrunch, mPharma raises 35 million - https://techcrunch.com/2022/01/05/mpharma-raises-35million-in-round-participated-by-tinder-co-founders-jam-fund-bharti-executive/
+- Apollo Agriculture, about us - https://www.apolloagriculture.com/about
+- Echoing Green, Jehiel Oliver fellow profile - https://fellows.echoinggreen.org/fellow/jehiel-oliver/
+- Women's World Banking, Rose Goslinga and Thomas Njeru - https://www.womensworldbanking.org/insights/making-finance-work-for-women-for-45-years-rose-goslinga-and-thomas-njeru/
+- Wikipedia, Code for Africa - https://en.wikipedia.org/wiki/Code_for_Africa
+- Acumen, launch of 60 Decibels - https://acumen.org/news/acumen-launches-60-decibels-to-make-lean-data-an-impact-measurement-standard-for-impact-investing/
+- 60 Decibels, Series A financing - https://60decibels.com/insights/60db-raises-series-a-financing/
+- Wikipedia, Aerobotics - https://en.wikipedia.org/wiki/Aerobotics
+- CTA, Brian Bosire profile - https://www.cta.int/en/profile/bosire-brian-sid0a27e9521-2fc7-4a99-bc50-3dbee2ce4d19
+- Global InfoAnalytics, Mussa Dankwah - https://www.globalinfoanalytics.com/mussa-dankwah
+- UNSOM, Mahad Abdullahi Wasuge profile - https://unsom.unmissions.org/en/mahad-abdullahi-wasuge%C2%A0researcher%E2%80%99s-quest-change-somalia%E2%80%99s-governance-landscape
+- Public Policy Institute Uganda, Patrick Wakida profile - https://ppiug.org/profile/1
+- Face2Face Africa, mSurvey transforms market research - https://face2faceafrica.com/article/msurvey-kenya
 
 The one removal: Bell Ihua was recorded as founder of the Africa Polling Institute.
 The institute's own staff page calls him executive director and names him founder of a
@@ -415,30 +415,30 @@ attributed to an institution rather than to people. A further eleven rows that t
 level C and level B passes had marked verified were re-checked independently, to
 test whether those passes were reliable. Sources retrieved:
 
-- KoboToolbox, about the Kobo organization — https://www.kobotoolbox.org/about-us/the-organization/
-- Kobo, our history — https://www.kobo.ngo/our-history
-- Harvard Humanitarian Initiative, KoBoToolbox — https://hhi.harvard.edu/kobotoolbox
-- AfroTech, Intron Health raises 1.6 million — https://afrotech.com/intron-health-raises-1-6m
-- The CEO Magazine, Nour Al Hassan founder and chief executive of Tarjama — https://www.theceomagazine.com/executive-interviews/services-consulting/nour-al-hassan/
-- TechCrunch, AI synthetic research startup Aaru raised a Series A — https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation
-- Wikipedia, Stears — https://en.wikipedia.org/wiki/Stears_(company)
-- The Org, Yvonne Johnson managing director and co-founder of Indicina — https://theorg.com/org/indicina/org-chart/yvonne-johnson
-- Laterite, ten years on — https://www.laterite.com/blog/laterite-ten-years-on-what-makes-us-proud/
-- Afrobarometer, Mass Public Opinion Institute — https://www.afrobarometer.org/organisation/mass-public-opinion-institute/
-- USIP, in memoriam Masipula Sithole — https://www.usip.org/press/2003/04/memoriam-masipula-sithole
-- On Think Tanks, Twaweza — https://onthinktanks.org/think-tank/twaweza/
-- Mozn, about us — https://www.mozn.sa/about-us
-- Wamda, Saudi AI startup Mozn raises 10 million — https://www.wamda.com/2022/02/saudi-ai-startup-mozn-raises-10-million-series-funding
-- Brown CS, George Konidaris cofounds Lelapa AI — https://cs.brown.edu/news/2023/03/31/george-konidaris-cofounds-lelapa-develop-homegrown-african-ai/
-- Lelapa, the team — https://lelapa.ai/about/the-team/
-- Rest of World, Awarri behind Nigeria's government-backed LLM — https://restofworld.org/2024/nigeria-awarri-ai-startup-llm/
-- VentureBeat, the Masakhane project — https://venturebeat.com/business/the-masakhane-project-wants-machine-translation-and-ai-to-transform-africa
-- Wikipedia, Clearview AI — https://en.wikipedia.org/wiki/Clearview_AI
-- Crunchbase, Ariel Seidman co-founder of Hivemapper — https://www.crunchbase.com/person/ariel-seidman
-- Wikipedia, Abasi Ene-Obong — https://en.wikipedia.org/wiki/Abasi_Ene-Obong
-- Sama, our founding story — https://www.sama.com/our-story
-- ASTERRA, leadership team — https://asterra.io/about/leadership/
-- African Languages Lab — https://www.africanlanguageslab.com/
+- KoboToolbox, about the Kobo organization - https://www.kobotoolbox.org/about-us/the-organization/
+- Kobo, our history - https://www.kobo.ngo/our-history
+- Harvard Humanitarian Initiative, KoBoToolbox - https://hhi.harvard.edu/kobotoolbox
+- AfroTech, Intron Health raises 1.6 million - https://afrotech.com/intron-health-raises-1-6m
+- The CEO Magazine, Nour Al Hassan founder and chief executive of Tarjama - https://www.theceomagazine.com/executive-interviews/services-consulting/nour-al-hassan/
+- TechCrunch, AI synthetic research startup Aaru raised a Series A - https://techcrunch.com/2025/12/05/ai-synthetic-research-startup-aaru-raised-a-series-a-at-a-1b-headline-valuation
+- Wikipedia, Stears - https://en.wikipedia.org/wiki/Stears_(company)
+- The Org, Yvonne Johnson managing director and co-founder of Indicina - https://theorg.com/org/indicina/org-chart/yvonne-johnson
+- Laterite, ten years on - https://www.laterite.com/blog/laterite-ten-years-on-what-makes-us-proud/
+- Afrobarometer, Mass Public Opinion Institute - https://www.afrobarometer.org/organisation/mass-public-opinion-institute/
+- USIP, in memoriam Masipula Sithole - https://www.usip.org/press/2003/04/memoriam-masipula-sithole
+- On Think Tanks, Twaweza - https://onthinktanks.org/think-tank/twaweza/
+- Mozn, about us - https://www.mozn.sa/about-us
+- Wamda, Saudi AI startup Mozn raises 10 million - https://www.wamda.com/2022/02/saudi-ai-startup-mozn-raises-10-million-series-funding
+- Brown CS, George Konidaris cofounds Lelapa AI - https://cs.brown.edu/news/2023/03/31/george-konidaris-cofounds-lelapa-develop-homegrown-african-ai/
+- Lelapa, the team - https://lelapa.ai/about/the-team/
+- Rest of World, Awarri behind Nigeria's government-backed LLM - https://restofworld.org/2024/nigeria-awarri-ai-startup-llm/
+- VentureBeat, the Masakhane project - https://venturebeat.com/business/the-masakhane-project-wants-machine-translation-and-ai-to-transform-africa
+- Wikipedia, Clearview AI - https://en.wikipedia.org/wiki/Clearview_AI
+- Crunchbase, Ariel Seidman co-founder of Hivemapper - https://www.crunchbase.com/person/ariel-seidman
+- Wikipedia, Abasi Ene-Obong - https://en.wikipedia.org/wiki/Abasi_Ene-Obong
+- Sama, our founding story - https://www.sama.com/our-story
+- ASTERRA, leadership team - https://asterra.io/about/leadership/
+- African Languages Lab - https://www.africanlanguageslab.com/
 
 The KoboToolbox correction is the substantive one. The platform was founded in 2005
 by Phuong Pham and Patrick Vinck, who are faculty at the Harvard T. H. Chan School of
@@ -475,38 +475,38 @@ searched again with the question reversed: who founded this organisation, rather
 did the recorded person found it. Forty-two organisations, six of them missing a
 founder. Sources retrieved:
 
-- PRIO, introducing ACLED — https://www.prio.org/publications/3236
-- Bizcommunity, Ask Afrika founder Andrea Rademeyer — https://www.bizcommunity.com/article/ask-afrika-founder-andrea-rademeyer-chairs-esomar-congress-a-first-for-africa-702962a
-- Devex, Arab World for Research and Development — https://www.devex.com/organizations/arab-world-for-research-and-development-awrad-50515
-- Baseera, about us — https://www.baseera.com.eg/AboutUs
-- Africa CEO Forum, Julien Garcier — https://www.theafricaceoforum.com/forum-2026/en/intervenant/julien-garcier/
-- Startup Grind Kigali, Audace Niyonkuru of Digital Umuganda — https://www.startupgrind.com/events/details/startup-grind-kigali-presents-startup-grind-kigali-is-hosting-audace-niyonkuru-ceo-and-founder-of-digital-umuganda/
-- Salon Syria, a profile of the Syrian Center for Policy Research with Rabie Nasser — https://salonsyria.com/a-profile-of-the-syria-policy-research-center-with-rabie-nasser/
-- Wikipedia, Code for Africa — https://en.wikipedia.org/wiki/Code_for_Africa
-- Wikipedia, Sunil John — https://en.wikipedia.org/wiki/Sunil_John
-- IIACSS Group, about us — https://iiacss.org/about-iiacss-group/
-- Geocartography, Rina Degani owner profile — https://il.linkedin.com/in/dr-rina-degani-015044219
-- Latinobarometro, about us — https://www.latinobarometro.org/about-us
-- Levada Center, about us — https://www.levada.ru/en/about-us/
-- Wikipedia, Levada Center — https://en.wikipedia.org/wiki/Levada_Center
-- PCPSR, Khalil Shikaki — https://www.pcpsr.org/en/node/192
-- KONDA, hakkımızda — https://konda.com.tr/hakkimizda
-- Afrobarometer, One to One for Research and Polling — https://www.afrobarometer.org/organisation/one-one-research-and-polling/
-- Jeune Afrique, Hassen Zargouni l'oracle du Bardo — https://www.jeuneafrique.com/41232/politique/sondages-en-tunisie-hassen-zargouni-l-oracle-du-bardo/
-- NOIPolls, ethos — https://www.noi-polls.com/ethos
-- Godsdirectcontact award, Fanie du Toit and the Institute for Justice and Reconciliation — http://award.godsdirectcontact.net/en/news/n.php?id=448
-- Chicago Booth, Van Jones co-founder and head of strategy at Hello Tractor — https://www.chicagobooth.edu/alumni/distinguished-alumni-award/honorees/van-jones
-- Disrupt Africa, Intron Health raises 1.6m pre-seed — https://disruptafrica.com/2024/07/29/nigerias-intron-health-raises-1-6m-pre-seed-funding-to-build-ai-for-global-health/
-- Wikipedia, Ipsos — https://en.wikipedia.org/wiki/Ipsos
-- Wikipedia, Surge AI — https://en.wikipedia.org/wiki/Surge_AI
-- Tarjama, our story — https://tarjama.com/our-story/
-- Amethis, investment into Tarjama — https://amethis.com/en/amethis-invests-into-tarjama-the-leading-language-technology-services-firm-in-the-mena-region/
-- UjuziKilimo, a short story on how UjuziKilimo came to be — https://ujuzikilimo.com/about
-- Vanderbilt, LAPOP mission and history — https://www.vanderbilt.edu/lapop/mission.php
-- Encyclopedia.com, the Gallup Organization — https://www.encyclopedia.com/books/politics-and-business-magazines/gallup-organization
-- JMCC, about JMCC — https://www.jmcc.org/en/Article/464/About-JMCC
-- GSMA, Jawad Jalal Abbassi — https://www.gsma.com/about-us/regions/middle-east-and-north-africa/gsma_people/jawad-jalal-abbassi/
-- Public Policy Institute Uganda, Patrick Wakida — https://ppiug.org/profile/1
+- PRIO, introducing ACLED - https://www.prio.org/publications/3236
+- Bizcommunity, Ask Afrika founder Andrea Rademeyer - https://www.bizcommunity.com/article/ask-afrika-founder-andrea-rademeyer-chairs-esomar-congress-a-first-for-africa-702962a
+- Devex, Arab World for Research and Development - https://www.devex.com/organizations/arab-world-for-research-and-development-awrad-50515
+- Baseera, about us - https://www.baseera.com.eg/AboutUs
+- Africa CEO Forum, Julien Garcier - https://www.theafricaceoforum.com/forum-2026/en/intervenant/julien-garcier/
+- Startup Grind Kigali, Audace Niyonkuru of Digital Umuganda - https://www.startupgrind.com/events/details/startup-grind-kigali-presents-startup-grind-kigali-is-hosting-audace-niyonkuru-ceo-and-founder-of-digital-umuganda/
+- Salon Syria, a profile of the Syrian Center for Policy Research with Rabie Nasser - https://salonsyria.com/a-profile-of-the-syria-policy-research-center-with-rabie-nasser/
+- Wikipedia, Code for Africa - https://en.wikipedia.org/wiki/Code_for_Africa
+- Wikipedia, Sunil John - https://en.wikipedia.org/wiki/Sunil_John
+- IIACSS Group, about us - https://iiacss.org/about-iiacss-group/
+- Geocartography, Rina Degani owner profile - https://il.linkedin.com/in/dr-rina-degani-015044219
+- Latinobarometro, about us - https://www.latinobarometro.org/about-us
+- Levada Center, about us - https://www.levada.ru/en/about-us/
+- Wikipedia, Levada Center - https://en.wikipedia.org/wiki/Levada_Center
+- PCPSR, Khalil Shikaki - https://www.pcpsr.org/en/node/192
+- KONDA, hakkımızda - https://konda.com.tr/hakkimizda
+- Afrobarometer, One to One for Research and Polling - https://www.afrobarometer.org/organisation/one-one-research-and-polling/
+- Jeune Afrique, Hassen Zargouni l'oracle du Bardo - https://www.jeuneafrique.com/41232/politique/sondages-en-tunisie-hassen-zargouni-l-oracle-du-bardo/
+- NOIPolls, ethos - https://www.noi-polls.com/ethos
+- Godsdirectcontact award, Fanie du Toit and the Institute for Justice and Reconciliation - http://award.godsdirectcontact.net/en/news/n.php?id=448
+- Chicago Booth, Van Jones co-founder and head of strategy at Hello Tractor - https://www.chicagobooth.edu/alumni/distinguished-alumni-award/honorees/van-jones
+- Disrupt Africa, Intron Health raises 1.6m pre-seed - https://disruptafrica.com/2024/07/29/nigerias-intron-health-raises-1-6m-pre-seed-funding-to-build-ai-for-global-health/
+- Wikipedia, Ipsos - https://en.wikipedia.org/wiki/Ipsos
+- Wikipedia, Surge AI - https://en.wikipedia.org/wiki/Surge_AI
+- Tarjama, our story - https://tarjama.com/our-story/
+- Amethis, investment into Tarjama - https://amethis.com/en/amethis-invests-into-tarjama-the-leading-language-technology-services-firm-in-the-mena-region/
+- UjuziKilimo, a short story on how UjuziKilimo came to be - https://ujuzikilimo.com/about
+- Vanderbilt, LAPOP mission and history - https://www.vanderbilt.edu/lapop/mission.php
+- Encyclopedia.com, the Gallup Organization - https://www.encyclopedia.com/books/politics-and-business-magazines/gallup-organization
+- JMCC, about JMCC - https://www.jmcc.org/en/Article/464/About-JMCC
+- GSMA, Jawad Jalal Abbassi - https://www.gsma.com/about-us/regions/middle-east-and-north-africa/gsma_people/jawad-jalal-abbassi/
+- Public Policy Institute Uganda, Patrick Wakida - https://ppiug.org/profile/1
 
 **Six organisations were missing a founder.** Sagaci Research was co-founded by Joao
 Terlica, a former Boston Consulting Group colleague of Julien Garcier. The Institute for
@@ -587,15 +587,15 @@ and Knowledge Networks, sold to GfK in 2011 and now Ipsos KnowledgePanel.
 
 Sources retrieved for this round:
 
-- TechCrunch, HubSpot picks up Clearbit — https://techcrunch.com/2023/11/01/hubspot-picks-up-b2b-data-provider-clearbit-to-enhance-its-ai-platform/
-- HubSpot, completion of the Clearbit acquisition — https://ir.hubspot.com/news-releases/news-release-details/hubspot-completes-acquisition-b2b-intelligence-leader-clearbit
-- PR Newswire, AlphaSense completes acquisition of Tegus — https://www.prnewswire.com/news-releases/alphasense-completes-acquisition-of-tegus-302190934.html
-- AgFunder News, Gro Intelligence is closing down (checked against the existing row) — https://agfundernews.com/breaking-ag-insights-platform-gro-intelligence-is-closing-down
-- Semafor, Gro Intelligence shuts down — https://www.semafor.com/article/06/04/2024/kenyan-ai-data-gro-intelligence-startup-shuts-down
-- Farmers Edge, definitive agreement with Fairfax — https://farmersedge.ca/farmers-edge-enters-into-definitive-agreement-with-fairfax/
-- RealAgriculture, Farmers Edge receives approval to go private — https://www.realagriculture.com/2024/03/farmers-edge-receives-approval-to-go-private/
-- Wikipedia, Leger — https://en.wikipedia.org/wiki/L%C3%A9ger_(company)
-- Angus Reid Institute, our team — https://angusreid.org/our-team/
+- TechCrunch, HubSpot picks up Clearbit - https://techcrunch.com/2023/11/01/hubspot-picks-up-b2b-data-provider-clearbit-to-enhance-its-ai-platform/
+- HubSpot, completion of the Clearbit acquisition - https://ir.hubspot.com/news-releases/news-release-details/hubspot-completes-acquisition-b2b-intelligence-leader-clearbit
+- PR Newswire, AlphaSense completes acquisition of Tegus - https://www.prnewswire.com/news-releases/alphasense-completes-acquisition-of-tegus-302190934.html
+- AgFunder News, Gro Intelligence is closing down (checked against the existing row) - https://agfundernews.com/breaking-ag-insights-platform-gro-intelligence-is-closing-down
+- Semafor, Gro Intelligence shuts down - https://www.semafor.com/article/06/04/2024/kenyan-ai-data-gro-intelligence-startup-shuts-down
+- Farmers Edge, definitive agreement with Fairfax - https://farmersedge.ca/farmers-edge-enters-into-definitive-agreement-with-fairfax/
+- RealAgriculture, Farmers Edge receives approval to go private - https://www.realagriculture.com/2024/03/farmers-edge-receives-approval-to-go-private/
+- Wikipedia, Leger - https://en.wikipedia.org/wiki/L%C3%A9ger_(company)
+- Angus Reid Institute, our team - https://angusreid.org/our-team/
 
 **What the round changed in the findings.** Section 1's density table, section 2's cell
 counts and section 14's exit table were all recomputed. One categorical claim broke:
@@ -673,12 +673,12 @@ leaving the trusts with a fraction of their stake.
 
 Sources retrieved for this round:
 
-- Safran, creation of Safran.AI with the acquisition of Preligens — https://www.safran-group.com/group/history-and-heritage/timeline/2024-creation-safranai-acquisition-preligens
-- Entrust, completion of the Onfido acquisition — https://www.entrust.com/company/newsroom/entrust-completes-acquisition-of-onfido-creating-a-new-era-of-identity-centric-security
-- Research Live, Bilendi acquires respondi — https://www.research-live.com/article/news/bilendi-acquires-respondi/id/5092472
-- MrWeb Daily Research News, Confirmit and FocusVision become Forsta — https://www.mrweb.com/drno/news31372.htm
-- Healthcare IT News, Sensyne Health unlikely to be able to continue to trade — https://www.healthcareitnews.com/news/emea/sensyne-health-unlikely-be-able-continue-trade-without-financing
-- The Register, NHS hospitals and Sensyne — https://www.theregister.com/2022/08/17/nhs_hospitals_ai_losses/
+- Safran, creation of Safran.AI with the acquisition of Preligens - https://www.safran-group.com/group/history-and-heritage/timeline/2024-creation-safranai-acquisition-preligens
+- Entrust, completion of the Onfido acquisition - https://www.entrust.com/company/newsroom/entrust-completes-acquisition-of-onfido-creating-a-new-era-of-identity-centric-security
+- Research Live, Bilendi acquires respondi - https://www.research-live.com/article/news/bilendi-acquires-respondi/id/5092472
+- MrWeb Daily Research News, Confirmit and FocusVision become Forsta - https://www.mrweb.com/drno/news31372.htm
+- Healthcare IT News, Sensyne Health unlikely to be able to continue to trade - https://www.healthcareitnews.com/news/emea/sensyne-health-unlikely-be-able-continue-trade-without-financing
+- The Register, NHS hospitals and Sensyne - https://www.theregister.com/2022/08/17/nhs_hospitals_ai_losses/
 
 **What the round changed in the findings.** Western Europe's headquartered count nearly
 doubled, from 80 to 156, and its direct human contact count rose from 84 to 141, within
@@ -716,7 +716,7 @@ Rows are evidence level A because the attribution comes from Afrobarometer's own
 page, and `founded_year` is `NA` for most of them because founding dates are not
 published; the note on each row says so rather than carrying a guess.
 
-- Afrobarometer, network partners — https://www.afrobarometer.org/about/our-network/network-partners/
+- Afrobarometer, network partners - https://www.afrobarometer.org/about/our-network/network-partners/
 
 The remaining 29 are African collectors outside the survey network, chosen to stop the
 continent reading as though it only does fieldwork: Smile ID, Prembly and Youverify in
@@ -732,10 +732,10 @@ cities and filed for liquidation in September 2023 with about 225,000 dollars le
 against 27 million raised; and Appruve, the Ghanaian verification platform founded by
 Paul Damalie in 2018 whose parent was acquired by Smile Identity in April 2023.
 
-- TechCabal, WhereIsMyTransport is shutting down — https://techcabal.com/2023/10/26/whereismytransport-shutting-down/
-- Launch Base Africa, how 21m of debt sank WhereIsMyTransport — https://launchbaseafrica.com/2024/07/01/how-21m-of-debt-sank-the-fresh-funding-quest-for-failed-sa-startup-whereismytransport/
-- TechCabal, Smile Identity acquires Appruve's parent company — https://techcabal.com/2023/04/26/smile-identity-acquires-appruves-parent-company-to-expand-its-reach-in-africa/
-- TechCrunch, Smile Identity expands African footprint with Appruve — https://techcrunch.com/2023/04/26/smile-identity-expands-african-footprint-with-acquisition-of-appruve-to-strengthen-id-verification-services
+- TechCabal, WhereIsMyTransport is shutting down - https://techcabal.com/2023/10/26/whereismytransport-shutting-down/
+- Launch Base Africa, how 21m of debt sank WhereIsMyTransport - https://launchbaseafrica.com/2024/07/01/how-21m-of-debt-sank-the-fresh-funding-quest-for-failed-sa-startup-whereismytransport/
+- TechCabal, Smile Identity acquires Appruve's parent company - https://techcabal.com/2023/04/26/smile-identity-acquires-appruves-parent-company-to-expand-its-reach-in-africa/
+- TechCrunch, Smile Identity expands African footprint with Appruve - https://techcrunch.com/2023/04/26/smile-identity-expands-african-footprint-with-acquisition-of-appruve-to-strengthen-id-verification-services
 
 **Negative result: Algeria still has no organisation in the register.** It is the only
 large North African state with none, and no Algerian polling or market research firm
@@ -774,30 +774,30 @@ row is evidence level A, meaning the cadence, award range and eligibility were r
 the funder's own pages or contemporaneous reporting of the round rather than recalled.
 Sources retrieved:
 
-- Lacuna Fund, apply — https://lacunafund.org/apply/
-- Lacuna Fund, NLP applicant webinar slides 2024 — https://lacunafund.org/wp-content/uploads/sites/11/2024/07/Applicant-Webinar-Slides-NLP-2024_English.pdf
-- IDRC, Artificial Intelligence for Development — https://idrc-crdi.ca/en/initiative/artificial-intelligence-development
-- IDRC, call for concept notes on the socio-economic impacts of AI in Africa — https://idrc-crdi.ca/en/funding/call-concept-notes-socio-economic-impacts-artificial-intelligence-africa
-- GSMA, Innovation Fund — https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma-innovation-fund/
-- GSMA, launch of the Innovation Fund for Impactful AI — https://www.gsma.com/newsroom/press-release/empowering-ai-innovations-to-transform-lives-gsma-launches-new-innovation-fund-for-startups/
-- GSMA, Innovation Fund for Green Transition for Mobile — https://www.gsma.com/newsroom/press-release/gsma-launches-innovation-fund-to-accelerate-green-transition-through-mobile-technology/
-- Global Grand Challenges — https://gcgh.grandchallenges.org/
-- Disrupt Africa, Gates Grand Challenges 2026 AI-enabled family planning call — https://disruptafrica.com/2026/08/17/african-ai-enabled-family-planning-solutions-can-apply-for-500k-gates-foundation-grand-challenges/
-- Science for Africa Foundation, Grand Challenges Africa — https://scienceforafrica.foundation/grand-challenges-africa
-- Science for Africa Foundation, Round 16 rules and guidelines — https://scienceforafrica.foundation/resources/round-16-rules-and-guidelines
-- Grand Challenges Canada, how we fund — https://www.grandchallenges.ca/what-we-do/how-we-fund/
-- Government of Canada, renewed investment in Grand Challenges Canada — https://www.canada.ca/en/global-affairs/news/2026/03/secretary-of-state-sarai-announces-renewed-investment-in-grand-challenges-canada-to-advance-global-health-innovation.html
-- Simpler.Grants.gov, DIV annual APS listing — https://simpler.grants.gov/opportunity/79b44c7b-5eb2-45d0-991a-c27d0361f297
-- Tony Elumelu Foundation, 2026 entrepreneurship programme — https://www.tonyelumelufoundation.org/press-releases/apply-tef-entrepreneurship-programme-2026
-- AFD, funding to support African digital start-ups — https://www.afd.fr/en/carte-des-projets/appropriate-funding-support-african-digital-start-ups-and-their-ecosystems
-- Mozilla Foundation, grantmaking — https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2026-nominations-request/
-- Milken Institute, Milken-Motsepe Innovation Prize Program — https://milkeninstitute.org/philanthropy/environmental-and-social-innovation/innovation-prize-programs/milken-motsepe-innovation-prize-program
-- Milken-Motsepe Prize in Circular Economy — https://milkenmotsepeprize.org/circular-economy/
-- VC4A, Africa Prize for Engineering Innovation 2026 — https://vc4a.com/royal-academy-of-engineering/africa-prize-for-engineering-innovation-2026/
-- Arab Council for the Social Sciences, current opportunities — https://theacss.org/current-opportunities/
-- Arab Council for the Social Sciences, SGP Cycle 10 call — https://theacss.org/about-grants-fellowships/sgp-cycle-10-call-for-applications/
-- Startup Tunisia, about the Startup Act — https://startup.gov.tn/en/startup_act/discover
-- Ministere des Technologies de la Communication, Startup Act label procedures — https://www.mtc.gov.tn/fileadmin/StartupAct/Startup_Act_-_procedures_conditions_obtention_du_label.pdf
+- Lacuna Fund, apply - https://lacunafund.org/apply/
+- Lacuna Fund, NLP applicant webinar slides 2024 - https://lacunafund.org/wp-content/uploads/sites/11/2024/07/Applicant-Webinar-Slides-NLP-2024_English.pdf
+- IDRC, Artificial Intelligence for Development - https://idrc-crdi.ca/en/initiative/artificial-intelligence-development
+- IDRC, call for concept notes on the socio-economic impacts of AI in Africa - https://idrc-crdi.ca/en/funding/call-concept-notes-socio-economic-impacts-artificial-intelligence-africa
+- GSMA, Innovation Fund - https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma-innovation-fund/
+- GSMA, launch of the Innovation Fund for Impactful AI - https://www.gsma.com/newsroom/press-release/empowering-ai-innovations-to-transform-lives-gsma-launches-new-innovation-fund-for-startups/
+- GSMA, Innovation Fund for Green Transition for Mobile - https://www.gsma.com/newsroom/press-release/gsma-launches-innovation-fund-to-accelerate-green-transition-through-mobile-technology/
+- Global Grand Challenges - https://gcgh.grandchallenges.org/
+- Disrupt Africa, Gates Grand Challenges 2026 AI-enabled family planning call - https://disruptafrica.com/2026/08/17/african-ai-enabled-family-planning-solutions-can-apply-for-500k-gates-foundation-grand-challenges/
+- Science for Africa Foundation, Grand Challenges Africa - https://scienceforafrica.foundation/grand-challenges-africa
+- Science for Africa Foundation, Round 16 rules and guidelines - https://scienceforafrica.foundation/resources/round-16-rules-and-guidelines
+- Grand Challenges Canada, how we fund - https://www.grandchallenges.ca/what-we-do/how-we-fund/
+- Government of Canada, renewed investment in Grand Challenges Canada - https://www.canada.ca/en/global-affairs/news/2026/03/secretary-of-state-sarai-announces-renewed-investment-in-grand-challenges-canada-to-advance-global-health-innovation.html
+- Simpler.Grants.gov, DIV annual APS listing - https://simpler.grants.gov/opportunity/79b44c7b-5eb2-45d0-991a-c27d0361f297
+- Tony Elumelu Foundation, 2026 entrepreneurship programme - https://www.tonyelumelufoundation.org/press-releases/apply-tef-entrepreneurship-programme-2026
+- AFD, funding to support African digital start-ups - https://www.afd.fr/en/carte-des-projets/appropriate-funding-support-african-digital-start-ups-and-their-ecosystems
+- Mozilla Foundation, grantmaking - https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2026-nominations-request/
+- Milken Institute, Milken-Motsepe Innovation Prize Program - https://milkeninstitute.org/philanthropy/environmental-and-social-innovation/innovation-prize-programs/milken-motsepe-innovation-prize-program
+- Milken-Motsepe Prize in Circular Economy - https://milkenmotsepeprize.org/circular-economy/
+- VC4A, Africa Prize for Engineering Innovation 2026 - https://vc4a.com/royal-academy-of-engineering/africa-prize-for-engineering-innovation-2026/
+- Arab Council for the Social Sciences, current opportunities - https://theacss.org/current-opportunities/
+- Arab Council for the Social Sciences, SGP Cycle 10 call - https://theacss.org/about-grants-fellowships/sgp-cycle-10-call-for-applications/
+- Startup Tunisia, about the Startup Act - https://startup.gov.tn/en/startup_act/discover
+- Ministere des Technologies de la Communication, Startup Act label procedures - https://www.mtc.gov.tn/fileadmin/StartupAct/Startup_Act_-_procedures_conditions_obtention_du_label.pdf
 
 **The USAID Development Innovation Ventures row is the one that changes an argument.**
 DIV ran on a rolling basis from 2010 with awards from 25,000 to 15 million dollars and a
@@ -860,19 +860,19 @@ and Cognyte, Zencity and the Israel Democracy Institute.
 
 Sources retrieved for this round:
 
-- IRSM, Institut de Recherche Sondages et Marketing — https://irsm-global.com/
-- Kompass Algeria, opinion polling and social research directory — https://dz.kompass.com/a/sondages-d-opinion-et-etudes-sociales/8065007/
-- DHS Program, Egypt Demographic and Health Survey 2014 final report — https://dhsprogram.com/pubs/pdf/fr302/fr302.pdf
-- Qatar University, About SESRI — https://www.qu.edu.qa/en-us/Research/sesri/about-us/Pages/default.aspx
-- Wikipedia, SESRI — https://en.wikipedia.org/wiki/SESRI
-- Qatar Foundation, Qatar Computing Research Institute — https://www.qf.org.qa/research/qatar-computing-research-institute
-- Saudipedia, Saudi Data and Artificial Intelligence Authority — https://saudipedia.com/en/saudi-data-and-artificial-intelligence-authority-sdaia
-- Wikipedia, Saudi Authority for Data and Artificial Intelligence — https://en.wikipedia.org/wiki/Saudi_Authority_for_Data_and_Artificial_Intelligence
-- Derasat, about — https://www.derasat.org.bh/about-derasat/
-- Derasat, surveys and opinion polls — https://www.derasat.org.bh/surveying-polling/
-- Wikipedia, Derasat — https://en.wikipedia.org/wiki/Derasat
-- Arab Barometer, Wave VIII — https://www.arabbarometer.org/surveys/arab-barometer-wave-viii/
-- Newslab Türkiye, on the number of Turkish research companies and the absence of self-regulation — https://www.newslabturkey.org/2023/07/05/turkiyede-arastirma-sirketi-bollugu-var-ancak-ozdenetim-yok/
+- IRSM, Institut de Recherche Sondages et Marketing - https://irsm-global.com/
+- Kompass Algeria, opinion polling and social research directory - https://dz.kompass.com/a/sondages-d-opinion-et-etudes-sociales/8065007/
+- DHS Program, Egypt Demographic and Health Survey 2014 final report - https://dhsprogram.com/pubs/pdf/fr302/fr302.pdf
+- Qatar University, About SESRI - https://www.qu.edu.qa/en-us/Research/sesri/about-us/Pages/default.aspx
+- Wikipedia, SESRI - https://en.wikipedia.org/wiki/SESRI
+- Qatar Foundation, Qatar Computing Research Institute - https://www.qf.org.qa/research/qatar-computing-research-institute
+- Saudipedia, Saudi Data and Artificial Intelligence Authority - https://saudipedia.com/en/saudi-data-and-artificial-intelligence-authority-sdaia
+- Wikipedia, Saudi Authority for Data and Artificial Intelligence - https://en.wikipedia.org/wiki/Saudi_Authority_for_Data_and_Artificial_Intelligence
+- Derasat, about - https://www.derasat.org.bh/about-derasat/
+- Derasat, surveys and opinion polls - https://www.derasat.org.bh/surveying-polling/
+- Wikipedia, Derasat - https://en.wikipedia.org/wiki/Derasat
+- Arab Barometer, Wave VIII - https://www.arabbarometer.org/surveys/arab-barometer-wave-viii/
+- Newslab Türkiye, on the number of Turkish research companies and the absence of self-regulation - https://www.newslabturkey.org/2023/07/05/turkiyede-arastirma-sirketi-bollugu-var-ancak-ozdenetim-yok/
 
 **What the round changed in the findings.** The important result is a comparison that
 only became possible once both regions were enumerated to a similar depth, and it is
@@ -940,17 +940,17 @@ PesaCheck, Freshly Ground Insights and Columinate.
 
 Sources retrieved:
 
-- AHRI, health and demographic surveillance system — https://www.ahri.org/hdss/
-- SAPRIN, AHRI node — https://saprin.mrc.ac.za/ahri.html
-- APHRC, Nairobi Urban Health and Demographic Surveillance System — https://aphrc.org/project/nairobi-urban-health-and-demographic-surveillance-system-nuhdss/
-- Global Health Action, health and demographic surveillance systems in low and middle income countries — https://www.tandfonline.com/doi/full/10.1080/16549716.2021.1974676
-- Science for Africa Foundation, the birth of the African Population Cohorts Consortium — https://scienceforafrica.foundation/media-center/new-era-health-research-birth-african-population-cohorts-consortium
-- Oxford Centre for Tropical Medicine, Africa launches landmark consortium — https://www.tropicalmedicine.ox.ac.uk/news/africa-launches-landmark-consortium-to-transform-health-research-with-longitudinal-data
-- ISSER, Ghana Socioeconomic Panel Survey data portal — https://dataportal-isser.ug.edu.gh/
-- Yale Economic Growth Center, the ISSER-Northwestern-Yale Ghana Panel Survey — http://egcenter.economics.yale.edu/egc-isser-ghana-panel-survey
-- American Journal of Epidemiology, the PERSIAN Cohort study design — https://academic.oup.com/aje/article/187/4/647/4627678
-- BMC Public Health, the PERSIAN cohort biobank — https://link.springer.com/article/10.1186/s12889-025-25006-y
-- American Journal of Epidemiology, Qatar Biobank cohort study — https://academic.oup.com/aje/article-abstract/188/8/1420/5423748
+- AHRI, health and demographic surveillance system - https://www.ahri.org/hdss/
+- SAPRIN, AHRI node - https://saprin.mrc.ac.za/ahri.html
+- APHRC, Nairobi Urban Health and Demographic Surveillance System - https://aphrc.org/project/nairobi-urban-health-and-demographic-surveillance-system-nuhdss/
+- Global Health Action, health and demographic surveillance systems in low and middle income countries - https://www.tandfonline.com/doi/full/10.1080/16549716.2021.1974676
+- Science for Africa Foundation, the birth of the African Population Cohorts Consortium - https://scienceforafrica.foundation/media-center/new-era-health-research-birth-african-population-cohorts-consortium
+- Oxford Centre for Tropical Medicine, Africa launches landmark consortium - https://www.tropicalmedicine.ox.ac.uk/news/africa-launches-landmark-consortium-to-transform-health-research-with-longitudinal-data
+- ISSER, Ghana Socioeconomic Panel Survey data portal - https://dataportal-isser.ug.edu.gh/
+- Yale Economic Growth Center, the ISSER-Northwestern-Yale Ghana Panel Survey - http://egcenter.economics.yale.edu/egc-isser-ghana-panel-survey
+- American Journal of Epidemiology, the PERSIAN Cohort study design - https://academic.oup.com/aje/article/187/4/647/4627678
+- BMC Public Health, the PERSIAN cohort biobank - https://link.springer.com/article/10.1186/s12889-025-25006-y
+- American Journal of Epidemiology, Qatar Biobank cohort study - https://academic.oup.com/aje/article-abstract/188/8/1420/5423748
 
 **Four MENA cohorts were added in the same round, deliberately.** Adding seventeen
 open-access African cohorts and nothing comparable in MENA would have widened the
@@ -1028,15 +1028,15 @@ had exactly one organisation, which brings single-organisation countries down fr
 
 Sources retrieved:
 
-- Nairametrics, inside the fall of Okra — https://nairametrics.com/2025/07/11/inside-the-fall-of-okra-how-africas-most-promising-open-banking-startup-shut-down-at-its-peak/
-- Technext, Okra blames its shutdown on market challenges — https://technext24.com/2025/07/04/okra-blames-shutdown-on-market-challenge/
-- TechCabal, Kenyan agritech startup iProcure enters administration — https://techcabal.com/2024/05/02/iprocure-under-administration/
-- TechCabal, Copia enters administration — https://techcabal.com/2024/05/24/copia-enters-into-administration-after-failing-to-secure-funding/
-- Launch Base Africa, Kenya hit by a new wave of startup shutdowns — https://launchbaseafrica.com/2024/06/07/kenya-hit-by-new-wave-of-high-profile-startup-shutdowns/
-- AFRISTAT, introduction — https://www.afristat.org/contenu/psta/en/introduction.htm
-- STATAFRIC, about the African Union Institute for Statistics — https://statafric.au.int/index.php/en/about
-- African Union, Pan-African Institute for Statistics — https://au.int/en/ea/statistics/statafric
-- SANBI, about us — https://www.sanbi.org/about/
+- Nairametrics, inside the fall of Okra - https://nairametrics.com/2025/07/11/inside-the-fall-of-okra-how-africas-most-promising-open-banking-startup-shut-down-at-its-peak/
+- Technext, Okra blames its shutdown on market challenges - https://technext24.com/2025/07/04/okra-blames-shutdown-on-market-challenge/
+- TechCabal, Kenyan agritech startup iProcure enters administration - https://techcabal.com/2024/05/02/iprocure-under-administration/
+- TechCabal, Copia enters administration - https://techcabal.com/2024/05/24/copia-enters-into-administration-after-failing-to-secure-funding/
+- Launch Base Africa, Kenya hit by a new wave of startup shutdowns - https://launchbaseafrica.com/2024/06/07/kenya-hit-by-new-wave-of-high-profile-startup-shutdowns/
+- AFRISTAT, introduction - https://www.afristat.org/contenu/psta/en/introduction.htm
+- STATAFRIC, about the African Union Institute for Statistics - https://statafric.au.int/index.php/en/about
+- African Union, Pan-African Institute for Statistics - https://au.int/en/ea/statistics/statafric
+- SANBI, about us - https://www.sanbi.org/about/
 
 **What the round changed in the findings, and one thing it undermines.**
 

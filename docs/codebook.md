@@ -47,13 +47,13 @@ would hide.
 
 Four values, one per organisation, derived by `scripts/00_code_sector.py`.
 
-- `for_profit` — trades commercially and distributes surplus to owners, whoever
+- `for_profit` - trades commercially and distributes surplus to owners, whoever
   those owners are. **A state-owned joint stock company selling research is
   `for_profit` here**; `ownership_type` records that the state owns it.
-- `nonprofit` — legally constituted not-for-profit, independent of government.
-- `academic` — a university, a unit of one, or a research institute whose
+- `nonprofit` - legally constituted not-for-profit, independent of government.
+- `academic` - a university, a unit of one, or a research institute whose
   primary output is scholarship.
-- `governmental` — an organ of the state, a body created by statute or decree
+- `governmental` - an organ of the state, a body created by statute or decree
   and controlled by government, or an intergovernmental organisation.
 
 **`sector` and `ownership_type` are not redundant and should both be used.**
@@ -80,10 +80,10 @@ cannot be `for_profit`, and listed, private equity or venture backed firms must 
 
 ### `maturity_class`
 
-- `established` — operating more than roughly twenty years, or listed, or held at
+- `established` - operating more than roughly twenty years, or listed, or held at
   scale by private equity.
-- `scaleup` — growth stage, typically founded between 2006 and 2018.
-- `startup` — founded 2019 or later, or still at seed or Series A.
+- `scaleup` - growth stage, typically founded between 2006 and 2018.
+- `startup` - founded 2019 or later, or still at seed or Series A.
 
 Age and stage are recorded separately (`founded_year`, `ownership_type`) so that
 users who dislike this cut can build their own.
@@ -93,10 +93,10 @@ users who dislike this cut can build their own.
 This variable describes the coding, not the firm. It is the honest limit of the
 dataset and should be reported in anything built on it.
 
-- `A` — verified against a regulatory filing or a source retrieved during
+- `A` - verified against a regulatory filing or a source retrieved during
   construction, and cited in `docs/sources.md`.
-- `B` — consistently reported across multiple independent public sources.
-- `C` — analyst judgement from domain knowledge. Directionally reliable for
+- `B` - consistently reported across multiple independent public sources.
+- `C` - analyst judgement from domain knowledge. Directionally reliable for
   segment, region and modality; not reliable for dates or counts.
 
 Current distribution over operating firms: A 59, B 192, C 262. Treat every `C` figure as an ordinal
@@ -117,8 +117,8 @@ Coverage is ordinal:
 
 `coverage_basis` records how the row was produced:
 
-- `manual` (113 rows) — hand-coded from specific knowledge of the firm.
-- `segment_template` (311 rows) — derived by the documented rule in
+- `manual` (113 rows) - hand-coded from specific knowledge of the firm.
+- `segment_template` (311 rows) - derived by the documented rule in
   `scripts/00_build_coverage.py` from segment, `spatial_scope` and focus region.
   For the single-country and single-region field agencies that make up most of
   these rows the rule is near-exact. For globally scoped firms it is an
@@ -130,8 +130,8 @@ A score of 2 is the threshold used throughout the analysis to mean "present".
 
 `scripts/01_load.R` constructs two matrices used by everything downstream.
 
-- `spatial_mat` — firms by regions, ordinal 0-3.
-- `domain_mat` — firms by domains, weight 2 for a primary domain, 1 for a
+- `spatial_mat` - firms by regions, ordinal 0-3.
+- `domain_mat` - firms by domains, weight 2 for a primary domain, 1 for a
   secondary domain, 0 otherwise.
 
 `scripts/03_coverage_gaps.R` writes long-format versions to `output/`.
@@ -221,13 +221,13 @@ stakeholder sits in the same country as the organisation it backs.
 
 ## Lookup tables
 
-- `data/regions.csv` — twelve regions. Mainland China and the Russia/Belarus/
+- `data/regions.csv` - twelve regions. Mainland China and the Russia/Belarus/
   Central Asia bloc are separated from their neighbours because exclusion from
   them is one of the strongest patterns in the industry.
-- `data/segments.csv` — twenty-three segments, each tagged `solicited` (data is
+- `data/segments.csv` - twenty-three segments, each tagged `solicited` (data is
   produced by asking someone) or `observational` (data is captured from traces).
-- `data/domains.csv` — twenty-seven substantive domains.
-- `data/modalities.csv` — nineteen collection methods, each tagged by whether it
+- `data/domains.csv` - twenty-seven substantive domains.
+- `data/modalities.csv` - nineteen collection methods, each tagged by whether it
   brings the firm into contact with a data subject.
 
 ---
@@ -267,9 +267,9 @@ partner lists, and known office and delivery-centre networks.
 
 `scope` governs how the row interacts with the model:
 
-- `exhaustive` (1,272 rows) — the list is complete. The firm's country coverage
+- `exhaustive` (1,272 rows) - the list is complete. The firm's country coverage
   comes entirely from here and the model adds nothing.
-- `partial` (1,006 rows) — these countries are observed. The model fills the rest
+- `partial` (1,006 rows) - these countries are observed. The model fills the rest
   of the firm's stated country budget around them, and hand-coded rows spend
   that budget first.
 
@@ -354,12 +354,12 @@ ordering, with coverage decaying one step below the median-ranked country.
 Three priority orderings are used, because different parts of the industry enter
 countries for different reasons:
 
-- `market` — income, population, connectivity. Firms selling data about a
+- `market` - income, population, connectivity. Firms selling data about a
   country's consumers or firms.
-- `labour` — population, connectivity, low income. Annotation and micro-task
+- `labour` - population, connectivity, low income. Annotation and micro-task
   firms, whose country coverage describes where their *workers* are, not who
   they collect data about.
-- `need` — low income, conflict exposure, population. Firms whose clients are
+- `need` - low income, conflict exposure, population. Firms whose clients are
   donors and agencies.
 
 Each ordering is a falsifiable claim about market entry. Change the weights,
