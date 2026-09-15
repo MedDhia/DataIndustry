@@ -17,7 +17,7 @@ actually gathering the data, and what is nobody gathering?
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
 | `data/grant_programmes.csv` | 15 | Recurring open-call funding instruments a data collection venture could apply to. Purposive, not a census. |
-| `data/demand.csv` | 65 | The buyer side: segment by buyer category, each row with its own evidence level and source. Purposive, not a census. |
+| `data/demand.csv` | 78 | The buyer side: segment by buyer category, each row with its own evidence level and source. Purposive, not a census. |
 | `data/coverage_country.csv` | 33,393 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 23 | Industry segment taxonomy. |
 | `data/domains.csv` | 27 | Substantive domain taxonomy. |

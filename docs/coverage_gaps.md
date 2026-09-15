@@ -1395,13 +1395,36 @@ brokerage (4 percent recent, 25.0 percent exit), media and audience measurement 
 and full-service survey firms, are neither: their entry shares are 16 and 24 percent and
 their exit rates, 4.6 and 6.7, are among the lowest in the file.
 
-What cannot be computed is who pays. `data/demand.csv` holds 65 researched rows across
+What cannot be computed is who pays. `data/demand.csv` holds 78 researched rows across
 all 23 segments, and the composition of that file says something about the record before
-it says anything about the industry. State and donor buyers are 18 of 65 rows and 8 of
-the 12 rows that reach evidence level A, because a government purchase leaves an award
+it says anything about the industry. State, donor and party buyers are 27 of 78 rows and
+9 of the 14 rows that reach evidence level A, because a government purchase leaves an award
 notice and a corporate subscription leaves nothing. Any account of data buying built
 from public documents will over-count the state, this one included, and section 2 of
 `docs/demand.md` states that rather than presenting the concentration as a finding.
+
+The MENA rows were then extended in a round of their own, because they were the file's
+weakest. 17 of the 78 rows now carry MENA, and 11 of those 17 have a state, a donor or a
+political party as the buyer against 27 of 78 across the whole file. Part of that is real
+and part is the round having gone looking for it, and the two cannot be separated from
+inside the file. What the round did establish is a demand structure with no counterpart
+elsewhere in the register: in Egypt a CAPMAS permit is needed to survey more than five
+people and the agency may alter the questions; in Saudi Arabia GASTAT is the sole
+official statistical reference and runs its own fieldwork rather than procuring it. One
+state gates who may collect and the other collects in-house, and both outcomes suppress
+the commercial field agency market that exists in Kenya or Nigeria. The register's thin
+count of Gulf field agencies follows from that, and is not an enumeration gap.
+
+Two of the region's standing public opinion series are paid for by governments that are
+not the governments being surveyed: Arab Barometer by the US Middle East Partnership
+Initiative, USAID, the NED, the BBC and Carnegie, and the Arab Opinion Index by Qatari
+state-backed ACRPS. The largest fieldwork buyer in the region is neither, it is the
+humanitarian system in Syria, Yemen, Iraq and Sudan, and that buyer is contracting: the
+2025 global appeal was funded at 12bn, the lowest in a decade, with Syrian humanitarian
+staffing projected to fall by at least 40 percent. Section 6 of `docs/demand.md` sets out
+what commercial demand does exist, which is Gulf consumer goods, advertising measurement
+and regulated credit files, and why Israel and Turkiye should be pulled out of any MENA
+aggregate computed from this register.
 
 One result there bears directly on section 1 of this document. Six segments have a
 documented state security buyer. Operating for-profit firms in those six disclose

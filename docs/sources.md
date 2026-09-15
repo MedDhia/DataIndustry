@@ -1185,3 +1185,70 @@ subscriptions; PromptCloud and Mordor on web data adoption by vertical.
   but nothing decomposes it into domestic corporate buyers against foreign agencies and
   donors. That decomposition is the single most useful missing number for the register's
   African and MENA coverage.
+
+## Round: MENA demand (September 2026)
+
+The previous round flagged the MENA rows as the demand file's weakest, so this round
+went after that region alone. 13 rows added, bringing MENA to 17 of 78. One new value,
+`political_party`, was added to the `buyer_category` vocabulary because Turkish polling
+demand could not be expressed with any existing category without distorting it.
+
+Sources used:
+
+- American University in Cairo institutional review board guidance and Al-Fanar Media on
+  the CAPMAS permit requirement: a permit is needed to survey more than five people in
+  Egypt, the agency may alter questions or refuse, and ethics approval does not
+  substitute for it.
+- GASTAT (stats.gov.sa) on its own survey programme and on being the sole official
+  reference for statistical work in Saudi Arabia.
+- SDAIA (sdaia.gov.sa) and ITIF, Clyde and Co and King and Spalding on the Personal Data
+  Protection Law, SDAIA as its enforcing authority since September 2023, the February
+  2025 cross-border transfer risk assessment guideline, and fines to 5m riyals.
+- Arab Barometer's own funders page and wave VII and VIII pages: MEPI, USAID, NED, BBC,
+  Carnegie Corporation, Princeton, Michigan and Harvard.
+- Arab Center Washington on the Arab Opinion Index 2025 and its ACRPS provenance.
+- OCHA Global Humanitarian Overview 2026, The New Humanitarian and Al Jazeera on the 2025
+  appeal funded at 12bn, the lowest in a decade, the projected 40 percent staffing cut in
+  Syria, and Yemen's plan funded at under 25 percent.
+- REACH Initiative and ReliefWeb on REACH co-chairing the Iraq Assessment Working Group
+  and running about 400 assessment staff across 20-plus countries.
+- Zawya press release and MrWeb on the Advertising Business Group appointing Ipsos to the
+  UAE cross-media measurement project in June 2022, and The National and Campaign Middle
+  East on the tview people-meter panel that preceded it.
+- Communicate Online and IAB MENA reporting on MENA digital advertising at about 8.19bn
+  in 2025 with Saudi Arabia at roughly 46 percent.
+- Genify's MENA credit bureau comparison, BIIA and Saudipedia on SIMAH under Saudi
+  Central Bank supervision with about 330 data sources, and Al Etihad Credit Bureau's
+  expansion into telecoms, utilities, rentals, insurance and BNPL reporting.
+- NielsenIQ retail spend barometer pages for Saudi Arabia and the UAE, over 90,000
+  outlets covered in Saudi Arabia and 30,000 in the UAE, and Kantar's Africa and Middle
+  East consumer panel page.
+- Middle East AI News and Arabic LLM benchmark reporting on ALLaM at SDAIA and HUMAIN,
+  Falcon at TII, Fanar at QCRI and Jais at G42 Inception and MBZUAI.
+- Privacy International and defence trade reporting on Palantir supplying data analytics
+  to Israel and Unit 8200's Azure storage.
+- PolitPro's 2026 Turkish polling aggregation: twenty published voting intention polls in
+  2026 against a general election not due until 2028.
+
+### Negative results
+
+- **Gulf government contract values for data or research services.** Searched again with
+  procurement-specific terms. Nothing published found. The GCC material that exists is
+  commentary on procurement as a political instrument, not award records.
+- **Jordanian, Moroccan and Tunisian rules on approving or publishing opinion polls.**
+  Searched directly. Nothing authoritative found either way, so nothing was coded. The
+  Egyptian and Saudi cases are documented and are not generalised to the Maghreb.
+- **Aramco and ADNOC purchases of earth observation or geospatial data.** Nothing found.
+- **Telecom operator data sales in any MENA country.** Nothing found, as in the global
+  round.
+- **Any decomposition of the ESOMAR Middle East and Africa figure** into domestic
+  corporate buyers against foreign agencies and donors. Still the single most useful
+  missing number for this register's MENA and African coverage.
+
+### A statistic withdrawn
+
+The previous round reported a correlation of +0.35 between the number of documented buyer
+rows per segment and that segment's recent-entry share. After this round it is -0.17. The
+only thing that changed was where the research was pointed. `scripts/09_demand.R` now
+prints both values and the reason, so the number cannot be picked up and used as though
+it described the industry.

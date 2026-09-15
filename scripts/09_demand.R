@@ -103,8 +103,11 @@ names(breadth) <- c("segment", "buyer_rows")
 cmb <- merge(rise[, c("segment", "recent_pct", "exit_pct")], breadth, by = "segment")
 cat(sprintf("\ncorrelation between documented buyer breadth and recent-entry share: %.2f (n=%d)\n",
             cor(cmb$buyer_rows, cmb$recent_pct), nrow(cmb)))
-cat("Buyer rows are a count of what could be evidenced, so this is a property of\n",
-    "the research effort as much as of the industry. It is reported, not interpreted.\n", sep = "")
+cat("Buyer rows are a count of what could be evidenced, so this is a property of the\n",
+    "research effort and not of the industry. It was +0.35 before a round of research\n",
+    "aimed at MENA alone added 13 rows, and -0.17 after. A statistic that changes sign\n",
+    "when the researcher changes where they look is measuring the researcher. It is\n",
+    "printed here so that nobody computes it again and believes it.\n", sep = "")
 
 ## ---- 5. Price signals that could be attached to a source -------------------
 ps <- demand[!is.na(demand$price_signal_usd), c("demand_id", "segment", "buyer_category",

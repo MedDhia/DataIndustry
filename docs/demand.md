@@ -68,18 +68,18 @@ new firms are being started.
 
 ## 2. The buyers that can be documented are mostly states
 
-`data/demand.csv` holds 65 rows across all 23 segments and 15 buyer categories.
+`data/demand.csv` holds 78 rows across all 23 segments and 16 buyer categories.
 The largest categories by row count are corporate marketing (9), financial
 investors (7), civil government (7), corporate operations (6) and state security
 agencies (6).
 
-State and donor buyers are 18 of 65 rows. They are 8 of the 12 rows that reach
+State, donor and party buyers are 27 of 78 rows. They are 9 of the 14 rows that reach
 evidence level A. That asymmetry is a fact about the record, not about the
 industry: a government purchase leaves an award notice, a contract value and
 sometimes a court case, while a corporate subscription leaves nothing at all.
 Any account of who buys data that relies on public documents will over-count
 the state. The demand layer records this in `output/tab37_evidence_visibility.txt`,
-where 9 of 12 A rows are public awards and 26 of 33 B rows are trade reporting.
+where 9 of 14 A rows are public awards and 32 of 44 B rows are trade reporting.
 
 The documented state purchases are large and concrete:
 
@@ -157,25 +157,130 @@ being measured. Entry is closed by design, not by economics, which is why five
 US media owners had to form a joint venture to certify alternative measurement
 rather than simply buying from a new supplier.
 
-## 6. MENA and Africa: the demand side is thin and mostly not commercial
+## 6. MENA: who actually pays, and why so little of it is commercial
 
+17 of the 78 rows in `data/demand.csv` carry MENA as their geography, after a
+round of research aimed at this region alone. 11 of the 17 have a state, a
+donor or a political party as the buyer. Across the whole file the equivalent
+share is 27 of 78. The regional figure is higher partly because MENA was
+searched harder and partly because it is true, and the two cannot be separated
+from inside this file.
+
+Start with the size of the commercial market, because it bounds everything else.
 ESOMAR puts the Middle East and Africa together at about 3 percent of global
-insights activity, roughly 4.4bn in 2022, the smallest region. Growth was second
-highest in the world in nominal terms at 9.2 percent and negative at -1.2
-percent once inflation is removed. A region can look like it is growing and be
-shrinking in what its buyers actually purchase.
+insights activity, roughly 4.4bn in 2022, the smallest region in the world.
+Growth was second highest globally in nominal terms at 9.2 percent and negative
+at -1.2 percent once inflation is removed. A region can look like it is growing
+and be shrinking in what its buyers actually purchase.
 
-The register's own African and MENA for-profit firms sit overwhelmingly in the
-two segments whose documented buyers are donors, states and foreign research
-agencies. The commercial buyer that exists elsewhere, a domestic corporate
-marketing department with a research budget, is the thinnest part of the
-evidence here.
+### The state buys, and it also licenses
 
-This is also where the demand file is weakest. Four rows carry MENA as their
-geography and two of them are evidence C. Gulf procurement values are not
-published, so the claim that ministries and sovereign funds are the dominant
-buyers of data systems in the GCC rests on commentary and not on award records.
-It is coded C and flagged, and it should not be cited as though it were measured.
+This is the structural fact that has no counterpart in any other region of the
+register. In Egypt a permit from CAPMAS is required to survey more than five
+people; the agency can alter questions or refuse outright, and an institutional
+ethics approval does not substitute for it. In Saudi Arabia, GASTAT is the sole
+official reference for statistical work in the Kingdom, and it runs its own
+field, telephone and self-reporting surveys across economic, social,
+environmental and spatial domains in every region of the country.
+
+Those are two different mechanisms with the same result. Egypt gates who may
+collect. Saudi Arabia collects in-house instead of procuring. Either way the
+commercial field agency market that exists in Kenya or Nigeria does not form,
+and the register's thin count of Gulf field agencies is a consequence of that
+rather than a gap in enumeration.
+
+Since September 2023, SDAIA has also been the authority enforcing the Saudi
+Personal Data Protection Law, with cross-border transfer conditions and fines up
+to 5m riyals per breach. The same body sets data policy, enforces the privacy
+law, and, through HUMAIN, builds the national AI model. Buyer, regulator and
+producer are one institution.
+
+### The largest standing buyer of MENA public opinion data is a foreign state
+
+Arab Barometer publishes its funders wave by wave. Waves VII and VIII were paid
+for by the US Middle East Partnership Initiative, USAID, the National Endowment
+for Democracy, the BBC, Carnegie Corporation and three US universities. The
+Arab Opinion Index, the region's other standing series, is produced by ACRPS in
+Doha, which is Qatari state backed.
+
+Neither is a commercial purchase, and between them they cover most of what is
+published about Arab public opinion. USAID's dismantling in 2025 removed one of
+the named funders of the first of them, which is the same shock that ended the
+DHS programme and for the same reason.
+
+### Humanitarian assessment is the region's largest fieldwork buyer, and it is contracting
+
+Syria, Yemen, Iraq and Sudan generate more paid data collection than the Gulf
+does, through the humanitarian system rather than through any market. REACH,
+the joint initiative of IMPACT Initiatives, ACTED and UNOSAT, co-chairs the Iraq
+Assessment Working Group with OCHA and runs about 400 assessment and data staff
+across more than 20 countries. The buyer and the collector sit inside the same
+aid system, so this is an internal allocation and not a market.
+
+That allocation is shrinking. The 2025 global humanitarian appeal was funded at
+12bn, the lowest in a decade, with 25 million fewer people reached than in 2024.
+Aid cuts are projected to remove at least 40 percent of humanitarian staffing in
+Syria. Yemen's 2025 plan received under a quarter of what it asked for.
+Assessment work is an early casualty of a shortfall, because it is not itself
+lifesaving and is the easiest line to defer.
+
+### What commercial demand does exist, and where
+
+Five of the 17 MENA rows have a commercial buyer, and they cluster tightly:
+
+- **Gulf consumer goods.** NielsenIQ retail measurement covers more than 90,000
+  outlets in Saudi Arabia and 30,000 in the UAE. Kantar runs consumer panels in
+  Saudi Arabia and the UAE, against 16 in Africa. This is the clearest genuinely
+  commercial data purchase in the region.
+- **Advertising and measurement.** MENA digital advertising reached about 8.19bn
+  in 2025, Saudi Arabia taking roughly 46 percent of it and growing 18.9 percent.
+  In 2022 the Advertising Business Group appointed Ipsos to run UAE cross-media
+  measurement, which is the same buyer structure as Barb in the United Kingdom:
+  an industry committee of the measured parties buying jointly. The predecessor
+  panel, tview, ran trials from 2011 and stalled on funding.
+- **Credit files.** SIMAH draws on roughly 330 credit data sources under Saudi
+  Central Bank supervision; Al Etihad Credit Bureau takes data from banks,
+  telecoms, utilities, rental firms and insurers, with Tabby and Tamara now
+  reporting into both. Supply is compulsory by regulation and the bureau is a
+  state or state-linked monopoly, so no brokerage market of the North American
+  kind forms around it.
+
+### The newest MENA buyer is a sovereign AI programme
+
+ALLaM was built by SDAIA with more than 400 experts and 160 government bodies
+and is now run by HUMAIN. Falcon comes from TII in Abu Dhabi, Fanar from QCRI in
+Doha, Jais from G42's Inception and MBZUAI. Each needs Arabic corpora and
+dialect annotation, and in every case the buyer is a state body or a state fund.
+AI training data is the fastest-filling segment in the register worldwide, and
+the MENA version of that demand is state demand.
+
+### Two countries inside the region that do not behave like it
+
+Israel and Turkiye are both inside this register's MENA definition and both
+invert the regional pattern, in opposite directions. Reporting since 2023
+describes Palantir supplying AI data analytics to Israel and Unit 8200 holding
+about 8,000 TB on Microsoft Azure: a domestic state security buyer with budgets
+that resemble North American ones. Turkiye has the region's densest political
+polling market, with twenty published voting intention polls in 2026 against a
+general election not due until 2028, commissioned by parties and media outlets
+that are usually not named.
+
+Any MENA aggregate computed from this register mixes those two countries with
+Gulf states that produce in-house, with conflict economies where the buyer is
+the humanitarian system, and with North African states that license who may
+ask questions at all. The regional code is an administrative convenience here,
+not a market.
+
+### What is still missing
+
+Four things were searched for in this round and not found: published contract
+values for Gulf government purchases of data or research services; any
+decomposition of the ESOMAR Middle East and Africa figure into domestic
+corporate buyers against foreign agencies and donors; energy sector purchases
+of earth observation by Aramco or ADNOC; and terms for any telecom operator
+data sale in the region. Two MENA rows remain evidence C for that reason. The
+absence of Gulf procurement records is itself a finding about those states and
+is treated as one, not as a hole to be filled with plausible numbers.
 
 ## 7. Deliberately excluded
 
