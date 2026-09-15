@@ -7,7 +7,6 @@
 "LAC","financial_transactions",1,0
 "OCE","financial_transactions",1,0
 "RUS","credit_risk",1,0
-"RUS","identity_biometric",1,0
 "CHN","device_telemetry",2,0
 "CHN","financial_transactions",2,0
 "CHN","labor_employment",2,1
@@ -16,12 +15,12 @@
 "EAS","device_telemetry",2,0
 "EAS","financial_transactions",2,0
 "EEU","device_telemetry",2,0
-"MENA","device_telemetry",2,0
 "MENA","financial_transactions",2,0
 "OCE","migration_displacement",2,0
 "RUS","ai_labels",2,1
 "RUS","education",2,0
 "RUS","financial_transactions",2,0
+"RUS","identity_biometric",2,0
 "RUS","legal_regulatory",2,1
 "SAS","device_telemetry",2,0
 "SAS","financial_transactions",2,0

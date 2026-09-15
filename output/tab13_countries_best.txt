@@ -3,19 +3,19 @@ Fifteen best served countries by number of providers
 ====================================================================================================
      country_name  region_code income_group population_band n_any n_providers n_primary n_accessible
 ----------------------------------------------------------------------------------------------------
-155    Pakistan        SAS         LMIC           XL         231      193        58          30     
-181   Australia        OCE         HIC             M         297      200        31          34     
-31      Brazil         LAC         UMIC           XL         271      202        51          37     
-47     Portugal        WEU         HIC             M         241      203        53          36     
-162   Indonesia        SEA         UMIC           XL         297      204        54          36     
-3       Mexico         LAC         UMIC           XL         301      207        54          38     
-46      Spain          WEU         HIC             M         254      216        60          41     
-41     Belgium         WEU         HIC             M         254      219        57          41     
-154     India          SAS         LMIC           XL         319      241        78          40     
-40   Netherlands       WEU         HIC             M         272      244        72          46     
-45      Italy          WEU         HIC             L         286      256        77          46     
-39     Germany         WEU         HIC             L         302      267        88          50     
-38      France         WEU         HIC             L         319      281        93          50     
-36  United Kingdom     WEU         HIC             L         350      309        108         59     
-1   United States     NOAM         HIC            XL         397      385        147         81     
+155    Pakistan        SAS         LMIC           XL         234      195        58          31     
+181   Australia        OCE         HIC             M         302      202        31          34     
+31      Brazil         LAC         UMIC           XL         273      203        51          37     
+47     Portugal        WEU         HIC             M         243      204        53          36     
+162   Indonesia        SEA         UMIC           XL         300      205        54          36     
+3       Mexico         LAC         UMIC           XL         304      208        54          38     
+46      Spain          WEU         HIC             M         256      217        60          41     
+41     Belgium         WEU         HIC             M         256      220        57          41     
+40   Netherlands       WEU         HIC             M         274      245        72          46     
+154     India          SAS         LMIC           XL         326      245        78          41     
+45      Italy          WEU         HIC             L         288      258        77          46     
+39     Germany         WEU         HIC             L         304      269        88          50     
+38      France         WEU         HIC             L         324      283        93          50     
+36  United Kingdom     WEU         HIC             L         359      314        108         59     
+1   United States     NOAM         HIC            XL         408      396        149         83     
 ----------------------------------------------------------------------------------------------------

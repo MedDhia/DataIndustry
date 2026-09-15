@@ -1,6 +1,6 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **718 operating
+All figures come from `scripts/03_coverage_gaps.R` over the **756 operating
 firms** in the register. A further 70 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
@@ -15,46 +15,77 @@ Provider counts by region:
 
 | Region | Any presence | Substantial | HQ'd there | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| NOAM | 408 | 393 | 255 | 152 | 84 |
-| WEU | 395 | 349 | 156 | 142 | 66 |
-| SSA | 385 | 271 | 123 | 118 | 93 |
-| MENA | 344 | 227 | 66 | 78 | 43 |
-| SAS | 328 | 244 | 16 | 80 | 42 |
-| SEA | 322 | 214 | 11 | 62 | 36 |
-| LAC | 315 | 210 | 14 | 57 | 36 |
-| EEU | 309 | 199 | 16 | 49 | 39 |
-| OCE | 303 | 198 | 6 | 29 | 34 |
-| EAS | 301 | 197 | 15 | 41 | 33 |
-| CHN | 235 | 120 | 23 | 13 | 19 |
-| RUS | 207 | 136 | 17 | 23 | 26 |
+| NOAM | 419 | 404 | 255 | 154 | 86 |
+| WEU | 404 | 354 | 156 | 142 | 66 |
+| SSA | 390 | 272 | 123 | 118 | 93 |
+| MENA | 382 | 264 | 104 | 102 | 51 |
+| SAS | 335 | 248 | 16 | 80 | 43 |
+| SEA | 328 | 215 | 11 | 62 | 36 |
+| LAC | 318 | 211 | 14 | 57 | 36 |
+| EEU | 316 | 200 | 16 | 49 | 39 |
+| OCE | 308 | 200 | 6 | 29 | 34 |
+| EAS | 305 | 198 | 15 | 41 | 33 |
+| CHN | 236 | 120 | 23 | 13 | 19 |
+| RUS | 209 | 137 | 17 | 23 | 26 |
 
-The spread between the best and worst served region is 1.7 to 1 on presence but
-11.7 to 1 on direct human contact.
+The spread between the best and worst served region is 1.8 to 1 on presence but
+11.8 to 1 on direct human contact.
 
-**Sub-Saharan Africa now has the most research-accessible providers of any
-region except North America, and the highest access ratio of any region at all.**
-That is new in this revision and it is an artefact of who does the collecting
-rather than of how much gets collected: adding the Afrobarometer national partner
-network put 34 in-country field agencies into the register, each of which releases
-its national microdata openly. Section 15 draws out what follows from it. Nominal coverage is far more even than real
-collection, because the firms that make coverage look global are the ones that
-never touch a person.
+Nominal coverage is far more even than real collection, because the firms that
+make coverage look global are the ones that never touch a person.
+
+**Sub-Saharan Africa now has the most research-accessible providers of any region
+except North America, and the highest access ratio of any region at all.** That
+is an artefact of who does the collecting rather than of how much gets collected:
+adding the Afrobarometer national partner network put 34 in-country field agencies
+into the register, each of which releases its national microdata openly.
+
+### The MENA and Africa comparison is the sharpest result in this table
+
+Successive rounds have now enumerated both regions to a comparable depth, which
+makes them comparable for the first time. They look alike on capacity and
+nothing alike on disclosure.
+
+| | MENA | Sub-Saharan Africa |
+|---|---|---|
+| Operating organisations headquartered there | 104 | 123 |
+| Field agencies among them | 49 | 61 |
+| Organisations releasing microdata | 18 (17.3%) | 60 (48.8%) |
+| Field agencies releasing microdata | 13 of 49 | 42 of 61 |
+
+**Two regions with similar collection capacity differ by a factor of three in
+whether the data ever leaves the collector.** The mechanism is visible in the
+register rather than inferred. Afrobarometer operates through a national partner
+in each country, and each partner's national dataset is published. The Arab
+world's equivalent infrastructure is centralised instead: Arab Barometer works
+through a small number of regional hubs, and the Arab Opinion Index is run from
+a single institute in Doha. Both release data, but they are three organisations
+releasing rather than thirty-four. Everything else in the MENA column is a
+commercial field agency working on commission, which publishes nothing.
+
+This is a difference in the organisational form of the survey infrastructure, not
+in national wealth, regime type or research capacity. It is the kind of finding
+the register was built to make visible, and it should be checked against the
+region's own records before it is relied on: the MENA figure rests on coding 104
+organisations, most of them privately held, and `microdata_access` for a private
+firm is the hardest field in this file to establish.
 
 ## 2. Three different gaps, with different causes
 
-**Existence gaps** are rare and concentrated. The seven empty cells are almost
-all in mainland China and the Russia bloc, plus financial transaction data, which
-is absent from six of twelve regions. Consumer transaction panels exist only where
-card networks, receipt apps and data aggregators are dense and legally permitted:
-North America above all, then Western Europe and parts of East Asia. Everywhere
-else, spending is inferred rather than observed.
+**Existence gaps** are rare and concentrated. The three remaining empty cells are
+in mainland China and the Russia bloc. Financial transaction data is the thinnest
+domain that exists everywhere: consumer transaction panels are substantial only
+where card networks, receipt apps and data aggregators are dense and legally
+permitted. That means North America above all, then Western Europe and parts of East Asia.
+Everywhere else, spending is inferred rather than observed.
 
-**Access gaps** are the binding constraint. 61 of 324 cells (18.8%) have at least
+**Access gaps** are the binding constraint. 59 of 324 cells (18.2%) have at least
 one provider but none whose record-level data a researcher can obtain, and the
-share has not moved as the register has grown. The
-access ratio sits near 0.20 in every region, so roughly four fifths of the
-industry's coverage is commercially closed regardless of where you look. The gap
-is not that nobody collects. It is that collection and disclosure have come
+share has barely moved as the register has grown from under 500 organisations to
+over 800. The access ratio sits near 0.20 in every region except Sub-Saharan
+Africa, where it is 0.34 for the reason given in section 1, so roughly four fifths
+of the industry's coverage is commercially closed almost everywhere you look. The
+gap is not that nobody collects. It is that collection and disclosure have come
 apart.
 
 The most closed cells are ones where collection is heaviest:
@@ -77,10 +108,10 @@ released to outside researchers in none. Credit data behaves the same way.
 
 | Method | NOAM | WEU | SSA | MENA | RUS | CHN |
 |---|---|---|---|---|---|---|
-| Remote sensing | 50 | 50 | 62 | 56 | 50 | 50 |
-| Web scraping | 44 | 42 | 13 | 28 | 11 | 5 |
-| Online panel | 60 | 61 | 8 | 14 | 10 | 4 |
-| Face-to-face | 14 | 15 | 70 | 32 | 10 | 2 |
+| Remote sensing | 50 | 50 | 62 | 57 | 50 | 50 |
+| Web scraping | 47 | 44 | 14 | 31 | 12 | 5 |
+| Online panel | 60 | 61 | 8 | 15 | 10 | 4 |
+| Face-to-face | 14 | 15 | 70 | 43 | 10 | 2 |
 | Telecom network | 1 | 4 | 2 | 1 | 0 | 0 |
 
 Remote sensing is the only method that is close to uniform, because satellites
@@ -94,9 +125,9 @@ has a population coverage problem no provider count will show.
 
 ## 3. The substantive skew
 
-Domains ranked by number of providers: public opinion (261) and consumer
-behaviour (187). At the bottom sit biodiversity (5), legal and regulatory records
-(11), financial transactions (18), energy and extractives (19) and migration and
+Domains ranked by number of providers: public opinion (282) and consumer
+behaviour (193). At the bottom sit biodiversity (5), legal and regulatory records
+(12), financial transactions (18), energy and extractives (21) and migration and
 displacement (21).
 
 Migration and displacement has twenty-one providers worldwide and fewer than three in
@@ -104,55 +135,59 @@ five regions, including North America and Oceania. For a domain that drives a
 large share of contemporary policy argument, the primary collection base is very
 thin, and most of it is nonprofit or academic rather than commercial.
 
-Education has forty-two providers and none at all in mainland China. Labour and
-employment has seventy-eight, but most are scraped professional-profile datasets
+Education has forty-four providers and none at all in mainland China. Labour and
+employment has eighty-three, but most are scraped professional-profile datasets
 (Coresignal, People Data Labs, ZoomInfo) whose population is people who maintain
 a public professional profile, which is not the labour force.
 
 ## 4. Where the firms are
 
-52.2% of operating firms are headquartered in North America or Western Europe,
+54.4% of operating firms are headquartered in North America or Western Europe,
 down from 62.7% before MENA, African, Russian and Chinese enumeration was
-deepened. Among venture and private-equity backed firms it is still around 73%.
+deepened, and still 72.7% among venture and private-equity backed firms. The
+share has moved up and down as successive regions were extended; read it as
+roughly half rather than as a trend.
 
-Of the 62 firms founded in 2019 or later, 31 are North American, 13 Sub-Saharan
-African, 8 MENA, 6 Western European and 4 elsewhere. A third of new entry in this
-industry is now Middle Eastern or African, which was not visible in earlier
-revisions of this register and is not an artifact of looking harder: these are
-firms with funding rounds, products and named customers.
+Of the 88 firms founded in 2019 or later with a known founding year, 40 are North
+American, 19 Sub-Saharan African, 13 MENA, 12 Western European and 4 elsewhere. A
+third of recent entry in this industry is Middle Eastern or African, which was not
+visible in earlier revisions of this register and is not an artifact of looking
+harder: these are firms with funding rounds, products and named customers.
 
 What they are building differs sharply by region.
 
 | Segment of firms founded 2019 or later | MENA and Africa | North America and Western Europe |
 |---|---|---|
-| AI training data | 7 | 11 |
-| Survey and insights | 0 | 12 |
+| AI training data | 9 | 11 |
+| Survey and insights | 0 | 14 |
 | Field data collection | 5 | 2 |
-| Earth observation | 4 | 2 |
+| Earth observation | 6 | 6 |
 | Climate risk | 0 | 4 |
-| Web data | 2 | 1 |
+| Web data | 2 | 4 |
 
-Not one of the 21 MENA and African startups is in survey and insights, and 12 of
-the 37 North American and Western European ones are. The new Northern firms are
+Not one of the 32 MENA and African startups founded since 2019 is in survey and
+insights, and 14 of the 52 Northern ones are. That held when the comparison was 21
+against 37 and it still holds now that both counts have grown, which is the main
+reason to trust it. The new Northern firms are
 overwhelmingly tools for asking questions differently: AI-moderated interviewing
 (Listen Labs, Strella, Outset, Conveo, Perspective AI, TheySaid, Versive) and
 population simulation (Aaru, Simile). The new Southern firms are building
 collection capacity that did not exist: African-language speech corpora (Intron
 Health, African Languages Lab, Lelapa AI, Digital Umuganda, Awarri), Arabic
-dialect corpora (CNTXT AI, Arabic.AI), field sensing (Aflabox, Tolbi, Amini,
+dialect corpora (CNTXT AI, Arabic.AI, Intella, Maqsam, QCRI), field sensing (Aflabox, Tolbi, Amini,
 Charis UAS) and clinical record estates (Helium Health).
 
-Of the 44 AI training data firms in the register, 13 are headquartered in MENA or
-Sub-Saharan Africa against 21 in North America. This is the one segment where the
+Of the 52 AI training data firms in the register, 20 are headquartered in MENA or
+Sub-Saharan Africa against 22 in North America. This is the one segment where the
 periphery has meaningful ownership rather than supplying labour to firms
 headquartered elsewhere, and the reason is linguistic: nobody in San Francisco
 can assemble a Hausa or Tunisian Arabic corpus.
 
 Ownership varies systematically by region. Venture capital backs 108 firms in
-North America and 45 in Western Europe, against 59 across MENA, Africa, South
+North America and 45 in Western Europe, against 66 across MENA, Africa, South
 Asia, Southeast Asia, East Asia and mainland China combined. Outside the core, the
 register is dominated by owner-managed independents and by nonprofits and academic
-centres: 55 of the 307 operating firms headquartered outside North America and
+centres: 61 of the 345 operating firms headquartered outside North America and
 Western Europe, and they supply a disproportionate share of every firm whose
 record-level data a researcher can reach at all.
 
@@ -173,6 +208,13 @@ the highest of any region. What the earlier revisions were measuring was not a
 thinner African collection base but a register assembled from English-language
 trade coverage, which sees venture-backed firms and does not see national
 research institutes.
+
+The MENA round confirmed that reading and then complicated it. Thirty-eight
+additions took the region from 68 organisations to 106 and its headquartered
+count from 66 to 104, so the same undercount was operating there. But MENA's
+access ratio did not move: it stayed at 0.19 while Africa's went to 0.34. Looking
+harder found the organisations in both regions; only in Africa did looking harder
+also find open data. Section 1 sets out why.
 
 ### Which owners publish, precisely
 
@@ -913,31 +955,38 @@ measured, and that `human_subjects` and `consent_model` return empty for them in
 the same way they return empty for the synthetic research firms in section 13.
 Two different frontiers, arriving at the same blank.
 
-## 16. Africa and MENA now have more earth observation bodies than North America
+## 16. Africa and MENA match North America on earth observation headcount
 
-Adding the state space agencies and the Israeli and Gulf operators puts 23 earth
-observation organisations in MENA and Sub-Saharan Africa against 21 in North
-America. On a headcount the periphery has caught up. On structure it has not.
+An earlier revision of this section said the two regions had **more** earth
+observation bodies than North America, on 23 against 21. Extending the register
+has made it a tie: 25 in MENA and Sub-Saharan Africa against 25 in North America,
+and 40 once Western Europe is included. The claim is restated here as parity
+rather than quietly left as it was, because the margin it rested on was two
+organisations.
+
+On a headcount the periphery has caught up with the United States and Canada. On
+structure it has not.
 
 | Ownership | MENA and Africa | North America and Western Europe |
 |---|---|---|
-| State-linked | 7 | 0 |
-| Venture-backed | 8 | 18 |
-| Owner-managed independent | 6 | 0 |
-| Publicly listed | 1 | 5 |
+| State-linked | 8 | 0 |
+| Venture-backed | 8 | 26 |
+| Owner-managed independent | 7 | 1 |
+| Publicly listed | 1 | 6 |
 | Private equity | 0 | 3 |
 | Nonprofit | 1 | 0 |
-| Subsidiary | 0 | 2 |
+| Subsidiary | 0 | 4 |
 
 Not one North American or Western European earth observation organisation in this
-register is state-linked. Seven of twenty-three in MENA and Africa are: SANSA,
-NASRDA, the Egyptian Space Agency, the Kenya Space Agency, ESSTI, MBRSC and
-TÜBİTAK UZAY. Six more are owner-managed independents, mostly small drone survey
-firms, a category with no Northern equivalent in this segment at all.
+register is state-linked. Eight of twenty-five in MENA and Africa are: SANSA,
+NASRDA, the Egyptian Space Agency, the Kenya Space Agency, ESSTI, MBRSC, TÜBİTAK
+UZAY and the Saudi Space Agency. Seven more are owner-managed independents, mostly
+small drone survey firms, a category with one Northern equivalent in this segment
+against seven here.
 
 Three consequences follow, and they run against the headcount.
 
-**Access is worse, not better.** Four of the seven state agencies release nothing
+**Access is worse, not better.** Five of the eight state agencies release nothing
 outside government. The Northern venture-backed operators at least sell. What is
 openly available across Africa comes from one nonprofit, Digital Earth Africa,
 which makes Landsat and Sentinel archives analysis-ready for 54 countries and is
@@ -969,7 +1018,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 258 rows covering 111 of the 788 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 826 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on

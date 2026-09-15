@@ -821,3 +821,85 @@ contribution, Mastercard Foundation Young Africa Works, Villgro Africa, and the 
 research funds of Qatar, Saudi Arabia and the UAE. Each is plausible; none had its cadence
 and award range established in this pass. `docs/grant_programmes.md` lists them so the gap
 is visible.
+
+## MENA extension round
+
+MENA held 68 organisations. Algeria, Qatar, Bahrain, Kuwait and Oman had none; Saudi
+Arabia had two for the largest Gulf economy; Turkey had five for a country with a dense
+polling industry. This round added 38, taking MENA to 106 across 19 countries.
+
+**Algeria is no longer empty.** IRSM, the main Algerian market and media research
+institute, and CREAD, the Algiers public research centre that runs household and labour
+surveys. The previous round recorded Algeria as a negative result because nothing could
+be established with confidence; a directory-led search in French found both. The lesson
+is the obvious one about searching in the right language, and it should be assumed to
+apply to the Arabic-language record as well.
+
+**Turkey goes from 5 to 15.** Optimar, ORC, Avrasya, GENAR, Yöneylem, SONAR, Gezici, MAK
+and PIAR, plus Insider on the commercial side. Turkish polling is unusually well covered
+in its own press, including post-election accuracy comparisons, which is why these rows
+could be added at all; most carry evidence level C because founding years are not
+consistently published.
+
+**The Gulf had almost nothing.** Added: the Arab Center for Research and Policy Studies
+in Doha, which runs the Arab Opinion Index and is the largest recurring public opinion
+survey in the Arab world; SESRI at Qatar University, established October 2008, which runs
+Qatar's national surveys and releases microdata; QCRI, founded by Qatar Foundation in
+2010, which builds and largely publishes Arabic language corpora; SDAIA, established by
+Saudi royal decree on 30 August 2019 as the sole authority for Saudi national data; Elm
+and the Saudi Space Agency; SIMAH, the Saudi credit bureau; and Derasat in Bahrain,
+created by royal order in 2009, which runs the national opinion polling programme.
+
+Also added: El-Zanaty and Associates, which has implemented the Egypt Demographic and
+Health Survey series since 1988 and was a conspicuous omission; the region's credit
+bureaux, which filled an empty segment (SIMAH, I-Score in Egypt, Al Etihad Credit Bureau
+in the UAE); M42 and Altibbi, which took MENA health real-world data from nothing to two;
+MAS in Ramallah, the Consultation and Research Institute and InfoPro in Beirut, Al-Bayan
+in Baghdad, Marocmétrie, AARC and Chifco in Tunisia, Intella and Maqsam in Arabic speech,
+and Cognyte, Zencity and the Israel Democracy Institute.
+
+Sources retrieved for this round:
+
+- IRSM, Institut de Recherche Sondages et Marketing — https://irsm-global.com/
+- Kompass Algeria, opinion polling and social research directory — https://dz.kompass.com/a/sondages-d-opinion-et-etudes-sociales/8065007/
+- DHS Program, Egypt Demographic and Health Survey 2014 final report — https://dhsprogram.com/pubs/pdf/fr302/fr302.pdf
+- Qatar University, About SESRI — https://www.qu.edu.qa/en-us/Research/sesri/about-us/Pages/default.aspx
+- Wikipedia, SESRI — https://en.wikipedia.org/wiki/SESRI
+- Qatar Foundation, Qatar Computing Research Institute — https://www.qf.org.qa/research/qatar-computing-research-institute
+- Saudipedia, Saudi Data and Artificial Intelligence Authority — https://saudipedia.com/en/saudi-data-and-artificial-intelligence-authority-sdaia
+- Wikipedia, Saudi Authority for Data and Artificial Intelligence — https://en.wikipedia.org/wiki/Saudi_Authority_for_Data_and_Artificial_Intelligence
+- Derasat, about — https://www.derasat.org.bh/about-derasat/
+- Derasat, surveys and opinion polls — https://www.derasat.org.bh/surveying-polling/
+- Wikipedia, Derasat — https://en.wikipedia.org/wiki/Derasat
+- Arab Barometer, Wave VIII — https://www.arabbarometer.org/surveys/arab-barometer-wave-viii/
+- Newslab Türkiye, on the number of Turkish research companies and the absence of self-regulation — https://www.newslabturkey.org/2023/07/05/turkiyede-arastirma-sirketi-bollugu-var-ancak-ozdenetim-yok/
+
+**What the round changed in the findings.** The important result is a comparison that
+only became possible once both regions were enumerated to a similar depth, and it is
+written up in section 1. MENA and Sub-Saharan Africa now hold comparable collection
+capacity, 104 headquartered organisations against 123 and 49 field agencies against 61,
+and differ by a factor of three in disclosure: 17.3% of MENA organisations release
+microdata against 48.8% in Africa, and 13 of 49 MENA field agencies against 42 of 61
+African ones. The mechanism is the organisational form of the survey infrastructure.
+Afrobarometer publishes through a national partner per country; the Arab world's
+equivalent is centralised in Arab Barometer's regional hubs and the Doha-based Arab
+Opinion Index. Three organisations releasing is not thirty-four.
+
+That figure should be checked against the region's own records before being relied on.
+It rests on coding 104 organisations, most privately held, and `microdata_access` for a
+private firm is the least verifiable field in `companies.csv`.
+
+**Two earlier claims were corrected rather than left standing.** Section 16 said MENA and
+Africa had *more* earth observation bodies than North America, on 23 against 21. It is now
+25 against 25, a tie, and the section says so; the original margin was two organisations.
+Section 4's founded-since-2019 comparison was recomputed on 88 firms rather than 62, and
+the finding that no MENA or African startup in that cohort is in survey and insights
+survives the larger sample, 0 of 32 against 14 of 52.
+
+**Still empty:** Kuwait, Oman, and the Arab Barometer Wave VIII fieldwork partners for
+Kuwait and Mauritania, which are not named publicly. Iran still has one organisation
+headquartered in-country. InstaDeep, the Tunis-founded AI company acquired by BioNTech in
+2023, was considered and excluded: it is an AI research and engineering firm rather than
+an organisation whose business is collecting data, and admitting it would widen the
+register's inclusion rule. National statistical offices remain excluded as a class, with
+the Egyptian cabinet's IDSC the one inherited exception.

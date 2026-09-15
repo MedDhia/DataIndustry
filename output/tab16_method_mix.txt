@@ -10,16 +10,16 @@ clinical_records               0             0.700
 crowd_sensor                 0.500           1.100   
 crowd_task                   1.200           2.800   
 device_passive               1.200           3.200   
-environmental_sample           0             0.200   
+environmental_sample           0             0.100   
 expert_elicit                  1             2.700   
 face_to_face                 5.900           8.700   
 mobile_app                   0.500           1.500   
 online_panel                 4.400           8.800   
-remote_sensing              30.500           17.200  
-sensor_hardware              5.300           5.700   
+remote_sensing              30.500             17    
+sensor_hardware              5.300           5.800   
 signals_rf                   3.200           1.300   
 telecom_network              0.100           0.200   
 telephone                    4.200           6.100   
 transaction                  2.200           2.200   
-web_scrape                  12.700           14.200  
+web_scrape                  12.700           14.300  
 -----------------------------------------------------

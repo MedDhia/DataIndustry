@@ -140,6 +140,15 @@ MANUAL = {
  "natcen":[0,0,3,0,0,0,0,0,0,0,0,0],"infas":[0,0,3,0,0,0,0,0,0,0,0,0],
  "bmg_research":[0,0,3,0,0,0,0,0,0,0,0,0],"link_institut":[0,0,3,0,0,0,0,0,0,0,0,0],
  "credoc":[0,0,3,0,0,0,0,0,0,0,0,0],
+ # MENA field agencies and multi-country institutes, same reason again.
+ "cread_algeria":[0,0,0,0,0,3,0,0,0,0,0,0],"irsm_algeria":[0,0,0,0,0,3,0,0,0,0,0,0],
+ "cri_lebanon":[0,0,0,0,0,3,1,0,0,0,0,0],
+ "acrps_doha":[0,0,0,0,0,3,1,0,0,0,0,0],
+ "sesri_qatar":[0,0,0,0,0,3,0,0,0,0,0,0],
+ "el_zanaty":[0,0,0,0,0,3,0,0,0,0,0,0],
+ "mas_palestine":[0,0,0,0,0,3,0,0,0,0,0,0],
+ "aarc_international":[0,0,0,0,0,3,1,0,0,0,0,0],
+ "albayan_iraq":[0,0,0,0,0,3,0,0,0,0,0,0],
 }
 
 def scope_adjust(vec, scope, hq_idx):

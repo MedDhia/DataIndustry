@@ -23,7 +23,7 @@
 "afrobarometer","Michael Bratton","founder","USA","individual","A","Co-founder of the network launched in 1999","SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "afrobarometer","Robert Mattes","founder","ZAF","individual","A","Co-founder of the network","SSA","GHA","nonprofit","open","survey_insights","SSA",FALSE
 "afrobarometer","David and Lucile Packard Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","European Commission","funder","BEL","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
+"afrobarometer","European Union","funder","BEL","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
 "afrobarometer","Ford Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "afrobarometer","German Federal Ministry for Economic Cooperation and Development","funder","DEU","bilateral_donor","A","Delivered through GIZ","SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
 "afrobarometer","International Development Research Centre","funder","CAN","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
@@ -36,7 +36,7 @@
 "afrobarometer","Swedish International Development Cooperation Agency","funder","SWE","bilateral_donor","A",NA,"SSA","GHA","nonprofit","open","survey_insights","WEU",FALSE
 "afrobarometer","United States Agency for International Development","funder","USA","bilateral_donor","A","Former Africa Bureau officials publicly urged USAID to save Afrobarometer funding","SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "afrobarometer","William and Flora Hewlett Foundation","funder","USA","foundation","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
-"afrobarometer","World Bank Group","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
+"afrobarometer","World Bank","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "airqo","Makerere University","controlling_owner","UGA","university","A",NA,"SSA","UGA","academic","open","climate_risk","SSA",TRUE
 "airqo","Google.org","funder","USA","corporate","A","1.3 million dollar AI Impact Challenge grant in 2019 followed by a 3 million dollar grant to expand to ten cities in five countries","SSA","UGA","academic","open","climate_risk","NOAM",FALSE
 "amini","Kate Kallot","founder","KEN","individual","A","Founder and chief executive","SSA","KEN","private_vc","researcher_restricted","earth_observation","SSA",TRUE
@@ -147,9 +147,9 @@
 "kobotoolbox","Phuong Pham","founder","USA","individual","A","Co-founder in 2005; faculty at the Harvard T H Chan School of Public Health","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
 "kobotoolbox","Harvard Humanitarian Initiative","funder","USA","university","A","Hosted the project until it became an independent nonprofit in 2019","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
 "konda","Tarhan Erdem","founder","TUR","individual","A","Founder in 1986; a former Turkish minister of industry; died in 2022","MENA","TUR","private_independent","researcher_restricted","field_agency","MENA",TRUE
-"lacuna_fund","Canadas International Development Research Centre","funder","CAN","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",FALSE
 "lacuna_fund","German Federal Ministry for Economic Cooperation and Development","funder","DEU","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","WEU",FALSE
 "lacuna_fund","Google.org","funder","USA","corporate","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",TRUE
+"lacuna_fund","International Development Research Centre","funder","CAN","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",FALSE
 "lacuna_fund","Rockefeller Foundation","funder","USA","foundation","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",TRUE
 "lapop","Vanderbilt University","controlling_owner","USA","university","A",NA,"NOAM","USA","academic","open","survey_insights","NOAM",TRUE
 "lapop","Mitchell Seligson","founder","USA","individual","A","Founder of the AmericasBarometer","NOAM","USA","academic","open","survey_insights","NOAM",TRUE
