@@ -354,3 +354,40 @@ overrides the gate.
 
 Method repertoires come from the firm's `modality_primary` plus the methods its
 segment can deploy, listed in `SEGMENT_METHODS` in the build script.
+
+## `data/grant_programmes.csv` (15 rows, 20 variables)
+
+Recurring open-call funding instruments that a data collection venture could apply to.
+One row per programme, not per award and not per organisation. See
+`docs/grant_programmes.md` for what the layer shows and what was deliberately left out.
+
+| Variable | Type | Description |
+|---|---|---|
+| `programme_id` | key | Stable identifier. |
+| `programme_name` | string | Programme as the funder names it. |
+| `funders` | list | Pipe-delimited. Names match `ownership.csv` spelling where the funder appears in both. |
+| `funder_country` | ISO3 | Where the lead funder is based. |
+| `funder_category` | factor | `foundation`, `bilateral_donor`, `multilateral`, `state`, `nonprofit`, `corporate`, `university`. |
+| `instrument_type` | factor | `grant`, `prize`, `equity_free_investment`, `convertible`, `state_subsidy`, `fellowship`. |
+| `cadence` | factor | `annual`, `biennial`, `rolling`, `thematic_rounds`, `one_off`. |
+| `geography_scope` | factor | `global`, `multi_region`, `single_region`, `single_country`. |
+| `eligible_regions` | list | Pipe-delimited region codes from `regions.csv`. |
+| `award_min_usd`, `award_max_usd` | integer | Approximate US dollar equivalents of the published range. Converted at the rate prevailing when the round was announced, so treat as an order of magnitude. |
+| `stage_targeted` | factor | `idea`, `seed`, `early`, `growth`, `any`. |
+| `data_specific` | factor | `yes` the programme exists to fund data work; `partial` a data venture is eligible within a broader remit; `no` data ventures compete against all sectors. |
+| `thematic_focus` | string | Free text, no commas. |
+| `status` | factor | `open`, `dormant`, `discontinued`. |
+| `first_year`, `ended_year` | integer | `ended_year` is `NA` unless `status` is `discontinued`; the validator enforces both directions. |
+| `evidence_level` | factor | `A`, `B`, `C`, as elsewhere. All current rows are `A`. |
+| `url` | string | Funder's own page for the programme. |
+| `notes` | string | Short free text, no commas. |
+
+**Award figures are approximate and currency-converted.** Several programmes publish in
+pounds, euros or Canadian dollars, and some state a total pool rather than a per-award
+range. Use the range to sort programmes into bands, not to compare two programmes a
+thousand dollars apart.
+
+**A shared funder name is not a grant receipt.** Six programmes have a funder that also
+appears in `ownership.csv`. That means the funder is active in this industry, not that
+any organisation in `companies.csv` won money through that programme. `07_grants.R`
+prints the overlap with that caveat attached.

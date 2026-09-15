@@ -1,0 +1,14 @@
+
+Open programmes for which each region is eligible
+===========================
+     region open_programmes
+---------------------------
+SSA   SSA         12       
+LAC   LAC          6       
+SAS   SAS          6       
+MENA  MENA         5       
+SEA   SEA          4       
+OCE   OCE          1       
+NOAM  NOAM         1       
+WEU   WEU          1       
+---------------------------

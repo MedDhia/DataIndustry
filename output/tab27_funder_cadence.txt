@@ -1,0 +1,11 @@
+
+Funder category by cadence
+==============================================
+                annual rolling thematic_rounds
+----------------------------------------------
+bilateral_donor   0       2           2       
+foundation        4       1           2       
+multilateral      1       0           0       
+nonprofit         2       0           0       
+state             0       1           0       
+----------------------------------------------

@@ -1,0 +1,10 @@
+
+Grant instrument type by data specificity
+=====================================
+                       no partial yes
+-------------------------------------
+equity_free_investment 1     0     0 
+grant                  2     7     2 
+prize                  2     0     0 
+state_subsidy          1     0     0 
+-------------------------------------

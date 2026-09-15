@@ -766,3 +766,58 @@ about twenty firms should be treated the same way.
 Section 14's exit table also shifted: the field agency exit rate falls from 4.5% to 3.6%
 as the denominator grows from 127 to 163, which sharpens rather than weakens the
 contrast with mobile location data at 34.8%.
+
+## Grant programme layer
+
+`data/grant_programmes.csv` was built in a single research pass in September 2026. Every
+row is evidence level A, meaning the cadence, award range and eligibility were read off
+the funder's own pages or contemporaneous reporting of the round rather than recalled.
+Sources retrieved:
+
+- Lacuna Fund, apply — https://lacunafund.org/apply/
+- Lacuna Fund, NLP applicant webinar slides 2024 — https://lacunafund.org/wp-content/uploads/sites/11/2024/07/Applicant-Webinar-Slides-NLP-2024_English.pdf
+- IDRC, Artificial Intelligence for Development — https://idrc-crdi.ca/en/initiative/artificial-intelligence-development
+- IDRC, call for concept notes on the socio-economic impacts of AI in Africa — https://idrc-crdi.ca/en/funding/call-concept-notes-socio-economic-impacts-artificial-intelligence-africa
+- GSMA, Innovation Fund — https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma-innovation-fund/
+- GSMA, launch of the Innovation Fund for Impactful AI — https://www.gsma.com/newsroom/press-release/empowering-ai-innovations-to-transform-lives-gsma-launches-new-innovation-fund-for-startups/
+- GSMA, Innovation Fund for Green Transition for Mobile — https://www.gsma.com/newsroom/press-release/gsma-launches-innovation-fund-to-accelerate-green-transition-through-mobile-technology/
+- Global Grand Challenges — https://gcgh.grandchallenges.org/
+- Disrupt Africa, Gates Grand Challenges 2026 AI-enabled family planning call — https://disruptafrica.com/2026/08/17/african-ai-enabled-family-planning-solutions-can-apply-for-500k-gates-foundation-grand-challenges/
+- Science for Africa Foundation, Grand Challenges Africa — https://scienceforafrica.foundation/grand-challenges-africa
+- Science for Africa Foundation, Round 16 rules and guidelines — https://scienceforafrica.foundation/resources/round-16-rules-and-guidelines
+- Grand Challenges Canada, how we fund — https://www.grandchallenges.ca/what-we-do/how-we-fund/
+- Government of Canada, renewed investment in Grand Challenges Canada — https://www.canada.ca/en/global-affairs/news/2026/03/secretary-of-state-sarai-announces-renewed-investment-in-grand-challenges-canada-to-advance-global-health-innovation.html
+- Simpler.Grants.gov, DIV annual APS listing — https://simpler.grants.gov/opportunity/79b44c7b-5eb2-45d0-991a-c27d0361f297
+- Tony Elumelu Foundation, 2026 entrepreneurship programme — https://www.tonyelumelufoundation.org/press-releases/apply-tef-entrepreneurship-programme-2026
+- AFD, funding to support African digital start-ups — https://www.afd.fr/en/carte-des-projets/appropriate-funding-support-african-digital-start-ups-and-their-ecosystems
+- Mozilla Foundation, grantmaking — https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2026-nominations-request/
+- Milken Institute, Milken-Motsepe Innovation Prize Program — https://milkeninstitute.org/philanthropy/environmental-and-social-innovation/innovation-prize-programs/milken-motsepe-innovation-prize-program
+- Milken-Motsepe Prize in Circular Economy — https://milkenmotsepeprize.org/circular-economy/
+- VC4A, Africa Prize for Engineering Innovation 2026 — https://vc4a.com/royal-academy-of-engineering/africa-prize-for-engineering-innovation-2026/
+- Arab Council for the Social Sciences, current opportunities — https://theacss.org/current-opportunities/
+- Arab Council for the Social Sciences, SGP Cycle 10 call — https://theacss.org/about-grants-fellowships/sgp-cycle-10-call-for-applications/
+- Startup Tunisia, about the Startup Act — https://startup.gov.tn/en/startup_act/discover
+- Ministere des Technologies de la Communication, Startup Act label procedures — https://www.mtc.gov.tn/fileadmin/StartupAct/Startup_Act_-_procedures_conditions_obtention_du_label.pdf
+
+**The USAID Development Innovation Ventures row is the one that changes an argument.**
+DIV ran on a rolling basis from 2010 with awards from 25,000 to 15 million dollars and a
+record of funding data-driven ventures. Its FY2025 annual programme statement closed on
+27 January 2025 and the programme ended with the dissolution of USAID. A philanthropic
+successor, the DIV Fund, raised 20 million dollars in emergency funding for stranded
+grantees with a further 28 million committed over four years. Both are recorded, the
+first as discontinued and the second as open, because the point of the layer is to show
+that funding instruments exit the same way firms do.
+
+**Data quality fix made in the same pass.** `ownership.csv` carried the same funder under
+two spellings in three places: "Canadas International Development Research Centre" beside
+"International Development Research Centre", "World Bank Group" beside "World Bank", and
+"European Commission" beside "European Union". Those were normalised to one spelling
+each, which is also what lets `07_grants.R` match programme funders against the ownership
+layer. Any count of distinct funders taken from an earlier revision was three too high.
+
+**Deliberately excluded rather than guessed:** the Patrick J. McGovern Foundation's AI
+grants, MIT Solve, Catalyst Fund, Google.org's African AI funding beyond its Lacuna
+contribution, Mastercard Foundation Young Africa Works, Villgro Africa, and the national
+research funds of Qatar, Saudi Arabia and the UAE. Each is plausible; none had its cadence
+and award range established in this pass. `docs/grant_programmes.md` lists them so the gap
+is visible.

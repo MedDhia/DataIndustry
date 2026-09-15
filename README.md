@@ -16,6 +16,7 @@ actually gathering the data, and what is nobody gathering?
 | `data/coverage_spatial.csv` | 788 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
+| `data/grant_programmes.csv` | 15 | Recurring open-call funding instruments a data collection venture could apply to. Purposive, not a census. |
 | `data/coverage_country.csv` | 32,679 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 23 | Industry segment taxonomy. |
 | `data/domains.csv` | 27 | Substantive domain taxonomy. |
@@ -24,7 +25,9 @@ actually gathering the data, and what is nobody gathering?
 | `docs/codebook.md` | | Every variable, every coding rule. |
 | `data/ownership.csv` | 258 | Founders, owners, investors and funders for 111 organisations. Partial and purposive; read the codebook before computing anything from it. |
 | `docs/coverage_gaps.md` | | The findings. |
+| `docs/grant_programmes.md` | | What the funding-instrument layer shows and what it leaves out. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
+| `scripts/07_grants.R` | | Recurring grant instruments: descriptives only, the layer is too small for more. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
 ## Scope
@@ -176,6 +179,7 @@ Rscript  scripts/03_coverage_gaps.R           # region gap analysis -> output/
 Rscript  scripts/04_country_gaps.R            # country gap analysis -> output/
 Rscript  scripts/05_history.R                 # exits and survivorship -> output/
 Rscript  scripts/06_ownership.R               # founders, owners and funders -> output/
+Rscript  scripts/07_grants.R                  # recurring grant instruments -> output/
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are

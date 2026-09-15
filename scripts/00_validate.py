@@ -151,6 +151,44 @@ def main():
         if r["evidence_level"] not in {"A", "B", "C"}:
             err["ownership evidence_level"].append((r["company_id"], r["evidence_level"]))
 
+    # ---- grant_programmes.csv: recurring funding instruments, not organisations.
+    progs = list(csv.DictReader(open("data/grant_programmes.csv")))
+    PROG = {
+     "funder_category": {"foundation", "bilateral_donor", "multilateral", "state",
+                         "nonprofit", "corporate", "university"},
+     "instrument_type": {"grant", "prize", "equity_free_investment", "convertible",
+                         "state_subsidy", "fellowship"},
+     "cadence": {"annual", "biennial", "rolling", "thematic_rounds", "one_off"},
+     "geography_scope": {"global", "multi_region", "single_region", "single_country"},
+     "stage_targeted": {"idea", "seed", "early", "growth", "any"},
+     "data_specific": {"yes", "partial", "no"},
+     "status": {"open", "dormant", "discontinued"},
+     "evidence_level": {"A", "B", "C"},
+    }
+    for pid, n in collections.Counter(r["programme_id"] for r in progs).items():
+        if n > 1:
+            err["duplicate programme_id"].append(pid)
+    for r in progs:
+        pid = r["programme_id"]
+        if len(r) != 20 or None in r.values():
+            err["programme wrong field count"].append(pid)
+            continue
+        for f, vocab in PROG.items():
+            if r[f] not in vocab:
+                err[f"programme {f}"].append((pid, r[f]))
+        if r["funder_country"] not in iso:
+            err["programme funder_country"].append((pid, r["funder_country"]))
+        for rg in r["eligible_regions"].split("|"):
+            if rg not in regs:
+                err["programme eligible_regions"].append((pid, rg))
+        for f in ("award_min_usd", "award_max_usd", "first_year"):
+            if not r[f].isdigit():
+                err[f"programme {f}"].append((pid, r[f]))
+        if int(r["award_min_usd"]) > int(r["award_max_usd"]):
+            err["programme award range"].append(pid)
+        if (r["status"] == "discontinued") != (r["ended_year"] != "NA"):
+            err["programme status vs ended_year"].append((pid, r["status"], r["ended_year"]))
+
     if err:
         for k, v in err.items():
             print(f"{k}: {len(v)} -> {v[:10]}", file=sys.stderr)
@@ -158,7 +196,7 @@ def main():
         return 1
     print(f"OK: {len(companies)} companies, {len(cov)} region rows, "
           f"{len(ctys)} countries, {len(cc)} company-country rows, "
-          f"{len(own)} ownership rows, no errors")
+          f"{len(own)} ownership rows, {len(progs)} grant programmes, no errors")
     return 0
 
 if __name__ == "__main__":
