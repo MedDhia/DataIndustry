@@ -1372,3 +1372,40 @@ the commercial layer poorly, and owner-managed independents, the largest ownersh
 category in the register at 152 operating firms, are almost entirely absent from
 it. Extending this layer means company registry work in jurisdictions where
 registries are often not open.
+
+## 18. The demand side, and why it is a different kind of claim
+
+Everything above this section describes supply. `docs/demand.md` takes the buyer side
+and keeps it separate on purpose, because the two are not knowable to the same standard.
+
+What can be computed from the register is entry. Among 704 for-profit organisations,
+682 carry a founding year, so the share of a segment founded since 2015 can be measured
+exactly. It is a revealed preference, not demand: founders went where they expected to
+be paid. Printed next to the exit rate it separates four situations, and the pairing
+matters, because the two highest-entry segments after the expanding ones are also among
+the highest-exit. Mobile location and mobility is 46 percent recent and has lost 8 of
+24 firms, the worst exit rate in the register. Financial alternative data is 48 percent
+recent and has lost 4 of 23. Neither is growth.
+
+Expanding on both measures: AI training data (67 percent recent, 8.0 percent exit),
+web data extraction (64, 0.0), distributed contributor sensing (60, 10.0), climate and
+environmental risk (57, 4.8), earth observation (47, 8.8). Consolidating: consumer data
+brokerage (4 percent recent, 25.0 percent exit), media and audience measurement (5,
+18.2), retail scanning (11, 21.1). The two oldest segments, in-country field agencies
+and full-service survey firms, are neither: their entry shares are 16 and 24 percent and
+their exit rates, 4.6 and 6.7, are among the lowest in the file.
+
+What cannot be computed is who pays. `data/demand.csv` holds 65 researched rows across
+all 23 segments, and the composition of that file says something about the record before
+it says anything about the industry. State and donor buyers are 18 of 65 rows and 8 of
+the 12 rows that reach evidence level A, because a government purchase leaves an award
+notice and a corporate subscription leaves nothing. Any account of data buying built
+from public documents will over-count the state, this one included, and section 2 of
+`docs/demand.md` states that rather than presenting the concentration as a finding.
+
+One result there bears directly on section 1 of this document. Six segments have a
+documented state security buyer. Operating for-profit firms in those six disclose
+record-level data to researchers at 10.0 percent against 15.4 percent elsewhere, 15 of
+150 against 74 of 480. The gap is small, the denominators are small, and segment
+composition could produce it without any relationship between security demand and
+secrecy. It is recorded as an observation to test, not as an effect.

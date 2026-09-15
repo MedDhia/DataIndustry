@@ -427,3 +427,40 @@ thousand dollars apart.
 appears in `ownership.csv`. That means the funder is active in this industry, not that
 any organisation in `companies.csv` won money through that programme. `07_grants.R`
 prints the overlap with that caveat attached.
+
+## `data/demand.csv` (65 rows, 14 variables)
+
+The buyer side. One row per segment and buyer category, not per buyer and not per
+contract. It is a purposive record of buying that could be documented, not a census of
+demand, and the evidence is unevenly available by construction: public procurement
+leaves award notices and commercial subscription leaves nothing. See `docs/demand.md`,
+section 2, for what that does to the composition of the file.
+
+| Variable | Type | Description |
+|---|---|---|
+| `demand_id` | key | Stable identifier. |
+| `segment` | factor | Segment code from `segments.csv`. All 23 segments have at least two rows. |
+| `buyer_category` | factor | `government_security`, `government_civil`, `multilateral_donor`, `financial_investor`, `financial_lender`, `insurance`, `pharma_health`, `corporate_marketing`, `corporate_operations`, `media_advertising`, `ai_developer`, `retail_cpg`, `academic_research`, `ngo_advocacy`, `research_intermediary`. |
+| `buyer_examples` | list | Pipe-delimited named buyers, or `NA` where the category is documented but no buyer is named. |
+| `procurement_mode` | factor | `subscription`, `one_off_commission`, `framework_contract`, `marketplace_api`, `licensing_deal`, `membership_levy`, `grant_funded`, `panel_rental`. |
+| `contract_visibility` | factor | `public_award`, `disclosed_deal`, `trade_reported`, `opaque`. How the transaction enters the public record, not how good the evidence is. |
+| `geography` | factor | Region code from `regions.csv`, or `global`. |
+| `direction` | factor | `rising`, `stable`, `declining`, `contested`. A judgement, justified in `notes` on every row. `contested` marks demand that exists and is under legal or regulatory challenge. |
+| `price_signal_usd` | integer | A documented figure in US dollars, or `NA`. Present on 13 rows. |
+| `price_signal_basis` | factor | What the figure measures: `contract_total`, `contract_annual`, `buyer_annual`, `market_annual`, or `NA`. The validator requires this and `price_signal_usd` to be `NA` together. |
+| `signal_year` | integer | Year the figure refers to, or `NA`. |
+| `evidence_level` | factor | `A` a named buyer with a public award or a deal the parties disclosed; `B` a buyer category documented in named trade or press reporting; `C` an inference from the segment's structure. 12 A, 33 B, 20 C. |
+| `url` | string | Source. |
+| `notes` | string | Short free text, no commas. Carries the justification for `direction` and any caveat on the source. |
+
+**Evidence A is enforced, not asserted.** The validator rejects an `A` row that has no
+named buyer or whose `contract_visibility` is not `public_award` or `disclosed_deal`.
+
+**Price signals are not comparable across rows.** A ten-year contract ceiling, one
+buyer's annual spend and a whole market's annual size are three different quantities and
+all three appear in the column. `price_signal_basis` says which, and nothing should be
+summed across bases.
+
+**Direction is the softest variable in the file.** It rests on the source behind the row
+and on the entry and exit figures in section 1 of `docs/demand.md`, and it is a reading,
+not a measurement. Treat it as a hypothesis to check rather than as data.

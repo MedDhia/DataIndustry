@@ -1,0 +1,8 @@
+
+Microdata access of operating for-profit firms by whether their segment has a documented state security buyer
+=================================================================
+                  commercial_only none open researcher_restricted
+-----------------------------------------------------------------
+no security buyer       234       172   26           48          
+security buyer          116        19   1            14          
+-----------------------------------------------------------------

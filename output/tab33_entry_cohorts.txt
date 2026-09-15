@@ -1,0 +1,28 @@
+
+For-profit entry cohorts and exit rate by segment (segments with 6 or more dated firms)
+========================================================================================================
+         segment        n_dated n_total recent_pct exit_pct pre2000 y2000_09 y2010_14 y2015_18 y2019plus
+--------------------------------------------------------------------------------------------------------
+1    ai_training_data     49      50        67       8.0       4       5        7        16       17    
+2        web_data         14      14        64       0.0       0       2        3        3         6    
+3  distributed_sensing    10      10        60       10.0      0       1        3        4         2    
+4      climate_risk       21      21        57       4.8       2       0        7        9         3    
+5   financial_altdata     23      23        48       17.4      1       4        7        6         5    
+6   earth_observation     68      68        47       8.8      10       5        21       20       12    
+7   location_mobility     24      24        46       33.3      1       2        10       9         2    
+8       health_rwd        34      34        44       17.6      5       2        12       10        5    
+9   identity_biometric    19      19        42       10.5      1       2        8        6         2    
+10   b2b_firmographic     24      24        38       8.3       5       4        6        9         0    
+11   trade_logistics      14      14        36       7.1       0       4        5        5         0    
+12     crowd_micro         9       9        33       11.1      0       2        4        3         0    
+13     social_osint       21      21        33       0.0       1       7        6        5         2    
+14    expert_network       7       7        29       28.6      1       3        1        2         0    
+15    iot_telemetry       21      21        29       14.3      3       3        9        6         0    
+16     panel_sample       34      34        24       14.7      8       11       7        7         1    
+17   survey_insights      90      90        24       6.7      39       19       10       8        14    
+18 collection_software    18      18        17       5.6       4       5        6        2         1    
+19     field_agency       109     130       16       4.6      52       23       17       11        6    
+20    retail_pricing      19      19        11       21.1     11       1        5        2         0    
+21 audience_measurement   22      22        5        18.2     10       5        6        0         1    
+22   consumer_broker      28      28        4        25.0     13       10       4        1         0    
+--------------------------------------------------------------------------------------------------------

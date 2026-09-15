@@ -1123,3 +1123,65 @@ record-level data available to a researcher**: South Asia, Southeast Asia, Latin
 Oceania, East Asia and the Russia bloc, 74 commercial collectors between them. Those are
 also the six regions the register has enumerated least, so the figure is a lower bound on
 openness and an upper bound on how much should be concluded from it.
+
+## Round: the demand side (September 2026)
+
+The question was who buys data and which segments are rising. The first half is
+computable from the register and required no new sources. The second half required a new
+layer, `data/demand.csv`, and the round was run as a source search first and a coding
+exercise second, on the same rule used for `grant_programmes.csv`: no row written before
+a source was in hand.
+
+Sources that produced evidence-A rows, meaning a named buyer with a public award or a
+deal the parties disclosed:
+
+- US National Reconnaissance Office, Electro-Optical Commercial Layer award announcement
+  (nro.gov). Maxar up to 3.24bn over ten years, BlackSky up to 1.02bn, Planet undisclosed.
+- Electronic Frontier Foundation on federal purchases of cell phone location data
+  (eff.org, 2022), and Vice on US military purchases through X-Mode and Locate X.
+  Named buyers: DHS, ICE, FBI, IRS, DoD, Secret Service, CBP, DEA, USSOCOM.
+- The Intercept on the LexisNexis Risk Solutions agreement with ICE, reported at 16.8m,
+  and on Thomson Reuters CLEAR in use by over 3,400 law enforcement agencies.
+- Digiday's 2025 timeline of publisher and AI company deals, and Quartz on training data
+  pricing: News Corp to OpenAI over 250m across five years, Amazon to the New York Times
+  at 20m to 25m a year, Reddit's 203m disclosed in its IPO filing, Meta's 14.3bn for
+  49 percent of Scale AI.
+- Our World in Data and the UN DESA technical paper on the end of the Demographic and
+  Health Surveys programme, USAID support ending February 2025, roughly 47m a year, more
+  than 25 countries. PMC article on the terminated African partners.
+- Barb's own funding and contracting pages: funded by the BBC, ITV, Sky, Channel 4,
+  Channel 5 and the IPA, with ISBA representing advertisers, measurement contracted to
+  Kantar Media, Ipsos and RSMB.
+- ODNI and CIA, Intelligence Community OSINT Strategy 2024 to 2026.
+- World Bank ID4D press material and Biometric Update on the Nigeria digital identity
+  project at 430m, co-financed by AFD and the EIB, inside roughly 1bn mobilised across
+  30 countries, 23 African.
+
+Sources that produced evidence-B rows, meaning a buyer category documented in named
+trade or press reporting without a specific contract: Neudata on alternative data spend
+of about 2.8bn in 2025; Hedgeweek and Alternative Fund Insight on the 2026 spending
+survey; ESOMAR through Research World on the 142bn insights industry, the 54bn market
+research sector and the 3 percent Middle East and Africa share at about 4.4bn in 2022
+with -1.2 percent real growth; IQVIA and Flatiron on regulatory-grade real-world
+evidence and the RWE Alliance; Moody's, Verisk and Climate X on climate risk buyers and
+the ISSB and CSRD drivers; Kpler on commodity traders, shipping firms, banks and energy
+producers; CPG trade sources and the USDA Economic Research Service on retail scanner
+subscriptions; PromptCloud and Mordor on web data adoption by vertical.
+
+### Negative results
+
+- **Gulf and North African government contract values for data and research services.**
+  Searched directly. Nothing published was found. The GCC material that exists is
+  commentary on procurement as a political instrument, not award records, so the one row
+  resting on it is coded C and flagged in `docs/demand.md` as the file's weakest.
+- **Saudi SDAIA and HUMAIN procurement.** Headline investment figures are widely
+  reported but they are infrastructure and compute commitments, not purchases of
+  collected data, so nothing was coded from them.
+- **Telecom operator data sales.** No published terms found for any operator in any
+  region. Both telecom rows are evidence C.
+- **Per-firm revenue or customer lists for any organisation in the register.** None
+  found at a quality worth coding, which is why entry is used as a proxy at all.
+- **African commercial demand for survey research.** The ESOMAR regional figure exists
+  but nothing decomposes it into domestic corporate buyers against foreign agencies and
+  donors. That decomposition is the single most useful missing number for the register's
+  African and MENA coverage.

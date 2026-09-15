@@ -197,6 +197,58 @@ def main():
         if (r["status"] == "discontinued") != (r["ended_year"] != "NA"):
             err["programme status vs ended_year"].append((pid, r["status"], r["ended_year"]))
 
+    # ---- demand.csv: the buyer side, keyed on segment rather than on firm. ---
+    # Rows are buyer categories, not buyers, because almost no segment publishes
+    # a customer list. Evidence A is reserved for a named buyer with a public
+    # award or a disclosed deal; B is a buyer category documented in named trade
+    # or press reporting; C is an inference from the segment's structure.
+    DEM = {
+     "buyer_category": {"government_security", "government_civil", "multilateral_donor",
+                        "financial_investor", "financial_lender", "insurance",
+                        "pharma_health", "corporate_marketing", "corporate_operations",
+                        "media_advertising", "ai_developer", "retail_cpg",
+                        "academic_research", "ngo_advocacy", "research_intermediary"},
+     "procurement_mode": {"subscription", "one_off_commission", "framework_contract",
+                          "marketplace_api", "licensing_deal", "membership_levy",
+                          "grant_funded", "panel_rental"},
+     "contract_visibility": {"public_award", "disclosed_deal", "trade_reported", "opaque"},
+     "direction": {"rising", "stable", "declining", "contested"},
+     "price_signal_basis": {"contract_total", "contract_annual", "buyer_annual",
+                            "market_annual", "NA"},
+     "evidence_level": {"A", "B", "C"},
+    }
+    dem = list(csv.DictReader(open("data/demand.csv")))
+    for did, n in collections.Counter(r["demand_id"] for r in dem).items():
+        if n > 1:
+            err["duplicate demand_id"].append(did)
+    for r in dem:
+        did = r["demand_id"]
+        if len(r) != 14 or None in r.values():
+            err["demand wrong field count"].append(did)
+            continue
+        for f, vocab in DEM.items():
+            if r[f] not in vocab:
+                err[f"demand {f}"].append((did, r[f]))
+        if r["segment"] not in segs:
+            err["demand segment"].append((did, r["segment"]))
+        if r["geography"] not in regs | {"global"}:
+            err["demand geography"].append((did, r["geography"]))
+        if r["price_signal_usd"] != "NA" and not r["price_signal_usd"].isdigit():
+            err["demand price_signal_usd"].append((did, r["price_signal_usd"]))
+        if (r["price_signal_usd"] == "NA") != (r["price_signal_basis"] == "NA"):
+            err["demand price signal vs basis"].append((did, r["price_signal_usd"],
+                                                        r["price_signal_basis"]))
+        if r["signal_year"] != "NA" and not (r["signal_year"].isdigit()
+                                             and 1990 <= int(r["signal_year"]) <= 2026):
+            err["demand signal_year"].append((did, r["signal_year"]))
+        if not r["url"].startswith("http"):
+            err["demand url"].append((did, r["url"]))
+        # An A row has to point at something a reader can check: a named buyer
+        # and either a public award or a deal the parties themselves disclosed.
+        if r["evidence_level"] == "A" and (r["buyer_examples"] == "NA" or
+                r["contract_visibility"] not in ("public_award", "disclosed_deal")):
+            err["demand evidence A without a checkable buyer"].append(did)
+
     if err:
         for k, v in err.items():
             print(f"{k}: {len(v)} -> {v[:10]}", file=sys.stderr)
@@ -204,7 +256,8 @@ def main():
         return 1
     print(f"OK: {len(companies)} companies, {len(cov)} region rows, "
           f"{len(ctys)} countries, {len(cc)} company-country rows, "
-          f"{len(own)} ownership rows, {len(progs)} grant programmes, no errors")
+          f"{len(own)} ownership rows, {len(progs)} grant programmes, "
+          f"{len(dem)} demand rows, no errors")
     return 0
 
 if __name__ == "__main__":

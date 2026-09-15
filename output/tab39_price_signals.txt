@@ -1,0 +1,19 @@
+
+Documented price signals in the demand layer
+============================================================================================================================
+        demand_id           segment         buyer_category    price_signal_usd price_signal_basis signal_year evidence_level
+----------------------------------------------------------------------------------------------------------------------------
+1      survey_corp      survey_insights   corporate_marketing     5.40e+10       market_annual       2024           B       
+2  ai_train_meta_scale  ai_training_data     ai_developer         1.43e+10       contract_total      2025           A       
+3      survey_mea       survey_insights   corporate_marketing     4.40e+09       market_annual       2022           B       
+4       panel_diy         panel_sample    corporate_marketing     3.50e+09       market_annual       2024           B       
+5        eo_nro        earth_observation  government_security     3.24e+09       contract_total      2022           A       
+6       fin_hedge      financial_altdata  financial_investor      2.80e+09       market_annual       2025           B       
+7        id_id4d       identity_biometric multilateral_donor      1.00e+09       contract_total      2024           A       
+8      id_nigeria      identity_biometric  government_civil       4.30e+08       contract_total      2020           A       
+9     ai_train_labs     ai_training_data     ai_developer         2.50e+08       contract_total      2024           A       
+10 ai_train_platforms   ai_training_data     ai_developer         2.03e+08       contract_total      2024           A       
+11    survey_donor      survey_insights   multilateral_donor      4.70e+07        buyer_annual       2025           A       
+12     broker_ice       consumer_broker   government_security     1.68e+07       contract_total      2021           A       
+13      fin_large      financial_altdata  financial_investor      1.50e+07        buyer_annual       2025           B       
+----------------------------------------------------------------------------------------------------------------------------
