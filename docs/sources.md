@@ -1252,3 +1252,61 @@ rows per segment and that segment's recent-entry share. After this round it is -
 only thing that changed was where the research was pointed. `scripts/09_demand.R` now
 prints both values and the reason, so the number cannot be picked up and used as though
 it described the industry.
+
+## Round: African demand (September 2026)
+
+Matching round to the MENA one, run on Sub-Saharan Africa. 14 rows added, bringing SSA to
+20 of 92. The headline result was not the one expected going in: Africa carries
+proportionally more commercial demand than MENA in this file, 9 commercial rows of 20
+against 5 of 17, while carrying a much heavier concentration of donor withdrawal.
+
+Sources used:
+
+- Afrobarometer's own funding partners page and its 2025 article on USAID: SIDA, USAID
+  through USIP, the Mo Ibrahim Foundation, Open Society, Gates, Hewlett, the EU, the NED,
+  the Mastercard Foundation, JICA, the World Bank, GIZ and others, with USAID a core
+  donor since 1999.
+- Time's investigation of OpenAI's use of Sama workers in Kenya at about 2 dollars an
+  hour against 12.50 paid to Sama per worker, and TechCrunch on Meta's 3.9m moderation
+  contract ending with about 200 Nairobi jobs lost and subsequent Kenyan litigation.
+- Healthbeat, AVAC and Medscape on PEPFAR through 2025: roughly 30 percent funding cut,
+  about 1714 treatment sites closed, 22 percent global fall in HIV testing, and the
+  effect on national health information systems.
+- OCHA Global Humanitarian Overview 2026 on Sudan at 2.9bn required and 33.7 million
+  people assessed as in need, a 10 percent rise.
+- XtrAfrica and Biometric Update on census financing: DRC at 192m with 100m from the
+  World Bank and 80m from the African Development Bank and a gap still open, and
+  Nigeria's census delayed for funding.
+- Helmsley Charitable Trust and Geoscience Australia on Digital Earth Africa: 10m dollars
+  from Helmsley, 9m Australian dollars from DFAT, AWS support, over 6 petabytes and more
+  than 29000 users, free at the point of use.
+- ReliefWeb on the African Risk Capacity and Pula partnership, ARC payouts to the
+  governments of Senegal, Niger, Mauritania, Malawi and Cote d'Ivoire, and Pula's bundling
+  of premiums with input credit and government subsidy.
+- PwC Africa Entertainment and Media Outlook and Africa digital ad spend databook
+  reporting: about 3.8bn in 2025 rising to a forecast 6.5bn by 2029, Nigeria fastest.
+- GeoPoll's own site and case material: global brands, media agencies and TV networks
+  alongside development and relief organisations, with Diageo in Nigeria named.
+- TIFA Research's polls page, which lists governments, political parties, media and civil
+  society as the constituencies its polling serves, and reporting on Kenyan media houses
+  commissioning and publishing election polls.
+- TechCabal on African lenders scoring borrowers from mobile money, airtime, handset and
+  utility payment data.
+- Kantar's Africa and Middle East consumer panel page: 16 African countries against two
+  in the Middle East.
+- Telecom Review Africa and Connecting Africa on MTN's ADAM platform and Safaricom's data
+  revenue overtaking voice.
+
+### Negative results
+
+- **Third party data sales by African mobile operators.** Searched directly. Everything
+  published describes internal analytics and fintech revenue. The row is evidence C and
+  says in its notes that the market may not exist in the form assumed.
+- **Mining and agribusiness purchases of earth observation in Africa.** Nothing usable
+  found, so no row was written.
+- **Nigerian polling commissions.** Kenyan and Ghanaian material was found; Nigerian
+  commissioning arrangements were not, and the Kenyan case is not generalised to Nigeria.
+- **Any African government purchasing survey work from a commercial firm at a published
+  price.** Not found, the same negative result as in the Gulf, and for a different reason:
+  in Africa the money is usually a loan or a grant and the award appears in the lender's
+  documents rather than the state's.

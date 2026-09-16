@@ -4,19 +4,19 @@ Buyer category by segment family (rows are demand-layer rows, not buyers)
                       observational solicited
 ---------------------------------------------
 academic_research           3           1    
-ai_developer                1           4    
-corporate_marketing         7           3    
-corporate_operations        4           2    
+ai_developer                1           5    
+corporate_marketing         8           4    
+corporate_operations        5           2    
 financial_investor          6           1    
-financial_lender            4           0    
-government_civil            5           7    
+financial_lender            5           0    
+government_civil            6           8    
 government_security         7           0    
-insurance                   4           0    
-media_advertising           2           0    
-multilateral_donor          2           5    
+insurance                   5           0    
+media_advertising           2           1    
+multilateral_donor          3           7    
 ngo_advocacy                1           1    
 pharma_health               1           0    
-political_party             0           1    
+political_party             0           2    
 research_intermediary       0           2    
-retail_cpg                  3           1    
+retail_cpg                  4           1    
 ---------------------------------------------

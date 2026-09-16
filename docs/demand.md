@@ -68,18 +68,18 @@ new firms are being started.
 
 ## 2. The buyers that can be documented are mostly states
 
-`data/demand.csv` holds 78 rows across all 23 segments and 16 buyer categories.
+`data/demand.csv` holds 92 rows across all 23 segments and 16 buyer categories.
 The largest categories by row count are corporate marketing (9), financial
 investors (7), civil government (7), corporate operations (6) and state security
 agencies (6).
 
-State, donor and party buyers are 27 of 78 rows. They are 9 of the 14 rows that reach
+State, donor and party buyers are 33 of 92 rows. They are 11 of the 17 rows that reach
 evidence level A. That asymmetry is a fact about the record, not about the
 industry: a government purchase leaves an award notice, a contract value and
 sometimes a court case, while a corporate subscription leaves nothing at all.
 Any account of who buys data that relies on public documents will over-count
 the state. The demand layer records this in `output/tab37_evidence_visibility.txt`,
-where 9 of 14 A rows are public awards and 32 of 44 B rows are trade reporting.
+where 9 of 17 A rows are public awards and 38 of 54 B rows are trade reporting.
 
 The documented state purchases are large and concrete:
 
@@ -159,10 +159,10 @@ rather than simply buying from a new supplier.
 
 ## 6. MENA: who actually pays, and why so little of it is commercial
 
-17 of the 78 rows in `data/demand.csv` carry MENA as their geography, after a
+17 of the 92 rows in `data/demand.csv` carry MENA as their geography, after a
 round of research aimed at this region alone. 11 of the 17 have a state, a
 donor or a political party as the buyer. Across the whole file the equivalent
-share is 27 of 78. The regional figure is higher partly because MENA was
+share is 33 of 92. The regional figure is higher partly because MENA was
 searched harder and partly because it is true, and the two cannot be separated
 from inside this file.
 
@@ -282,7 +282,117 @@ data sale in the region. Two MENA rows remain evidence C for that reason. The
 absence of Gulf procurement records is itself a finding about those states and
 is treated as one, not as a hole to be filled with plausible numbers.
 
-## 7. Deliberately excluded
+## 7. Africa: more commercial demand than MENA, and a harder donor shock
+
+20 of the 92 rows carry SSA, after a round aimed at this region alone. 11 of the
+20 have a state, a donor or a political party as the buyer and 9 have a
+commercial one. The MENA equivalents are 11 and 5. Africa has proportionally
+more commercial demand than MENA in this file, which was not the expected
+result, and it is stated with the same caveat as everything else here: both
+regions were searched deliberately and neither share is a measurement.
+
+### The aid shock lands harder here than anywhere else in the register
+
+Seven of the ten rows in the whole file coded `declining` are MENA or African,
+and every one of those seven has a donor or a donor-funded state programme as
+the buyer. Three of them are African:
+
+- **Afrobarometer.** Its funders are published and they are all foreign states,
+  foundations and multilaterals: SIDA, USAID through USIP, the Mo Ibrahim
+  Foundation, Open Society, Gates, Hewlett, the EU, the NED, the Mastercard
+  Foundation, the World Bank and GIZ. USAID has been a core donor since the
+  network started in 1999, and in 2025 former US Africa Bureau officials
+  publicly called for it to be rescued. The continent's flagship public opinion
+  series has never had a domestic commercial buyer.
+- **PEPFAR.** Disruptions through 2025 cut roughly 30 percent of funding, closed
+  about 1,714 treatment sites and were associated with a 22 percent global fall
+  in HIV testing. US money had built national health information systems.
+  African health data is largely a by-product of donor-funded service delivery,
+  so it contracts exactly when the service does, and the contraction is not
+  visible as a data story.
+- **Humanitarian assessment.** Sudan alone requires 2.9bn for 2026 with 33.7
+  million people assessed as needing assistance, a 10 percent rise, inside a
+  global appeal funded at its lowest level in a decade.
+
+Put beside the DHS termination in section 3, this is one buyer withdrawing from
+four different segments at once. No commercial buyer is stepping into any of
+them, and nothing in this file suggests one will.
+
+### Even the census depends on a lender
+
+The DRC census is costed at 192m, with 100m from the World Bank and 80m from the
+African Development Bank, and a financing gap still open. Nigeria's census
+remains delayed for want of funding. The state is the commissioning party on
+paper and the lender decides whether the count happens. The same pattern runs
+through the identity layer already in the file: the Nigeria digital ID project
+was approved at 430m, co-financed by the World Bank, the French development
+agency and the European Investment Bank.
+
+Digital Earth Africa is the purest version of this. It is funded by the Helmsley
+Charitable Trust at 10m dollars and Australian DFAT at 9m Australian dollars,
+with AWS support, and it hosts over 6 petabytes for more than 29,000 users. The
+data is free at the point of use, so continental earth observation capacity is a
+donated good with no African buyer at all.
+
+### Demand can also arrive as outsourced labour rather than as a purchase
+
+OpenAI paid Sama about 12.50 dollars an hour per worker to label toxic content
+while the Kenyan workers received around 2 dollars. Meta's 3.9m content
+moderation contract with Sama was not renewed, about 200 Nairobi jobs went, and
+the dispute reached the Kenyan courts.
+
+Nothing African was bought in those transactions. The buyer wanted labour, the
+data being produced belonged to the buyer throughout, and the value that stayed
+in Kenya was a wage. AI training data is the fastest-filling segment in the
+register worldwide; its African form is a labour contract and its MENA form is a
+state procurement, and neither produces an African or Arab firm that owns a
+dataset.
+
+### What commercial demand exists, and it is more than the Gulf has
+
+Nine of the 20 African rows have a commercial buyer, and they are less
+concentrated than MENA's:
+
+- **Alternative credit data.** Lenders buy mobile money history, airtime
+  patterns, handset and utility payment records to score borrowers with no
+  credit file. This is the clearest case on the continent of firms paying for
+  data about people, and it contrasts sharply with the Gulf, where a
+  state-linked bureau holds the file by regulation and no brokerage market
+  forms around it.
+- **Mobile survey work for multinationals.** GeoPoll sells to global brands,
+  media agencies and TV networks alongside development organisations, with
+  Diageo in Nigeria among the named cases. African commercial demand is mostly
+  multinational demand executed locally, not domestic firms buying research.
+- **Election polling bought by media.** Kenyan media houses commission and
+  publish presidential race polling, which is why those numbers reach the
+  public at all. Parties also commission privately, TIFA lists them as clients,
+  and those commissions are almost entirely undocumented.
+- **Index insurance.** Pula works with African Risk Capacity and with regional
+  insurers and reinsurers, and ARC has paid out to the governments of Senegal,
+  Niger, Mauritania, Malawi and Cote d'Ivoire. Premiums are bundled with input
+  credit or subsidised, so the party that ultimately pays for the yield and
+  weather data is usually a government or a donor.
+- **Consumer goods panels.** Kantar runs panels in 16 African countries against
+  two in the Middle East. Measurement is harder here because most grocery trade
+  is informal and outside scanner coverage, so panels substitute for point of
+  sale data and the product sold is thinner.
+
+African digital advertising was about 3.8bn in 2025, forecast at 6.5bn by 2029.
+Fifty-four countries generate less than half of MENA's digital advertising
+spend, and that bounds how much commercial audience measurement the continent
+can support regardless of how many firms enter.
+
+### What is still missing
+
+Operator data sales were searched for and not found. MTN's ADAM platform is
+reported to process 4 trillion records a month and Safaricom's data revenue
+overtook voice in the year to March 2026, but everything published describes
+internal analytics and fintech rather than third party data sales. The row for
+it is evidence C and says so. Mining and agribusiness purchases of earth
+observation in Africa were also searched for and nothing usable was found, so
+no row was written.
+
+## 8. Deliberately excluded
 
 - **Per-firm revenue and customer lists.** Not available for any firm in the
   register at a quality worth coding.
@@ -296,7 +406,7 @@ is treated as one, not as a hole to be filled with plausible numbers.
 - **Advertising technology spend.** Large, adjacent, and about placement rather
   than about collection, so outside the register's boundary.
 
-## 8. What would need to be true for this to be wrong
+## 9. What would need to be true for this to be wrong
 
 The entry-cohort result would be wrong if the register systematically
 under-collected older firms in the segments that look new, which is plausible:

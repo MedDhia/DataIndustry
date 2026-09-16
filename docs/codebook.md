@@ -428,7 +428,7 @@ appears in `ownership.csv`. That means the funder is active in this industry, no
 any organisation in `companies.csv` won money through that programme. `07_grants.R`
 prints the overlap with that caveat attached.
 
-## `data/demand.csv` (78 rows, 14 variables)
+## `data/demand.csv` (92 rows, 14 variables)
 
 The buyer side. One row per segment and buyer category, not per buyer and not per
 contract. It is a purposive record of buying that could be documented, not a census of
@@ -449,7 +449,7 @@ section 2, for what that does to the composition of the file.
 | `price_signal_usd` | integer | A documented figure in US dollars, or `NA`. Present on 13 rows. |
 | `price_signal_basis` | factor | What the figure measures: `contract_total`, `contract_annual`, `buyer_annual`, `market_annual`, or `NA`. The validator requires this and `price_signal_usd` to be `NA` together. |
 | `signal_year` | integer | Year the figure refers to, or `NA`. |
-| `evidence_level` | factor | `A` a named buyer with a public award or a deal the parties disclosed; `B` a buyer category documented in named trade or press reporting; `C` an inference from the segment's structure. 14 A, 44 B, 20 C. |
+| `evidence_level` | factor | `A` a named buyer with a public award or a deal the parties disclosed; `B` a buyer category documented in named trade or press reporting; `C` an inference from the segment's structure. 17 A, 54 B, 21 C. |
 | `url` | string | Source. |
 | `notes` | string | Free text, quoted in the CSV where it contains commas. Carries the justification for `direction` and any caveat on the source. |
 

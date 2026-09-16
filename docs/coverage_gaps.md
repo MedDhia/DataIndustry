@@ -1395,17 +1395,17 @@ brokerage (4 percent recent, 25.0 percent exit), media and audience measurement 
 and full-service survey firms, are neither: their entry shares are 16 and 24 percent and
 their exit rates, 4.6 and 6.7, are among the lowest in the file.
 
-What cannot be computed is who pays. `data/demand.csv` holds 78 researched rows across
+What cannot be computed is who pays. `data/demand.csv` holds 92 researched rows across
 all 23 segments, and the composition of that file says something about the record before
-it says anything about the industry. State, donor and party buyers are 27 of 78 rows and
-9 of the 14 rows that reach evidence level A, because a government purchase leaves an award
+it says anything about the industry. State, donor and party buyers are 33 of 92 rows and
+11 of the 17 rows that reach evidence level A, because a government purchase leaves an award
 notice and a corporate subscription leaves nothing. Any account of data buying built
 from public documents will over-count the state, this one included, and section 2 of
 `docs/demand.md` states that rather than presenting the concentration as a finding.
 
 The MENA rows were then extended in a round of their own, because they were the file's
-weakest. 17 of the 78 rows now carry MENA, and 11 of those 17 have a state, a donor or a
-political party as the buyer against 27 of 78 across the whole file. Part of that is real
+weakest. 17 of the 92 rows now carry MENA, and 11 of those 17 have a state, a donor or a
+political party as the buyer against 33 of 92 across the whole file. Part of that is real
 and part is the round having gone looking for it, and the two cannot be separated from
 inside the file. What the round did establish is a demand structure with no counterpart
 elsewhere in the register: in Egypt a CAPMAS permit is needed to survey more than five
@@ -1425,6 +1425,38 @@ staffing projected to fall by at least 40 percent. Section 6 of `docs/demand.md`
 what commercial demand does exist, which is Gulf consumer goods, advertising measurement
 and regulated credit files, and why Israel and Turkiye should be pulled out of any MENA
 aggregate computed from this register.
+
+A matching round was then run on Africa. 20 of the 92 rows now carry SSA, 11 of them
+with a state, a donor or a political party as the buyer and 9 with a commercial one,
+against 11 and 5 for MENA. Africa has proportionally more commercial demand than MENA in
+this file, which was not the expected result. Both regions were searched deliberately and
+neither share is a measurement, but the comparison holds in the direction it runs: African
+lenders buy alternative credit data in a genuine market, where the Gulf equivalent is a
+state-linked bureau holding the file by regulation; African media houses buy and publish
+election polling; Kantar runs consumer panels in 16 African countries against two in the
+Middle East.
+
+What Africa carries that no other region does is the concentration of the aid shock. Seven
+of the ten rows in the file coded `declining` are MENA or African and every one of the
+seven has a donor or a donor-funded state programme as the buyer. Three are African:
+Afrobarometer, whose published funders are entirely foreign states, foundations and
+multilaterals and whose core donor since 1999 was USAID; PEPFAR, where 2025 disruptions
+cut roughly 30 percent of funding, closed about 1714 treatment sites and were associated
+with a 22 percent global fall in HIV testing; and humanitarian assessment, where Sudan
+alone needs 2.9bn for 2026 inside the weakest global appeal in a decade. Read with the DHS
+termination in section 3, that is one buyer withdrawing from four segments at once, with
+no commercial buyer stepping into any of them.
+
+Two African cases sharpen what the register means by demand. Digital Earth Africa is
+funded by the Helmsley Charitable Trust and Australian DFAT, hosts over 6 petabytes for
+more than 29000 users, and is free at the point of use, so continental earth observation
+capacity is a donated good with no African buyer at all. And OpenAI paid Sama about 12.50
+dollars an hour per worker for labelling while Kenyan workers received around 2 dollars,
+with Meta's 3.9m moderation contract ending and about 200 Nairobi jobs going. Nothing
+African was bought in those transactions: the buyer wanted labour, the data belonged to
+the buyer throughout, and what stayed was a wage. AI training data is the fastest-filling
+segment in the register worldwide. Its African form is a labour contract and its MENA form
+is a state procurement, and neither leaves a local firm owning a dataset.
 
 One result there bears directly on section 1 of this document. Six segments have a
 documented state security buyer. Operating for-profit firms in those six disclose

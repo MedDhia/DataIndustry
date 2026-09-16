@@ -8,12 +8,16 @@ Documented price signals in the demand layer
 3      survey_mea       survey_insights   corporate_marketing     4.40e+09       market_annual       2022           B       
 4       panel_diy         panel_sample    corporate_marketing     3.50e+09       market_annual       2024           B       
 5        eo_nro        earth_observation  government_security     3.24e+09       contract_total      2022           A       
-6       fin_hedge      financial_altdata  financial_investor      2.80e+09       market_annual       2025           B       
-7        id_id4d       identity_biometric multilateral_donor      1.00e+09       contract_total      2024           A       
-8      id_nigeria      identity_biometric  government_civil       4.30e+08       contract_total      2020           A       
-9     ai_train_labs     ai_training_data     ai_developer         2.50e+08       contract_total      2024           A       
-10 ai_train_platforms   ai_training_data     ai_developer         2.03e+08       contract_total      2024           A       
-11    survey_donor      survey_insights   multilateral_donor      4.70e+07        buyer_annual       2025           A       
-12     broker_ice       consumer_broker   government_security     1.68e+07       contract_total      2021           A       
-13      fin_large      financial_altdata  financial_investor      1.50e+07        buyer_annual       2025           B       
+6   ssa_humanitarian      field_agency    multilateral_donor      2.90e+09        buyer_annual       2026           B       
+7       fin_hedge      financial_altdata  financial_investor      2.80e+09       market_annual       2025           B       
+8        id_id4d       identity_biometric multilateral_donor      1.00e+09       contract_total      2024           A       
+9      id_nigeria      identity_biometric  government_civil       4.30e+08       contract_total      2020           A       
+10    ai_train_labs     ai_training_data     ai_developer         2.50e+08       contract_total      2024           A       
+11 ai_train_platforms   ai_training_data     ai_developer         2.03e+08       contract_total      2024           A       
+12     ssa_census         field_agency    multilateral_donor      1.92e+08       contract_total      2025           B       
+13    survey_donor      survey_insights   multilateral_donor      4.70e+07        buyer_annual       2025           A       
+14     broker_ice       consumer_broker   government_security     1.68e+07       contract_total      2021           A       
+15      fin_large      financial_altdata  financial_investor      1.50e+07        buyer_annual       2025           B       
+16    ssa_deafrica     earth_observation  multilateral_donor      1.00e+07       contract_total      2024           A       
+17   ssa_annotation     ai_training_data     ai_developer         3.90e+06       contract_total      2023           A       
 ----------------------------------------------------------------------------------------------------------------------------
