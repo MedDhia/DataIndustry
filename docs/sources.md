@@ -1450,3 +1450,74 @@ script now prints both: **9 of 69 innovators are no longer independent, 13.0%
 against 9.4% register-wide, while 7.2% have ceased entirely against 8.8%.**
 Innovators are bought more often and die slightly less often, which is a better
 result than either version said on its own.
+
+## Round: third African extension (September 2026)
+
+11 organisations added, chosen for countries the register barely reached rather
+than for Kenya, Nigeria and South Africa, which it already knows well. Sub-Saharan
+Africa moves to 184 operating organisations across 42 countries.
+
+Sources used:
+
+- Congo Research Group's poll methodology notes and African Arguments on BERCI:
+  the Kinshasa polling bureau behind the CRG and Ipsos national surveys, sampling
+  from a 2016 face to face frame of 7500 households across 469 sites. No founding
+  year established.
+- IFORD's own presentation pages, the Union of International Associations and
+  Wikipedia: created by the United Nations and Cameroon in 1971, open from
+  November 1972, 22 member states, over 1200 African demographers trained.
+- Invest in Knowledge's own site and Devex: incorporated in the United States in
+  2004 and in Malawi in 2008, based in Zomba.
+- Ifakara Health Institute and its HDSS profile in the International Journal of
+  Epidemiology: rural surveillance of about 125000 people from 1996, urban of
+  about 45000 from 2007, independent Tanzanian nonprofit from 1996 with origins as
+  a Swiss field station in 1956.
+- JUMO's own materials and Intelligent CIO Africa: founded 2015 in Cape Town,
+  operating with operators and banks across eight African countries.
+- Kifiya's own site, the Mastercard Foundation and ITWeb Africa: founded 2010 in
+  Addis Ababa, credit scoring aimed at some 477800 micro and small enterprises.
+- Omnisient's own site and TransUnion's newsroom: founded December 2019, tokenised
+  matching across more than 200 million consumer records, TransUnion minority
+  investment.
+- HumAngle's about page and the Global Investigative Journalism Network: founded
+  March 2020 in Abuja, Sigma Award for data journalism in 2024.
+- Timbuktu Institute's own site and French Wikipedia: created 2016 in Dakar out of
+  an earlier observatory of radicalism, offices in Niamey and Bamako.
+- Ayin Network's Wikipedia entry and the Dutch government's Human Rights Tulip
+  citation: founded 2013 in the Nuba Mountains, office attacked in 2023 with
+  equipment, hard drives and thousands of hours of footage lost.
+- Sudan Transparency and Policy Tracker via the Sudan Conflict Monitor it produces
+  with Ayin and the Sudan Human Rights Hub. No founding year established.
+
+### Negative results
+
+- **Market research firms in Ethiopia, Tanzania, Zambia and Zimbabwe.** The
+  searchable material is one firm's own marketing pages listing every country it
+  claims to cover, plus directory aggregators. Nothing independent was found and
+  nothing was coded.
+- **Kyosk and Wasoko.** Both hold transaction data across large informal retail
+  networks, and neither was coded, because nothing established that they sell or
+  license it rather than using it internally. Releaf was dropped for the same
+  reason: proprietary hardware for palm processing is not data collection.
+
+### A region rule that contradicted itself
+
+`regions.csv` defined MENA as Arab League states plus Iran, Israel and Turkiye.
+Sudan, Mauritania, Somalia, Djibouti and Comoros are all Arab League members and
+all African states outside North Africa; four were coded SSA and Sudan was coded
+MENA. No rule in the repository generates that split.
+
+MENA is now defined as the five North African states plus the Levant, the Gulf,
+Iran, Israel and Turkiye, and every other African state is SSA. Sudan moves,
+taking the Sudan Polling and Statistics Center with it, and because that
+organisation is an Afrobarometer partner that releases microdata, **MENA
+for-profit disclosure falls from 5 of 84 to 4 of 91**. Section 1 of
+`docs/coverage_gaps.md` was recomputed rather than left standing.
+
+### A disclosure claim not made
+
+BERCI publishes national poll results with methodology, but nothing establishes
+that its microdata reaches researchers. It is coded `commercial_only`. Coding it
+as disclosing would have raised African commercial disclosure by an assumption, in
+the direction the register's existing finding already points, which is exactly
+when an assumption is least safe to make.

@@ -8,12 +8,12 @@ audience_measurement  0             1                 21         4
 b2b_firmographic      1             3                 18         0  
 climate_risk          2             8                 13         1  
 collection_software   5             3                  7         15 
-consumer_broker       0             0                 23         1  
+consumer_broker       0             0                 26         1  
 crowd_micro           1             0                  8         0  
 distributed_sensing   7             1                 10         1  
 earth_observation     2             9                 57         7  
 expert_network        0             0                  2         3  
-field_agency          46           46                  4        107 
+field_agency          46           49                  5        107 
 financial_altdata     0             0                 17         5  
 health_rwd            1            28                  6         6  
 identity_biometric    0             0                  0         17 
@@ -21,8 +21,8 @@ iot_telemetry         0             3                 19         3
 location_mobility     0             4                 12         0  
 panel_sample          2             5                 23         4  
 retail_pricing        0             0                 16         0  
-social_osint          11            4                 16         2  
-survey_insights       15           12                 31         54 
+social_osint          14            4                 16         2  
+survey_insights       15           13                 31         54 
 telecom_data          0             4                  2         0  
 trade_logistics       0             0                 13         0  
 web_data              2             0                 14         0  

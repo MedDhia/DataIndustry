@@ -88,7 +88,7 @@ DZA,Algeria,MENA,North Africa,UMIC,M,high,0,1
 TUN,Tunisia,MENA,North Africa,LMIC,M,high,0,0
 LBY,Libya,MENA,North Africa,UMIC,S,medium,1,1
 EGY,Egypt,MENA,North Africa,LMIC,XL,medium,0,1
-SDN,Sudan,MENA,North Africa,LIC,M,low,1,1
+SDN,Sudan,SSA,North Africa,LIC,M,low,1,1
 JOR,Jordan,MENA,Levant,UMIC,M,high,0,0
 LBN,Lebanon,MENA,Levant,LMIC,S,high,1,0
 SYR,Syria,MENA,Levant,LIC,M,medium,1,1

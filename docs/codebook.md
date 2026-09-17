@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (923 rows, 26 variables)
+## `data/companies.csv` (934 rows, 26 variables)
 
-The register includes 842 operating organisations and 81 that no longer operate.
+The register includes 853 operating organisations and 81 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -102,7 +102,7 @@ dataset and should be reported in anything built on it.
 Current distribution over operating firms: A 59, B 192, C 262. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (923 rows, 14 variables)
+## `data/coverage_spatial.csv` (934 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 

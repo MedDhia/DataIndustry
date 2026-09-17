@@ -752,7 +752,7 @@ survey_warehouse,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 lasdel_niger,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 cres_senegal,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 igr_sierra_leone,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
-sudan_polling_center,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
+sudan_polling_center,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 repoa_tanzania,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 crpd_gambia,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 crop_togo,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
@@ -922,3 +922,14 @@ sunbird_ai,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 terragon,segment_template,2,0,1,0,0,0,2,0,0,0,0,1
 zenvus,segment_template,2,0,2,0,0,0,2,0,0,0,0,1
 dataphyte,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+berci,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+iford,segment_template,0,0,0,0,0,0,2,0,0,0,0,0
+iki_malawi,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+ifakara,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+jumo,segment_template,2,0,1,0,0,0,2,0,0,0,0,1
+kifiya,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+omnisient,segment_template,2,0,1,0,0,0,2,0,0,0,0,1
+humangle,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+timbuktu_institute,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+ayin_network,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
+sudan_transparency,segment_template,0,0,0,0,0,0,3,0,0,0,0,0

@@ -12,12 +12,12 @@ web_content                   170                24                 158         
 labor_employment              172                22                 127                 45       
 education                     175                19                 105                 70       
 identity_biometric            178                16                  31                147       
-migration_displacement        180                14                 110                 70       
+migration_displacement        180                14                 109                 71       
 consumer_behavior             182                12                 103                 79       
-media_audience                182                12                 160                 22       
+media_audience                182                12                 159                 23       
 legal_regulatory              184                10                 158                 26       
-ai_labels                     185                 9                 184                 1        
-social_discourse              186                 8                 186                 0        
+ai_labels                     185                 9                 183                 2        
+social_discourse              186                 8                 185                 1        
 public_opinion                193                 1                 180                 13       
 health_clinical               193                 1                 190                 3        
 prices_retail                 193                 1                  87                106       
@@ -27,7 +27,7 @@ energy_extractives            194                 0                 194         
 environment_climate           194                 0                 194                 0        
 conflict_security             194                 0                 194                 0        
 supply_chain                  194                 0                 194                 0        
-housing_property              194                 0                  99                 95       
+housing_property              194                 0                 100                 94       
 infrastructure                194                 0                 194                 0        
 biodiversity                  194                 0                  87                107       
 -------------------------------------------------------------------------------------------------

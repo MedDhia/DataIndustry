@@ -31,20 +31,20 @@ Method innovators, ordered by how crowded the segment already was
 26         Samba TV          audience_measurement new_sampling_frame         2015                29           yes   
 27         Prolific              panel_sample     new_sampling_frame         2014                28           no    
 28         Empatica               health_rwd        new_inference            2015                27           no    
-29         Mnemonic              social_osint       new_substrate            2018                26           no    
+29         Mnemonic              social_osint       new_substrate            2018                27           no    
 30        Tomorrow.io            climate_risk         new_sensor             2023                25           no    
 31      Vayyar Imaging          iot_telemetry         new_sensor             2016                25           no    
 32     Evidation Health           health_rwd        new_substrate            2014                23           no    
 33           Kando              iot_telemetry         new_sensor             2015                21           no    
-34           DIMO            distributed_sensing    new_incentive            2022                20           no    
-35          GEODNET          distributed_sensing    new_incentive            2022                20           no    
-36        Hivemapper         distributed_sensing  new_sampling_frame         2022                20           no    
-37         NSO Group         collection_software    new_substrate            2012                20           yes   
-38           Viamo           collection_software  new_sampling_frame         2012                20           no    
-39         WeatherXM         distributed_sensing    new_incentive            2022                20           no    
-40         Wingbits          distributed_sensing    new_incentive            2023                20           no    
-41          Airwars              social_osint       new_substrate            2014                19           yes   
-42        Bellingcat             social_osint       new_substrate            2014                19           no    
+34          Airwars              social_osint       new_substrate            2014                20           yes   
+35        Bellingcat             social_osint       new_substrate            2014                20           no    
+36           DIMO            distributed_sensing    new_incentive            2022                20           no    
+37          GEODNET          distributed_sensing    new_incentive            2022                20           no    
+38        Hivemapper         distributed_sensing  new_sampling_frame         2022                20           no    
+39         NSO Group         collection_software    new_substrate            2012                20           yes   
+40           Viamo           collection_software  new_sampling_frame         2012                20           no    
+41         WeatherXM         distributed_sensing    new_incentive            2022                20           no    
+42         Wingbits          distributed_sensing    new_incentive            2023                20           no    
 43           Trax               retail_pricing      new_inference            2013                18           no    
 44          Bidgely             iot_telemetry       new_inference            2013                16           no    
 45           Nexar           distributed_sensing  new_sampling_frame         2017                16           no    
