@@ -99,8 +99,16 @@ emit(table(ifelse(fp_op$company_id %in% inn_ids, "innovator", "other"),
 ## ---- 4. Did the innovators survive? ----------------------------------------
 emit(table(innov$novelty_type, innov$status),
      "tab44_innovator_status", "Status of method innovators by type of novelty")
-cat(sprintf("\ninnovators no longer independent: %d of %d (%.0f%%); register-wide rate is %.0f%%\n",
-            sum(!innov$operating), nrow(innov), 100 * mean(!innov$operating),
+## "No longer independent" is a wider category than "ceased": a firm bought and
+## still trading under its acquirer has stopped being an independent collector,
+## which is the thing this section is about. The first printing of this line used
+## `!operating`, which counts only the dead and understated the rate by four.
+gone <- function(st) st %in% c("absorbed", "wound_down", "insolvent", "acquired_active")
+cat(sprintf("\ninnovators no longer independent: %d of %d (%.1f%%); register-wide %.1f%%\n",
+            sum(gone(innov$status)), nrow(innov), 100 * mean(gone(innov$status)),
+            100 * mean(gone(companies_all$status))))
+cat(sprintf("  of those, ceased entirely: %d innovators (%.1f%%); register-wide %.1f%%\n",
+            sum(!innov$operating), 100 * mean(!innov$operating),
             100 * mean(!companies_all$operating)))
 
 ## ---- 5. Sector and ownership of innovators ---------------------------------

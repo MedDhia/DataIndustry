@@ -3,25 +3,25 @@ Sector by primary segment, operating organisations
 ===============================================================
                      academic for_profit governmental nonprofit
 ---------------------------------------------------------------
-ai_training_data        2         47          0           4    
+ai_training_data        2         47          0           5    
 audience_measurement    0         19          0           7    
 b2b_firmographic        0         22          0           0    
 climate_risk            1         20          0           3    
-collection_software     3         17          3           3    
-consumer_broker         0         21          2           0    
-crowd_micro             0         8           0           0    
+collection_software     3         21          3           3    
+consumer_broker         0         22          2           0    
+crowd_micro             0         8           0           1    
 distributed_sensing     0         13          1           5    
-earth_observation       0         65          8           1    
+earth_observation       0         66          8           1    
 expert_network          0         5           0           0    
 field_agency            21       124          9          49    
-financial_altdata       0         21          0           0    
+financial_altdata       0         22          0           0    
 health_rwd              4         30          3           4    
 identity_biometric      0         17          0           0    
-iot_telemetry           0         22          0           0    
+iot_telemetry           0         25          0           0    
 location_mobility       0         16          0           0    
 panel_sample            5         29          0           0    
 retail_pricing          0         16          0           0    
-social_osint            1         21          0          10    
+social_osint            1         21          0          11    
 survey_insights         9         85          1          17    
 telecom_data            0         5           0           1    
 trade_logistics         0         13          0           0    

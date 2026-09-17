@@ -3,25 +3,25 @@ Evidence level of coded records by segment
 ==============================
                      A  B   C 
 ------------------------------
-ai_training_data     9  23 21 
+ai_training_data     9  24 21 
 audience_measurement 4  11 11 
 b2b_firmographic     1  14  7 
 climate_risk         6  7  11 
-collection_software  5  9  12 
-consumer_broker      4  12  7 
-crowd_micro          0  2   6 
+collection_software  6  12 12 
+consumer_broker      4  13  7 
+crowd_micro          1  2   6 
 distributed_sensing  5  11  3 
-earth_observation    14 39 21 
+earth_observation    14 40 21 
 expert_network       0  2   3 
 field_agency         45 42 116
-financial_altdata    0  13  8 
+financial_altdata    0  14  8 
 health_rwd           7  29  5 
 identity_biometric   0  13  4 
-iot_telemetry        2  15  5 
+iot_telemetry        2  18  5 
 location_mobility    0  9   7 
 panel_sample         4  8  22 
 retail_pricing       1  10  5 
-social_osint         2  23  7 
+social_osint         2  24  7 
 survey_insights      7  68 37 
 telecom_data         1  2   3 
 trade_logistics      0  10  3 

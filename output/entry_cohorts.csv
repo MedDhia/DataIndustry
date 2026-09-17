@@ -3,9 +3,9 @@
 "distributed_sensing",15,15,67,13.3,0,2,3,6,4
 "web_data",14,14,64,0,0,2,3,3,6
 "climate_risk",21,21,57,4.8,2,0,7,9,3
-"earth_observation",71,71,49,8.5,10,5,21,23,12
+"earth_observation",73,74,49,10.8,10,5,22,24,12
+"financial_altdata",26,26,46,15.4,2,4,8,6,6
 "location_mobility",24,24,46,33.3,1,2,10,9,2
-"financial_altdata",25,25,44,16,2,4,8,6,5
 "health_rwd",36,36,44,16.7,5,2,13,11,5
 "identity_biometric",19,19,42,10.5,1,2,8,6,2
 "b2b_firmographic",24,24,38,8.3,5,4,6,9,0
@@ -13,11 +13,11 @@
 "crowd_micro",9,9,33,11.1,0,2,4,3,0
 "social_osint",21,21,33,0,1,7,6,5,2
 "expert_network",7,7,29,28.6,1,3,1,2,0
+"iot_telemetry",29,30,28,16.7,4,4,13,8,0
 "panel_sample",34,34,24,14.7,8,11,7,7,1
 "survey_insights",91,91,24,6.6,39,20,10,8,14
-"iot_telemetry",26,27,23,18.5,4,4,12,6,0
-"collection_software",18,18,17,5.6,4,5,6,2,1
+"collection_software",22,22,18,4.5,5,5,8,2,2
 "field_agency",109,130,16,4.6,52,23,17,11,6
 "retail_pricing",20,20,10,20,11,1,6,2,0
 "audience_measurement",23,23,4,17.4,10,5,7,0,1
-"consumer_broker",28,28,4,25,13,10,4,1,0
+"consumer_broker",29,29,3,24.1,13,11,4,1,0

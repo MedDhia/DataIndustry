@@ -1377,3 +1377,76 @@ Sources used for the new organisations:
 - **Four exits were added** (Silixa, OptaSense, CARMERA, Tutela), none of which
   disclose, which moved the exit disclosure rate from 2 of 75 to 2 of 79. Section 14
   of `docs/coverage_gaps.md` was recomputed rather than left standing.
+
+## Round: MENA and Africa method extension (September 2026)
+
+Extension of the method round into the two regions this register is weighted
+toward. 15 organisations added, 10 MENA and 5 Africa, with 6 of them entering
+`data/method_innovations.csv`. Two modality codes and one consent code added.
+
+Sources used:
+
+- Ushahidi's own story page, Wikipedia and Wharton coverage: built in under a week
+  in January 2008 by Kenyan bloggers to map post-election violence, since deployed
+  over 150000 times in about 160 countries.
+- Sunbird AI's about page and annual report: Kampala nonprofit founded 2019 out of
+  the Makerere University AI lab, open datasets for Luganda Runyankole Acholi
+  Lugbara and Ateso alongside locally made noise and air quality sensors.
+- Terragon's own site, Crunchbase and TechCrunch: Lagos, founded 2009, operating in
+  Nigeria Kenya Ghana South Africa and India.
+- Zenvus, Tracxn and CTA Spore: founded 2016 in Owerri by Ndubuisi Ekekwe, SmartFarm
+  soil sensors first deployed in eastern Nigeria from 2014, now also in Botswana
+  Ghana and Rwanda.
+- Dataphyte and Wikipedia: founded 2019 in Abuja by Joshua Olufemi.
+- Cellebrite's about page, Calcalist and SiliconANGLE: founded 1999 in Petah Tikva,
+  60000 plus licences in 150 countries, Nasdaq listing through a 2021 SPAC at about
+  2.4bn dollars.
+- Britannica, Wikipedia and 972 Magazine on NSO Group (founded 2010, Pegasus
+  prototyped 2012), Candiru (2014, investors and management overlapping NSO's) and
+  Paragon Solutions (2019).
+- Kando's own materials: founded 2011 by Ari Goldfarb, sensors autosamplers and
+  controllers under manholes.
+- BeeHero's site and Technion coverage: founded 2017, in-hive and in-field sensors.
+- SeeTree (2017, Calcalist and AgFunder) and Prospera (2014, acquired by Valmont
+  for about 300m dollars in 2021, BusinessWire and Times of Israel).
+- Lean Technologies' about page, Fintech Futures and MENAbytes: founded 2019, first
+  open banking licence granted by the Saudi Central Bank.
+- Space42's own press release: Bayanat merged with Yahsat in October 2024.
+
+### Negative results
+
+- **North African collectors.** Searched directly across Egypt, Tunisia, Algeria and
+  Morocco for firms that collect rather than consult. What came back was directory
+  listings, AI consultancies and university projects. Nothing was coded, and the
+  emptiness matches what the demand round found about commercial demand in the
+  Maghreb.
+- **Jordanian and Lebanese Arabic data firms.** The searchable material is dataset
+  catalogues and academic resource lists rather than firms. Mawdoo3 and Tarjama were
+  already in the register and nothing new was established.
+- **Gulf firms beyond the ones already held.** Presight, Elm, Mozn, Space42, Lucidya
+  and Tarjama were already in. Core42 and G42 were considered and not added: a cloud
+  and holding business is not a collector by this register's boundary.
+
+### A screening failure, twice, and the fix
+
+The candidate screen missed SB Morgen Intelligence, which the register holds under
+that name and which was searched for as SBM Intelligence. The insert assertion
+caught it, exactly as it had caught SatVu, Lelapa AI and Presight AI a round
+earlier when the same screen matched on name rather than on `company_id`.
+
+Two rounds, two silent screening failures, two saves by an assertion that exists
+because of an earlier duplicate. `scripts/00_check_new.py` now does the screening:
+it reports exact identifier hits, substring hits in both directions, and any
+register row sharing a significant word with the candidate, with corporate filler
+words stripped out. Run against the two historical misses it returns both as EXACT.
+
+### A statistic restated rather than corrected quietly
+
+`docs/method_innovation.md` said 9 of 63 innovators were no longer independent at
+14.3% against 8.7% register-wide, while `scripts/10_innovation.R` printed 5 of 63,
+because the script counted `!operating` and the document counted acquisitions too.
+The document's meaning was the right one and the script's label was wrong. The
+script now prints both: **9 of 69 innovators are no longer independent, 13.0%
+against 9.4% register-wide, while 7.2% have ceased entirely against 8.8%.**
+Innovators are bought more often and die slightly less often, which is a better
+result than either version said on its own.

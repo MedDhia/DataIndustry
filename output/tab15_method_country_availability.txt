@@ -3,24 +3,26 @@ Country availability of each collection method out of 194
 ==============================================================
                      countries_with_any provider_country_pairs
 --------------------------------------------------------------
-admin_records               194                 3,502         
-api_partner                 194                 9,139         
-remote_sensing              194                 9,752         
-sensor_hardware             194                 3,130         
+admin_records               194                 3,508         
+api_partner                 194                 9,387         
+remote_sensing              194                 9,778         
+sensor_hardware             194                 3,149         
 signals_rf                  194                  776          
-web_scrape                  194                 7,418         
-face_to_face                193                 4,724         
+web_scrape                  194                 7,644         
+face_to_face                193                 5,008         
 telephone                   193                 3,338         
-crowd_task                  181                 1,371         
-crowd_sensor                162                  621          
-device_passive              162                 1,613         
-online_panel                162                 4,629         
+crowd_task                  181                 1,434         
+crowd_sensor                162                  627          
+device_passive              162                 1,631         
+online_panel                162                 4,900         
 expert_elicit               159                 1,308         
-mobile_app                  150                  729          
-transaction                 113                 1,168         
+mobile_app                  154                  792          
+device_extraction           149                  220          
+transaction                 113                 1,170         
 web_intercept                99                   99          
 clinical_records             83                  362          
 telecom_network              70                  128          
+citizen_report               64                   64          
 environmental_sample         64                   69          
 rf_sensing                   11                   16          
 acoustic                     7                    10          

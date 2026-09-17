@@ -15,15 +15,11 @@
 "EAS","device_telemetry",2,0
 "EAS","financial_transactions",2,0
 "EEU","device_telemetry",2,0
-"MENA","financial_transactions",2,0
 "OCE","migration_displacement",2,0
 "RUS","ai_labels",2,1
 "RUS","education",2,0
 "RUS","financial_transactions",2,0
-"RUS","identity_biometric",2,0
-"RUS","legal_regulatory",2,1
 "SAS","device_telemetry",2,0
 "SAS","financial_transactions",2,0
 "SEA","device_telemetry",2,0
 "SEA","financial_transactions",2,0
-"SSA","legal_regulatory",2,1

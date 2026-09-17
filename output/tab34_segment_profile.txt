@@ -3,8 +3,8 @@ Segments classified by entry share and exit rate
 ================
               V1
 ----------------
-churning      2 
-consolidating 7 
+churning      3 
+consolidating 6 
 expanding     4 
 mature_stable 9 
 ----------------

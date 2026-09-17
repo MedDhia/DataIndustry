@@ -1,6 +1,6 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **829 operating
+All figures come from `scripts/03_coverage_gaps.R` over the **842 operating
 firms** in the register. A further 75 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
@@ -53,7 +53,7 @@ into the register, each of which releases its national microdata openly.
 ### Most of this table is not commercial, and that changes how to read it
 
 The register now carries a `sector` variable separating for-profit firms from
-nonprofits, universities and state bodies. **650 of the 829 operating
+nonprofits, universities and state bodies. **660 of the 842 operating
 organisations are for-profit, 78.4%, but the share varies enormously by region
 and it is lowest exactly where the register is best enumerated.**
 
@@ -61,8 +61,8 @@ and it is lowest exactly where the register is best enumerated.**
 |---|---|---|---|---|---|---|
 | NOAM | 268 | 235 | 87.7% | 20 | 13 | 0 |
 | WEU | 162 | 140 | 86.4% | 15 | 7 | 0 |
-| SSA | 167 | 86 | 51.5% | 48 | 19 | 14 |
-| MENA | 112 | 84 | 75.0% | 10 | 6 | 12 |
+| SSA | 172 | 88 | 51.2% | 51 | 19 | 14 |
+| MENA | 120 | 92 | 76.7% | 10 | 6 | 12 |
 | CHN | 23 | 23 | 100% | 0 | 0 | 0 |
 
 **Half of the Sub-Saharan African layer is not a business.** For anyone reading
@@ -144,7 +144,7 @@ Everywhere else, spending is inferred rather than observed.
 **Access gaps** are the binding constraint. 55 of 324 cells (17.0%) have at least
 one provider but none whose record-level data a researcher can obtain, and the
 share has barely moved as the register has grown from under 500 organisations to
-over 908. The access ratio sits near 0.20 in every region except Sub-Saharan
+over 923. The access ratio sits near 0.20 in every region except Sub-Saharan
 Africa, where it is 0.39 for the reason given in section 1, so roughly four fifths
 of the industry's coverage is commercially closed almost everywhere you look. The
 gap is not that nobody collects. It is that collection and disclosure have come
@@ -738,9 +738,9 @@ who speaks to a person.
 
 ## 14. What the register can only see because it includes the dead
 
-79 of the 908 organisations here no longer operate: 62 absorbed into an acquirer,
+81 of the 923 organisations here no longer operate: 64 absorbed into an acquirer,
 17 wound down or insolvent. Every coverage and gap table above excludes them and
-describes the 829 operating firms. This section is about what they show.
+describes the 842 operating firms. This section is about what they show.
 
 ### Consolidation is not evenly distributed
 
@@ -789,18 +789,18 @@ Composition of the register with and without the firms that left:
 
 | | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| Operating only | 829 | 51.9% | 33.2% | 56.8% | 28.2% |
-| Including exits | 908 | 54.2% | 31.4% | 55.5% | 26.0% |
-| Exited firms only | 79 | 78.5% | 12.7% | 41.8% | **2.5%** |
+| Operating only | 842 | 51.1% | 33.4% | 56.7% | 28.1% |
+| Including exits | 923 | 53.3% | 31.5% | 55.3% | 25.9% |
+| Exited firms only | 81 | 76.5% | 12.3% | 40.7% | **2.5%** |
 
 The last cell is the one that matters, and successive extension rounds have
 changed it twice. Earlier revisions said that **not one** exited firm in this
 register had record-level data a researcher could obtain. There are now two, so
-the claim is stated as a rate: 2 of 79 exits, 2.5%, against 28.2% among operating
-firms. The method round added four more exits and none of them disclosed either,
-which moved the rate down rather than up.
+the claim is stated as a rate: 2 of 81 exits, 2.5%, against 28.1% among operating
+firms. The two method rounds added six more exits between them and none of them
+disclosed either, which moved the rate down rather than up.
 
-**Every exit in this register but one is a for-profit.** 78 of the 79 exited
+**Every exit in this register but one is a for-profit.** 80 of the 81 exited
 organisations are commercial; the exception is the INDEPTH Network. No academic
 or governmental organisation in the register has ever closed, and exactly one
 nonprofit has. Part of that is real, since a university institute does not get
@@ -1120,7 +1120,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 258 rows covering 111 of the 908 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 923 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on
@@ -1470,12 +1470,12 @@ secrecy. It is recorded as an observation to test, not as an effect.
 
 The register was asked whether firms that arrived with a genuinely new collection
 method were entering empty ground or occupied ground. `data/method_innovations.csv`
-holds 63 of them, 28 added in this round and 35 already here, each with the method
-named and the practice it displaced. Full treatment in `docs/method_innovation.md`.
+holds 69 of them, 43 added across two rounds and 26 already here, each with the
+method named and the practice it displaced. Full treatment in `docs/method_innovation.md`.
 
 For each firm, count the organisations already in its segment when it first
-deployed the method. **The median is 20 prior occupants, 35 of the 63 entered a
-segment already holding 20 or more, and only 6 entered one holding fewer than
+deployed the method. **The median is 20 prior occupants, 40 of the 69 entered a
+segment already holding 20 or more, and only 7 entered one holding fewer than
 five.** RIWI put a web interception frame into full-service survey research
 against 80 prior occupants; the earth observation entrants of 2018 to 2023
 arrived against 60 to 79. That count is a property of this register's enumeration
@@ -1485,10 +1485,10 @@ this file found an empty market.
 
 Two results are worth carrying into the rest of the document.
 
-**What draws a legal challenge is not the sensor.** 16 of the 63 methods are
+**What draws a legal challenge is not the sensor.** 18 of the 69 methods are
 contested, meaning litigation, regulatory action or sustained documented accuracy
-disputes. By type that is 8 of 19 for new substrates, 4 of 12 for new sampling
-frames, and 2 of 19 for new sensors. Building an instrument and pointing it at
+disputes. By type that is 10 of 21 for new substrates, 4 of 13 for new sampling
+frames, and 2 of 21 for new sensors. Building an instrument and pointing it at
 the world is almost never challenged. Taking material that already exists and
 turning it into data about people who never agreed to it is challenged
 constantly: bank credentials, card transactions, residential connections, the
@@ -1496,21 +1496,54 @@ television set, a listed company's parking lot. The four token-incentive network
 are the only category with no contested row in it, and what distinguishes them is
 that the contributor is asked, paid, and can stop.
 
-**The non-Western contribution is contractual, not technical.** 51 of the 63
-innovations are headquartered in North America or Western Europe. Of the four
+**The non-Western contribution is contractual, not technical.** 51 of the 69
+innovations are headquartered in North America or Western Europe. Of the five
 coded `new_contract`, where the terms of the work rather than the instrument are
-the innovation, three are outside those regions: Karya in India, Digital Umuganda
-in Rwanda, Lelapa AI in South Africa. The fourth is Sama, a US-headquartered firm
-whose annotation workforce is Kenyan, and it is the one of the four coded
-contested. Read with section 7 of `docs/demand.md`, where OpenAI paid Sama about
+the innovation, four are outside those regions and three of those are African:
+Karya in India, Digital Umuganda in Rwanda, Lelapa AI in South Africa, Sunbird AI
+in Uganda. The fifth is Sama, a US-headquartered firm whose annotation workforce
+is Kenyan, and it is the one of the five coded contested. Read with section 7 of `docs/demand.md`, where OpenAI paid Sama about
 12.50 dollars an hour per worker while Kenyan workers received around 2, the
 pattern is consistent: where the Global South has innovated in this industry, it
 has innovated on ownership and on payment, because that is where the loss was.
 
 A third result cuts against the register's usual direction. Innovators disclose
 slightly more than the firms they displaced: among operating for-profit firms in
-the same segments, 9 of 49 innovators release record-level data against 48 of 383
-for everyone else, 18.4 against 12.5 percent. Including the nonprofit innovators
-gives 31.0 percent, which would be a trick, since five organisations that publish
-by constitution would carry the whole difference. Six points on those denominators
+the same segments, 9 of 53 innovators release record-level data against 48 of 388
+for everyone else, 17.0 against 12.4 percent. Including the nonprofit innovators
+gives 31.2 percent, which would be a trick, since seven organisations that publish
+by constitution would carry the whole difference. Five points on those denominators
 is a hint and is recorded as one.
+
+### The MENA and Africa extension of the method layer
+
+A round aimed at these two regions added 15 organisations and 6 innovation rows,
+taking the non-Western share of the layer from 12 of 63 to 18 of 69. Three things
+came out of it that belong in this document rather than only in
+`docs/method_innovation.md`.
+
+**MENA now means Israel more than it did.** The region holds 120 operating
+organisations and the largest national group is Israel at 26, ahead of Turkiye at
+15 and the UAE at 14. Seven of this round's ten MENA additions are Israeli. That
+is where firms of this kind exist and can be documented, and it is a further
+reason not to read any MENA mean in this register as describing the Arab world.
+
+**The consent vocabulary was missing a code and the omission was an assumption.**
+Four additions sell collection from a person who has not agreed and is not asked:
+Cellebrite, which acquires the contents of a seized handset, and NSO Group,
+Candiru and Paragon Solutions, which take the contents of one in use. Nothing in
+`consent_model` described that. `not_applicable`, the only code that came close,
+means there is no human subject, which is a different claim entirely. The
+vocabulary had been built by reading firms that all claimed some consent basis,
+so it encoded the assumption that one always exists. A new value,
+`no_consent_basis`, now covers the four, and all four are headquartered in the
+region this register was built to cover.
+
+**Ushahidi was missing, and it is the other end of the same axis.** Built in under
+a week in January 2008 to map Kenyan post-election violence and since deployed
+over 150,000 times, it required a second new modality, `citizen_report`: reports
+submitted voluntarily with no task assignment and no payment. In both
+`citizen_report` and `device_extraction` the person is the source. In one they
+decide whether to report and what counts as reportable; in the other they are
+never asked and cannot refuse. A modality taxonomy that had neither was missing
+both ends of its own range, and it took a MENA and Africa round to notice.

@@ -14,8 +14,12 @@ VOCAB = {
  "status": {"active", "acquired_active", "absorbed", "wound_down", "insolvent"},
  "spatial_scope": {"global", "multi_region", "single_region", "single_country"},
  "human_subjects": {"direct", "indirect", "none"},
+ # `no_consent_basis` was added when the register first covered firms whose
+ # product is collection from a person who has not agreed and is not asked.
+ # Nothing in the earlier vocabulary described that: `not_applicable` means
+ # there is no human subject, which is a different claim entirely.
  "consent_model": {"explicit_consent", "platform_terms", "contractual_third_party",
-                   "public_record", "not_applicable"},
+                   "public_record", "not_applicable", "no_consent_basis"},
  "access_model": {"project_commission", "subscription", "api_license", "marketplace",
                   "panel_rental", "open_free"},
  "microdata_access": {"open", "researcher_restricted", "commercial_only", "none"},

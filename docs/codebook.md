@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (908 rows, 26 variables)
+## `data/companies.csv` (923 rows, 26 variables)
 
-The register includes 829 operating organisations and 79 that no longer operate.
+The register includes 842 operating organisations and 81 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -102,7 +102,7 @@ dataset and should be reported in anything built on it.
 Current distribution over operating firms: A 59, B 192, C 262. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (908 rows, 14 variables)
+## `data/coverage_spatial.csv` (923 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -465,7 +465,7 @@ summed across bases.
 and on the entry and exit figures in section 1 of `docs/demand.md`, and it is a reading,
 not a measurement. Treat it as a hypothesis to check rather than as data.
 
-## `data/method_innovations.csv` (63 rows, 10 variables)
+## `data/method_innovations.csv` (69 rows, 10 variables)
 
 One row per organisation whose entry rested on a collection method its segment
 did not already have. Not a scoring of how good a firm is, and not a ranking. The
@@ -492,9 +492,21 @@ that number would go stale on the next extension round, and it is a property of
 this register's enumeration depth as much as of the industry. Read it within a
 segment, not across segments.
 
-**Three modality codes were added for this round**, taking `data/modalities.csv`
-from 19 to 22: `fiber_das`, `web_intercept` and `rf_sensing`. Each was added
-because coding the firm with an existing modality would have misdescribed what it
-does. `rf_sensing` in particular is distinct from `signals_rf`, which is the
-geolocation of emitters, and from `sensor_hardware`, which assumes something was
-installed for the purpose.
+**Five modality codes were added across the two method rounds**, taking
+`data/modalities.csv` from 19 to 24: `fiber_das`, `web_intercept`, `rf_sensing`,
+`device_extraction` and `citizen_report`. Each was added because coding the firm
+with an existing modality would have misdescribed what it does. `rf_sensing` is
+distinct from `signals_rf`, which is the geolocation of emitters, and from
+`sensor_hardware`, which assumes something was installed for the purpose.
+`device_extraction` and `citizen_report` sit at opposite ends of one axis: in
+both the person is the source, but in the first they are never asked and cannot
+refuse, and in the second they decide both whether to report and what counts as
+reportable.
+
+**`consent_model` gained `no_consent_basis`** in the MENA and Africa round, for
+collection that proceeds without any consent from the subject and without a
+public-record or contractual basis. The earlier vocabulary had no code for it,
+because it was built by reading firms that all claimed a consent basis of some
+kind. `not_applicable` does not cover it: that code means there is no human
+subject. Four organisations carry the new value and all four sell access to the
+contents of a person's phone.

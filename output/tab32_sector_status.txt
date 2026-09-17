@@ -4,7 +4,7 @@ Status by sector, whole register including exits
              absorbed acquired_active active insolvent wound_down
 -----------------------------------------------------------------
 academic        0            0          46       0         0     
-for_profit      62           6         644       8         8     
+for_profit      64           6         654       8         8     
 governmental    0            0          27       0         0     
-nonprofit       0            0         106       0         1     
+nonprofit       0            0         109       0         1     
 -----------------------------------------------------------------

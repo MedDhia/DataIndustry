@@ -3,67 +3,73 @@ Method innovators, ordered by how crowded the segment already was
 ====================================================================================================================
          company_name          segment_primary       novelty_type    first_deployment_year prior_occupants contested
 --------------------------------------------------------------------------------------------------------------------
-1          RIWI Corp           survey_insights    new_sampling_frame         2011                80           no    
-2            Amini            earth_observation     new_substrate            2023                79           no    
-3        Satellite Vu         earth_observation       new_sensor             2023                79           no    
-4           Pixxel            earth_observation       new_sensor             2022                77           no    
-5      Orbital Sidekick       earth_observation       new_sensor             2021                73           no    
-6         Unseenlabs          earth_observation       new_sensor             2019                67           no    
-7         ATLAN Space         earth_observation     new_substrate            2018                60           no    
-8          Atlas AI           earth_observation     new_substrate            2018                60           yes   
-9         HawkEye 360         earth_observation       new_sensor             2018                60           yes   
-10           ICEYE            earth_observation       new_sensor             2018                60           no    
-11         Lelapa AI           ai_training_data      new_contract            2022                50           no    
-12           Fraym            earth_observation     new_substrate            2016                48           yes   
-13          GHGSat            earth_observation       new_sensor             2016                48           no    
-14       Spire Global         earth_observation       new_sensor             2016                48           no    
-15           Karya             ai_training_data      new_contract            2021                47           no    
+1            Amini            earth_observation     new_substrate            2023                81           no    
+2        Satellite Vu         earth_observation       new_sensor             2023                81           no    
+3          RIWI Corp           survey_insights    new_sampling_frame         2011                80           no    
+4           Pixxel            earth_observation       new_sensor             2022                79           no    
+5      Orbital Sidekick       earth_observation       new_sensor             2021                75           no    
+6         Unseenlabs          earth_observation       new_sensor             2019                69           no    
+7         ATLAN Space         earth_observation     new_substrate            2018                62           no    
+8          Atlas AI           earth_observation     new_substrate            2018                62           yes   
+9         HawkEye 360         earth_observation       new_sensor             2018                62           yes   
+10           ICEYE            earth_observation       new_sensor             2018                62           no    
+11         Lelapa AI           ai_training_data      new_contract            2022                51           no    
+12           Fraym            earth_observation     new_substrate            2016                49           yes   
+13          GHGSat            earth_observation       new_sensor             2016                49           no    
+14       Spire Global         earth_observation       new_sensor             2016                49           no    
+15           Karya             ai_training_data      new_contract            2021                48           no    
 16      WastewaterSCAN            health_rwd          new_sensor             2020                42           no    
-17        Aerobotics          earth_observation     new_substrate            2015                40           no    
-18     Biobot Analytics           health_rwd          new_sensor             2018                39           no    
-19     Digital Umuganda        ai_training_data      new_contract            2019                35           no    
-20      Orbital Insight       earth_observation     new_substrate            2014                31           no    
-21       Sonde Health             health_rwd        new_inference            2016                31           yes   
-22         Alphonso          audience_measurement new_sampling_frame         2015                29           yes   
-23         Samba TV          audience_measurement new_sampling_frame         2015                29           yes   
-24         Prolific              panel_sample     new_sampling_frame         2014                28           no    
-25         Empatica               health_rwd        new_inference            2015                27           no    
-26         Mnemonic              social_osint       new_substrate            2018                26           no    
-27      Origin Wireless         iot_telemetry         new_sensor             2018                26           no    
-28        Tomorrow.io            climate_risk         new_sensor             2023                25           no    
-29      Vayyar Imaging          iot_telemetry         new_sensor             2016                24           no    
-30     Evidation Health           health_rwd        new_substrate            2014                23           no    
-31           DIMO            distributed_sensing    new_incentive            2022                20           no    
-32          GEODNET          distributed_sensing    new_incentive            2022                20           no    
-33        Hivemapper         distributed_sensing  new_sampling_frame         2022                20           no    
-34         WeatherXM         distributed_sensing    new_incentive            2022                20           no    
-35         Wingbits          distributed_sensing    new_incentive            2023                20           no    
-36          Airwars              social_osint       new_substrate            2014                19           yes   
-37        Bellingcat             social_osint       new_substrate            2014                19           no    
-38           Trax               retail_pricing      new_inference            2013                18           no    
-39           Viamo           collection_software  new_sampling_frame         2012                18           no    
-40           Nexar           distributed_sensing  new_sampling_frame         2017                16           no    
-41     Wildlife Insights     distributed_sensing      new_sensor             2019                16           no    
-42          Bidgely             iot_telemetry       new_inference            2013                15           no    
-43          CARMERA          distributed_sensing  new_sampling_frame         2016                14           no    
-44        PriceStats            retail_pricing      new_substrate            2011                14           no    
-45      Second Measure        financial_altdata     new_substrate            2015                14           yes   
-46 Thinknum Alternative Data  financial_altdata     new_substrate            2014                14           no    
-47   Forensic Architecture       social_osint       new_substrate            2011                13           yes   
-48          Kayrros              climate_risk       new_substrate            2016                11           no    
-49       Sensor Tower         financial_altdata     new_substrate            2013                11           yes   
-50         OptaSense            iot_telemetry         new_sensor             2010                 8           no    
-51        RS Metrics          financial_altdata     new_substrate            2011                 8           yes   
-52          Silixa              iot_telemetry         new_sensor             2010                 8           no    
-53           Sama              ai_training_data      new_contract            2008                 7           yes   
-54        Bright Data              web_data       new_sampling_frame         2014                 6           yes   
-55       NatureMetrics           climate_risk         new_sensor             2014                 6           no    
-56       Premise Data            crowd_micro      new_sampling_frame         2014                 6           yes   
-57   Rainforest Connection       climate_risk         new_sensor             2014                 6           no    
-58        Opensignal             telecom_data     new_sampling_frame         2012                 4           no    
-59           ACLED               social_osint       new_substrate            2005                 3           no    
-60       Flightradar24       distributed_sensing  new_sampling_frame         2009                 3           no    
-61       SoundThinking          iot_telemetry         new_sensor             1997                 3           yes   
-62           Ookla           distributed_sensing    new_inference            2006                 1           no    
-63          Yodlee            financial_altdata     new_substrate            1999                 1           yes   
+17        Aerobotics          earth_observation     new_substrate            2015                41           no    
+18        Sunbird AI           ai_training_data      new_contract            2020                41           no    
+19     Biobot Analytics           health_rwd          new_sensor             2018                39           no    
+20     Digital Umuganda        ai_training_data      new_contract            2019                35           no    
+21      Orbital Insight       earth_observation     new_substrate            2014                31           no    
+22       Sonde Health             health_rwd        new_inference            2016                31           yes   
+23         Alphonso          audience_measurement new_sampling_frame         2015                29           yes   
+24          BeeHero             iot_telemetry         new_sensor             2018                29           no    
+25      Origin Wireless         iot_telemetry         new_sensor             2018                29           no    
+26         Samba TV          audience_measurement new_sampling_frame         2015                29           yes   
+27         Prolific              panel_sample     new_sampling_frame         2014                28           no    
+28         Empatica               health_rwd        new_inference            2015                27           no    
+29         Mnemonic              social_osint       new_substrate            2018                26           no    
+30        Tomorrow.io            climate_risk         new_sensor             2023                25           no    
+31      Vayyar Imaging          iot_telemetry         new_sensor             2016                25           no    
+32     Evidation Health           health_rwd        new_substrate            2014                23           no    
+33           Kando              iot_telemetry         new_sensor             2015                21           no    
+34           DIMO            distributed_sensing    new_incentive            2022                20           no    
+35          GEODNET          distributed_sensing    new_incentive            2022                20           no    
+36        Hivemapper         distributed_sensing  new_sampling_frame         2022                20           no    
+37         NSO Group         collection_software    new_substrate            2012                20           yes   
+38           Viamo           collection_software  new_sampling_frame         2012                20           no    
+39         WeatherXM         distributed_sensing    new_incentive            2022                20           no    
+40         Wingbits          distributed_sensing    new_incentive            2023                20           no    
+41          Airwars              social_osint       new_substrate            2014                19           yes   
+42        Bellingcat             social_osint       new_substrate            2014                19           no    
+43           Trax               retail_pricing      new_inference            2013                18           no    
+44          Bidgely             iot_telemetry       new_inference            2013                16           no    
+45           Nexar           distributed_sensing  new_sampling_frame         2017                16           no    
+46     Wildlife Insights     distributed_sensing      new_sensor             2019                16           no    
+47        Cellebrite         collection_software    new_substrate            2007                15           yes   
+48          CARMERA          distributed_sensing  new_sampling_frame         2016                14           no    
+49        PriceStats            retail_pricing      new_substrate            2011                14           no    
+50      Second Measure        financial_altdata     new_substrate            2015                14           yes   
+51 Thinknum Alternative Data  financial_altdata     new_substrate            2014                14           no    
+52   Forensic Architecture       social_osint       new_substrate            2011                13           yes   
+53          Kayrros              climate_risk       new_substrate            2016                11           no    
+54       Sensor Tower         financial_altdata     new_substrate            2013                11           yes   
+55         OptaSense            iot_telemetry         new_sensor             2010                 8           no    
+56        RS Metrics          financial_altdata     new_substrate            2011                 8           yes   
+57          Silixa              iot_telemetry         new_sensor             2010                 8           no    
+58       Premise Data            crowd_micro      new_sampling_frame         2014                 7           yes   
+59           Sama              ai_training_data      new_contract            2008                 7           yes   
+60        Bright Data              web_data       new_sampling_frame         2014                 6           yes   
+61       NatureMetrics           climate_risk         new_sensor             2014                 6           no    
+62   Rainforest Connection       climate_risk         new_sensor             2014                 6           no    
+63        Opensignal             telecom_data     new_sampling_frame         2012                 4           no    
+64           ACLED               social_osint       new_substrate            2005                 3           no    
+65       Flightradar24       distributed_sensing  new_sampling_frame         2009                 3           no    
+66       SoundThinking          iot_telemetry         new_sensor             1997                 3           yes   
+67         Ushahidi              crowd_micro      new_sampling_frame         2008                 2           no    
+68           Ookla           distributed_sensing    new_inference            2006                 1           no    
+69          Yodlee            financial_altdata     new_substrate            1999                 1           yes   
 --------------------------------------------------------------------------------------------------------------------

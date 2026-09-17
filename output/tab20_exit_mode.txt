@@ -11,7 +11,7 @@ collection_software     1         0         0
 consumer_broker         5         1         1     
 crowd_micro             0         0         1     
 distributed_sensing     2         0         0     
-earth_observation       5         1         0     
+earth_observation       7         1         0     
 expert_network          2         0         0     
 field_agency            6         0         1     
 financial_altdata       3         0         1     

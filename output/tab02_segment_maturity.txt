@@ -3,28 +3,28 @@ Primary segment by maturity class
 ======================================================
                      established scaleup startup Total
 ------------------------------------------------------
-ai_training_data          7        27      19     53  
+ai_training_data          7        27      20     54  
 audience_measurement     18         8       0     26  
 b2b_firmographic          7        15       0     22  
 climate_risk              2        17       5     24  
-collection_software      16        10       0     26  
-consumer_broker          20         3       0     23  
-crowd_micro               2         6       0      8  
+collection_software      17        11       2     30  
+consumer_broker          20         4       0     24  
+crowd_micro               3         6       0      9  
 distributed_sensing       3        12       4     19  
-earth_observation        17        44      13     74  
+earth_observation        17        45      13     75  
 expert_network            3         2       0      5  
 field_agency             115       80       8     203 
-financial_altdata         6        13       2     21  
+financial_altdata         6        14       2     22  
 health_rwd               11        24       6     41  
 identity_biometric        7         7       3     17  
-iot_telemetry             7        14       1     22  
+iot_telemetry             7        16       2     25  
 location_mobility         3        10       3     16  
 panel_sample             17        16       1     34  
 retail_pricing           11         5       0     16  
-social_osint             12        20       0     32  
+social_osint             12        20       1     33  
 survey_insights          64        36      12     112 
 telecom_data              1         5       0      6  
 trade_logistics           3        10       0     13  
 web_data                  2         8       6     16  
-Total                    354       392     83     829 
+Total                    356       398     88     842 
 ------------------------------------------------------
