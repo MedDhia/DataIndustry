@@ -250,6 +250,49 @@ def main():
                 r["contract_visibility"] not in ("public_award", "disclosed_deal")):
             err["demand evidence A without a checkable buyer"].append(did)
 
+    # ---- method_innovations.csv: what is actually new about a firm's method. -
+    # One row per firm whose entry rested on a collection method the segment did
+    # not already have. `url` establishes WHAT the method is, for which the firm
+    # is an acceptable authority; it does not establish that the method works.
+    # Performance claims stay in the companies.csv notes and are marked as the
+    # vendor claims they are.
+    NOV = {"new_sensor", "new_sampling_frame", "new_incentive", "new_contract",
+           "new_substrate", "new_inference"}
+    innov = list(csv.DictReader(open("data/method_innovations.csv")))
+    founded = {r["company_id"]: r["founded_year"] for r in companies}
+    for iid, n in collections.Counter(r["innovation_id"] for r in innov).items():
+        if n > 1:
+            err["duplicate innovation_id"].append(iid)
+    seen_co = collections.Counter(r["company_id"] for r in innov)
+    for cid, n in seen_co.items():
+        if n > 1:
+            err["company appears twice in the innovation layer"].append(cid)
+    for r in innov:
+        iid = r["innovation_id"]
+        if len(r) != 10 or None in r.values():
+            err["innovation wrong field count"].append(iid)
+            continue
+        if r["company_id"] not in founded:
+            err["innovation company_id"].append((iid, r["company_id"]))
+            continue
+        if r["novelty_type"] not in NOV:
+            err["innovation novelty_type"].append((iid, r["novelty_type"]))
+        if r["contested"] not in ("yes", "no"):
+            err["innovation contested"].append((iid, r["contested"]))
+        if r["evidence_level"] not in VOCAB["evidence_level"]:
+            err["innovation evidence_level"].append((iid, r["evidence_level"]))
+        if not r["url"].startswith("http"):
+            err["innovation url"].append((iid, r["url"]))
+        y = r["first_deployment_year"]
+        if y != "NA" and not (y.isdigit() and 1990 <= int(y) <= 2026):
+            err["innovation first_deployment_year"].append((iid, y))
+        # A firm cannot have deployed a method before it existed. Where the
+        # method predates the firm, as in a spinout, the year recorded is the
+        # firm's own first deployment and the earlier history goes in notes.
+        f = founded[r["company_id"]]
+        if y != "NA" and f != "NA" and int(y) < int(f):
+            err["innovation deployment before founding"].append((iid, y, f))
+
     if err:
         for k, v in err.items():
             print(f"{k}: {len(v)} -> {v[:10]}", file=sys.stderr)
@@ -258,7 +301,7 @@ def main():
     print(f"OK: {len(companies)} companies, {len(cov)} region rows, "
           f"{len(ctys)} countries, {len(cc)} company-country rows, "
           f"{len(own)} ownership rows, {len(progs)} grant programmes, "
-          f"{len(dem)} demand rows, no errors")
+          f"{len(dem)} demand rows, {len(innov)} innovation rows, no errors")
     return 0
 
 if __name__ == "__main__":

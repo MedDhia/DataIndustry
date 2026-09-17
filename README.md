@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 880 organisations that collect data as their business, 805 of them
+A register of 908 organisations that collect data as their business, 829 of them
 still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
@@ -12,26 +12,29 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 880 | The register. One row per organisation, 26 variables. 805 operating, 75 exited. 630 of the operating ones are for-profit. |
-| `data/coverage_spatial.csv` | 880 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 908 | The register. One row per organisation, 26 variables. 829 operating, 79 exited. 650 of the operating ones are for-profit. |
+| `data/coverage_spatial.csv` | 908 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
 | `data/grant_programmes.csv` | 15 | Recurring open-call funding instruments a data collection venture could apply to. Purposive, not a census. |
+| `data/method_innovations.csv` | 63 | Organisations whose entry rested on a collection method their segment did not have. One row per firm, with the method, what it displaced, and whether it is contested. |
 | `data/demand.csv` | 92 | The buyer side: segment by buyer category, each row with its own evidence level and source. Purposive, not a census. |
 | `data/coverage_country.csv` | 33,393 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
 | `data/segments.csv` | 23 | Industry segment taxonomy. |
 | `data/domains.csv` | 27 | Substantive domain taxonomy. |
 | `data/regions.csv` | 12 | Region definitions. |
-| `data/modalities.csv` | 19 | Collection method taxonomy. |
+| `data/modalities.csv` | 22 | Collection method taxonomy. Three codes were added in the method round: `fiber_das`, `web_intercept`, `rf_sensing`. |
 | `docs/codebook.md` | | Every variable, every coding rule. |
 | `data/ownership.csv` | 258 | Founders, owners, investors and funders for 111 organisations. Partial and purposive; read the codebook before computing anything from it. |
 | `docs/coverage_gaps.md` | | The findings. |
 | `docs/grant_programmes.md` | | What the funding-instrument layer shows and what it leaves out. |
 | `docs/demand.md` | | Who buys, which segments are filling with entrants, and why the two cannot be answered the same way. |
+| `docs/method_innovation.md` | | What was actually new about the methods, how crowded the segment was when they arrived, and which kinds of novelty get challenged. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `scripts/07_grants.R` | | Recurring grant instruments: descriptives only, the layer is too small for more. |
 | `scripts/08_sector.R` | | The for-profit cut. Run this before citing any regional figure. |
 | `scripts/09_demand.R` | | Entry cohorts by segment, and the buyer layer. |
+| `scripts/10_innovation.R` | | The method layer: prior occupants at entry, novelty type, contestation and survival. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
 ## Scope
@@ -59,7 +62,7 @@ Both startups and established firms are included by design, and so are firms tha
 no longer exist. 56 organisations in the register have exited: 46 absorbed into
 an acquirer, 10 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
-uses the 805 operating firms only**; `scripts/05_history.R` analyses the rest.
+uses the 829 operating firms only**; `scripts/05_history.R` analyses the rest.
 
 128 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
 bloc or mainland China, the areas where enumeration effort has been concentrated.
@@ -187,6 +190,7 @@ Rscript  scripts/06_ownership.R               # founders, owners and funders -> 
 Rscript  scripts/07_grants.R                  # recurring grant instruments -> output/
 Rscript  scripts/08_sector.R                  # the for-profit cut -> output/
 Rscript  scripts/09_demand.R                  # entry cohorts and the buyer layer -> output/
+Rscript  scripts/10_innovation.R              # the method layer -> output/
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
@@ -201,7 +205,7 @@ Read these before using the data for anything load-bearing.
    A for 129 records, B for 401 and C for 350. Level C is analyst judgement:
    reliable for segment, region and modality, not reliable for founding dates or
    counts. Filter on it.
-2. **Region coverage is partly rule-derived.** 149 of 880 spatial rows are
+2. **Region coverage is partly rule-derived.** 149 of 908 spatial rows are
    hand-coded; the remaining 731 come from the documented segment templates in
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an

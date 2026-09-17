@@ -5,21 +5,23 @@ Method mix in the least served quartile versus the rest
 -----------------------------------------------------
 acoustic                       0               0     
 admin_records                6.700           6.500   
-api_partner                 20.100           16.700  
+api_partner                 20.100           16.500  
 clinical_records               0             0.800   
-crowd_sensor                 0.500             1     
-crowd_task                   1.200           2.800   
+crowd_sensor                 0.500           1.200   
+crowd_task                   1.200           2.700   
 device_passive               1.200           3.200   
 environmental_sample           0             0.100   
-expert_elicit                  1             2.700   
+expert_elicit                  1             2.600   
 face_to_face                   6             9.100   
 mobile_app                   0.500           1.500   
 online_panel                 4.500           9.100   
-remote_sensing              30.400           16.700  
-sensor_hardware              5.300           5.700   
+remote_sensing              30.400           16.400  
+rf_sensing                     0               0     
+sensor_hardware              5.300           5.900   
 signals_rf                   3.200           1.200   
-telecom_network              0.100           0.200   
+telecom_network              0.100           0.300   
 telephone                    4.400           6.400   
 transaction                  2.200           2.200   
-web_scrape                  12.600           14.100  
+web_intercept                  0             0.200   
+web_scrape                  12.600           13.900  
 -----------------------------------------------------

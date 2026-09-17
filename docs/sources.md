@@ -1310,3 +1310,70 @@ Sources used:
   price.** Not found, the same negative result as in the Gulf, and for a different reason:
   in Africa the money is usually a loan or a grant and the award appears in the lender's
   documents rather than the state's.
+
+## Round: methodological innovators (September 2026)
+
+The question was firms that emerged in highly competitive environments with
+genuinely new collection methods. The round added 28 organisations, built
+`data/method_innovations.csv` across 63 firms including 35 already in the
+register, and added three modality codes.
+
+Sources used for the new organisations:
+
+- RIWI's own technology page and comScore's assessment of Random Domain Intercept
+  Technology; TSX Venture and stockanalysis records for its listing, its 2024
+  revenue of about 5.1m dollars and its 2026 private placement.
+- State Street's PriceStats pages and the NBER working paper on the Billion Prices
+  Project: daily indices from over 1500 retailers in 27 countries with a three day
+  lag, the project started at MIT in 2008 and the company formed in 2011.
+- SoundThinking's own company page, its SEC S-1, and NPR and CBS reporting on the
+  Chicago cancellation in 2024: founded 1996, commercialised from 2005, in over
+  150 US cities, with documented accuracy disputes.
+- Luna Innovations, QinetiQ and Photonics Spectra on the OptaSense sale in
+  December 2020 for 29m pounds, and optics.org on the Silixa acquisition in
+  December 2023 for up to 38m dollars. Silixa founded 2007 in Elstree.
+- LG and BusinessWire on the January 2021 purchase of a 60 percent stake in
+  Alphonso for 80m dollars; Alphonso founded 2013.
+- Opensignal's history and RCR Wireless, Fierce and Telecompaper on the September
+  2021 Comlinkdata acquisition; newswire.ca on Comlinkdata acquiring Tutela in
+  September 2019.
+- TechCrunch, Globes and Calcalist on Nexar, founded 2015 in Tel Aviv, and Toyota's
+  own newsroom on the 2021 CARMERA acquisition.
+- GEODNET's documentation and Inside GNSS on the token-paid base station network,
+  founded 2021, over 7000 stations by 2024, with 80 percent of enterprise revenue
+  buying back the token. CoinDesk and Wingbits' own site on the ADS-B network across
+  more than 90 countries.
+- Time and Microsoft Source on Karya: spun out of Microsoft Research in 2021, about
+  5 dollars an hour, royalties on resale under the Karya Public License.
+- Airwars' methodology pages and its five year retrospective; Mnemonic's own site
+  and the Sigrid Rausing Trust on the Syrian Archive from 2014 and Mnemonic from 2018.
+- The Rockefeller Foundation and Atlas AI's own about page on the 2018 Stanford
+  spinout; Crunchbase and Fraym's own site on Fraym, founded 2015.
+- EU-Startups and SatVu on the 2026 raise led by the NATO Innovation Fund; RS Metrics'
+  own site and Nanalyze on parking lot counting from 2011.
+- Wikipedia, Wealthmanagement and Finovate on Yodlee: founded 1999, bought by
+  Envestnet in 2015 for 660m dollars, later sold to STG.
+- Empatica (MIT Media Lab spinout, 2013), Sonde Health (2015, in Qualcomm chipsets
+  from 2021), Origin Wireless (2012, wifi sensing), Vayyar (December 2011, 4D radar),
+  Bidgely (2011, meter disaggregation), from company pages and trade coverage.
+- CNN and Morocco World News on ATLAN Space, co-founded 2016 to run autonomous
+  drones against illegal fishing.
+
+### Negative results and corrections
+
+- **Fotech** was not coded. The reported Viavi acquisition could not be confirmed
+  and the BP relationship turned out to be a 2017 investment rather than an
+  acquisition.
+- **Aryballe** was not coded. The register has no unit of observation that fits an
+  odour sample and forcing one would misdescribe the firm.
+- **OptaSense and Tutela** carry `NA` founding years. Plausible years were available
+  from memory and were not used.
+- **A duplicate check failed silently and the assertion caught it.** The presence
+  check used to screen candidates matched on company name rather than on
+  `company_id`, so SatVu, Lelapa AI and Presight AI were all reported absent when
+  all three were already in the register. The insert aborted on its own assertion
+  before writing anything. Three of the thirty-one intended additions were dropped
+  for that reason, and the check is the only thing that stopped three duplicate rows.
+- **Four exits were added** (Silixa, OptaSense, CARMERA, Tutela), none of which
+  disclose, which moved the exit disclosure rate from 2 of 75 to 2 of 79. Section 14
+  of `docs/coverage_gaps.md` was recomputed rather than left standing.

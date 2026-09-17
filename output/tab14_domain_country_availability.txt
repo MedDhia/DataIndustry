@@ -29,5 +29,5 @@ conflict_security             194                 0                 194         
 supply_chain                  194                 0                 194                 0        
 housing_property              194                 0                  99                 95       
 infrastructure                194                 0                 194                 0        
-biodiversity                  194                 0                  86                108       
+biodiversity                  194                 0                  87                107       
 -------------------------------------------------------------------------------------------------

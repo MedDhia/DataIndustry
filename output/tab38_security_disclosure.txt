@@ -3,6 +3,6 @@ Microdata access of operating for-profit firms by whether their segment has a do
 =================================================================
                   commercial_only none open researcher_restricted
 -----------------------------------------------------------------
-no security buyer       234       172   26           48          
-security buyer          116        19   1            14          
+no security buyer       247       175   26           49          
+security buyer          118        20   1            14          
 -----------------------------------------------------------------

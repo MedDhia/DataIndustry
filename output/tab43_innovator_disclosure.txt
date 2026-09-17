@@ -1,0 +1,8 @@
+
+Microdata access of operating for-profit firms in the innovators' segments
+=========================================================
+          commercial_only none open researcher_restricted
+---------------------------------------------------------
+innovator       36         4    0             9          
+other           259        76   6            42          
+---------------------------------------------------------

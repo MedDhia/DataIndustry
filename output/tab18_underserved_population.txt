@@ -7,20 +7,20 @@ Twenty worst served large countries per 10 million population
 131             Ethiopia                 SSA         LIC            XL            100        39            5.0       
 167           Philippines                SEA         LMIC           XL            106        32            5.3       
 89               Egypt                  MENA         LMIC           XL            112        43            5.6       
-180              China                   CHN         UMIC           XL            122        13            6.1       
-78               Russia                  RUS         UMIC           XL            126        16            6.3       
-166             Vietnam                  SEA         LMIC           XL            129        33            6.4       
-156            Bangladesh                SAS         LMIC           XL            159        46            8.0       
-173              Japan                   EAS         HIC            XL            192        36            9.6       
-121             Nigeria                  SSA         LMIC           XL            197        65            9.8       
-155             Pakistan                 SAS         LMIC           XL            195        58            9.8       
-31               Brazil                  LAC         UMIC           XL            206        51           10.3       
-162            Indonesia                 SEA         UMIC           XL            208        54           10.4       
-3                Mexico                  LAC         UMIC           XL            211        54           10.6       
-154              India                   SAS         LMIC           XL            248        78           12.4       
+180              China                   CHN         UMIC           XL            124        14            6.2       
+78               Russia                  RUS         UMIC           XL            128        16            6.4       
+166             Vietnam                  SEA         LMIC           XL            130        34            6.5       
+156            Bangladesh                SAS         LMIC           XL            160        47            8.0       
+155             Pakistan                 SAS         LMIC           XL            196        59            9.8       
+173              Japan                   EAS         HIC            XL            195        37            9.8       
+121             Nigeria                  SSA         LMIC           XL            200        66           10.0       
+31               Brazil                  LAC         UMIC           XL            209        52           10.4       
+162            Indonesia                 SEA         UMIC           XL            211        55           10.6       
+3                Mexico                  LAC         UMIC           XL            214        55           10.7       
+154              India                   SAS         LMIC           XL            252        80           12.6       
 104               Iran                  MENA         LMIC            L            93         21           13.3       
-1            United States              NOAM         HIC            XL            403        149          20.1       
-165             Thailand                 SEA         UMIC            L            143        26           20.4       
-105             Turkiye                 MENA         UMIC            L            146        42           20.9       
+165             Thailand                 SEA         UMIC            L            144        27           20.6       
+105             Turkiye                 MENA         UMIC            L            147        43           21.0       
+1            United States              NOAM         HIC            XL            424        152          21.2       
 13               Haiti                   LAC         LIC             M            54         11           21.6       
 ---------------------------------------------------------------------------------------------------------------------

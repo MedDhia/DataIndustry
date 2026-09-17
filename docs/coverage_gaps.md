@@ -1,6 +1,6 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **805 operating
+All figures come from `scripts/03_coverage_gaps.R` over the **829 operating
 firms** in the register. A further 75 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
@@ -53,16 +53,16 @@ into the register, each of which releases its national microdata openly.
 ### Most of this table is not commercial, and that changes how to read it
 
 The register now carries a `sector` variable separating for-profit firms from
-nonprofits, universities and state bodies. **630 of the 805 operating
-organisations are for-profit, 78.3%, but the share varies enormously by region
+nonprofits, universities and state bodies. **650 of the 829 operating
+organisations are for-profit, 78.4%, but the share varies enormously by region
 and it is lowest exactly where the register is best enumerated.**
 
 | Region | Operating | For-profit | Share | Nonprofit | Academic | Governmental |
 |---|---|---|---|---|---|---|
-| NOAM | 255 | 223 | 87.5% | 19 | 13 | 0 |
-| WEU | 156 | 137 | 87.8% | 13 | 6 | 0 |
+| NOAM | 268 | 235 | 87.7% | 20 | 13 | 0 |
+| WEU | 162 | 140 | 86.4% | 15 | 7 | 0 |
 | SSA | 167 | 86 | 51.5% | 48 | 19 | 14 |
-| MENA | 109 | 81 | 74.3% | 10 | 6 | 12 |
+| MENA | 112 | 84 | 75.0% | 10 | 6 | 12 |
 | CHN | 23 | 23 | 100% | 0 | 0 | 0 |
 
 **Half of the Sub-Saharan African layer is not a business.** For anyone reading
@@ -144,7 +144,7 @@ Everywhere else, spending is inferred rather than observed.
 **Access gaps** are the binding constraint. 55 of 324 cells (17.0%) have at least
 one provider but none whose record-level data a researcher can obtain, and the
 share has barely moved as the register has grown from under 500 organisations to
-over 880. The access ratio sits near 0.20 in every region except Sub-Saharan
+over 908. The access ratio sits near 0.20 in every region except Sub-Saharan
 Africa, where it is 0.39 for the reason given in section 1, so roughly four fifths
 of the industry's coverage is commercially closed almost everywhere you look. The
 gap is not that nobody collects. It is that collection and disclosure have come
@@ -738,9 +738,9 @@ who speaks to a person.
 
 ## 14. What the register can only see because it includes the dead
 
-75 of the 880 organisations here no longer operate: 58 absorbed into an acquirer,
+79 of the 908 organisations here no longer operate: 62 absorbed into an acquirer,
 17 wound down or insolvent. Every coverage and gap table above excludes them and
-describes the 805 operating firms. This section is about what they show.
+describes the 829 operating firms. This section is about what they show.
 
 ### Consolidation is not evenly distributed
 
@@ -789,17 +789,18 @@ Composition of the register with and without the firms that left:
 
 | | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| Operating only | 805 | 51.1% | 33.0% | 58.0% | 28.4% |
-| Including exits | 880 | 53.3% | 31.4% | 56.8% | 26.2% |
-| Exited firms only | 75 | 77.3% | 13.3% | 44.0% | **2.7%** |
+| Operating only | 829 | 51.9% | 33.2% | 56.8% | 28.2% |
+| Including exits | 908 | 54.2% | 31.4% | 55.5% | 26.0% |
+| Exited firms only | 79 | 78.5% | 12.7% | 41.8% | **2.5%** |
 
 The last cell is the one that matters, and successive extension rounds have
 changed it twice. Earlier revisions said that **not one** exited firm in this
 register had record-level data a researcher could obtain. There are now two, so
-the claim is stated as a rate: 2 of 75 exits, 2.7%, against 28.4% among operating
-firms.
+the claim is stated as a rate: 2 of 79 exits, 2.5%, against 28.2% among operating
+firms. The method round added four more exits and none of them disclosed either,
+which moved the rate down rather than up.
 
-**Every exit in this register but one is a for-profit.** 74 of the 75 exited
+**Every exit in this register but one is a for-profit.** 78 of the 79 exited
 organisations are commercial; the exception is the INDEPTH Network. No academic
 or governmental organisation in the register has ever closed, and exactly one
 nonprofit has. Part of that is real, since a university institute does not get
@@ -1119,7 +1120,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 258 rows covering 111 of the 880 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 908 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on
@@ -1464,3 +1465,52 @@ record-level data to researchers at 10.0 percent against 15.4 percent elsewhere,
 150 against 74 of 480. The gap is small, the denominators are small, and segment
 composition could produce it without any relationship between security demand and
 secrecy. It is recorded as an observation to test, not as an effect.
+
+## 19. Entering a crowded segment with a method nobody else had
+
+The register was asked whether firms that arrived with a genuinely new collection
+method were entering empty ground or occupied ground. `data/method_innovations.csv`
+holds 63 of them, 28 added in this round and 35 already here, each with the method
+named and the practice it displaced. Full treatment in `docs/method_innovation.md`.
+
+For each firm, count the organisations already in its segment when it first
+deployed the method. **The median is 20 prior occupants, 35 of the 63 entered a
+segment already holding 20 or more, and only 6 entered one holding fewer than
+five.** RIWI put a web interception frame into full-service survey research
+against 80 prior occupants; the earth observation entrants of 2018 to 2023
+arrived against 60 to 79. That count is a property of this register's enumeration
+depth as much as of the industry, so it compares innovators within a segment far
+better than across segments. What survives the caveat is the shape: nobody in
+this file found an empty market.
+
+Two results are worth carrying into the rest of the document.
+
+**What draws a legal challenge is not the sensor.** 16 of the 63 methods are
+contested, meaning litigation, regulatory action or sustained documented accuracy
+disputes. By type that is 8 of 19 for new substrates, 4 of 12 for new sampling
+frames, and 2 of 19 for new sensors. Building an instrument and pointing it at
+the world is almost never challenged. Taking material that already exists and
+turning it into data about people who never agreed to it is challenged
+constantly: bank credentials, card transactions, residential connections, the
+television set, a listed company's parking lot. The four token-incentive networks
+are the only category with no contested row in it, and what distinguishes them is
+that the contributor is asked, paid, and can stop.
+
+**The non-Western contribution is contractual, not technical.** 51 of the 63
+innovations are headquartered in North America or Western Europe. Of the four
+coded `new_contract`, where the terms of the work rather than the instrument are
+the innovation, three are outside those regions: Karya in India, Digital Umuganda
+in Rwanda, Lelapa AI in South Africa. The fourth is Sama, a US-headquartered firm
+whose annotation workforce is Kenyan, and it is the one of the four coded
+contested. Read with section 7 of `docs/demand.md`, where OpenAI paid Sama about
+12.50 dollars an hour per worker while Kenyan workers received around 2, the
+pattern is consistent: where the Global South has innovated in this industry, it
+has innovated on ownership and on payment, because that is where the loss was.
+
+A third result cuts against the register's usual direction. Innovators disclose
+slightly more than the firms they displaced: among operating for-profit firms in
+the same segments, 9 of 49 innovators release record-level data against 48 of 383
+for everyone else, 18.4 against 12.5 percent. Including the nonprofit innovators
+gives 31.0 percent, which would be a trick, since five organisations that publish
+by constitution would carry the whole difference. Six points on those denominators
+is a hint and is recorded as one.

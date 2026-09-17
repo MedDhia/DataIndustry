@@ -1,0 +1,12 @@
+
+Status of method innovators by type of novelty
+==================================================
+                   absorbed acquired_active active
+--------------------------------------------------
+new_contract          0            0          4   
+new_incentive         0            0          4   
+new_inference         0            0          5   
+new_sampling_frame    1            2          9   
+new_sensor            2            0          17  
+new_substrate         2            2          15  
+--------------------------------------------------

@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (880 rows, 26 variables)
+## `data/companies.csv` (908 rows, 26 variables)
 
-The register includes 805 operating organisations and 75 that no longer operate.
+The register includes 829 operating organisations and 79 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -102,7 +102,7 @@ dataset and should be reported in anything built on it.
 Current distribution over operating firms: A 59, B 192, C 262. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (880 rows, 14 variables)
+## `data/coverage_spatial.csv` (908 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -464,3 +464,37 @@ summed across bases.
 **Direction is the softest variable in the file.** It rests on the source behind the row
 and on the entry and exit figures in section 1 of `docs/demand.md`, and it is a reading,
 not a measurement. Treat it as a hypothesis to check rather than as data.
+
+## `data/method_innovations.csv` (63 rows, 10 variables)
+
+One row per organisation whose entry rested on a collection method its segment
+did not already have. Not a scoring of how good a firm is, and not a ranking. The
+test applied to each candidate was narrow: name the method, name the practice it
+displaced, and point at a source that establishes the firm uses it. A firm that
+does the same thing better, cheaper or at larger scale is not in this file.
+
+| Variable | Type | Description |
+|---|---|---|
+| `innovation_id` | key | Stable identifier, prefixed `in_`. |
+| `company_id` | key | Foreign key to `companies.csv`. One row per company; the validator rejects a second. |
+| `novelty_type` | factor | `new_sensor`, `new_substrate`, `new_sampling_frame`, `new_inference`, `new_incentive`, `new_contract`. Defined in `docs/method_innovation.md` section 2. |
+| `novel_element` | string | What the method is, in one clause. |
+| `displaces` | string | The practice it competes against, which is often not another firm but a statistical office, a ranger patrol or a clinic. |
+| `first_deployment_year` | integer | The year THIS firm first deployed the method, or `NA`. Where the method predates the firm, as in a spinout, the earlier history goes in `notes` and this field stays with the firm. The validator rejects a deployment year before the company's founding year. |
+| `contested` | factor | `yes` if the method itself has drawn litigation, regulatory action or sustained documented accuracy disputes; `no` otherwise. Commercial disputes and ordinary competition do not count. |
+| `evidence_level` | factor | `A`, `B`, `C`, as elsewhere. |
+| `url` | string | Establishes WHAT the method is, for which the firm is an acceptable authority. It does not establish that the method works. Performance claims stay in the `companies.csv` notes and are marked there as vendor claims. |
+| `notes` | string | Free text, quoted in the CSV where it contains commas. |
+
+**Prior occupants are derived, not stored.** `scripts/10_innovation.R` counts the
+organisations already in a firm's segment at its first deployment year. Storing
+that number would go stale on the next extension round, and it is a property of
+this register's enumeration depth as much as of the industry. Read it within a
+segment, not across segments.
+
+**Three modality codes were added for this round**, taking `data/modalities.csv`
+from 19 to 22: `fiber_das`, `web_intercept` and `rf_sensing`. Each was added
+because coding the firm with an existing modality would have misdescribed what it
+does. `rf_sensing` in particular is distinct from `signals_rf`, which is the
+geolocation of emitters, and from `sensor_hardware`, which assumes something was
+installed for the purpose.

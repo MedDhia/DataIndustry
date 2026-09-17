@@ -1,0 +1,12 @@
+
+Whether the method has drawn litigation, regulatory action or documented accuracy disputes
+=========================
+                   no yes
+-------------------------
+new_contract       3   1 
+new_incentive      4   0 
+new_inference      4   1 
+new_sampling_frame 8   4 
+new_sensor         17  2 
+new_substrate      11  8 
+-------------------------

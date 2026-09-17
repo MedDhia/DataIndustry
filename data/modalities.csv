@@ -18,3 +18,6 @@ crowd_sensor,Contributor-operated sensor network,indirect,Hardware held and oper
 environmental_sample,Environmental sampling,none,Physical or biological material taken from the environment including wastewater sludge water and soil
 acoustic,Passive acoustic monitoring,none,Fixed or drifting microphones recording soundscapes for species activity and illegal-activity detection
 signals_rf,Radio frequency geolocation,none,Detection and geolocation of radio emitters rather than imaging of surfaces
+fiber_das,Distributed fibre acoustic sensing,none,Acoustic and strain sensing along an installed optical fibre which turns telecom or downhole cable already in the ground into a continuous sensor array
+web_intercept,Incidental web interception,direct,Instruments served to people arriving at controlled web properties by accident so the sampling frame is a set of domains rather than a recruited pool of persons
+rf_sensing,Radio propagation sensing,indirect,Inference of presence movement and body state from how radio signals propagate through a space whether from ambient wifi or from purpose built radar rather than from imaging or from a worn device
