@@ -3,13 +3,13 @@ Providers by collection modality and region
 ======================================================================
                      NOAM LAC WEU EEU RUS MENA SSA SAS SEA EAS CHN OCE
 ----------------------------------------------------------------------
-face_to_face          14  21  15   9  10   44  106 20  17   3   2   6 
+face_to_face          14  21  15   9  10   44  105 20  17   3   2   6 
 telephone             15   7  19   7   3   25  12   6   6   5   1   2 
 online_panel          60  17  61  15  10   15  10  16  19  20   4  17 
 mobile_app            10   4   7   4   1   5    9   5   4   2   0   1 
 crowd_task            26   5  17  11   1   8   18  28  13   3   4   2 
 expert_elicit         10   2   6   3   0   1    0   8   1   5   0   0 
-device_passive        35  12  31   8   7   8    6  13  12  14  10  15 
+device_passive        35  12  30   8   7   9    6  13  12  14  10  14 
 web_scrape            53  31  50  36  13   32  19  40  32  37   5  38 
 api_partner           47  22  33  21  18   28  30  24  22  22  13  25 
 transaction           14   1   4   1   1   2    4   2   2   3   1   1 

@@ -43,7 +43,15 @@ def main(cands):
         if hits:
             worst = max(worst, 2 if any(h[0] == "EXACT" for h in hits) else 1)
             print(f"\n{c}")
-            for kind, nid, nm in hits[:6]:
+            # Severity first, then file order. The first version printed in file
+            # order and truncated at six, so an EXACT match sitting behind a run
+            # of shared-word noise never reached the screen: that is how a second
+            # Ifakara Health Institute row was created. Exact and substring hits
+            # are now always printed in full.
+            rank = {"EXACT": 0}
+            hits.sort(key=lambda h: rank.get(h[0], 1 if h[0] == "substring" else 2))
+            hard = [h for h in hits if h[0] in ("EXACT", "substring")]
+            for kind, nid, nm in hard + [h for h in hits if h not in hard][:4]:
                 print(f"    {kind:28s} {nid} / {nm}")
         else:
             print(f"\n{c}\n    no match in {len(rows)} rows")

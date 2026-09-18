@@ -1521,3 +1521,62 @@ that its microdata reaches researchers. It is coded `commercial_only`. Coding it
 as disclosing would have raised African commercial disclosure by an assumption, in
 the direction the register's existing finding already points, which is exactly
 when an assumption is least safe to make.
+
+## Round: internal audit (September 2026)
+
+No organisations added. This round looked for errors already in the register
+rather than for rows missing from it, by probing combinations of fields that
+should not co-occur.
+
+The first pass raised **122 flags over 934 rows and roughly a dozen were real**.
+That ratio is the finding as much as the errors are: the probes were cruder than
+the register. A firm can recruit a consented cohort and then collect its clinical
+records, so `human_subjects = direct` with a records modality is not a
+contradiction; a private equity owner is routinely recorded in `parent_company`
+without the firm being a subsidiary; radio frequency geolocation is an earth
+observation business without being remote sensing. Those three probes alone
+produced 101 of the 122 flags and none of the errors.
+
+### What was actually wrong
+
+- **A duplicate organisation.** The Ifakara Health Institute was in the register
+  twice, as `ifakara_health` from an earlier round and `ifakara` from the third
+  African round, with different identifiers and different founding years. The
+  rows are merged into `ifakara_health`, which keeps the 1956 origin of
+  continuous collection at the site and now carries the surveillance population
+  figures and the 1996 incorporation from the newer row.
+- **Four organisations whose consent code predated the vocabulary that describes
+  them.** SenseTime, Megvii, Hikvision and SoundThinking were coded
+  `not_applicable`, which asserts there is no human subject, when each has one and
+  no consent exists. They now carry `no_consent_basis`, the value added during the
+  MENA round. A vocabulary extension is not finished when the new rows use it;
+  the old rows have to be revisited.
+- **Kando** was coded with an indirect human subject. It measures effluent
+  chemistry, and the register's other wastewater collectors are coded with no
+  human subject. Now consistent with them.
+- **Two scope fields contradicting their own country counts.** Deveron was
+  `single_country` on two countries and is now `single_region`; Insider was
+  `global` on 25 countries and is now `multi_region`.
+
+### Why the duplicate got in
+
+`scripts/00_check_new.py` was written after two earlier screening failures and it
+found this candidate correctly. It printed hits in file order and truncated at
+six, so the EXACT match on row 833 sat behind a run of firms sharing the word
+"health" and never reached the screen. The tool now sorts by severity and prints
+every exact and substring hit in full. Run against the three historical misses it
+returns all three as EXACT on the first line.
+
+### What changed in the checks
+
+Six rules that the register now satisfies completely were promoted from the audit
+into `00_validate.py`, so a future round cannot quietly reintroduce them: an
+operating organisation with a ceased year, an exit without one, a subsidiary with
+no parent, `not_applicable` consent alongside a human subject, `single_country`
+scope with a different country count, and a duplicate company name. That last one
+is the rule that would have caught Ifakara at the moment of insertion.
+
+`scripts/00_audit.py` keeps the probes that cannot be made into hard rules, with
+the noisy ones narrowed. It now raises 8 flags over 933 rows, all four patterns
+behind them legitimate and documented in `docs/codebook.md` so the next run does
+not relitigate them.

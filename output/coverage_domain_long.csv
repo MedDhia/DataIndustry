@@ -844,7 +844,6 @@
 "berci","consumer_behavior",0
 "iford","consumer_behavior",0
 "iki_malawi","consumer_behavior",0
-"ifakara","consumer_behavior",0
 "jumo","consumer_behavior",1
 "kifiya","consumer_behavior",0
 "omnisient","consumer_behavior",2
@@ -1697,7 +1696,6 @@
 "berci","public_opinion",2
 "iford","public_opinion",1
 "iki_malawi","public_opinion",0
-"ifakara","public_opinion",0
 "jumo","public_opinion",0
 "kifiya","public_opinion",0
 "omnisient","public_opinion",0
@@ -2550,7 +2548,6 @@
 "berci","health_clinical",1
 "iford","health_clinical",2
 "iki_malawi","health_clinical",2
-"ifakara","health_clinical",2
 "jumo","health_clinical",0
 "kifiya","health_clinical",0
 "omnisient","health_clinical",0
@@ -3403,7 +3400,6 @@
 "berci","financial_transactions",0
 "iford","financial_transactions",0
 "iki_malawi","financial_transactions",0
-"ifakara","financial_transactions",0
 "jumo","financial_transactions",2
 "kifiya","financial_transactions",2
 "omnisient","financial_transactions",0
@@ -4256,7 +4252,6 @@
 "berci","credit_risk",0
 "iford","credit_risk",0
 "iki_malawi","credit_risk",0
-"ifakara","credit_risk",0
 "jumo","credit_risk",2
 "kifiya","credit_risk",2
 "omnisient","credit_risk",2
@@ -5109,7 +5104,6 @@
 "berci","labor_employment",0
 "iford","labor_employment",0
 "iki_malawi","labor_employment",1
-"ifakara","labor_employment",0
 "jumo","labor_employment",0
 "kifiya","labor_employment",0
 "omnisient","labor_employment",0
@@ -5962,7 +5956,6 @@
 "berci","earth_observation",0
 "iford","earth_observation",0
 "iki_malawi","earth_observation",0
-"ifakara","earth_observation",0
 "jumo","earth_observation",0
 "kifiya","earth_observation",0
 "omnisient","earth_observation",0
@@ -6815,7 +6808,6 @@
 "berci","mobility_location",0
 "iford","mobility_location",0
 "iki_malawi","mobility_location",0
-"ifakara","mobility_location",0
 "jumo","mobility_location",0
 "kifiya","mobility_location",0
 "omnisient","mobility_location",0
@@ -7668,7 +7660,6 @@
 "berci","web_content",0
 "iford","web_content",0
 "iki_malawi","web_content",0
-"ifakara","web_content",0
 "jumo","web_content",0
 "kifiya","web_content",0
 "omnisient","web_content",0
@@ -8521,7 +8512,6 @@
 "berci","social_discourse",0
 "iford","social_discourse",0
 "iki_malawi","social_discourse",0
-"ifakara","social_discourse",0
 "jumo","social_discourse",0
 "kifiya","social_discourse",0
 "omnisient","social_discourse",0
@@ -9374,7 +9364,6 @@
 "berci","media_audience",0
 "iford","media_audience",0
 "iki_malawi","media_audience",0
-"ifakara","media_audience",0
 "jumo","media_audience",0
 "kifiya","media_audience",0
 "omnisient","media_audience",0
@@ -10227,7 +10216,6 @@
 "berci","agriculture",0
 "iford","agriculture",0
 "iki_malawi","agriculture",0
-"ifakara","agriculture",0
 "jumo","agriculture",0
 "kifiya","agriculture",1
 "omnisient","agriculture",0
@@ -11080,7 +11068,6 @@
 "berci","energy_extractives",0
 "iford","energy_extractives",0
 "iki_malawi","energy_extractives",0
-"ifakara","energy_extractives",0
 "jumo","energy_extractives",0
 "kifiya","energy_extractives",0
 "omnisient","energy_extractives",0
@@ -11933,7 +11920,6 @@
 "berci","environment_climate",0
 "iford","environment_climate",0
 "iki_malawi","environment_climate",0
-"ifakara","environment_climate",2
 "jumo","environment_climate",0
 "kifiya","environment_climate",0
 "omnisient","environment_climate",0
@@ -12786,7 +12772,6 @@
 "berci","conflict_security",2
 "iford","conflict_security",0
 "iki_malawi","conflict_security",0
-"ifakara","conflict_security",0
 "jumo","conflict_security",0
 "kifiya","conflict_security",0
 "omnisient","conflict_security",0
@@ -13639,7 +13624,6 @@
 "berci","firmographic",0
 "iford","firmographic",0
 "iki_malawi","firmographic",0
-"ifakara","firmographic",0
 "jumo","firmographic",0
 "kifiya","firmographic",0
 "omnisient","firmographic",0
@@ -14492,7 +14476,6 @@
 "berci","prices_retail",0
 "iford","prices_retail",0
 "iki_malawi","prices_retail",0
-"ifakara","prices_retail",0
 "jumo","prices_retail",0
 "kifiya","prices_retail",0
 "omnisient","prices_retail",0
@@ -15345,7 +15328,6 @@
 "berci","identity_biometric",0
 "iford","identity_biometric",0
 "iki_malawi","identity_biometric",0
-"ifakara","identity_biometric",0
 "jumo","identity_biometric",0
 "kifiya","identity_biometric",0
 "omnisient","identity_biometric",1
@@ -16198,7 +16180,6 @@
 "berci","device_telemetry",0
 "iford","device_telemetry",0
 "iki_malawi","device_telemetry",0
-"ifakara","device_telemetry",0
 "jumo","device_telemetry",0
 "kifiya","device_telemetry",0
 "omnisient","device_telemetry",0
@@ -17051,7 +17032,6 @@
 "berci","education",0
 "iford","education",0
 "iki_malawi","education",2
-"ifakara","education",0
 "jumo","education",0
 "kifiya","education",0
 "omnisient","education",0
@@ -17904,7 +17884,6 @@
 "berci","migration_displacement",0
 "iford","migration_displacement",2
 "iki_malawi","migration_displacement",0
-"ifakara","migration_displacement",0
 "jumo","migration_displacement",0
 "kifiya","migration_displacement",0
 "omnisient","migration_displacement",0
@@ -18757,7 +18736,6 @@
 "berci","supply_chain",0
 "iford","supply_chain",0
 "iki_malawi","supply_chain",0
-"ifakara","supply_chain",0
 "jumo","supply_chain",0
 "kifiya","supply_chain",0
 "omnisient","supply_chain",0
@@ -19610,7 +19588,6 @@
 "berci","ai_labels",0
 "iford","ai_labels",0
 "iki_malawi","ai_labels",0
-"ifakara","ai_labels",0
 "jumo","ai_labels",0
 "kifiya","ai_labels",0
 "omnisient","ai_labels",0
@@ -20463,7 +20440,6 @@
 "berci","legal_regulatory",0
 "iford","legal_regulatory",0
 "iki_malawi","legal_regulatory",0
-"ifakara","legal_regulatory",0
 "jumo","legal_regulatory",0
 "kifiya","legal_regulatory",0
 "omnisient","legal_regulatory",0
@@ -21316,7 +21292,6 @@
 "berci","housing_property",0
 "iford","housing_property",0
 "iki_malawi","housing_property",0
-"ifakara","housing_property",0
 "jumo","housing_property",0
 "kifiya","housing_property",0
 "omnisient","housing_property",0
@@ -22169,7 +22144,6 @@
 "berci","infrastructure",0
 "iford","infrastructure",0
 "iki_malawi","infrastructure",0
-"ifakara","infrastructure",0
 "jumo","infrastructure",0
 "kifiya","infrastructure",0
 "omnisient","infrastructure",0
@@ -23022,7 +22996,6 @@
 "berci","biodiversity",0
 "iford","biodiversity",0
 "iki_malawi","biodiversity",0
-"ifakara","biodiversity",0
 "jumo","biodiversity",0
 "kifiya","biodiversity",0
 "omnisient","biodiversity",0

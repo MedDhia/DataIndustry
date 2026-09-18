@@ -5,7 +5,7 @@ Microdata disclosure: all operating organisations against for-profits only
 ---------------------------------------------
 NOAM  268    73    27.200  235    44   18.700
 WEU   162    35    21.600  140    16   11.400
-SSA   184    102   55.400   93    23   24.700
+SSA   183    101   55.200   93    23   24.700
 MENA  119    22    18.500   91    4    4.400 
 SAS   17      1     5.900   15    0      0   
 SEA   12      1     8.300   10    0      0   

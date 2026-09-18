@@ -6,5 +6,5 @@ Status by sector, whole register including exits
 academic        0            0          47       0         0     
 for_profit      64           6         658       8         8     
 governmental    0            0          27       0         0     
-nonprofit       0            0         115       0         1     
+nonprofit       0            0         114       0         1     
 -----------------------------------------------------------------

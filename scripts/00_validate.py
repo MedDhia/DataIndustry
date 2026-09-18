@@ -45,6 +45,11 @@ def main():
     for cid, n in collections.Counter(r["company_id"] for r in companies).items():
         if n > 1:
             err["duplicate company_id"].append(cid)
+    # A duplicate name is how the register acquired two Ifakara Health Institute
+    # rows: the identifiers differed, so nothing caught it until an audit did.
+    for nm, n in collections.Counter(r["company_name"].strip().lower() for r in companies).items():
+        if n > 1:
+            err["duplicate company_name"].append(nm)
 
     for r in companies:
         cid = r["company_id"]
@@ -58,6 +63,20 @@ def main():
         if r["ownership_type"] in ("public_listed", "private_pe", "private_vc") \
            and r["sector"] != "for_profit":
             err["sector vs ownership_type"].append((cid, r["ownership_type"], r["sector"]))
+        # Rules promoted from scripts/00_audit.py once the register satisfied
+        # them, so that a future round cannot quietly reintroduce the error.
+        if r["status"] in ("active", "acquired_active") and r["ceased_year"] != "NA":
+            err["operating with a ceased_year"].append((cid, r["ceased_year"]))
+        if r["status"] in ("absorbed", "wound_down", "insolvent") and r["ceased_year"] == "NA":
+            err["exit with no ceased_year"].append((cid, r["status"]))
+        if r["ownership_type"] == "subsidiary" and r["parent_company"] == "NA":
+            err["subsidiary with no parent"].append(cid)
+        # `not_applicable` asserts there is no human subject. Where there is one
+        # and no consent exists, the code is `no_consent_basis`.
+        if r["consent_model"] == "not_applicable" and r["human_subjects"] != "none":
+            err["consent not_applicable but a human subject"].append((cid, r["human_subjects"]))
+        if r["spatial_scope"] == "single_country" and r["countries_claimed"] not in ("1", "NA"):
+            err["single country with a different country count"].append((cid, r["countries_claimed"]))
         if r["segment_primary"] not in segs:
             err["segment_primary"].append((cid, r["segment_primary"]))
         if r["segment_secondary"] not in segs | {"NA"}:

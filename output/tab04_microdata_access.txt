@@ -13,7 +13,7 @@ crowd_micro           1             0                  8         0
 distributed_sensing   7             1                 10         1  
 earth_observation     2             9                 57         7  
 expert_network        0             0                  2         3  
-field_agency          46           49                  5        107 
+field_agency          46           48                  5        107 
 financial_altdata     0             0                 17         5  
 health_rwd            1            28                  6         6  
 identity_biometric    0             0                  0         17 

@@ -13,7 +13,7 @@ crowd_micro               3         6       0      9
 distributed_sensing       3        12       4     19  
 earth_observation        17        45      13     75  
 expert_network            3         2       0      5  
-field_agency             118       81       8     207 
+field_agency             117       81       8     206 
 financial_altdata         6        14       2     22  
 health_rwd               11        24       6     41  
 identity_biometric        7         7       3     17  
@@ -26,5 +26,5 @@ survey_insights          64        37      12     113
 telecom_data              1         5       0      6  
 trade_logistics           3        10       0     13  
 web_data                  2         8       6     16  
-Total                    359       404     90     853 
+Total                    358       404     90     852 
 ------------------------------------------------------

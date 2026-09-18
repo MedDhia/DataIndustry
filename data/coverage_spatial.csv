@@ -798,7 +798,7 @@ sonar_arastirma,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
 gezici_arastirma,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
 mak_danismanlik,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
 piar_arastirma,segment_template,0,0,0,0,0,3,0,0,0,0,0,0
-insider_tr,segment_template,3,1,2,1,0,1,0,1,1,1,0,2
+insider_tr,segment_template,2,0,1,0,0,2,0,0,0,0,0,1
 acrps_doha,manual,0,0,0,0,0,3,1,0,0,0,0,0
 sesri_qatar,manual,0,0,0,0,0,3,0,0,0,0,0,0
 qcri,segment_template,2,0,1,1,0,2,0,2,1,0,0,0
@@ -925,7 +925,6 @@ dataphyte,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 berci,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 iford,segment_template,0,0,0,0,0,0,2,0,0,0,0,0
 iki_malawi,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
-ifakara,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 jumo,segment_template,2,0,1,0,0,0,2,0,0,0,0,1
 kifiya,segment_template,0,0,0,0,0,0,3,0,0,0,0,0
 omnisient,segment_template,2,0,1,0,0,0,2,0,0,0,0,1

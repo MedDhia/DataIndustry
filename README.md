@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 934 organisations that collect data as their business, 853 of them
+A register of 933 organisations that collect data as their business, 852 of them
 still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
@@ -12,8 +12,8 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 934 | The register. One row per organisation, 26 variables. 853 operating, 81 exited. 664 of the operating ones are for-profit. |
-| `data/coverage_spatial.csv` | 934 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 933 | The register. One row per organisation, 26 variables. 852 operating, 81 exited. 664 of the operating ones are for-profit. |
+| `data/coverage_spatial.csv` | 933 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
 | `data/grant_programmes.csv` | 15 | Recurring open-call funding instruments a data collection venture could apply to. Purposive, not a census. |
@@ -35,6 +35,8 @@ actually gathering the data, and what is nobody gathering?
 | `scripts/08_sector.R` | | The for-profit cut. Run this before citing any regional figure. |
 | `scripts/09_demand.R` | | Entry cohorts by segment, and the buyer layer. |
 | `scripts/10_innovation.R` | | The method layer: prior occupants at entry, novelty type, contestation and survival. |
+| `scripts/00_audit.py` | | Cross-field probes for combinations that are usually wrong. Reports only; run it after every extension round. |
+| `scripts/00_check_new.py` | | Screens candidate organisations against the register before they are added. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
 ## Scope
@@ -62,7 +64,7 @@ Both startups and established firms are included by design, and so are firms tha
 no longer exist. 56 organisations in the register have exited: 46 absorbed into
 an acquirer, 10 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
-uses the 853 operating firms only**; `scripts/05_history.R` analyses the rest.
+uses the 852 operating firms only**; `scripts/05_history.R` analyses the rest.
 
 128 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
 bloc or mainland China, the areas where enumeration effort has been concentrated.
@@ -182,6 +184,7 @@ python3 scripts/00_code_sector.py             # derive the sector variable
 python3 scripts/00_build_coverage.py          # region coverage matrix
 python3 scripts/00_build_country_coverage.py  # country coverage, typed by method and domain
 python3 scripts/00_validate.py                # check every file against every vocabulary
+python3 scripts/00_audit.py                   # probe for combinations that are usually wrong
 Rscript  scripts/02_descriptives.R            # descriptive tables -> output/
 Rscript  scripts/03_coverage_gaps.R           # region gap analysis -> output/
 Rscript  scripts/04_country_gaps.R            # country gap analysis -> output/
@@ -205,7 +208,7 @@ Read these before using the data for anything load-bearing.
    A for 129 records, B for 401 and C for 350. Level C is analyst judgement:
    reliable for segment, region and modality, not reliable for founding dates or
    counts. Filter on it.
-2. **Region coverage is partly rule-derived.** 149 of 934 spatial rows are
+2. **Region coverage is partly rule-derived.** 149 of 933 spatial rows are
    hand-coded; the remaining 731 come from the documented segment templates in
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an

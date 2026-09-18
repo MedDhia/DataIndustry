@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (934 rows, 26 variables)
+## `data/companies.csv` (933 rows, 26 variables)
 
-The register includes 853 operating organisations and 81 that no longer operate.
+The register includes 852 operating organisations and 81 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -102,7 +102,34 @@ dataset and should be reported in anything built on it.
 Current distribution over operating firms: A 59, B 192, C 262. Treat every `C` figure as an ordinal
 placement rather than a measurement.
 
-## `data/coverage_spatial.csv` (934 rows, 14 variables)
+### Four field combinations that look wrong and are not
+
+`scripts/00_audit.py` probes for combinations that are usually errors. Four keep
+surfacing legitimately, and they are documented here so that each audit run does
+not relitigate them.
+
+**`parent_company` records control, not corporate structure.** A private equity
+or venture owner goes in that field, and so does the controlling shareholder of a
+listed company: Hikvision names CETC, Presight names G42. It does not imply
+`ownership_type = subsidiary`, and the two fields answer different questions.
+
+**`human_subjects` describes the subject of the data, not who produced it.**
+Annotators, competition entrants, elicited experts and the users of survey
+software are people, and their presence does not make a firm `direct`. Zindi and
+Karya are `direct` because the contributor's own speech or judgement is the data;
+a survey software vendor whose customers run the interviews is `none`.
+
+**`modality_primary` is one field for organisations that use several.** A firm
+coded `admin_records` with `human_subjects = direct` is usually doing records work
+and fieldwork both, and the register records only the larger of the two. Where a
+combination looks impossible, check the notes before assuming an error.
+
+**`microdata_access = open` with a paid `access_model` is normal.** Roboflow and
+Umbra publish open datasets alongside a commercial product. The access model
+describes how the main product is sold; microdata access describes what a
+researcher can get, and a firm can do both.
+
+## `data/coverage_spatial.csv` (933 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 

@@ -727,7 +727,7 @@
 "gezici_arastirma","NOAM",0
 "mak_danismanlik","NOAM",0
 "piar_arastirma","NOAM",0
-"insider_tr","NOAM",3
+"insider_tr","NOAM",2
 "acrps_doha","NOAM",0
 "sesri_qatar","NOAM",0
 "qcri","NOAM",2
@@ -844,7 +844,6 @@
 "berci","NOAM",0
 "iford","NOAM",0
 "iki_malawi","NOAM",0
-"ifakara","NOAM",0
 "jumo","NOAM",2
 "kifiya","NOAM",0
 "omnisient","NOAM",2
@@ -1580,7 +1579,7 @@
 "gezici_arastirma","LAC",0
 "mak_danismanlik","LAC",0
 "piar_arastirma","LAC",0
-"insider_tr","LAC",1
+"insider_tr","LAC",0
 "acrps_doha","LAC",0
 "sesri_qatar","LAC",0
 "qcri","LAC",0
@@ -1697,7 +1696,6 @@
 "berci","LAC",0
 "iford","LAC",0
 "iki_malawi","LAC",0
-"ifakara","LAC",0
 "jumo","LAC",0
 "kifiya","LAC",0
 "omnisient","LAC",0
@@ -2433,7 +2431,7 @@
 "gezici_arastirma","WEU",0
 "mak_danismanlik","WEU",0
 "piar_arastirma","WEU",0
-"insider_tr","WEU",2
+"insider_tr","WEU",1
 "acrps_doha","WEU",0
 "sesri_qatar","WEU",0
 "qcri","WEU",1
@@ -2550,7 +2548,6 @@
 "berci","WEU",0
 "iford","WEU",0
 "iki_malawi","WEU",0
-"ifakara","WEU",0
 "jumo","WEU",1
 "kifiya","WEU",0
 "omnisient","WEU",1
@@ -3286,7 +3283,7 @@
 "gezici_arastirma","EEU",0
 "mak_danismanlik","EEU",0
 "piar_arastirma","EEU",0
-"insider_tr","EEU",1
+"insider_tr","EEU",0
 "acrps_doha","EEU",0
 "sesri_qatar","EEU",0
 "qcri","EEU",1
@@ -3403,7 +3400,6 @@
 "berci","EEU",0
 "iford","EEU",0
 "iki_malawi","EEU",0
-"ifakara","EEU",0
 "jumo","EEU",0
 "kifiya","EEU",0
 "omnisient","EEU",0
@@ -4256,7 +4252,6 @@
 "berci","RUS",0
 "iford","RUS",0
 "iki_malawi","RUS",0
-"ifakara","RUS",0
 "jumo","RUS",0
 "kifiya","RUS",0
 "omnisient","RUS",0
@@ -4992,7 +4987,7 @@
 "gezici_arastirma","MENA",3
 "mak_danismanlik","MENA",3
 "piar_arastirma","MENA",3
-"insider_tr","MENA",1
+"insider_tr","MENA",2
 "acrps_doha","MENA",3
 "sesri_qatar","MENA",3
 "qcri","MENA",2
@@ -5109,7 +5104,6 @@
 "berci","MENA",0
 "iford","MENA",0
 "iki_malawi","MENA",0
-"ifakara","MENA",0
 "jumo","MENA",0
 "kifiya","MENA",0
 "omnisient","MENA",0
@@ -5962,7 +5956,6 @@
 "berci","SSA",3
 "iford","SSA",2
 "iki_malawi","SSA",3
-"ifakara","SSA",3
 "jumo","SSA",2
 "kifiya","SSA",3
 "omnisient","SSA",2
@@ -6698,7 +6691,7 @@
 "gezici_arastirma","SAS",0
 "mak_danismanlik","SAS",0
 "piar_arastirma","SAS",0
-"insider_tr","SAS",1
+"insider_tr","SAS",0
 "acrps_doha","SAS",0
 "sesri_qatar","SAS",0
 "qcri","SAS",2
@@ -6815,7 +6808,6 @@
 "berci","SAS",0
 "iford","SAS",0
 "iki_malawi","SAS",0
-"ifakara","SAS",0
 "jumo","SAS",0
 "kifiya","SAS",0
 "omnisient","SAS",0
@@ -7551,7 +7543,7 @@
 "gezici_arastirma","SEA",0
 "mak_danismanlik","SEA",0
 "piar_arastirma","SEA",0
-"insider_tr","SEA",1
+"insider_tr","SEA",0
 "acrps_doha","SEA",0
 "sesri_qatar","SEA",0
 "qcri","SEA",1
@@ -7668,7 +7660,6 @@
 "berci","SEA",0
 "iford","SEA",0
 "iki_malawi","SEA",0
-"ifakara","SEA",0
 "jumo","SEA",0
 "kifiya","SEA",0
 "omnisient","SEA",0
@@ -8404,7 +8395,7 @@
 "gezici_arastirma","EAS",0
 "mak_danismanlik","EAS",0
 "piar_arastirma","EAS",0
-"insider_tr","EAS",1
+"insider_tr","EAS",0
 "acrps_doha","EAS",0
 "sesri_qatar","EAS",0
 "qcri","EAS",0
@@ -8521,7 +8512,6 @@
 "berci","EAS",0
 "iford","EAS",0
 "iki_malawi","EAS",0
-"ifakara","EAS",0
 "jumo","EAS",0
 "kifiya","EAS",0
 "omnisient","EAS",0
@@ -9374,7 +9364,6 @@
 "berci","CHN",0
 "iford","CHN",0
 "iki_malawi","CHN",0
-"ifakara","CHN",0
 "jumo","CHN",0
 "kifiya","CHN",0
 "omnisient","CHN",0
@@ -10110,7 +10099,7 @@
 "gezici_arastirma","OCE",0
 "mak_danismanlik","OCE",0
 "piar_arastirma","OCE",0
-"insider_tr","OCE",2
+"insider_tr","OCE",1
 "acrps_doha","OCE",0
 "sesri_qatar","OCE",0
 "qcri","OCE",0
@@ -10227,7 +10216,6 @@
 "berci","OCE",0
 "iford","OCE",0
 "iki_malawi","OCE",0
-"ifakara","OCE",0
 "jumo","OCE",1
 "kifiya","OCE",0
 "omnisient","OCE",1

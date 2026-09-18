@@ -1,6 +1,6 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **853 operating
+All figures come from `scripts/03_coverage_gaps.R` over the **852 operating
 firms** in the register. A further 75 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
@@ -53,15 +53,15 @@ into the register, each of which releases its national microdata openly.
 ### Most of this table is not commercial, and that changes how to read it
 
 The register now carries a `sector` variable separating for-profit firms from
-nonprofits, universities and state bodies. **664 of the 853 operating
-organisations are for-profit, 77.8%, but the share varies enormously by region
+nonprofits, universities and state bodies. **664 of the 852 operating
+organisations are for-profit, 77.9%, but the share varies enormously by region
 and it is lowest exactly where the register is best enumerated.**
 
 | Region | Operating | For-profit | Share | Nonprofit | Academic | Governmental |
 |---|---|---|---|---|---|---|
 | NOAM | 268 | 235 | 87.7% | 20 | 13 | 0 |
 | WEU | 162 | 140 | 86.4% | 15 | 7 | 0 |
-| SSA | 184 | 93 | 50.5% | 57 | 20 | 14 |
+| SSA | 183 | 93 | 50.8% | 56 | 20 | 14 |
 | MENA | 119 | 91 | 76.5% | 10 | 6 | 12 |
 | CHN | 23 | 23 | 100% | 0 | 0 | 0 |
 
@@ -80,8 +80,8 @@ for-profit cut.
 
 | | MENA | Sub-Saharan Africa |
 |---|---|---|
-| Operating organisations | 119 | 184 |
-| Releasing microdata | 22 (18.5%) | 102 (55.4%) |
+| Operating organisations | 119 | 183 |
+| Releasing microdata | 22 (18.5%) | 101 (55.2%) |
 | **For-profit organisations** | **91** | **93** |
 | **For-profit releasing microdata** | **4 (4.4%)** | **23 (24.7%)** |
 
@@ -145,7 +145,7 @@ Everywhere else, spending is inferred rather than observed.
 **Access gaps** are the binding constraint. 55 of 324 cells (17.0%) have at least
 one provider but none whose record-level data a researcher can obtain, and the
 share has barely moved as the register has grown from under 500 organisations to
-over 934. The access ratio sits near 0.20 in every region except Sub-Saharan
+over 933. The access ratio sits near 0.20 in every region except Sub-Saharan
 Africa, where it is 0.39 for the reason given in section 1, so roughly four fifths
 of the industry's coverage is commercially closed almost everywhere you look. The
 gap is not that nobody collects. It is that collection and disclosure have come
@@ -739,9 +739,9 @@ who speaks to a person.
 
 ## 14. What the register can only see because it includes the dead
 
-81 of the 934 organisations here no longer operate: 64 absorbed into an acquirer,
+81 of the 933 organisations here no longer operate: 64 absorbed into an acquirer,
 17 wound down or insolvent. Every coverage and gap table above excludes them and
-describes the 853 operating firms. This section is about what they show.
+describes the 852 operating firms. This section is about what they show.
 
 ### Consolidation is not evenly distributed
 
@@ -790,14 +790,14 @@ Composition of the register with and without the firms that left:
 
 | | n | HQ in North America or Western Europe | VC or PE backed | Direct human contact | Research-accessible |
 |---|---|---|---|---|---|
-| Operating only | 853 | 50.4% | 33.2% | 56.5% | 28.7% |
-| Including exits | 934 | 52.7% | 31.4% | 55.1% | 26.4% |
+| Operating only | 852 | 50.5% | 33.2% | 56.5% | 28.5% |
+| Including exits | 933 | 52.7% | 31.4% | 55.1% | 26.3% |
 | Exited firms only | 81 | 76.5% | 12.3% | 40.7% | **2.5%** |
 
 The last cell is the one that matters, and successive extension rounds have
 changed it twice. Earlier revisions said that **not one** exited firm in this
 register had record-level data a researcher could obtain. There are now two, so
-the claim is stated as a rate: 2 of 81 exits, 2.5%, against 28.7% among operating
+the claim is stated as a rate: 2 of 81 exits, 2.5%, against 28.5% among operating
 firms. The two method rounds added six more exits between them and none of them
 disclosed either, which moved the rate down rather than up.
 
@@ -1121,7 +1121,7 @@ Northern commercial layer it sits alongside.
 ## 17. Who owns and funds the collectors
 
 `data/ownership.csv` records founders, controlling owners, investors, acquirers
-and funders: 258 rows covering 111 of the 934 organisations. Coverage is partial
+and funders: 258 rows covering 111 of the 933 organisations. Coverage is partial
 and purposive. Rows exist where the relationship could be established from a
 source, and effort was concentrated on organisations whose data is openly
 accessible, because section 4 found that openness tracks grant funding, and on
@@ -1578,7 +1578,7 @@ difference produced by a donor network that writes publication into its contract
 
 ### What the round added
 
-Sub-Saharan Africa now holds 184 operating organisations across 42 countries. The
+Sub-Saharan Africa now holds 183 operating organisations across 42 countries. The
 additions were chosen for countries the register barely reached rather than for
 the three it already knows: BERCI in Kinshasa, which is the only standing national
 polling capacity in the Democratic Republic of the Congo and the register's first
@@ -1599,7 +1599,7 @@ model and has TransUnion as a minority shareholder. And Kifiya scores enterprise
 with no collateral and no credit history at all.
 
 **Africa remains the region where half the register is not a business.** The
-for-profit share is 50.5% against 87.7% in North America and 76.5% in MENA, and
+for-profit share is 50.8% against 87.7% in North America and 76.5% in MENA, and
 this round moved it down rather than up, because the countries the register was
 missing are served by institutes, networks and newsrooms rather than by firms.
 
