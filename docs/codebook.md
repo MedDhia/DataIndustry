@@ -4,7 +4,7 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (933 rows, 26 variables)
+## `data/companies.csv` (933 rows, 27 variables)
 
 The register includes 852 operating organisations and 81 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
@@ -39,7 +39,8 @@ would hide.
 | `human_subjects` | factor | `direct` (the firm interacts with people), `indirect` (data about people obtained from a third party or a device), `none`. A solicited-segment firm coded `none` is either a desk-research reseller or a synthetic research firm that simulates respondents rather than recruiting them; see section 13 of `coverage_gaps.md`. |
 | `consent_model` | factor | `explicit_consent`, `platform_terms`, `contractual_third_party`, `public_record`, `not_applicable`. |
 | `access_model` | factor | `project_commission`, `subscription`, `api_license`, `marketplace`, `panel_rental`, `open_free`. |
-| `microdata_access` | factor | Who can obtain record-level data: `open`, `researcher_restricted`, `commercial_only`, `none`. |
+| `microdata_access` | factor | Who can obtain record-level data collected by this organisation, **through any route**, including a network or client that publishes it: `open`, `researcher_restricted`, `commercial_only`, `none`. |
+| `disclosure_route` | factor | Who does the releasing: `self` the organisation publishes or grants access itself; `via_network` the data reaches researchers because a network, funder or client that commissioned the work publishes it; `none` no record-level access exists. The validator requires this and `microdata_access` to agree. |
 | `evidence_level` | factor | `A`, `B`, `C`. See below. |
 | `notes` | string | Short free text, no commas. |
 
@@ -537,3 +538,33 @@ because it was built by reading firms that all claimed a consent basis of some
 kind. `not_applicable` does not cover it: that code means there is no human
 subject. Four organisations carry the new value and all four sell access to the
 contents of a person's phone.
+
+## `data/verification.csv` (15 rows, 11 variables)
+
+The audit trail for the disclosure field. One row per check: what was examined, the
+claim tested, the outcome, the corrected value, the source and the date.
+
+| Variable | Type | Description |
+|---|---|---|
+| `check_id` | key | Stable identifier. |
+| `target` | factor | `firm`, `network` or `sample`. Network checks cover every partner of that network at once. |
+| `target_id` | string | The `company_id`, the network name, or a pipe-delimited list for a sample. |
+| `claim_checked` | string | The question put to the source. |
+| `outcome` | factor | `confirmed`, `confirmed_with_correction`, `false_positive`, `false_negative`, `not_individually_verified`. |
+| `corrected_to` | string | The value the row now carries, or `NA`. |
+| `route` | factor | The `disclosure_route` assigned. |
+| `evidence_level` | factor | `A`, `B`, `C`. |
+| `url`, `checked_on`, `notes` | | Source, date, and what was found. |
+
+**What this file does not cover.** Only MENA and Sub-Saharan Africa, and within
+them only the organisations coded as disclosing plus ten of the 157 coded as not.
+Seven of those ten were reasoned from their business model rather than checked
+against a source, and they carry `not_individually_verified` so that nobody counts
+them as confirmed. North America, Western Europe and the other eight regions have
+not been audited at all, and their disclosure figures should be read as the
+unverified coding they are.
+
+**The error rate that came out of it.** Four of the eight non-network positives
+were wrong, and three of the ten sampled negatives were wrong the other way. That
+is roughly one row in three among the cases where the field carries the most
+weight.

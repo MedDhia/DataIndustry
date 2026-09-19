@@ -4,24 +4,24 @@ Country availability of each collection method out of 194
                      countries_with_any provider_country_pairs
 --------------------------------------------------------------
 admin_records               194                 3,513         
-api_partner                 194                 9,422         
+api_partner                 194                 9,421         
 remote_sensing              194                 9,789         
 sensor_hardware             194                 3,148         
 signals_rf                  194                  776          
-web_scrape                  194                 7,651         
-face_to_face                193                 5,036         
-telephone                   193                 3,363         
-crowd_task                  181                 1,434         
+web_scrape                  194                 7,650         
+face_to_face                193                 5,035         
+telephone                   193                 3,362         
+crowd_task                  181                 1,433         
 crowd_sensor                162                  626          
 device_passive              162                 1,630         
-online_panel                162                 4,918         
-expert_elicit               159                 1,308         
+online_panel                162                 4,917         
+expert_elicit               159                 1,307         
 mobile_app                  154                  792          
 device_extraction           149                  221          
-transaction                 113                 1,174         
+transaction                 113                 1,172         
 web_intercept                98                   98          
-clinical_records             83                  360          
-telecom_network              71                  134          
+clinical_records             83                  358          
+telecom_network              73                  134          
 citizen_report               65                   65          
 environmental_sample         64                   70          
 rf_sensing                   11                   16          

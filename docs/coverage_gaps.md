@@ -72,62 +72,80 @@ rounds went looking for: Afrobarometer national partners, health and demographic
 surveillance sites, university institutes and statistical bodies. Those are real
 collectors, and they are not firms.
 
-### The MENA and Africa comparison, both ways
+### The MENA and Africa comparison, after verification
 
-Successive rounds have enumerated both regions to a comparable depth. They look
-alike on capacity and nothing alike on disclosure, and the gap survives the
-for-profit cut.
+Every organisation in these two regions coded as disclosing was checked against a
+source, and a sample of those coded as not disclosing was checked too. The audit
+is recorded row by row in `data/verification.csv`. It changed ten codings and
+added a variable, and the finding it produced is sharper than the one it replaced.
 
-| | MENA | Sub-Saharan Africa |
-|---|---|---|
-| Operating organisations | 119 | 183 |
-| Releasing microdata | 22 (18.5%) | 101 (55.2%) |
-| **For-profit organisations** | **91** | **93** |
-| **For-profit releasing microdata** | **4 (4.4%)** | **23 (24.7%)** |
+The new variable is `disclosure_route`: whether the organisation releases the
+record-level data **itself**, or whether the data reaches researchers because a
+network, funder or client that commissioned the work publishes it. The register
+was already carrying that distinction in prose and applying it inconsistently.
 
-Restricting to commercial firms cuts both figures by more than half and widens the
-ratio between them rather than closing it, 5.6 to 1 against 3 to 1. So the
-difference is not only that Africa has more nonprofits.
+| | MENA | Sub-Saharan Africa | North America | Western Europe |
+|---|---|---|---|---|
+| Operating for-profit organisations | 91 | 93 | 235 | 140 |
+| Any microdata access | 6 (6.6%) | 21 (22.6%) | 46 (19.6%) | 16 (11.4%) |
+| **Of which the firm releases itself** | **0** | **3** | **44** | **16** |
+| Via a network or client | 6 | 18 | 2 | 0 |
 
-**But the mechanism is the same one either way, and it is a contractual condition
-rather than a property of the firms.** Of the 23 African for-profit organisations
-releasing microdata, **18 are Afrobarometer national partners**: private
-consultancies that publish their national dataset because the network requires it
-as a condition of the contract. The other five are Amini, Intron Health, Zindi,
-Kartoza and Spatial Collective. Strip the Afrobarometer condition out and
-commercial African data disclosure is five organisations in 93, which is 5.4% and
-statistically indistinguishable from MENA's 4.4%.
+**Not one for-profit collector in MENA releases record-level data under its own
+name.** All six that a researcher can obtain data from are Arab Barometer partners
+or DHS contractors, and the release is the network's. In Africa the figure is
+three of 93, or 3.2%. In North America it is 44 of 235, or 18.7%, and in Western
+Europe every disclosing firm discloses on its own account.
 
-**That is the finding, and it is sharper than the one the previous revision
-reported.** Commercial data collectors in MENA and in Sub-Saharan Africa disclose
-at almost identical, very low rates. The regional difference in openness is
-produced almost entirely by two things Africa has and MENA does not: a distributed
-donor-funded survey network that writes publication into its partner contracts,
-and a dense layer of nonprofit and academic population cohorts. Neither is a fact
-about African firms.
+That is what the previous revision was groping at when it said to strip the
+Afrobarometer condition out and the two regions looked alike. They do, at 0% and
+3.2% against 18.7%, and it is now a measured variable rather than a caveat in
+prose.
 
-The MENA figure rests on coding 119 organisations, most of them privately held,
-and `microdata_access` for a private firm is the least verifiable field in
-`companies.csv`. Treat the direction as well supported and the magnitude as
-approximate.
+### What the audit corrected
+
+The register had been applying the network rule in opposite directions without
+noticing. 35 Afrobarometer national partners were coded `open` because the network
+publishes their data. IIACSS in Iraq, One to One in Tunisia and Statistics Lebanon
+are Arab Barometer partners in exactly the same position and were coded `none`.
+ICF and Abt Global ran the Demographic and Health Surveys, whose files are free to
+registered researchers, and were also coded `none`. All of them now carry the
+access level their network actually offers and the route that delivers it.
+
+Four codings were wrong in the other direction. Konda sells its barometer to
+subscribers with no microdata route. Amini licenses an API. Kartoza builds
+open-source software, which the original coding read as open data. Zindi's
+competition data downloads after registration, which is `researcher_restricted`
+and not `open`. El Zanaty was coded `open` when Egyptian DHS data comes from the
+DHS Program on registration.
+
+**Four of the eight non-network positives were false, and three of the ten sampled
+negatives were false in the other direction.** On those denominators the field was
+wrong about one row in three among the cases where it mattered most, which is the
+number to keep in mind before citing any disclosure figure in this register that
+has not been through this audit. North America, Western Europe and the eight other
+regions have not been.
 
 ### In six regions not one commercial collector discloses
 
 Running the same cut across every region gives `output/tab31_disclosure_forprofit.txt`:
 
-| Region | For-profit firms | Releasing microdata |
-|---|---|---|
-| SSA | 93 | 24.7% |
-| NOAM | 235 | 18.7% |
-| EEU | 12 | 16.7% |
-| WEU | 140 | 11.4% |
-| CHN | 23 | 4.3% |
-| MENA | 91 | 4.4% |
-| CHN | 23 | 4.3% |
-| SAS, SEA, LAC, OCE, EAS, RUS | 74 combined | **0%** |
+| Region | For-profit firms | Any microdata access | Releases it itself |
+|---|---|---|---|
+| SSA | 93 | 21 (22.6%) | 3 |
+| NOAM | 235 | 46 (19.6%) | 44 |
+| EEU | 12 | 2 (16.7%) | 2 |
+| WEU | 140 | 16 (11.4%) | 16 |
+| MENA | 91 | 6 (6.6%) | 0 |
+| CHN | 23 | 1 (4.3%) | 1 |
+| SAS, SEA, LAC, OCE, EAS, RUS | 70 combined | **0** | **0** |
+
+The right-hand column is the one to read. Africa leads the left-hand column and
+North America leads the right, because 18 of Africa's 21 are network partners
+while 44 of North America's 46 publish on their own account.
 
 **In six of twelve regions, not one for-profit organisation in this register makes
-record-level data available to an outside researcher.** Those six hold 74
+record-level data available to an outside researcher.** Those six hold 70
 commercial collectors between them. The access gap documented in section 2 is at
 its most complete in exactly the places the register has enumerated least, so the
 figure should be read as a lower bound on openness and an upper bound on
@@ -1608,3 +1626,46 @@ results with its methodology, but whether its microdata reaches researchers is n
 established anywhere I could find. It is coded `commercial_only`. Coding it as
 disclosing would have raised African commercial disclosure on an assumption, and
 in the direction the register's existing finding already points.
+
+## 21. How wrong the country allocation is
+
+92% of `data/coverage_country.csv` is allocated by rule rather than observed, and
+until now the repository said so without saying how good the rule is.
+
+138 organisations carry a hand-coded country footprint marked exhaustive, which is
+ground truth. `scripts/11_validate_allocation.py` hides each one in turn and asks
+the rule to reconstruct it from region scores and the country budget alone.
+
+**Micro precision 0.49, micro recall 0.56, macro Jaccard 0.37.** About half of
+every allocated cell is wrong, in both directions. Country aggregates survive that
+because the errors are not systematically one way, but no individual firm's
+country row should be cited, and the sensitivity tests in section 12 matter more
+than they looked.
+
+The test is generous in one way and harsh in another. Generous because the rule is
+told how many countries to pick, from a `countries_claimed` figure often taken
+from the same source as the manual list. Harsh because footprints get hand-coded
+precisely when a firm is unusual, which is where a rule ranking countries by
+income, population and connectivity should do worst.
+
+### The test found a defect and fixing it moved the number
+
+The worst reconstructions were all small regional agencies: a Belarusian, an
+Iranian, a Tunisian and an Iraqi firm each assigned the richest countries in their
+region instead of their own. The rule ranked countries on market attractiveness
+and never privileged the firm's home country.
+
+Adding the home country to the front of its own region's ordering raised precision
+for firms covering one to three countries **from 0.23 to 0.60**, and macro
+precision across all 138 from 0.395 to 0.473. The figures above are after the fix.
+
+### What it still cannot do
+
+Two firms remain at zero overlap and both are the same kind of organisation:
+GAMAAN, registered in the Netherlands and surveying Iran, and IPM, registered in
+Lithuania and covering Belarus. An organisation that studies a country from
+outside it has a headquarters that predicts nothing, and no ranking of income and
+population will find the country it actually works on. Both are hand-coded in
+production, which is the only thing that can be done, and the category is worth
+naming because it is over-represented in exactly the political settings this
+register was built to cover.

@@ -24,6 +24,8 @@ VOCAB = {
                   "panel_rental", "open_free"},
  "microdata_access": {"open", "researcher_restricted", "commercial_only", "none"},
  "evidence_level": {"A", "B", "C"},
+ # Added after the disclosure audit: who makes the record-level data available.
+ "disclosure_route": {"self", "via_network", "none"},
  "temporal_granularity": {"real_time", "daily", "weekly", "monthly", "quarterly",
                           "annual", "episodic"},
  "unit_of_observation": {"individual", "household", "device", "firm", "place",
@@ -53,7 +55,7 @@ def main():
 
     for r in companies:
         cid = r["company_id"]
-        if len(r) != 26 or None in r.values():
+        if len(r) != 27 or None in r.values():
             err["wrong field count"].append(cid)
             continue
         # sector and ownership_type are separate variables but not free of each
@@ -75,6 +77,12 @@ def main():
         # and no consent exists, the code is `no_consent_basis`.
         if r["consent_model"] == "not_applicable" and r["human_subjects"] != "none":
             err["consent not_applicable but a human subject"].append((cid, r["human_subjects"]))
+        # A disclosing organisation must say who does the disclosing, and one
+        # that discloses nothing cannot have a route.
+        if (r["microdata_access"] in ("open", "researcher_restricted")) != \
+           (r["disclosure_route"] in ("self", "via_network")):
+            err["microdata_access and disclosure_route disagree"].append(
+                (cid, r["microdata_access"], r["disclosure_route"]))
         if r["spatial_scope"] == "single_country" and r["countries_claimed"] not in ("1", "NA"):
             err["single country with a different country count"].append((cid, r["countries_claimed"]))
         if r["segment_primary"] not in segs:

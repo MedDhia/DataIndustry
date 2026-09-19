@@ -175,8 +175,16 @@ def main():
             budget = min(int(co["countries_claimed"]), len(countries)) \
                      if co["countries_claimed"] != "NA" else 20
             budget = max(0, budget - len(assigned))   # hand-coded rows spend the budget first
+            # The home country comes first in its own region. Without this the
+            # rule ranked purely on income, population and connectivity, and a
+            # Belarusian or Iranian or Tunisian agency was assigned the richest
+            # country in its region instead of its own. Held-out testing in
+            # scripts/11_validate_allocation.py put precision for firms with one
+            # to three countries at 0.23 before this line and 0.60 after it.
             for r, s in (live.items() if budget else []):
-                pool = sorted(by_region[r], key=lambda c: -priority_score(c, mode))
+                pool = sorted(by_region[r],
+                              key=lambda c: -(priority_score(c, mode) +
+                                              (1e6 if c["iso3"] == co["hq_country"] else 0)))
                 n = max(1, min(len(pool), round(budget * wt[r] / wsum)))
                 for k, c in enumerate(pool[:n]):
                     score = s if k / n < 0.5 else max(s - 1, 1)

@@ -39,7 +39,7 @@
 "afrobarometer","World Bank","funder","USA","multilateral","A",NA,"SSA","GHA","nonprofit","open","survey_insights","NOAM",FALSE
 "airqo","Makerere University","controlling_owner","UGA","university","A",NA,"SSA","UGA","academic","open","climate_risk","SSA",TRUE
 "airqo","Google.org","funder","USA","corporate","A","1.3 million dollar AI Impact Challenge grant in 2019 followed by a 3 million dollar grant to expand to ten cities in five countries","SSA","UGA","academic","open","climate_risk","NOAM",FALSE
-"amini","Kate Kallot","founder","KEN","individual","A","Founder and chief executive","SSA","KEN","private_vc","researcher_restricted","earth_observation","SSA",TRUE
+"amini","Kate Kallot","founder","KEN","individual","A","Founder and chief executive","SSA","KEN","private_vc","commercial_only","earth_observation","SSA",TRUE
 "apollo_agriculture","Benjamin Njenga","founder","KEN","individual","A","Co-founder and chief customer officer","SSA","KEN","private_vc","none","climate_risk","SSA",TRUE
 "apollo_agriculture","Earl St Sauver","founder","USA","individual","A","Co-founder and chief technology officer","SSA","KEN","private_vc","none","climate_risk","NOAM",FALSE
 "apollo_agriculture","Eli Pollak","founder","USA","individual","A","Co-founder and chief executive","SSA","KEN","private_vc","none","climate_risk","NOAM",FALSE
@@ -122,7 +122,7 @@
 "hivemapper","Ariel Seidman","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","distributed_sensing","NOAM",TRUE
 "hivemapper","Ben Wong","founder","USA","individual","A","Co-founder","NOAM","USA","private_vc","commercial_only","distributed_sensing","NOAM",TRUE
 "idsc_egypt","Egyptian Cabinet","controlling_owner","EGY","state","B",NA,"MENA","EGY","state_linked","none","field_agency","MENA",TRUE
-"iiacss","Munqith Al-Dagher","founder","IRQ","individual","A","Founder and chief executive","MENA","IRQ","private_independent","none","field_agency","MENA",TRUE
+"iiacss","Munqith Al-Dagher","founder","IRQ","individual","A","Founder and chief executive","MENA","IRQ","private_independent","open","field_agency","MENA",TRUE
 "ijr_south_africa","Charles Villa-Vicencio","founder","ZAF","individual","A","Founding executive director; the institute launched in Cape Town in May 2000","SSA","ZAF","nonprofit","open","field_agency","SSA",TRUE
 "ijr_south_africa","Fanie du Toit","founder","ZAF","individual","A","Co-founder and later executive director","SSA","ZAF","nonprofit","open","field_agency","SSA",TRUE
 "ijtimoiy_fikr","Government of Uzbekistan","controlling_owner","UZB","state","C","State-affiliated public opinion centre","RUS","UZB","state_linked","none","field_agency","RUS",TRUE
@@ -146,7 +146,7 @@
 "kobotoolbox","Patrick Vinck","founder","USA","individual","A","Co-founder in 2005; research director of the Harvard Humanitarian Initiative","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
 "kobotoolbox","Phuong Pham","founder","USA","individual","A","Co-founder in 2005; faculty at the Harvard T H Chan School of Public Health","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
 "kobotoolbox","Harvard Humanitarian Initiative","funder","USA","university","A","Hosted the project until it became an independent nonprofit in 2019","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
-"konda","Tarhan Erdem","founder","TUR","individual","A","Founder in 1986; a former Turkish minister of industry; died in 2022","MENA","TUR","private_independent","researcher_restricted","field_agency","MENA",TRUE
+"konda","Tarhan Erdem","founder","TUR","individual","A","Founder in 1986; a former Turkish minister of industry; died in 2022","MENA","TUR","private_independent","commercial_only","field_agency","MENA",TRUE
 "lacuna_fund","German Federal Ministry for Economic Cooperation and Development","funder","DEU","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","WEU",FALSE
 "lacuna_fund","Google.org","funder","USA","corporate","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",TRUE
 "lacuna_fund","International Development Research Centre","funder","CAN","bilateral_donor","B",NA,"NOAM","USA","nonprofit","open","ai_training_data","NOAM",FALSE
@@ -196,7 +196,7 @@
 "niq","Advent International","controlling_owner","USA","pe","B","Backed NIQ from the GfK merger through its 2025 listing","NOAM","USA","public_listed","commercial_only","retail_pricing","NOAM",TRUE
 "noipolls","Ngozi Okonjo-Iweala","founder","NGA","individual","A","Founder in November 2006; later director-general of the World Trade Organization","SSA","NGA","private_independent","none","field_agency","SSA",TRUE
 "odk","Bill and Melinda Gates Foundation","funder","USA","foundation","B","Funded the original Open Data Kit development at the University of Washington","NOAM","USA","nonprofit","none","collection_software","NOAM",TRUE
-"one_to_one_tunisia","Youssef Meddeb","founder","TUN","individual","A","Founder and chief executive; the firm describes him as co-founder but names no other founder","MENA","TUN","private_independent","none","field_agency","MENA",TRUE
+"one_to_one_tunisia","Youssef Meddeb","founder","TUN","individual","A","Founder and chief executive; the firm describes him as co-founder but names no other founder","MENA","TUN","private_independent","open","field_agency","MENA",TRUE
 "pcpsr","Khalil Shikaki","founder","PSE","individual","A","Founding director; founded the Nablus predecessor in 1993 and PCPSR in 2000","MENA","PSE","nonprofit","researcher_restricted","field_agency","MENA",TRUE
 "pcpsr","European Union","funder","BEL","multilateral","A","Named as one of the two principal funders","MENA","PSE","nonprofit","researcher_restricted","field_agency","WEU",FALSE
 "pcpsr","Ford Foundation","funder","USA","foundation","A","Named as one of the two principal funders","MENA","PSE","nonprofit","researcher_restricted","field_agency","NOAM",FALSE
@@ -226,7 +226,7 @@
 "sixty_decibels","FPE Capital","investor","GBR","pe","A","Led the 8.8 million dollar Series A","NOAM","USA","private_independent","none","field_agency","WEU",FALSE
 "somali_public_agenda","Mahad Wasuge","founder","SOM","individual","A","Founder and executive director; started the organisation in January 2018","SSA","SOM","nonprofit","researcher_restricted","field_agency","SSA",TRUE
 "space42","International Holding Company","controlling_owner","ARE","sovereign_wealth","B","Abu Dhabi holding group; Space42 was formed from Bayanat and Yahsat","MENA","ARE","public_listed","commercial_only","earth_observation","MENA",TRUE
-"statistics_lebanon","Rabih Haber","founder","LBN","individual","A","Founder and managing director since 1994","MENA","LBN","private_independent","none","field_agency","MENA",TRUE
+"statistics_lebanon","Rabih Haber","founder","LBN","individual","A","Founder and managing director since 1994","MENA","LBN","private_independent","open","field_agency","MENA",TRUE
 "stears","Abdul Abdulrahim","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE
 "stears","Foluso Ogunlana","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE
 "stears","Michael Famoroti","founder","NGA","individual","A","Co-founder","SSA","NGA","private_vc","commercial_only","b2b_firmographic","SSA",TRUE

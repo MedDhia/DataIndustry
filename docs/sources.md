@@ -1580,3 +1580,57 @@ is the rule that would have caught Ifakara at the moment of insertion.
 the noisy ones narrowed. It now raises 8 flags over 933 rows, all four patterns
 behind them legitimate and documented in `docs/codebook.md` so the next run does
 not relitigate them.
+
+## Round: verifying the disclosure field and measuring the allocation rule (September 2026)
+
+The two gaps named as most limiting: `microdata_access` carried the register's
+most-cited finding and had never been checked, and 92% of the country layer was
+model output of unknown accuracy. Both are now measured.
+
+### Disclosure verification
+
+Every MENA and African for-profit organisation coded as disclosing was checked
+against a source, plus ten of the 157 coded as not. Each check is a row in
+`data/verification.csv`. Sources: Afrobarometer's data downloads page, Arab
+Barometer's downloads page and Iraq country page, the DHS Program data pages,
+Konda's barometer page, Amini's site, Kartoza's site, Zindi's platform,
+Intron Health's AfriSpeech-200 repository and its TACL paper, Spatial Collective
+and the Map Kibera literature, the Abu Dhabi Department of Health page for the
+Emirati Genome Program, Ona's site and Research Solutions Africa's site.
+
+Ten codings changed. Five were false positives or over-statements: Konda, Amini,
+Kartoza, Zindi and El Zanaty. Five were false negatives, all of them network
+partners coded as closed while partners of a different network were coded open:
+IIACSS, One to One Tunisia, Statistics Lebanon, ICF and Abt Global.
+
+**The error rate is roughly one row in three among the cases that carry the
+finding.** That is the number to keep in mind for the ten regions that have not
+been audited.
+
+A new variable, `disclosure_route`, separates an organisation that releases data
+itself from one whose data reaches researchers because a network or client
+publishes it. The register had been making that distinction in prose and applying
+it inconsistently in the data. With it, the headline becomes measurable: no
+for-profit collector in MENA releases record-level data under its own name, three
+of 93 do in Africa, and 44 of 235 do in North America.
+
+### Allocation rule accuracy
+
+No new sources. `scripts/11_validate_allocation.py` hides each of the 138
+exhaustive hand-coded footprints in turn and asks the rule to reconstruct it:
+micro precision 0.49, micro recall 0.56.
+
+The test immediately found a defect. Small regional agencies were being assigned
+the richest countries in their region rather than their own, because the priority
+ordering used income, population and connectivity and never privileged the home
+country. Putting the home country first in its own region raised precision for
+one-to-three-country firms from 0.23 to 0.60. The build script now does that and
+the numbers above are after the change.
+
+### What remains unverified
+
+Ten of twelve regions. Seven of the ten sampled negatives, which were reasoned
+from business model rather than checked and are marked
+`not_individually_verified` rather than confirmed. And the allocation rule for
+organisations that study a country from outside it, where a headquarters predicts
+nothing and only hand-coding works.

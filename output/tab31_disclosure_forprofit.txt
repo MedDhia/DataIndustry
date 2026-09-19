@@ -3,10 +3,10 @@ Microdata disclosure: all operating organisations against for-profits only
 =============================================
      all_n all_acc all_pct fp_n fp_acc fp_pct
 ---------------------------------------------
-NOAM  268    73    27.200  235    44   18.700
+NOAM  268    75      28    235    46   19.600
 WEU   162    35    21.600  140    16   11.400
-SSA   183    101   55.200   93    23   24.700
-MENA  119    22    18.500   91    4    4.400 
+SSA   183    99    54.100   93    21   22.600
+MENA  119    24    20.200   91    6    6.600 
 SAS   17      1     5.900   15    0      0   
 SEA   12      1     8.300   10    0      0   
 LAC   14      1     7.100   13    0      0   

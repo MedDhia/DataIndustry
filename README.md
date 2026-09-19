@@ -12,11 +12,12 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 933 | The register. One row per organisation, 26 variables. 852 operating, 81 exited. 664 of the operating ones are for-profit. |
+| `data/companies.csv` | 933 | The register. One row per organisation, 27 variables. 852 operating, 81 exited. 664 of the operating ones are for-profit. |
 | `data/coverage_spatial.csv` | 933 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
 | `data/grant_programmes.csv` | 15 | Recurring open-call funding instruments a data collection venture could apply to. Purposive, not a census. |
+| `data/verification.csv` | 15 | Audit trail for the disclosure field: what was checked, against what source, and what it corrected. |
 | `data/method_innovations.csv` | 69 | Organisations whose entry rested on a collection method their segment did not have. One row per firm, with the method, what it displaced, and whether it is contested. |
 | `data/demand.csv` | 92 | The buyer side: segment by buyer category, each row with its own evidence level and source. Purposive, not a census. |
 | `data/coverage_country.csv` | 33,393 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
@@ -36,6 +37,7 @@ actually gathering the data, and what is nobody gathering?
 | `scripts/09_demand.R` | | Entry cohorts by segment, and the buyer layer. |
 | `scripts/10_innovation.R` | | The method layer: prior occupants at entry, novelty type, contestation and survival. |
 | `scripts/00_audit.py` | | Cross-field probes for combinations that are usually wrong. Reports only; run it after every extension round. |
+| `scripts/11_validate_allocation.py` | | Held-out test of the country allocation rule against 138 observed footprints. |
 | `scripts/00_check_new.py` | | Screens candidate organisations against the register before they are added. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
@@ -195,6 +197,7 @@ Rscript  scripts/07_grants.R                  # recurring grant instruments -> o
 Rscript  scripts/08_sector.R                  # the for-profit cut -> output/
 Rscript  scripts/09_demand.R                  # entry cohorts and the buyer layer -> output/
 Rscript  scripts/10_innovation.R              # the method layer -> output/
+python3 scripts/11_validate_allocation.py     # how accurate the allocation rule is
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
@@ -206,7 +209,7 @@ derived matrices and is sourced by the analysis scripts.
 Read these before using the data for anything load-bearing.
 
 1. **Coding confidence is uneven and recorded.** The `evidence_level` variable is
-   A for 129 records, B for 401 and C for 350. Level C is analyst judgement:
+   A for 144 records, B for 439 and C for 350. Level C is analyst judgement:
    reliable for segment, region and modality, not reliable for founding dates or
    counts. Filter on it.
 2. **Region coverage is partly rule-derived.** 149 of 933 spatial rows are
@@ -214,10 +217,15 @@ Read these before using the data for anything load-bearing.
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an
    assumption, and `coverage_basis` marks which is which.
-3. **Country coverage is mostly model output.** Of 33,393 company-country rows,
-   2,847 are observed (`manual` or `hq_exact`) and 30,546 are allocated by the
-   model in `scripts/00_build_country_coverage.py`. Country aggregates are
-   usable; an individual firm's country row is not citable. Report nothing from
+3. **Country coverage is mostly model output, and the model has been measured.**
+   Of 34,894 company-country rows, 2,856 are observed (`manual` or `hq_exact`)
+   and 32,038 are allocated by the model in
+   `scripts/00_build_country_coverage.py`. `scripts/11_validate_allocation.py`
+   hides each of the 138 exhaustively hand-coded footprints in turn and asks the
+   rule to reconstruct it: **micro precision 0.49, micro recall 0.56**. Roughly
+   half of every allocated cell is wrong. Country aggregates are usable because
+   the errors are not one-directional; an individual firm's country row is not
+   citable, and now there is a number attached to why. Report nothing from
    the country regressions that does not hold in the first two columns of
    `output/tab19_sensitivity.txt`: population, connectivity and restrictive
    research regime, and not income.
