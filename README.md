@@ -61,13 +61,14 @@ comes almost entirely from the observational side, and that only becomes visible
 when the two are measured on the same grid.
 
 Both startups and established firms are included by design, and so are firms that
-no longer exist. 56 organisations in the register have exited: 46 absorbed into
-an acquirer, 10 wound down or insolvent. Without them this would be a survivor
+no longer exist. 81 organisations in the register have exited: 64 absorbed into
+an acquirer, 17 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
 uses the 852 operating firms only**; `scripts/05_history.R` analyses the rest.
 
-128 firms are headquartered in MENA or Sub-Saharan Africa and 20 in the Russia
-bloc or mainland China, the areas where enumeration effort has been concentrated.
+302 operating organisations are headquartered in MENA or Sub-Saharan Africa and
+40 in the Russia bloc or mainland China, the areas where enumeration effort has
+been concentrated.
 
 Pure analytics vendors, consultancies and platforms that only process data
 others collected are out of scope, and so are hardware suppliers that build
