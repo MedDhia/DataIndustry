@@ -1634,3 +1634,49 @@ from business model rather than checked and are marked
 `not_individually_verified` rather than confirmed. And the allocation rule for
 organisations that study a country from outside it, where a headquarters predicts
 nothing and only hand-coding works.
+
+## Round: testing the gaps (September 2026)
+
+The register's purpose is to find gaps in the data collection industry, which
+makes its own gap claims the thing most worth attacking. Every empty cell was put
+through two tests: recompute it on coverage rather than on headquarters, then go
+looking for a counterexample. `data/gap_tests.csv` records ten tests with their
+outcomes, successful or not.
+
+**135 of 138 apparent gaps were artefacts of reading headquarters as presence.**
+Latin America appeared to have no earth observation, no AI training data and no
+consumer brokerage; it has all three, supplied by organisations based elsewhere,
+and the one Argentine satellite firm in the register sits under a North American
+headquarters after redomiciling. The register now names ownership gaps, presence
+gaps and depth gaps separately, through `scripts/12_gap_classes.py`.
+
+The same error had reached the register's most cited claim. Six regions where no
+for-profit collector discloses is a fact about firms headquartered there. Asked on
+coverage, every region has between 24 and 60 disclosing for-profit providers
+operating in it, and not one of the 194 countries has none. Both readings are
+true and they say different things; only one was being written down.
+
+Counterexample searches on the five surviving presence gaps:
+
+- Africa Expert Network, brokering access to a stated 500 experts across more
+  than 40 Sub-Saharan countries, falsifies the absence of expert networks from
+  Africa. Added.
+- Smart Steps, the China Unicom and Telefonica joint venture selling location
+  insight from network data, falsifies the absence of telecom data from mainland
+  China. Added.
+- Low-cost PM2.5 networks in Xi'an and taxi-mounted sensors in Jinan, documented
+  in Science Direct, show contributor sensing happens in China. No organisation
+  was added because what the search found is academic deployments and a closed
+  consumer device, so the cell is recorded as an enumeration gap rather than an
+  industry gap.
+- Expert networks in the Russia bloc: nothing found, and Western networks
+  restrict Russian work under sanctions. Recorded as not falsified, on one search
+  against a segment of six organisations, which is weak.
+- Contributor sensing in the Russia bloc: not attempted, recorded as untested.
+
+### The rule
+
+No empty cell is a finding until somebody has tried to break it. A cell computed
+on headquarters is never a presence claim, a cell computed at coverage 2 is a
+depth claim, and a presence claim needs a search attached. The validator now
+requires any row in `gap_tests.csv` marked falsified to name what falsified it.

@@ -12,7 +12,7 @@ consumer_broker         0         25          2           0
 crowd_micro             0         8           0           1    
 distributed_sensing     0         13          1           5    
 earth_observation       0         66          8           1    
-expert_network          0         5           0           0    
+expert_network          0         6           0           0    
 field_agency            22       125          9          50    
 financial_altdata       0         22          0           0    
 health_rwd              4         30          3           4    
@@ -23,7 +23,7 @@ panel_sample            5         29          0           0
 retail_pricing          0         16          0           0    
 social_osint            1         21          0          14    
 survey_insights         9         85          1          18    
-telecom_data            0         5           0           1    
+telecom_data            0         6           0           1    
 trade_logistics         0         13          0           0    
 web_data                0         14          0           2    
 ---------------------------------------------------------------

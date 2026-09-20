@@ -324,6 +324,26 @@ def main():
         if y != "NA" and f != "NA" and int(y) < int(f):
             err["innovation deployment before founding"].append((iid, y, f))
 
+    # ---- gap_tests.csv: falsification attempts against the register's own
+    # gap claims. A gap is not a finding here until somebody has tried to
+    # break it and failed, and the attempt is recorded either way.
+    GAP = {"claim_basis": {"headquarters", "coverage", "coverage at score 2"},
+           "outcome": {"false_gap", "falsified", "falsified_in_principle",
+                       "not_falsified", "untested"}}
+    gaps = list(csv.DictReader(open("data/gap_tests.csv")))
+    for tid, n in collections.Counter(r["test_id"] for r in gaps).items():
+        if n > 1:
+            err["duplicate test_id"].append(tid)
+    for r in gaps:
+        if len(r) != 10 or None in r.values():
+            err["gap test wrong field count"].append(r["test_id"]); continue
+        for f, vocab in GAP.items():
+            if r[f] not in vocab:
+                err[f"gap test {f}"].append((r["test_id"], r[f]))
+        # An outcome of falsified has to name what falsified it.
+        if r["outcome"] in ("falsified", "false_gap") and r["counterexample"] in ("", "NA"):
+            err["gap test falsified without a counterexample"].append(r["test_id"])
+
     if err:
         for k, v in err.items():
             print(f"{k}: {len(v)} -> {v[:10]}", file=sys.stderr)
@@ -332,7 +352,8 @@ def main():
     print(f"OK: {len(companies)} companies, {len(cov)} region rows, "
           f"{len(ctys)} countries, {len(cc)} company-country rows, "
           f"{len(own)} ownership rows, {len(progs)} grant programmes, "
-          f"{len(dem)} demand rows, {len(innov)} innovation rows, no errors")
+          f"{len(dem)} demand rows, {len(innov)} innovation rows, "
+          f"{len(gaps)} gap tests, no errors")
     return 0
 
 if __name__ == "__main__":

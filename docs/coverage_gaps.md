@@ -1,6 +1,6 @@
 # What the data collection industry covers, and what it does not
 
-All figures come from `scripts/03_coverage_gaps.R` over the **852 operating
+All figures come from `scripts/03_coverage_gaps.R` over the **854 operating
 firms** in the register. A further 75 organisations that no longer operate are
 recorded but excluded from every coverage table here; section 14 is about them.
 A firm counts as *present* in a region when its coverage score is 2 or 3.
@@ -53,17 +53,17 @@ into the register, each of which releases its national microdata openly.
 ### Most of this table is not commercial, and that changes how to read it
 
 The register now carries a `sector` variable separating for-profit firms from
-nonprofits, universities and state bodies. **664 of the 852 operating
-organisations are for-profit, 77.9%, but the share varies enormously by region
+nonprofits, universities and state bodies. **666 of the 854 operating
+organisations are for-profit, 78.0%, but the share varies enormously by region
 and it is lowest exactly where the register is best enumerated.**
 
 | Region | Operating | For-profit | Share | Nonprofit | Academic | Governmental |
 |---|---|---|---|---|---|---|
 | NOAM | 268 | 235 | 87.7% | 20 | 13 | 0 |
 | WEU | 162 | 140 | 86.4% | 15 | 7 | 0 |
-| SSA | 183 | 93 | 50.8% | 56 | 20 | 14 |
+| SSA | 184 | 94 | 51.1% | 56 | 20 | 14 |
 | MENA | 119 | 91 | 76.5% | 10 | 6 | 12 |
-| CHN | 23 | 23 | 100% | 0 | 0 | 0 |
+| CHN | 24 | 24 | 100% | 0 | 0 | 0 |
 
 **Half of the Sub-Saharan African layer is not a business.** For anyone reading
 this register as a map of an industry, the African row in the density table above
@@ -86,15 +86,15 @@ was already carrying that distinction in prose and applying it inconsistently.
 
 | | MENA | Sub-Saharan Africa | North America | Western Europe |
 |---|---|---|---|---|
-| Operating for-profit organisations | 91 | 93 | 235 | 140 |
-| Any microdata access | 6 (6.6%) | 21 (22.6%) | 46 (19.6%) | 16 (11.4%) |
+| Operating for-profit organisations | 91 | 94 | 235 | 140 |
+| Any microdata access | 6 (6.6%) | 21 (22.3%) | 46 (19.6%) | 16 (11.4%) |
 | **Of which the firm releases itself** | **0** | **3** | **44** | **16** |
 | Via a network or client | 6 | 18 | 2 | 0 |
 
 **Not one for-profit collector in MENA releases record-level data under its own
 name.** All six that a researcher can obtain data from are Arab Barometer partners
 or DHS contractors, and the release is the network's. In Africa the figure is
-three of 93, or 3.2%. In North America it is 44 of 235, or 18.7%, and in Western
+three of 94, or 3.2%. In North America it is 44 of 235, or 18.7%, and in Western
 Europe every disclosing firm discloses on its own account.
 
 That is what the previous revision was groping at when it said to strip the
@@ -126,7 +126,40 @@ number to keep in mind before citing any disclosure figure in this register that
 has not been through this audit. North America, Western Europe and the eight other
 regions have not been.
 
-### In six regions not one commercial collector discloses
+### The disclosure gap is a gap in domestic industry, not in availability
+
+This was the register's most cited claim and it was stated in a way that invited
+the wrong reading. Grouping for-profit organisations by headquarters gives six
+regions in which not one discloses. Asking instead which disclosing organisations
+**operate** in each region gives a different picture entirely:
+
+| Region | For-profit HQ'd here | Of those, disclosing | For-profit operating here | Of those, disclosing |
+|---|---|---|---|---|
+| NOAM | 235 | 46 | 409 | 59 |
+| SSA | 94 | 21 | 353 | 60 |
+| WEU | 140 | 16 | 396 | 48 |
+| MENA | 91 | 6 | 350 | 44 |
+| EEU | 12 | 2 | 299 | 38 |
+| CHN | 24 | 1 | 226 | 24 |
+| LAC | 13 | **0** | 300 | 38 |
+| SAS | 15 | **0** | 315 | 37 |
+| SEA | 10 | **0** | 311 | 38 |
+| EAS | 14 | **0** | 293 | 34 |
+| RUS | 13 | **0** | 191 | 25 |
+| OCE | 5 | **0** | 311 | 39 |
+
+**Not one of the 194 countries lacks a disclosing for-profit provider.** The zeros
+in the second column are real and they mean something specific: no commercial
+collector based in Latin America, South or Southeast Asia, East Asia, the Russia
+bloc or Oceania releases record-level data. They do not mean that record-level
+data about those places is unobtainable, and the earlier phrasing let that
+inference through.
+
+The coverage columns are 92% model output at a measured precision near 0.49, so
+read 38 as clearly not zero rather than as 38. At any plausible error rate the
+column is not zeros.
+
+## In six regions not one commercial collector discloses
 
 Running the same cut across every region gives `output/tab31_disclosure_forprofit.txt`:
 
@@ -1596,7 +1629,7 @@ difference produced by a donor network that writes publication into its contract
 
 ### What the round added
 
-Sub-Saharan Africa now holds 183 operating organisations across 42 countries. The
+Sub-Saharan Africa now holds 184 operating organisations across 42 countries. The
 additions were chosen for countries the register barely reached rather than for
 the three it already knows: BERCI in Kinshasa, which is the only standing national
 polling capacity in the Democratic Republic of the Congo and the register's first
@@ -1617,8 +1650,8 @@ model and has TransUnion as a minority shareholder. And Kifiya scores enterprise
 with no collateral and no credit history at all.
 
 **Africa remains the region where half the register is not a business.** The
-for-profit share is 50.8% against 87.7% in North America and 76.5% in MENA, and
-this round moved it down rather than up, because the countries the register was
+for-profit share is 51.1% against 87.7% in North America and 76.5% in MENA, and
+that round moved it down rather than up, because the countries the register was
 missing are served by institutes, networks and newsrooms rather than by firms.
 
 One coding decision in this round is worth naming. BERCI publishes national poll
@@ -1669,3 +1702,67 @@ population will find the country it actually works on. Both are hand-coded in
 production, which is the only thing that can be done, and the category is worth
 naming because it is over-represented in exactly the political settings this
 register was built to cover.
+
+## 22. Testing the gaps: 138 apparent, 3 that survive
+
+The register exists to find gaps in the data collection industry, so the gaps
+themselves need testing harder than anything else in it. Every empty cell was put
+through two tests: recompute it on coverage rather than on headquarters, and then
+go looking for a counterexample. The attempts are recorded in `data/gap_tests.csv`
+whatever their outcome, and the classification is produced by
+`scripts/12_gap_classes.py`.
+
+### Three things were being called a gap
+
+| Class | Definition | Cells |
+|---|---|---|
+| Ownership gap | somebody collects there, nobody based there does | 138 |
+| Presence gap | nobody collects there at all | 3 |
+| Depth gap, thin | present but at coverage 2 or better nowhere | 30 |
+| Depth gap, shallow | present but at coverage 3 nowhere | 83 |
+
+**135 of 138 apparent gaps are ownership gaps.** Latin America looked as though
+it had no earth observation, no AI training data and no consumer brokerage. It
+has all three; what it does not have is a firm of its own doing them. Satellogic,
+founded in Argentina, sits in the register under a North American headquarters
+after redomiciling, which is the whole phenomenon in one row.
+
+That is not a lesser finding than a presence gap. For a reader interested in who
+holds the capacity to know a country it is the more interesting one. It was
+simply being reported as something it is not.
+
+### What a threshold was doing
+
+Expert networks looked absent from seven of twelve regions. All five global
+networks in the register carry thin coverage in those regions, and the absence was
+produced by counting only coverage of 2 or better. Presence and depth are now
+separated explicitly, and the five surviving presence gaps at threshold 1 were
+each taken to a search.
+
+### The falsification round
+
+Three of the five fell:
+
+- **Expert networks in Sub-Saharan Africa.** Africa Expert Network brokers access
+  to a stated 500 experts across more than 40 African countries. Added.
+- **Telecom data in mainland China.** Smart Steps, the China Unicom and Telefonica
+  joint venture, sells location insight from network data. Added.
+- **Contributor sensing in mainland China.** Low-cost PM2.5 networks in Xi'an and
+  taxi-mounted sensors in Jinan are documented in the literature. Nothing was
+  added, because what the search found is academic deployments and a closed
+  consumer device rather than an organisation this register would hold. The cell
+  is labelled an enumeration gap rather than an industry gap.
+
+Two did not fall. Expert networks in the Russia bloc: nothing found, and Western
+networks restrict Russian work under sanctions, so the gap is plausible. It rests
+on one search against a segment holding six organisations, which is weak.
+Contributor sensing in the Russia bloc was not tested at all and is recorded as
+untested so that nobody cites it.
+
+### The rule this produces
+
+No empty cell in this register is a finding until somebody has tried to break it.
+A cell computed on headquarters is never a presence claim. A cell computed at
+coverage 2 is a depth claim. And a presence claim at coverage 1 is a hypothesis
+with a search attached, which is why `gap_tests.csv` records the searches that
+failed as carefully as the ones that succeeded.

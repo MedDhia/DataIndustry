@@ -1,6 +1,6 @@
 "region","domain","n_providers"
 "NOAM","identity_biometric",29
-"CHN","consumer_behavior",18
+"CHN","consumer_behavior",19
 "NOAM","credit_risk",18
 "WEU","identity_biometric",18
 "SEA","identity_biometric",18
@@ -16,9 +16,9 @@
 "EAS","mobility_location",12
 "OCE","identity_biometric",12
 "SSA","financial_transactions",9
+"CHN","mobility_location",9
 "OCE","credit_risk",8
 "RUS","mobility_location",8
-"CHN","mobility_location",8
 "CHN","prices_retail",8
 "LAC","credit_risk",7
 "MENA","credit_risk",7

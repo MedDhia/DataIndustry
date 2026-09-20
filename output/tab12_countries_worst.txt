@@ -22,10 +22,10 @@ Twenty-five least served countries by number of providers
 66             Montenegro                EEU         UMIC           XS         102      57          3          11     
 69               Kosovo                  EEU         UMIC           XS         85       57          3          11     
 82             Kyrgyzstan                RUS         LMIC            S         76       57          7          11     
-133             Djibouti                 SSA         LMIC           XS         85       57         11          11     
-145             Comoros                  SSA         LMIC           XS         84       58         12          12     
+133             Djibouti                 SSA         LMIC           XS         86       58         12          11     
 172           Timor-Leste                SEA         LMIC            S         75       58          5          10     
 175           North Korea                EAS         LIC             M         84       58          3          12     
 83             Tajikistan                RUS         LMIC            M         81       59          7          13     
 124     Central African Republic         SSA         LIC             S         59       59          8          13     
+145             Comoros                  SSA         LMIC           XS         85       59         13          12     
 ----------------------------------------------------------------------------------------------------------------------

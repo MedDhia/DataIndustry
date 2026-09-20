@@ -851,6 +851,8 @@
 "timbuktu_institute","consumer_behavior",0
 "ayin_network","consumer_behavior",0
 "sudan_transparency","consumer_behavior",0
+"africa_expert_network","consumer_behavior",0
+"smart_steps_china","consumer_behavior",2
 "ipsos","public_opinion",2
 "kantar","public_opinion",1
 "niq","public_opinion",0
@@ -1703,6 +1705,8 @@
 "timbuktu_institute","public_opinion",2
 "ayin_network","public_opinion",0
 "sudan_transparency","public_opinion",0
+"africa_expert_network","public_opinion",1
+"smart_steps_china","public_opinion",0
 "ipsos","health_clinical",1
 "kantar","health_clinical",0
 "niq","health_clinical",0
@@ -2555,6 +2559,8 @@
 "timbuktu_institute","health_clinical",0
 "ayin_network","health_clinical",0
 "sudan_transparency","health_clinical",0
+"africa_expert_network","health_clinical",0
+"smart_steps_china","health_clinical",0
 "ipsos","financial_transactions",0
 "kantar","financial_transactions",0
 "niq","financial_transactions",0
@@ -3407,6 +3413,8 @@
 "timbuktu_institute","financial_transactions",0
 "ayin_network","financial_transactions",0
 "sudan_transparency","financial_transactions",0
+"africa_expert_network","financial_transactions",0
+"smart_steps_china","financial_transactions",0
 "ipsos","credit_risk",0
 "kantar","credit_risk",0
 "niq","credit_risk",0
@@ -4259,6 +4267,8 @@
 "timbuktu_institute","credit_risk",0
 "ayin_network","credit_risk",0
 "sudan_transparency","credit_risk",0
+"africa_expert_network","credit_risk",0
+"smart_steps_china","credit_risk",0
 "ipsos","labor_employment",0
 "kantar","labor_employment",0
 "niq","labor_employment",0
@@ -5111,6 +5121,8 @@
 "timbuktu_institute","labor_employment",0
 "ayin_network","labor_employment",0
 "sudan_transparency","labor_employment",0
+"africa_expert_network","labor_employment",0
+"smart_steps_china","labor_employment",0
 "ipsos","earth_observation",0
 "kantar","earth_observation",0
 "niq","earth_observation",0
@@ -5963,6 +5975,8 @@
 "timbuktu_institute","earth_observation",0
 "ayin_network","earth_observation",0
 "sudan_transparency","earth_observation",0
+"africa_expert_network","earth_observation",0
+"smart_steps_china","earth_observation",0
 "ipsos","mobility_location",0
 "kantar","mobility_location",0
 "niq","mobility_location",0
@@ -6815,6 +6829,8 @@
 "timbuktu_institute","mobility_location",0
 "ayin_network","mobility_location",0
 "sudan_transparency","mobility_location",0
+"africa_expert_network","mobility_location",0
+"smart_steps_china","mobility_location",2
 "ipsos","web_content",0
 "kantar","web_content",0
 "niq","web_content",0
@@ -7667,6 +7683,8 @@
 "timbuktu_institute","web_content",0
 "ayin_network","web_content",0
 "sudan_transparency","web_content",0
+"africa_expert_network","web_content",0
+"smart_steps_china","web_content",0
 "ipsos","social_discourse",0
 "kantar","social_discourse",0
 "niq","social_discourse",0
@@ -8519,6 +8537,8 @@
 "timbuktu_institute","social_discourse",1
 "ayin_network","social_discourse",1
 "sudan_transparency","social_discourse",0
+"africa_expert_network","social_discourse",0
+"smart_steps_china","social_discourse",0
 "ipsos","media_audience",1
 "kantar","media_audience",2
 "niq","media_audience",0
@@ -9371,6 +9391,8 @@
 "timbuktu_institute","media_audience",0
 "ayin_network","media_audience",0
 "sudan_transparency","media_audience",0
+"africa_expert_network","media_audience",0
+"smart_steps_china","media_audience",0
 "ipsos","agriculture",0
 "kantar","agriculture",0
 "niq","agriculture",0
@@ -10223,6 +10245,8 @@
 "timbuktu_institute","agriculture",0
 "ayin_network","agriculture",0
 "sudan_transparency","agriculture",0
+"africa_expert_network","agriculture",0
+"smart_steps_china","agriculture",0
 "ipsos","energy_extractives",0
 "kantar","energy_extractives",0
 "niq","energy_extractives",0
@@ -11075,6 +11099,8 @@
 "timbuktu_institute","energy_extractives",0
 "ayin_network","energy_extractives",0
 "sudan_transparency","energy_extractives",0
+"africa_expert_network","energy_extractives",2
+"smart_steps_china","energy_extractives",0
 "ipsos","environment_climate",0
 "kantar","environment_climate",0
 "niq","environment_climate",0
@@ -11927,6 +11953,8 @@
 "timbuktu_institute","environment_climate",0
 "ayin_network","environment_climate",0
 "sudan_transparency","environment_climate",0
+"africa_expert_network","environment_climate",0
+"smart_steps_china","environment_climate",0
 "ipsos","conflict_security",0
 "kantar","conflict_security",0
 "niq","conflict_security",0
@@ -12779,6 +12807,8 @@
 "timbuktu_institute","conflict_security",2
 "ayin_network","conflict_security",2
 "sudan_transparency","conflict_security",2
+"africa_expert_network","conflict_security",0
+"smart_steps_china","conflict_security",0
 "ipsos","firmographic",0
 "kantar","firmographic",0
 "niq","firmographic",0
@@ -13631,6 +13661,8 @@
 "timbuktu_institute","firmographic",0
 "ayin_network","firmographic",0
 "sudan_transparency","firmographic",1
+"africa_expert_network","firmographic",2
+"smart_steps_china","firmographic",0
 "ipsos","prices_retail",0
 "kantar","prices_retail",1
 "niq","prices_retail",2
@@ -14483,6 +14515,8 @@
 "timbuktu_institute","prices_retail",0
 "ayin_network","prices_retail",0
 "sudan_transparency","prices_retail",0
+"africa_expert_network","prices_retail",0
+"smart_steps_china","prices_retail",0
 "ipsos","identity_biometric",0
 "kantar","identity_biometric",0
 "niq","identity_biometric",0
@@ -15335,6 +15369,8 @@
 "timbuktu_institute","identity_biometric",0
 "ayin_network","identity_biometric",0
 "sudan_transparency","identity_biometric",0
+"africa_expert_network","identity_biometric",0
+"smart_steps_china","identity_biometric",0
 "ipsos","device_telemetry",0
 "kantar","device_telemetry",0
 "niq","device_telemetry",0
@@ -16187,6 +16223,8 @@
 "timbuktu_institute","device_telemetry",0
 "ayin_network","device_telemetry",0
 "sudan_transparency","device_telemetry",0
+"africa_expert_network","device_telemetry",0
+"smart_steps_china","device_telemetry",0
 "ipsos","education",0
 "kantar","education",0
 "niq","education",0
@@ -17039,6 +17077,8 @@
 "timbuktu_institute","education",0
 "ayin_network","education",0
 "sudan_transparency","education",0
+"africa_expert_network","education",0
+"smart_steps_china","education",0
 "ipsos","migration_displacement",0
 "kantar","migration_displacement",0
 "niq","migration_displacement",0
@@ -17891,6 +17931,8 @@
 "timbuktu_institute","migration_displacement",0
 "ayin_network","migration_displacement",2
 "sudan_transparency","migration_displacement",0
+"africa_expert_network","migration_displacement",0
+"smart_steps_china","migration_displacement",0
 "ipsos","supply_chain",0
 "kantar","supply_chain",0
 "niq","supply_chain",1
@@ -18743,6 +18785,8 @@
 "timbuktu_institute","supply_chain",0
 "ayin_network","supply_chain",0
 "sudan_transparency","supply_chain",0
+"africa_expert_network","supply_chain",0
+"smart_steps_china","supply_chain",0
 "ipsos","ai_labels",0
 "kantar","ai_labels",0
 "niq","ai_labels",0
@@ -19595,6 +19639,8 @@
 "timbuktu_institute","ai_labels",0
 "ayin_network","ai_labels",0
 "sudan_transparency","ai_labels",0
+"africa_expert_network","ai_labels",0
+"smart_steps_china","ai_labels",0
 "ipsos","legal_regulatory",0
 "kantar","legal_regulatory",0
 "niq","legal_regulatory",0
@@ -20447,6 +20493,8 @@
 "timbuktu_institute","legal_regulatory",0
 "ayin_network","legal_regulatory",0
 "sudan_transparency","legal_regulatory",2
+"africa_expert_network","legal_regulatory",0
+"smart_steps_china","legal_regulatory",0
 "ipsos","housing_property",0
 "kantar","housing_property",0
 "niq","housing_property",0
@@ -21299,6 +21347,8 @@
 "timbuktu_institute","housing_property",0
 "ayin_network","housing_property",0
 "sudan_transparency","housing_property",0
+"africa_expert_network","housing_property",0
+"smart_steps_china","housing_property",0
 "ipsos","infrastructure",0
 "kantar","infrastructure",0
 "niq","infrastructure",0
@@ -22151,6 +22201,8 @@
 "timbuktu_institute","infrastructure",0
 "ayin_network","infrastructure",0
 "sudan_transparency","infrastructure",0
+"africa_expert_network","infrastructure",0
+"smart_steps_china","infrastructure",1
 "ipsos","biodiversity",0
 "kantar","biodiversity",0
 "niq","biodiversity",0
@@ -23003,3 +23055,5 @@
 "timbuktu_institute","biodiversity",0
 "ayin_network","biodiversity",0
 "sudan_transparency","biodiversity",0
+"africa_expert_network","biodiversity",0
+"smart_steps_china","biodiversity",0

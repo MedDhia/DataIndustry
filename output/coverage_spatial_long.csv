@@ -851,6 +851,8 @@
 "timbuktu_institute","NOAM",0
 "ayin_network","NOAM",0
 "sudan_transparency","NOAM",0
+"africa_expert_network","NOAM",0
+"smart_steps_china","NOAM",0
 "ipsos","LAC",3
 "kantar","LAC",3
 "niq","LAC",3
@@ -1703,6 +1705,8 @@
 "timbuktu_institute","LAC",0
 "ayin_network","LAC",0
 "sudan_transparency","LAC",0
+"africa_expert_network","LAC",0
+"smart_steps_china","LAC",0
 "ipsos","WEU",3
 "kantar","WEU",3
 "niq","WEU",3
@@ -2555,6 +2559,8 @@
 "timbuktu_institute","WEU",0
 "ayin_network","WEU",0
 "sudan_transparency","WEU",0
+"africa_expert_network","WEU",0
+"smart_steps_china","WEU",0
 "ipsos","EEU",3
 "kantar","EEU",2
 "niq","EEU",3
@@ -3407,6 +3413,8 @@
 "timbuktu_institute","EEU",0
 "ayin_network","EEU",0
 "sudan_transparency","EEU",0
+"africa_expert_network","EEU",0
+"smart_steps_china","EEU",0
 "ipsos","RUS",1
 "kantar","RUS",1
 "niq","RUS",1
@@ -4259,6 +4267,8 @@
 "timbuktu_institute","RUS",0
 "ayin_network","RUS",0
 "sudan_transparency","RUS",0
+"africa_expert_network","RUS",0
+"smart_steps_china","RUS",0
 "ipsos","MENA",3
 "kantar","MENA",2
 "niq","MENA",2
@@ -5111,6 +5121,8 @@
 "timbuktu_institute","MENA",0
 "ayin_network","MENA",0
 "sudan_transparency","MENA",0
+"africa_expert_network","MENA",0
+"smart_steps_china","MENA",0
 "ipsos","SSA",2
 "kantar","SSA",2
 "niq","SSA",2
@@ -5963,6 +5975,8 @@
 "timbuktu_institute","SSA",3
 "ayin_network","SSA",3
 "sudan_transparency","SSA",3
+"africa_expert_network","SSA",3
+"smart_steps_china","SSA",0
 "ipsos","SAS",3
 "kantar","SAS",3
 "niq","SAS",3
@@ -6815,6 +6829,8 @@
 "timbuktu_institute","SAS",0
 "ayin_network","SAS",0
 "sudan_transparency","SAS",0
+"africa_expert_network","SAS",0
+"smart_steps_china","SAS",0
 "ipsos","SEA",3
 "kantar","SEA",3
 "niq","SEA",3
@@ -7667,6 +7683,8 @@
 "timbuktu_institute","SEA",0
 "ayin_network","SEA",0
 "sudan_transparency","SEA",0
+"africa_expert_network","SEA",0
+"smart_steps_china","SEA",0
 "ipsos","EAS",3
 "kantar","EAS",3
 "niq","EAS",3
@@ -8519,6 +8537,8 @@
 "timbuktu_institute","EAS",0
 "ayin_network","EAS",0
 "sudan_transparency","EAS",0
+"africa_expert_network","EAS",0
+"smart_steps_china","EAS",0
 "ipsos","CHN",2
 "kantar","CHN",3
 "niq","CHN",3
@@ -9371,6 +9391,8 @@
 "timbuktu_institute","CHN",0
 "ayin_network","CHN",0
 "sudan_transparency","CHN",0
+"africa_expert_network","CHN",0
+"smart_steps_china","CHN",3
 "ipsos","OCE",3
 "kantar","OCE",3
 "niq","OCE",3
@@ -10223,3 +10245,5 @@
 "timbuktu_institute","OCE",0
 "ayin_network","OCE",0
 "sudan_transparency","OCE",0
+"africa_expert_network","OCE",0
+"smart_steps_china","OCE",0

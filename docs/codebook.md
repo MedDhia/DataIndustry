@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (933 rows, 27 variables)
+## `data/companies.csv` (935 rows, 27 variables)
 
-The register includes 852 operating organisations and 81 that no longer operate.
+The register includes 854 operating organisations and 81 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -130,7 +130,7 @@ Umbra publish open datasets alongside a commercial product. The access model
 describes how the main product is sold; microdata access describes what a
 researcher can get, and a firm can do both.
 
-## `data/coverage_spatial.csv` (933 rows, 14 variables)
+## `data/coverage_spatial.csv` (935 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -568,3 +568,24 @@ unverified coding they are.
 were wrong, and three of the ten sampled negatives were wrong the other way. That
 is roughly one row in three among the cases where the field carries the most
 weight.
+
+## `data/gap_tests.csv` (10 rows, 10 variables)
+
+Falsification attempts against the register's own gap claims. A gap is not a
+finding here until somebody has tried to break it, and the attempt is recorded
+whether it succeeded or failed.
+
+| Variable | Type | Description |
+|---|---|---|
+| `test_id` | key | Stable identifier. |
+| `claim` | string | The gap as it was stated. |
+| `claim_basis` | factor | `headquarters`, `coverage`, `coverage at score 2`. Which computation produced the empty cell, because that determines what the claim can mean. |
+| `predicate` | string | The claim written as a testable condition. |
+| `falsification_attempt` | string | What was actually done to try to break it. |
+| `outcome` | factor | `false_gap` the cell was an artefact of how it was computed; `falsified` a counterexample was found; `falsified_in_principle` the activity exists but no organisation was identified to add; `not_falsified` a search found nothing; `untested`. |
+| `counterexample` | string | What broke it. The validator requires one on any `falsified` or `false_gap` row. |
+| `action_taken`, `url`, `tested_on` | | What changed, the source, the date. |
+
+**`not_falsified` is not the same as confirmed.** It means one search failed to
+find a counterexample. Two rows carry it and both are in segments holding six
+organisations or fewer, which is where absence is least informative.
