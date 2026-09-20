@@ -1,6 +1,6 @@
 # The Global Data Collection Industry
 
-A register of 935 organisations that collect data as their business, 854 of them
+A register of 936 organisations that collect data as their business, 855 of them
 still operating, coded for
 where they collect it and what they collect it about, built to make the gaps
 visible rather than the coverage.
@@ -12,13 +12,13 @@ actually gathering the data, and what is nobody gathering?
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/companies.csv` | 935 | The register. One row per organisation, 27 variables. 854 operating, 81 exited. 666 of the operating ones are for-profit. |
-| `data/coverage_spatial.csv` | 935 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
+| `data/companies.csv` | 936 | The register. One row per organisation, 27 variables. 855 operating, 81 exited. 667 of the operating ones are for-profit. |
+| `data/coverage_spatial.csv` | 936 | Ordinal 0-3 coverage score for each firm across 12 world regions. |
 | `data/countries.csv` | 194 | Country reference: region, income group, population band, connectivity, conflict exposure, research-regime restriction. |
 | `data/coverage_country_manual.csv` | 2,534 | Hand-coded country footprints for 212 organisations, marked exhaustive or partial. |
 | `data/grant_programmes.csv` | 15 | Recurring open-call funding instruments a data collection venture could apply to. Purposive, not a census. |
-| `data/verification.csv` | 15 | Audit trail for the disclosure field: what was checked, against what source, and what it corrected. |
-| `data/gap_tests.csv` | 10 | Falsification attempts against the register's own gap claims, recorded whether or not they succeeded. |
+| `data/verification.csv` | 16 | Audit trail for the disclosure field: what was checked, against what source, and what it corrected. |
+| `data/gap_tests.csv` | 17 | Falsification attempts against the register's own gap claims, recorded whether or not they succeeded. |
 | `data/method_innovations.csv` | 69 | Organisations whose entry rested on a collection method their segment did not have. One row per firm, with the method, what it displaced, and whether it is contested. |
 | `data/demand.csv` | 92 | The buyer side: segment by buyer category, each row with its own evidence level and source. Purposive, not a census. |
 | `data/coverage_country.csv` | 33,393 | Company-by-country coverage, each row carrying the methods usable and the data types obtainable in that country. |
@@ -32,6 +32,7 @@ actually gathering the data, and what is nobody gathering?
 | `docs/grant_programmes.md` | | What the funding-instrument layer shows and what it leaves out. |
 | `docs/demand.md` | | Who buys, which segments are filling with entrants, and why the two cannot be answered the same way. |
 | `docs/method_innovation.md` | | What was actually new about the methods, how crowded the segment was when they arrived, and which kinds of novelty get challenged. |
+| `docs/real_gaps.md` | | The four gaps that survive testing, ranked by whether more enumeration would close them. Read this before citing any gap. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `scripts/07_grants.R` | | Recurring grant instruments: descriptives only, the layer is too small for more. |
 | `scripts/08_sector.R` | | The for-profit cut. Run this before citing any regional figure. |
@@ -40,6 +41,7 @@ actually gathering the data, and what is nobody gathering?
 | `scripts/00_audit.py` | | Cross-field probes for combinations that are usually wrong. Reports only; run it after every extension round. |
 | `scripts/11_validate_allocation.py` | | Held-out test of the country allocation rule against 138 observed footprints. |
 | `scripts/12_gap_classes.py` | | Separates ownership gaps, presence gaps and depth gaps. Run before citing any empty cell. |
+| `scripts/13_real_gaps.py` | | The gaps that survived falsification, ranked by robustness to enumeration. |
 | `scripts/00_check_new.py` | | Screens candidate organisations against the register before they are added. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
@@ -68,7 +70,7 @@ Both startups and established firms are included by design, and so are firms tha
 no longer exist. 81 organisations in the register have exited: 64 absorbed into
 an acquirer, 17 wound down or insolvent. Without them this would be a survivor
 sample of an industry that has consolidated hard. **Every coverage and gap table
-uses the 854 operating firms only**; `scripts/05_history.R` analyses the rest.
+uses the 855 operating firms only**; `scripts/05_history.R` analyses the rest.
 
 302 operating organisations are headquartered in MENA or Sub-Saharan Africa and
 40 in the Russia bloc or mainland China, the areas where enumeration effort has
@@ -201,6 +203,7 @@ Rscript  scripts/09_demand.R                  # entry cohorts and the buyer laye
 Rscript  scripts/10_innovation.R              # the method layer -> output/
 python3 scripts/11_validate_allocation.py     # how accurate the allocation rule is
 python3 scripts/12_gap_classes.py             # which gaps are real before citing one
+python3 scripts/13_real_gaps.py               # the four that survived testing
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
@@ -215,7 +218,7 @@ Read these before using the data for anything load-bearing.
    A for 144 records, B for 439 and C for 350. Level C is analyst judgement:
    reliable for segment, region and modality, not reliable for founding dates or
    counts. Filter on it.
-2. **Region coverage is partly rule-derived.** 149 of 935 spatial rows are
+2. **Region coverage is partly rule-derived.** 149 of 936 spatial rows are
    hand-coded; the remaining 731 come from the documented segment templates in
    `scripts/00_build_coverage.py`. For single-country and single-region field
    agencies the rule is near-exact. For globally scoped firms it is an

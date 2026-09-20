@@ -94,17 +94,52 @@ def method_feasible(method, c):
                   # environmental_sample, acoustic, signals_rf
 
 # A domain is dropped where the infrastructure it is derived from does not exist.
-def domain_feasible(domain, c, modality_primary):
-    net, inc = c["internet_band"], c["income_group"]
-    if domain in ("financial_transactions", "credit_risk"):
-        return inc in ("HIC", "UMIC")
-    if domain in ("device_telemetry", "mobility_location"):
-        return net in ("high", "medium")
-    if domain == "health_clinical" and modality_primary in ("clinical_records", "transaction"):
-        return inc in ("HIC", "UMIC")   # record-derived health data needs digitised systems
-    if domain == "prices_retail" and modality_primary == "transaction":
-        return inc in ("HIC", "UMIC")
-    return True
+def domain_feasible(domain, c, modality_primary, observed=None):
+    """Can this domain plausibly be collected in this country by allocation?
+
+    This began as an income and connectivity rule written from the armchair:
+    transaction and credit data need a rich country, telemetry and location need
+    connectivity. The register's own fieldwork refuted all four. Indicina scores
+    credit in Uganda, Orange Flux Vision reads mobility in Mali and Niger, Hello
+    Tractor telemeters tractors in Burkina Faso, Measurable AI reads receipts in
+    the Philippines and Egypt. 35 hand-coded rows contradicted the rule, and it
+    was manufacturing 224 impossible cells in exactly the poorest countries,
+    which then read as gaps in the industry rather than as assumptions.
+
+    The gate is now empirical. `observed` is the set of (domain, income_group)
+    and (domain, internet_band) pairs that hand-coded footprints actually show.
+    A domain is allocable into a band only where the band has been observed at
+    least once. Where the register has seen nothing either way it allows the
+    allocation, because absence of observation is not evidence of impossibility.
+    """
+    if observed is None:
+        return True
+    inc_seen = {d for d, k in observed if k == c["income_group"]}
+    net_seen = {d for d, k in observed if k == c["internet_band"]}
+    bands_for_domain = {k for d, k in observed if d == domain}
+    if not bands_for_domain:
+        return True          # nothing observed about this domain anywhere
+    return domain in inc_seen or domain in net_seen
+
+
+def observed_domain_bands(companies, manual, cty):
+    """(domain, band) pairs that hand-coded footprints actually demonstrate."""
+    by_id = {r["company_id"]: r for r in companies}
+    seen = set()
+    for cid, isos in manual.items():
+        co = by_id.get(cid)
+        if not co:
+            continue
+        ds = set(split_list(co["domains_primary"]) + split_list(co["domains_secondary"]))
+        for iso in isos:
+            c = cty.get(iso)
+            if not c:
+                continue
+            for d in ds:
+                seen.add((d, c["income_group"]))
+                seen.add((d, c["internet_band"]))
+    return seen
+
 
 # Firms whose country footprint follows need rather than market size.
 NEED_FIRMS = {"ipa_research", "jpal", "sixty_decibels", "geopoll", "flowminder",
@@ -147,6 +182,8 @@ def main():
         by_region[c["region_code"]].append(c)
     cty = {c["iso3"]: c for c in countries}
     regions = [r["region_code"] for r in csv.DictReader(open("data/regions.csv"))]
+
+    observed_bands = observed_domain_bands(companies, manual, cty)
 
     out = []
     for co in companies:
@@ -192,12 +229,20 @@ def main():
 
         for iso, (score, basis) in sorted(assigned.items()):
             c = cty[iso]
-            m = [x for x in methods_all if method_feasible(x, c)]
-            d = [x for x in domains_all if domain_feasible(x, c, co["modality_primary"])]
             if basis == "allocated":
+                m = [x for x in methods_all if method_feasible(x, c)]
+                d = [x for x in domains_all
+                     if domain_feasible(x, c, co["modality_primary"], observed_bands)]
                 if not m or not d:
                     continue  # a firm with no usable method or no obtainable data is not present
             else:
+                # An observed row is not filtered at all. Earlier revisions ran
+                # the gate over hand-coded rows too and only fell back when it
+                # emptied the list, so a firm observed in a country quietly lost
+                # the one domain the rule disbelieved. That is how Uganda came to
+                # have no credit data while Indicina operates there.
+                m = [x for x in methods_all if method_feasible(x, c)]
+                d = list(domains_all)
                 # A hand-coded footprint is an observation that the firm operates
                 # there, so it overrides the feasibility model rather than being
                 # deleted by it. Impact-sourcing delivery centres are the clear

@@ -1680,3 +1680,48 @@ No empty cell is a finding until somebody has tried to break it. A cell computed
 on headquarters is never a presence claim, a cell computed at coverage 2 is a
 depth claim, and a presence claim needs a search attached. The validator now
 requires any row in `gap_tests.csv` marked falsified to name what falsified it.
+
+## Round: identifying the real gaps (September 2026)
+
+After the false gaps were cleared out, four candidates remained.
+`scripts/13_real_gaps.py` computes them and `docs/real_gaps.md` sets them out,
+ranked by whether more enumeration could close them.
+
+### A rule the register's own fieldwork refuted
+
+The country coverage model gated domains by income and connectivity:
+transaction and credit data required upper-middle income, telemetry and location
+required medium connectivity. **35 hand-coded rows and 15 organisations
+contradict it.** Indicina scores credit in Uganda, Orange Flux Vision reads
+mobility in Mali, Niger and Burkina Faso, Hello Tractor telemeters tractors
+across the Sahel, Measurable AI reads receipts in the Philippines and Egypt,
+Kifiya does credit and transactions in Ethiopia.
+
+The rule was manufacturing 224 impossible cells in exactly the poorest countries,
+which then read as gaps in the industry rather than as an assumption about it.
+The gate is now derived from the bands hand-coded footprints actually show, and
+observed rows are no longer filtered by it at all. Empty country-domain cells
+fell from 297 to 156.
+
+### Falsification attempts on the survivors
+
+- **Eritrea.** The 2025 Population and Health Survey reached 9794 households
+  across 405 enumeration areas with digital collection, run by the national
+  statistics office with UNDP. Collection happens; no commercial or independent
+  domestic collector was found.
+- **Turkmenistan.** TGM Research of Singapore runs a national online panel, and
+  AQR Fieldwork and 2insights run fieldwork in Ashgabat, Turkmenabat and Dasoguz.
+  TGM Research added to the register; the other two rest only on their own
+  marketing pages and were not added.
+- **Central African Republic and Guinea-Bissau.** MICS rounds by the national
+  statistics institutes with UNICEF, UNFPA, WFP and the EU, and FAO telephone
+  monitoring in CAR. Same pattern: the state and the international organisations.
+- **Transaction data accessibility.** Dewey Data resells Consumer Edge card
+  panels to universities. Consumer Edge recoded `researcher_restricted` with
+  route `via_network`, and the claim restated: access exists by buying through a
+  reseller, never from the collector.
+- **Credit data accessibility.** Taken to its strongest counterexample, the
+  Equifax and New York Fed Consumer Credit Panel, and it held. That panel is
+  restricted by contract to Federal Reserve System researchers and their
+  coauthors; outside users get aggregates. Credit risk remains the one domain in
+  the register with no accessible provider anywhere on earth.

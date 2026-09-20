@@ -4,9 +4,9 @@ All files are UTF-8 CSV with a header row. `NA` denotes a value that is unknown 
 does not apply. Multi-valued fields use `|` as the separator. `company_id` is the
 primary key across every file.
 
-## `data/companies.csv` (935 rows, 27 variables)
+## `data/companies.csv` (936 rows, 27 variables)
 
-The register includes 854 operating organisations and 81 that no longer operate.
+The register includes 855 operating organisations and 81 that no longer operate.
 **Every coverage and gap table in this repository uses operating firms only.**
 `scripts/01_load.R` applies that filter and exposes the full set as
 `companies_all` for the historical analysis in `scripts/05_history.R`. Omitting
@@ -130,7 +130,7 @@ Umbra publish open datasets alongside a commercial product. The access model
 describes how the main product is sold; microdata access describes what a
 researcher can get, and a firm can do both.
 
-## `data/coverage_spatial.csv` (935 rows, 14 variables)
+## `data/coverage_spatial.csv` (936 rows, 14 variables)
 
 `company_id`, `coverage_basis`, then one column per region code.
 
@@ -539,7 +539,7 @@ kind. `not_applicable` does not cover it: that code means there is no human
 subject. Four organisations carry the new value and all four sell access to the
 contents of a person's phone.
 
-## `data/verification.csv` (15 rows, 11 variables)
+## `data/verification.csv` (16 rows, 11 variables)
 
 The audit trail for the disclosure field. One row per check: what was examined, the
 claim tested, the outcome, the corrected value, the source and the date.
@@ -569,7 +569,7 @@ were wrong, and three of the ten sampled negatives were wrong the other way. Tha
 is roughly one row in three among the cases where the field carries the most
 weight.
 
-## `data/gap_tests.csv` (10 rows, 10 variables)
+## `data/gap_tests.csv` (17 rows, 10 variables)
 
 Falsification attempts against the register's own gap claims. A gap is not a
 finding here until somebody has tried to break it, and the attempt is recorded
