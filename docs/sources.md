@@ -1725,3 +1725,35 @@ fell from 297 to 156.
   restricted by contract to Federal Reserve System researchers and their
   coauthors; outside users get aggregates. Credit risk remains the one domain in
   the register with no accessible provider anywhere on earth.
+
+## Round: market white space (September 2026)
+
+A correction of scope rather than of fact. Every gap analysis in this repository
+had been reading "gap" as missing coverage. The question being asked was where a
+venture could enter. No new sources; the answer is a recombination of layers
+already built, in `scripts/14_market_gaps.py` and `docs/market_gaps.md`.
+
+Five opportunity classes come out of it, and the ranking is by what the register
+can actually support rather than by attractiveness:
+
+1. **Terms.** Eight segments have at most one organisation offering researchers
+   any route to record-level data and five have none. Four of the rising demand
+   rows are rising because of a rule, and regulated buyers need provenance that
+   no incumbent sells.
+2. **Method transfer.** Seven collection methods have commercial users worldwide
+   and no MENA-based user; five have no African user. Each proof case is named.
+3. **Thin domestic supply against rising demand**, worst in audience measurement
+   where two regions with 12bn dollars of combined digital advertising support
+   two domestic measurement firms between them.
+4. **The substitution opening** left by the DHS termination and the PEPFAR cuts,
+   where the two firms selling model-based substitutes are both American.
+5. **Capital**, 14 open programmes admitting MENA or African applicants.
+
+The document also records what the register says not to do, which is to enter
+consumer brokerage or retail pricing on the incumbent model, and not to mistake
+an ownership gap for an empty market: 135 of 138 apparent regional gaps have a
+foreign incumbent already serving them.
+
+**The limit worth repeating.** There is no revenue variable in this register.
+Nothing in the market analysis is a market size or a business case; it is thin
+supply against documented demand, which is a place to look.

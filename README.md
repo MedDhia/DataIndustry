@@ -32,7 +32,8 @@ actually gathering the data, and what is nobody gathering?
 | `docs/grant_programmes.md` | | What the funding-instrument layer shows and what it leaves out. |
 | `docs/demand.md` | | Who buys, which segments are filling with entrants, and why the two cannot be answered the same way. |
 | `docs/method_innovation.md` | | What was actually new about the methods, how crowded the segment was when they arrived, and which kinds of novelty get challenged. |
-| `docs/real_gaps.md` | | The four gaps that survive testing, ranked by whether more enumeration would close them. Read this before citing any gap. |
+| `docs/real_gaps.md` | | The four coverage gaps that survive testing, ranked by whether more enumeration would close them. |
+| `docs/market_gaps.md` | | Market white space: where documented demand meets thin supply, and what the register says not to do. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `scripts/07_grants.R` | | Recurring grant instruments: descriptives only, the layer is too small for more. |
 | `scripts/08_sector.R` | | The for-profit cut. Run this before citing any regional figure. |
@@ -41,7 +42,8 @@ actually gathering the data, and what is nobody gathering?
 | `scripts/00_audit.py` | | Cross-field probes for combinations that are usually wrong. Reports only; run it after every extension round. |
 | `scripts/11_validate_allocation.py` | | Held-out test of the country allocation rule against 138 observed footprints. |
 | `scripts/12_gap_classes.py` | | Separates ownership gaps, presence gaps and depth gaps. Run before citing any empty cell. |
-| `scripts/13_real_gaps.py` | | The gaps that survived falsification, ranked by robustness to enumeration. |
+| `scripts/13_real_gaps.py` | | The coverage gaps that survived falsification, ranked by robustness to enumeration. |
+| `scripts/14_market_gaps.py` | | Market white space: business-model space, method transfer, thin domestic supply, vacated segments, available capital. |
 | `scripts/00_check_new.py` | | Screens candidate organisations against the register before they are added. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
@@ -204,6 +206,7 @@ Rscript  scripts/10_innovation.R              # the method layer -> output/
 python3 scripts/11_validate_allocation.py     # how accurate the allocation rule is
 python3 scripts/12_gap_classes.py             # which gaps are real before citing one
 python3 scripts/13_real_gaps.py               # the four that survived testing
+python3 scripts/14_market_gaps.py             # market white space for a new entrant
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
