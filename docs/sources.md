@@ -1757,3 +1757,42 @@ foreign incumbent already serving them.
 **The limit worth repeating.** There is no revenue variable in this register.
 Nothing in the market analysis is a market size or a business case; it is thin
 supply against documented demand, which is a place to look.
+
+## Round: type-of-data gaps (September 2026)
+
+A follow-up to the market white space round, asking the same question one level
+down. That round asked which segments and places are thinly served. This one
+holds the segment fixed and asks what kind of data is demanded and not produced,
+where a kind is the combination of four coded properties already in the file:
+the unit one row describes, how often it refreshes, how far the instrument
+reaches, and whether an outsider can see a record. No new sources;
+`scripts/15_data_type_gaps.py` and `docs/data_type_gaps.md`.
+
+Five mismatches come out of it, and each one is stated against a demand row that
+names the unit or the frequency the buyer needs:
+
+1. **Unit.** Buyers name an asset, a company or a worker and suppliers describe
+   an area. Zero of 100 climate organisations use the company as the unit, which
+   is the only unit ISSB and CSRD reporting is about. Two of 35 supply chain
+   organisations observe a person.
+2. **Frequency.** No organisation in the register observes a household in real
+   time, and labour data is 10 percent weekly or faster against transaction data
+   at 100 percent. Fast data is about machines and money; slow data is about
+   people. Where fast people-data exists it comes from telecom signalling, the
+   method with no MENA or African user.
+3. **Terms.** Readability tracks which field built consent machinery, not
+   sensitivity: patient records 70 percent accessible, transaction records 3
+   percent, credit risk zero of 38 worldwide.
+4. **Linkage.** 153 of 351 domain pairs are held by no single organisation.
+   Six of those unmade joins have a named buyer, labour by supply chain first.
+5. **Border.** Migration has two global suppliers of 36, which is why corridor
+   data is modelled and not observed.
+
+Section 6 lists the types that are already supplied, so the rest can be
+falsified from the same file. Document-level labelled text is the one type where
+MENA and Africa lead outright, 18 of 24 producers.
+
+**The limit specific to this round.** The register codes one unit, one frequency
+and one scope per organisation, so a producer of several types shows up as its
+main one and every count is a lower bound on type diversity. Nothing codes how
+far back a series runs, so none of this speaks to historical depth.

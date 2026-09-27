@@ -34,6 +34,7 @@ actually gathering the data, and what is nobody gathering?
 | `docs/method_innovation.md` | | What was actually new about the methods, how crowded the segment was when they arrived, and which kinds of novelty get challenged. |
 | `docs/real_gaps.md` | | The four coverage gaps that survive testing, ranked by whether more enumeration would close them. |
 | `docs/market_gaps.md` | | Market white space: where documented demand meets thin supply, and what the register says not to do. |
+| `docs/data_type_gaps.md` | | Type-of-data gaps: the unit, frequency, terms, linkage and border mismatches between what buyers ask for and what the supply base produces. |
 | `scripts/05_history.R` | | Exit, absorption and survivorship analysis. |
 | `scripts/07_grants.R` | | Recurring grant instruments: descriptives only, the layer is too small for more. |
 | `scripts/08_sector.R` | | The for-profit cut. Run this before citing any regional figure. |
@@ -44,6 +45,7 @@ actually gathering the data, and what is nobody gathering?
 | `scripts/12_gap_classes.py` | | Separates ownership gaps, presence gaps and depth gaps. Run before citing any empty cell. |
 | `scripts/13_real_gaps.py` | | The coverage gaps that survived falsification, ranked by robustness to enumeration. |
 | `scripts/14_market_gaps.py` | | Market white space: business-model space, method transfer, thin domestic supply, vacated segments, available capital. |
+| `scripts/15_data_type_gaps.py` | | Type-of-data gaps: unit mismatch, frequency mismatch, terms by type, unmade linkages, single-country instruments. |
 | `scripts/00_check_new.py` | | Screens candidate organisations against the register before they are added. |
 | `docs/sources.md` | | Sources consulted during construction. |
 
@@ -207,6 +209,7 @@ python3 scripts/11_validate_allocation.py     # how accurate the allocation rule
 python3 scripts/12_gap_classes.py             # which gaps are real before citing one
 python3 scripts/13_real_gaps.py               # the four that survived testing
 python3 scripts/14_market_gaps.py             # market white space for a new entrant
+python3 scripts/15_data_type_gaps.py          # the type of data demanded and not produced
 ```
 
 Requires R with `stargazer`, and Python 3 for the matrix builder. Tables are
